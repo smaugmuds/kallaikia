@@ -1,0 +1,4 @@
+[*****] BUG: load_news(): # not found
+[*****] BUG: Fread_stance: fopen
+[*****] BUG: load_news(): # not found
+[*****] BUG: Fread_stance: fopen
