@@ -1,4 +1,4 @@
-#! /bin/csh -f
+#!/bin/csh -f
 
 # Set the port number.
 set port = 4555
@@ -31,15 +31,15 @@ while ( 1 )
     # charges >> $logfile
 
     # Run SMAUG.
-    ../src/smaug $port >&! $logfile
-#    ../src/smaug >>&! $logfile
+    ../src/phantasiemIII $port >&! $logfile
+#    ../src/phantasiemIII >>&! $logfile
 
     # Record ending charges
     # charges >> $logfile
 
 #    # Delete this out if no adb.
 #    if ( -e core ) then
-#	    echo '$c' | adb ../src/smaug
+#	    echo '$c' | adb ../src/phantasiemIII
 #    endif
 
     # Restart, giving old connections a chance to die.
