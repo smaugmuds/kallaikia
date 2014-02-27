@@ -63,11 +63,13 @@ all:
 	make phantasiemIII
 
 phantasiemIII: $(O_FILES)
-	rm -f phantasiemIII
-	$(CC) $(L_FLAGS) $(USE_IMC) -o phantasiemIII $(O_FILES)
-	chmod g+w phantasiemIII
-	chmod a+x phantasiemIII
+	rm -f ../bin/phantasiemIII
+	$(CC) $(L_FLAGS) $(USE_IMC) -o ../bin/phantasiemIII $(O_FILES)
+	chmod g+w ../bin/phantasiemIII
+	chmod a+x ../bin/phantasiemIII
 	chmod g+w $(O_FILES)
+	cp startup ../bin/startup
+	chmod a+x ../bin/startup
 
 .c.o: mud.h
 	$(CC) -c $(C_FLAGS) $(USE_IMC) $<

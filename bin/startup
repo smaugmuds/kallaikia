@@ -31,15 +31,15 @@ while ( 1 )
     # charges >> $logfile
 
     # Run SMAUG.
-    ../src/phantasiemIII $port >&! $logfile
-#    ../src/phantasiemIII >>&! $logfile
+    ../bin/phantasiemIII $port >&! $logfile
+#    ../bin/phantasiemIII >>&! $logfile
 
     # Record ending charges
     # charges >> $logfile
 
 #    # Delete this out if no adb.
 #    if ( -e core ) then
-#	    echo '$c' | adb ../src/phantasiemIII
+#	    echo '$c' | adb ../bin/phantasiemIII
 #    endif
 
     # Restart, giving old connections a chance to die.
