@@ -1,0 +1,188 @@
+Thu Feb 27 18:07:24 2014 :: Booting Database
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Thu Feb 27 18:07:24 2014 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Thu Feb 27 18:07:24 2014 :: Loading commands
+Thu Feb 27 18:07:24 2014 :: Loading sysdata configuration...
+Thu Feb 27 18:07:24 2014 :: Loading socials
+Thu Feb 27 18:07:24 2014 :: Loading skill table
+Thu Feb 27 18:07:24 2014 :: Sorting skill table...
+Thu Feb 27 18:07:24 2014 :: Remapping slots to sns
+Thu Feb 27 18:07:24 2014 :: Loading classes
+Thu Feb 27 18:07:24 2014 :: Loading races
+Thu Feb 27 18:07:24 2014 :: Loading extended news data
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: load_news(): # not found
+Thu Feb 27 18:07:24 2014 :: Loading stance data
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: Fread_stance: fopen
+../system/stances.dat: No such file or directory
+Thu Feb 27 18:07:24 2014 :: Loading herb table
+Thu Feb 27 18:07:24 2014 :: Loading tongues
+Thu Feb 27 18:07:24 2014 :: Making wizlist
+Thu Feb 27 18:07:24 2014 :: Making retiredlist
+Thu Feb 27 18:07:24 2014 :: Initializing request pipe
+Thu Feb 27 18:07:24 2014 :: Initializing random number generator
+Thu Feb 27 18:07:24 2014 :: Setting time and weather
+Thu Feb 27 18:07:24 2014 :: Assigning gsn's
+Thu Feb 27 18:07:24 2014 :: Reading in area files...
+(help.are)
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: imc-help.are LINE: 29
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: IMC.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: imc-help.are LINE: 81
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: RCHAT RIMM RCODE.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: imc-help.are LINE: 124
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: RTELL RREPLY.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: imc-help.are LINE: 158
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: RBEEP.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: imc-help.are LINE: 192
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: RCHANNELS RCHAN RINVIS.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: imc-help.are LINE: 216
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: 'IMC NOTES'.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: imc-help.are LINE: 234
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: 'IMC IMMORTAL COMMANDS' RINFO.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: imc-help.are LINE: 259
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: RSOCKETS.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: imc-help.are LINE: 316
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: RIGNORE.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: imc-help.are LINE: 326
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: MAILQUEUE.  Deleting.
+(imc-help.are)
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: ice-help.are LINE: 45
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: ICE.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: ice-help.are LINE: 71
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: ICE-INTRO.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: ice-help.are LINE: 85
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: ICHAN.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: ice-help.are LINE: 129
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: ICOMMAND.  Deleting.
+Thu Feb 27 18:07:24 2014 :: [*****] FILE: ice-help.are LINE: 259
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: add_help: duplicate: ICE-POLICY.  Deleting.
+(ice-help.are)
+gods.are      : Rooms:  1200 - 1201  Objs:  1200 - 1200  Mobs:  1200 - 1200
+limbo.are     : Rooms:     1 - 43    Objs:     2 - 99    Mobs:     1 - 99
+newacad.are   : Rooms: 10300 - 10499 Objs: 10300 - 10499 Mobs: 10300 - 10499
+newgate.are   : Rooms:   100 - 199   Objs:   100 - 199   Mobs:   100 - 199
+newdark.are   : Rooms: 21000 - 21499 Objs: 21000 - 21435 Mobs: 21000 - 21499
+haon.are      : Rooms:  6000 - 6156  Objs:  6000 - 6155  Mobs:  6000 - 6117
+midennir.are  : Rooms:  3500 - 3590  Objs:  3500 - 3550  Mobs:  3500 - 3550
+sewer.are     : Rooms:  7001 - 7445  Objs:  7190 - 7310  Mobs:  7000 - 7206
+redferne.are  : Rooms:  7900 - 7918  Objs:  7909 - 7911  Mobs:  7900 - 7900
+grove.are     : Rooms:  8901 - 8999  Objs:  8900 - 8919  Mobs:  8900 - 8911
+dwarven.are   : Rooms:  6500 - 6554  Objs:  6502 - 6519  Mobs:  6500 - 6517
+daycare.are   : Rooms:  6601 - 6651  Objs:  6600 - 6647  Mobs:  6600 - 6610
+grave.are     : Rooms:  3600 - 3651  Objs:  3600 - 3613  Mobs:  3600 - 3605
+chapel.are    : Rooms:  3405 - 3475  Objs:  3400 - 3430  Mobs:  3400 - 3416
+astral.are    : Rooms:   800 - 899   Objs:   800 - 899   Mobs:   800 - 899
+Build.are     : Rooms:  9500 - 9589  Objs:     0 - 0     Mobs:     0 - 0
+pixie.are     : Rooms:  2070 - 2099  Objs:  2070 - 2076  Mobs:  2070 - 2073
+export.are    : Rooms:  9810 - 9899  Objs:  9810 - 9899  Mobs:  9800 - 9899
+srefuge.are   : Rooms:  1500 - 1599  Objs:  1500 - 1599  Mobs:  1500 - 1599
+manor.are     : Rooms:  2400 - 2499  Objs:  2400 - 2499  Mobs:  2405 - 2484
+unholy.are    : Rooms:  2101 - 2172  Objs:  2101 - 2150  Mobs:  2101 - 2120
+gallery.are   : Rooms: 24800 - 24899 Objs: 24800 - 24899 Mobs: 24800 - 24899
+Thu Feb 27 18:07:24 2014 :: Fixing exits
+Thu Feb 27 18:07:24 2014 :: Initializing economy
+Thu Feb 27 18:07:24 2014 :: Randomizing stance data
+Thu Feb 27 18:07:24 2014 :: Resetting areas
+Resetting: gods.are
+Resetting: limbo.are
+Resetting: newacad.are
+Resetting: newgate.are
+Resetting: newdark.are
+Resetting: haon.are
+Resetting: midennir.are
+Resetting: sewer.are
+Resetting: redferne.are
+Resetting: grove.are
+Resetting: dwarven.are
+Resetting: daycare.are
+Resetting: grave.are
+Resetting: chapel.are
+Resetting: astral.are
+Resetting: Build.are
+Resetting: pixie.are
+Resetting: export.are
+Resetting: srefuge.are
+Resetting: manor.are
+Resetting: unholy.are
+Resetting: gallery.are
+Thu Feb 27 18:07:24 2014 :: Loading buildlist
+Thu Feb 27 18:07:24 2014 :: ../gods/Burzumishi
+Thu Feb 27 18:07:24 2014 :: ../gods/Edmond
+Thu Feb 27 18:07:24 2014 :: Loading boards
+Thu Feb 27 18:07:24 2014 :: ../boards/immortal.brd
+Thu Feb 27 18:07:24 2014 :: ../boards/highgod.brd
+Thu Feb 27 18:07:24 2014 :: Loading vault list
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: fread_word: EOF encountered on read.
+
+Thu Feb 27 18:07:24 2014 :: ÿ
+Thu Feb 27 18:07:24 2014 :: Invalid vault number - vault.lst
+Thu Feb 27 18:07:24 2014 ::  Done vaults 
+Thu Feb 27 18:07:24 2014 :: Loading clans
+Thu Feb 27 18:07:24 2014 :: Loading clans...
+Thu Feb 27 18:07:24 2014 :: vampire.gui
+Thu Feb 27 18:07:24 2014 :: Cannot open vault - ../clans/vampire.gui.vault
+Thu Feb 27 18:07:24 2014 :: druid.gui
+Thu Feb 27 18:07:24 2014 :: Cannot open vault - ../clans/druid.gui.vault
+Thu Feb 27 18:07:24 2014 :: warrior.gui
+Thu Feb 27 18:07:24 2014 :: Cannot open vault - ../clans/warrior.gui.vault
+Thu Feb 27 18:07:24 2014 :: augurer.gui
+Thu Feb 27 18:07:24 2014 :: Cannot open vault - ../clans/augurer.gui.vault
+Thu Feb 27 18:07:24 2014 :: thief.gui
+Thu Feb 27 18:07:24 2014 :: Cannot open vault - ../clans/thief.gui.vault
+Thu Feb 27 18:07:24 2014 :: cleric.gui
+Thu Feb 27 18:07:24 2014 :: Cannot open vault - ../clans/cleric.gui.vault
+Thu Feb 27 18:07:24 2014 :: mage.gui
+Thu Feb 27 18:07:24 2014 :: Cannot open vault - ../clans/mage.gui.vault
+Thu Feb 27 18:07:24 2014 :: ranger.gui
+Thu Feb 27 18:07:24 2014 :: Cannot open vault - ../clans/ranger.gui.vault
+Thu Feb 27 18:07:24 2014 :: $
+Thu Feb 27 18:07:24 2014 ::  Done clans 
+Thu Feb 27 18:07:24 2014 :: Loading member lists
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: Cannot open members.dat for reading
+Thu Feb 27 18:07:24 2014 :: Loading councils
+Thu Feb 27 18:07:24 2014 :: Loading deities...
+Thu Feb 27 18:07:24 2014 :: test.dty
+Thu Feb 27 18:07:24 2014 :: $
+Thu Feb 27 18:07:24 2014 ::  Done deities 
+Thu Feb 27 18:07:24 2014 :: Loading deities
+Thu Feb 27 18:07:24 2014 :: Loading councils...
+Thu Feb 27 18:07:24 2014 :: $
+Thu Feb 27 18:07:24 2014 ::  Done councils 
+Thu Feb 27 18:07:24 2014 :: Loading watches
+Thu Feb 27 18:07:24 2014 :: Loading bans
+Thu Feb 27 18:07:24 2014 :: Done.
+Thu Feb 27 18:07:24 2014 :: Loading reserved names
+Thu Feb 27 18:07:24 2014 :: Loading noauction vnums
+Thu Feb 27 18:07:24 2014 :: Loading corpses
+Thu Feb 27 18:07:24 2014 :: Loading Immortal Hosts
+Thu Feb 27 18:07:24 2014 :: Done.
+Thu Feb 27 18:07:24 2014 :: Loading Hints
+Thu Feb 27 18:07:24 2014 :: Loading Projects
+Thu Feb 27 18:07:24 2014 :: Loading Morphs
+Thu Feb 27 18:07:24 2014 :: Optimizing Morphs.
+Thu Feb 27 18:07:24 2014 :: Done.
+Thu Feb 27 18:07:24 2014 :: Loading Housing System, Home Accessories Data, and Home Auctioning System
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: fread_word: EOF encountered on read.
+
+Thu Feb 27 18:07:24 2014 :: [*****] BUG: Cannot load house file: ~ÿ
+Thu Feb 27 18:07:24 2014 :: [*****] BOOT: Cannot open homeaccessories.dat. Aborting loadup of accessories data.
+Thu Feb 27 18:07:24 2014 :: [*****] BOOT: Cannot open homebuy.dat. Aborting loadup of home auction data.
+Thu Feb 27 18:07:24 2014 :: Loading login messages
+Thu Feb 27 18:07:24 2014 :: Loading Colors
+Thu Feb 27 18:07:24 2014 :: Initializing socket
+Thu Feb 27 18:07:24 2014 :: imc: imc2-1.03g smaug1.4a initializing
+Thu Feb 27 18:07:24 2014 :: imc: Logging On
+Thu Feb 27 18:07:24 2014 :: imc: hubswitch yes|no
+Thu Feb 27 18:07:24 2014 :: imc: imc_readignores: couldn't open imc/rignores
+Thu Feb 27 18:07:24 2014 :: imc: network initializing
+Thu Feb 27 18:07:24 2014 :: imc: binding port 4005 for incoming connections
+Thu Feb 27 18:07:24 2014 :: imc: imc_startup_port: bind: Address already in use
+Thu Feb 27 18:07:24 2014 :: imc: Setting auto-optimize to run in 6 minutes.
+Thu Feb 27 18:07:24 2014 :: imc: ICE client starting.
+Thu Feb 27 18:07:24 2014 :: imc: Can't open imc/icec
+Thu Feb 27 18:07:24 2014 :: Phantasiem III ready at address wowserver on port 4000.
+Resetting: newacad.are
+Thu Feb 27 18:08:41 2014 :: Sock.sinaddr:  127.0.0.1, port -15468.
+Resetting: daycare.are
+Resetting: pixie.are
+Thu Feb 27 18:09:10 2014 :: Xermon@127.0.0.1 new Human Guerrero.
+Thu Feb 27 18:09:37 2014 :: Xermon has quit. (INRoom 100)

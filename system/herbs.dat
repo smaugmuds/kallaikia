@@ -1,5 +1,5 @@
 #HERB
-Name         pipeweed~
+Name         cogollito~
 Type         Herb
 Flags        0
 Rounds       5
@@ -7,7 +7,7 @@ Dammsg       smoke~
 End
 
 #HERB
-Name         black gwyvel~
+Name         black poison~
 Type         Herb
 Flags        0
 Target       1
@@ -21,7 +21,7 @@ Affect       '' 13 '-10' 0
 End
 
 #HERB
-Name         vermeir~
+Name         critical~
 Type         Herb
 Flags        0
 Target       3

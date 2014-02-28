@@ -1,5 +1,5 @@
 #SYSTEM
-MudName	     Realms of Despair~
+MudName	       Phantasiem III~
 PortName	     4000~
 Highplayers    842
 Highplayertime Thu Nov 22 23:10:40 2001~
@@ -53,7 +53,7 @@ Pkloot	     1
 Pkchannels     0
 Pksilence	     0
 SaveVersion    6
-Wizlock        1
+Wizlock        0
 Magichell      1
 MaxNews	     -1
 End

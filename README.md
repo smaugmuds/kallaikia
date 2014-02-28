@@ -1,11 +1,20 @@
-=========================
+/****************************************************************************
+ *                                                                          *
+ *                               Phantasiem III                             *
+ *                                                                          *
+ *                          [ 0ri0n.no-ip.biz:4555 ]                        *
+ *                                                                          *
+ ***************************************************************************/
 
-      Phantasiem III
-
- [ 0ri0n.no-ip.biz:4555 ]
-
-==========================
-
-MUD basado en el servidor Smaug 1.8b de "Realms Of Despair (http://www.realmsofdespair.com)"
-
+/****************************************************************************
+ * [S]imulated [M]edieval [A]dventure multi[U]ser [G]ame      |   \\._.//   *
+ * -----------------------------------------------------------|   (0...0)   *
+ * SMAUG 1.4 (C) 1994, 1995, 1996, 1998  by Derek Snider      |    ).:.(    *
+ * -----------------------------------------------------------|    {o o}    *
+ * SMAUG code team: Thoric, Altrag, Blodkai, Narn, Haus,      |   / ' ' \   *
+ * Scryn, Rennard, Swordbearer, Gorog, Grishnakh, Nivek,      |~'~.VxvxV.~'~*
+ * Tricops, Fireblade, Edmond, Conran                         |             *
+ * ------------------------------------------------------------------------ *
+ *                      Gorog's Revenge on Unruly Bastards                  *
+ ****************************************************************************/
 
