@@ -13,3 +13,7 @@ Thu Feb 27 16:30:00 2014:  0ptn  0pll  0sc 0br  0 global loot
 Thu Feb 27 17:00:00 2014:  0ptn  0pll  0sc 0br  0 global loot
 Thu Feb 27 17:30:00 2014:  0ptn  0pll  0sc 0br  0 global loot
 Thu Feb 27 18:00:00 2014:  0ptn  0pll  0sc 0br  0 global loot
+Fri Feb 28 11:00:00 2014:  0ptn  0pll  0sc 0br  0 global loot
+Fri Feb 28 11:30:00 2014:  0ptn  0pll  0sc 0br  0 global loot
+Fri Feb 28 12:00:00 2014:  0ptn  0pll  0sc 0br  0 global loot
+Fri Feb 28 12:30:00 2014:  0ptn  0pll  0sc 0br  0 global loot
