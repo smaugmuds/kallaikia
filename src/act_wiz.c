@@ -23,14 +23,14 @@
 #include <sys/stat.h>
 #include <errno.h>
 #include "mud.h"
+#include "sha256.h"
 #ifdef WIN32
    #include <io.h>
-   #define F_OK 0
 #endif
 
+#define F_OK 0
 
 #define RESTORE_INTERVAL 21600
-
 
 char * const save_flag[] =
 { "death", "kill", "passwd", "drop", "put", "give", "auto", "zap",
@@ -6552,12 +6552,35 @@ void do_set_boot_time( CHAR_DATA *ch, char *argument)
 void do_form_password( CHAR_DATA *ch, char *argument) 
 {
    char arg[MAX_STRING_LENGTH];
+   char *pwcheck;
 
    set_char_color( AT_IMMORT, ch );  
 
-   argument = one_argument(argument, arg);
-   ch_printf(ch, "Those two arguments encrypted result in:  %s\n\r",
-	crypt(arg, argument));
+   if( !argument || argument[0] == '\0' )
+   {
+      send_to_char( "Usage: formpass <password>\r\n", ch );
+      return;
+   }
+
+   /*
+    * This is arbitrary to discourage weak passwords 
+    */
+   if( strlen( argument ) < 5 )
+   {
+      send_to_char( "Usage: formpass <password>\r\n", ch );
+      send_to_char( "New password must be at least 5 characters in length.\r\n", ch );
+      return;
+   }
+
+   if( argument[0] == '!' )
+   {
+      send_to_char( "Usage: formpass <password>\r\n", ch );
+      send_to_char( "New password cannot begin with the '!' character.\r\n", ch );
+      return;
+   }
+
+   pwcheck = sha256_crypt( argument );
+   ch_printf( ch, "%s results in the encrypted string: %s\r\n", argument, pwcheck );
    return;
 }
 
@@ -8920,7 +8943,7 @@ void do_setclass( CHAR_DATA *ch, char *argument )
       }
 
       for ( i = 0; i<MAX_PC_CLASS; i++ )
-	fprintf( fpList, "%s%s.class\n", CLASSDIR, class_table[i]->who_name );
+	fprintf( fpList, "%s%s.class\n", CLASS_DIR, class_table[i]->who_name );
      
       fprintf(fpList, "$\n");
       fclose( fpList );
@@ -9331,14 +9354,14 @@ void do_setrace( CHAR_DATA *ch, char *argument )
        }
        write_race_file( MAX_PC_RACE );
        MAX_PC_RACE++;
-       sprintf( racelist, "%s%s", RACEDIR, RACE_LIST );
+       sprintf( racelist, "%s%s", RACE_DIR, RACE_LIST );
        if ( ( fpList = fopen( racelist, "w" ) ) == NULL )
        {
          bug( "Error opening racelist.", 0 );
 	 return;
        }
        for ( i = 0; i < MAX_PC_RACE; i++ )
-	 fprintf( fpList, "%s%s.race\n", RACEDIR, race_table[i]->race_name );
+	 fprintf( fpList, "%s%s.race\n", RACE_DIR, race_table[i]->race_name );
        fprintf( fpList, "$\n" );
        fclose( fpList );
        send_to_char("Done.\n\r", ch );

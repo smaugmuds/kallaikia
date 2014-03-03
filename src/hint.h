@@ -1,5 +1,5 @@
 char *get_hint          args ( ( int level ) );
-#define HINT_FILE       SYSTEM_DIR "hints.txt"   /* For Hints */
+
 typedef struct  hint_data               HINT_DATA;
 struct hint_data
 {

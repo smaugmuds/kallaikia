@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Cargar configuracion
+source phantasien.servidor.configuracion
+
+echo
+echo "          - (( $programa $version )) -" 
+echo 
+echo "             \"$reino\""
+echo
+
+sleep 2;
+
+# Cambiar al directorio del reino | zonas
+cd $reino
+
+# Ejecutar el servicio los registros se ven por pantalla
+../$programa $puerto
+

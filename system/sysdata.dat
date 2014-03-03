@@ -1,12 +1,12 @@
 #SYSTEM
-MudName	       Phantasiem III~
+MudName	     Reinos de Desesperacion~
 PortName	     4000~
 Highplayers    842
 Highplayertime Thu Nov 22 23:10:40 2001~
 NewsPath	     ~
 CheckImmHost   1
-Nameresolving  1
-Waitforauth    1
+Nameresolving  0
+Waitforauth    0
 Readallmail    59
 Readmailfree   51
 Writemailfree  51
@@ -28,7 +28,7 @@ Bashnontank    75
 Dodgemod       4
 Parrymod       4
 Tumblemod      6
-Tumblepk	     9
+Tumblepk       9
 Damplrvsplr    110
 Damplrvsmob    80
 Dammobvsplr    120
@@ -47,11 +47,11 @@ BanSiteLevel   57
 BanRaceLevel   61
 BanClassLevel  61
 MorphOpt       1
-PetSave	     0
+PetSave	     1
 IdentTries     15
 Pkloot	     1
 Pkchannels     0
-Pksilence	     0
+Pksilence     0
 SaveVersion    6
 Wizlock        0
 Magichell      1

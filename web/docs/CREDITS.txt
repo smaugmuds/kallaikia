@@ -1,0 +1,70 @@
+======================
+ MercuryBoard Credits
+======================
+
+Jason Warner <jason at mercuryboard.com>
+    * Co-founder
+    * Primary developer
+
+Mark Elliot <mark.elliot at mercuryboard.com>
+    * Co-founder
+    * Developer
+
+Jay Little <jayphp at tampabay.rr.com>
+    * Quality assurance team leader
+    * Bug reports and support
+
+Gene Shepherd <imporiumdotorg at comcast.net>
+    * New emoticon set
+    * Bug reports
+
+Mark Plachetta <astroboy at zip.com.au>
+    * MbCode JavaScript and other JavaScript feats
+    * Bug reports
+
+Jay Reed <jreed at jreednet.com>
+    * Hosts CVS nightly checkout system
+    * Bug reports and quality assurance
+
+Jared Kuolt <jared.kuolt at gmail.com>
+    * HTML Installation Guide
+    * Admin help editor
+
+Daniel Wilhelm II Murdoch <wilhelm at cyberxtreme.org>
+    * E-mail class
+
+============================
+ Quicksilver Forums Credits
+============================
+
+Geoffrey Dunn <geoff at warmage.com>
+    * Recent topics
+
+Kristopher Powell <klpowell at trenden.net>
+Roger Libiez [Samson] http://www.iguanadons.net
+    * RSS Feed
+
+====================
+ QSF Portal Credits
+====================
+
+Roger Libiez [Samson], Davion, Asylumius
+    * Things too numerous to mention now!
+
+KingOfSka
+    * Top Posters and Top Uploaders modlets
+
+Mark James
+    * All of the icons scattered about the skin. Excellent work. See his credits file in skins/default/images/icons
+
+======================
+
+Many thanks to:
+    * Our users for the consistent support of the project
+    * Bug reporters for helping to making the project better
+    * The community and moderating team at mercuryboard.com
+    * The phpMyAdmin team for their fantastic tool, which was heavily used
+      during development
+    * Sunsite.dk for free CVS hosting
+    * The Webmin team for their awesome administration tool that aided greatly in further development.
+    * Google Code for their free project hosting.

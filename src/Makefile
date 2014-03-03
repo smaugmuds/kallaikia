@@ -1,77 +1,137 @@
+#!/usr/bin/make -f
+
+########################################
+#
+#      Phantasien v1.8.3b (beta)
+#
+#      Basado en SMAUG 1.8b
+#
+########################################
+
+NOMBRE = phantasien
+VERSION = 1.8.3b
+DESCRIPCION = Phantasien III  ^Reinos de Deseperacion^
+
+########################################
+# Arquitectura del sistema
+########################################
+
+ARCH = `uname -m`
+
+########################################
+# Opciones para G++
+########################################
+
 CC      = gcc
 #PROF    = -p
-NOCRYPT =
 
-# Uncomment the two lines below if compiling on a Solaris box
-#SOLARIS_FLAG = -Dsun -DSYSV
-#SOLARIS_LINK = -lnsl -lsocket
+#Descomentar si se obtienen referencias indefinidas para dlsym, dlopen, and dlclose.
+#Comentar si se obtienen errores de ldl no encontrado.
+NEED_DL = -ldl
 
-#Uncomment the line below if you are getting a line like:
-#interp.c:757: warning: int format, time_t arg (arg 7)
-#TIME = -DTIMEFORMAT
+#Algunos sistemas necesitan esto para el enlazado dinamico.
+EXPORT_SYMBOLS = -export-dynamic
 
-#Uncomment the line below if you are getting implicit decleration of re_exec
-REG = -DREGEX
+# IMC - Comentar para deshabilitar el soporte IMC (Mud Network Chat) (No se utiliza, para habilitarlo copiar los ficheros de imc a src)
+# IMC = -DUSE_IMC
 
-#Uncomment the line below if you are getting undefined re_exec errors
-NEED_REG = -lgnuregex
+# TODO TODO TODO (Portar desde MERC)
+# MOB_PROG - Comentar para deshabilitar el soporte de MOB_PROGRAMS
+#MOB_PROG = 1
 
-#Uncomment the line below if you are getting undefined crypt errors
-NEED_CRYPT = -lcrypt
+# Descomentar para modo desarrollo/debug  
+# Comentar para modo distribucion
+# CXX_FLAGS = -Wall -Wshadow -Wformat-security -Wpointer-arith -Wcast-align -Wredundant-decls -Wconversion -Wwrite-strings -Wunused-result -Wpointer-to-int-cast -Wint-to-pointer-cast
 
-DBUGFLG = -DREQUESTS
+# Descomentar para modo distribucion
+# Comentar para modo desarrollo/debug
+CXX_FLAGS = -Wno-all -Wno-conversion -Wno-write-strings -Wno-shadow -Wno-format-security -Wno-pointer-arith -Wno-cast-align -Wno-redundant-decls -Wno-unused-result -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast
 
-#Uncomment the line below if you want a performance increase though beware
-#your core files may not be as much of a benefit if you do.
-#OPT_FLAG = -finline-functions -funroll-loops -fdefer-pop -fstrength-reduce
+########################################
+# GCC & LD FLAGS Completos
+########################################
 
-C_FLAGS = $(OPT_FLAG) -O -g3 -Wall -Wuninitialized $(PROF) $(NOCRYPT) $(DBUGFLG) -DSMAUG $(SOLARIS_FLAG) $(TIME) $(REG)
-L_FLAGS = $(OPT_FLAG) $(PROF) $(SOLARIS_LINK) $(NEED_CRYPT)
+C_FLAGS = -O -g2 -pipe $(CXX_FLAGS) $(PROF) $(EXPORT_SYMBOLS)
 
-#Uncomment the next three comments below if you want to use IMC
-USE_IMC    = -DUSE_IMC
+ifeq ($(ARCH), x86_64)
+C_FLAGS := $(C_FLAGS) -march=$(ARCH) -mtune=$(ARCH)
+else
+C_FLAGS := $(C_FLAGS) 
+endif
 
-IMC_OFILES = imc.o imc-mail.o imc-interp.o imc-util.o imc-config.o \
-        imc-events.o imc-version.o imc-mercbase.o ice.o icec.o icec-mercbase.o
+L_FLAGS = $(PROF) -lz $(NEED_DL)
 
-IMC_CFILES = imc.c imc-mail.c imc-interp.c imc-util.c imc-config.c \
-        imc-events.c imc-version.c imc-mercbase.c ice.c icec.c icec-mercbase.c
+########################################
+# Ficheros C para compilar
+########################################
 
-O_FILES = act_comm.o act_info.o act_move.o act_obj.o act_wiz.o boards.o \
-          build.o clans.o comm.o comments.o const.o db.o deity.o fight.o \
-          handler.o hashstr.o ibuild.o ident.o interp.o magic.o makeobjs.o \
-          mapout.o misc.o mpxset.o mud_comm.o mud_prog.o player.o polymorph.o \
-          requests.o reset.o save.o shops.o skills.o special.o tables.o \
-          track.o update.o grub.o stat_obj.o ban.o services.o planes.o \
-          imm_host.o $(IMC_OFILES) colorize.o stances.o adminlist.o \
-	      hint.o starmap.o house.o variables.o news.o
+C_FILES = act_comm.c  adminlist.c  clans.c     db.c       hashstr.c  imm_host.c  mapout.c    news.c       requests.c  shops.c    stat_obj.c \
+act_info.c  ban.c        colorize.c  deity.c    hint.c     interp.c    misc.c      planes.c     reset.c     skills.c   tables.c \
+act_move.c  boards.c     comm.c      fight.c    house.c    liquids.c   mpxset.c    player.c     save.c      special.c  track.c \
+act_obj.c   build.c      comments.c  grub.c     ibuild.c   magic.c     mud_comm.c  polymorph.c  services.c  stances.c  update.c \
+act_wiz.c   chess.c      const.c     handler.c  ident.c    makeobjs.c  mud_prog.c  renumber.c   sha256.c    starmap.c  variables.c
 
-C_FILES = act_comm.c act_info.c act_move.c act_obj.c act_wiz.c boards.c \
-          build.c clans.c comm.c comments.c const.c db.c deity.c fight.c \
-          handler.c hashstr.c ibuild.c ident.c interp.c magic.c makeobjs.c \
-          mapout.c misc.c mpxset.c mud_comm.c mud_prog.c player.c polymorph.c \
-          requests.c reset.c save.c shops.c skills.c special.c tables.c \
-          track.c update.c grub.c stat_obj.c ban.c services.c planes.c \
-          imm_host.c $(IMC_CFILES) colorize.c stances.c adminlist.c \
-	       hint.c starmap.c house.c variables.c news.c
+# Ficheros adicionales para soporte IMC
+#ifdef IMC
+#   C_FILES := imc.c $(C_FILES)
+#   C_FLAGS := $(C_FLAGS) $(IMC) -DIMCSMAUG
+#endif
 
+# Ficheros adicionales para soporte MOB_PROGRAMS: criaturas||mobprogs
+#ifdef MOB_PROG
+#   C_FILES := $(C_FILES) criaturas_programas.c criaturas_comandos.c
+#   C_FLAGS := $(C_FLAGS) -DDUNNO_STRSTR
+#endif
 
-H_FILES = mud.h bet.h imc-config.h imc-mercbase.h imc-mercdefs.h imc.h \
-          ice.h icec.h icec-mercbase.h hint.h house.h news.h
+# Objetos del compilador se generan en "objetos_compilador"
+O_FILES := $(patsubst %.c,objetos_compilador/%.o,$(C_FILES))
+
+H_FILES = bet.h  chess.h  hint.h  house.h  liquids.h  mud.h  news.h  sha256.h
+
+########################################
+# Construir el codigo
+########################################
 
 all:
-	make phantasiemIII
+	@$(MAKE) -s clean && mkdir objetos_compilador
+	@echo && echo " [ "$(MAKE)" ] Construccion -> \""$(NOMBRE)" "$(VERSION)" ("$(ARCH)")\"." && echo
+	@echo " [ "$(MAKE)" ] "$(DESCRIPCION)"" && echo
+	@echo " [ "$(CC)" ] CFLAGS: "$(C_FLAGS)""
+	@echo " [ "$(CC)" ] LDFLAGS: "$(L_FLAGS)"" && echo
+	@$(MAKE) -s $(NOMBRE)
+	@echo " [ "$(MAKE)" ] Finalizado! -> \""$(NOMBRE)" "$(VERSION)" ("$(ARCH)")\"." && echo
 
-phantasiemIII: $(O_FILES)
-	rm -f ../bin/phantasiemIII
-	$(CC) $(L_FLAGS) $(USE_IMC) -o ../bin/phantasiemIII $(O_FILES)
-	chmod g+w ../bin/phantasiemIII
-	chmod a+x ../bin/phantasiemIII
+# Incluir las dependencias para los objetos existentes
+-include dependencies.d
+
+$(NOMBRE): $(O_FILES)
+	rm -f ../$(NOMBRE)
+	$(CC) -export-dynamic -o ../$(NOMBRE) $(O_FILES) $(L_FLAGS)
+	@echo && echo " [ "$(MAKE)" ] Generar el fichero de dependencia \"dependencies.d\".";
+	@$(CC) -MM $(C_FLAGS) $(C_FILES) > dependencies.d
+	@perl -pi -e 's.^([a-z]).o/$$1.g' dependencies.d
+	echo " [ "$(MAKE)" ] Finalizada la construccion de: \""$(NOMBRE)"\"."
+	chmod g+w ../$(NOMBRE)
+	chmod a+x ../$(NOMBRE)
 	chmod g+w $(O_FILES)
-	chmod a+x ../bin/startup
 
-.c.o: mud.h
-	$(CC) -c $(C_FLAGS) $(USE_IMC) $<
+objetos_compilador/%.o: %.c
+	echo " [ "$(CC)" ] Construir -> $@ ... "
+	$(CC) -c $(C_FLAGS) $< -o $@
+
+.c.o: $(NOMBRE).h
+	$(CC) -c $(C_FLAGS) $<
 
 clean:
-	rm -f *.o *~
+	@rm -rf objetos_compilador dependencies.d *~ ../*/*~ ../*~
+
+cleanall:
+	@rm -rfv ../$(NOMBRE) objetos_compilador dependencies.d *~ ../*/*~ ../*~
+
+dist:
+	@echo && echo " [ "$(MAKE)" ] Limpiar objetos del codigo y ficheros de log ..." && echo
+	@$(MAKE) -s clean && cd .. && touch log/$(NOMBRE).log && rm -rfv log/*
+	@echo && echo " [ "$(MAKE)" ] Creando el fichero de distribucion: \"../../"$(NOMBRE)"-"$(VERSION)".tar.bz2\" ..."
+	@cd .. && tar cfj ../$(NOMBRE)-$(VERSION).tar.bz2 *
+	@echo " [ "$(MAKE)" ] Finalizado." && echo
+

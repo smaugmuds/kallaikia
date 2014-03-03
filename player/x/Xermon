@@ -1,0 +1,55 @@
+#PLAYER
+Version      3
+Name         XeRMoN~
+Sex          1
+Class        3
+Race         0
+Languages    -1 1
+Level        65
+Played       642
+Room         10300
+HpManaMove   9999 9999 9999 9999 999 999
+Stance       0
+Stances      0 0 0 0 0 0 0 0 0 0 0 0
+Gold         1215752191
+Exp          1215752191
+Height          59
+Weight          163
+Act          704644680
+Position     106
+Style     2
+Practice     2
+Alignment    0
+SavingThrows 0 0 0 0 0
+Favor	       0
+Glory        0
+MGlory       0
+Honour       0
+Hitroll      0
+Damroll      0
+Armor        100
+ICEListen ~
+Mentalstate  -7
+Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
+Title         El senhor de las tinieblas~
+WizInvis     65
+Flags        8421384
+PKills       0
+PDeaths      0
+MKills       0
+MDeaths      0
+IllegalPK    0
+AttrPerm     16 13 13 14 15 13 11
+AttrMod      0 0 0 0 0 0 0
+Condition    0 47 47 10
+Site         localhost
+Tongue       100 'common'
+End
+
+#OBJECT
+Vnum         10333
+WearLoc      17
+Values       5 5 0 0 0 0
+End
+
+#END

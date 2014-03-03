@@ -26,6 +26,7 @@
 #include <signal.h>
 #include <stdarg.h>
 #include "mud.h"
+#include "sha256.h"
 #ifdef USE_IMC
 #include "imc.h"
 #include "icec.h"
@@ -1757,7 +1758,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
     case CON_GET_OLD_PASSWORD:
 	write_to_buffer( d, "\n\r", 2 );
 
-	if ( strcmp( crypt( argument, ch->pcdata->pwd ), ch->pcdata->pwd ) )
+	if ( strcmp( sha256_crypt( argument ), ch->pcdata->pwd ) )
 	{
 	    write_to_buffer( d, "Wrong password.\n\r", 0 );
 	    /* clear descriptor pointer to get rid of bug message in log */
@@ -1861,7 +1862,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	    return;
 	}
 
-	pwdnew = crypt( argument, ch->name );
+	pwdnew = sha256_crypt( argument );
 	for ( p = pwdnew; *p != '\0'; p++ )
 	{
 	    if ( *p == '~' )
@@ -1882,7 +1883,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
     case CON_CONFIRM_NEW_PASSWORD:
 	write_to_buffer( d, "\n\r", 2 );
 
-	if ( strcmp( crypt( argument, ch->pcdata->pwd ), ch->pcdata->pwd ) )
+	if ( strcmp( sha256_crypt( argument ), ch->pcdata->pwd ) )
 	{
 	    write_to_buffer( d, "Passwords don't match.\n\rRetype password: ",
 		0 );

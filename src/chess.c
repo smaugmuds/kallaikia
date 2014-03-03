@@ -20,9 +20,10 @@
 #include <string.h>
 
 #include "mud.h"
+#include "chess.h"
 
 #define SC_VERSION "5.65"
-#define SC_INFO "MUD Chess"
+#define SC_INFO "Phantasien Ajedrez"
 
 #ifndef GET_NAME
 #define GET_NAME(ch) (ch)->name

@@ -38,6 +38,7 @@
 #include <string.h>
 #include <time.h>
 #include "mud.h"
+#include "liquids.h"
 
 /* Globals */
 char *	const liquid_types[] =
@@ -54,6 +55,11 @@ int get_liquid_type( char *name )
 	  return x;
     return -1;
 }
+
+#ifdef FCLOSE
+#undef FCLOSE
+#endif
+#define FCLOSE(fp) fclose(fp); fp=NULL;
 
 #ifdef KEY
 #undef KEY

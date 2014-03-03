@@ -1825,7 +1825,7 @@ void write_class_file( int cl )
     struct class_type *class = class_table[cl];
     int x, y;
 
-    sprintf( filename, "%s%s.class", CLASSDIR, class->who_name );
+    sprintf( filename, "%s%s.class", CLASS_DIR, class->who_name );
     if ( (fpout=fopen(filename, "w")) == NULL )
     {
 	sprintf( buf, "Cannot open: %s for writing", filename );
@@ -1895,7 +1895,7 @@ void load_races( )
     for(i=0;i<MAX_RACE;i++)
     	race_table[i] = NULL;
 
-    sprintf( racelist, "%s%s", RACEDIR, RACE_LIST );
+    sprintf( racelist, "%s%s", RACE_DIR, RACE_LIST );
     if ( ( fpList = fopen( racelist, "r" ) ) == NULL )
     {
 	perror( racelist );
@@ -1944,7 +1944,7 @@ void write_race_file( int ra )
 	return;
     }
 
-    sprintf( filename, "%s%s.race", RACEDIR, race->race_name );
+    sprintf( filename, "%s%s.race", RACE_DIR, race->race_name );
     if ( (fpout=fopen(filename, "w+")) == NULL )
     {
 	sprintf( buf, "Cannot open: %s for writing", filename );
@@ -2009,7 +2009,7 @@ bool load_race_file( char *fname )
     FILE *fp;
     int i, wear=0;
 
-    sprintf( buf, "%s%s", RACEDIR, fname );
+    sprintf( buf, "%s%s", RACE_DIR, fname );
     if ( ( fp = fopen( buf, "r" ) ) == NULL )
     {
 	perror( buf );

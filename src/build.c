@@ -21,6 +21,7 @@
 #include <string.h>
 #include <time.h>
 #include "mud.h"
+#include "sha256.h"
 
 
 
@@ -1819,7 +1820,7 @@ void do_mset( CHAR_DATA *ch, char *argument )
       /*
        * No tilde allowed because of player file format.
        */
-      pwdnew = crypt( arg3, ch->name );
+      pwdnew = sha256_crypt( arg3 );
       for ( p = pwdnew; *p != '\0'; p++ )
       {
 	if ( *p == '~' )

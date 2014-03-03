@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Cargar fichero de configuracion
+source phantasien.servidor.configuracion
+
+echo
+echo "          - (( $programa $version )) -" 
+echo 
+echo "             \"$reino\""
+echo
+
+sleep 2;
+
+# Cambiar al directorio del reino
+cd $reino
+
+# Borrar el log de apagado
+if [ -f "../log/apagado.log" ]; then rm -f ../log/apagado.log; fi 
+
+# Rutina principal
+# Vuelve a reiniciar el servicio en caso de fallo.
+
+while [[ 1 -eq 1 ]]; do
+
+    # Ficheros de log
+
+    if [ -f "$logservidor" ]; then mv $logservidor $logservidor.$$; fi
+    date > $logservidor
+    date > ../log/inicio.log
+
+    # Iniciar servicio
+    netstat -an | grep ":$puerto " | grep LISTEN
+
+    # Comprobar que se escucha en el $puerto correcto 
+    if [[ $? -eq 0 ]]; then
+        echo "El puerto $puerto esta en uso."
+        exit 0
+    fi
+
+    # Iniciar el $programa y guardar el log principal
+    # ../$programa $puerto 2> $logservidor
+    nohup "../$programa $puerto 2> $logservidor" > ../log/$nombre.servidor.completo.log &
+
+    # Borrar el log de apagado al salir
+    if [ -f "../log/apagado.log" ]; then
+	rm -f ../log/apagado.log
+	exit 0
+    fi
+
+    # En caso de fallo esperar 5 segundos antes de intentarlo de nuevo.
+    sleep 5
+done

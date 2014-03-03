@@ -58,7 +58,7 @@ void write_deity_list( )
      fclose(fpReserve);
      fpout = fopen( filename, "w" );
      if ( !fpout )
-	bug( "FATAL: no se puede leer deity.lst para escribir!\n\r", 0 );
+	bug( "FATAL: cannot open deity.lst for writing!\n\r", 0 );
      else
      {
        for ( tdeity = first_deity; tdeity; tdeity = tdeity->next )
@@ -341,7 +341,7 @@ void load_deity( )
     first_deity = NULL;
     last_deity  = NULL;
 
-    log_string( "Cargando dioses ..." );
+    log_string( "Loading deities..." );
 
     sprintf( deitylist, "%s%s", DEITY_DIR, DEITY_LIST );
     if ( ( fpList = fopen ( deitylist, "r" ) ) == NULL )
@@ -426,7 +426,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
     deity = get_deity( arg1 );
     if ( !deity )
     {
- 	send_to_char( "No existe esa deidad.\n\r", ch );
+ 	send_to_char( "No such deity.\n\r", ch );
 	return;
     }
 
@@ -434,7 +434,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
     {
 	STRFREE( deity->name );
 	deity->name = STRALLOC( argument );
-	send_to_char( "Hecho.\n\r", ch );
+	send_to_char( "Done.\n\r", ch );
 	save_deity( deity );
 	return;
     }
@@ -443,7 +443,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
     {
 	DISPOSE( deity->filename );
 	deity->filename = str_dup( argument );
-	send_to_char( "Hecho.\n\r", ch );
+	send_to_char( "Done.\n\r", ch );
 	save_deity( deity );
 	write_deity_list( );
 	return;
@@ -464,7 +464,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg2, "alignment" ) )
     {
 	deity->alignment = atoi( argument );
-	send_to_char( "Hecho.\n\r", ch );
+	send_to_char( "Done.\n\r", ch );
 	save_deity( deity );
 	return;
     }
@@ -472,7 +472,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg2, "flee" ) )
     {
 	deity->flee = atoi( argument );
-	send_to_char( "Hecho.\n\r", ch );
+	send_to_char( "Done.\n\r", ch );
 	save_deity( deity );
 	return;
     }
@@ -480,7 +480,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg2, "flee_npcrace" ) )
     {
         deity->flee_npcrace = atoi( argument );
-        send_to_char( "Hecho.\n\r", ch );
+        send_to_char( "Done.\n\r", ch );
         save_deity( deity );
         return;
     }
@@ -488,7 +488,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg2, "flee_npcfoe" ) )
     {
 	deity->flee_npcfoe = atoi( argument );
-	send_to_char( "Hecho.\n\r", ch );
+	send_to_char( "Done.\n\r", ch );
 	save_deity( deity );
 	return;
     }
@@ -496,7 +496,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg2, "kill" ) )
     {
         deity->kill = atoi( argument );
-        send_to_char( "Hecho.\n\r", ch );
+        send_to_char( "Done.\n\r", ch );
         save_deity( deity );
         return;
     }
@@ -504,7 +504,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg2, "kill_npcrace" ) )
     {
         deity->kill_npcrace = atoi( argument );
-        send_to_char( "Hecho.\n\r", ch );
+        send_to_char( "Done.\n\r", ch );
         save_deity( deity );
         return;
     }
@@ -512,7 +512,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg2, "kill_npcfoe" ) )
     {
 	deity->kill_npcfoe = atoi( argument );
-	send_to_char( "Hecho.\n\r", ch );
+	send_to_char( "Done.\n\r", ch );
 	save_deity( deity );
 	return;
     }

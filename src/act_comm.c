@@ -15,7 +15,6 @@
  *			   Player communication module			    *
  ****************************************************************************/
 
-
 #include <sys/types.h>
 #include <ctype.h>
 #include <stdio.h>

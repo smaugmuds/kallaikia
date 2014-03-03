@@ -1,9 +1,9 @@
-vampiro.gui
-druida.gui
-guerrero.gui
+vampire.gui
+druid.gui
+warrior.gui
 augurer.gui
-ladron.gui
-clerigo.gui
-mago.gui
-asesino.gui
+thief.gui
+cleric.gui
+mage.gui
+ranger.gui
 $

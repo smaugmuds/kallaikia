@@ -23,6 +23,7 @@
 #include <time.h>
 #include <sys/stat.h>
 #include "mud.h"
+#include "sha256.h"
 
 
 /* Had to add unknowns because someone added new positions and didn't
@@ -4552,15 +4553,14 @@ void do_password( CHAR_DATA *ch, char *argument )
     char arg1[MAX_INPUT_LENGTH];
     char arg2[MAX_INPUT_LENGTH];
     char log_buf[MAX_STRING_LENGTH];
-  /*char *pArg;*/
+    char *pArg;
     char *pwdnew;
     char *p;
-  /*char cEnd;*/
+    char cEnd;
 
     if ( IS_NPC(ch) )
 	return;
 
-#if 0
     /*
      * Can't use one_argument here because it smashes case.
      * So we just steal all its code.  Bleagh.
@@ -4602,7 +4602,6 @@ void do_password( CHAR_DATA *ch, char *argument )
 	*pArg++ = *argument++;
     }
     *pArg = '\0';
-#endif
 
     argument = case_argument( argument, arg1 );
     argument = case_argument( argument, arg2 );
@@ -4639,7 +4638,7 @@ void do_password( CHAR_DATA *ch, char *argument )
     /*
      * No tilde allowed because of player file format.
      */
-    pwdnew = crypt( arg2, ch->name );
+    pwdnew = sha256_crypt( arg2 );
     for ( p = pwdnew; *p != '\0'; p++ )
     {
 	if ( *p == '~' )

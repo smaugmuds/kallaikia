@@ -21,6 +21,7 @@
 #include <string.h>
 #include <time.h>
 #include "mud.h"
+#include "sha256.h"
 
 
 /*
@@ -31,7 +32,7 @@ char *tiny_affect_loc_name(int location);
 void do_gold(CHAR_DATA * ch, char *argument)
 {
    set_char_color( AT_GOLD, ch );
-   ch_printf( ch,  "Tienes %s piezas de oro.\n\r", num_punct(ch->gold) );
+   ch_printf( ch,  "You have %s gold pieces.\n\r", num_punct(ch->gold) );
    return;
 }
 
@@ -63,7 +64,7 @@ void do_worth(CHAR_DATA *ch, char *argument)
       return;
 
     set_pager_color(AT_GREEN, ch);
-    pager_printf_color(ch, "\n\r&GValor para &w%s&G%s.\n\r", ch->name, ch->pcdata->title);
+    pager_printf_color(ch, "\n\r&GWorth for &w%s&G%s.\n\r", ch->name, ch->pcdata->title);
     send_to_pager_color(" &g----------------------------------------------------------------------------\n\r", ch);
     if (!ch->pcdata->deity)		 sprintf( buf, "N/A" );
     else if (ch->pcdata->favor > 2250)	 sprintf( buf, "loved" );
@@ -98,7 +99,7 @@ void do_worth(CHAR_DATA *ch, char *argument)
     }
     else
 	sprintf(buf2, "%d", ch->alignment );
-    pager_printf_color(ch, "&g|&GNivel: &w%-4d &g|&GFavor: &w%-10s &g|&GAlineado: &w%-9s &g|&GExperiencia: &w%-9d&g|\n\r", 
+    pager_printf_color(ch, "&g|&GLevel: &w%-4d &g|&GFavor: &w%-10s &g|&GAlignment: &w%-9s &g|&GExperience: &w%-9d&g|\n\r", 
                      ch->level, buf, buf2, ch->exp );
     send_to_pager_color("&g ----------------------------------------------------------------------------\n\r", ch);
         switch (ch->style) {
@@ -119,13 +120,13 @@ void do_worth(CHAR_DATA *ch, char *argument)
                 break;
         }
     pager_printf_color
-(ch, "&g|&GGloria: &w%-4d &g|&GPeso: &w%-9d &g|&GEstilo: &w%-13s &g|&GOro: &w%-14s &g|\n\r",
+(ch, "&g|&GGlory: &w%-4d &g|&GWeight: &w%-9d &g|&GStyle: &w%-13s &g|&GGold: &w%-14s &g|\n\r",
                  ch->pcdata->quest_curr, ch->carry_weight, buf, num_punct(ch->gold) );
     send_to_pager_color("&g ----------------------------------------------------------------------------\n\r", ch);
     if ( ch->level < 15 && !IS_PKILL(ch) )
     	pager_printf_color(ch, "&g|            |&GHitroll: &g-------- |&GDamroll: &g----------- |                     |\n\r" );
 	else if ( ch -> level >= 50 )
-		pager_printf_color(ch, "&g|&GHonor: &w%-3d &g|&GRango: &w%-11s &g|&GHitroll: &w%-11d &g|&GDamroll: &w%-11d &g|\n\r", 
+		pager_printf_color(ch, "&g|&GHonour: &w%-3d &g|&GRank: &w%-11s &g|&GHitroll: &w%-11d &g|&GDamroll: &w%-11d &g|\n\r", 
 		ch->pcdata->honour, 
 		get_honour ( ch ), 
 		GET_HITROLL(ch), GET_DAMROLL(ch) );
@@ -154,33 +155,33 @@ void do_score(CHAR_DATA * ch, char *argument)
     }
     set_pager_color(AT_SCORE, ch);
 
-    pager_printf(ch, "\n\rPuntuacion para %s%s.\n\r", ch->name, ch->pcdata->title);
+    pager_printf(ch, "\n\rScore for %s%s.\n\r", ch->name, ch->pcdata->title);
     if ( get_trust( ch ) != ch->level )
-	pager_printf( ch, "Eres venerado en nivel %d.\n\r", get_trust( ch ) );
+	pager_printf( ch, "You are trusted at level %d.\n\r", get_trust( ch ) );
     
     send_to_pager("----------------------------------------------------------------------------\n\r", ch);
 
-    pager_printf(ch, "NIVEL: %-3d         Raza : %-10.10s        Jugado: %d horas\n\r",
+    pager_printf(ch, "LEVEL: %-3d         Race : %-10.10s        Played: %d hours\n\r",
 	ch->level, capitalize(get_race(ch)), (get_age(ch) - 17) * 2);
 
-    pager_printf(ch, "ANHOS: %-6d      Clase: %-11.11s       Log In: %s\r",
+    pager_printf(ch, "YEARS: %-6d      Class: %-11.11s       Log In: %s\r",
 		get_age(ch), capitalize(get_class(ch)), ctime(&(ch->logon)) );
 
     if (ch->level >= 15
     ||  IS_PKILL( ch ) )
     {
-	pager_printf(ch, "FUE  : %2.2d(%2.2d)      HitRoll: %-4d            Guardado:  %s\r",
-		get_curr_str(ch), ch->perm_str, GET_HITROLL(ch), ch->save_time ? ctime(&(ch->save_time)) : "no guardar esta sesion\n" );
+	pager_printf(ch, "STR  : %2.2d(%2.2d)      HitRoll: %-4d            Saved:  %s\r",
+		get_curr_str(ch), ch->perm_str, GET_HITROLL(ch), ch->save_time ? ctime(&(ch->save_time)) : "no save this session\n" );
 
-	pager_printf(ch, "INT  : %2.2d(%2.2d)      DamRoll: %-4d            Tiempo:   %s\r",
+	pager_printf(ch, "INT  : %2.2d(%2.2d)      DamRoll: %-4d            Time:   %s\r",
 		get_curr_int(ch), ch->perm_int, GET_DAMROLL(ch), ctime(&current_time) );
     }
     else
     {
-	pager_printf(ch, "FUE  : %2.2d(%2.2d)                               Guardado:  %s\r",
+	pager_printf(ch, "STR  : %2.2d(%2.2d)                               Saved:  %s\r",
 		get_curr_str(ch), ch->perm_str, ch->save_time ? ctime(&(ch->save_time)) : "no\n" );
 
-	pager_printf(ch, "INT  : %2.2d(%2.2d)                               Tiempo:   %s\r",
+	pager_printf(ch, "INT  : %2.2d(%2.2d)                               Time:   %s\r",
 		get_curr_int(ch), ch->perm_int, ctime(&current_time) );
     }
 
@@ -215,10 +216,10 @@ void do_score(CHAR_DATA * ch, char *argument)
     else
 	sprintf(buf, "that of an avatar");
     if (ch->level > 24)
-	pager_printf(ch, "WIS  : %2.2d(%2.2d)      Armadura: %4.4d, %s\n\r",
+	pager_printf(ch, "WIS  : %2.2d(%2.2d)      Armor: %4.4d, %s\n\r",
 		get_curr_wis(ch), ch->perm_wis, GET_AC(ch), buf);
     else
-	pager_printf(ch, "WIS  : %2.2d(%2.2d)      Armadura: %s \n\r",
+	pager_printf(ch, "WIS  : %2.2d(%2.2d)      Armor: %s \n\r",
 		get_curr_wis(ch), ch->perm_wis, buf);
 
     if (ch->alignment > 900)
@@ -291,7 +292,7 @@ void do_score(CHAR_DATA * ch, char *argument)
 		sprintf(buf, "sitting");
 		break;
     }
-    pager_printf(ch, "CON  : %2.2d(%2.2d)      Pos'n: %-21.21s  Peso: %5.5d (max %7.7d)\n\r",
+    pager_printf(ch, "CON  : %2.2d(%2.2d)      Pos'n: %-21.21s  Weight: %5.5d (max %7.7d)\n\r",
 	get_curr_con(ch), ch->perm_con, buf, ch->carry_weight, can_carry_w(ch));
 
 
@@ -323,14 +324,14 @@ void do_score(CHAR_DATA * ch, char *argument)
         }
     pager_printf(ch, "Style: %-10.10s\n\r", buf);
     if ( ch->level >= 50 )
-	pager_printf(ch, "Honor: %3.3d        Rango: %s\n\r", ch->pcdata->honour, get_honour ( ch ));
+	pager_printf(ch, "Honour: %3.3d        Rank: %s\n\r", ch->pcdata->honour, get_honour ( ch ));
 
 #ifdef SHADDAI
-    pager_printf(ch, "Gloria: %4.4d(%4.4d)  Estancia: %s\n\r",
+    pager_printf(ch, "Glory: %4.4d(%4.4d)  Stance: %s\n\r",
 	ch->pcdata->quest_curr, ch->pcdata->quest_accum,
 	get_stance_name (ch->stance));
 #else
-    pager_printf(ch, "Gloria: %4.4d(%4.4d)\n\r",
+    pager_printf(ch, "Glory: %4.4d(%4.4d)\n\r",
 	ch->pcdata->quest_curr, ch->pcdata->quest_accum);
 #endif
 
@@ -340,7 +341,7 @@ void do_score(CHAR_DATA * ch, char *argument)
 	ch->pcdata->pagerlen, xIS_SET(ch->act, PLR_AUTOEXIT) ? 'X' : ' ');
 
     if (IS_VAMPIRE(ch))
-	pager_printf(ch, "XP   : %-9d       Sangre: %-5d of %5d   MKills:  %-5.5d    AutoLoot(%c)\n\r",
+	pager_printf(ch, "XP   : %-9d       Blood: %-5d of %5d   MKills:  %-5.5d    AutoLoot(%c)\n\r",
 		ch->exp, ch->pcdata->condition[COND_BLOODTHIRST], 10 + ch->level, ch->pcdata->mkills,
 		xIS_SET(ch->act, PLR_AUTOLOOT) ? 'X' : ' ');
     else if (ch->class == CLASS_WARRIOR)
@@ -350,39 +351,39 @@ void do_score(CHAR_DATA * ch, char *argument)
 	pager_printf(ch, "XP   : %-9d        Mana: %-5d of %5d   MKills:  %-5.5d    AutoLoot(%c)\n\r",
 		ch->exp, ch->mana, ch->max_mana, ch->pcdata->mkills, xIS_SET(ch->act, PLR_AUTOLOOT) ? 'X' : ' ');
 
-    pager_printf(ch, "Oro : %-13s    Movimiento: %-5d of %5d   Mdeaths: %-5.5d    AutoSac (%c)\n\r",
+    pager_printf(ch, "GOLD : %-13s    Move: %-5d of %5d   Mdeaths: %-5.5d    AutoSac (%c)\n\r",
 	num_punct(ch->gold), ch->move, ch->max_move, ch->pcdata->mdeaths, xIS_SET(ch->act, PLR_AUTOSAC) ? 'X' : ' ');
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_DRUNK] > 10)
-	send_to_pager("Estas borracho.\n\r", ch);
+	send_to_pager("You are drunk.\n\r", ch);
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_THIRST] == 0)
-	send_to_pager("Estas en riesgo de deshidratacion.\n\r", ch);
+	send_to_pager("You are in danger of dehydrating.\n\r", ch);
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_FULL] == 0)
-	send_to_pager("La muerte te ronda desconsideradamente.\n\r", ch);
+	send_to_pager("You are starving to death.\n\r", ch);
     if ( ch->position != POS_SLEEPING )
 	switch( ch->mental_state / 10 )
 	{
-	    default:   send_to_pager( "Estas muy jodido!\n\r", ch );	break;
-	    case -10:  send_to_pager( "Estas casi consciente.\n\r", ch );	break;
-	    case  -9:  send_to_pager( "Casi puedes mantener tus ojos abiertos.\n\r", ch );	break;
-	    case  -8:  send_to_pager( "Estas muy triste.\n\r", ch );	break;
-	    case  -7:  send_to_pager( "Te sientes muy desmotivado.\n\r", ch );	break;
-	    case  -6:  send_to_pager( "Te sientes sedado.\n\r", ch );		break;
-	    case  -5:  send_to_pager( "Tienes suenho.\n\r", ch );		break;
-	    case  -4:  send_to_pager( "Estas cansado.\n\r", ch );		break;
-	    case  -3:  send_to_pager( "Deberias descansar.\n\r", ch );		break;
-	    case  -2:  send_to_pager( "Te sientes hecho una mierda.\n\r", ch );	break;
-	    case  -1:  send_to_pager( "Te sientes bien.\n\r", ch );		break;
-	    case   0:  send_to_pager( "Te sientes satisfecho.\n\r", ch );		break;
-	    case   1:  send_to_pager( "Te sientes energetico.\n\r", ch );	break;
-	    case   2:  send_to_pager( "Tu cabeza esta que hecha humo.\n\r", ch );	break;
-	    case   3:  send_to_pager( "No puedes pensar correctamente.\n\r", ch );	break;
-	    case   4:  send_to_pager( "Tu cabeza va a 1000 por hora.\n\r", ch );	break;
-	    case   5:  send_to_pager( "Eres grande como un mundo.\n\r", ch );	break;
-	    case   6:  send_to_pager( "Tu cuerpo y tu mente estan durmiento separados.\n\r", ch );	break;
-	    case   7:  send_to_pager( "La realidad se desvanece.\n\r", ch );	break;
-	    case   8:  send_to_pager( "Ya no distingues la realidad de la fantasia.\n\r", ch );	break;
-	    case   9:  send_to_pager( "Te sientes inmortal.\n\r", ch );	break;
-	    case  10:  send_to_pager( "Eres una entidad Suprema.\n\r", ch );	break;
+	    default:   send_to_pager( "You're completely messed up!\n\r", ch );	break;
+	    case -10:  send_to_pager( "You're barely conscious.\n\r", ch );	break;
+	    case  -9:  send_to_pager( "You can barely keep your eyes open.\n\r", ch );	break;
+	    case  -8:  send_to_pager( "You're extremely drowsy.\n\r", ch );	break;
+	    case  -7:  send_to_pager( "You feel very unmotivated.\n\r", ch );	break;
+	    case  -6:  send_to_pager( "You feel sedated.\n\r", ch );		break;
+	    case  -5:  send_to_pager( "You feel sleepy.\n\r", ch );		break;
+	    case  -4:  send_to_pager( "You feel tired.\n\r", ch );		break;
+	    case  -3:  send_to_pager( "You could use a rest.\n\r", ch );		break;
+	    case  -2:  send_to_pager( "You feel a little under the weather.\n\r", ch );	break;
+	    case  -1:  send_to_pager( "You feel fine.\n\r", ch );		break;
+	    case   0:  send_to_pager( "You feel great.\n\r", ch );		break;
+	    case   1:  send_to_pager( "You feel energetic.\n\r", ch );	break;
+	    case   2:  send_to_pager( "Your mind is racing.\n\r", ch );	break;
+	    case   3:  send_to_pager( "You can't think straight.\n\r", ch );	break;
+	    case   4:  send_to_pager( "Your mind is going 100 miles an hour.\n\r", ch );	break;
+	    case   5:  send_to_pager( "You're high as a kite.\n\r", ch );	break;
+	    case   6:  send_to_pager( "Your mind and body are slipping apart.\n\r", ch );	break;
+	    case   7:  send_to_pager( "Reality is slipping away.\n\r", ch );	break;
+	    case   8:  send_to_pager( "You have no idea what is real, and what is not.\n\r", ch );	break;
+	    case   9:  send_to_pager( "You feel immortal.\n\r", ch );	break;
+	    case  10:  send_to_pager( "You are a Supreme Entity.\n\r", ch );	break;
 	}
     else
     if ( ch->mental_state >45 )
@@ -710,7 +711,7 @@ void do_cscore(CHAR_DATA * ch, char *argument)
 
     pager_printf_color(ch, "\n\r&GScore for %s%s.\n\r", ch->name, ch->pcdata->title);
     if ( get_trust( ch ) != ch->level )
-	pager_printf_color( ch, "&GEres venerado en nivel &Y%d.\n\r", get_trust( ch ) );
+	pager_printf_color( ch, "&GYou are trusted at level &Y%d.\n\r", get_trust( ch ) );
     
     send_to_pager_color("&g----------------------------------------------------------------------------\n\r", ch);
 
@@ -909,36 +910,36 @@ void do_cscore(CHAR_DATA * ch, char *argument)
 
     set_char_color( AT_GREEN, ch );
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_DRUNK] > 10)
-        send_to_pager("Estas borracho.\n\r", ch);
+	send_to_pager("You are drunk.\n\r", ch);
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_THIRST] == 0)
-        send_to_pager("Estas en riesgo de deshidratacion.\n\r", ch);
+	send_to_pager("You are in danger of dehydrating.\n\r", ch);
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_FULL] == 0)
-        send_to_pager("La muerte te ronda desconsideradamente.\n\r", ch);
+	send_to_pager("You are starving to death.\n\r", ch);
     if ( ch->position != POS_SLEEPING )
-        switch( ch->mental_state / 10 )
-        {
-            default:   send_to_pager( "Estas muy jodido!\n\r", ch );    break;
-            case -10:  send_to_pager( "Estas casi consciente.\n\r", ch );       break;
-            case  -9:  send_to_pager( "Casi puedes mantener tus ojos abiertos.\n\r", ch );      break;
-            case  -8:  send_to_pager( "Estas muy triste.\n\r", ch );    break;
-            case  -7:  send_to_pager( "Te sientes muy desmotivado.\n\r", ch );  break;
-            case  -6:  send_to_pager( "Te sientes sedado.\n\r", ch );           break;
-            case  -5:  send_to_pager( "Tienes suenho.\n\r", ch );               break;
-            case  -4:  send_to_pager( "Estas cansado.\n\r", ch );               break;
-            case  -3:  send_to_pager( "Deberias descansar.\n\r", ch );          break;
-            case  -2:  send_to_pager( "Te sientes hecho una mierda.\n\r", ch ); break;
-            case  -1:  send_to_pager( "Te sientes bien.\n\r", ch );             break;
-            case   0:  send_to_pager( "Te sientes satisfecho.\n\r", ch );               break;
-            case   1:  send_to_pager( "Te sientes energetico.\n\r", ch );       break;
-            case   2:  send_to_pager( "Tu cabeza esta que hecha humo.\n\r", ch );       break;
-            case   3:  send_to_pager( "No puedes pensar correctamente.\n\r", ch );      break;
-            case   4:  send_to_pager( "Tu cabeza va a 1000 por hora.\n\r", ch );        break;
-            case   5:  send_to_pager( "Eres grande como un mundo.\n\r", ch );   break;
-            case   6:  send_to_pager( "Tu cuerpo y tu mente estan durmiento separados.\n\r", ch );      break;
-            case   7:  send_to_pager( "La realidad se desvanece.\n\r", ch );    break;
-            case   8:  send_to_pager( "Ya no distingues la realidad de la fantasia.\n\r", ch ); break;
-            case   9:  send_to_pager( "Te sientes inmortal.\n\r", ch ); break;
-            case  10:  send_to_pager( "Eres una entidad Suprema.\n\r", ch );    break;
+	switch( ch->mental_state / 10 )
+	{
+	    default:   send_to_pager( "You're completely messed up!\n\r", ch );	break;
+	    case -10:  send_to_pager( "You're barely conscious.\n\r", ch );	break;
+	    case  -9:  send_to_pager( "You can barely keep your eyes open.\n\r", ch );	break;
+	    case  -8:  send_to_pager( "You're extremely drowsy.\n\r", ch );	break;
+	    case  -7:  send_to_pager( "You feel very unmotivated.\n\r", ch );	break;
+	    case  -6:  send_to_pager( "You feel sedated.\n\r", ch );		break;
+	    case  -5:  send_to_pager( "You feel sleepy.\n\r", ch );		break;
+	    case  -4:  send_to_pager( "You feel tired.\n\r", ch );		break;
+	    case  -3:  send_to_pager( "You could use a rest.\n\r", ch );		break;
+	    case  -2:  send_to_pager( "You feel a little under the weather.\n\r", ch );	break;
+	    case  -1:  send_to_pager( "You feel fine.\n\r", ch );		break;
+	    case   0:  send_to_pager( "You feel great.\n\r", ch );		break;
+	    case   1:  send_to_pager( "You feel energetic.\n\r", ch );	break;
+	    case   2:  send_to_pager( "Your mind is racing.\n\r", ch );	break;
+	    case   3:  send_to_pager( "You can't think straight.\n\r", ch );	break;
+	    case   4:  send_to_pager( "Your mind is going 100 miles an hour.\n\r", ch );	break;
+	    case   5:  send_to_pager( "You're high as a kite.\n\r", ch );	break;
+	    case   6:  send_to_pager( "Your mind and body are slipping apart.\n\r", ch );	break;
+	    case   7:  send_to_pager( "Reality is slipping away.\n\r", ch );	break;
+	    case   8:  send_to_pager( "You have no idea what is real, and what is not.\n\r", ch );	break;
+	    case   9:  send_to_pager( "You feel immortal.\n\r", ch );	break;
+	    case  10:  send_to_pager( "You are a Supreme Entity.\n\r", ch );	break;
 	}
     else
     if ( ch->mental_state >45 )
@@ -1143,7 +1144,7 @@ void do_newscore(CHAR_DATA * ch, char *argument)
 
     pager_printf_color(ch, "\n\r&G%s%s.\n\r", ch->name, ch->pcdata->title);
     if ( get_trust( ch ) != ch->level )
-	pager_printf( ch, "Eres venerado en nivel %d.\n\r", get_trust( ch ) );
+	pager_printf( ch, "You are trusted at level %d.\n\r", get_trust( ch ) );
     
     send_to_pager_color("&g----------------------------------------------------------------------------\n\r", ch);
 
@@ -1330,36 +1331,36 @@ void do_newscore(CHAR_DATA * ch, char *argument)
 	num_punct(ch->gold), ch->move, ch->max_move, ch->pcdata->mdeaths, xIS_SET(ch->act, PLR_AUTOSAC) ? 'X' : ' ');
 
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_DRUNK] > 10)
-        send_to_pager("Estas borracho.\n\r", ch);
+	send_to_pager("You are drunk.\n\r", ch);
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_THIRST] == 0)
-        send_to_pager("Estas en riesgo de deshidratacion.\n\r", ch);
+	send_to_pager("You are in danger of dehydrating.\n\r", ch);
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_FULL] == 0)
-        send_to_pager("La muerte te ronda desconsideradamente.\n\r", ch);
+	send_to_pager("You are starving to death.\n\r", ch);
     if ( ch->position != POS_SLEEPING )
-        switch( ch->mental_state / 10 )
-        {
-            default:   send_to_pager( "Estas muy jodido!\n\r", ch );    break;
-            case -10:  send_to_pager( "Estas casi consciente.\n\r", ch );       break;
-            case  -9:  send_to_pager( "Casi puedes mantener tus ojos abiertos.\n\r", ch );      break;
-            case  -8:  send_to_pager( "Estas muy triste.\n\r", ch );    break;
-            case  -7:  send_to_pager( "Te sientes muy desmotivado.\n\r", ch );  break;
-            case  -6:  send_to_pager( "Te sientes sedado.\n\r", ch );           break;
-            case  -5:  send_to_pager( "Tienes suenho.\n\r", ch );               break;
-            case  -4:  send_to_pager( "Estas cansado.\n\r", ch );               break;
-            case  -3:  send_to_pager( "Deberias descansar.\n\r", ch );          break;
-            case  -2:  send_to_pager( "Te sientes hecho una mierda.\n\r", ch ); break;
-            case  -1:  send_to_pager( "Te sientes bien.\n\r", ch );             break;
-            case   0:  send_to_pager( "Te sientes satisfecho.\n\r", ch );               break;
-            case   1:  send_to_pager( "Te sientes energetico.\n\r", ch );       break;
-            case   2:  send_to_pager( "Tu cabeza esta que hecha humo.\n\r", ch );       break;
-            case   3:  send_to_pager( "No puedes pensar correctamente.\n\r", ch );      break;
-            case   4:  send_to_pager( "Tu cabeza va a 1000 por hora.\n\r", ch );        break;
-            case   5:  send_to_pager( "Eres grande como un mundo.\n\r", ch );   break;
-            case   6:  send_to_pager( "Tu cuerpo y tu mente estan durmiento separados.\n\r", ch );      break;
-            case   7:  send_to_pager( "La realidad se desvanece.\n\r", ch );    break;
-            case   8:  send_to_pager( "Ya no distingues la realidad de la fantasia.\n\r", ch ); break;
-            case   9:  send_to_pager( "Te sientes inmortal.\n\r", ch ); break;
-            case  10:  send_to_pager( "Eres una entidad Suprema.\n\r", ch );    break;
+	switch( ch->mental_state / 10 )
+	{
+	    default:   send_to_pager( "You're completely messed up!\n\r", ch );	break;
+	    case -10:  send_to_pager( "You're barely conscious.\n\r", ch );	break;
+	    case  -9:  send_to_pager( "You can barely keep your eyes open.\n\r", ch );	break;
+	    case  -8:  send_to_pager( "You're extremely drowsy.\n\r", ch );	break;
+	    case  -7:  send_to_pager( "You feel very unmotivated.\n\r", ch );	break;
+	    case  -6:  send_to_pager( "You feel sedated.\n\r", ch );		break;
+	    case  -5:  send_to_pager( "You feel sleepy.\n\r", ch );		break;
+	    case  -4:  send_to_pager( "You feel tired.\n\r", ch );		break;
+	    case  -3:  send_to_pager( "You could use a rest.\n\r", ch );		break;
+	    case  -2:  send_to_pager( "You feel a little under the weather.\n\r", ch );	break;
+	    case  -1:  send_to_pager( "You feel fine.\n\r", ch );		break;
+	    case   0:  send_to_pager( "You feel great.\n\r", ch );		break;
+	    case   1:  send_to_pager( "You feel energetic.\n\r", ch );	break;
+	    case   2:  send_to_pager( "Your mind is racing.\n\r", ch );	break;
+	    case   3:  send_to_pager( "You can't think straight.\n\r", ch );	break;
+	    case   4:  send_to_pager( "Your mind is going 100 miles an hour.\n\r", ch );	break;
+	    case   5:  send_to_pager( "You're high as a kite.\n\r", ch );	break;
+	    case   6:  send_to_pager( "Your mind and body are slipping apart.\n\r", ch );	break;
+	    case   7:  send_to_pager( "Reality is slipping away.\n\r", ch );	break;
+	    case   8:  send_to_pager( "You have no idea what is real, and what is not.\n\r", ch );	break;
+	    case   9:  send_to_pager( "You feel immortal.\n\r", ch );	break;
+	    case  10:  send_to_pager( "You are a Supreme Entity.\n\r", ch );	break;
 	}
     else
     if ( ch->mental_state >45 )
@@ -1653,7 +1654,7 @@ void do_oldscore( CHAR_DATA *ch, char *argument )
 	(get_age(ch) - 17) * 2 );
 
     if ( get_trust( ch ) != ch->level )
-	pager_printf( ch, "Eres venerado en nivel %d.\n\r",
+	pager_printf( ch, "You are trusted at level %d.\n\r",
 	    get_trust( ch ) );
 
     if (  IS_NPC(ch) && xIS_SET(ch->act, ACT_MOBINVIS) )
@@ -1712,67 +1713,67 @@ void do_oldscore( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC(ch) ) {
        if ( ch->pcdata->condition[COND_DRUNK]   > 10 )
-	   send_to_pager( "Estas borracho.\n\r",   ch );
+	   send_to_pager( "You are drunk.\n\r",   ch );
        if ( ch->pcdata->condition[COND_THIRST] ==  0 )
-	   send_to_pager( "Estas sediento.\n\r", ch );
+	   send_to_pager( "You are thirsty.\n\r", ch );
        if ( ch->pcdata->condition[COND_FULL]   ==  0 )
-	   send_to_pager( "Estas hambriento.\n\r",  ch );
+	   send_to_pager( "You are hungry.\n\r",  ch );
     }
 
     switch( ch->mental_state / 10 )
     {
-            default:   send_to_pager( "Estas muy jodido!\n\r", ch );    break;
-            case -10:  send_to_pager( "Estas casi consciente.\n\r", ch );       break;
-            case  -9:  send_to_pager( "Casi puedes mantener tus ojos abiertos.\n\r", ch );      break;
-            case  -8:  send_to_pager( "Estas muy triste.\n\r", ch );    break;
-            case  -7:  send_to_pager( "Te sientes muy desmotivado.\n\r", ch );  break;
-            case  -6:  send_to_pager( "Te sientes sedado.\n\r", ch );           break;
-            case  -5:  send_to_pager( "Tienes suenho.\n\r", ch );               break;
-            case  -4:  send_to_pager( "Estas cansado.\n\r", ch );               break;
-            case  -3:  send_to_pager( "Deberias descansar.\n\r", ch );          break;
-            case  -2:  send_to_pager( "Te sientes hecho una mierda.\n\r", ch ); break;
-            case  -1:  send_to_pager( "Te sientes bien.\n\r", ch );             break;
-            case   0:  send_to_pager( "Te sientes satisfecho.\n\r", ch );               break;
-            case   1:  send_to_pager( "Te sientes energetico.\n\r", ch );       break;
-            case   2:  send_to_pager( "Tu cabeza esta que hecha humo.\n\r", ch );       break;
-            case   3:  send_to_pager( "No puedes pensar correctamente.\n\r", ch );      break;
-            case   4:  send_to_pager( "Tu cabeza va a 1000 por hora.\n\r", ch );        break;
-            case   5:  send_to_pager( "Eres grande como un mundo.\n\r", ch );   break;
-            case   6:  send_to_pager( "Tu cuerpo y tu mente estan durmiento separados.\n\r", ch );      break;
-            case   7:  send_to_pager( "La realidad se desvanece.\n\r", ch );    break;
-            case   8:  send_to_pager( "Ya no distingues la realidad de la fantasia.\n\r", ch ); break;
-            case   9:  send_to_pager( "Te sientes inmortal.\n\r", ch ); break;
-            case  10:  send_to_pager( "Eres una entidad Suprema.\n\r", ch );    break;
+        default:   send_to_pager( "You're completely messed up!\n\r", ch ); break;
+        case -10:  send_to_pager( "You're barely conscious.\n\r", ch ); break;
+        case  -9:  send_to_pager( "You can barely keep your eyes open.\n\r", ch ); break;
+        case  -8:  send_to_pager( "You're extremely drowsy.\n\r", ch ); break;
+        case  -7:  send_to_pager( "You feel very unmotivated.\n\r", ch ); break;
+        case  -6:  send_to_pager( "You feel sedated.\n\r", ch ); break;
+        case  -5:  send_to_pager( "You feel sleepy.\n\r", ch ); break;
+        case  -4:  send_to_pager( "You feel tired.\n\r", ch ); break;
+        case  -3:  send_to_pager( "You could use a rest.\n\r", ch ); break;
+        case  -2:  send_to_pager( "You feel a little under the weather.\n\r", ch ); break;
+        case  -1:  send_to_pager( "You feel fine.\n\r", ch ); break;
+        case   0:  send_to_pager( "You feel great.\n\r", ch ); break;
+        case   1:  send_to_pager( "You feel energetic.\n\r", ch ); break;
+        case   2:  send_to_pager( "Your mind is racing.\n\r", ch ); break;
+        case   3:  send_to_pager( "You can't think straight.\n\r", ch ); break;
+        case   4:  send_to_pager( "Your mind is going 100 miles an hour.\n\r", ch ); break;
+        case   5:  send_to_pager( "You're high as a kite.\n\r", ch ); break;
+        case   6:  send_to_pager( "Your mind and body are slipping appart.\n\r", ch ); break;
+        case   7:  send_to_pager( "Reality is slipping away.\n\r", ch ); break;
+        case   8:  send_to_pager( "You have no idea what is real, and what is not.\n\r", ch ); break;
+        case   9:  send_to_pager( "You feel immortal.\n\r", ch ); break;
+        case  10:  send_to_pager( "You are a Supreme Entity.\n\r", ch ); break;
     }
 
     switch ( ch->position )
     {
     case POS_DEAD:
-	send_to_pager( "Estas MUERTO!!\n\r",		ch );
+	send_to_pager( "You are DEAD!!\n\r",		ch );
 	break;
     case POS_MORTAL:
-	send_to_pager( "Estas mortalmente herido.\n\r",	ch );
+	send_to_pager( "You are mortally wounded.\n\r",	ch );
 	break;
     case POS_INCAP:
-	send_to_pager( "Estas incapacitado.\n\r",	ch );
+	send_to_pager( "You are incapacitated.\n\r",	ch );
 	break;
     case POS_STUNNED:
 	send_to_pager( "You are stunned.\n\r",		ch );
 	break;
     case POS_SLEEPING:
-	send_to_pager( "Estas durmiendo.\n\r",		ch );
+	send_to_pager( "You are sleeping.\n\r",		ch );
 	break;
     case POS_RESTING:
-	send_to_pager( "Estas descansando.\n\r",		ch );
+	send_to_pager( "You are resting.\n\r",		ch );
 	break;
     case POS_STANDING:
-	send_to_pager( "Estas esperando de pie.\n\r",		ch );
+	send_to_pager( "You are standing.\n\r",		ch );
 	break;
     case POS_FIGHTING:
-	send_to_pager( "Estas luchando.\n\r",		ch );
+	send_to_pager( "You are fighting.\n\r",		ch );
 	break;
     case POS_MOUNTED:
-	send_to_pager( "Montado.\n\r",			ch );
+	send_to_pager( "Mounted.\n\r",			ch );
 	break;
     case POS_SHOVE:
 	send_to_pager( "Being shoved.\n\r",		ch );
@@ -1785,20 +1786,20 @@ void do_oldscore( CHAR_DATA *ch, char *argument )
     if ( ch->level >= 25 )
 	pager_printf( ch, "AC: %d.  ", GET_AC(ch) );
 
-    send_to_pager( "Estas ", ch );
-	 if ( GET_AC(ch) >=  101 ) send_to_pager( "MUCHO PEOR que en pelotas!\n\r", ch );
-    else if ( GET_AC(ch) >=   80 ) send_to_pager( "en pelotas.\n\r",            ch );
-    else if ( GET_AC(ch) >=   60 ) send_to_pager( "vistiendo algo de ropa.\n\r",  ch );
-    else if ( GET_AC(ch) >=   40 ) send_to_pager( "vistiendo armadura muy ligera.\n\r", ch );
-    else if ( GET_AC(ch) >=   20 ) send_to_pager( "visitiendo algo parecido a una armadura.\n\r", ch );
-    else if ( GET_AC(ch) >=    0 ) send_to_pager( "vistiendo una armadura.\n\r",          ch );
-    else if ( GET_AC(ch) >= - 20 ) send_to_pager( "vistiendo una armadura buena.\n\r",     ch );
-    else if ( GET_AC(ch) >= - 40 ) send_to_pager( "vistiendo una armadura fuerte.\n\r", ch );
-    else if ( GET_AC(ch) >= - 60 ) send_to_pager( "vistiendo una armadura pesada.\n\r",  ch );
-    else if ( GET_AC(ch) >= - 80 ) send_to_pager( "vistiendo una armadura sublime.\n\r", ch );
-    else if ( GET_AC(ch) >= -100 ) send_to_pager( "vistiendo una armadura divina.\n\r", 
+    send_to_pager( "You are ", ch );
+	 if ( GET_AC(ch) >=  101 ) send_to_pager( "WORSE than naked!\n\r", ch );
+    else if ( GET_AC(ch) >=   80 ) send_to_pager( "naked.\n\r",            ch );
+    else if ( GET_AC(ch) >=   60 ) send_to_pager( "wearing clothes.\n\r",  ch );
+    else if ( GET_AC(ch) >=   40 ) send_to_pager( "slightly armored.\n\r", ch );
+    else if ( GET_AC(ch) >=   20 ) send_to_pager( "somewhat armored.\n\r", ch );
+    else if ( GET_AC(ch) >=    0 ) send_to_pager( "armored.\n\r",          ch );
+    else if ( GET_AC(ch) >= - 20 ) send_to_pager( "well armored.\n\r",     ch );
+    else if ( GET_AC(ch) >= - 40 ) send_to_pager( "strongly armored.\n\r", ch );
+    else if ( GET_AC(ch) >= - 60 ) send_to_pager( "heavily armored.\n\r",  ch );
+    else if ( GET_AC(ch) >= - 80 ) send_to_pager( "superbly armored.\n\r", ch );
+    else if ( GET_AC(ch) >= -100 ) send_to_pager( "divinely armored.\n\r", 
 ch );
-    else                           send_to_pager( "invencible!\n\r",       ch );
+    else                           send_to_pager( "invincible!\n\r",       ch );
 
     if ( ch->level >= 15
     ||   IS_PKILL( ch ) )
@@ -1824,7 +1825,7 @@ ch );
 
     if ( ch->first_affect )
     {
-	send_to_pager( "Estas afectado por:\n\r", ch );
+	send_to_pager( "You are affected by:\n\r", ch );
 	for ( paf = ch->first_affect; paf; paf = paf->next )
 	    if ( (skill=get_skilltype(paf->type)) != NULL )
 	{
@@ -1875,9 +1876,9 @@ void do_level( CHAR_DATA *ch, char *argument )
       lowlvl = UMAX( 2, ch->level - 5 );
     hilvl = URANGE( ch->level, ch->level + 5, MAX_LEVEL );
     set_char_color( AT_GREEN, ch );
-    ch_printf_color( ch, "\n\r&GExperiencia requerida, niveles &W%d &Ghasta &W%d&G:\n\r&g______________________________________________\n\r\n\r", lowlvl, hilvl );
-    sprintf( buf, "&W exp  (Actual: %12s)", num_punct(ch->exp) );
-    sprintf( buf2,"&W exp  (Necesario:  &G%12s&W)", num_punct( exp_level(ch, ch->level+1) - ch->exp) );
+    ch_printf_color( ch, "\n\r&GExperience required, levels &W%d &Gto &W%d&G:\n\r&g______________________________________________\n\r\n\r", lowlvl, hilvl );
+    sprintf( buf, "&W exp  (Current: %12s)", num_punct(ch->exp) );
+    sprintf( buf2,"&W exp  (Needed:  &G%12s&W)", num_punct( exp_level(ch, ch->level+1) - ch->exp) );
     for ( x = lowlvl; x <= hilvl; x++ )
 	ch_printf_color( ch, "&G (&W%2d&G) &W%12s%s\n\r", x, num_punct( exp_level( ch, x ) ),
 		(x == ch->level) ? buf : (x == ch->level+1) ? buf2 : " exp" );
@@ -2443,7 +2444,7 @@ void do_delete_char(CHAR_DATA * ch, char *argument)
 	return;
   }
 
-  if ( strcmp( crypt( arg, ch->pcdata->pwd ), ch->pcdata->pwd ) )
+  if ( strcmp( sha256_crypt( arg ), ch->pcdata->pwd ) )
   {
 	send_to_char ( "Incorrect password.\n\r", ch );
 	return;

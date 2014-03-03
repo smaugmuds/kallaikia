@@ -36,15 +36,6 @@
  */
 #define ADDED_ROOM_HOUSING_AREA "houses.are"
 
-/* Location of housing directory */
-#define HOUSE_DIR             "../houses/"
-/* Location of housing list for loadup of houses */
-#define HOUSE_LIST            "house.lst" 
-/* Location of automated housing auction file */
-#define HOMEBUY_FILE          HOUSE_DIR "homebuy.dat"
-/* Location of house accessories file */
-#define ACCESSORIES_FILE      HOUSE_DIR "homeaccessories.dat"
-
 /* Minimum amount a house may go up on auction for */
 #define MIN_HOUSE_BID 5000000
 /* Minimum amount an apartment may go up on auction for */

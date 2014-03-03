@@ -166,6 +166,7 @@ typedef	struct	lang_data		LANG_DATA;
 typedef struct  vault_data              VAULT_DATA;    
 typedef struct	member_data		MEMBER_DATA;
 typedef struct	member_list		MEMBER_LIST;
+typedef struct  game_board_data 	GAME_BOARD_DATA;
 typedef	struct	variable_data		VARIABLE_DATA;
 typedef struct  lmsg_data		LMSG_DATA;
 
@@ -1907,7 +1908,7 @@ typedef enum
   ITEM_NONE, ITEM_LIGHT, ITEM_SCROLL, ITEM_WAND, ITEM_STAFF, ITEM_WEAPON,
   ITEM_FIREWEAPON, ITEM_MISSILE, ITEM_TREASURE, ITEM_ARMOR, ITEM_POTION,
   ITEM_WORN, ITEM_FURNITURE, ITEM_TRASH, ITEM_OLDTRAP, ITEM_CONTAINER,
-  ITEM_NOTE, ITEM_DRINK_CON, ITEM_KEY, ITEM_FOOD, ITEM_MONEY, ITEM_PEN,
+  ITEM_NOTE, ITEM_DRINK_CON, ITEM_DRINK_MIX, ITEM_KEY, ITEM_FOOD, ITEM_MONEY, ITEM_PEN,
   ITEM_BOAT, ITEM_CORPSE_NPC, ITEM_CORPSE_PC, ITEM_FOUNTAIN, ITEM_PILL,
   ITEM_BLOOD, ITEM_BLOODSTAIN, ITEM_SCRAPS, ITEM_PIPE, ITEM_HERB_CON,
   ITEM_HERB, ITEM_INCENSE, ITEM_FIRE, ITEM_BOOK, ITEM_SWITCH, ITEM_LEVER,
@@ -2645,6 +2646,9 @@ struct	pc_data
     int			illegal_pk;	/* Number of illegal pk's committed   */
     int			bet_amt;
     long int            outcast_time;	/* The time at which the char was outcast */
+
+    GAME_BOARD_DATA     *game_board;        /* Tablero de juego de Ajedrez de Pĥantasien */
+
     NUISANCE_DATA       *nuisance;       /* New Nuisance structure */
 
     long int            restore_time;	/* The last time the char did a restore all */
@@ -4779,6 +4783,9 @@ char *	crypt		args( ( const char *key, const char *salt ) );
  *   so players can go ahead and telnet to all the other descriptors.
  * Then we close it whenever we need to open a file (e.g. a save file).
  */
+
+/* DIRECTORIOS */
+
 #define PLAYER_DIR	"../player/"	/* Player files			*/
 #define BACKUP_DIR	"../player/backup/" /* Backup Player files	*/
 #define GOD_DIR		"../gods/"	/* God Info Dir			*/
@@ -4788,23 +4795,28 @@ char *	crypt		args( ( const char *key, const char *salt ) );
 #define DEITY_DIR	"../deity/"	/* Deity data dir		*/
 #define BUILD_DIR       "../building/"  /* Online building save dir     */
 #define SYSTEM_DIR	"../system/"	/* Main system files		*/
-#define PROG_DIR	"mudprogs/"	/* MUDProg files		*/
+#define PROG_DIR	"../mudprogs/"	/* MUDProg files		*/
 #define CORPSE_DIR	"../corpses/"	/* Corpses			*/
-#ifdef WIN32
-  #define NULL_FILE	"nul"		/* To reserve one stream        */
-#else
-  #define NULL_FILE	"/dev/null"	/* To reserve one stream        */
-#endif
-
+#define RACE_DIR	"../races/"	/* Races			*/
 #define	CLASS_DIR	"../classes/"	/* Classes			*/
 #define WATCH_DIR	"../watch/"	/* Imm watch files --Gorog      */
-#define VAULT_DIR	"../vault/" /* storage vaults */ 
+#define VAULT_DIR	"../vault/" 	/* storage vaults 		*/ 
+#define HOUSE_DIR       "../houses/" 	/* Houses 			*/
+#define LOG_DIR       	"../log/" 	/* LOGGIN DIR 			*/
+
+#ifdef WIN32
+  #define NULL_FILE     "nul"           /* To reserve one stream        */
+#else
+  #define NULL_FILE     "/dev/null"     /* To reserve one stream        */
+#endif
+
 /*
  * The watch directory contains a maximum of one file for each immortal
  * that contains output from "player watches". The name of each file
  * in this directory is the name of the immortal who requested the watch
  */
 
+/* LISTADOS */
 
 #define AREA_LIST	"area.lst"	/* List of areas		*/
 #define WATCH_LIST      "watch.lst"     /* List of watches              */
@@ -4818,60 +4830,61 @@ char *	crypt		args( ( const char *key, const char *salt ) );
 #define DEITY_LIST	"deity.lst"	/* List of deities		*/
 #define	CLASS_LIST	"class.lst"	/* List of classes		*/
 #define	RACE_LIST	"race.lst"	/* List of races		*/
-#define VAULT_LIST      "vault.lst" /* list of storage vaults */
+#define VAULT_LIST      "vault.lst" 	/* list of storage vaults */
+#define HOUSE_LIST      "house.lst"
 
+#define BOARD_FILE	BOARD_DIR  	"boards.lst"	/* For bulletin boards	 */
 
-#define MORPH_FILE      "morph.dat"     /* For morph data */
-#define BOARD_FILE	"boards.txt"		/* For bulletin boards	 */
-#define SHUTDOWN_FILE	"shutdown.txt"		/* For 'shutdown'	 */
-#define IMM_HOST_FILE   SYSTEM_DIR "immortal.host" /* For stoping hackers */
+/* LOGS */
 
+#define LOG_FILE	LOG_DIR 	"roomtalk.log"	  	/* For talking in logged rooms */
+#define SHUTDOWN_FILE	LOG_DIR 	"shutdown.log"		/* For 'shutdown'	 */
+#define MOBLOG_FILE	LOG_DIR 	"moblog.log"   		/* For mplog messages  */
+#define BOOTLOG_FILE	LOG_DIR 	"boot.log"	  	/* Boot up error file	 */
+#define USAGE_FILE	LOG_DIR 	"usage.log"    		/* How many people are on every half hour - trying to determine best reboot time */
+#define BUG_FILE        LOG_DIR 	"bugs.log"     		/* For bug( )          */
+#define PBUG_FILE       LOG_DIR 	"pbugs.log"    		/* For 'bug' command   */
+#define FIXED_FILE      LOG_DIR 	"fixed.log"    		/* For 'fixed' command */
+#define CHARCOUNT_FILE  LOG_DIR 	"ccount.log"   		/* Counting, temp */
+#define OINVOKE_FILE    LOG_DIR 	"oinvoke.log"  		/* Obvious */
+#define CUTLINK_FILE    LOG_DIR 	"cutlink.log"  		/* Info on cut/dropped links while in combat */
+#define ECONOMY_FILE    LOG_DIR 	"economy.log"  		/* Gold looted, value of used potions/pills  */
+#define NOHELP_FILE     LOG_DIR 	"missedhelpfiles.log"   /* For tracking help files that don't exist */
+#define REQUEST_PIPE    LOG_DIR 	"request.log"  		/* Request FIFO        */
+
+/* FICHEROS DE DATOS */
+
+#define IMM_HOST_FILE   SYSTEM_DIR "immortal.host"	/* For stoping hackers */
 #define RIPSCREEN_FILE	SYSTEM_DIR "mudrip.rip"
 #define RIPTITLE_FILE	SYSTEM_DIR "mudtitle.rip"
 #define ANSITITLE_FILE	SYSTEM_DIR "mudtitle.ans"
 #define ASCTITLE_FILE	SYSTEM_DIR "mudtitle.asc"
-#define BOOTLOG_FILE	SYSTEM_DIR "boot.txt"	  /* Boot up error file	 */
-#define BUG_FILE	SYSTEM_DIR "bugs.txt"	  /* For bug( )          */
-#define PBUG_FILE	SYSTEM_DIR "pbugs.txt"	  /* For 'bug' command   */
-#define IDEA_FILE	SYSTEM_DIR "ideas.txt"	  /* For 'idea'		 */
-#define TYPO_FILE	SYSTEM_DIR "typos.txt"	  /* For 'typo'		 */
-#define FIXED_FILE	SYSTEM_DIR "fixed.txt"	  /* For 'fixed' command */
-#define HINTSUB_FILE	SYSTEM_DIR "hintsub.txt"  /* For hint suggestions */
-#define CHANGE_FILE	SYSTEM_DIR "changes.txt"  /* For add_change      */
-#define IMMNEWS_FILE	SYSTEM_DIR "immnews.txt"  /* For add_imm_news    */
-#define LOG_FILE	SYSTEM_DIR "log.txt"	  /* For talking in logged rooms */
-#define NOHELP_FILE	SYSTEM_DIR "nohelp.txt"   /* For tracking help
-						     files that don't exist */
-#define MOBLOG_FILE	SYSTEM_DIR "moblog.txt"   /* For mplog messages  */
-#define PLEVEL_FILE	SYSTEM_DIR "plevel.txt"   /* Char level info */
-#define CHARCOUNT_FILE	SYSTEM_DIR "ccount.txt"	  /* Counting, temp */
-#define OINVOKE_FILE	SYSTEM_DIR "oinvoke.txt"  /* Obvious */
-#define CUTLINK_FILE	SYSTEM_DIR "cutlink.txt"  /* Info on cut/dropped links while in combat */
-#define RETIREDLIST_FILE SYSTEM_DIR "RETIREDLIST" /* Retiredlist	 */
-#define WIZLIST_FILE	SYSTEM_DIR "WIZLIST"	  /* Wizlist		 */
-#define WHO_FILE	SYSTEM_DIR "WHO"	  /* Who output file	 */
-#define WEBWHO_FILE	SYSTEM_DIR "WEBWHO"	  /* WWW Who output file */
-#define REQUEST_PIPE	SYSTEM_DIR "REQUESTS"	  /* Request FIFO	 */
-#define SKILL_FILE	SYSTEM_DIR "skills.dat"   /* Skill table	 */
-#define LOGIN_MSG	"login.msg"	/* List of login msgs		*/
-#define HERB_FILE	SYSTEM_DIR "herbs.dat"	  /* Herb table		 */
-#define TONGUE_FILE	SYSTEM_DIR "tongues.dat"  /* Tongue tables	 */
-#define SOCIAL_FILE	SYSTEM_DIR "socials.dat"  /* Socials		 */
-#define COMMAND_FILE	SYSTEM_DIR "commands.dat" /* Commands		 */
-#define USAGE_FILE	SYSTEM_DIR "usage.txt"    /* How many people are on 
- 						     every half hour - trying to
-						     determine best reboot time */
-#define ECONOMY_FILE	SYSTEM_DIR "economy.txt"  /* Gold looted, value of
-						     used potions/pills  */
-#define PROJECTS_FILE	SYSTEM_DIR "projects.txt" /* For projects	 */
-#define PLANE_FILE	SYSTEM_DIR "planes.dat"	  /* For planes		 */
-#define COLOR_FILE	SYSTEM_DIR "colors.dat"	  /* User-definable color*/
-#define TEMP_FILE	PLAYER_DIR "charsave.tmp" /* More char save protect */
-#define CLASSDIR	"../classes/"
-#define RACEDIR 	"../races/"
-#define MEMBERS_FILE	SYSTEM_DIR "members.dat"  /* Store the members lists */
+#define IDEA_FILE	SYSTEM_DIR "ideas.dat"		/* For 'idea'		 */
+#define TYPO_FILE	SYSTEM_DIR "typos.dat"	  	/* For 'typo'		 */
+#define HINTSUB_FILE	SYSTEM_DIR "hintsub.dat" 	/* For hint suggestions */
+#define HINT_FILE       SYSTEM_DIR "hints.dat"    	/* For Hints */
+#define CHANGE_FILE	SYSTEM_DIR "changes.dat"  	/* For add_change      */
+#define IMMNEWS_FILE	SYSTEM_DIR "immnews.dat" 	/* For add_imm_news    */
+#define PLEVEL_FILE	SYSTEM_DIR "plevel.dat" 	/* Char level info */
+#define RETIREDLIST_FILE SYSTEM_DIR "retired.dat"	/* Retiredlist	 */
+#define WIZLIST_FILE	SYSTEM_DIR "wizlist.dat"  	/* Wizlist		 */
+#define WHO_FILE	SYSTEM_DIR "who.dat"	  	/* Who output file	 */
+#define WEBWHO_FILE	SYSTEM_DIR "webwho.dat"	  	/* WWW Who output file */
+#define SKILL_FILE	SYSTEM_DIR "skills.dat"   	/* Skill table	 */
+#define LOGIN_MSG	SYSTEM_DIR "login.msg"	  	/* List of login msgs	*/
+#define HERB_FILE	SYSTEM_DIR "herbs.dat"	  	/* Herb table		 */
+#define TONGUE_FILE	SYSTEM_DIR "tongues.dat"  	/* Tongue tables	 */
+#define SOCIAL_FILE	SYSTEM_DIR "socials.dat"  	/* Socials		 */
+#define COMMAND_FILE	SYSTEM_DIR "commands.dat" 	/* Commands		 */
+#define PROJECTS_FILE	SYSTEM_DIR "projects.dat" 	/* For projects	 */
+#define PLANE_FILE	SYSTEM_DIR "planes.dat"	  	/* For planes		 */
+#define COLOR_FILE	SYSTEM_DIR "colors.dat"	  	/* User-definable color*/
+#define TEMP_FILE	PLAYER_DIR "charsave.tmp" 	/* More char save protect */
+#define MEMBERS_FILE	SYSTEM_DIR "members.dat"  	/* Store the members lists */
 #define STANCE_FILE     SYSTEM_DIR "stances.dat"
-
+#define MORPH_FILE      SYSTEM_DIR "morph.dat"     	/* For morph data */
+#define HOMEBUY_FILE          HOUSE_DIR "homebuy.dat"   	/* Houses data */
+#define ACCESSORIES_FILE      HOUSE_DIR "homeaccessories.dat"   /* Home accesory data */
 
 /*
  * Our function prototypes.
