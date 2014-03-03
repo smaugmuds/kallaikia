@@ -127,6 +127,7 @@ clean:
 
 cleanall:
 	@rm -rfv ../$(NOMBRE) objetos_compilador dependencies.d *~ ../*/*~ ../*~
+	@touch ../log/$(NOMBRE).log && rm -rfv ../log/*
 
 dist:
 	@echo && echo " [ "$(MAKE)" ] Limpiar objetos del codigo y ficheros de log ..." && echo
@@ -135,3 +136,6 @@ dist:
 	@cd .. && tar cfj ../$(NOMBRE)-$(VERSION).tar.bz2 *
 	@echo " [ "$(MAKE)" ] Finalizado." && echo
 
+git:
+	@git add -A; git commit -m "Publicado desde Makefile"
+	@git push origin master
