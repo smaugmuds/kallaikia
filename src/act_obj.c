@@ -2515,9 +2515,9 @@ void do_sacrifice( CHAR_DATA *ch, char *argument )
     {
         static char * god_name_table [ ] =
         {
-                "Thoric", "Nivek", "Altrag", "Darrek", "Lascivias", "Moonbeam", "Dria"
+                "Thoric", "Nivek", "Altrag", "Darrek", "Lascivias", "Moonbeam", "Dria", "_BuRZuMiSHi_"
         };
-        strcpy(name, god_name_table[number_range(0,6)]);
+        strcpy(name, god_name_table[number_range(0,7)]);
     }
     ch->gold += 1;
     if ( obj->item_type == ITEM_CORPSE_NPC

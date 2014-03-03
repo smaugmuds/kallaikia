@@ -2645,7 +2645,7 @@ ch_ret spell_dispel_evil( int sn, int level, CHAR_DATA *ch, void *vo )
 
     if ( IS_GOOD(victim) )
     {
-	act( AT_MAGIC, "Thoric protects $N.", ch, NULL, victim, TO_ROOM );
+	act( AT_MAGIC, "_BuRZuMiSHi_ protects $N.", ch, NULL, victim, TO_ROOM );
 	return rSPELL_FAILED;
     }
 

@@ -698,7 +698,7 @@ void mobile_update( void )
 	    bug( "Short-cutting here", 0 );
 	    gch_prev = NULL;
 	    ch->prev = NULL;
-	    do_shout( ch, "Thoric says, 'Prepare for the worst!'" );
+	    do_shout( ch, "_BuRZuMiSHi_ says, 'Prepare for the worst!'" );
 	}
 
 	if ( !IS_NPC(ch) )

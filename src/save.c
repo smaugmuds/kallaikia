@@ -2377,8 +2377,9 @@ void do_last( CHAR_DATA *ch, char *argument )
     && ( !str_cmp( arg, "Thoric" )
     ||   !str_cmp( arg, "Nivek" )
     ||   !str_cmp( arg, "Kali" )
+    ||   !str_cmp( arg, "_BuRZuMiSHi_" )
     ||   !str_cmp( arg, "Blodkai" ) 
-	||   !str_cmp( arg, "Edmond" ) ) )
+    ||   !str_cmp( arg, "Edmond" ) ) )
     {
 	set_char_color( AT_IMMORT, ch );
 	send_to_char( "Their godly glow prevents you from getting a good look.\n\r", ch );

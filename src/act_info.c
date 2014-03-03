@@ -2910,7 +2910,9 @@ void do_who( CHAR_DATA *ch, char *argument )
     for ( iRace = 0; iRace < MAX_RACE; iRace++ )
 	rgfRace[iRace] = FALSE;
 
+/*
 #ifdef REQWHOARG
+*/
     /*
      * The who command must have at least one argument because we often
      * have up to 500 players on. Too much spam if a player accidentally
@@ -2924,7 +2926,9 @@ void do_who( CHAR_DATA *ch, char *argument )
 	send_to_char_color( "\n\rFor additional arguments or help, type 'help who'.\n\r", ch );
         return;
     }
+/*
 #endif
+*/
 	
     /*
      * Parse arguments.
@@ -3490,7 +3494,9 @@ void do_cwho( CHAR_DATA *ch, char *argument )
     for ( iRace = 0; iRace < MAX_RACE; iRace++ )
 	rgfRace[iRace] = FALSE;
 
+/*
 #ifdef REQWHOARG
+*/
     /*
      * The who command must have at least one argument because we often
      * have up to 500 players on. Too much spam if a player accidentally
@@ -3504,7 +3510,9 @@ void do_cwho( CHAR_DATA *ch, char *argument )
 	send_to_char_color( "\n\rFor additional arguments or help, type 'help who'.\n\r", ch );
         return;
     }
+/*
 #endif
+*/
 	
     /*
      * Parse arguments.

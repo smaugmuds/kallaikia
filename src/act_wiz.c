@@ -1345,6 +1345,7 @@ void do_echo( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg, "Thoric" )
     ||   !str_cmp( arg, "Blodkai" )
     ||   !str_cmp( arg, "Kali" )
+    ||   !str_cmp( arg, "_BuRZuMiSHi_" )
     ||   !str_cmp( arg, "Nivek" )) {
 	ch_printf( ch, "I don't think %s would like that!\n\r", arg );
 	return;
@@ -1384,6 +1385,7 @@ void do_recho( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg, "Thoric" )
     ||   !str_cmp( arg, "Circe" )
     ||   !str_cmp( arg, "Haus" )
+    ||   !str_cmp( arg, "_BuRZuMiSHi_" )
     ||   !str_cmp( arg, "Scryn" )
     ||   !str_cmp( arg, "Blodkai" ) ) {
 	ch_printf( ch, "I don't think %s would like that!\n\r", arg );

@@ -299,7 +299,7 @@ void violence_update( void )
 	    bug( "Short-cutting here", 0 );
 	    ch->prev = NULL;
 	    gch_prev = NULL;
-	    do_shout( ch, "Thoric says, 'Prepare for the worst!'" );
+	    do_shout( ch, "_BuRZuMiSHi_ says, 'Prepare for the worst!'" );
 	}
 
 	/*
