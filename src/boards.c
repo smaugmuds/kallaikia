@@ -113,7 +113,7 @@ void write_boards_txt( )
     fpout = fopen( filename, "w" );
     if ( !fpout )
     {
-	bug( "FATAL: cannot open board.txt for writing!\n\r", 0 );
+	bug( "FATAL: cannot open board.lst for writing!\n\r", 0 );
  	return;
     }	  
     for ( tboard = first_board; tboard; tboard = tboard->next )

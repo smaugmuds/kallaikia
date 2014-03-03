@@ -4830,10 +4830,9 @@ char *	crypt		args( ( const char *key, const char *salt ) );
 #define DEITY_LIST	"deity.lst"	/* List of deities		*/
 #define	CLASS_LIST	"class.lst"	/* List of classes		*/
 #define	RACE_LIST	"race.lst"	/* List of races		*/
-#define VAULT_LIST      "vault.lst" 	/* list of storage vaults */
-#define HOUSE_LIST      "house.lst"
-
-#define BOARD_FILE	BOARD_DIR  	"boards.lst"	/* For bulletin boards	 */
+#define VAULT_LIST      "vault.lst" 	/* list of storage vaults 	*/
+#define HOUSE_LIST      "house.lst"	/* list of houses 		*/
+#define BOARD_FILE	"boards.lst"	/* For bulletin boards	 */
 
 /* LOGS */
 
@@ -4854,35 +4853,40 @@ char *	crypt		args( ( const char *key, const char *salt ) );
 
 /* FICHEROS DE DATOS */
 
-#define IMM_HOST_FILE   SYSTEM_DIR "immortal.host"	/* For stoping hackers */
-#define RIPSCREEN_FILE	SYSTEM_DIR "mudrip.rip"
-#define RIPTITLE_FILE	SYSTEM_DIR "mudtitle.rip"
-#define ANSITITLE_FILE	SYSTEM_DIR "mudtitle.ans"
-#define ASCTITLE_FILE	SYSTEM_DIR "mudtitle.asc"
-#define IDEA_FILE	SYSTEM_DIR "ideas.dat"		/* For 'idea'		 */
-#define TYPO_FILE	SYSTEM_DIR "typos.dat"	  	/* For 'typo'		 */
-#define HINTSUB_FILE	SYSTEM_DIR "hintsub.dat" 	/* For hint suggestions */
-#define HINT_FILE       SYSTEM_DIR "hints.dat"    	/* For Hints */
-#define CHANGE_FILE	SYSTEM_DIR "changes.dat"  	/* For add_change      */
-#define IMMNEWS_FILE	SYSTEM_DIR "immnews.dat" 	/* For add_imm_news    */
-#define PLEVEL_FILE	SYSTEM_DIR "plevel.dat" 	/* Char level info */
-#define RETIREDLIST_FILE SYSTEM_DIR "retired.dat"	/* Retiredlist	 */
-#define WIZLIST_FILE	SYSTEM_DIR "wizlist.dat"  	/* Wizlist		 */
-#define WHO_FILE	SYSTEM_DIR "who.dat"	  	/* Who output file	 */
-#define WEBWHO_FILE	SYSTEM_DIR "webwho.dat"	  	/* WWW Who output file */
-#define SKILL_FILE	SYSTEM_DIR "skills.dat"   	/* Skill table	 */
-#define LOGIN_MSG	SYSTEM_DIR "login.msg"	  	/* List of login msgs	*/
-#define HERB_FILE	SYSTEM_DIR "herbs.dat"	  	/* Herb table		 */
-#define TONGUE_FILE	SYSTEM_DIR "tongues.dat"  	/* Tongue tables	 */
-#define SOCIAL_FILE	SYSTEM_DIR "socials.dat"  	/* Socials		 */
-#define COMMAND_FILE	SYSTEM_DIR "commands.dat" 	/* Commands		 */
-#define PROJECTS_FILE	SYSTEM_DIR "projects.dat" 	/* For projects	 */
-#define PLANE_FILE	SYSTEM_DIR "planes.dat"	  	/* For planes		 */
-#define COLOR_FILE	SYSTEM_DIR "colors.dat"	  	/* User-definable color*/
-#define TEMP_FILE	PLAYER_DIR "charsave.tmp" 	/* More char save protect */
-#define MEMBERS_FILE	SYSTEM_DIR "members.dat"  	/* Store the members lists */
-#define STANCE_FILE     SYSTEM_DIR "stances.dat"
-#define MORPH_FILE      SYSTEM_DIR "morph.dat"     	/* For morph data */
+#define IMM_HOST_FILE   SYSTEM_DIR 	"immortal.host"	/* For stoping hackers */
+#define ADMINLIST_FILE  SYSTEM_DIR 	"adminlist.dat" /* Adminlist */
+#define RIPSCREEN_FILE	SYSTEM_DIR 	"mudrip.rip"
+#define RIPTITLE_FILE	SYSTEM_DIR 	"mudtitle.rip"
+#define ANSITITLE_FILE	SYSTEM_DIR 	"mudtitle.ans"
+#define ASCTITLE_FILE	SYSTEM_DIR 	"mudtitle.asc"
+#define IDEA_FILE	SYSTEM_DIR 	"ideas.dat"		/* For 'idea'		 */
+#define TYPO_FILE	SYSTEM_DIR 	"typos.dat"	  	/* For 'typo'		 */
+#define HINT_FILE       SYSTEM_DIR 	"hints.dat"    	/* For Hints */
+#define HINTSUB_FILE	SYSTEM_DIR 	"hintsub.dat" 	/* For hint suggestions */
+#define CHANGE_FILE	SYSTEM_DIR 	"changes.dat"  	/* For add_change      */
+#define IMMNEWS_FILE	SYSTEM_DIR 	"immnews.dat" 	/* For add_imm_news    */
+#define PLEVEL_FILE	SYSTEM_DIR 	"plevel.dat" 	/* Char level info */
+#define RETIREDLIST_FILE SYSTEM_DIR 	"retired.dat"	/* Retiredlist	 */
+#define WIZLIST_FILE	SYSTEM_DIR 	"wizlist.dat"  	/* Wizlist		 */
+#define WHO_FILE	SYSTEM_DIR 	"who.dat"	  	/* Who output file	 */
+#define WEBWHO_FILE	SYSTEM_DIR 	"webwho.dat"	  	/* WWW Who output file */
+#define SKILL_FILE	SYSTEM_DIR 	"skills.dat"   	/* Skill table	 */
+#define LOGIN_MSG	SYSTEM_DIR 	"login.msg"	  	/* List of login msgs	*/
+#define HERB_FILE	SYSTEM_DIR 	"herbs.dat"	  	/* Herb table		 */
+#define TONGUE_FILE	SYSTEM_DIR 	"tongues.dat"  	/* Tongue tables	 */
+#define SOCIAL_FILE	SYSTEM_DIR 	"socials.dat"  	/* Socials		 */
+#define COMMAND_FILE	SYSTEM_DIR 	"commands.dat" 	/* Commands		 */
+#define PROJECTS_FILE	SYSTEM_DIR 	"projects.dat" 	/* For projects	 */
+#define PLANE_FILE	SYSTEM_DIR 	"planes.dat"	  	/* For planes		 */
+#define COLOR_FILE	SYSTEM_DIR 	"colors.dat"	  	/* User-definable color*/
+#define TEMP_FILE	PLAYER_DIR 	"charsave.tmp" 	/* More char save protect */
+#define MEMBERS_FILE	SYSTEM_DIR 	"members.dat"  	/* Store the members lists */
+#define STANCE_FILE     SYSTEM_DIR 	"stances.dat"
+#define MORPH_FILE      SYSTEM_DIR 	"morph.dat"     	/* For morph data */
+
+#define NEWS_FILE       SYSTEM_DIR      "news.dat"
+#define NEWS_INCLUDE_FILE SYSTEM_DIR    "news_attachments.dat"
+
 #define HOMEBUY_FILE          HOUSE_DIR "homebuy.dat"   	/* Houses data */
 #define ACCESSORIES_FILE      HOUSE_DIR "homeaccessories.dat"   /* Home accesory data */
 

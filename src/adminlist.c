@@ -20,8 +20,6 @@
 
 void sort_adminlist( void );
 
-#define ADMINLIST_FILE   SYSTEM_DIR "ADMINLIST"
-
 typedef struct  adminent                  ADMINENT;
 
 struct  adminent
