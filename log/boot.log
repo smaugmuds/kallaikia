@@ -1,0 +1,24 @@
+[*****] BOOT: ---------------------[ Boot Log ]--------------------
+[*****] BOOT: Load_resets: Build.are (1) 'O': object 30 doesn't exist.
+[*****] BOOT: Load_resets: newdark.are (104) 'G': object 21036 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (18) 'E': object 7216 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (19) 'E': object 7217 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (20) 'E': object 7218 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (21) 'E': object 7219 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (22) 'E': object 7220 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (23) 'E': object 7221 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (24) 'E': object 7223 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (25) 'E': object 7222 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (26) 'E': object 7224 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (30) 'P': object 7298 doesn't exist.
+[*****] BOOT: Load_resets: redferne.are (31) 'P': object 7208 doesn't exist.
+[*****] BOOT: Fix_exits: room 300, exit south leads to bad vnum (3904)
+[*****] BOOT: Fix_exits: room 314, exit north leads to bad vnum (5550)
+[*****] BOOT: Fix_exits: room 323, exit north leads to bad vnum (7800)
+[*****] BOOT: Fix_exits: room 324, exit north leads to bad vnum (901)
+[*****] BOOT: Fix_exits: room 29502, exit south leads to bad vnum (15404)
+[*****] BOOT: Fix_exits: room 30232, exit west leads to bad vnum (164)
+[*****] BOOT: Fix_exits: room 30233, exit north leads to bad vnum (-1)
+[*****] BOOT: Fix_exits: room 32301, exit down leads to bad vnum (1035)
+[*****] BOOT: Cannot open homeaccessories.dat. Aborting loadup of accessories data.
+[*****] BOOT: Cannot open homebuy.dat. Aborting loadup of home auction data.

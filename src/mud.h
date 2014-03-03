@@ -4871,7 +4871,7 @@ char *	crypt		args( ( const char *key, const char *salt ) );
 #define WHO_FILE	SYSTEM_DIR 	"who.dat"	  	/* Who output file	 */
 #define WEBWHO_FILE	SYSTEM_DIR 	"webwho.dat"	  	/* WWW Who output file */
 #define SKILL_FILE	SYSTEM_DIR 	"skills.dat"   	/* Skill table	 */
-#define LOGIN_MSG	SYSTEM_DIR 	"login.msg"	  	/* List of login msgs	*/
+#define LOGIN_MSG		 	"../system/login.msg"	  	/* List of login msgs	*/
 #define HERB_FILE	SYSTEM_DIR 	"herbs.dat"	  	/* Herb table		 */
 #define TONGUE_FILE	SYSTEM_DIR 	"tongues.dat"  	/* Tongue tables	 */
 #define SOCIAL_FILE	SYSTEM_DIR 	"socials.dat"  	/* Socials		 */
