@@ -131,13 +131,14 @@ cleanall:
 
 dist:
 	@echo && echo " [ "$(MAKE)" ] Limpiar objetos del codigo y ficheros de log ..." && echo
-	@$(MAKE) -s clean && cd .. && touch log/$(NOMBRE).log && rm -rfv log/*
+	@$(MAKE) -s cleanall
 	@echo && echo " [ "$(MAKE)" ] Creando el fichero de distribucion: \"../../"$(NOMBRE)"-"$(VERSION)".tar.bz2\" ..."
 	@cd .. && tar cfj ../$(NOMBRE)-$(VERSION).tar.bz2 *
 	@echo " [ "$(MAKE)" ] Finalizado." && echo
 
 git:
-	@cd ..; \
+	@$(MAKE) -s cleanall; \
+	cd ..; \
 	git add -A; \
 	git commit -m "Publicado desde Makefile"; \
 	git push origin master

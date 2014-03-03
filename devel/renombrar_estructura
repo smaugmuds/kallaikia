@@ -14,7 +14,7 @@
 # Traducir directorios estructura
 #
 
-mv area 	reinos_de_desesperacion
+// mv area 	reinos_de_desesperacion
 mv player 	jugador
 mv new 		nuevo
 mv deleted 	eliminado

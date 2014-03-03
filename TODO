@@ -3,9 +3,14 @@
 
   - TODO LIST -
 
-Corregir ruta de "../system/login.msg" a "SYSTEM_DIR login.msg" en mud.h
-
 !!!! Adaptar src/Makefile a ARCH = x86_64 !!!!
 
-Migrar areas de "reinos_de_desesperacion/*.devel"
+Makefile C_FLAGS en modo debug, depurar errores del codigo fuente en src
 
+Migrar areas de "reinos_de_desesperacion/*.devel" (devel/area_editor)
+
+Corregir errores en los datos de las areas.
+
+Revisar la conexión entre las diferentes areas del MUD.
+
+Traducir y modificar el MUD desde OLC (editor interno del mud)

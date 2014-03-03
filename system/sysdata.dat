@@ -1,9 +1,9 @@
 #SYSTEM
-MudName	     Reinos de Desesperacion~
-PortName	     4000~
+MudName	       Reinos de Desesperacion~
+PortName       4000~
 Highplayers    842
 Highplayertime Thu Nov 22 23:10:40 2001~
-NewsPath	     ~
+NewsPath       ~
 CheckImmHost   1
 Nameresolving  0
 Waitforauth    0
@@ -47,15 +47,15 @@ BanSiteLevel   57
 BanRaceLevel   61
 BanClassLevel  61
 MorphOpt       1
-PetSave	     1
+PetSave	       1
 IdentTries     15
-Pkloot	     1
+Pkloot	       1
 Pkchannels     0
-Pksilence     0
+Pksilence      0
 SaveVersion    6
 Wizlock        0
 Magichell      1
-MaxNews	     -1
+MaxNews	      -1
 End
 
 #END
