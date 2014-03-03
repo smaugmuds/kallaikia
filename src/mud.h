@@ -21,6 +21,29 @@
 #include <stdlib.h>
 #include <limits.h>
 
+/*
+ * SMAUG Version -- Scryn
+ */
+#define SMAUG_VERSION_MAJOR "1"
+#define SMAUG_VERSION_MINOR "8"
+#define PHANTASIEN_VERSION  "3b"
+
+/*
+ * Stuff for area versions --Shaddai
+ */
+int     area_version;
+#define HAS_SPELL_INDEX     -1
+
+/* MAKE COMMENTS BELOW FOR AREA VERSION INCREASES */
+#define AREA_VERSION_WRITE 3
+#define MIN_SAVE_VERSION   3
+
+/***********************
+*AREA_VERSION_WRITE  1  - Original 4k area version
+*AREA_VERSION_WRITE  2  - Added level in the settable/saveable index values of objects
+*AREA_VERSION_WRITE  3  - Fixed major fuck up of the above area version in saving the flags/level/layers line of objects
+************************/
+
 /* force the who command to require an argument (should use cset) */
 #define REQWHOARG
 /* uncomment below to add honour to the mix
@@ -306,28 +329,6 @@ bool DONT_UPPER;
 #define PULSE_AREA				(60 * PULSE_PER_SECOND)
 #define PULSE_AUCTION				 (9 * PULSE_PER_SECOND)
 #define PULSE_CASINO                             (8 * PULSE_PER_SECOND)
-
-/*
- * SMAUG Version -- Scryn
- */
-#define SMAUG_VERSION_MAJOR "1"
-#define SMAUG_VERSION_MINOR "4a"
-
-/* 
- * Stuff for area versions --Shaddai
- */
-int     area_version;
-#define HAS_SPELL_INDEX     -1
-/* MAKE COMMENTS BELOW FOR AREA VERSION INCREASES */
-#define AREA_VERSION_WRITE 3
-#define MIN_SAVE_VERSION   3
-/***********************
-*AREA_VERSION_WRITE  1  - Original 4k area version
-*AREA_VERSION_WRITE  2  - Added level in the settable/saveable index values of objects
-*AREA_VERSION_WRITE  3  - Fixed major fuck up of the above area version in saving the flags/level/layers line of objects
-*
-************************/
-
 
 /*
  * Command logging types.
@@ -4871,7 +4872,7 @@ char *	crypt		args( ( const char *key, const char *salt ) );
 #define WHO_FILE	SYSTEM_DIR 	"who.dat"	  	/* Who output file	 */
 #define WEBWHO_FILE	SYSTEM_DIR 	"webwho.dat"	  	/* WWW Who output file */
 #define SKILL_FILE	SYSTEM_DIR 	"skills.dat"   	/* Skill table	 */
-#define LOGIN_MSG		 	"../system/login.msg"	  	/* List of login msgs	*/
+#define LOGIN_MSG	SYSTEM_DIR 	"login.msg"	  	/* List of login msgs	*/
 #define HERB_FILE	SYSTEM_DIR 	"herbs.dat"	  	/* Herb table		 */
 #define TONGUE_FILE	SYSTEM_DIR 	"tongues.dat"  	/* Tongue tables	 */
 #define SOCIAL_FILE	SYSTEM_DIR 	"socials.dat"  	/* Socials		 */

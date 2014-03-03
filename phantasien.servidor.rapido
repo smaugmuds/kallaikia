@@ -6,7 +6,7 @@ source phantasien.servidor.configuracion
 echo
 echo "          - (( $programa $version )) -"
 echo
-echo "            \"$reino\""
+echo "           \"$reino\""
 echo
 
 sleep 2;
