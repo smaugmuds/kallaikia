@@ -137,5 +137,7 @@ dist:
 	@echo " [ "$(MAKE)" ] Finalizado." && echo
 
 git:
-	@git add -A; git commit -m "Publicado desde Makefile"
-	@git push origin master
+	@cd ..; \
+	git add -A; \
+	git commit -m "Publicado desde Makefile"; \
+	git push origin master
