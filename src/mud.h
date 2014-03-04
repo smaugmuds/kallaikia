@@ -269,11 +269,8 @@ typedef ch_ret	SPELL_FUN	args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define MAX_REXITS		   20	/* Maximum exits allowed in 1 room */
 #define MAX_SKILL		  500
 #define SPELL_SILENT_MARKER   "silent"	/* No OK. or Failed. */
-/*#define MAX_CLASS           	   12  */
-#define MAX_CLASS           	   20  
+#define MAX_CLASS           	   25  
 #define MAX_NPC_CLASS		   26
-/*#define MAX_RACE                 20  Trying to fix a bunch of problems-- Scryn*/  
-/*#define MAX_RACE                   15 */     /*  added 6 for new race code */
 #define MAX_RACE                   26
 #define MAX_NPC_RACE		   190
 #define MAX_MSG			   18
@@ -901,7 +898,7 @@ struct  lck_app_type
 typedef enum {
   RACE_HUMAN, RACE_ELF, RACE_DWARF, RACE_HALFLING, RACE_PIXIE, RACE_VAMPIRE, 
   RACE_HALF_OGRE, RACE_HALF_ORC, RACE_HALF_TROLL, RACE_HALF_ELF, RACE_GITH, 
-  RACE_DROW, RACE_SEA_ELF, RACE_LIZARDMAN
+  RACE_DROW, RACE_SEA_ELF, RACE_LIZARDMAN, RACE_DEMON
 } race_types;
 
 /* npc races */
@@ -919,10 +916,18 @@ typedef enum {
 #define CLASS_PALADIN	    8 /* 7-7-96 SB */
 #define CLASS_NEPHANDI	    9 
 #define CLASS_SAVAGE	   10
+#define CLASS_ARCHER       11 
+#define CLASS_ASSASSIN     12 
+#define CLASS_DEMON        13
+#define CLASS_ANGEL        14
+#define CLASS_WEREWOLF     15
+#define CLASS_LYCANTHROPE  16 
+#define CLASS_LICH         17
 
 /*
  * Languages -- Altrag
  */
+
 #define LANG_COMMON      BV00  /* Human base language */
 #define LANG_ELVEN       BV01  /* Elven base language */
 #define LANG_DWARVEN     BV02  /* Dwarven base language */
@@ -3576,6 +3581,9 @@ do								\
 #define IS_VAMPIRE(ch)		(!IS_NPC(ch)				    \
 				&& ((ch)->race==RACE_VAMPIRE		    \
 				||  (ch)->class==CLASS_VAMPIRE))
+#define IS_DEMON(ch)           (!IS_NPC(ch)                                \
+                               && ((ch)->race==RACE_DEMON                  \
+                               ||  (ch)->class==CLASS_DEMON))
 #define IS_GOOD(ch)		((ch)->alignment >= 350)
 #define IS_EVIL(ch)		((ch)->alignment <= -350)
 #define IS_NEUTRAL(ch)		(!IS_GOOD(ch) && !IS_EVIL(ch))
@@ -4696,6 +4704,13 @@ DECLARE_SPELL_FUN(      spell_midas_touch       );
 DECLARE_SPELL_FUN(      spell_bethsaidean_touch	);
 DECLARE_SPELL_FUN(	spell_expurgation	);
 DECLARE_SPELL_FUN(	spell_sacral_divinity	);
+
+/* SPELLS NUEVOS */
+
+DECLARE_SPELL_FUN(     spell_enchant_armor     );
+DECLARE_SPELL_FUN(      spell_death                         );
+DECLARE_SPELL_FUN(      spell_assassinate                   );
+DECLARE_SPELL_FUN(      spell_grasp_suspiria                );
 
 /*
  * OS-dependent declarations.

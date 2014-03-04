@@ -2395,7 +2395,7 @@ ch_ret damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
     /*
      * Vampire self preservation				-Thoric
      */
-    if ( IS_VAMPIRE(victim) )
+    if ( IS_VAMPIRE(victim) || IS_DEMON(victim) )
     {
       if ( dam >= (victim->max_hit / 10) )	/* get hit hard, lose blood */
 	gain_condition(victim, COND_BLOODTHIRST, -1 - (victim->level / 20));
@@ -3684,7 +3684,7 @@ neutral when they die given the difficulting of changing align */
     }
     victim->pcdata->condition[COND_FULL]   = 12;
     victim->pcdata->condition[COND_THIRST] = 12;
-    if ( IS_VAMPIRE( victim ) )
+    if ( IS_VAMPIRE( victim ) || IS_DEMON(victim) )
       victim->pcdata->condition[COND_BLOODTHIRST] = (victim->level / 2);
 
     if ( IS_SET( sysdata.save_flags, SV_DEATH ) )

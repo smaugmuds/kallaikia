@@ -1,24 +1,24 @@
 #PLAYER
 Version      3
-Name         XeRMoN~
+Name         Xermon~
 Sex          1
-Class        3
+Class        11
 Race         0
-Languages    -1 1
-Level        65
-Played       644
+Languages    1 1
+Level        2
+Played       78
 Room         10300
-HpManaMove   9999 9999 9999 9999 999 999
+HpManaMove   20 30 100 104 100 110
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
-Gold         1215752191
-Exp          1215752191
-Height          59
-Weight          163
-Act          704644680
-Position     106
+Gold         0
+Exp          2000
+Height          66
+Weight          147
+Act          771753544
+Position     112
 Style     2
-Practice     2
+Practice     3
 Alignment    0
 SavingThrows 0 0 0 0 0
 Favor	       0
@@ -29,20 +29,18 @@ Hitroll      0
 Damroll      0
 Armor        100
 ICEListen ~
-Mentalstate  -7
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
-Title         El senhor de las tinieblas~
-WizInvis     65
-Flags        8421384
+Title         the Attendant~
+Flags        8388616
 PKills       0
 PDeaths      0
 MKills       0
 MDeaths      0
 IllegalPK    0
-AttrPerm     16 13 13 14 15 13 11
+AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
-Condition    0 47 47 10
-Site         localhost
+Condition    0 48 48 10
+Site         orion.local.lan
 Tongue       100 'common'
 End
 

@@ -20,15 +20,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
-#ifdef FREEBSD
-	#include <unistd.h>
-#endif
+#include <unistd.h>
 #include "mud.h"
 
-#ifndef WIN32
-  #include <regex.h>
-  int re_exec(char *);
-#endif
+#include <regex.h>
+
+int re_exec(char *);
 
 /*
  *  Externals
@@ -3483,7 +3480,7 @@ void do_group( CHAR_DATA *ch, char *argument )
 		    	"????",
 		    	"????",
 		    	"????",
-		    	IS_VAMPIRE(gch) ? "bp" : "mana",
+		    	IS_VAMPIRE(gch) || IS_DEMON(gch) ? "bp" : "mana",
 		    	"????",  
 		    	"????",  
 		    	"?????"    );
@@ -3515,14 +3512,14 @@ void do_group( CHAR_DATA *ch, char *argument )
                     ch_printf( ch, "%5d", gch->hit );
                     set_char_color( AT_GREY, ch );
                     ch_printf( ch, "/%-5d ", gch->max_hit );
-                    if ( IS_VAMPIRE(gch) )
+                    if ( IS_VAMPIRE(gch) || IS_DEMON(ch) )
                       set_char_color( AT_BLOOD, ch );
                     else
                       set_char_color( AT_LBLUE, ch );
 		    if ( gch->class != CLASS_WARRIOR )
                       ch_printf( ch, "%5d/%-5d ",
-			IS_VAMPIRE(gch) ? gch->pcdata->condition[COND_BLOODTHIRST] : gch->mana,
-                        IS_VAMPIRE(gch) ? 10 + gch->level : gch->max_mana );
+			IS_VAMPIRE(gch) || IS_DEMON(gch) ? gch->pcdata->condition[COND_BLOODTHIRST] : gch->mana,
+                        IS_VAMPIRE(gch) || IS_DEMON(gch) ? 10 + gch->level : gch->max_mana );
 		    else
 		      send_to_char( "            ", ch );
 		    if ( gch->mental_state < -25 || gch->mental_state > 25 )

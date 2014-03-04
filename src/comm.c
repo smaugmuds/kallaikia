@@ -1520,7 +1520,7 @@ void show_races_to_nanny( DESCRIPTOR_DATA *d )
     ch_printf_color( ch, "\n\r\n\r&GThe following races are available to your class (or type &W'help [race]'&G)\n\r" );
     for ( iRace = 0; iRace < MAX_PC_RACE; iRace++ )
     {
-	if ( iRace != RACE_VAMPIRE
+	if (( iRace != RACE_VAMPIRE || iRace != RACE_DEMON)
 	&&   race_table[iRace]->race_name && race_table[iRace]->race_name[0] != '\0'
 	&&  !IS_SET( race_table[iRace]->class_restriction, 1 << ch->class )
 	&&   str_cmp( race_table[iRace]->race_name, "unused" ) )
@@ -2027,7 +2027,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	if ( iRace == MAX_PC_RACE
 	||  !race_table[iRace]->race_name
 	||   race_table[iRace]->race_name[0] == '\0'
-	||   iRace == RACE_VAMPIRE
+	||   iRace == RACE_VAMPIRE || iRace == RACE_DEMON
 	||   IS_SET( race_table[iRace]->class_restriction, 1 << ch->class )
 	||  !str_cmp( race_table[iRace]->race_name, "unused" ) )
 	{
@@ -3385,7 +3385,7 @@ char *default_fprompt( CHAR_DATA *ch )
   static char buf[60];
 
   strcpy(buf, "&w<&Y%hhp ");
-  if ( IS_VAMPIRE(ch) )
+  if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
     strcat(buf, "&R%bbp");
   else
     strcat(buf, "&C%mm");
@@ -3400,7 +3400,7 @@ char *default_prompt( CHAR_DATA *ch )
   static char buf[60];
 
   strcpy(buf, "&w<&Y%hhp ");
-  if ( IS_VAMPIRE(ch) )
+  if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
     strcat(buf, "&R%bbp");
   else
     strcat(buf, "&C%mm");
@@ -3690,13 +3690,13 @@ void display_prompt( DESCRIPTOR_DATA *d )
 	stat = ch->max_hit;
 	break;
       case 'm':
-	if ( IS_VAMPIRE(ch) )
+	if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
 	  stat = 0;
 	else
 	  stat = ch->mana;
 	break;
       case 'M':
-	if ( IS_VAMPIRE(ch) )
+	if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
 	  stat = 0;
 	else
 	  stat = ch->max_mana;
@@ -3739,13 +3739,13 @@ void display_prompt( DESCRIPTOR_DATA *d )
         else                            strcpy( pbuf, "night" );
         break;
       case 'b':
-	if ( IS_VAMPIRE(ch) )
+	if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
 	  stat = ch->pcdata->condition[COND_BLOODTHIRST];
 	else
 	  stat = 0;
 	break;
       case 'B':
-	if ( IS_VAMPIRE(ch) )
+	if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
 	  stat = ch->level + 10;
 	else
 	  stat = 0;

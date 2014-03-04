@@ -232,7 +232,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
 	mana = IS_NPC(ch) ? 0 : UMAX(skill_table[sn]->min_mana,
 	   100 / ( 2 + ch->level - skill_table[sn]->skill_level[ch->class] ) );
 	blood = UMAX(1, (mana+4) / 8);      /* NPCs don't have PCDatas. -- Altrag */
-	if ( IS_VAMPIRE(ch) )
+	if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
 	{
 	    if (ch->pcdata->condition[COND_BLOODTHIRST] < blood)
 	    {
@@ -397,7 +397,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
 	    learn_from_failure( ch, sn );
 	    if ( mana )
 	    {
-		if ( IS_VAMPIRE(ch) )
+		if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
 		  gain_condition( ch, COND_BLOODTHIRST, - blood/2 );
 		else
 		  ch->mana -= mana/2;
@@ -406,7 +406,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
 	}
 	if ( mana )
 	{
-	    if ( IS_VAMPIRE(ch) )
+	    if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
 		gain_condition( ch, COND_BLOODTHIRST, - blood );
 	    else
 		ch->mana -= mana;
@@ -452,7 +452,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
 
     if ( mana )
     {
-	if ( IS_VAMPIRE(ch) )
+	if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
 	  gain_condition( ch, COND_BLOODTHIRST, - blood );
 	else
 	  ch->mana -= mana;
@@ -3298,7 +3298,7 @@ void do_bloodlet( CHAR_DATA *ch, char *argument )
 {
     OBJ_DATA  *obj;
  
-    if ( IS_NPC(ch) || !IS_VAMPIRE(ch) )
+    if ( IS_NPC(ch) || !IS_VAMPIRE(ch) || IS_DEMON(ch) )
 	return;
  
     if ( ch->fighting )
@@ -3346,8 +3346,8 @@ void do_feed( CHAR_DATA *ch, char *argument )
 	  return;
 	}
 
-	if ( !IS_NPC(ch)
-	&&   !IS_VAMPIRE(ch) )
+	if ( !IS_NPC(ch) && !IS_VAMPIRE(ch) )
+	if (  !IS_NPC(ch) && IS_DEMON(ch) )
 	{
 	  send_to_char( "It is not of your nature to feed on living creatures.\n\r", ch );
 	  return;
@@ -5154,7 +5154,7 @@ CHAR_DATA *scan_for_victim( CHAR_DATA *ch, EXIT_DATA *pexit, char *name )
 	return NULL;
  
     was_in_room = ch->in_room;
-    if ( IS_VAMPIRE(ch) && time_info.hour < 21 && time_info.hour > 5 )
+    if ( IS_VAMPIRE(ch) || IS_DEMON(ch) && time_info.hour < 21 && time_info.hour > 5 )
 	max_dist = 1;
 
     if ( ch->level < 50 ) --max_dist;

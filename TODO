@@ -3,6 +3,9 @@
 
   - TODO LIST -
 
+AÑADIR SKILLS CLASES NUEVA
+AÑADIR SKILLS CLASES NUEVASS
+
 !!!! Adaptar src/Makefile a ARCH = x86_64 !!!!
 
 Makefile C_FLAGS en modo debug, depurar errores del codigo fuente en src

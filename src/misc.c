@@ -572,7 +572,7 @@ void do_drink( CHAR_DATA *ch, char *argument )
 	break;
 
     case ITEM_BLOOD:
-	if ( IS_VAMPIRE(ch) && !IS_NPC(ch) )
+	if (( IS_VAMPIRE(ch) && !IS_NPC(ch) ) || ( IS_DEMON(ch) && !IS_NPC(ch)) )
 	{
 	    if ( obj->timer > 0 */		/* if timer, must be spilled blood */
 /*

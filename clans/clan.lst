@@ -6,4 +6,8 @@ thief.gui
 cleric.gui
 mage.gui
 ranger.gui
+archer.gui
+angel.gui
+demon.gui
+assassin.gui
 $

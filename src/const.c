@@ -37,7 +37,7 @@ char *	const	npc_race	[MAX_NPC_RACE] =
 
 "human", "elf", "dwarf", "halfling", "pixie", "vampire", "half-ogre",
 "half-orc", "half-troll", "half-elf", "gith", "drow", "sea-elf",
-"lizardman", "gnome", "r5", "r6", "r7", "r8", "troll",
+"lizardman", "gnome", "demon", "r6", "r7", "r8", "troll",
 "ant", "ape", "baboon", "bat", "bear", "bee",
 "beetle", "boar", "bugbear", "cat", "dog", "dragon", "ferret", "fly",
 "gargoyle", "gelatin", "ghoul", "gnoll", "gnome", "goblin", "golem",
@@ -68,8 +68,8 @@ char *	const	npc_race	[MAX_NPC_RACE] =
 char *	const	npc_class	[MAX_NPC_CLASS] =
 {
 "mage", "cleric", "thief", "warrior", "vampire", "druid", "ranger",
-"augurer", "paladin", "nephandi", "savage", "pirate", "pc12", "pc13",
-"pc14", "pc15", "pc16", "pc17", "pc18", "pc19",
+"augurer", "paladin", "nephandi", "savage", "pirate", "archer", "assassin",
+"demon", "angel", "pc16", "pc17", "pc18", "pc19",
 "baker", "butcher", "blacksmith", "mayor", "king", "queen"
 };
 
