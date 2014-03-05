@@ -809,7 +809,7 @@ typedef enum
   SUB_ROOM_EXTRA, SUB_ROOM_EXIT_DESC, SUB_WRITING_NOTE, SUB_MPROG_EDIT, 
   SUB_HELP_EDIT, SUB_WRITING_MAP, SUB_PERSONAL_BIO, SUB_REPEATCMD, 
   SUB_RESTRICTED, SUB_DEITYDESC, SUB_MORPH_DESC, SUB_MORPH_HELP,
-  SUB_PROJ_DESC, SUB_JOURNAL_WRITE, SUB_NEWS_POST, SUB_NEWS_EDIT,
+  SUB_PROJ_DESC, SUB_JOURNAL_WRITE, SUB_NEWS_POST, SUB_NEWS_EDIT, SUB_KINGDOM_DESC,
   /* timer types ONLY below this point */
   SUB_TIMER_DO_ABORT = 128, SUB_TIMER_CANT_ABORT
 } char_substates;
@@ -2653,9 +2653,20 @@ struct	pc_data
     int			bet_amt;
     long int            outcast_time;	/* The time at which the char was outcast */
 
+    /* CHESS PC_DATA */
     GAME_BOARD_DATA     *game_board;        /* Tablero de juego de Ajedrez de Pĥantasien */
 
     NUISANCE_DATA       *nuisance;       /* New Nuisance structure */
+
+    /* SUDOKU PC_DATA */
+    char 		dis_sudoku[9][9];
+    char 		sudoku[9][9];
+    time_t 		sstarttime, sfastesttime, sslowesttime, slasttime;
+    unsigned 		swins, squits;
+
+    /* KINGDOMS */
+    struct kingdom_data *kingdom; 
+    char *kingdom_name; 
 
     long int            restore_time;	/* The last time the char did a restore all */
     int			r_range_lo;	/* room range */
@@ -3235,6 +3246,8 @@ extern	sh_int	gsn_second_attack;
 extern	sh_int	gsn_third_attack;
 extern	sh_int	gsn_fourth_attack;
 extern	sh_int	gsn_fifth_attack;
+extern  sh_int  gsn_sixth_attack;
+extern  sh_int  gsn_seventh_attack;
 extern	sh_int	gsn_dual_wield;
 
 extern	sh_int	gsn_feed;

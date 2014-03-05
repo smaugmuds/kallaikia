@@ -4,15 +4,15 @@ Name         Xermon~
 Sex          1
 Class        11
 Race         0
-Languages    1 1
-Level        65 
-Played       220
+Languages    -1 1
+Level        65
+Played       713
 Room         10300
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
-Gold         9999999999
-Exp          9999999999
+Gold         1410065407
+Exp          1410065407
 Height          66
 Weight          147
 Act          771753544
@@ -31,6 +31,7 @@ Armor        1000
 Mentalstate  -8
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
 Title         El maestro de las tinieblas~
+WizInvis     65
 Flags        8421384
 PKills       0
 PDeaths      0
@@ -40,7 +41,7 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         orion.local.lan
+Site         ec2-107-23-50-52.compute-1.amazonaws.com
 Tongue       100 'common'
 End
 

@@ -66,6 +66,7 @@ SPELL_FUN *spell_function( char *name )
     if ( !str_cmp( name, "spell_smaug" ))	     return spell_smaug;
     if ( !str_cmp( name, "spell_acid_blast" ))	     return spell_acid_blast;
     if ( !str_cmp( name, "spell_animate_dead" ))     return spell_animate_dead;
+    if ( !str_cmp( name, "spell_assassinate" ))	     return spell_assassinate;
     if ( !str_cmp( name, "spell_astral_walk" ))	     return spell_astral_walk;
     if ( !str_cmp( name, "spell_blindness" ))	     return spell_blindness;
     if ( !str_cmp( name, "spell_burning_hands" ))    return spell_burning_hands;
@@ -85,11 +86,13 @@ SPELL_FUN *spell_function( char *name )
     if ( !str_cmp( name, "spell_cure_poison" ))	     return spell_cure_poison;
     if ( !str_cmp( name, "spell_curse" ))	     return spell_curse;
     if ( !str_cmp( name, "spell_detect_poison" ))    return spell_detect_poison;
+    if ( !str_cmp( name, "spell_death" ))   	     return spell_death;
     if ( !str_cmp( name, "spell_disenchant_weapon" ))   return spell_disenchant_weapon;
     if ( !str_cmp( name, "spell_dispel_evil" ))	     return spell_dispel_evil;
     if ( !str_cmp( name, "spell_dispel_magic" ))     return spell_dispel_magic;
     if ( !str_cmp( name, "spell_dream" ))	     return spell_dream;
     if ( !str_cmp( name, "spell_earthquake" ))	     return spell_earthquake;
+    if ( !str_cmp( name, "spell_enchant_armor" ))   return spell_enchant_armor;
     if ( !str_cmp( name, "spell_enchant_weapon" ))   return spell_enchant_weapon;
     if ( !str_cmp( name, "spell_energy_drain" ))     return spell_energy_drain;
     if ( !str_cmp( name, "spell_faerie_fire" ))	     return spell_faerie_fire;
@@ -98,6 +101,7 @@ SPELL_FUN *spell_function( char *name )
     if ( !str_cmp( name, "spell_fireball" ))	     return spell_fireball;
     if ( !str_cmp( name, "spell_flamestrike" ))	     return spell_flamestrike;
     if ( !str_cmp( name, "spell_gate" ))	     return spell_gate;
+    if ( !str_cmp( name, "spell_grasp_suspiria" ))   return spell_grasp_suspiria;
     if ( !str_cmp( name, "spell_knock" ))	     return spell_knock;
     if ( !str_cmp( name, "spell_harm" ))	     return spell_harm;
     if ( !str_cmp( name, "spell_identify" ))	     return spell_identify;

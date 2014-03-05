@@ -861,7 +861,7 @@ ch_ret multi_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt )
     /* Very high chance of hitting compared to chance of going berserk */
     /* 40% or higher is always hit.. don't learn anything here though. */
     /* -- Altrag */
-    chance = IS_NPC(ch) ? 100 : (LEARNED(ch, gsn_berserk)*5/2);
+    chance = IS_NPC(ch) ? 100 : (LEARNED(ch, gsn_berserk)*6/2);
     if ( IS_AFFECTED(ch, AFF_BERSERK) && number_percent() < chance )
       if ( (retcode = one_hit( ch, victim, dt )) != rNONE ||
             who_fighting( ch ) != victim )
@@ -973,6 +973,30 @@ ch_ret multi_hit( CHAR_DATA *ch, CHAR_DATA *victim, int dt )
     }
     else
 	learn_from_failure( ch, gsn_fifth_attack );
+
+    chance = IS_NPC(ch) ? ch->level
+          : (int) ((ch->pcdata->learned[gsn_sixth_attack]+(dual_bonus*4))/4);
+    if ( number_percent( ) < chance )
+    {
+       learn_from_success( ch, gsn_sixth_attack );
+       retcode = one_hit( ch, victim, dt );
+       if ( retcode != rNONE || who_fighting( ch ) != victim )
+           return retcode;
+    }
+    else
+       learn_from_failure( ch, gsn_sixth_attack );
+
+    chance = IS_NPC(ch) ? ch->level
+          : (int) ((ch->pcdata->learned[gsn_seventh_attack]+(dual_bonus*5))/4);
+    if ( number_percent( ) < chance )
+    {
+       learn_from_success( ch, gsn_seventh_attack );
+       retcode = one_hit( ch, victim, dt );
+       if ( retcode != rNONE || who_fighting( ch ) != victim )
+           return retcode;
+    }
+    else
+       learn_from_failure( ch, gsn_seventh_attack );
 
     retcode = rNONE;
 

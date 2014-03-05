@@ -17,21 +17,26 @@ DESCRIPCION = Phantasien III  ^Reinos de Deseperacion^
 # Extras Opcionales (Estables)
 ########################################
 
+# Planos areas
+PLANES = -DPLANES
+
 # Juego de ajedrez
 CHESS = -DCHESS
 
 # Aumentar VNUM a un billon
-
 BILLION_VNUM = -DBILLION_VNUM
+
+# Tablero para SUDOKUS
+SUDOKU = -DSUDOKU
 
 
 ###################################################################
 # Extras Opcionales Desarrollo (Experimentales NO ACTIVAR!)
 ###################################################################
 
-#
-#
-#
+# Reinos y Conquistas (En desarrollo)
+# KINGDOMS = -DKINGDOMS
+
 
 ########################################
 # Arquitectura del sistema
@@ -82,7 +87,7 @@ L_FLAGS = $(PROF) -lz $(NEED_DL)
 ########################################
 
 C_FILES =   adminlist.c  clans.c     db.c       hashstr.c  imm_host.c  mapout.c    news.c       requests.c  shops.c    stat_obj.c \
-act_info.c  ban.c        colorize.c  deity.c    hint.c     interp.c    misc.c      planes.c     reset.c     skills.c   tables.c \
+act_info.c  ban.c        colorize.c  deity.c    hint.c     interp.c    misc.c      reset.c      skills.c    tables.c \
 act_move.c  boards.c     comm.c      fight.c    house.c    liquids.c   mpxset.c    player.c     save.c      special.c  track.c \
 act_obj.c   build.c      comments.c  grub.c     ibuild.c   magic.c     mud_comm.c  polymorph.c  services.c  stances.c  update.c \
 act_wiz.c   act_comm.c   const.c     handler.c  ident.c    makeobjs.c  mud_prog.c  renumber.c   sha256.c    starmap.c  variables.c
@@ -92,6 +97,12 @@ H_FILES = bet.h  hint.h  house.h  liquids.h  mud.h  news.h  sha256.h
 ################################################
 # Ficheros para Opciones Extra
 ################################################
+
+#Ficheros FLAGS adicionales para planos de areas
+ifdef PLANES
+   C_FILES := $(C_FILES) planes.c
+   C_FLAGS := $(C_FLAGS) $(PLANES)
+endif
 
 #Ficheros FLAGS adicionales para juego de Ajedrez
 ifdef CHESS
@@ -104,6 +115,20 @@ endif
 ifdef BILLION_VNUM
    C_FLAGS := $(C_FLAGS) $(BILLION_VNUM)
 endif
+
+#Ficheros FLAGS adicionales para juego de Sudoku
+ifdef SUDOKU
+   C_FILES := $(C_FILES) sudoku.c
+   C_FLAGS := $(C_FLAGS) $(SUDOKU)
+endif
+
+#Ficheros FLAGS adicionales para Reinos y conquistas
+ifdef KINGDOMS
+   C_FILES := $(C_FILES) kingdoms.c
+   H_FILES := $(H_FILES) kingdoms.h
+   C_FLAGS := $(C_FLAGS) $(KINGDOMS)
+endif
+
 
 ############################################################
 # Objetos del compilador se generan en "objetos_compilador"
@@ -157,7 +182,7 @@ dist:
 	@echo && echo " [ "$(MAKE)" ] Limpiar objetos del codigo y ficheros de log ..." && echo
 	@$(MAKE) -s cleanall
 	@echo && echo " [ "$(MAKE)" ] Creando el fichero de distribucion: \"../../"$(NOMBRE)"-"$(VERSION)".tar.bz2\" ..."
-	@cd .. && tar cfj ../$(NOMBRE)-$(VERSION).tar.bz2 *
+	@cd ../../ && tar cfj $(NOMBRE)-$(VERSION).tar.bz2 $(NOMBRE)-$(VERSION)
 	@echo " [ "$(MAKE)" ] Finalizado." && echo
 
 git:

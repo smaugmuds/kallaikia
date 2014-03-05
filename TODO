@@ -3,8 +3,13 @@
 
   - TODO LIST -
 
-AÑADIR SKILLS CLASES NUEVA
-AÑADIR SKILLS CLASES NUEVASS
+AÑADIR SKILLS/SPELLS CLASES NUEVAS
+
+Wed Mar  5 10:46:30 2014 :: [*****] BUG: fread_skill: unknown skill/spell spell_assassinate
+Wed Mar  5 10:46:30 2014 :: [*****] BUG: fread_skill: unknown skill/spell spell_grasp_suspiria
+Wed Mar  5 10:46:30 2014 :: [*****] BUG: fread_skill: unknown skill/spell spell_death
+Wed Mar  5 10:46:30 2014 :: [*****] BUG: fread_skill: unknown skill/spell spell_enchant_armor
+Wed Mar  5 10:46:30 2014 :: [*****] BUG: fread_skill: unknown skill/spell spell_nuke
 
 !!!! Adaptar src/Makefile a ARCH = x86_64 !!!!
 
