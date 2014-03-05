@@ -368,7 +368,6 @@ void boot_db( void )
     sysdata.read_mail_free 		= LEVEL_IMMORTAL;
     sysdata.write_mail_free 		= LEVEL_IMMORTAL;
     sysdata.take_others_mail		= LEVEL_DEMI;
-    sysdata.imc_mail_vnum		= 0;
     sysdata.muse_level			= LEVEL_DEMI;
     sysdata.think_level			= LEVEL_HIGOD;
     sysdata.build_level			= LEVEL_DEMI;
@@ -3068,10 +3067,6 @@ void free_char( CHAR_DATA *ch )
 	DISPOSE( ch->pcdata->rank	);
 	STRFREE( ch->pcdata->title	);
 	STRFREE( ch->pcdata->bio	); 
-        if ( ch->pcdata->rreply )
-                DISPOSE( ch->pcdata->rreply ); /* no hash */
-        if ( ch->pcdata->rreply_name )
-                DISPOSE( ch->pcdata->rreply_name ); /* no hash */
 	DISPOSE( ch->pcdata->bestowments ); /* no hash */
 	DISPOSE( ch->pcdata->homepage	);  /* no hash */
 	STRFREE( ch->pcdata->authed_by	);
@@ -3091,7 +3086,6 @@ void free_char( CHAR_DATA *ch )
 		}
 		DISPOSE(ch->pcdata->tell_history);
 	}
-	DISPOSE(ch->pcdata->ice_listen);
 	DISPOSE(ch->pcdata->see_me);
 	DISPOSE(ch->pcdata);
      }
@@ -6554,7 +6548,6 @@ void save_sysdata( SYSTEM_DATA sys )
 	fprintf( fp, "Readmailfree   %d\n", sys.read_mail_free		);
 	fprintf( fp, "Writemailfree  %d\n", sys.write_mail_free		);
 	fprintf( fp, "Takeothersmail %d\n", sys.take_others_mail	);
-	fprintf( fp, "IMCMailVnum    %d\n", sys.imc_mail_vnum		);
 	fprintf( fp, "Muse           %d\n", sys.muse_level		);
 	fprintf( fp, "Think          %d\n", sys.think_level		);
 	fprintf( fp, "Build          %d\n", sys.build_level		);
@@ -6689,7 +6682,6 @@ void fread_sysdata( SYSTEM_DATA *sys, FILE *fp )
 
 	case 'I':
 	    KEY( "IdentTries",	   sys->ident_retries,	  fread_number( fp ) );
-	    KEY( "IMCMailVnum",	   sys->imc_mail_vnum,	  fread_number( fp ) );
 	    break;
 
 	case 'L':

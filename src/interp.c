@@ -21,10 +21,6 @@
 #include <string.h>
 #include <time.h>
 #include "mud.h"
-#ifdef USE_IMC
-#include "icec-mercbase.h"
-#endif
-
 
 /*
  * Externals
@@ -682,11 +678,7 @@ first place.  Whaddya gonna do? */
 	&&   !check_social( ch, command, argument )
         &&   !news_cmd_hook(ch, command, argument)
 
-#ifdef USE_IMC
-	&&   !icec_command_hook( ch, command, argument ) )
-#else
 	)
-#endif
 	{
 	    EXIT_DATA *pexit;
 

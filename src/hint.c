@@ -30,11 +30,6 @@
 #include <time.h>
 #include <sys/stat.h>
 #include "mud.h"
-#ifdef USE_IMC
-#include "imc-mercbase.h"
-#endif
-
-
 
 HINT_DATA *           first_hint;
 HINT_DATA *           last_hint;

@@ -1,13 +1,13 @@
 #PLAYER
 Version      3
-Name         XeRMoN~
+Name         BuRZuMiSHi~
 Sex          1
 Class        3
 Race         0
 Languages    -1 1
 Level        65
-Played       1005
-Room         10300
+Played       1316
+Room         21280
 HpManaMove   9999 9999 9999 9999 999 999
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -28,7 +28,6 @@ Honour       0
 Hitroll      0
 Damroll      0
 Armor        100
-ICEListen ~
 Mentalstate  -7
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
 Title         El maestro de las tinieblas.~

@@ -2693,12 +2693,6 @@ struct	pc_data
     sh_int		lt_index;	/* last_tell index */
     char *		see_me;		/* who can see me (imm only) */
     
-    long	imc_deaf;    /* IMC channel def flags */
-    long	imc_allow;   /* IMC channel allow flags */
-    long	imc_deny;    /* IMC channel deny flags */
-    char *	rreply;      /* IMC reply-to */
-    char *	rreply_name; /* IMC reply-to shown to char */
-    char *	ice_listen;  /* ICE channels */
     char *  recent_site;        /* site a player started their most recent session from */
     char *  prev_site;      /* site a player last quit from */
     sh_int	colorize	[AT_MAXCOLOR];
@@ -2977,8 +2971,6 @@ struct	system_data
     sh_int	read_mail_free;		/* Read mail for free (was 51) */
     sh_int	write_mail_free;	/* Write mail for free(was 51) */
     sh_int	take_others_mail;	/* Take others mail (was 54)   */
-    int		imc_mail_vnum;		/* Board vnum for IMC mail     */
-    sh_int	imc_mail_level;		/* Min level to send IMC mail  */
     sh_int	muse_level;		/* Level of muse channel */
     sh_int	think_level;		/* Level of think channel LEVEL_HIGOD*/
     sh_int	build_level;		/* Level of build channel LEVEL_BUILD*/

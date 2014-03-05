@@ -1461,22 +1461,6 @@ Log         3
 End
 
 #COMMAND
-Name        imc~
-Code        do_imc
-Position    100
-Level       58
-Log         0
-End
-
-#COMMAND
-Name        imclist~
-Code        do_imclist
-Position    100
-Level       58
-Log         0
-End
-
-#COMMAND
 Name        ignore~
 Code        do_ignore
 Position    100

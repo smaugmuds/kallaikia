@@ -12,6 +12,27 @@ NOMBRE = phantasien
 VERSION = 1.8.3b
 DESCRIPCION = Phantasien III  ^Reinos de Deseperacion^
 
+
+########################################
+# Extras Opcionales (Estables)
+########################################
+
+# Juego de ajedrez
+CHESS = -DCHESS
+
+# Aumentar VNUM a un billon
+
+BILLION_VNUM = -DBILLION_VNUM
+
+
+###################################################################
+# Extras Opcionales Desarrollo (Experimentales NO ACTIVAR!)
+###################################################################
+
+#
+#
+#
+
 ########################################
 # Arquitectura del sistema
 ########################################
@@ -19,7 +40,7 @@ DESCRIPCION = Phantasien III  ^Reinos de Deseperacion^
 ARCH = `uname -m`
 
 ########################################
-# Opciones para G++
+# Opciones para GCC (FLAGS)
 ########################################
 
 CC      = gcc
@@ -32,26 +53,20 @@ NEED_DL = -ldl
 #Algunos sistemas necesitan esto para el enlazado dinamico.
 EXPORT_SYMBOLS = -export-dynamic
 
-# IMC - Comentar para deshabilitar el soporte IMC (Mud Network Chat) (No se utiliza, para habilitarlo copiar los ficheros de imc a src)
-# IMC = -DUSE_IMC
-
-# TODO TODO TODO (Portar desde MERC)
-# MOB_PROG - Comentar para deshabilitar el soporte de MOB_PROGRAMS
-#MOB_PROG = 1
-
 # Descomentar para modo desarrollo/debug  
 # Comentar para modo distribucion
-# CXX_FLAGS = -Wall -Wshadow -Wformat-security -Wpointer-arith -Wcast-align -Wredundant-decls -Wconversion -Wwrite-strings -Wunused-result -Wpointer-to-int-cast -Wint-to-pointer-cast
+#CXX_FLAGS = -Wall -Wconversion -Wwrite-strings -Wshadow -Wformat-security -Wpointer-arith -Wcast-align -Wredundant-decls -Wunused-result -Wpointer-to-int-cast -Wint-to-pointer-cast
 
 # Descomentar para modo distribucion
 # Comentar para modo desarrollo/debug
-CXX_FLAGS = -Wno-all -Wno-conversion -Wno-write-strings -Wno-shadow -Wno-format-security -Wno-pointer-arith -Wno-cast-align -Wno-redundant-decls -Wno-unused-result -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast
+CXX_FLAGS = -Wno-all -Wno-conversion -Wno-write-strings -Wno-shadow -Wno-format-security -Wno-pointer-arith -Wno-cast-align -Wno-redundant-decls -Wunused-result -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast
+
 
 ########################################
 # GCC & LD FLAGS Completos
 ########################################
 
-C_FLAGS = -O -g2 -pipe $(CXX_FLAGS) $(PROF) $(EXPORT_SYMBOLS)
+C_FLAGS = -O -g2 -pipe $(CXX_FLAGS) $(PROF) $(EXPORT_SYMBOLS) -DSMAUG
 
 ifeq ($(ARCH), x86_64)
 C_FLAGS := $(C_FLAGS) -march=$(ARCH) -mtune=$(ARCH)
@@ -61,43 +76,52 @@ endif
 
 L_FLAGS = $(PROF) -lz $(NEED_DL)
 
+
 ########################################
-# Ficheros C para compilar
+# Ficheros Principales para compilar
 ########################################
 
-C_FILES = act_comm.c  adminlist.c  clans.c     db.c       hashstr.c  imm_host.c  mapout.c    news.c       requests.c  shops.c    stat_obj.c \
+C_FILES =   adminlist.c  clans.c     db.c       hashstr.c  imm_host.c  mapout.c    news.c       requests.c  shops.c    stat_obj.c \
 act_info.c  ban.c        colorize.c  deity.c    hint.c     interp.c    misc.c      planes.c     reset.c     skills.c   tables.c \
 act_move.c  boards.c     comm.c      fight.c    house.c    liquids.c   mpxset.c    player.c     save.c      special.c  track.c \
 act_obj.c   build.c      comments.c  grub.c     ibuild.c   magic.c     mud_comm.c  polymorph.c  services.c  stances.c  update.c \
-act_wiz.c   chess.c      const.c     handler.c  ident.c    makeobjs.c  mud_prog.c  renumber.c   sha256.c    starmap.c  variables.c
+act_wiz.c   act_comm.c   const.c     handler.c  ident.c    makeobjs.c  mud_prog.c  renumber.c   sha256.c    starmap.c  variables.c
 
-# Ficheros adicionales para soporte IMC
-#ifdef IMC
-#   C_FILES := imc.c $(C_FILES)
-#   C_FLAGS := $(C_FLAGS) $(IMC) -DIMCSMAUG
-#endif
+H_FILES = bet.h  hint.h  house.h  liquids.h  mud.h  news.h  sha256.h
 
-# Ficheros adicionales para soporte MOB_PROGRAMS: criaturas||mobprogs
-#ifdef MOB_PROG
-#   C_FILES := $(C_FILES) criaturas_programas.c criaturas_comandos.c
-#   C_FLAGS := $(C_FLAGS) -DDUNNO_STRSTR
-#endif
+################################################
+# Ficheros para Opciones Extra
+################################################
 
+#Ficheros FLAGS adicionales para juego de Ajedrez
+ifdef CHESS
+   C_FILES := $(C_FILES) chess.c
+   H_FILES := $(H_FILES) chess.h
+   C_FLAGS := $(C_FLAGS) $(CHESS)
+endif
+
+# FLAGS adicionales para BILLION_VNUM
+ifdef BILLION_VNUM
+   C_FLAGS := $(C_FLAGS) $(BILLION_VNUM)
+endif
+
+############################################################
 # Objetos del compilador se generan en "objetos_compilador"
-O_FILES := $(patsubst %.c,objetos_compilador/%.o,$(C_FILES))
+############################################################
 
-H_FILES = bet.h  chess.h  hint.h  house.h  liquids.h  mud.h  news.h  sha256.h
+O_FILES := $(patsubst %.c,objetos_compilador/%.o,$(C_FILES))
 
 ########################################
 # Construir el codigo
 ########################################
 
 all:
-	@$(MAKE) -s clean && mkdir objetos_compilador
+	@$(MAKE) -s clean
 	@echo && echo " [ "$(MAKE)" ] Construccion -> \""$(NOMBRE)" "$(VERSION)" ("$(ARCH)")\"." && echo
 	@echo " [ "$(MAKE)" ] "$(DESCRIPCION)"" && echo
 	@echo " [ "$(CC)" ] CFLAGS: "$(C_FLAGS)""
 	@echo " [ "$(CC)" ] LDFLAGS: "$(L_FLAGS)"" && echo
+	@mkdir -p objetos_compilador
 	@$(MAKE) -s $(NOMBRE)
 	@echo " [ "$(MAKE)" ] Finalizado! -> \""$(NOMBRE)" "$(VERSION)" ("$(ARCH)")\"." && echo
 
@@ -105,7 +129,7 @@ all:
 -include dependencies.d
 
 $(NOMBRE): $(O_FILES)
-	rm -f ../$(NOMBRE)
+	rm -rf ../$(NOMBRE)
 	$(CC) -export-dynamic -o ../$(NOMBRE) $(O_FILES) $(L_FLAGS)
 	@echo && echo " [ "$(MAKE)" ] Generar el fichero de dependencia \"dependencies.d\".";
 	@$(CC) -MM $(C_FLAGS) $(C_FILES) > dependencies.d
