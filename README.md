@@ -23,7 +23,10 @@
   \\_____________________________________________________________________//
 
 
-Benvid@s a <strong>Kallaikia</strong> o <strong>^Reino das Tebras^</strong>, esta e a primeira xeneraci&oacute;n deste MUD nacido a partir do servidor <strong>Smaug 1.8</strong> creado para <strong><a href="http://www.realmsofdespair.com">Realms Of Despair</a></strong> por <strong>Thorin</strong>, escrito en linguaxe <strong>C#</strong> e liberado baxo licencia <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPLv2</a>.
+Benvid@s a <strong>Kallaikia</strong> o <strong>^Reino das Tebras^</strong>,
+esta e a primeira xeneraci&oacute;n deste MUD nacido a partir do servidor <strong>Smaug 1.8</strong> 
+creado para <strong><a href="http://www.realmsofdespair.com">Realms Of Despair</a></strong> 
+por <strong>Thorin</strong>, escrito en linguaxe <strong>C#</strong> e liberado baxo licencia <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPLv2</a>.
 
 <strong>0ri0n.no-ip.biz:4000</strong>
 
@@ -31,14 +34,17 @@ Benvid@s a <strong>Kallaikia</strong> o <strong>^Reino das Tebras^</strong>, est
 OBXETIVO
 ========
 
-Crear un mundo virtual completamente en Galego que describa a antiga Galiza castrexa, onde os druidas a maxia e o encanto envolvían a nosa fermosa terra.
+Crear un mundo virtual completamente en Galego que describa a antiga Galiza castrexa,
+onde os druidas a maxia e o encanto envolvían a nosa fermosa terra.
 
 Animamos a todo o mundo a participar de algunha forma:
 
 	- Xogar e axudar a novos xogadores.
 	- Propoñer ou adaptar novas e vellas ideas.
 	- Modificar ou traducir areas existentes (nivel +55)
-	- Crear novas áreas (nivel +64), se non tes o nivel suficiente e che gostaría colaborar creando novas áreas, tamén podes correxir erros nas áreas co editor externo, e envialas a algún inmortal para que as valide e inclua en Kallaikia.
+	- Crear novas áreas (nivel +64), se non tes o nivel suficiente e che gostaría colaborar
+	  creando novas áreas, tamén podes correxir erros nas áreas co editor externo, e envialas
+	  a algún inmortal para que as valide e inclua en Kallaikia.
 	- Programando e analizando código C# (GitHub)
 	
 
@@ -66,7 +72,8 @@ CAMBIOS REALIZADOS SOBRE SMAUG 1.8b
 
 * Engadeuse código experimental para soportar reinos.
 
-* Engadíronse novas areas en "o_reino_das_tebras/area.devel" e "areas14.devel" que seran incluídas en Kallaikia
+* Engadíronse novas areas en "o_reino_das_tebras/area.devel" e "areas14.devel" que seran
+  incluídas en Kallaikia
 
 * Engadironse ferramentas e código para desarrollo en "devel"
 
@@ -76,7 +83,9 @@ CAMBIOS REALIZADOS SOBRE SMAUG 1.8b
 
 * Engadironse scripts para controlar o servicio.
 
-* Eliminouse o código de "IMC (Inter MUD Connector)", nun futuro incluirase "IMC2" ou "I3", deste xeito poderemos interconectar diferentes MUDs (novos reinos, probablemente da peninsula ou arredores) basados en Kallaikia.
+* Eliminouse o código de "IMC (Inter MUD Connector)", nun futuro incluirase "IMC2" ou "I3",
+  deste xeito poderemos interconectar diferentes MUDs (novos reinos, probablemente da peninsula
+  ou arredores) basados en Kallaikia.
 
 
 TODO LIST
