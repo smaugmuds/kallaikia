@@ -94,6 +94,8 @@ convivían, loitaban e disfrutaban polo encanto da nosa fermosa terra ... **Kall
 
 * Eliminouse o código de **"IMC (Inter MUD Connector)"**, nun futuro incluirase **"IMC2"** ou **"I3"**, deste xeito poderemos interconectar diferentes MUDs (novos Reinos, probablemente da peninsula ou arredores) basados en **Kallaikia**.
 
+* Convertíronse todos os ficheiros de formato **"DOS"** a **"UNIX"**, para evitar errores de codificación de caracteres.
+
 
 ###TODO LIST
 
