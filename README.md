@@ -24,7 +24,6 @@
 
 ```
 
-==================
 
 ##BENVID@
 
@@ -36,7 +35,7 @@ por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia **[http://ww
 
   **0ri0n.no-ip.biz:4000**
 
-==================
+
 
 ##OBXETIVOS
 
@@ -53,7 +52,7 @@ Animamos a todo o mundo a participar de algunha forma:
 	  a algún inmortal para que as valide e inclua en Kallaikia.
 	- Programando e analizando código C# (GitHub)
 	
-==================
+
 
 ##CAMBIOS REALIZADOS SOBRE SMAUG 1.8b
 
@@ -91,7 +90,7 @@ Animamos a todo o mundo a participar de algunha forma:
   deste xeito poderemos interconectar diferentes MUDs (novos reinos, probablemente da peninsula
   ou arredores) basados en Kallaikia.
 
-=====================
+
 
 ##TODO LIST
 
