@@ -1,26 +1,26 @@
 ```
-                                 Benvid@ ... estas entrando en Kallaikia
+                            Benvid@ ... estas entrando en Kallaikia
 
-                                 O    R E I N O    D A S    T E B R A S !
-                 _________________________________________________________________________
-                /            \ Written, maintained and modified by Thoric; connection by  \
-               |             /     BlueGenesis.com; governed by the Council of Elders      |
-               |-------------\          (email all concerns to blodkai@game.org)           |
-               |   \\._.//   /                                                             |
-               |   (0...0)   \ Home of SMAUG based on Merc2.1 code by Hatchet, Fury Kahn;  |
-               |    ).:.(    / in turn based on DikuMUD code (Hans Staerfeldt, Katja Nyboe |
-               |    {o o}    \ Tom Madsen, Michael Seifert and Sebastian Hammer)           |
-               |   / ' ' \   /                                                             |
-               |-'- /   \ -`-\  Realm:          0ri0n.no-ip.biz:4000                       |
-               |   .VxvxV.   /  Realm Home:     http://0ri0n.no-ip.biz/kallaikia/          |
-               |-------------\  Smaug Home:     http://www.game.org/smaug                  |
-               | SMAUG v1.8b /  Realms of Despair Home: http://www.realmsofdespair.com     |
-                \___________/_____________________________________________________________/
-                 //                                                                     \\
-                [| Code by Thoric (Derek Snider, derek@idirect.com) with Altrag/Blodkai/ |]
-                [| Haus/Narn/Scryn/Swordbearer/Tricops/Gorog/Rennard/Grishnakh/Fireblade/|]
-                [| Nivek/BuRZuMiSHi                                                      |]
-                 \\_____________________________________________________________________//
+                            O    R E I N O    D A S    T E B R A S !
+            _________________________________________________________________________
+           /            \ Written, maintained and modified by Thoric; connection by  \
+          |             /     BlueGenesis.com; governed by the Council of Elders      |
+          |-------------\          (email all concerns to blodkai@game.org)           |
+          |   \\._.//   /                                                             |
+          |   (0...0)   \ Home of SMAUG based on Merc2.1 code by Hatchet, Fury Kahn;  |
+          |    ).:.(    / in turn based on DikuMUD code (Hans Staerfeldt, Katja Nyboe |
+          |    {o o}    \ Tom Madsen, Michael Seifert and Sebastian Hammer)           |
+          |   / ' ' \   /                                                             |
+          |-'- /   \ -`-\  Realm:          0ri0n.no-ip.biz:4000                       |
+          |   .VxvxV.   /  Realm Home:     http://0ri0n.no-ip.biz/kallaikia/          |
+          |-------------\  Smaug Home:     http://www.game.org/smaug                  |
+          | SMAUG v1.8b /  Realms of Despair Home: http://www.realmsofdespair.com     |
+           \___________/_____________________________________________________________/
+            //                                                                     \\
+           [| Code by Thoric (Derek Snider, derek@idirect.com) with Altrag/Blodkai/ |]
+           [| Haus/Narn/Scryn/Swordbearer/Tricops/Gorog/Rennard/Grishnakh/Fireblade/|]
+           [| Nivek/BuRZuMiSHi                                                      |]
+            \\_____________________________________________________________________//
 
 ```
 
@@ -33,19 +33,19 @@ Dirección para conectar a **Kallaikia**: **0ri0n.no-ip.biz:4000**
 *(É preciso un cliente de telnet ou de MUD)*
 
 
-###OBXETIVO
+###OBXETIVOS
 
 Crear un mundo virtual completamente en **Galego** que transcurre na antiga **Galiza (Kallaikia) castrexa**,
 onde antigos deuses inmortales, druidas, guerreiros, curandeiros, arqueiros, demos, magos e demáis seres
 convivían, loitaban e disfrutaban polo encanto da nosa fermosa terra ... **Kallaikia**.
 
-Animamos a todo o mundo a participar de algunha forma:
+* Animamos a todo o mundo a participar de algunha forma:
 
-	* Xogar e axudar a novos xogadores.
-	* Propoñer ou adaptar novas e vellas ideas.
-	* Modificar ou traducir areas existentes (nivel +55).
-	* Crear novas áreas (nivel +64), se non tes o nivel suficiente e che gostaría colaborar creando novas áreas, tamén podes correxir erros nas áreas co editor externo, e envialas a algún inmortal para que as valide e inclua en Kallaikia.
-	* Programar e analizar código C# **[https://github.com/burzumishi/Kallaikia] (GitHub)**.
+	- **Xogar** e **axudar** a novos **xogadores**.
+	- **Propoñer** ou **adaptar** novas e vellas **ideas**.
+	- **Modificar** ou **traducir areas** existentes (nivel +55).
+	- **Crear** novas **áreas** (nivel +64), se non tes o nivel suficiente e che gostaría colaborar creando novas áreas, tamén podes correxir erros nas áreas co editor externo, e envialas a algún inmortal para que as valide e inclua en Kallaikia.
+	- Programar e analizar código C# **[https://github.com/burzumishi/Kallaikia] (GitHub)**.
 
 
 ###CAMBIOS REALIZADOS SOBRE SMAUG 1.8b
