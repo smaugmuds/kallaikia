@@ -24,13 +24,11 @@
 
 ```
 
-###BENVID@
+##Benvido a Kallaikia ...
 
-Benvid@ a **Kallaikia ^O Reino das Tebras^**, podes visitarnos en **[http://0ri0n.no-ip.biz/kallaikia] (Kallaikia)**,
-esta e a primeira xeneraci&oacute;n deste MUD nacido a partir do servidor **Smaug 1.8b** 
-creado para **[http://www.realmsofdespair.com] (Realms Of Despair)**
-por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia **[http://www.gnu.org/licenses/gpl-2.0.html] (GPLv2)**.
+Benvid@ a **Kallaikia ^O Reino das Tebras^**, podes visitarnos en [http://0ri0n.no-ip.biz/kallaikia] (Kallaikia), esta e a primeira xeneraci&oacute;n deste MUD en galego, nacido a partir do servidor **Smaug 1.8b** creado para [http://www.realmsofdespair.com] (Realms Of Despair) por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia [http://www.gnu.org/licenses/gpl-2.0.html] (GPLv2).
 
+Dirección para conectar ao mud:
 
   **0ri0n.no-ip.biz:4000**
 
@@ -89,6 +87,10 @@ Animamos a todo o mundo a participar de algunha forma:
 	- **kallaikia.servidor.desarrollo**
 	- **kallaikia.servidor.rapido**
 	- **kallaikia.servidor.completo**
+
+* Engadeuse seguridade extra para cifrar as contrasinais das contas con "SHA256"
+
+* Anti-Hack para inmortales.
 
 * Eliminouse o código de **"IMC (Inter MUD Connector)"**, nun futuro incluirase **"IMC2"** ou **"I3"**,
   deste xeito poderemos interconectar diferentes MUDs (novos reinos, probablemente da peninsula
