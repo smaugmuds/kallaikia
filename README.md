@@ -24,8 +24,9 @@
 
 ```
 
+==================
+
 ##BENVID@
-=======
 
 Benvid@ a **Kallaikia** o **^Reino das Tebras^**,
 esta e a primeira xeneraci&oacute;n deste MUD nacido a partir do servidor **Smaug 1.8b** 
@@ -35,9 +36,9 @@ por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia **[http://ww
 
   **0ri0n.no-ip.biz:4000**
 
+==================
 
 ##OBXETIVOS
-=========
 
 Crear un mundo virtual completamente en Galego que describa a antiga Galiza (Kallaikia) castrexa,
 onde os druidas a maxia e o encanto envolvían a nosa fermosa terra.
@@ -52,9 +53,9 @@ Animamos a todo o mundo a participar de algunha forma:
 	  a algún inmortal para que as valide e inclua en Kallaikia.
 	- Programando e analizando código C# (GitHub)
 	
+==================
 
 ##CAMBIOS REALIZADOS SOBRE SMAUG 1.8b
-===================================
 
 * Modificouse o ficheiro Makefile, agora pódense establecer varios parametros:
 
@@ -90,9 +91,9 @@ Animamos a todo o mundo a participar de algunha forma:
   deste xeito poderemos interconectar diferentes MUDs (novos reinos, probablemente da peninsula
   ou arredores) basados en Kallaikia.
 
+=====================
 
 ##TODO LIST
-=========
 
 * Incluir IMC2 ou I3.
 
