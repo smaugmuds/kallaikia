@@ -24,7 +24,7 @@
 
 ```
 
-BENVID@
+##BENVID@
 =======
 
 Benvid@ a **Kallaikia** o **^Reino das Tebras^**,
@@ -36,7 +36,7 @@ por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia **[http://ww
   **0ri0n.no-ip.biz:4000**
 
 
-OBXETIVOS
+##OBXETIVOS
 =========
 
 Crear un mundo virtual completamente en Galego que describa a antiga Galiza (Kallaikia) castrexa,
@@ -53,15 +53,13 @@ Animamos a todo o mundo a participar de algunha forma:
 	- Programando e analizando código C# (GitHub)
 	
 
-CAMBIOS REALIZADOS SOBRE SMAUG 1.8b
+##CAMBIOS REALIZADOS SOBRE SMAUG 1.8b
 ===================================
 
-* Modificouse o ficheiro Makefile
+* Modificouse o ficheiro Makefile, agora pódense establecer varios parametros:
 
-	- Agora pódense establecer varios parametros:
-
-		# Características do Makefile: NOME, VERSION, DESCRIPCION, ARCH
-		# Características do MUD: CHESS, PLANES, BILLION_VNUM, SUDOKU, KINGDOMS
+	- Características do Makefile: NOME, VERSION, DESCRIPCION, ARCH
+	- Características do MUD: CHESS, PLANES, BILLION_VNUM, SUDOKU, KINGDOMS
 
 * Endadironse novas clases:
 
@@ -93,7 +91,7 @@ CAMBIOS REALIZADOS SOBRE SMAUG 1.8b
   ou arredores) basados en Kallaikia.
 
 
-TODO LIST
+##TODO LIST
 =========
 
 * Incluir IMC2 ou I3.
