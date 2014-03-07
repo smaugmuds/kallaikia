@@ -7393,7 +7393,7 @@ ch_ret spell_midas_touch( int sn, int level, CHAR_DATA *ch, void *vo )
     return rNONE;
 }
 
-/* PHANTASIEN NUEVOS SKILLS/SPELLS */
+/* KALLAIKIA NUEVOS SKILLS/SPELLS */
 
 ch_ret spell_enchant_armor( int sn, int level, CHAR_DATA *ch, void *vo )
 {

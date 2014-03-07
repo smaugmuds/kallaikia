@@ -26,7 +26,7 @@
  */
 #define SMAUG_VERSION_MAJOR "1"
 #define SMAUG_VERSION_MINOR "8"
-#define PHANTASIEN_VERSION  "3b"
+#define KALLAIKIA_VERSION  "1b"
 
 /*
  * Stuff for area versions --Shaddai

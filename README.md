@@ -1,7 +1,7 @@
 ```
-                     Bienvenid@ ... estas entrando a los
+                  Benvid@ ... estas entrando en Kallaikia
 
-              R E I N O S    D E    D E S E S P E R A C I O N !
+                 O    R E I N O     D A S    T E B R A S !
   _________________________________________________________________________
  /            \ Written, maintained and modified by Thoric; connection by  \
 |             /     BlueGenesis.com; governed by the Council of Elders      |
@@ -12,9 +12,9 @@
 |    {o o}    \ Tom Madsen, Michael Seifert and Sebastian Hammer)           |
 |   / ' ' \   /                                                             |
 |-'- /   \ -`-\  Realm:          0ri0n.no-ip.biz:4000                       |
-|   .VxvxV.   /  Realm Home:     http://www.0ri0n.no-ip.biz                 |
+|   .VxvxV.   /  Realm Home:     http://0ri0n.no-ip.biz/kallaikia/          |
 |-------------\  Smaug Home:     http://www.game.org/smaug                  |
-| SMAUG v1.8b /  Realms of Despair Home: http://www.realmsofdespair.com     |
+| SMAUG v1.8  /  Realms of Despair Home: http://www.realmsofdespair.com     |
  \___________/_____________________________________________________________/
   //                                                                     \\
  [| Code by Thoric (Derek Snider, derek@idirect.com) with Altrag/Blodkai/ |]

@@ -1,26 +1,18 @@
 
---- PHANTASIEN ---
+--- K A L L I K I A ---
 
-  - TODO LIST -
-
-AÑADIR SKILLS/SPELLS CLASES NUEVAS
-
-Wed Mar  5 10:46:30 2014 :: [*****] BUG: fread_skill: unknown skill/spell spell_assassinate
-Wed Mar  5 10:46:30 2014 :: [*****] BUG: fread_skill: unknown skill/spell spell_grasp_suspiria
-Wed Mar  5 10:46:30 2014 :: [*****] BUG: fread_skill: unknown skill/spell spell_death
-Wed Mar  5 10:46:30 2014 :: [*****] BUG: fread_skill: unknown skill/spell spell_enchant_armor
-Wed Mar  5 10:46:30 2014 :: [*****] BUG: fread_skill: unknown skill/spell spell_nuke
+     - TODO LIST -
 
 !!!! Adaptar src/Makefile a ARCH = x86_64 !!!!
 
 Makefile C_FLAGS en modo debug, depurar errores del codigo fuente en src
 
-Migrar areas de "reinos_de_desesperacion/*.devel" (devel/area_editor)
+Migrar areas de "o_reino_das_tebras/*.devel" (devel/area_editor)
 
-Corregir errores en los datos de las areas.
+Correxir errores nos datos das areas.
 
-Revisar la conexión entre las diferentes areas del MUD.
+Revisar a conexión entre las diferentes areas do MUD.
 
-Traducir y modificar el MUD desde OLC (editor interno del mud)
+Traducir e modificar o MUD desde OLC (editor interno do mud)
 
 ¿Adaptar Oasis OLC2?

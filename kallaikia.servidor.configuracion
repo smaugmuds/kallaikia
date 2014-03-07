@@ -1,0 +1,22 @@
+#
+# Kallaikia (O Reino das Tebras)
+#
+
+programa=kallaikia
+reino="o_reino_das_tebras"
+#reino="realms_of_despair"
+
+version="1.8.1a"
+
+# Configuración do servicio
+
+servidor="localhost"
+porto="4000"
+
+# Ficheiro de log principal
+
+# Os logs configuranse no directorio ../logs,
+# por que o $programa principal ejecutase dende
+# o directorio do $reino, donde estan as zonas.
+
+logservidor="../log/kallaikia.log"

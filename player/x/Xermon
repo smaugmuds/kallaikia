@@ -6,8 +6,8 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       713
-Room         10300
+Played       27867
+Room         21042
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -15,8 +15,8 @@ Gold         1410065407
 Exp          1410065407
 Height          66
 Weight          147
-Act          771753544
-Position     112
+Act          704652872
+Position     104
 Style     2
 Practice     3
 Alignment    0
@@ -28,9 +28,13 @@ Honour       0
 Hitroll      0
 Damroll      0
 Armor        1000
-Mentalstate  -8
+Wimpy        200
+Mentalstate  -100
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
+Rank         The Darkness~
 Title         El maestro de las tinieblas~
+Bamfin       summons from darkness!!~
+Bamfout      dissappears into a dark mist ... .. .~
 WizInvis     65
 Flags        8421384
 PKills       0
@@ -41,14 +45,8 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         ec2-107-23-50-52.compute-1.amazonaws.com
+Site         orion.local.lan
 Tongue       100 'common'
-End
-
-#OBJECT
-Vnum         10333
-WearLoc      17
-Values       5 5 0 0 0 0
 End
 
 #END
