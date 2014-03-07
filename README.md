@@ -24,10 +24,9 @@
 
 ```
 
+###BENVID@
 
-##BENVID@
-
-Benvid@ a **Kallaikia** o **^Reino das Tebras^**, podes visitarnos en **[http://0ri0n.no-ip.biz/kallaikia] (Kallaikia)**,
+Benvid@ a **Kallaikia ^O Reino das Tebras^**, podes visitarnos en **[http://0ri0n.no-ip.biz/kallaikia] (Kallaikia)**,
 esta e a primeira xeneraci&oacute;n deste MUD nacido a partir do servidor **Smaug 1.8b** 
 creado para **[http://www.realmsofdespair.com] (Realms Of Despair)**
 por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia **[http://www.gnu.org/licenses/gpl-2.0.html] (GPLv2)**.
@@ -36,8 +35,7 @@ por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia **[http://ww
   **0ri0n.no-ip.biz:4000**
 
 
-
-##OBXETIVO
+###OBXETIVO
 
 Crear un mundo virtual completamente en **Galego** que transcurre na antiga **Galiza (Kallaikia) castrexa**,
 onde antigos deuses inmortales, druidas, guerreiros, curandeiros, arqueiros, demos, magos e demáis seres
@@ -52,10 +50,9 @@ Animamos a todo o mundo a participar de algunha forma:
 	  **creando novas áreas, tamén podes correxir erros nas áreas co editor externo, e envialas**
 	  **a algún inmortal para que as valide e inclua en Kallaikia.**
 	- **Programando e analizando código C# (GitHub).**
-	
 
 
-##CAMBIOS REALIZADOS SOBRE SMAUG 1.8b
+###CAMBIOS REALIZADOS SOBRE SMAUG 1.8b
 
 * Modificado o ficheiro Makefile, agora pódense establecer varios parametros: 
 
@@ -98,8 +95,7 @@ Animamos a todo o mundo a participar de algunha forma:
   ou arredores) basados en **Kallaikia**.
 
 
-
-##TODO LIST
+###TODO LIST
 
 * Finalizar reinos (Kingdoms), faltan partes por integrar no MUD, revisar (kingdoms.h & kingdoms.c).
 
