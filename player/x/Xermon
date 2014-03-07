@@ -6,7 +6,7 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       27867
+Played       28075
 Room         21042
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
@@ -15,7 +15,7 @@ Gold         1410065407
 Exp          1410065407
 Height          66
 Weight          147
-Act          704652872
+Act          671098440
 Position     104
 Style     2
 Practice     3
@@ -45,7 +45,7 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         orion.local.lan
+Site         localhost
 Tongue       100 'common'
 End
 
