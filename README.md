@@ -22,19 +22,24 @@
  [| Nivek/BuRZuMiSHi                                                      |]
   \\_____________________________________________________________________//
 
+```
 
-Benvid@s a <strong>Kallaikia</strong> o <strong>^Reino das Tebras^</strong>,
-esta e a primeira xeneraci&oacute;n deste MUD nacido a partir do servidor <strong>Smaug 1.8</strong> 
-creado para <strong><a href="http://www.realmsofdespair.com">Realms Of Despair</a></strong> 
-por <strong>Thorin</strong>, escrito en linguaxe <strong>C#</strong> e liberado baxo licencia <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPLv2</a>.
+BENVID@
+=======
 
-<strong>0ri0n.no-ip.biz:4000</strong>
+Benvid@ a **Kallaikia** o **^Reino das Tebras^**,
+esta e a primeira xeneraci&oacute;n deste MUD nacido a partir do servidor **Smaug 1.8b** 
+creado para **[http://www.realmsofdespair.com] (Realms Of Despair)**
+por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia **[http://www.gnu.org/licenses/gpl-2.0.html] (GPLv2)**.
 
 
-OBXETIVO
-========
+  **0ri0n.no-ip.biz:4000**
 
-Crear un mundo virtual completamente en Galego que describa a antiga Galiza castrexa,
+
+OBXETIVOS
+=========
+
+Crear un mundo virtual completamente en Galego que describa a antiga Galiza (Kallaikia) castrexa,
 onde os druidas a maxia e o encanto envolvían a nosa fermosa terra.
 
 Animamos a todo o mundo a participar de algunha forma:
