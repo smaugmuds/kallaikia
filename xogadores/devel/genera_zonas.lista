@@ -1,1 +1,0 @@
-ls *.zona > zonas.lista ; echo "\$" >> zonas.lista
