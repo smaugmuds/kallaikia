@@ -1,0 +1,162 @@
+[*****] BUG: load_news(): # not found
+[*****] BUG: Get_obj_index: bad vnum 7216.
+[*****] BUG: Get_obj_index: bad vnum 7217.
+[*****] BUG: Get_obj_index: bad vnum 7218.
+[*****] BUG: Get_obj_index: bad vnum 7219.
+[*****] BUG: Get_obj_index: bad vnum 7220.
+[*****] BUG: Get_obj_index: bad vnum 7221.
+[*****] BUG: Get_obj_index: bad vnum 7223.
+[*****] BUG: Get_obj_index: bad vnum 7222.
+[*****] BUG: Get_obj_index: bad vnum 7224.
+[*****] BUG: Get_obj_index: bad vnum 7298.
+[*****] BUG: Get_obj_index: bad vnum 7208.
+[*****] BUG: Get_room_index: bad vnum 3904.
+[*****] BUG: Deleting south exit in room 300
+[*****] BUG: Get_room_index: bad vnum 5550.
+[*****] BUG: Deleting north exit in room 314
+[*****] BUG: Get_room_index: bad vnum 7800.
+[*****] BUG: Deleting north exit in room 323
+[*****] BUG: Get_room_index: bad vnum 901.
+[*****] BUG: Deleting north exit in room 324
+[*****] BUG: Get_room_index: bad vnum 15404.
+[*****] BUG: Deleting south exit in room 29502
+[*****] BUG: Get_room_index: bad vnum 164.
+[*****] BUG: Deleting west exit in room 30232
+[*****] BUG: Deleting north exit in room 30233
+[*****] BUG: Get_room_index: bad vnum 1035.
+[*****] BUG: Deleting down exit in room 32301
+[*****] BUG: Read_object: vnum 824 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Build.are: reset_area: no resets
+[*****] BUG: Read_object: vnum 32305 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3430 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3419 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3411 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3416 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3410 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6502 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6502 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6502 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6514 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6516 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 9826 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 9827 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 9837 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6006 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 2450 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 2425 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3503 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3505 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 7911 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 7205 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 1501 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 1500 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: load_member_lists: # not found
+[*****] BUG: fread_word: EOF encountered on read.
+
+[*****] BUG: Cannot load house file: ~ÿ
+[*****] BUG: load_loginmsg: # not found. 
+[*****] BUG: load_news(): # not found
+[*****] BUG: Get_obj_index: bad vnum 7216.
+[*****] BUG: Get_obj_index: bad vnum 7217.
+[*****] BUG: Get_obj_index: bad vnum 7218.
+[*****] BUG: Get_obj_index: bad vnum 7219.
+[*****] BUG: Get_obj_index: bad vnum 7220.
+[*****] BUG: Get_obj_index: bad vnum 7221.
+[*****] BUG: Get_obj_index: bad vnum 7223.
+[*****] BUG: Get_obj_index: bad vnum 7222.
+[*****] BUG: Get_obj_index: bad vnum 7224.
+[*****] BUG: Get_obj_index: bad vnum 7298.
+[*****] BUG: Get_obj_index: bad vnum 7208.
+[*****] BUG: Get_room_index: bad vnum 3904.
+[*****] BUG: Deleting south exit in room 300
+[*****] BUG: Get_room_index: bad vnum 5550.
+[*****] BUG: Deleting north exit in room 314
+[*****] BUG: Get_room_index: bad vnum 7800.
+[*****] BUG: Deleting north exit in room 323
+[*****] BUG: Get_room_index: bad vnum 901.
+[*****] BUG: Deleting north exit in room 324
+[*****] BUG: Get_room_index: bad vnum 15404.
+[*****] BUG: Deleting south exit in room 29502
+[*****] BUG: Get_room_index: bad vnum 164.
+[*****] BUG: Deleting west exit in room 30232
+[*****] BUG: Deleting north exit in room 30233
+[*****] BUG: Get_room_index: bad vnum 1035.
+[*****] BUG: Deleting down exit in room 32301
+[*****] BUG: Read_object: vnum 824 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Build.are: reset_area: no resets
+[*****] BUG: Read_object: vnum 32305 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3430 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3419 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3411 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3416 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3410 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6502 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6502 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6502 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6514 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6516 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 9826 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 9827 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 9837 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 6006 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 2450 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 2425 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3503 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 3505 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 7911 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 7205 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 1501 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: Read_object: vnum 1500 bad type.
+[*****] BUG: ------------------------>  18 
+[*****] BUG: load_member_lists: # not found
+[*****] BUG: fread_word: EOF encountered on read.
+
+[*****] BUG: Cannot load house file: ~ÿ
+[*****] BUG: load_loginmsg: # not found. 
