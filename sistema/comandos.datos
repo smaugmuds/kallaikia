@@ -84,7 +84,7 @@ Flags       4
 End
 
 #COMMAND
-Name        affected~
+Name        afectado~
 Code        do_affected
 Position    104
 Level       0
@@ -1461,7 +1461,7 @@ Log         3
 End
 
 #COMMAND
-Name        ignore~
+Name        ignorar~
 Code        do_ignore
 Position    100
 Level       1
@@ -2871,7 +2871,7 @@ Log         0
 End
 
 #COMMAND
-Name        put~
+Name        ponher~
 Code        do_put
 Position    106
 Level       0
@@ -2879,7 +2879,7 @@ Log         0
 End
 
 #COMMAND
-Name        password~
+Name        contrasinal~
 Code        do_password
 Position    100
 Level       0
@@ -2887,7 +2887,7 @@ Log         2
 End
 
 #COMMAND
-Name        practice~
+Name        practicar~
 Code        do_practice
 Position    104
 Level       0
@@ -2919,7 +2919,7 @@ Log         0
 End
 
 #COMMAND
-Name        pull~
+Name        empurrar~
 Code        do_pull
 Position    106
 Level       0
@@ -2936,7 +2936,7 @@ Flags       4
 End
 
 #COMMAND
-Name        purge~
+Name        purgar~
 Code        do_low_purge
 Position    100
 Level       54
@@ -2944,7 +2944,7 @@ Log         0
 End
 
 #COMMAND
-Name        push~
+Name        pulsar~
 Code        do_push
 Position    106
 Level       0
@@ -2968,7 +2968,7 @@ Log         0
 End
 
 #COMMAND
-Name        project~
+Name        proxecto~
 Code        do_project
 Position    100
 Level       51
@@ -3034,7 +3034,7 @@ Log         0
 End
 
 #COMMAND
-Name        rest~
+Name        descansar~
 Code        do_rest
 Position    104
 Level       0
@@ -3050,7 +3050,7 @@ Log         0
 End
 
 #COMMAND
-Name        repair~
+Name        reparar~
 Code        do_repair
 Position    106
 Level       0
@@ -3058,7 +3058,7 @@ Log         0
 End
 
 #COMMAND
-Name        reply~
+Name        respostar~
 Code        do_reply
 Position    106
 Level       0
@@ -3075,7 +3075,7 @@ Log         0
 End
 
 #COMMAND
-Name        rank~
+Name        rango~
 Code        do_rank
 Position    100
 Level       56
@@ -3116,7 +3116,7 @@ Log         0
 End
 
 #COMMAND
-Name        reboot~
+Name        reiniciar~
 Code        do_reboot
 Position    100
 Level       60
@@ -3156,7 +3156,7 @@ Log         0
 End
 
 #COMMAND
-Name        refresh~
+Name        refrescar~
 Code        do_refresh_page
 Position    100
 Level       60
@@ -3172,7 +3172,7 @@ Log         0
 End
 
 #COMMAND
-Name        rent~
+Name        alquilar~
 Code        do_rent
 Position    100
 Level       0
@@ -3212,7 +3212,7 @@ Log         3
 End
 
 #COMMAND
-Name        restore~
+Name        restaurar~
 Code        do_restore
 Position    100
 Level       54
@@ -3253,7 +3253,7 @@ Log         1
 End
 
 #COMMAND
-Name        retire~
+Name        retirar~
 Code        do_retire
 Position    100
 Level       59
@@ -3457,7 +3457,7 @@ Flags       4
 End
 
 #COMMAND
-Name        repeat~
+Name        repetir~
 Code        do_repeat
 Position    100
 Level       51
@@ -4354,7 +4354,7 @@ Flags       5
 End
 
 #COMMAND
-Name        who~
+Name        quen~
 Code        do_cwho
 Position    100
 Level       0
@@ -4363,7 +4363,7 @@ Flags       4
 End
 
 #COMMAND
-Name        wear~
+Name        vestir~
 Code        do_wear
 Position    107
 Level       0
@@ -4371,7 +4371,7 @@ Log         0
 End
 
 #COMMAND
-Name        whois~
+Name        quenes~
 Code        do_whois
 Position    100
 Level       0
@@ -4388,7 +4388,7 @@ Log         0
 End
 
 #COMMAND
-Name        where~
+Name        onde~
 Code        do_where
 Position    106
 Level       0
@@ -4444,7 +4444,7 @@ Log         0
 End
 
 #COMMAND
-Name        watch~
+Name        observar~
 Code        do_watch
 Position    100
 Level       55
