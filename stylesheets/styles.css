@@ -822,7 +822,7 @@ section #title .credits.right {
 
 .descargas nav {
   max-width: 650px;
-  min-height: 10px;
+  min-height: 20px;
   margin: 0 auto;
   padding: 0 10px;
   margin: 6px auto;
@@ -835,7 +835,7 @@ section #title .credits.right {
   list-style: none;
   display: inline;
   color: white;
-  line-height: 2px;
+  line-height: 4px;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
