@@ -32,4 +32,4 @@ Dirección para conectar a **Kallaikia**: **0ri0n.no-ip.biz:4000**
 
 *(É preciso un cliente de telnet ou de MUD)*
 
-Podes ver máis información no noso Wiki: [https://github.com/burzumishi/kallaikia-1.8.1/wiki] (Wiki)
+Podes ver máis información no noso Wiki: [https://github.com/burzumishi/kallaikia-1.8.1/wiki] (wiki)
