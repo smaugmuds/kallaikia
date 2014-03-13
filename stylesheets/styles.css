@@ -884,12 +884,12 @@ section #title .credits.right {
 }
 
 .descargas nav li.downloads {
-  float: right;
+  float: left;
   margin-left: 10px;
 }
 
 .descargas nav li.title {
-  float: left;
+  float: right;
   margin-right: 10px;
 }
 
