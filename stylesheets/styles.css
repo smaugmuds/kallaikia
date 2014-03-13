@@ -825,6 +825,7 @@ section #title .credits.right {
   margin: 0 auto;
   padding: 0 10px;
   margin: 6px auto;
+  float: none;
 }
 
 .descargas nav li {
