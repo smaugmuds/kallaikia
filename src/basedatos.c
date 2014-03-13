@@ -358,12 +358,12 @@ void boot_db( void )
     fpArea = NULL;
     show_hash( 32 );
     unlink( BOOTLOG_FILE );
-    boot_log( "---------------------[ Boot Log ]--------------------" );
+    boot_log( "---------------------[ Kallaikia Log Inicio ]--------------------" );
 
-    log_string( "Loading commands" );
+    log_string( "Cargando comandos" );
     load_commands();
 
-    log_string( "Loading sysdata configuration..." );
+    log_string( "Cargando configuracio do sistema ..." );
 
     /* default values */
     sysdata.read_all_mail		= LEVEL_DEMI;
@@ -413,16 +413,16 @@ void boot_db( void )
     					| SV_AUCTION | SV_ZAPDROP | SV_IDLE;
     if ( !load_systemdata(&sysdata) )
     {
-	log_string( "Not found.  Creating new configuration." );
+	log_string( "Non se encontrou.  Creando nova configuracion." );
 	sysdata.alltimemax = 0;
-	sysdata.mud_name = str_dup("(Name not set)");
-	sysdata.port_name = str_dup("mud");
+	sysdata.mud_name = str_dup("(Nome non configurado)");
+	sysdata.port_name = str_dup("kallaikia");
     }
 
-    log_string("Loading socials");
+    log_string("Cargando sociais");
     load_socials();
 
-    log_string("Loading skill table");
+    log_string("Cargando taboa de habilidades");
     load_skill_table();
     sort_skill_table();
     remap_slot_numbers();	/* must be after the sort */
@@ -447,35 +447,35 @@ void boot_db( void )
 	    gsn_first_tongue = x;
 
 
-    log_string("Loading classes");
+    log_string("Cargando clases");
     load_classes();
 
-    log_string("Loading races");
+    log_string("Cargando razas");
     load_races();
 
     /* Extended News - 12/15/01 - Nopey */
-    log_string("Loading extended news data");
+    log_string("Cargando datos de novas extendidas");
     load_news();
 
-    log_string ("Loading stance data");
+    log_string ("Cargando datos de estancias");
     load_stances ();
 
-    log_string("Loading herb table");
+    log_string("Cargando taboa de herbas");
     load_herb_table();
 
-    log_string("Loading tongues");
+    log_string("Cargando linguas");
     load_tongues();
 
-    log_string("Making wizlist");
+    log_string("Creando lista de WIZ");
     make_wizlist();
 
 /*    log_string("Making adminlist");
     make_adminlist();
 */
-    log_string("Making retiredlist");
+    log_string("Creando lista de retirados");
     make_retiredlist();
 
-    log_string("Initializing request pipe");
+    log_string("Iniciando peticion de tuberia");
     init_request_pipe();
 
     fBootDb		= TRUE;
@@ -546,7 +546,7 @@ void boot_db( void )
     /*
      * Init random number generator.
      */
-    log_string("Initializing random number generator");
+    log_string("Iniciando xerador de numeros aleatorios");
     init_mm( );
 
     /*
@@ -555,7 +555,7 @@ void boot_db( void )
     {
 	long lhour, lday, lmonth;
 
-	log_string("Setting time and weather");
+	log_string("Establecendo data e clima");
 
 	lhour		= (current_time - 650336715)
 			/ (PULSE_TICK / PULSE_PER_SECOND);
@@ -591,7 +591,7 @@ void boot_db( void )
      * Assign gsn's for skills which need them.
      */
     {
-	log_string("Assigning gsn's");
+	log_string("Asignando GSNs");
 	ASSIGN_GSN( gsn_style_evasive,		"evasive style" );
 	ASSIGN_GSN( gsn_style_defensive,	"defensive style" );
 	ASSIGN_GSN( gsn_style_standard,		"standard style" );
@@ -685,7 +685,7 @@ void boot_db( void )
     }
     
 #ifdef PLANES
-    log_string("Reading in plane file...");
+    log_string("Lendo ficheiro de planos ...");
     load_planes();
 #endif
 
@@ -695,11 +695,11 @@ void boot_db( void )
     {
 	FILE *fpList;
 
-	log_string("Reading in area files...");
+	log_string("Lendo ficheiros de zonas...");
 	if ( ( fpList = fopen( AREA_LIST, "r" ) ) == NULL )
 	{
 	    perror( AREA_LIST );
-	    shutdown_mud( "Unable to open area list" );
+	    shutdown_mud( "Non se pode abrir a lista de zonas" );
 	    exit( 1 );
 	}
 
@@ -716,7 +716,7 @@ void boot_db( void )
     }
     
 #ifdef PLANES
-    log_string("Making sure rooms are planed...");
+    log_string("Comprobando planos de habitacions...");
     check_planes(NULL);
 #endif
 
@@ -740,56 +740,56 @@ void boot_db( void )
      * Load up the notes file.
      */
     {
-	log_string( "Fixing exits" );
+	log_string( "Fixando saidas" );
 	fix_exits( );
 	fBootDb	= FALSE;
-	log_string( "Initializing economy" );
+	log_string( "Iniciando economia" );
 	initialize_economy( );
-	log_string ("Randomizing stance data");
+	log_string ("Randomizando datos de estancias");
 	randomize_stances ();
-	log_string( "Resetting areas" );
+	log_string( "Reseteando zonas" );
 	area_update( );
-	log_string( "Loading buildlist" );
+	log_string( "Cargando lista de edificacions" );
 	load_buildlist( );
-	log_string( "Loading boards" );
+	log_string( "Cargando taboeiros" );
 	load_boards( );
-	log_string( "Loading vault list" );
+	log_string( "Cargando lista de baules" );
 	load_vaults( );
-	log_string( "Loading clans" );
+	log_string( "Cargando lista de clans" );
 	load_clans( );
-	log_string( "Loading member lists" );
+	log_string( "Cargando lista de membros" );
 	load_member_lists( );
-	log_string( "Loading councils" );
+	log_string( "Cargando lista de concellos" );
 	load_deity( );
-	log_string( "Loading deities" );
+	log_string( "Cargando lista de deidades" );
 	load_councils( );
-        log_string( "Loading watches" );
+        log_string( "Cargando vistas" );
         load_watchlist( );
-        log_string( "Loading bans" );
+        log_string( "Cargando baneados" );
         load_banlist( );
-        log_string( "Loading reserved names" );
+        log_string( "Cargando nomes reservados" );
         load_reserved( );
-	log_string( "Loading noauction vnums" );
+	log_string( "Cargando nosubastar vnums" );
 	load_noauctions( );
-        log_string( "Loading corpses" );
+        log_string( "Cargando cadaveres" );
         load_corpses( );
-        log_string ("Loading Immortal Hosts");
+        log_string ("Cargando Inmortais Servidor");
     	load_imm_host();
-	log_string ("Loading Hints");
+	log_string ("Cargando Consellos");
 	load_hint();
-	log_string ("Loading Projects");
+	log_string ("Cargando Proxectos");
 	load_projects( );
 /* Morphs MUST be loaded after class and race tables are set up --Shaddai */
-        log_string ("Loading Morphs");
+        log_string ("Cargando Polimorfoloxias");
         load_morphs( );
-        log_string("Loading Housing System, Home Accessories Data,"
-                       " and Home Auctioning System");
+        log_string("Cargando sistema de Fogares, Accesorios de fogares,"
+                       " e sistema de subasta de fogares");
         load_homedata();
         load_accessories();
         load_homebuy();
-        log_string("Loading login messages");
+        log_string("Cargando mensaxes de introduccion (inicio)");
         load_loginmsg();
-        log_string ("Loading Colors");
+        log_string ("Cargando Cores");
         load_colors( );
         MOBtrigger = TRUE;
     }
@@ -1067,7 +1067,7 @@ void load_helps( AREA_DATA *tarea, FILE *fp )
 	    continue;
 	}
 
-	if ( !str_cmp( pHelp->keyword, "greeting" ) )
+	if ( !str_cmp( pHelp->keyword, "benvida" ) )
 	    help_greeting = pHelp->text;
 	add_help( pHelp );
     }
@@ -1144,7 +1144,7 @@ void load_mobiles( AREA_DATA *tarea, FILE *fp )
 	    else
 	    {
 		pMobIndex = get_mob_index( vnum );
-		sprintf( buf, "Cleaning mobile: %d", vnum );
+		sprintf( buf, "Limpiando mobile: %d", vnum );
 		log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 		clean_mob( pMobIndex );
 		oldmob = TRUE;
@@ -1467,7 +1467,7 @@ void load_objects( AREA_DATA *tarea, FILE *fp )
 	    else
 	    {
 		pObjIndex = get_obj_index( vnum );
-		sprintf( buf, "Cleaning object: %d", vnum );
+		sprintf( buf, "Limpiando object: %d", vnum );
 		log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 		clean_obj( pObjIndex );
 		oldobj = TRUE;
@@ -1676,7 +1676,7 @@ void load_resets( AREA_DATA *tarea, FILE *fp )
 	{
 	  RESET_DATA *rtmp;
 
-	  bug( "load_resets: WARNING: resets already exist for this area." );
+	  bug( "load_resets: AVISO: xa existen os resteos de esta area." );
 	  for ( rtmp = tarea->first_reset; rtmp; rtmp = rtmp->next )
 		++count;
 	}
@@ -1685,7 +1685,7 @@ void load_resets( AREA_DATA *tarea, FILE *fp )
 	 /*
 	  * Clean out the old resets
 	  */
-	  sprintf( buf, "Cleaning resets: %s", tarea->name );
+	  sprintf( buf, "Limpiando reseteos: %s", tarea->name );
 	  log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 	  clean_resets( tarea );
 	}	
@@ -1786,7 +1786,7 @@ void load_resets( AREA_DATA *tarea, FILE *fp )
 	      if ( !pRoomIndex )
 	      {
 		bug( "Load_resets: 'B': room %d doesn't exist.", arg1 );
-		bug( "Reset: %c %d %d %d %d", letter, extra, arg1, arg2,
+		bug( "Resetear: %c %d %d %d %d", letter, extra, arg1, arg2,
 		    arg3 );
 		if ( fBootDb )
 		   boot_log( "Load_resets: %s (%d) 'B': room %d doesn't exist.",
@@ -1798,7 +1798,7 @@ void load_resets( AREA_DATA *tarea, FILE *fp )
 	      if ( !(pexit = get_exit(pRoomIndex, door)) )
 	      {
 		bug( "Load_resets: 'B': exit %d not door.", door );
-		bug( "Reset: %c %d %d %d %d", letter, extra, arg1, arg2,
+		bug( "Resetear: %c %d %d %d %d", letter, extra, arg1, arg2,
 		    arg3 );
 		if ( fBootDb )
 		   boot_log( "Load_resets: %s (%d) 'B': exit %d not door.",
@@ -1810,7 +1810,7 @@ void load_resets( AREA_DATA *tarea, FILE *fp )
 	      if (get_room_index(arg1) == NULL)
 	      {
 	        bug( "Load_resets: 'B': room %d doesn't exist.", arg1);
-	        bug( "Reset: %c %d %d %d %d", letter, extra, arg1, arg2,
+	        bug( "Resetear: %c %d %d %d %d", letter, extra, arg1, arg2,
 	            arg3 );
 	        if ( fBootDb )
 	           boot_log( "Load_resets: %s (%d) 'B': room %d doesn't exist.",
@@ -1841,7 +1841,7 @@ void load_resets( AREA_DATA *tarea, FILE *fp )
 	    if ( !pRoomIndex )
 	    {
 		bug( "Load_resets: 'D': room %d doesn't exist.", arg1 );
-		bug( "Reset: %c %d %d %d %d", letter, extra, arg1, arg2,
+		bug( "Resetear: %c %d %d %d %d", letter, extra, arg1, arg2,
 		    arg3 );
 		if ( fBootDb )
 		   boot_log( "Load_resets: %s (%d) 'D': room %d doesn't exist.",
@@ -1855,7 +1855,7 @@ void load_resets( AREA_DATA *tarea, FILE *fp )
 	    || !IS_SET( pexit->exit_info, EX_ISDOOR ) )
 	    {
 		bug( "Load_resets: 'D': exit %d not door.", arg2 );
-		bug( "Reset: %c %d %d %d %d", letter, extra, arg1, arg2,
+		bug( "Resetear: %c %d %d %d %d", letter, extra, arg1, arg2,
 		    arg3 );
 		if ( fBootDb )
 		   boot_log( "Load_resets: %s (%d) 'D': exit %d not door.",
@@ -1958,7 +1958,7 @@ void load_rooms( AREA_DATA *tarea, FILE *fp )
 	    else
 	    {
 	      pRoomIndex = get_room_index( vnum );
-	      sprintf( buf, "Cleaning room: %d", vnum );
+	      sprintf( buf, "Limpiando room: %d", vnum );
 	      log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 	      clean_room( pRoomIndex );
 	      oldroom = TRUE;
@@ -4251,7 +4251,7 @@ void boot_log( const char *str, ... )
     FILE *fp;
     va_list param;
 
-    strcpy( buf, "[*****] BOOT: " );
+    strcpy( buf, "[*****] INICIO: " );
     va_start(param, str);
     vsprintf( buf+strlen(buf), str, param );
     va_end(param);
@@ -4534,7 +4534,7 @@ void make_retiredlist( )
   closedir( dp );
 
   unlink( RETIREDLIST_FILE );
-  sprintf(buf, " Retired Immortals of the %s!", sysdata.mud_name);
+  sprintf(buf, " Inmortais retirados de %s!", sysdata.mud_name);
   toretiredfile(buf);
   buf[0] = '\0';
   ilevel = 65535;
@@ -4626,7 +4626,7 @@ void make_wizlist( )
   closedir( dp );
 
   unlink( WIZLIST_FILE );
-  sprintf(buf, "   &GAdministrators of the %s!", sysdata.mud_name);
+  sprintf(buf, "   &GAdministradores de %s!", sysdata.mud_name);
   towizfile(buf);
 /*  towizfile( " Masters of the Realms of Despair!" );*/
   buf[0] = '\0';
@@ -4644,23 +4644,23 @@ void make_wizlist( )
       ilevel = wiz->level;
       switch(ilevel)
       {
-	case MAX_LEVEL -  0: towizfile( "     &GSupreme Entity&W" );	break;
-        case MAX_LEVEL -  1: towizfile( "     &GInfinite&W" );     	break;
-        case MAX_LEVEL -  2: towizfile( "     &GEternal&W" );      	break;
-        case MAX_LEVEL -  3: towizfile( "     &GAncient&W" );      	break;
-        case MAX_LEVEL -  4: towizfile( "     &GExalted Gods&W" ); 	break;
-        case MAX_LEVEL -  5: towizfile( "     &GAscendant Gods&W" );	break;
-        case MAX_LEVEL -  6: towizfile( "     &GGreater Gods&W" );	break;
-        case MAX_LEVEL -  7: towizfile( "     &GGods&W" );		break;
-        case MAX_LEVEL -  8: towizfile( "     &GLesser Gods&W" );	break;
-        case MAX_LEVEL -  9: towizfile( "     &GImmortals&W" );		break;
-        case MAX_LEVEL - 10: towizfile( "     &GDemi Gods&W" );		break;
-        case MAX_LEVEL - 11: towizfile( "     &GSaviors&W" );		break;
-        case MAX_LEVEL - 12: towizfile( "     &GCreators&W" );     	break;
-        case MAX_LEVEL - 13: towizfile( "     &GAcolytes&W" );     	break;
-        case MAX_LEVEL - 14: towizfile( "     &GNeophytes&W" );    	break;
-        case MAX_LEVEL - 16: towizfile( "     &GGuests&W" );            break;
-        default:             towizfile( "     &GServants&W" );          break;
+	case MAX_LEVEL -  0: towizfile( "     &GEntidade Suprema&W" );	break;
+        case MAX_LEVEL -  1: towizfile( "     &GO Infinito&W" );     	break;
+        case MAX_LEVEL -  2: towizfile( "     &GO Eterno&W" );      	break;
+        case MAX_LEVEL -  3: towizfile( "     &GO Ancian&W" );      	break;
+        case MAX_LEVEL -  4: towizfile( "     &GDeuses Exaltados&W" ); 	break;
+        case MAX_LEVEL -  5: towizfile( "     &GDeuses Ascendidos&W" );	break;
+        case MAX_LEVEL -  6: towizfile( "     &GGrandes Deuses&W" );	break;
+        case MAX_LEVEL -  7: towizfile( "     &GDeuses&W" );		break;
+        case MAX_LEVEL -  8: towizfile( "     &GDeuses Menores&W" );	break;
+        case MAX_LEVEL -  9: towizfile( "     &GInmortais&W" );		break;
+        case MAX_LEVEL - 10: towizfile( "     &GSemi Deuses&W" );	break;
+        case MAX_LEVEL - 11: towizfile( "     &GSalvadores&W" );	break;
+        case MAX_LEVEL - 12: towizfile( "     &GCreadores&W" );     	break;
+        case MAX_LEVEL - 13: towizfile( "     &GAcolitos&W" );     	break;
+        case MAX_LEVEL - 14: towizfile( "     &GNeofitos&W" );    	break;
+        case MAX_LEVEL - 16: towizfile( "     &GInvitados&W" );         break;
+        default:             towizfile( "     &GServintes&W" );          break;
       }
     }
     if ( strlen( buf ) + strlen( wiz->name ) > 76 )

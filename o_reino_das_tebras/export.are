@@ -1103,7 +1103,7 @@ The brochure reads:
  |   - sophisticated hairstyle!     |
  |                                  |
  | Remember - vote 'no' on prop.13, |
- |  a Darkhaven ban on Dragon Cult  |
+ |  a Brigantia ban on Dragon Cult  |
  |             activity!            |
  |       If you feel like we do     |
  |       kill the Duke, TODAY!      |
@@ -1802,7 +1802,7 @@ A door leads into the temple.
 door~
 39 9825 9851
 D2
-To the south is Law Avenue, of the town of Darkhaven.
+To the south is Law Avenue, of the town of Brigantia.
 ~
 ~
 0 -1 21019
@@ -2026,7 +2026,7 @@ ____________________________________
       | 1-800-FOR-DRGN                   |
       |                                  |
       | Remember: vote no on 13          |
-      | Citizens of Darkhaven ban on     |
+      | Citizens of Brigantia ban on     |
       | Draconian activity.  If you      |
       | feel like we do, Kill the Duke   |
       | TODAY!                           |
@@ -2538,7 +2538,7 @@ office, she is the export coordinator, though you will usually find
 her running about elsewhere.  East is the main workshop, where the
 creations are made to supply to the shop.  This is quite an active
 export business, for all its outward attempts to remain unnoticed
-by the Darkhaven population.
+by the Brigantia population.
 ~
 0 9 0
 D0
@@ -2634,7 +2634,7 @@ This office is very clean, almost too clean for the amount of work
 Gemma does around here.  This office is painted an off white and
 the doorframe and windows are trimmed in a dark brown.  Both windows
 are on the western wall, facing out to Vertic Avenue of the town of
-Darkhaven. There is a desk placed directly under one of the windows,
+Brigantia. There is a desk placed directly under one of the windows,
 allowing the person sitting there to gaze about the town as they
 work.  The windows sure add a brightness and goodness to the room,
 wiping out the tinge of darkness and evil felt throughout the rest
@@ -2648,7 +2648,7 @@ You see a hallway in the office.
 0 -1 9874
 E
 windows window~
-You can look out upon the town of Darkhaven, on the Vertic Avenue.
+You can look out upon the town of Brigantia, on the Vertic Avenue.
 Many towns people and avdenturers can be seen going about their
 business, not noticing you at all.
 ~
@@ -2656,7 +2656,7 @@ E
 wall west western w~
 The walls here are painted an off white and the windows trimmed in
 a dark brown.  Below one of the two windows is a large desk.  As
-you gaze out the windows, you see the Vertic Avenue of Darkhaven.
+you gaze out the windows, you see the Vertic Avenue of Brigantia.
 ~
 E
 desk~

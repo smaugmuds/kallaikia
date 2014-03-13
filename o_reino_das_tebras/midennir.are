@@ -428,7 +428,7 @@ S
 #3502
 The Cross Roads on the Hilltop~
 You stand atop a hill upon which several roads cross.  The great city of
-Darkhaven can be seen a short distance to the west, while to the east the
+Brigantia can be seen a short distance to the west, while to the east the
 stately oaks and poplars of the holy grove wave slowly in the wind.  A
 wide, flat path leads due south through the stark landscape of the dwarven
 forest, while the tree-line lane to the north is rumoured to rapidly give
@@ -470,8 +470,8 @@ endif
 |
 S
 #3503
-Outskirts of Darkhaven~
-You stand on the outskirts of the city of Darkhaven; the primary city of
+Outskirts of Brigantia~
+You stand on the outskirts of the city of Brigantia; the primary city of
 this land.  The road leads east into the peace and quiet of the forest;
 while to the west comes to the western gate of the city, surrounded by a
 confusion of shops, bars, and market places.  Another path meanders off
@@ -484,7 +484,7 @@ Several roads crest atop a hill...
 ~
 0 0 3502
 D3
-The great eastern gate of Darkhaven...
+The great eastern gate of Brigantia...
 ~
 ~
 0 0 21112
@@ -548,7 +548,7 @@ endif
 S
 #3505
 Before the Black Forest~
-Looking back, the sanctuary of New Darkhaven seems to beckon you now more
+Looking back, the sanctuary of New Brigantia seems to beckon you now more
 than ever before. The woods to the south project feelings of despair and
 misery. The bards used to tell you stories of horror about mighty
 adventurers who would traverse into the heart of the Black Forest, never
@@ -557,7 +557,7 @@ will hold out? Better to not take that chance, perhaps.
 ~
 0 0 3
 D0
-The sanctity of New Darkhaven beckons...
+The sanctity of New Brigantia beckons...
 ~
 ~
 0 0 3504
@@ -2159,7 +2159,7 @@ the relative quiet of the forest to the southwest.
 ~
 0 0 2
 D7
-The outskirts of Darkhaven...
+The outskirts of Brigantia...
 ~
 ~
 0 -1 3503

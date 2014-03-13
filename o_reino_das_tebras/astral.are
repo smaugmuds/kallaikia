@@ -1014,7 +1014,7 @@ Some god dropped a newly created border object here.~
 The Bottom of the Rainbow~
 You are standing before a shimmering rainbow arching high up into the
 sky.  You feel somehow separated from the natural world, even though the
-city of Darkhaven lies below you.
+city of Brigantia lies below you.
 ~
 0 0 9
 D4
@@ -1023,7 +1023,7 @@ The rainbow extends above you, fading out of existence only meters away.
 ~
 0 -1 801
 D5
-You can see the Temple of Darkhaven below you.
+You can see the Temple of Brigantia below you.
 ~
 ~
 0 -1 21338
@@ -1037,7 +1037,7 @@ S
 On the Rainbow~
 You are standing on the rainbow, surrounded by many beams of multicolored
 light.  Through the bottom of the rainbow you can barely make out the
-cathedral of Darkhaven.
+cathedral of Brigantia.
 ~
 0 0 9
 D4
@@ -1046,7 +1046,7 @@ The rainbow extends far above you, slowly fading into darkness.
 ~
 0 -1 802
 D5
-The rainbow extends below you towards Darkhaven.
+The rainbow extends below you towards Brigantia.
 ~
 ~
 0 -1 800
@@ -1059,7 +1059,7 @@ S
 #802
 On the Rainbow~
 You are standing on the rainbow, surrounded by many beams of multicolored
-light.  Through the bottom of the rainbow you can see the city of Darkhaven and
+light.  Through the bottom of the rainbow you can see the city of Brigantia and
 the land surrounding it.  The vast landscape seems to be leagues below you.
 ~
 0 0 9

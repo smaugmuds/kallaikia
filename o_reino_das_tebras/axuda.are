@@ -59,7 +59,7 @@ the outside world.
 Recommended Level Range: 1 - 15
 
 The Bowers Park and Gardens, located along the northeast edge of
-Darkhaven, was commissioned by Duke Luther for the patrons of his
+Brigantia, was commissioned by Duke Luther for the patrons of his
 fine city. The park is frequently filled with children and has many
 areas to play in. Unfortunately, the Park was built on a strip
 of land that many said was cursed. During the daytime, the Duke
@@ -130,7 +130,7 @@ another player if you attempt to use it on them.
 &B
 &CSound like fun to you?  Us too.
 &B 
-&BIn order to help raise money for Moonbeam's &w'Run for the Cure' &B(Help
+&BIn order to help raise money for Moonbeam's &w'Run for the Cure' &B(Axuda
 &BMoonbeam), the 8th Annual RoD Reunion is sponsoring a 'Slave for the
 &BCure' auction.  On &wSaturday August 3rd at 8 pm at the Fox and Fiddle&B,
 &Bwe will be selling willing RoD players into slavery to other RoD
@@ -162,7 +162,7 @@ in battle.  This is an aggressive spell when cast on others.
 ~
 
 1 "THE ISLAND OF IRRYBIS" IRRYBIS~
-The Valley of the Elves lies far to the north of Darkhaven. Deep within
+The Valley of the Elves lies far to the north of Brigantia. Deep within
 this Valley lies the Island of Irrybis surrounded by the crystal blue
 waters of the Azzurian Sea. It is said that the Elven capital city of
 Arborlon resides in the center of this Island, welcoming all those of
@@ -725,7 +725,7 @@ from the ban list.  This also can be allowed by using # syntax.
 &Y,,,`````       &b         ````                ```,,,      &O\   | `| ''.'
                                                                  &O\   |
  
-&Y   Issue 62 of the Cry of Despair has hit the streets!  Help cry!
+&Y   Issue 62 of the Cry of Despair has hit the streets!  Axuda cry!
 
 &P   The death of Il'liara has destabilized magick in the Realms!  Cast
    spells at your peril!&w
@@ -880,7 +880,7 @@ know what terror really can be.
 1 ANTARCTICA~
 Recommended level range: 10 - 30
 
-The frozen wastes of Antarctica lie far to the south of Darkhaven,
+The frozen wastes of Antarctica lie far to the south of Brigantia,
 separated from the main continent by a vast ocean. Hidden in this
 land of ice is the town of Little Haven. Two great heroines of Light rule
 over the gnomes of this town: the Shieldmaiden Brunhilde and the Snow
@@ -992,7 +992,7 @@ Recommended level range: 5 - 20
 
 A large amount of Haon Dor's treetops is covered in a sticky film:
 the webs of a thousand spiders. The realm of Arachnos, as it is called
-by Darkhaven's adventurers, is a series of twisting, intricate webs
+by Brigantia's adventurers, is a series of twisting, intricate webs
 populated by arachnids and spiders. Some say that this fear-filled place
 is named Arachnos after the name of its hideous ruler. The stories tell
 of a dragon housed deep within the area, answering to the name of Yevaud.
@@ -1163,7 +1163,7 @@ WEAPONTYPES, VARIABLES, and OMENU.
 ~
 
 1 'AS INDUCTIONS2' 'ASCENDERE INDUCTIONS2'~
-&CContinued from page "Help As Inductions".
+&CContinued from page "axuda As Inductions".
  
 &G5. If a Guide decides to accept an application, (s)he conducts a 
    preliminary interview and assigns a knowledge quest, and the applicant 
@@ -1185,7 +1185,7 @@ WEAPONTYPES, VARIABLES, and OMENU.
    leader.  Candidates will be notified of the outcome of their 
    application by mudmail.
  
-&WPlease see "Help As Inductions" for more info.&w
+&WPlease see "axuda As Inductions" for more info.&w
 ~
 
 1 ASC ASCENDERE~
@@ -1217,7 +1217,7 @@ the fray to illuminate the obscure corners of the Realms with the lamp of
 knowledge; to bring system, structure, and order to the unfathomable ether;
 and to assail the agents of chaos, subjecting them to their organized will.
  
-&WFor information on applying to Ascendere, type "Help Ascendere Inductions".
+&WFor information on applying to Ascendere, type "axuda Ascendere Inductions".
 ~
 
 1 'ASCENDERE INDUCTIONS' 'AS INDUCTIONS'~
@@ -1264,7 +1264,7 @@ and to assail the agents of chaos, subjecting them to their organized will.
    from a leader  Such requests are ordinarily not considered until three 
    months have passed.
  
-&WMore on "Help As Inductions2"...
+&WMore on "axuda As Inductions2"...
 ~
 
 59 ASET~
@@ -1354,7 +1354,7 @@ caster's bidding:
 will not succeed if a portal already exists in either the caster's or
 the victim's location.  Type 'enter' or 'enter portal' to pass through.
 Care should be taken as these portal locations could be dangerous indeed.
-Portals should not be created from or to Darkhaven or the Academy.
+Portals should not be created from or to Brigantia or the Academy.
  
 'Helical Flow' morphs an Augurer into a coil of colour which instantly
 travels to the victim's location.
@@ -1404,21 +1404,21 @@ that involve Peaceful players, i.e. Deadlies attacking Peacefuls,
 tagged with an &PAttacker &Wflag if:
  
   1. You attempt to MURDER another player, or they attempt to
-  MURDER you. (See &CHelp Murder &Wand &GLaws Pkill &Wfor more info
+  MURDER you. (See &CAxuda Murder &Wand &GLaws Pkill &Wfor more info
   on attacking other players).
  
   2. You order charmed mobiles or pets to attack a player, or you
-  are attacked by another players mobiles. (See &CHelp Charm &Wor
-  &CHelp Pets &Wfor more info)>
+  are attacked by another players mobiles. (See &CAxuda Charm &Wor
+  &CAxuda Pets &Wfor more info)>
  
   3. You are a &RDeadly &Wplayer and attacked a fellow Clanmember.
 
-&WDarkhaven Guards, shopkeepers and special function mobs now respond
+&WBrigantia Guards, shopkeepers and special function mobs now respond
 differently to illegal flags. You may find yourself barred from making
 purchases, placed before Judge Kendra for a hearing, or sentenced to
 jail. Should you acquire an &PAttacker &Wor any other illegal activity
 flag, see Judge Kendra in Townhall. Her Honour is located one west of
-the Main Lobby (See &CHelp Townhall &Wfor info).
+the Main Lobby (See &CAxuda Townhall &Wfor info).
 ~
 
 54 ATTACKS~
@@ -1456,7 +1456,7 @@ your bidded money and the item.  This will at some point be fixed.
 You are able to see auction almost from the point of character creation,
 however, you cannot USE auction unless you're level FIVE or higher. To remove
 the auction channel from your screen, type CHANNEL -AUCTION.
-SEE also "help AUCTION2" for more on auction commands
+SEE also "axuda AUCTION2" for more on auction commands
 &Y* Auctions will not be stopped for overbidding or misbidding*&w
 ~
 
@@ -2241,7 +2241,7 @@ are blinded, you will see only your name on the 'who' list, and will be
 unable to see either your inventory or your location.
  
 You may either wait out the effect of the blindness, request assistance
-over channels, or make your way to a healer such as Sonoria in Darkhaven,
+over channels, or make your way to a healer such as Sonoria in Brigantia,
 who will eventually remove your blindness.
  
 See also GOUGE, BLIND
@@ -2382,10 +2382,10 @@ Note boards are available throughout the Realms for you to post notes to
 that deal with various topics like guild, order, council or clan
 communication, announcements from the immortals, and questions for
 the immortals or other people on the mud.
-The Archives of Darkhaven are located in the Darkhaven Town Hall, east,
-south, up and 2 south of Darkhaven Square. The Archives contain:
+The Archives of Brigantia are located in the Brigantia Town Hall, east,
+south, up and 2 south of Brigantia Square. The Archives contain:
 
- - The main board of Darkhaven, for general notes and information
+ - The main board of Brigantia, for general notes and information
  - The Book of Deeds and Lore, for role-playing posts
  - The Oracle, where mortals may write private concerns, complaints,
    requests and suggestions to the high gods
@@ -2393,7 +2393,7 @@ south, up and 2 south of Darkhaven Square. The Archives contain:
 
 Use 'note list' to view the note posted on each board.  Type 'axuda note'
 for detailed information on using the Realms note system.
-The post office is located off western Market Street in Darkhaven, two
+The post office is located off western Market Street in Brigantia, two
 south, one west and one south of the city square.  Type 'axuda mail' for
 detailed information on using the post office system.
  
@@ -2602,7 +2602,7 @@ able to use each area we nevertheless are very appreciative of all
 offers made.
  
 Notes are now on the &wArea Board&G (third floor of town hall, 1
-east and 1 south of the Darkhaven Square, in the northeastern
+east and 1 south of the Brigantia Square, in the northeastern
 wing) to aid you in the processs of area creation.  Please read
 them before approaching an immortal with building questions.
 The board is read frequently and we will attempt to answer any
@@ -2962,7 +2962,7 @@ use it, read section 3 of your Adventurer's Guide book.
 1 'CHAPEL CATACOMBS'~
 Recommended level range: 15 - 25
 
-Beneath Darkhaven's cursed graveyard lies an ancient crypt afflicted
+Beneath Brigantia's cursed graveyard lies an ancient crypt afflicted
 by the same curse. The undead run rampant in this horrible place,
 rending the flesh of remaining corpses and any living who enter. Any
 attempts to rid this place of evil have similarly failed. Rumors of
@@ -3016,14 +3016,14 @@ Aggressive mobs will lose their aggressiveness while charmed, but will
 immediately return to their violent ways when the spell wears off.  For
 this reason, charmed aggressive mobs should not be taken into any area
 lower than the one from which they came, and should *never* be taken
-into Darkhaven or the Academy.  Those found doing so will pay dearly.
+into Brigantia or the Academy.  Those found doing so will pay dearly.
  
 As a matter of etiquette, charmed mobs should not be attacked.  You can
 tell a mob is charmed if it is wandering "in a dazed, zombie-like state."
 Be aware when taking your charmed mobs around other characters that any
 area attack such as call lightning, gas breath or earthquake will hit
 your creature and cause it to engage in combat.
-  SEE ALSO: Help dismiss
+  SEE ALSO: Axuda dismiss
 ~
 
 0 CHAT . MUSIC ASK ANSWER SHOUT YELL~
@@ -3077,13 +3077,13 @@ first to attack in the battle, or be grouped with whoever was.
 1 'CITY OF ELDESTRA' ELDESTRA HALFELFTOWN~
 &CDianla speaks...
  
-&c'Yes... it was a long time ago. A time when Darkhaven was a much
+&c'Yes... it was a long time ago. A time when Brigantia was a much
 different place. A group of Elohai banded together in the city, for
 safety. There was discrimination and violence everywhere against us,
 we were seen as hybrids.
  
 A great man had to be murdered before we reached the final point. We
-left the city of Darkhaven and ventured into the Haon Dor Forest to
+left the city of Brigantia and ventured into the Haon Dor Forest to
 build a secluded place where all Elohai would be welcome and safe.
 Past the River Nenda and across Lake Kieltron lies our fair city, where
 all is serene and tranquil. Our sanctuary from the unkind world.
@@ -3153,7 +3153,7 @@ Ranger...&gWarrior &Gstrength.&g Skills and spells to maintain independance.&w
 Thief....&gStealth, cunning, &Gdexterity&g to perform their dubious craft.&w
 Vampire..&gUsers of blood, &Gdexterity&g, shadow and the dark arts.&w
 Warrior..&gQuintessential fighters. &GStrength&g, skill make formidable foes.
-&wTo get more information on each class, type "help classname".
+&wTo get more information on each class, type "axuda classname".
 ~
 
 51 'CLASS THAC0S'~
@@ -3429,12 +3429,12 @@ location.
 ~
 
 51 COLORS~
-The ability to color Help and other files is very useful. We ask
+The ability to color Axuda and other files is very useful. We ask
 that you try to stick to these guidelines for color usage so that
 we can have some consistency in their use:
  
 Here are some outlines for using color on a white text file:
-  &CHelp (Filename) &Wcolored cyan.
+  &CAxuda (Filename) &Wcolored cyan.
   &GLaws (Law) &WColored green.
   &PAttacker/Killer/Thief &Wcolored pink.
   &GOrder/Guild (Order/Guild) &Wcolored green.
@@ -3454,10 +3454,10 @@ always acceptable.
  
 In addition, please keep in mind that the following topics should
 not be colored except by their defaults:
-  - Help (area name)
-  - Help (skill)
-  - Help (spell)
-  - Help (class)
+  - Axuda (area name)
+  - Axuda (skill)
+  - Axuda (spell)
+  - Axuda (class)
 ~
 
 1 COLORSCHEME COLORSCHEMES~
@@ -3929,7 +3929,7 @@ Realms of Despair, (c)1994, 1995, 1996, 1997 ComputerLink Online Inc.
 1 'CORAL DEPTHS'~
 Recommended level range: 10 - 35
 
-Following the Darkhaven River eastward, many an adventurer has come upon
+Following the Brigantia River eastward, many an adventurer has come upon
 a vast area of glistening water and waves.  A casual swim is enjoyed here,
 though one must be wary of fish and aggressive sharks.  It is beneath the
 lapping waves where the wonders, and dangers, of the Coral Depths truly lurk.
@@ -4098,7 +4098,7 @@ The following is a guideline of level 53 responsibilities:
    - Advise a 55+ of all reimbursement requests from mortals
    - Cr's at discretion, monitoring note boards, remaining VISIBLE
    - Learning proper mortal discipline techniques and punishments
-    - Helping 51 and 52 level immortals as needed.
+    - Axudaing 51 and 52 level immortals as needed.
    - Possible room building work
    - Possible work at 5500 if interested in building or coding
    - Possible council work
@@ -5260,7 +5260,7 @@ rules, 'axuda imm'.  Visit note boards at 1200, 1213, and 1214 regularly.
 &W
 &BFeedback? Comments? Fan/hate mail? Submissions? All are
 &Bwelcome at the CoD public boards, located: e,s,2u,s,w,s
-&Bfrom Darkhaven Square or south of quills and parchments
+&Bfrom Brigantia Square or south of quills and parchments
 &Bon Market Street.
 &W
 &O----------------------------------------------------------------
@@ -5595,21 +5595,21 @@ drain           change       illusion
 Recommended level range: 0 - 60
 
 
-Darkhaven, famed City of Hope, lies in the center of the Realm's main
+Brigantia, famed City of Hope, lies in the center of the Realm's main
 continent. The city, though constantly under the threat of invasion, has
 never fallen to the forces of Darkness and remains one of Light's most
 fervent defenders. In fact, the greatest adventurers of Despair originate
-from Darkhaven, probably due to the excellent teachings of the famed
-Darkhaven Academy. Darkhaven is a growing city, with busy markets filled
+from Brigantia, probably due to the excellent teachings of the famed
+Brigantia Academy. Brigantia is a growing city, with busy markets filled
 with objects of wonder and anyone wishing to join one of Despair's nine
-guilds will certainly want to visit Darkhaven, where the guild halls are
+guilds will certainly want to visit Brigantia, where the guild halls are
 located. Also of note is the newly revamped Art Gallery and Town Hall.
 ~
 
 1 'DARKHAVEN ACADEMY'~
 Recommended level range: 1 - 5
 
-The Darkhaven Academy is the training institute of majestic Darkhaven.
+The Brigantia Academy is the training institute of majestic Brigantia.
 A great number of adventurers come here to learn the basics of battle and
 spellcasting, as well as many survival techniques. Magically controlled
 by Avatars of the most powerful deities, there is an abundance of monsters
@@ -5619,7 +5619,7 @@ here kept for the sole purpose of practice and tutelage.
 1 'DARKHAVEN ART GALLERY'~
 Recommended level range: 10 - 50
 
-The strange, magical artwork of Darkhaven's artisans is represented
+The strange, magical artwork of Brigantia's artisans is represented
 here. Beautiful paintings and strange sculptures abound in this
 strange building, which was wrought of stone by the dwarves. It is
 rumored that there is more to the artwork than meets the eye. Some
@@ -5765,7 +5765,7 @@ out by an immortal.
 
 0 DEATH~
 When your character dies, you are reincarnated at the Altar to Thoric in
-Darkhaven (or your clan's temple).  Your corpse is left behind where you
+Brigantia (or your clan's temple).  Your corpse is left behind where you
 were killed, together with all of your equipment.  Your gold stays with
 you (the gods want you to have your gold).
  
@@ -6051,7 +6051,7 @@ other players names (without their permission), or off-color remarks.  Refusal
 to change your bio, description, or title on Immortal request is grounds for
 loss of character privileges.
  
-See Also : Help Editor
+See Also : Axuda Editor
 ~
 
 1 DESECRATE~
@@ -6489,7 +6489,7 @@ See CHARM
 ~
 
 1 DONATE DONATION DONATIONS~
-The Cathedral of Notre Dame de Sioux, northwest of the Darkhaven Square,
+The Cathedral of Notre Dame de Sioux, northwest of the Brigantia Square,
 maintains two donation rooms where equipment and items may be left for
 the use of the needy.
  
@@ -6945,7 +6945,7 @@ over the years and now invite the companionship of 'the big people.'
 0 DYLAN 'DYLAN AREA' 'DYLANS AREA'~
 Recommended level range: 15 - 25
  
-Clouds have plagued the skies south of Darkhaven since the dawn of Despair. 
+Clouds have plagued the skies south of Brigantia since the dawn of Despair. 
 None know the cause of this, but many speculate that the vicious harpies and 
 air elementals who rule these skies weave the clouds through powerful magic. 
 It provides both races with a haven and also camouflage for hiding from 
@@ -7109,7 +7109,7 @@ crime and thievery which is not nearly the intent of this tale.
 those that destroyed his only real belongings with a wave of their daggers.
 During these travels, he apprenticed in the mountains the augury now so
 attached to his name.  To more clearly understand these ways he descended the
-mountains into Darkhaven to study within the Guild of Augurers.  Here, he honed
+mountains into Brigantia to study within the Guild of Augurers.  Here, he honed
 his skills, and learned the ways of the lands.  He became a professional and
 made his mark on the people about him.
  
@@ -7726,7 +7726,7 @@ NOTE:  This file supports color tokens, be careful with them.
 2 FLAG FLAGS~
 &P(ATTACKER)&W, &P(KILLER) &Wand &P(THIEF) &Wflags are given to players who
 violate laws regarding Pkilling and/or Theft. Having one of these flags
-will cause Darkhaven mobs to treat you differently. You may be placed before
+will cause Brigantia mobs to treat you differently. You may be placed before
 Judge Kendra and be fined or thrown in jail until an immortal can impose
 a sentence upon you. For help on &P(ATTACKER) &Wor &P(KILLER) &Wflags, see
 &CAXUDA ATTACKER &Wor &CAXUDA KILLER&W. To find out what constitutes illegal
@@ -8486,7 +8486,7 @@ by the victim's saves.
 1 GRAVEYARD~
 Recommended level range: 5 - 10
 
-Darkhaven's graveyard was once a peaceful burial ground, visited by
+Brigantia's graveyard was once a peaceful burial ground, visited by
 grieving citizens and tended by gentle priests. However, a powerful
 curse was cast upon this land by an unknown mage. Within days, the
 soft brown earth had turned black and sooty. A year later, the dead
@@ -8507,7 +8507,7 @@ the hatred they possess for all forms of life.
 1 'GREAT EASTERN DESERT'~
 Recommended level range: 10 - 20
  
-The Great Eastern Desert lies far to the east of Darkhaven, just south
+The Great Eastern Desert lies far to the east of Brigantia, just south
 of the majestic New Thalos. It is a barren wasteland, inhabitated only
 by nomads and desert wildlife. Those who have found shelter from the
 sweltering sun often describe an encounter with a great brass dragon who
@@ -8517,7 +8517,7 @@ resides in a chamber which prevents the usage of magic...
 1 'GREEN FOREST'~
 Recommended level range 2-15
 
-North of Darkhaven's city walls, uncleared forest remains. Having survived
+North of Brigantia's city walls, uncleared forest remains. Having survived
 the construction of the city the forest retained its ancient natural
 balance. The woodland creatures have come back and made the Green Forest a
 bountiful hunting ground for hunters experienced or foolish enough to brave
@@ -8525,7 +8525,7 @@ the trails and whatever else might be hunting in the darkness amongst the
 thick, ancient trees.
 ~
 
--1 GREETING~
+-1 BENVIDA~
 .                       Benvid@ ...  estas entrando a
 
                   O    R E I N O     D A S    T E B R A S!
@@ -8770,10 +8770,10 @@ grub 20 name>ska name<skb room>=21000 room<=21499
 Suppose someone complains that a player with a name like "Skathamaga"
 picked up some of their eq and promptly quit the game. The player isn't
 sure of the exact name of the thief but is sure it starts with "Ska".
-The thief quit the game somewhere in New Darkhaven (vnums 21000-21499).
+The thief quit the game somewhere in New Brigantia (vnums 21000-21499).
  
 This example will show you players whose name starts with "Ska" and who
-last quit the mud somewhere in New Darkhaven.
+last quit the mud somewhere in New Brigantia.
  
 ~
 
@@ -8969,7 +8969,7 @@ with humans, when pure-blooded Ogres were known for raping and
 looting human villages.  Like other half-breeds, the half-ogre
 was shunned by the full-blooded Ogre race and eventually loosely
 assimilated with the human civilizations in the lands surrounding
-New Darkhaven.
+New Brigantia.
 
 Half-ogres stand roughly upright, range from six to almost nine
 feet height, and even females generally pack well over 300 pounds
@@ -9075,7 +9075,7 @@ to.
 1 'HAON DOR'~
 Recommended level range: 5 - 10
 
-The immense forest of Haon Dor stretches westward from Darkhaven,
+The immense forest of Haon Dor stretches westward from Brigantia,
 swallowing much of Despair's western landscape. It is a dangerous
 forest, populated by many aggressive creatures: wargs and wolves
 among them. A single beast rules the forest, given the name Froghemoth
@@ -9115,7 +9115,7 @@ This command allows you to edit a help topic.  If the specified help topic
 does not exist, it will be created for you. The default help page (summary)
 will be selected if you do not specify a page.
  
-NOTE - Always, when creating a new help entry, type Help <new entry name> 
+NOTE - Always, when creating a new help entry, type Axuda <new entry name> 
        prior to creating your entry. A pre-existing help file associated 
        with that keyword may already exist.
 &Y
@@ -9162,7 +9162,7 @@ game play as well as provide valuable information for players.
  
 To access these files, type AXUDA topic and the information will appear.
 If no help is available on that topic, similar helpfiles will be
-suggested.  A list of sample topics can be seen under AXUDA START.
+suggested.  A list of sample topics can be seen under AXUDA INICIO.
  
 Before asking a question on a public channel or requesting help from
 another player, try looking up the helpfile.  For example, try AXUDA LEVERS.
@@ -9180,7 +9180,7 @@ known. Sages believe that either Laschte or Vl'arescht opened a gate to
 a race of astral travelers known as the Carnifex, which brought legions
 of balrogs to Despair long ago. The balrogs waged war against all sentient
 races, seeking to destroy at the leisure of their masters. The avatars of
-Darkhaven were truly oppressed and fought for their very lives against
+Brigantia were truly oppressed and fought for their very lives against
 this evil army. After years of war, the Carnifex were finally driven across
 the Pits of Banishment and into a legendary castle from which they could not
 escape. Without their masters' guidance, the balrogs lost their edge and
@@ -9280,7 +9280,7 @@ that only the stoutest adventurers could reach them. Since that time,
 the mages of Despair, led by the powerful Mistress of Magic, have
 attempted to grasp the idea of magic and understand how it truly works.
 Recently, the Guild has gained such respect that Duke Luther has
-permitted the building of a Tower of Sorcery in Darkhaven.
+permitted the building of a Tower of Sorcery in Brigantia.
 ~
 
 1 HIGHLANDERS~
@@ -9394,7 +9394,7 @@ ascension. The peaceful mortals of this gothic world now find themselves
 pressed into eternal war against The Dark. Beings of Light have become
 increasingly rare, and under the guidance of a new goddess, A'enaar, a great
 resistance has bound together -- the five towns light -- Solace, Ofcol, New
-Thalos, Ocean Keep and Darkhaven. All the other Realms of Despair have
+Thalos, Ocean Keep and Brigantia. All the other Realms of Despair have
 fallen, and thus does Good's hope falter and wither...
  
 ~
@@ -9507,7 +9507,7 @@ REMOVE ALL will remove all your equipment and place it into inventory.
 1 'HOLY GROVE'~
 Recommended level range: 5 - 20
 
-To the east of Darkhaven is the holy grove. A spiritual place 
+To the east of Brigantia is the holy grove. A spiritual place 
 populated by peaceful creatures and numerous druids, the only
 danger in this holy place is the danger you bring with you. The
 entrance to a portal through time itself can also be found in the
@@ -9656,8 +9656,8 @@ NIDAROS  REOMYR  'MOUNT KROZLOY'  'THE BURROWS' 'KEEP OF LOMAR'
                     &R !!:
                     &R:.:: :::
 
-&WSee also: &rHelp HoRRoRSHoW Info, Help HoRRoRSHoW Rules,
-          Help HoRRoRSHoW Qualifiers.&w
+&WSee also: &rAxuda HoRRoRSHoW Info, Axuda HoRRoRSHoW Rules,
+          Axuda HoRRoRSHoW Qualifiers.&w
 ~
 
 50 'HORRORSHOW INFO'~
@@ -9696,7 +9696,7 @@ round goes to the final, eight teams per round. (Qualifying teams from each
 round are exempt from participating in any further qualifiers.) If your team
 does not qualify in a round, you may try again in the next round.
 
-&WSee also: &rHelp HoRRoRSHoW Rules, Help HoRRoRSHoW Qualifiers.&w
+&WSee also: &rAxuda HoRRoRSHoW Rules, Axuda HoRRoRSHoW Qualifiers.&w
 ~
 
 50 'HORRORSHOW QUALIFIERS 2001'~
@@ -9718,7 +9718,7 @@ does not qualify in a round, you may try again in the next round.
  
        &r-&R=&Y> &WWinner: Satori &Y<&R=&r-
  
-&WSee also: &rHelp HoRRoRSHoW Info, Help HoRRoRSHoW Rules.&w
+&WSee also: &rAxuda HoRRoRSHoW Info, Axuda HoRRoRSHoW Rules.&w
 ~
 
 50 'HORRORSHOW QUALIFIERS'~
@@ -9738,8 +9738,8 @@ does not qualify in a round, you may try again in the next round.
 &r-&R=&Y> &WTeam Nine :                        &Y<&R=&r-
 &r-&R=&Y> &WTeam Ten  :                        &Y<&R=&r-
  
-&WSee also: &rHelp HoRRoRSHoW Info, Help HoRRoRSHoW Rules,
-          &rHelp HoRRoRSHoW Qualifiers 2001.&w
+&WSee also: &rAxuda HoRRoRSHoW Info, Axuda HoRRoRSHoW Rules,
+          &rAxuda HoRRoRSHoW Qualifiers 2001.&w
 ~
 
 50 'HORRORSHOW RULES'~
@@ -9782,7 +9782,7 @@ does not qualify in a round, you may try again in the next round.
 \                                                 \    /
  `-------------------------------------------------`=='
 
-&WSee also: &rHelp HoRRoRSHoW Info, Help HoRRoRSHoW Qualifiers.&w
+&WSee also: &rAxuda HoRRoRSHoW Info, Axuda HoRRoRSHoW Qualifiers.&w
 ~
 
 -1 HOTELS~
@@ -9959,7 +9959,7 @@ Note:  If you have instances of multiple help files with the same keyname,
        using Hset Remove without a level designation will remove the one with
        the lowest level of access. ie:
  
-       Help file XYZZY at level 57, and help file 'SAVE XYZZY' at level 58.
+       Axuda file XYZZY at level 57, and help file 'SAVE XYZZY' at level 58.
        Typing 'HSET REMOVE XYZZY' will remove the level 57 XYZZY.
        Typing 'HSET REMOVE 58.XYZZY' will remove the level 58 'SAVE XYZZY'.
  
@@ -9996,7 +9996,7 @@ In the dark time, humans were mated sometimes by choice with elves
 (the half-orc) and trolls (the half-troll).
  
 Humans have no experience penalties or bonuses, and make their home
-in the city of New Darkhaven.
+in the city of New Brigantia.
  
 Humans can follow the ways of the following classes:
 Mage Cleric Thief Warrior Vampire Druid Ranger Augurer Paladin Nephandi
@@ -10079,7 +10079,7 @@ The more complete the social, the better the chance it has of being accepted.
 A complete social has seven actions.  See AXUDA SOCIALSUBMISSION.
  
 &GComment: I thihnk it would be nice and a lot more convenient if you created
-a "Help" channel
+a "Axuda" channel
 &gResponse : This already exists in the form of 'Tell Herne'.
  
 &GComment: I think when you use the 'equipment' command.. if there is a spot
@@ -10209,7 +10209,7 @@ forty uppity people like us descending on you en masse?  Not to mention the
 'journals' might get a bit frightening, especially from Stoneheft.
  
 &GQuestion: where is answers3???
-&gResponse: Help idearesponse, idearesponse2, idearesponse3, idearesponse4.
+&gResponse: Axuda idearesponse, idearesponse2, idearesponse3, idearesponse4.
  
 &GComment: put kali in anger management classes! :)
 &gResponse: Might I say it is almost disturbing how many times I am mentioned
@@ -12130,7 +12130,7 @@ possessions and determining what they have:
 &CIf wearingvnum($n) [vnum]
 &CIf carryingvnum($n) [vnum]
  
-&WSee the helpfiles for these ifchecks using "Help Ifcheck (ifcheck)"
+&WSee the helpfiles for these ifchecks using "axuda Ifcheck (ifcheck)"
  
 See also:&G IFCHECKS, IFCHECKS2, IFCHECKS3, IFCHECKS4, WEARLOCS.
 &RSee Also:     MPSTAT RPSTAT OPSTAT MPEDIT RPEDIT OPEDIT TRIGGER MPTRIGGERS
@@ -12380,7 +12380,7 @@ with. I'm dying here.
 70's Queen hit, Bohemian Rhapsody. If you don't read it, she'll
 mess you up, bigtime.
  
-More on &YHelp Imm Daily2
+More on &YAxuda Imm Daily2
 ~
 
 51 'IMM DAILY2' IMMDAILY2~
@@ -12921,7 +12921,7 @@ mpasurpess         mpasupress $n val       Not in use.
 mpdelay            mpdelay <victim><time>  Delays a victim for * rounds
  
 &WNOTE: &CIf flagged "not in use" or "do not use", then &YDON'T USE &W:P
-&WFor more on individual mpcommands, type "Help (mpcommandname)".
+&WFor more on individual mpcommands, type "axuda (mpcommandname)".
  
 &YSee also: &WIFCHECKS4
 ~
@@ -13121,7 +13121,7 @@ Arguments:
 1 'IN THE AIR'~
 Recommended level range: 5 - 10
 
-The skies above Darkhaven are unpopulated save for the amusing
+The skies above Brigantia are unpopulated save for the amusing
 faerie dragons. Wild rumors say that a portal to the Astral Plane
 exists at the end of a rainbow high above the city.
 ~
@@ -13642,23 +13642,23 @@ in the assignment of this flag. You will receive a &PKiller &Wflag if:
  
   1. You caused the DEATH of another player, regardless of who attacked first.
   To help prevent yourself from acquiring a &PKiller &Wflag after being
-  attacked, set yourself to &YConfig +Nice &W(See &CHelp Config &Wfor info).
+  attacked, set yourself to &YConfig +Nice &W(See &CAxuda Config &Wfor info).
  
   2. You were the Master of a mobile which killed another player while
   under the influence of your charm. PLEASE NOTE that you will receive a
   &PKiller &Wflag even if the player that died attacked the charmed
   mobile without the Master's permission. Charmers and Pet Owners are held
-  responsible for the actions of their Pets/Charmies. (See &CHelp Charm
-  &Wand &CHelp Pets &Wfor more info on these topics).
+  responsible for the actions of their Pets/Charmies. (See &CAxuda Charm
+  &Wand &CAxuda Pets &Wfor more info on these topics).
 
   3. You are a &RDeadly &Wplayer and caused the death of a fellow Clanmember.
  
-&WDarkhaven Guards, shopkeepers and special function mobs now respond
+&WBrigantia Guards, shopkeepers and special function mobs now respond
 differently to illegal flags. You may find yourself barred from making
 puchases, placed before Judge Kendra for a hearing, sentenced to
 jail, or SLAYED by Harakiem.  You may apply to Judge Kendra in person to
 seek removal of the flag. She is located one west of the Main Lobby in 
-the Townhall. (See &CHelp Townhall &Wfor info)
+the Townhall. (See &CAxuda Townhall &Wfor info)
 ~
 
 1 KILLSTEAL KILLSTEALING~
@@ -13795,7 +13795,7 @@ known. Sages believe that either Laschte or Vl'arescht opened a gate to
 a race of astral travelers known as the Carnifex, which brought legions
 of balrogs to Despair long ago. The balrogs waged war against all sentient
 races, seeking to destroy at the leisure of their masters. The avatars of
-Darkhaven were truly oppressed and fought for their very lives against
+Brigantia were truly oppressed and fought for their very lives against
 this evil army. After years of war, the Carnifex were finally driven across
 the Pits of Banishment and into a legendary castle from which they could not
 escape. Without their masters' guidance, the balrogs lost their edge and
@@ -14020,7 +14020,7 @@ resorting to public baiting and name-calling.
 
 -1 'LAW CHARM'~
 .
-&GDo not bring aggressive mobs into or near Darkhaven, as when their charm
+&GDo not bring aggressive mobs into or near Brigantia, as when their charm
 wears off (either naturally or by attack) their aggressive nature will
 return.  Also do not bring aggressive mobs into areas which are lower in
 level than the area from which the mob originally came.  You can use the
@@ -14288,17 +14288,17 @@ final.
 
 -1 'LAW STORES'~
 .
-&GShopkeepers inside Darkhaven are protected by the laws of the city's Lord,
-Duke Luther.  As the gods have pledged their favor to Darkhaven, they have
+&GShopkeepers inside Brigantia are protected by the laws of the city's Lord,
+Duke Luther.  As the gods have pledged their favor to Brigantia, they have
 imbued these shopkeepers with the powers necessary to carry out retribution
 against those who defy these laws.  In short, anyone who chooses to attack
-a Darkhaven shopkeeper will die brutally.  In addition, they may find
+a Brigantia shopkeeper will die brutally.  In addition, they may find
 themselves facing the direct wrath of the gods in hell...
  
 Those caught stealing from these shopkeepers will be incarcerated by the
 guards of the Duke until such time as their release is granted by the gods.
  
-A Darkhaven shopkeeper is any mob inside Darkhaven at which you can type
+A Brigantia shopkeeper is any mob inside Brigantia at which you can type
 'list'.  If you are given a list of items for sale, or are told to try
 back later, it is a shopkeeper.  This also applies to guild shopkeepers
 and the blacksmith.
@@ -15502,7 +15502,7 @@ occasion succeed in converting the item itself into pure gold.
 Recommended level range: 5 - 15
 
 The Miden'nir is a dark, stunted forest populated by a tribe of goblins.
-The goblins have been steadily suffering losses to Darkhaven's
+The goblins have been steadily suffering losses to Brigantia's
 adventurers and now roam the forest more rarely (to the relief of many
 peasants). In the western part of the forest is an inn where a bard plays
 regularly to the amusement of the inn's patrons. Some trails near the inn
@@ -15581,7 +15581,7 @@ position as it's ranked at 6.
 13 POS_MOUNTED
 14 POS_SHOVE
 15 POS_DRAG
-See also : Help STYLE
+See also : Axuda STYLE
 ~
 
 54 MINVOKE OINVOKE~
@@ -15998,7 +15998,7 @@ soul, intact.
 1 MORIA~
 Recommended level range: 5 - 15
 
-The vast mountain range of Moria lies to the northeast of Darkhaven,
+The vast mountain range of Moria lies to the northeast of Brigantia,
 spanning much of the northern landscape of Despair. Its twisting tunnels
 and caverns house dozens of vile races who seem engaged in a perpetual
 war to conquer this dark realm. These dread mountains also surround the
@@ -16065,7 +16065,7 @@ $$$$$$$F &c4MP"  `MP                  `&w$h
                                                                  &O\   |
  
  
-&Y   Issue 62 of the Cry of Despair has hit the streets!  Help cry!
+&Y   Issue 62 of the Cry of Despair has hit the streets!  Axuda cry!
 
 &P   The death of Il'liara has destabilized magick in the Realms!  Cast
    spells at your peril!&w
@@ -16085,7 +16085,7 @@ should try to mount immediately.
 ~
 
 1 'MOUNT KROZLOY'~
-To the far west and north of Darkhaven, past the Hills of Moria,
+To the far west and north of Brigantia, past the Hills of Moria,
 in the Kingdom of Juargan, lies the home of the Half-Orc Nation.
 Mount Krozloy is a heavily fortified, and easily guarded natural
 stronghold, where the Half-Orcs gather to plan for battle and
@@ -16221,7 +16221,7 @@ to tell the mob which area to withdraw/deposit money in.
  
 Example:  mpat 21000 mpwithdraw 5000000
  
-This would cause the mob to withdraw 5 million coins from the new Darkhaven
+This would cause the mob to withdraw 5 million coins from the new Brigantia
 area, as that is the area vnum 21000 is in.
  
 If no mpat is used, the mob will withdraw or deposit the gold from the
@@ -16491,7 +16491,7 @@ Syntax: MPCLOSEPASSAGE <room> <direction>
 Closes a passage to a room (does not affect pre-existing doors that were
 not created with mpopenpassage)
  
-&W**For information on exit/direction numbers see &YHelp doordirs&W**
+&W**For information on exit/direction numbers see &YAxuda doordirs&W**
 ~
 
 58 MPPARDON~
@@ -17323,7 +17323,7 @@ with humans, when pure-blooded Ogres were known for raping and
 looting human villages.  Like other half-breeds, the half-ogre
 was shunned by the full-blooded Ogre race and eventually loosely
 assimilated with the human civilizations in the lands surrounding
-New Darkhaven.
+New Brigantia.
 
 Half-ogres stand roughly upright, range from six to almost nine
 feet height, and even females generally pack well over 300 pounds
@@ -17425,7 +17425,7 @@ In the dark time, humans were mated sometimes by choice with elves
 (the half-orc) and trolls (the half-troll).
  
 Humans have no experience penalties or bonuses, and make their home
-in the city of New Darkhaven.
+in the city of New Brigantia.
 ~
 
 -1 NANNY_LIZARDMAN~
@@ -17598,12 +17598,12 @@ Scout      - The Scout is the one who seeks out possible Nation members and
              Nation's rules, policies and procedures so they may be conveyed
              to the recruit.
  
-See also &WHelp Nations &w
+See also &WAxuda Nations &w
 ~
 
 1 NATIONS~
 Nations has been set up as a venue for role playing throughout the Realms.
-A visit to the City of Darkhaven will reveal the Realms of Despair is truly
+A visit to the City of Brigantia will reveal the Realms of Despair is truly
 multi-national. It's not unusual to see a troll grunting at a pixie who is
 flying over a human, or to see an ogre and orc communing over a mug
 of beer. Halfling and Giths may be seen sharing conversations with Dwarves,
@@ -17739,12 +17739,12 @@ Human Pixie Drow
  
 ~
 
-1 'NEW DARKHAVEN'~
-Darkhaven, famed City of Hope, lies in the center of Despair's main
-continent. The city has never fallen to the forces of Darkness and remains
+1 'BRIGANTIA'~
+Brigantia, a famosa Cidade da Esperanza, esta no centro de Kallaikia ...
+A cidade has never fallen to the forces of Darkness and remains
 one of Light's most fervent defenders. In fact, the greatest adventurers
-of Despair originate from Darkhaven, certainly profiting from the Academy's
-excellent teaching. The Darkhaven markets are always filled with objects
+of Despair originate from Brigantia, certainly profiting from the Academy's
+excellent teaching. The Brigantia markets are always filled with objects
 of wonder, and anyone wishing to join one of Despair's ten guilds will
 certainly want to visit the City of Hope, for the guild halls are located
 there.
@@ -17768,16 +17768,16 @@ Recommended level range: 5 - 35
 
 After the bloody destruction of Thalos, all of the citizens who had
 survived banded together to create New Thalos. Far to the east of the city
-of Darkhaven and north of the Ishtar river, the city stands to this day.
+of Brigantia and north of the Ishtar river, the city stands to this day.
 The Great Eastern desert lies to the south and if you are far enough east,
 you can hear the tranquil waves of the Sea of Sorrows lapping against the
 shore. New Thalos is one of the five great cities that dares to oppose the
 forces of Darkness. Several shops attract many tourists from far away.
-The Sultan of New Thalos has joined with Darkhaven and other cities in a
+The Sultan of New Thalos has joined with Brigantia and other cities in a
 wholehearted effort to oppose the forces of Evil.
 ~
 
-1 'NEW' 'NEWBIE' 'NEWBIECHAT' 'START' 'BEGIN'~
+1 'NOVO' 'NOVATO' 'CHATNOVATOS' 'INICIO' 'COMEZAR' 'COMEZO'~
 If you are new to the Realms, here are a few help files that will help you
 get acquainted with our world. Please remember that during peak times
 we host updwards of 500+ players online, so we have tried to make the help
@@ -17799,10 +17799,10 @@ PRACTICE -    Will teach you about training spells, skills, and weapons.
 INFORMATION - Will cover ways to find certain types of information.
 PORTAL -      Will cover portals and how they can be dangerous.
 
-To use these files, type AXUDA <topic>.  Type 'help' for general commands.
+Para usar estes ficheiros, teclea AXUDA <topico>. Teclea 'axuda' para comandos xerais.
 ~
 
-58 NEWBIE~
+58 NOVATO~
 Newbiechat is a channel created for and use by only low-level new
 players.  It is designed to lessen the confusion of their transition
 into the Realms, and can be used to gain answers to any questions
@@ -17812,7 +17812,7 @@ or problems the player may have.
 51 NEWBIESET~
 Syntax: newbieset <character>
 
-NEWBIESET puts the default (i.e. Darkhaven Academy) equipment into the
+NEWBIESET puts the default (i.e. Brigantia Academy) equipment into the
 character's inventory.  Recipient must be level 5 or lower.
 ~
 
@@ -17994,7 +17994,7 @@ pulling sensation as strange and colorful mists swirl around you...
  
 &CA low voice fills your head with words of advice...
 "When your character dies, you are reincarnated at the cathedral of Notre
- Dame de Sioux in New Darkhaven; should you one day become a member of a
+ Dame de Sioux in New Brigantia; should you one day become a member of a
  clan, guild or order you will be returned to your own altar."
  
 "Your corpse, however, is left behind where you were killed, together with
@@ -18053,12 +18053,12 @@ i  `: ( ____  ,-::::::' ::j  [:```          [8:   )
   Your immediate surroundings may give you clues to hidden areas,
   treasures and creatures.
 
-  Once you enter the game, type: &Yhelp start&w ... This will be your
+  Once you enter the game, type: &Yaxuda inicio&w ... This will be your
   main guide to commands.  When in doubt, you may seek help from anyone
-  involved with the Newbie Council - simply type &Yhelp NC&w to find
+  involved with the Newbie Council - simply type &Yaxuda NC&w to find
   members of the council.
   
-  &wTo control the text sent to your screen, type: &Yhelp pager&w
+  &wTo control the text sent to your screen, type: &Yaxuda pager&w
 ~
 
 0 NO~
@@ -18212,10 +18212,10 @@ READ - Displays the contents of [number]. You must be at a note board to
 
 WRITE - Puts you in an editor where you can write a note. You must be
  holding a note, and have a quill in your inventory to Write.
- example: 'note write' puts you in the editor. See Help EDITOR.
+ example: 'note write' puts you in the editor. See Axuda EDITOR.
  
  
-Also see Help &Wnote2, &wHelp &Wnote3, &wHelp &Wvote &wand Help &Weditor&w.
+Also see Axuda &Wnote2, &wAxuda &Wnote3, &wAxuda &Wvote &wand Axuda &Weditor&w.
 ~
 
 1 NOTE2~
@@ -18245,7 +18245,7 @@ TAKE - similar to 'Remove' but places the note in your inventory, rather
 DATE - similar to 'list' but replaces who the message is to with the
  date that the note was written.
  
-Also see Help &Wnote, &wHelp &Wnote3, &wHelp &Wvote &wand Help &Wediting&w.
+Also see Axuda &Wnote, &wAxuda &Wnote3, &wAxuda &Wvote &wand Axuda &Wediting&w.
 ~
 
 1 NOTE3~
@@ -18253,7 +18253,7 @@ REPLY - starts a reply note to the original sender with the subject.
   (It addresses the note to the original sender with the same subject)
   Example: 'note reply 12' replies to the sender of note 12.
  
-Also see Help &Wnote, &wHelp &Wnote2, &wHelp &Wvote &wand Help &Wediting&w.
+Also see Axuda &Wnote, &wAxuda &Wnote2, &wAxuda &Wvote &wand Axuda &Wediting&w.
 ~
 
 51 NOTELL NOEMOTE NOTITLE SILENCE UNSILENCE~
@@ -18748,7 +18748,7 @@ shamans and fearsome strength and size, the ogres were often able
 to destroy the smaller villages of Despair. Many years of war passed,
 and the ogre population slowly dwindled, until only a handful of them
 remained. The savage giants retreated to their sole remaining village and
-awaited annihilation. However, pity overcame the avatars of Darkhaven
+awaited annihilation. However, pity overcame the avatars of Brigantia
 and they asked the mages of the Tower of High Sorcery to ensure that the
 ogres lived in peace and no longer meant a threat to the Light. A maze of
 mists was woven about the ogre village, simple to solve for any intelligent
@@ -18878,7 +18878,7 @@ info either by the name "pill" or the number "26".  ***SMILE***
 1 'OLD MARSH'~
 Recommended level range: 20 - 35
 
-The old marsh lies far to the southwest of Darkhaven. Once a part of
+The old marsh lies far to the southwest of Brigantia. Once a part of
 Haon Dor, heavy rain and lack of drainage created the murky bog. It
 is populated by trolls and other vile beings who enjoy such a climate.
 ~
@@ -18888,7 +18888,7 @@ Recommended level range: 1 - 30
 
 Those who travel back in time to see the Tree of Life often encounter
 the very beginnings of Thalos, when it was far more powerful than
-Darkhaven and was protected by Gordon the Brave, Defender of the
+Brigantia and was protected by Gordon the Brave, Defender of the
 Light. The sights and wonders to see in this city are always too much
 to tell by those who witness it, for it is a constant reminder of what has
 been lost.
@@ -19062,9 +19062,9 @@ the door that has the bolt to BOLT or UNBOLT the door.
 
 1 OPHANIM~
 Originally the "Order of the Pure Blade", a monastic order of knights founded a
-few years before the destruction of old Darkhaven, designed with the purpose of
+few years before the destruction of old Brigantia, designed with the purpose of
 preparing for the End of Days.  Caught unprepared by the apocalyptic wave of
-evil that destroyed Old Darkhaven and left the ruins and Gravoc in their place,
+evil that destroyed Old Brigantia and left the ruins and Gravoc in their place,
 the Order was forced to disband under the belief that the evil was simply too
 strong to fight with physical force.  Unwavering in his belief that the forces
 of the blessed must be present to drive evil away from enacting the End of 
@@ -19093,11 +19093,11 @@ See OPEDIT, TRIGGER, OPTRIGGERS, OPCOMMANDS, IFCHECKS, IFCHECKS2 VARIABLES
 
 1 ORACLE~
 The oracle is located one east of the Archives in the townhall inside
-Darkhaven. This is for posting complaints regarding immortals and 
+Brigantia. This is for posting complaints regarding immortals and 
 reimbursement requests. 
 
 &wThe Oracle can be found in Town Hall. It is Positioned East, South, Up, 
-2 south, and East from Darkhaven Square.
+2 south, and East from Brigantia Square.
  
 See also: AXUDA REIMBURSEMENT
 ~
@@ -19567,7 +19567,7 @@ them or lose them.  This policy prevents wholesale abuse of pets.
  
 You are responsible for the actions of your pets.
  
-See also &WHelp PETSAVE &w
+See also &WAxuda PETSAVE &w
 ~
 
 51 PETSAVE~
@@ -19687,7 +19687,7 @@ the value of the armor.
 Recommended level range: 1 - 5
  
 When the balrogs and carnifex laid siege to the Realm of Kontaur, the land's
-sylvan races fled to a portion of Haon Dor west of the city of Darkhaven.
+sylvan races fled to a portion of Haon Dor west of the city of Brigantia.
 The pixies and sprites now live in harmony due to the protection offered by
 the strong city and its' neighbors. A quasit imp watches over the sylvan
 races. Some say it is only a matter of time before these peaceful beings
@@ -19806,7 +19806,7 @@ This disease is deadly if not cured in a timely manner.
 1 'PLAINS OF THE NORTH'~
 Recommended level range: 1 - 20
 
-The Plains of the North stretch northward from Darkhaven, eventually
+The Plains of the North stretch northward from Brigantia, eventually
 leading to Ofcol, Olympus and the Valley of the Elves. The plains are
 largely unpopulated and can be safely traveled at any time of day.
 ~
@@ -20230,7 +20230,7 @@ PURGE will not get rid of PC's.
 1 QETAG REACH 'QETAG'S REACH'~
 &GThe canyons of Qetag's Reach were uncovered and first populated by a
 band of solitary Dwarf who were insistent upon staying neutral during
-the conflict surrounding New Darkhaven. They lived peaceably, secure in
+the conflict surrounding New Brigantia. They lived peaceably, secure in
 their solitude and completely self supportive, until the Great Betrayal.
  
 Rumors abound on what happened that fateful night when the canyons were
@@ -20311,7 +20311,7 @@ for the creation and running of the majority of quests in the Realms.  The QC
 also handles issues related to the distribution and value of glory.  For more
 information, please contact an immortal with [Quest Council] in his/her title,
 or type 'councils quest council.'  As well, please feel free to post any quest
-ideas at our office board located in the Darkhaven Town Hall.
+ideas at our office board located in the Brigantia Town Hall.
  
 ~
 
@@ -20323,7 +20323,7 @@ also handles issues related to the distribution and value of glory.  For more
 information, please contact an immortal with [Quest Council] in his/her title,
 or type 'councils quest council.'
  
-Our board is located in Darkhaven Town Hall (2u, s, w, n). Please feel free
+Our board is located in Brigantia Town Hall (2u, s, w, n). Please feel free
 to post comments, questions, concerns and quest ideas on this board.
  
 Also see help QUESTING and help QUEST.
@@ -20337,14 +20337,14 @@ their specialities.
 &BConcern or Problem              Who to Talk to
 &B-----------------------         --------------
 &WPossible duped items?           Kali or Darrek
-&WBeen unfairly punished?         Help Appeals
-&WWant to join Immortal staff?    Help Howtoimm
-&WWould like to build?            Help Build
+&WBeen unfairly punished?         Axuda Appeals
+&WWant to join Immortal staff?    Axuda Howtoimm
+&WWould like to build?            Axuda Build
 &WWould like to propose a quest?  Quest board in Town Hall
 &WTroubles getting started?       Who 'newbie council'
-&WBug Reports?                    Help bug
-&WTypos                           Help typo
-&WSuggestions?                    Help Idea
+&WBug Reports?                    Axuda bug
+&WTypos                           Axuda typo
+&WSuggestions?                    Axuda Idea
 &WWant to help others?            The Newbie Council
 Questions about Nations?        Raltaris
 ~
@@ -20363,7 +20363,7 @@ Some things to remember while questing:
  &W-&GWe are volunteers, and choose to run quests. If you have criticisms of 
     the quest, or the person running the quest, please be constructive and
     vent your concerns in an appropriate forum - in the Hall of Heroes located
-    in the Darkhaven Town Hall.
+    in the Brigantia Town Hall.
 
  &W-&GQuest Council is here to increase your enjoyment of the game and to 
      enrich your experiences here. It is &YNOT&G here to explicitly increase 
@@ -20405,7 +20405,7 @@ There is no RENT here.  Just SAVE and QUIT whenever you want to leave.
 0 RACE RACES~
 &z14 races have grown large enough within the realms to carve out their 
 kingdoms from amongst the many territories of the land.    
-&WType "help [race]" for specific information on the specified race:        
+&WType "axuda [race]" for specific information on the specified race:        
  
 &wHuman&r....... &cThe center of the race spectrum.  Normal wits and strength. 
 &wDwarf&r....... &cShort, strong, tough, and hairy.  They are terrific workers.
@@ -20618,7 +20618,7 @@ This will clear the room flags in all rooms from 100 to 110 inclusive.
 .
 Recommended Level Ranges : 25 - 50
  
-North and east of Darkhaven lies the Mystic Seaport, where Captain Henry
+North and east of Brigantia lies the Mystic Seaport, where Captain Henry
 sails to and from the lands of Duke Argyll Morgan aboard the sailing
 vessel, the Sea Witch. Across the Sea of Tranquility, lies the quaint
 fishing village of Glen Domaire. Further up the coast, is what is known as
@@ -20665,7 +20665,7 @@ in this elite fighting force.
 &c/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
  
 &wThe Order of Ringbearers is restricted to Avatar (level 50) characters. All
-interested parties must be familiar with all Help Files pertaining to the 
+interested parties must be familiar with all Axuda Files pertaining to the 
 Order of Ringbearers, as well as those pertaining to all Orders in general. 
 Applicants to the Order of Ringbearers must have at least one sponsor within
 the Order and one reference from another player in the Realms. Once an 
@@ -20796,10 +20796,10 @@ save all of the players.
 
 1 RECALL~
 With a scroll or potion of 'word of recall' you can instantly return from
-most areas to your attuned recall spot (Thoth's Rune in Darkhaven for any
+most areas to your attuned recall spot (Thoth's Rune in Brigantia for any
 of those who are not deadly, clanned or a member of an Order or Guild).
  
-Scrolls of recall are available in Darkhaven's section of magic shoppes.
+Scrolls of recall are available in Brigantia's section of magic shoppes.
  
 See also: 'word of recall'
  
@@ -20832,7 +20832,7 @@ in which Redferne himself is known to have lost his life.  Less is known of
 Naris' fate.
  
 The illusion of emptiness was in some manner related to the strange location
-the fortress formerly held, floating in the firmament of Darkhaven.  When the
+the fortress formerly held, floating in the firmament of Brigantia.  When the
 spell was broken, the fortress returned to its location of old, behind great
 dark gates in a quiet corner of what is now refered to as the 'Old Marsh.'
 ~
@@ -20913,7 +20913,7 @@ Deadly characters are never eligible for Reimbursements.
 Experience can _not_ be reimbursed under any circumstances whatsoever.
 
 The following are causes we will NOT reimburse for:
--- Loss of corpse due to corpse decay.  See "help corpse" for details.
+-- Loss of corpse due to corpse decay.  See "axuda corpse" for details.
 -- Loss of corpse due to lag.
 -- Loss of corpse due to problems with your system or the net.
 -- Individual items lost due to not saving your character regularly.
@@ -20987,7 +20987,7 @@ This spell will magically disarm a trap on an object.
  
 &gA rename and/or rekey may be done by any level 54 or higher immortal.
 Renames can be purchased with 20 glory or a rename scroll. Wedding renames
-are done with a marriage license by Blorin in Darkhaven (See Help Wedding).
+are done with a marriage license by Blorin in Brigantia (See Axuda Wedding).
 Renames are to be medieval in style for mortals and must not contain the
 name of an immortal without their expressed consent. Items will not be
 renamed to machine gun, silly putty, etc. Before contacting an immortal to
@@ -21351,10 +21351,10 @@ dress is welcome, though not required.  Come prepared for weather.
 
 &BFeel free to read the Reunion Note Board located 3 west, south of DH[]
  
-&WSee also: &CHelp Reunion Hotels, Help Reunion Hotels2,
-          Help Reunion Committee, Help Reunion Directions,
-          Help Reunion Events, Help Reunion Travel,
-          Help Reunion Camping.
+&WSee also: &CAxuda Reunion Hotels, Axuda Reunion Hotels2,
+          Axuda Reunion Committee, Axuda Reunion Directions,
+          Axuda Reunion Events, Axuda Reunion Travel,
+          Axuda Reunion Camping.
 ~
 
 1 'REUNION CAMPING'~
@@ -21387,9 +21387,9 @@ Sideroad)&w, and go west 2 Km to Nor-Halton Park.
 
 &BFeel free to read the Reunion Note Board located 3 west, south of DH[]
 
-&WSee also: &CHelp Reunion, Help Reunion Hotels, Help Reunion Hotels2,
-          Help Reunion Committee, Help Reunion Directions,
-          Help Reunion Events, Help Reunion Travel.
+&WSee also: &CAxuda Reunion, Axuda Reunion Hotels, Axuda Reunion Hotels2,
+          Axuda Reunion Committee, Axuda Reunion Directions,
+          Axuda Reunion Events, Axuda Reunion Travel.
 ~
 
 1 'REUNION COMMITTEE'~
@@ -21409,9 +21409,9 @@ a tell if you need some questions answered or info about the reunion.
 
 &BFeel free to read the Reunion Note Board located 3 west, south of DH[]
  
-&WSee also: &CHelp Reunion, Help Reunion Hotels, Help Reunion Hotels2,
-          Help Reunion Directions, Help Reunion Camping,
-          Help Reunion Events, Help Reunion Travel.
+&WSee also: &CAxuda Reunion, Axuda Reunion Hotels, Axuda Reunion Hotels2,
+          Axuda Reunion Directions, Axuda Reunion Camping,
+          Axuda Reunion Events, Axuda Reunion Travel.
 ~
 
 1 'REUNION DIRECTIONS'~
@@ -21459,9 +21459,9 @@ at: &Chttp://www.rennfest.com/orf/general/directs.htm
 
 &BFeel free to read the Reunion Note Board located 3 west, south of DH[]
 
-&WSee also: &CHelp Reunion, Help Reunion Hotels, Help Reunion Hotels2,
-          Help Reunion Committee, Help Reunion Camping,
-          Help Reunion Events, Help Reunion Travel.
+&WSee also: &CAxuda Reunion, Axuda Reunion Hotels, Axuda Reunion Hotels2,
+          Axuda Reunion Committee, Axuda Reunion Camping,
+          Axuda Reunion Events, Axuda Reunion Travel.
 ~
 
 1 'REUNION EVENTS'~
@@ -21491,9 +21491,9 @@ at: &Chttp://www.rennfest.com/orf/general/directs.htm
 
 &BFeel free to read the Reunion Note Board located 3 west, south of DH[]
 
-&WSee also: &CHelp Reunion, Help Reunion Hotels, Help Reunion Hotels2,
-          Help Reunion Travel, Help Reunion Directions,
-          Help Reunion Committee, Help Reunion Camping.
+&WSee also: &CAxuda Reunion, Axuda Reunion Hotels, Axuda Reunion Hotels2,
+          Axuda Reunion Travel, Axuda Reunion Directions,
+          Axuda Reunion Committee, Axuda Reunion Camping.
 ~
 
 1 'REUNION HOTELS'~
@@ -21534,9 +21534,9 @@ Travelers Checks
 
 &BFeel free to read the Reunion Note Board located 3 west, south of DH[]
 
-&WSee also: &CHelp Reunion, Help Reunion Hotels2, Help Reunion Travel,
-          Help Reunion Directions, Help Reunion Committee,
-          Help Reunion Camping, Help Reunion Events.&w
+&WSee also: &CAxuda Reunion, Axuda Reunion Hotels2, Axuda Reunion Travel,
+          Axuda Reunion Directions, Axuda Reunion Committee,
+          Axuda Reunion Camping, Axuda Reunion Events.&w
 ~
 
 1 'REUNION HOTELS2'~
@@ -21575,9 +21575,9 @@ Travelers Checks, Discover, Diners Club
 
 &BFeel free to read the Reunion Note Board located 3 west, south of DH[]
 
-&WSee also: &CHelp Reunion, Help Reunion Hotels2, Help Reunion Travel,
-          Help Reunion Directions, Help Reunion Committee,
-          Help Reunion Camping, Help Reunion Events.
+&WSee also: &CAxuda Reunion, Axuda Reunion Hotels2, Axuda Reunion Travel,
+          Axuda Reunion Directions, Axuda Reunion Committee,
+          Axuda Reunion Camping, Axuda Reunion Events.
 ~
 
 1 'REUNION TRAVEL'~
@@ -21626,9 +21626,9 @@ http://www.greyhound.com
 
 &BFeel free to read the Reunion Note Board located 3 west, south of DH[]
 
-&WSee also: &CHelp Reunion, Help Reunion Hotels, Help Reunion Hotels2,
-          Help Reunion Directions, Help Reunion Committee,
-          Help Reunion Camping, Help Reunion Events.
+&WSee also: &CAxuda Reunion, Axuda Reunion Hotels, Axuda Reunion Hotels2,
+          Axuda Reunion Directions, Axuda Reunion Committee,
+          Axuda Reunion Camping, Axuda Reunion Events.
 ~
 
 1 REVEAL~
@@ -21803,7 +21803,7 @@ ___|___|___|__|    &GSet in the moors of the lands of the    &O|___|___|___|__|
 |_|_|_|_|_|_||__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|_|_|__|__|__|_|
 ||_|_|_|_|_|_||__|__|__|__|__|__|__|__|__|__|__|__|__|__|__||___|__|__|__|
  
-                   &G(Continued on: &WHelp 'RNF INDUCTIONS'&G)&w
+                   &G(Continued on: &WAxuda 'RNF INDUCTIONS'&G)&w
 ~
 
 1 ROLEPLAY ROLE-PLAY ROLE-PLAYING~
@@ -22044,7 +22044,7 @@ See also:  &wHALF-TROLL  NATIONS  HOMETOWN
 Enforced level range: 1 - 50 (pkill only)
 
 After the last Clan Wars, the gods looked down upon the ruins of old
-Darkhaven and shifted them into another plane, one that can only be
+Brigantia and shifted them into another plane, one that can only be
 reached by those who follow a dark and shadowy path. Now decayed beyond
 recognition, the shambled remnants of once great structures cover all
 signs that this was once the prosperous center of Despair. Burning lava
@@ -22057,7 +22057,7 @@ of death and destruction.
  
 No peacefuls are permitted in the Ruins at any time.
  
-&RSee also:&w Help pkmap
+&RSee also:&w Axuda pkmap
 ~
 
 -1 RULES~
@@ -22212,7 +22212,7 @@ you log out.  Every character is auto-saved at reboot.
 62 SAVE CENTAUR~
 ~
 
-62 SAVE GREETING~
+62 SAVE BENVIDA~
 ~
 
 62 SAVE MAGNETIC THRUST~
@@ -22282,7 +22282,7 @@ The following are guidelines of level 54 responsibilities:
    - The bodybag command, for doing CRs for peaceful characters
      (at the discretion of the immortal)
    - Mastering proper mortal discipline techniques and punishments
-   - Helping 51's && 52's with problems and questions
+   - Axudaing 51's && 52's with problems and questions
    - Possible object and mob building work
    - Possible work at 5500 if interested in building or coding
    - Council work suggested
@@ -22436,7 +22436,7 @@ Thieves have an innate ability to scry.
 1 'SEA OF SORROWS'~
 Recommended Level Range: 1 - 15
  
-The Sea of Sorrows is a large body of water far to the east of Darkhaven,
+The Sea of Sorrows is a large body of water far to the east of Brigantia,
 bordering much of the Realms. It is said that the sea was created long ago
 from the tears of the New Goddess, Brittany. Her kind heart was moved when the
 Old Gods were cast aside in favor of Brontrel's new order. Famed Uthle bay
@@ -22832,9 +22832,9 @@ The maximum a vector can change in one update is 18.
 1 'SEWER'~
 Recommended level range: 5 - 30
 
-Below the city of Darkhaven is a series of winding passageways known as
+Below the city of Brigantia is a series of winding passageways known as
 the sewers. They delve deep underground, allowing great flows of rain
-water and refuse to exit Darkhaven. Rodent and large insect populations
+water and refuse to exit Brigantia. Rodent and large insect populations
 roam the caverns, as well as serpents and arachnids. Some adventurers
 also speak of an immense red dragon that has taken up residence in these
 tunnels, though few believe them.
@@ -22852,7 +22852,7 @@ Recommended level range: 10 - 50
 
 Easily one of the darkest, deadliest cities of Despair, Shadowport is
 an ancient subterranean town populated by the beings of Darkness. Its
-entrance lies deep below the ground, in the darkest reaches of Darkhaven's
+entrance lies deep below the ground, in the darkest reaches of Brigantia's
 sewers. Rumors say that there are many other entrances, but none have 
 been confirmed. The city itself is ruled by Lord Xyranthas. Once recognized
 as the greatest magi of his time, Xyranthas was turned to darkness with the
@@ -22908,7 +22908,7 @@ There once was a deadly named Shargate,|who oft had problems hitting his target
 Recommended level range: 5 - 20
 
 The shattered remains of the ancient civilization of tinker gnomes resides
-here, to the southeast of eastern Darkhaven and in the shadow of a fiercesome
+here, to the southeast of eastern Brigantia and in the shadow of a fiercesome
 mountain range. Inhabitating the tunnels beneath the mountains are the
 gnome's perpetual enemies, and one time students: the hobgoblins. Similar to
 goblins in many ways, they lack the intelligence and inventiveness of the 
@@ -23360,7 +23360,7 @@ not in this list, contact a coe member.
  Strings Mud           rabid.org                   4000Mud                     
  Legends of Excalibur  loe.hosteng.org             8000Up
  Looking Glass         206.58.127.16               4000Up
-   See also help &YSMAUG &w Help &Y SMAUGLIST2
+   See also help &YSMAUG &w Axuda &Y SMAUGLIST2
 &w
 ~
 
@@ -23400,7 +23400,7 @@ value     an extra field reserved for things like the vnum used in spells
  
 ~
 
-1 SMAUGSTART~
+1 SMAUGINICIO~
 &GIf you downloaded a version of Smaug with name authorization
 enabled by default, the following steps will explain how to
 create your initial immortal and disable authorization if you
@@ -23924,7 +23924,7 @@ to war, order to chaos. Thoric eventually acknowledged their cries and declared
 that Dominus' treachery was fate and the Thousand would remain forever trapped
 in Es'Tilith. The Supreme Entity, the True Creator, then gave Dominus leave to
 destroy and remake the multiverse in his own vision.
-See Help Story2...
+See Axuda Story2...
 ~
 
 1 STORY2~
@@ -23948,7 +23948,7 @@ ages by Dominus and the Gods he raised through divine ascension. The peaceful
 mortals of this now dark plane find themselves pressed into war against the
 Darkness. Beings of Light have become increasingly rare and a single, great
 resistance has bound together: the towns of Solace, Ofcol, New Thalos, 
-Ocean Keep and most importantly, Darkhaven. All the other Realms of Despair
+Ocean Keep and most importantly, Brigantia. All the other Realms of Despair
 have fallen, and thus does Good's hope falter and wither...
 ~
 
@@ -24042,9 +24042,9 @@ might think resistant to such attacks, due to its magical nature.
 |&Cempty fill eat drink pick value   &B|&Cauction&B  |------------------------|
 |----------------------------------|----------|
 &CAlso see help on: !, SAVE, QUIT, PAGELENGTH, PRACTICE.
-To use the help menu, just type "help <topic>".
-To see help on individual areas, you can now type "help <full area name>".
-If you are new to the Realms, type AXUDA NEW to see a special help series.
+To use the help menu, just type "axuda <topic>".
+To see help on individual areas, you can now type "axuda <full area name>".
+If you are new to the Realms, type AXUDA NOVO to see a special help series.
 ~
 
 1 SUMMON SUMMONING~
@@ -24055,7 +24055,7 @@ location ... and stuns your character.
  
 Characters who are fighting cannot be summoned.  Do not summon aggressive
 mobiles into an area lower in level than the one from which they came, and
-do not summon aggressive mobiles into Darkhaven or pkill town.
+do not summon aggressive mobiles into Brigantia or pkill town.
  
 For clarification, if the mobile is a higher level than the lower level range
 of an area, it should not be summoned there.
@@ -24156,7 +24156,7 @@ room descriptions.
  
 All mortals are encouraged to bring their concerns and project ideas to a
 member of The Symposium, or simply post the idea at the Tome of Conception
-located e,s,u,s,w of Darkhaven Square.
+located e,s,u,s,w of Brigantia Square.
  
 Those seeking more information should contact the immortal staff of The
 Symposium or the mortal head, Skaphia.
@@ -24477,7 +24477,7 @@ all time...
 1 'THE ASTRAL PLANE' 'ASTRAL PLANE'~
 Recommended level range: 15 - 35
  
-High above Darkhaven, perched atop a heavenly rainbow, is the ever-
+High above Brigantia, perched atop a heavenly rainbow, is the ever-
 standing pearly gate to the Astral Plane. Once a gateway between worlds
 and planes, it is now a black void which is connected to but one world.
 The Astral Plane's inhabitants do provide much intrigue however, even if
@@ -24507,7 +24507,7 @@ Level range: 25 - 50
 Recommended level range: 5 - 35
  
 The Shire is a small village of halflings and hobbits to the northwest
-of Darkhaven.  The town is run by the Thain, who also manages the trade
+of Brigantia.  The town is run by the Thain, who also manages the trade
 of wheat with other towns.  Very little danger exists in the Shire,
 save for the occasional thieving youth, or angry bull.                         
 ~
@@ -24520,7 +24520,7 @@ of the relevant circumstances and to determine if the punishment given
 is too excessive.  Due to the sensitivity of their job function, and 
 the fact that members of the panel may change over time, their identities
 are not broadcast to the Realms at large.  To launch an appeal please
-read: Help Appeals
+read: Axuda Appeals
 ~
 
 0 THIEF THIEVES~
@@ -24899,7 +24899,7 @@ coliseum there is no such meaning for the word mercy.
 Recommended level range: 35 - 50
  
 The dark Tower of Despair has existed for many ages as a black spike 
-that corrupts the landscape west of Darkhaven. The God Strahd created 
+that corrupts the landscape west of Brigantia. The God Strahd created 
 this monstrosity, a gift to his most loyal servant: Orcus, Demon Prince 
 of Death. The early ages of Despair were plagued by his dreaded minions 
 and the undead walked the land. Orcus was without a doubt the most powerful 
@@ -24924,16 +24924,16 @@ a feeling of godly might.
 
 1 TOWN HALL TOWNHALL~
 &G
-&WThe Main Lobby of the Darkhaven Town Hall is located one east and
-one south of Darkhaven Square. From there, you can read the directory
+&WThe Main Lobby of the Brigantia Town Hall is located one east and
+one south of Brigantia Square. From there, you can read the directory
 (Type "&YLOOK DIRECTORY&W), to find the Mayor's Office, The Archives,
-Judge Kendra (Darkhaven Supreme Court), The Mail Room, Oracle and
+Judge Kendra (Brigantia Supreme Court), The Mail Room, Oracle and
 many other offices.
 ~
 
 1 'TOWN HALL'~
 Recommended level ranges: 0 - 60
-Darkhaven's latest architectural feat was in a sense, a prank at first.
+Brigantia's latest architectural feat was in a sense, a prank at first.
 The deity Elcid looked upon the old Town Hall, and decided unto himself
 that is was too easily accessible. So it was with his keen mind that he
 created the New Town Hall. At first it was a maze of tricks and traps,
@@ -24942,14 +24942,14 @@ Order unto the Hall. Now it is a place where all may meet and talk of
 that which interests them. Many boards covering all subjects lie scattered
 through the three floors of the hall, along with meeting rooms where such
 councils may be convened. Upon the first floor, the Mayor and the Judge of
-Darkhaven reside, and the top floor was taken over by the Symposium to
+Brigantia reside, and the top floor was taken over by the Symposium to
 better relations between mortals and immortals alike.
 ~
 
 1 'TOWN OF SOLACE'~
 Recommended level range: 5 - 50
 
-The town of Solace lies to the northwest of Darkhaven, attainable through
+The town of Solace lies to the northwest of Brigantia, attainable through
 a path in Haon Dor. It is one of the five cities of Light and has fiercely
 defended its territory for ages with the aid of the famed Mandor and Nelson.
 An interesting quirk of Solace's citizens is that they do not believe in the
@@ -25650,7 +25650,7 @@ losing consciousness.
 1 'VALLEY OF THE ELVES'~
 Recommended level range: 5 - 20
 
-The Valley of the Elves lies far to the north of Darkhaven, beyond the
+The Valley of the Elves lies far to the north of Brigantia, beyond the
 great Mount Olympus. The tribal, uncivilized elves of Despair reside
 in the valley, oblivious to all the pain and destruction which occurs
 while they sing, dance and hunt. A single elf is involved in aiding
@@ -26080,7 +26080,7 @@ pugilism            - hit/suction/blast
 missile weapons     - bolt/dart/stone/pea/bow and arrow
  
  
-See also : &YHelp weapons
+See also : &YAxuda weapons
 ~
 
 54 WEARFLAGS~
@@ -26125,7 +26125,7 @@ and the equipment should not have any significant stats.
 If you wish to get married, you are responsible for supplying your own
 rings. You must seek the mayor in the Town hall to purchase a license.
 Once you have your license, if you desire to customize your rings you must
-seek out Blorin, the Darkhaven engraver in the Town Hall.  He will be able to
+seek out Blorin, the Brigantia engraver in the Town Hall.  He will be able to
 help you out.  If you would like something other than what Blorin offers, it
 will cost you each glory to rename your rings.
   Once your rings are ready and both bride and groom can arrange a time
@@ -26171,35 +26171,35 @@ To whisper to another, you must be in the same room as the recipient
 of the whisper.
 ~
 
-1 WHO~
+1 QUEN~
 WHO shows the characters currently in the Realms.  Invisible characters will
 not appear on this list if you cannot detect invisible.  Immortals who are
 wizinvis higher than your own level also will not appear.
  
-Syntax:  who                 who <class>    who <class> race>
-         who <level range>   who deadly     who <class> <race> <level range>
+Syntax:  quen                 quen <class>    quen <class> race>
+         quen <level range>   quen deadly     quen <class> <race> <level range>
  
 With arguments, WHO can show players of certain classes, races, or levels:
 For example:
  
- who 10                  lists all characters level 10 or above
- who 15 20               lists all characters between level 15 and 20
- who cleric              lists all clerics playing
- who cleric elf          lists all cleric elfs playing
- who imm                 lists all Immortals playing
- who cleric 1 5          lists all clerics between levels 1 and 5
- who deadly              lists all deadly (pkill) characters playing
+ quen 10                  lists all characters level 10 or above
+ quen 15 20               lists all characters between level 15 and 20
+ quen cleric              lists all clerics playing
+ quen cleric elf          lists all cleric elfs playing
+ quen imm                 lists all Immortals playing
+ quen cleric 1 5          lists all clerics between levels 1 and 5
+ quen deadly              lists all deadly (pkill) characters playing
  
 NEW ADDITIONS:
- who 'guild of mages'    lists all online members of the specified Guild
- who <order name>        lists all online members of the specified Order
- who <clan name>         lists all online members of the specified Clan
- who 'newbie council'    lists all online members of the specified Council
- who <deity name>        lists all online worshippers of the specified deity
- who group               lists all online grouped players
- who group 10 20         will list all players level 1 thru 10 who are grouped
+ quen 'guild of mages'    lists all online members of the specified Guild
+ quen <order name>        lists all online members of the specified Order
+ quen <clan name>         lists all online members of the specified Clan
+ quen 'newbie council'    lists all online members of the specified Council
+ quen <deity name>        lists all online worshippers of the specified deity
+ quen group               lists all online grouped players
+ quen group 10 20         will list all players level 1 thru 10 who are grouped
                          or who desire to group. (see also help CONFIG)
- who leader              will list all leaders of clans, orders, guilds and
+ quen leader              will list all leaders of clans, orders, guilds and
                          councils.  This can be used in conjuction with a
                          specific order if it is listed after the name.
                          For example who 'guild of mages' leader
@@ -26459,7 +26459,7 @@ been used of late for training and testing of new initiates of Good.
 1 ZENOTHIR 'THE TOWER OF ZENOTHIR'~
 Recommended level range: 15 - 25
  
-In the dwarven forest to the southeast of Darkhaven is a small village
+In the dwarven forest to the southeast of Brigantia is a small village
 and tall tower. Residing in the tower is, of course, Zenothir, a famed
 magician who made his fortune with the magical art of illusion and 
 trickery. Other practitioners of this art have flocked to this tower and

@@ -3,13 +3,13 @@
 
                             O    R E I N O    D A S    T E B R A S !
             _________________________________________________________________________
-           /            \ Written, maintained and modified by Thoric; connection by  \
-          |             /     BlueGenesis.com; governed by the Council of Elders      |
-          |-------------\          (email all concerns to blodkai@game.org)           |
-          |   \\._.//   /                                                             |
-          |   (0...0)   \ Home of SMAUG based on Merc2.1 code by Hatchet, Fury Kahn;  |
-          |    ).:.(    / in turn based on DikuMUD code (Hans Staerfeldt, Katja Nyboe |
-          |    {o o}    \ Tom Madsen, Michael Seifert and Sebastian Hammer)           |
+           /            \                                                            \
+          |             /       Escrito, mantido e modificado por ^BuRZuM-iSHi^       |
+          |-------------\                                                             |
+          |   \\._.//   /              [[ burzum_ishi__@hotmail.com ]]                |
+          |   (0...0)   \                                                             |
+          |    ).:.(    /  Kallaikia esta basado en SMAUG 1.8 -> Merc 2.1 -> DikuMUD  |
+          |    {o o}    \                                                             |
           |   / ' ' \   /                                                             |
           |-'- /   \ -`-\  Realm:          0ri0n.no-ip.biz:4000                       |
           |   .VxvxV.   /  Realm Home:     http://0ri0n.no-ip.biz/kallaikia/          |

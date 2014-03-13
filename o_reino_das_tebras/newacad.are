@@ -1,4 +1,4 @@
-#AREA   Darkhaven Academy~
+#AREA   Brigantia Academy~
 
 
 
@@ -2023,7 +2023,7 @@ master Scarab in his role as Archmage of the Realm's.
 #10399
 Tsythia Mistress Headmistress~
 Mistress Tsythia~
-The illustrious Darkhaven Academy Headmistress stands here to greet you.
+The illustrious Brigantia Academy Headmistress stands here to greet you.
 ~
 This is a woman of great beauty.  Because of her health, she almost glows.
 You can barely take your eyes from her, she is hypnotizing.  She smiles at
@@ -2042,20 +2042,20 @@ smile 2.tsythia
 > act_prog p from the south.~
 mpechoat $n Mistress Tsythia says 'Hello, $n.  How was the battlegrounds?'
 mpechoat $n Please take the time to visit the note room to the east.
-mpechoat $n When done here, leave up to explore Darkhaven.
+mpechoat $n When done here, leave up to explore Brigantia.
 ~
 > act_prog p from the north.~
 mpechoat $n Mistress Tsythia says 'Hello, $n.  How was the Academy?'
 mpechoat $n Please take the time to visit the note room to the east.
-mpechoat $n When done here, leave up to explore Darkhaven.
+mpechoat $n When done here, leave up to explore Brigantia.
 ~
 > act_prog p from the east.~
 mpechoat $n Mistress Tsythia says 'Hello, $n.  Did you enjoy the reading?'
 mpechoat $n To the north is the Academy, and south is the Battlegrounds.
-mpechoat $n When done here, leave up to explore Darkhaven.
+mpechoat $n When done here, leave up to explore Brigantia.
 ~
 > act_prog p from above.~
-mpechoat $n Mistress Tsythia says 'Hello, $n. How was your trip to Darkhaven?'
+mpechoat $n Mistress Tsythia says 'Hello, $n. How was your trip to Brigantia?'
 mpechoat $n To the north is the Academy, and south is the Battlegrounds.
 mpechoat $n Please take the time to visit the note room to the east.
 ~
@@ -2063,7 +2063,7 @@ mpechoat $n Please take the time to visit the note room to the east.
 mpechoat $n Mistress Tsythia says 'Hello, $n. I see you have met Tagetarle.'
 mpechoat $n Please take the time to visit the note room to the east.
 mpechoat $n To the north is the Academy, and south is the Battlegrounds.
-mpechoat $n When done here, leave up to explore Darkhaven.
+mpechoat $n When done here, leave up to explore Brigantia.
 ~
 > rand_prog 100~
 if level($r) == 1
@@ -2096,7 +2096,7 @@ mpat hvak1 mpfor hvak1 ask What soul passes the gateway into this dominion?
   if class($r) == augurer
     mpat hvak2 mpfor hvak2 answer $r, a novitiate Augurer ...
   endif
-  mpechoat $r ... Please leave north to experience the Darkhaven Academy.
+  mpechoat $r ... Please leave north to experience the Brigantia Academy.
   mpechoat $r ... You may now "save" to make your character permanent.
 endif
 ~
@@ -2601,7 +2601,7 @@ A charm bracelet from the academy lies here~
 E
 bracelet charm~
 This is a bracelet that will bring you luck in your travels. It can
-be found at the Darkhaven Acamdemy
+be found at the Brigantia Acamdemy
 ~
 A
 31 1
@@ -2620,7 +2620,7 @@ A pair of black combat boots from the Academy lies here~
 E
 combat boots~
 This boots are so comfortable and light, you feel you can walk a lot
-farther. The can be found at the Darkhaven Academy.
+farther. The can be found at the Brigantia Academy.
 ~
 A
 14 100
@@ -2639,7 +2639,7 @@ A braided leather belt from the Academy lies here~
 E
 belt leather~
 This belt is made of a fine leather, braided for strength. You can get
-it at the Darkhaven Academy.
+it at the Brigantia Academy.
 ~
 A
 5 1
@@ -2658,7 +2658,7 @@ Heavy mail leggings from the Academy lie here~
 E
 leggings~
 These leggings will offer good protection until you can get better. They
-can be found at the Darkhaven Academy.
+can be found at the Brigantia Academy.
 ~
 > drop_prog 100~
 mpforce $n sac $o
@@ -2674,7 +2674,7 @@ A wrought iron helmet from the Academy~
 2 0 0
 E
 helmet iron~
-This is a helmet made of fine iron, from the Darkhaven Academy.  It will
+This is a helmet made of fine iron, from the Brigantia Academy.  It will
 protect you until you can find better.
 ~
 A
@@ -2712,7 +2712,7 @@ A strong metal collar from the academy~
 E
 collar metal ~
 This collar fits closely around your neck. It is thick with spikes to
-protect you in battle. You can find it in the Darkhaven Academy
+protect you in battle. You can find it in the Brigantia Academy
 ~
 > drop_prog 100~
 mpforce $n sac $o
@@ -2728,7 +2728,7 @@ A visor of completion is here, emitting a faint glow.~
 1 0 0
 E
 visor completion~
-Congratulations! You have completed the Darkhaven Academy and can now
+Congratulations! You have completed the Brigantia Academy and can now
 wear this visor with pride! It is magic too, type WEAR VISOR to use.
 ~
 A
@@ -2764,7 +2764,7 @@ Lightweight tin sleeves from the academy~
 E
 sleeves tin~
 This sleeves will protect your arms until you can find something better.
-You can find them in the Darkhaven Academy.
+You can find them in the Brigantia Academy.
 ~
 A
 1 1
@@ -2774,8 +2774,8 @@ mpforce $n sac $o
 |
 #10310
 shield crest academy~
-a shield with the Darkhaven Academy crest~
-A shield with the Darkhaven Academy crest lies here~
+a shield with the Brigantia Academy crest~
+A shield with the Brigantia Academy crest lies here~
 ~
 9 0 513
 2 2 0 0
@@ -3171,7 +3171,7 @@ Instructions for use:
 This map will magically point you in the right direction.  To invoke its
 magical powers, you must examine it.  Remember, this map will only work
 on a roadway or path.  It will not work within the Academy, and this map
-will _not_ direct you back to Darkhaven.
+will _not_ direct you back to Brigantia.
  
 Be warned that this map's power will eventually wane.  When this happens,
 it will vanish...
@@ -3201,7 +3201,7 @@ or level($n) <= 12
   else
   if inroom($n) < 21000
   or inroom($n) > 21407
-    mea $n The map spins and glows, but is too far from Darkhaven to function.
+    mea $n The map spins and glows, but is too far from Brigantia to function.
   else
     mea $n The map seems unable to direct you.
   endif
@@ -3232,7 +3232,7 @@ Instructions for use:
 This map will magically point you in the right direction.  To invoke its
 magical powers, you must examine it.  Remember, this map will only work
 on a roadway or path.  It will not work within the Academy, and this map
-will _not_ direct you back to Darkhaven.
+will _not_ direct you back to Brigantia.
  
 Be warned that this map's power will eventually wane.  When this happens,
 it will vanish...
@@ -3257,7 +3257,7 @@ or level($n) <= 12
   else
   if inroom($n) < 21000
   or inroom($n) > 21407
-    mea $n The map spins and glows, but is too far from Darkhaven to function.
+    mea $n The map spins and glows, but is too far from Brigantia to function.
   else
     mea $n The map seems unable to direct you.
   endif
@@ -3285,7 +3285,7 @@ map~
 Instructions for use:
  
 This map will lead you to a room of magic, from which you can be transported
-out of the city of Darkhaven.  The map will point you in the right direction
+out of the city of Brigantia.  The map will point you in the right direction
 when you examine it...
  
 The map is magical, and will eventually disappear from your inventory.  If
@@ -3315,7 +3315,7 @@ or level($n) <= 12
   else
   if inroom($n) < 21000
   or inroom($n) > 21407
-    mea $n The map spins and glows, but is too far from Darkhaven to function.
+    mea $n The map spins and glows, but is too far from Brigantia to function.
   else 
     mea $n The map seems unable to direct you.
   endif
@@ -3341,7 +3341,7 @@ An absent-minded wizard dropped a map here.~
 E
 map~
 This map will lead you to a room of magic, from which you can be transported
-out of the city of Darkhaven.  The map will point you in the right direction
+out of the city of Brigantia.  The map will point you in the right direction
 when you examine it...
  
 This map is magical, and will eventually disappear from your inventory.  If
@@ -3373,7 +3373,7 @@ or level($n) <= 12
   else
   if inroom($n) < 21000
   or inroom($n) > 21407
-    mea $n The map spins and glows, but is too far from Darkhaven to function.
+    mea $n The map spins and glows, but is too far from Brigantia to function.
   else
     mea $n The map seems unable to direct you.
   endif
@@ -3511,8 +3511,8 @@ Some god dropped a newly created final object here.~
 
 #ROOMS
 #10300
-Darkhaven Academy~
-You stand inside the Darkhaven Academy, an establishment designed to teach
+Brigantia Academy~
+You stand inside the Brigantia Academy, an establishment designed to teach
 the basics of play inside this game.  Each room has a specific purpose and
 contains information on the various commands to maneuver around and interact 
 with the players.  We recommend you explore the Academy in full, taking the 
@@ -3533,7 +3533,7 @@ D2
 door~
 16777219 -1 10382
 D4
-Above you is the entrance to the town of Darkhaven.
+Above you is the entrance to the town of Brigantia.
 ~
 ~
 0 -1 21280
@@ -3578,7 +3578,7 @@ The Laboratory of Skills and Spells.
 ~
 0 -1 10303
 D2
-Entrance to Darkhaven Academy
+Entrance to Brigantia Academy
 ~
 ~
 0 -1 10300
@@ -3762,7 +3762,7 @@ The Reading Room
 ~
 0 -1 10304
 D3
-Wandering Darkhaven Academy, it looks safe
+Wandering Brigantia Academy, it looks safe
 ~
 ~
 0 -1 10309
@@ -3798,7 +3798,7 @@ A Dank Pit
 0 -1 10316
 S
 #10309
-Wandering Darkhaven Academy~
+Wandering Brigantia Academy~
 This is where you will start learning about exits not listed under "Exits".
 Doors are not seen on the game. You must read room description and LOOK
 <direction> to find them. Another method of finding a door is to "bump" into
@@ -3820,7 +3820,7 @@ Wandering the Academy
 ~
 0 -1 10307
 D3
-Lost in Darkhaven Academy
+Lost in Brigantia Academy
 ~
 ~
 0 -1 10311
@@ -3851,13 +3851,13 @@ may practice each.
 ~
 0 3145736 0
 D2
-Wandering Darkhaven Academy
+Wandering Brigantia Academy
 ~
 door~
 3 -1 10309
 S
 #10311
-Lost in Darkhaven Academy~
+Lost in Brigantia Academy~
 There are several special exit types that you may encounter in your travels.
 You have experienced open exits and closed doors to this point. There are
 also hidden doors. The hidden door can not be found with the "bump" method.
@@ -3875,12 +3875,12 @@ will experience a hidden exit, use the room description to find the door name.
 ~
 0 3145736 0
 D0
-Lost in Darkhaven Academy
+Lost in Brigantia Academy
 ~
 ~
 0 -1 10312
 D1
-Wandering Darkhaven Academy
+Wandering Brigantia Academy
 ~
 ~
 0 -1 10309
@@ -3891,7 +3891,7 @@ Back to the beginning
 0 -1 10304
 S
 #10312
-Lost in Darkhaven Academy~
+Lost in Brigantia Academy~
 You are standing in a richly decorated room. A large oak table surrounded
 by twelve chairs dominates a large portion of the area. Crystal globes with
 continual light spells cast on them hover about the room, providing a soft
@@ -3904,7 +3904,7 @@ that will open the exit.
 ~
 0 3145736 0
 D2
-Lost in Darkhaven Academy
+Lost in Brigantia Academy
 ~
 ~
 0 -1 10311
@@ -3954,7 +3954,7 @@ you may leave by the up exit. Good luck!
 ~
 0 3145740 0
 D1
-Lost in Darkhaven Academy
+Lost in Brigantia Academy
 ~
 door~
 3 -1 10312
@@ -4136,7 +4136,7 @@ S
 Hall of the Druid~
 Walking along this hall is strangely reminiscent of a stroll through a
 lush forest. A light breeze touches your cheek and you look twice to make
-sure you are indeed in Darkhaven Academy. You see a soft glow coming from
+sure you are indeed in Brigantia Academy. You see a soft glow coming from
 the floor.
 ~
 0 3146752 0
@@ -4894,7 +4894,7 @@ The Academy Healer
 0 -1 10319
 E
 certificate wall~
-I have enjoyed writing the revision of the Darkhaven Academy. I wanted
+I have enjoyed writing the revision of the Brigantia Academy. I wanted
 the new players armed with as much information as possible before venturing
 into the open game. Take your time here, learning the commands and seeing
 how the programs on the mobs and items work. It will help you later in your
@@ -4959,7 +4959,7 @@ S
 A Stone Corridor~
 This is the stage of your training where you may begin to feel pangs of
 hunger and a parched throat. In other words, you need food and drink.
-To the east is the Darkhaven Supply Store. You may purchase water and
+To the east is the Brigantia Supply Store. You may purchase water and
 some meat. Once you have eaten and drunk, you will be ready to proceed
 north.
 ~
@@ -4970,13 +4970,13 @@ A Stone Corridor
 ~
 0 -1 10358
 D1
-To the east is the Darkhaven Academy Supply Store.
+To the east is the Brigantia Academy Supply Store.
 ~
 ~
 0 -1 10357
 S
 #10357
-Darkhaven Academy Supply Store~
+Brigantia Academy Supply Store~
 This is a regular shop, you type LIST to see what you can purchase and
 BUY <item> to make the purchase. Like many other places in the game,
 you may bribe the storekeeper to give you an item. There are many mobs
@@ -4998,7 +4998,7 @@ commonly known as a DT. A death trap is exactly as its name states, a
 room that causes your death. Unlike a regular death, you do not lose
 your hitpoints and you do not leave a corpse behind. All the items you 
 were wearing and carrying are destroyed. You do not leave a corpse behind.
-You are then transported back to the Temple in Darkhaven. Going west will
+You are then transported back to the Temple in Brigantia. Going west will
 give you more information about death traps.
 ~
 0 3145736 0
@@ -5024,7 +5024,7 @@ This is what you will see if you stumble into a death trap.  As previously
 stated, a DT kills instantaneously and destroys any and all equipment you
 have at the time.  Hints as to the placement of a death trap are sometimes
 given in the room that preceeds them.  Also remember to use "exit" and
-"look" to find these deadly rooms.  Note:  no DTS are found in Darkhaven.
+"look" to find these deadly rooms.  Note:  no DTS are found in Brigantia.
 ~
 0 3145736 0
 D1
@@ -5138,7 +5138,7 @@ S
 North-East Corner~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145736 0
 D2
@@ -5182,7 +5182,7 @@ S
 South-East Corner~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145736 0
 D0
@@ -5226,7 +5226,7 @@ S
 Battle Grounds~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145736 0
 D0
@@ -5282,7 +5282,7 @@ S
 Battle Grounds~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145736 0
 D0
@@ -5334,7 +5334,7 @@ S
 In the middle of the northern wall~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145736 0
 D1
@@ -5393,7 +5393,7 @@ S
 The Center of the Battlegrounds~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145736 0
 D0
@@ -5449,7 +5449,7 @@ S
 In the middle of the southern wall~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145736 0
 D0
@@ -5497,7 +5497,7 @@ S
 Battle Grounds~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145736 0
 D0
@@ -5553,7 +5553,7 @@ S
 Battle Grounds~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145736 0
 D0
@@ -5605,7 +5605,7 @@ S
 North-West Corner~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145740 0
 D0
@@ -5670,7 +5670,7 @@ S
 In the middle of the western wall~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy.
+for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
 0 3145736 0
 D0
@@ -5718,7 +5718,7 @@ S
 South-West Corner~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
-for Toric, the Lord of Healing, in the Darkhaven Academy. You see some strange
+for Toric, the Lord of Healing, in the Brigantia Academy. You see some strange
 symbols glowing in the ground here.  They look like RUNES.
 ~
 0 3145736 0
@@ -5733,7 +5733,7 @@ East Wall
 ~
 0 -1 10377
 D4
-The Temple Of Darkhaven
+The Temple Of Brigantia
 ~
 ~
 16777216 -1 10319
@@ -5940,14 +5940,14 @@ If you are between level 1 and level 10, you may receive a piece of
 note paper and a quill to write with by typing:    NOD
 
 If you are above level 10 and wish to post here, you can buy note paper
-in Darkhaven. Please type AXUDA NOTE to learn how to write a note. There
+in Brigantia. Please type AXUDA NOTE to learn how to write a note. There
 is no use of profanity on this or any note board.
 
 **--**     Any note posted here may be removed at any time.     **--**
 ~
 0 3211276 0
 D3
-Entrance to Darkhaven Academy
+Entrance to Brigantia Academy
 ~
 ~
 0 -1 10300
@@ -6141,7 +6141,7 @@ this underground chamber to the southwest and southeast.
 ~
 0 3145737 13
 D4
-Above you is the Darkhaven Academy battlegrounds.
+Above you is the Brigantia Academy battlegrounds.
 ~
 ~
 16777216 -1 10373

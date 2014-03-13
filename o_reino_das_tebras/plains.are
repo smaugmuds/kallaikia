@@ -99,7 +99,7 @@ luxan shopkeeper~
 Luxan~
 Luxan the Shopkeeper is here, eager to sell you anything.
 ~
-He looks like a mean trader from the outskirts of Darkhaven.  His life
+He looks like a mean trader from the outskirts of Brigantia.  His life
 seems to be totally occupied with trading.  He looks very fit and capable
 of protecting his goods.
 ~
@@ -352,7 +352,7 @@ Path in the plains~
 You are walking on a path situated in the rough plains.
 You feel the strong winds blow through your hair as you study
 the beautiful landscaping here. The path continues east, north
-and west leads to plains and you see the path around Darkhaven
+and west leads to plains and you see the path around Brigantia
 to the south.
 ~
 0 0 2
@@ -367,7 +367,7 @@ You notice nothing special, except that the path in the plains continues.
 ~
 0 -1 301
 D2
-Towards the south you notice the citywall of Darkhaven.
+Towards the south you notice the citywall of Brigantia.
 ~
 ~
 0 -1 3904
@@ -479,7 +479,7 @@ You see the grassy plains here.
 ~
 0 -1 321
 D2
-The path continues towards Darkhaven.
+The path continues towards Brigantia.
 ~
 ~
 0 -1 304
@@ -712,7 +712,7 @@ E
 sign~
 The sign says:
 
-  Loyal citizens of Darkhaven.  These are the earthly remains of the
+  Loyal citizens of Brigantia.  These are the earthly remains of the
   two heretics 'Dim' and 'Gamma' of this world. Having forged them-
   selves to immortality, they called upon themselves the anger of the
   implementators.  Let this be a lesson too all .....
@@ -742,7 +742,7 @@ S
 Grassy plains~
 You walk in the grassy plains among the herbs which grow here. The wind is
 strong and rough. Far to the north you can see the foothills and further on
-mountain peaks are visible. City of Darkhaven is to the south but so are some
+mountain peaks are visible. City of Brigantia is to the south but so are some
 VERY steep slopes.
 ~
 0 0 4
@@ -892,7 +892,7 @@ The foothills extend far to the east.
 ~
 0 -1 324
 D2
-On the horizon you can see the City of Darkhaven.
+On the horizon you can see the City of Brigantia.
 ~
 ~
 0 -1 330
@@ -916,7 +916,7 @@ The foothills extend far to the east.
 0 -1 325
 D2
 The foothills extend downwards to the south. In the horizon you can
-see the City Of Darkhaven.
+see the City Of Brigantia.
 ~
 ~
 0 -1 322

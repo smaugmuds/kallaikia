@@ -437,7 +437,7 @@ The holy grove~
 You are standing amidst the ancient oaks and poplars in the holy grove. You
 feel calm and relaxed here, as if great burdens have been lifted from Your
 shoulders. From here, pleasant-looking paths lead east, north and south. To
-the west, through the trees, You can see the road to Darkhaven.
+the west, through the trees, You can see the road to Brigantia.
 ~
 0 4 3
 D0
@@ -456,7 +456,7 @@ The path wind its way through the tall trees, into the grove.
 ~
 0 -1 8907
 D3
-Through the trees, you can see the Darkhaven road. Far to the west, You can
+Through the trees, you can see the Brigantia road. Far to the west, You can
 barely glimpse the tall walls and the chimney-smokes of the city itself.
 ~
 ~
@@ -465,7 +465,7 @@ S
 #8905
 The sacred glade~
 You are standing in the middle of the sacred glades, where the citizens of
-Darkhaven come to celebrate the spring, where farmers give thanks for
+Brigantia come to celebrate the spring, where farmers give thanks for
 bountiful harvest in the fall, and where lovers stroll in summer. You feel
 seasons of remembered happiness and joy taking Your sorrows and worries away
 from You, leaving You calm and invigorated, ready for the world. Paths lead

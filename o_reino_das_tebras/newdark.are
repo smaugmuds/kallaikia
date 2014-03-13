@@ -1,4 +1,4 @@
-#AREA   New Darkhaven~
+#AREA   Brigantia~
 
 
 
@@ -1354,7 +1354,7 @@ The board of the Vampire Guild hangs here.~
 #21042
 board general~
 the general board~
-The Darkhaven board hangs here.~
+The Brigantia board hangs here.~
 ~
 12 0 0
 0 0 0 0
@@ -1531,32 +1531,32 @@ A longsword has fallen here.~
 6 300 30
 #21070
 key~
-the key to the western gate of Darkhaven~
-The key to the western gate of Darkhaven lies here.~
+the key to the western gate of Brigantia~
+The key to the western gate of Brigantia lies here.~
 ~
 9 0 16385
 0 0 0 0
 1 1000 100
 #21071
 key~
-the key to the northern gate of Darkhaven~
-The key to Darkhaven's northern gate lies here.~
+the key to the northern gate of Brigantia~
+The key to Brigantia's northern gate lies here.~
 ~
 9 0 16385
 0 0 0 0
 1 1000 100
 #21072
 key~
-the key to the eastern gate of Darkhaven~
-The key to Darkhaven's eastern gate lies here.~
+the key to the eastern gate of Brigantia~
+The key to Brigantia's eastern gate lies here.~
 ~
 9 0 16385
 0 0 0 0
 1 1000 100
 #21073
 key~
-the key to the southern gate of Darkhaven~
-The key to Darkhaven's southern gate lies here.~
+the key to the southern gate of Brigantia~
+The key to Brigantia's southern gate lies here.~
 ~
 9 0 16385
 0 0 0 0
@@ -1983,13 +1983,13 @@ The board of the Augurer Guild hangs here.~
 
 #ROOMS
 #21000
-Darkhaven Square~
-You are standing within the expanse of the famous Darkhaven Square.  A
-stone statue of occupies the square's center, surrounded by gardens of
-shrubbery which enhance the air of serenity and peace here in the center
-of the city.  The main road lead away in the cardinal directions, while
-to the northeast and northwest are forested paths.  The spires of a
-cathedral can be seen rising to the northwest.
+Praza de Brigantia~
+Estas de frente a Gran Praza de Brigantia. Unha estatua de Breogan
+ocupa o centro da praza, rodeada de verdes xardins que ensalzan  o aire
+de serenidade e paz no centro de Brigantia. A rua principal sigue as
+direccions cardinais, mentres o norleste e noroeste son caminhos as
+fragas de Kallaika. A punta da torre de Ith pode verse asomando por
+riba dos fogares cara o norleste.
 ~
 0 1081344 1
 D0
@@ -2062,7 +2062,7 @@ Vertic Avenue lies in this direction.
 ~
 0 -1 21002
 D2
-The road to the south leads to Darkhaven Square.
+The road to the south leads to Brigantia Square.
 ~
 ~
 0 -1 21000
@@ -2120,7 +2120,7 @@ S
 #21004
 Intersection of Vertic Avenue and Justice Road~
 You stand at the intersection of Vertic Avenue and Justice Road.  To the
-north you can see the north gate of Darkhaven.  Justice Road lies to the
+north you can see the north gate of Brigantia.  Justice Road lies to the
 east and west, while Vertic Avenue can be seen to the north and south.
 ~
 0 1048576 1
@@ -2146,14 +2146,14 @@ Justice Road extends to the west.
 0 -1 21035
 E
 sign post signpost~
-North - The North Gate of Darkhaven
+North - The North Gate of Brigantia
 East  - Justice Road
         - To Hawk Street
 South - Vertic Avenue
         - To Horizon Road
         - To Market Street
         - To Law Avenue
-        - To Darkhaven Square
+        - To Brigantia Square
 West  - Justice Road
         - To Falcon Road
 ~
@@ -2199,8 +2199,8 @@ S
 #21007
 Justice Road~
 You are walking down Justice Road.  The long road, which lines the northern
-wall of Darkhaven, meets up with Hawk Street to the east to form one of the
-four corners of Darkhaven.  The street continues westward.
+wall of Brigantia, meets up with Hawk Street to the east to form one of the
+four corners of Brigantia.  The street continues westward.
 ~
 0 1048576 1
 D1
@@ -2217,7 +2217,7 @@ S
 #21008
 Meeting of Hawk Street and Justice Road~
 Hawk Street and Justice Road come together here to form one of the four
-corners of Darkhaven.  A stone staircase leads upward onto the fantastic
+corners of Brigantia.  A stone staircase leads upward onto the fantastic
 city's battlements, from where even the strongest foe can be repelled.
 Hawk Street lies to the south, while Justice Road stretches westward.
 ~
@@ -2233,7 +2233,7 @@ Justice Road lies to the west.
 ~
 0 -1 21007
 D4
-The stairs lead up onto Darkhaven's battlements.
+The stairs lead up onto Brigantia's battlements.
 ~
 ~
 0 -1 21321
@@ -2289,7 +2289,7 @@ S
 #21011
 Hawk Street~
 You are walking down the northern half of Hawk Street at a brisk pace.
-To the east is the towering eastern wall of Darkhaven, while a forest
+To the east is the towering eastern wall of Brigantia, while a forest
 surrounded by a short wall is to the west.  Hawk Street ranges to the
 north and south.
 ~
@@ -2308,7 +2308,7 @@ S
 #21012
 Intersection of Horizon Road and Hawk Street~
 You stand at the intersection of Horizon Road and Hawk Street.  To the
-east you can see the massive east gate of Darkhaven, while Hawk Street
+east you can see the massive east gate of Brigantia, while Hawk Street
 lies to the north and south, and Horizon Road runs west.
 ~
 0 1048576 1
@@ -2336,12 +2336,12 @@ E
 sign post signpost~
 North - Hawk Street
         - To Justice Road
-East  - The East Gate of Darkhaven
+East  - The East Gate of Brigantia
 South - Hawk Street
         - To Market Street
         - To Law Avenue
 West  - Horizon Road
-        - To Darkhaven Square
+        - To Brigantia Square
 ~
 S
 #21013
@@ -2365,8 +2365,8 @@ S
 #21014
 Intersection of Market Street and Hawk Street~
 You stand at the intersection of Market Street and Hawk Street.  A wall
-towers over you to the east, keeping intruders out of Darkhaven.  To
-the west are the glorious pavilions and shops of Darkhaven, while
+towers over you to the east, keeping intruders out of Brigantia.  To
+the west are the glorious pavilions and shops of Brigantia, while
 Hawk Street continues to the north and south.
 ~
 0 1048576 1
@@ -2381,7 +2381,7 @@ Hawk Street stretches southward as far as the eye can see.
 ~
 0 -1 21015
 D3
-The markets of Darkhaven await your arrival and gold.
+The markets of Brigantia await your arrival and gold.
 ~
 ~
 0 -1 21050
@@ -2410,7 +2410,7 @@ Market Street and Hawk Street meet to the north.
 ~
 0 -1 21014
 D2
-Gazing southward, you see the southeastern corner of Darkhaven.
+Gazing southward, you see the southeastern corner of Brigantia.
 ~
 ~
 0 -1 21016
@@ -2418,7 +2418,7 @@ S
 #21016
 Meeting of Hawk Street and Law Avenue~
 Hawk Street and Law Avenue come together here to form one of the four
-corners of Darkhaven.  A stone staircase leads up onto the fantastic
+corners of Brigantia.  A stone staircase leads up onto the fantastic
 city's battlements, from where even the strongest foe can be repelled.
 Hawk Street lies to the north, while Law Avenue stretches westward.
 ~
@@ -2434,7 +2434,7 @@ Law Avenue lies to the west.
 ~
 0 -1 21017
 D4
-Stairs lead up to Darkhaven's battlements.
+Stairs lead up to Brigantia's battlements.
 ~
 ~
 0 -1 21314
@@ -2452,10 +2452,10 @@ S
 #21017
 Law Avenue~
 You are walking down Law Avenue, the road which lines the southern wall
-of Darkhaven.  The cobblestones here seem worn and used.  To the north
+of Brigantia.  The cobblestones here seem worn and used.  To the north
 is the reason for this:  a mount and pet store.  Even from here you can
 smell the faint scent of hay.  To the east is one of the four corners
-of Darkhaven, while Law Avenue continues westward.
+of Brigantia, while Law Avenue continues westward.
 ~
 0 1048576 1
 D0
@@ -2511,7 +2511,7 @@ S
 Law Avenue~
 Although you pass by the building to the north frequently, you still have
 trouble believing it stands there.  The Dragon Exports, known for bizarre
-dragon collectibles and occultic behavior, has set up a Darkhaven branch
+dragon collectibles and occultic behavior, has set up a Brigantia branch
 inside the large stone structure to the north.  The road ranges to the
 east and west from here.
 ~
@@ -2544,7 +2544,7 @@ S
 #21020
 Intersection of Vertic Avenue and Law Avenue~
 You stand at the intersection of Vertic Avenue and Law Avenue.  Gazing to
-the south, you see the massive south gate of Darkhaven.  The cobbled roads
+the south, you see the massive south gate of Brigantia.  The cobbled roads
 of Vertic Avenue and Law Avenue lie in the four cardinal directions.
 ~
 0 1048576 1
@@ -2559,7 +2559,7 @@ You see the legendary Law Avenue.
 ~
 0 -1 21019
 D2
-To the south is Darkhaven's southern gate.
+To the south is Brigantia's southern gate.
 ~
 ~
 0 -1 21074
@@ -2574,10 +2574,10 @@ North - Vertic Avenue
         - To Market Street
         - To Horizon Road
         - To Justice Road
-        - To Darkhaven Square
+        - To Brigantia Square
 East  - Law Avenue
         - To Hawk Street
-South - The Southern Gate of Darkhaven
+South - The Southern Gate of Brigantia
 West  - Law Avenue
         - To Falcon Road
 ~
@@ -2585,7 +2585,7 @@ S
 #21021
 Law Avenue~
 You are traversing the cobblestone roads of Law Avenue at a brisk pace.
-To the north is the Darkhaven Art Gallery, a building known throughout
+To the north is the Brigantia Art Gallery, a building known throughout
 the the world for its rare beauty and exquisite art.  You feel almost
 like paying the ancient building a visit.  Law Avenue extends to the
 east and west.
@@ -2608,7 +2608,7 @@ Law Avenue ranges to the west.
 0 -1 21022
 E
 sign post signpost~
-North - Darkhaven Art Gallery
+North - Brigantia Art Gallery
 East  - Law Avenue
         - To Vertic Avenue
         - To Hawk Street
@@ -2652,7 +2652,7 @@ S
 #21023
 Law Avenue~
 This stretch of Law Avenue is cobbled and well kept, like most of the
-streets of Darkhaven.  Looking northward, you see a small mansion which
+streets of Brigantia.  Looking northward, you see a small mansion which
 seems abandoned.  Two stone gargoyles guard the gates to the strange
 building, their ruby eyes glowing softly.  The lengthy cobblestone
 road extends to the east and west.
@@ -2687,7 +2687,7 @@ S
 #21024
 Meeting of Falcon Road and Law Avenue~
 Falcon Road and Law Avenue come together here to form one of the four
-corners of Darkhaven.  A stone staircase leads up onto the fantastic
+corners of Brigantia.  A stone staircase leads up onto the fantastic
 city's battlements, from where even the strongest foe can be repelled.
 Falcon Road lies to the north, while Law Avenue stretches eastward.
 ~
@@ -2703,7 +2703,7 @@ Law Avenue lies to the east.
 ~
 0 -1 21023
 D4
-The stairs lead up to Darkhaven's battlements.
+The stairs lead up to Brigantia's battlements.
 ~
 ~
 0 -1 21307
@@ -2738,7 +2738,7 @@ The Thieves Alley is east of here.
 ~
 0 -1 21063
 D2
-One of the four corners of Darkhaven is located to the south.
+One of the four corners of Brigantia is located to the south.
 ~
 ~
 0 -1 21024
@@ -2757,8 +2757,8 @@ S
 #21026
 Intersection of Market Street and Falcon Road~
 You stand at the intersection of Market Street and Falcon Road.  A wall
-towers over you to the west, keeping intruders out of Darkhaven.  To the
-east are the glorious pavilions and shops of Darkhaven, while Falcon
+towers over you to the west, keeping intruders out of Brigantia.  To the
+east are the glorious pavilions and shops of Brigantia, while Falcon
 Road continues to the north and south.
 ~
 0 1048576 1
@@ -2808,7 +2808,7 @@ S
 #21028
 Intersection of Horizon Road and Falcon Road~
 You stand at the intersection of Horizon Road and Falcon Road.  Gazing to
-the west, you see the huge west gate of Darkhaven.  The cobbled roads of
+the west, you see the huge west gate of Brigantia.  The cobbled roads of
 Horizon Road and Falcon Road lie in the four cardinal directions.
 ~
 0 1048576 1
@@ -2828,18 +2828,18 @@ Falcon Road lies to the south.
 ~
 0 -1 21027
 D3
-To the west is the west gate of Darkhaven.
+To the west is the west gate of Brigantia.
 ~
 ~
 0 -1 21088
 E
 sign post signpost~
-West  - The Western Gate of Darkhaven
+West  - The Western Gate of Brigantia
 South - Falcon Road
         - To Market Street
         - To Law Avenue
 East  - Horizon Road
-        - To Darkhaven Square
+        - To Brigantia Square
 North - Falcon Road
         - To Justice Avenue
 ~
@@ -2847,7 +2847,7 @@ S
 #21029
 Falcon Road~
 You are walking down a rarely used portion of Falcon Road.  To the east is
-Darkhaven's church, while Falcon Road ranges to the north and south.
+Brigantia's church, while Falcon Road ranges to the north and south.
 ~
 0 1048576 1
 D0
@@ -2863,7 +2863,7 @@ The intersection of Horizon Road and Falcon Road is south of here.
 S
 #21030
 Falcon Road~
-You walk through a poor, almost abandoned section of Darkhaven.  Indeed,
+You walk through a poor, almost abandoned section of Brigantia.  Indeed,
 this portion of Falcon Road is neither dirty nor clean, just untouched.
 The cobbled road continues to the north and south.
 ~
@@ -2900,7 +2900,7 @@ S
 #21032
 Meeting of Falcon Road and Justice Road~
 Falcon Road and Justice Road come together here to form one of the four
-corners of Darkhaven.  A stone staircase lead upward onto the fantastic
+corners of Brigantia.  A stone staircase lead upward onto the fantastic
 city's battlements, from where even the strongest foe can be repelled.
 Falcon Road lies to the south, while Justice Road stretches eastward.
 ~
@@ -2916,7 +2916,7 @@ Falcon Road lies to the south.
 ~
 0 -1 21031
 D4
-The stairs lead up to Darkhaven's battlements.
+The stairs lead up to Brigantia's battlements.
 ~
 ~
 0 -1 21328
@@ -2989,7 +2989,7 @@ S
 #21036
 Horizon Road~
 Travelling the cobbled streets of Horizon Road, you are pleased to see the
-ancient Darkhaven Town Hall still stands.  Horizon road continues to the
+ancient Brigantia Town Hall still stands.  Horizon road continues to the
 east and west.
 ~
 0 1048576 1
@@ -2999,7 +2999,7 @@ Horizon Road stretches onward in this direction.
 ~
 0 -1 21037
 D3
-The road to the west leads to Darkhaven Square.
+The road to the west leads to Brigantia Square.
 ~
 ~
 0 -1 21000
@@ -3013,12 +3013,12 @@ South - The Archives
 West  - Horizon Road
         - To Vertic Avenue
         - To Falcon Road
-        - To Darkhaven Square
+        - To Brigantia Square
 ~
 S
 #21037
 Horizon Road~
-While traversing Horizon Road, you gaze up at the Darkhaven Tower of
+While traversing Horizon Road, you gaze up at the Brigantia Tower of
 Sorcery, whose entrance lies to the south.  The lengthy cobblestone
 road stretches to the east and west.
 ~
@@ -3029,7 +3029,7 @@ Horizon Road continues in this direction.
 ~
 0 -1 21038
 D2
-The gates to Darkhaven's Tower of Sorcery are to the south.
+The gates to Brigantia's Tower of Sorcery are to the south.
 ~
 ~
 0 -1 21126
@@ -3042,18 +3042,18 @@ E
 sign post signpost~
 East  - Horizon Road
         - To Hawk Street
-South - Darkhaven Tower of Sorcery
+South - Brigantia Tower of Sorcery
         - To the Guild of Mages
 West  - Horizon Road
         - To Vertic Avenue
         - To Falcon Road
-        - To Darkhaven Square
+        - To Brigantia Square
 ~
 S
 #21038
 Horizon Road~
 Young and giddy adventurers pass you as you travel this portion of Horizon
-Road.  Gazing southward, you see the illustrious Darkhaven Academy, which
+Road.  Gazing southward, you see the illustrious Brigantia Academy, which
 has the responsibility of training new adventurers.  The cobbled streets
 of Horizon Road continue to the east and west.
 ~
@@ -3064,7 +3064,7 @@ The intersection of Horizon Road and Hawk Street lies to the east.
 ~
 0 -1 21012
 D2
-The entrance to Darkhaven Academy lies to the south.
+The entrance to Brigantia Academy lies to the south.
 ~
 ~
 0 -1 21280
@@ -3077,24 +3077,24 @@ E
 sign post signpost~
 East  - Horizon Road
         - To Hawk Street
-South - Darkhaven Academy
+South - Brigantia Academy
 West  - Horizon Road
         - To Vertic Avenue
         - To Falcon Road
-        - To Darkhaven Square
+        - To Brigantia Square
 ~
 S
 #21039
 Horizon Road~
 You quicken your pace as you walk down the cobblestones of Horizon Road.
 Gazing to the north, you see the cathedral in all its beauty.  To the east
-is Darkhaven Square, while Horizon Road leads on to the west.  The Western
+is Brigantia Square, while Horizon Road leads on to the west.  The Western
 Hall, a popular point of congregation, is situated in a building just to
 the south.
 ~
 0 1048576 1
 D1
-The road to the east leads to Darkhaven Square.
+The road to the east leads to Brigantia Square.
 ~
 ~
 0 -1 21000
@@ -3113,7 +3113,7 @@ sign post signpost~
 East  - Horizon Road
         - To Hawk Street
         - To Vertic Avenue
-        - To Darkhaven Square
+        - To Brigantia Square
 South - Western Hall
 West  - Horizon Road
         - To Falcon Road
@@ -3146,7 +3146,7 @@ sign post signpost~
 East  - Horizon Road
         - To Hawk Street
         - To Vertic Avenue
-        - To Darkhaven Square
+        - To Brigantia Square
 South - The Inn
 West  - Horizon Road
         - To Falcon Road
@@ -3180,7 +3180,7 @@ sign post signpost~
 East  - Horizon Road
         - To Hawk Street
         - To Vertic Avenue
-        - To Darkhaven Square
+        - To Brigantia Square
 South - The Grim Smile
 West  - Horizon Road
         - To Falcon Road
@@ -3189,13 +3189,13 @@ S
 #21042
 Vertic Avenue~
 You are travelling upon the southern portion of Vertic Avenue.  The tents
-of the Darkhaven markets rise high into the air to the east and west.  The
+of the Brigantia markets rise high into the air to the east and west.  The
 cobblestone road stretches to the north and south, where you can see a
 bustling intersection.
 ~
 0 1048576 1
 D0
-The road to the north leads to Darkhaven Square.
+The road to the north leads to Brigantia Square.
 ~
 ~
 0 -1 21000
@@ -3210,7 +3210,7 @@ Intersection of Vertic Avenue and Market Street~
 You stand at the intersection of Vertic Avenue and Market Street.  The
 intersection bustles with activity as citizens go about their business.
 To the east and west runs Market Street, lined with the exotic shops of
-Darkhaven, while Vertic Avenue lies to the north and south.
+Brigantia, while Vertic Avenue lies to the north and south.
 ~
 0 1048576 1
 D0
@@ -3219,7 +3219,7 @@ Vertic Avenue lies to the north.
 ~
 0 -1 21042
 D1
-You can see the exotic markets of Darkhaven.
+You can see the exotic markets of Brigantia.
 ~
 ~
 0 -1 21048
@@ -3229,7 +3229,7 @@ Vertic Avenue stretches to the south as far as the eye can see.
 ~
 0 -1 21044
 D3
-You can see the exotic markets of Darkhaven.
+You can see the exotic markets of Brigantia.
 ~
 ~
 0 -1 21047
@@ -3238,7 +3238,7 @@ sign post signpost~
 North - Vertic Avenue
         - To Justice Road
         - To Horizon Road
-        - To Darkhaven Square
+        - To Brigantia Square
 East  - Market Street
         - To Hawk Street
 South - Vertic Avenue
@@ -3249,7 +3249,7 @@ West  - Market Street
 S
 #21044
 Vertic Avenue~
-While traversing the busy, cobbled streets of Darkhaven, you notice
+While traversing the busy, cobbled streets of Brigantia, you notice
 a particularly dark alley to the west which citizens commonly avoid.
 Grinning, you imagine the cloaked thief lurking in the shadows.
 Vertic Avenue extends to the north and south.
@@ -3276,7 +3276,7 @@ North - Vertic Avenue
         - To Market Street
         - To Horizon Road
         - To Justice Road
-        - To Darkhaven Square
+        - To Brigantia Square
 West  - Thieves Alley
         - To the Guild of Thieves
 South - Vertic Avenue
@@ -3324,9 +3324,9 @@ West  - Market Street
 S
 #21046
 Market Street~
-Citizens of Darkhaven scamper around you, anxious to finish their shopping.
+Citizens of Brigantia scamper around you, anxious to finish their shopping.
 Gazing northward, you can see a female elf brewing a multitude of potions,
-while to the south you see Darkhaven's courier service.  Market Street
+while to the south you see Brigantia's courier service.  Market Street
 ranges to the east and west.
 ~
 0 1048576 1
@@ -3341,7 +3341,7 @@ More shops attract your attention to the east.
 ~
 0 -1 21047
 D2
-The Darkhaven mail service is situated in a building to the south.
+The Brigantia mail service is situated in a building to the south.
 ~
 ~
 0 -1 21053
@@ -3356,7 +3356,7 @@ North - The Alchemist's
 East  - Market Street
         - To Hawk Street
         - To Vertic Avenue
-South - The Darkhaven Courier
+South - The Brigantia Courier
 West  - Market Street
         - To Falcon Road
 ~
@@ -3441,9 +3441,9 @@ West  - Market Street
 S
 #21049
 Market Street~
-Citizens of Darkhaven scamper about you, eager to finish their shopping.
+Citizens of Brigantia scamper about you, eager to finish their shopping.
 The aroma of fresh bread assails your nose, coming from a bakery to the
-north, and the clanging of metal on metal rings out from Darkhaven's
+north, and the clanging of metal on metal rings out from Brigantia's
 armoury to the south.  Market Street ranges to the east and west.
 ~
 0 1048576 1
@@ -3469,7 +3469,7 @@ More shops attract your attention in this direction.
 0 -1 21048
 E
 sign post signpost~
-North - The Darkhaven Bakery
+North - The Brigantia Bakery
 East  - Market Street
         - To Hawk Street
 South - The Solid Parry
@@ -3543,7 +3543,7 @@ The Shining Emerald~
 A locked display box dominates this particular shop.  Under the glass
 of the box are a myriad of gems, each lying gently upon a miniscule cushion.
 Hanging from the walls are various paintings, while sculptures take up the
-rest of the floor space.  To the east is Darkhaven's courier, while an
+rest of the floor space.  To the east is Brigantia's courier, while an
 opening in the tent to the north leads back out onto Market Street.
 ~
 0 1048584 0
@@ -3553,16 +3553,16 @@ An opening in the tent leads back out onto Market Street.
 ~
 0 -1 21045
 D1
-Darkhaven's courier lies to the east.
+Brigantia's courier lies to the east.
 ~
 ~
 0 -1 21053
 S
 #21053
-The Darkhaven Courier~
+The Brigantia Courier~
 An immense bookshelf set against the southern wall of the tent has been
 organized into small slots, each containing letters to and from the citizens
-of Darkhaven.  Errand boys are constantly coming in and collecting packets
+of Brigantia.  Errand boys are constantly coming in and collecting packets
 for delivery.  To the east is the Quill and Parchment shop, while the shop
 to the west deals in jewelry and other rare treasures.  An opening in the
 tent leads back out onto Market Street to the north.
@@ -3641,7 +3641,7 @@ Quills and Parchments~
 You find yourself in a rather small and empty shop.  Parchments tied
 into neat packs lie about in an unorganized manner.  A counter in the
 center of the room houses numerous plain quills, as well as a couple
-more unique writing tools.  The Darkhaven courier is to the west, and
+more unique writing tools.  The Brigantia courier is to the west, and
 the newsletter's public office is to the south, while an opening in
 the tent to the north leads back out onto Market Street.
 ~
@@ -3652,7 +3652,7 @@ An opening in the tent leads back out onto Market Street.
 ~
 0 -1 21047
 D3
-The Darkhaven Courier is situated in the shop to the west.
+The Brigantia Courier is situated in the shop to the west.
 ~
 ~
 0 -1 21053
@@ -3662,7 +3662,7 @@ The Butcher's Shop~
 The smell of fresh meat is present in the air of this shop.  Kept cool in
 magically frosted vaults, the city butcher sells his meats here, imported
 from lands far distant.  To the south is the famous Market Street, while
-the Darkhaven Bakery lies to the east.
+the Brigantia Bakery lies to the east.
 ~
 0 1048584 0
 D1
@@ -3678,7 +3678,7 @@ An opening in the tent allows you to return to Market Street.
 S
 #21058
 The Blacksmith's Tent~
-You stand within the sweltering tent of the city's blacksmith.  Darkhaven's
+You stand within the sweltering tent of the city's blacksmith.  Brigantia's
 armourer lies to the east, while an opening in the tent leads back out onto
 Market Street.
 ~
@@ -3719,8 +3719,8 @@ The blacksmith's is to the west.
 0 -1 21058
 S
 #21060
-The Darkhaven Bakery~
-Upon entering the Darkhaven Bakery, you find yourself surrounded by citizens
+The Brigantia Bakery~
+Upon entering the Brigantia Bakery, you find yourself surrounded by citizens
 of the marvelous city, each waiting in line for their daily bread.  Gazing
 eastward, you see a farmer's shop which sells all forms of dairy products.
 A butcher's shop also lies to the west, while an opening in the tent to
@@ -3748,7 +3748,7 @@ The Dairy Tent~
 This small shop smells strongly of cheese, as dozens of types of cheeses
 have been laid out and labeled properly on several long shelves.  You notice
 many bottles of milk, considered to be more important than even water,
-carefully stacked in the northeast corner.  To the west is the Darkhaven
+carefully stacked in the northeast corner.  To the west is the Brigantia
 Bakery, while Market Street lies to the south.
 ~
 0 1048584 0
@@ -3758,7 +3758,7 @@ An opening in the tent leads back out onto Market Street.
 ~
 0 -1 21050
 D3
-The Darkhaven Bakery is situated in the shop to the west.
+The Brigantia Bakery is situated in the shop to the west.
 ~
 ~
 0 -1 21060
@@ -3786,7 +3786,7 @@ The Solid Parry is situated to the west.
 S
 #21063
 Thieves Alley~
-You are walking through a particularly dark and unkempt alley of Darkhaven.
+You are walking through a particularly dark and unkempt alley of Brigantia.
 Rats scurry across the cobbled ground, squeaking at you.  Empty crates and
 tattered rags are lying about.  The alley opens up to Falcon Road to the
 west, while to the east the darkness deepens.
@@ -3805,14 +3805,14 @@ Falcon Road lies to the west.
 S
 #21064
 Thieves Alley~
-You are walking through a particularly dark and unkempt alley of Darkhaven.
+You are walking through a particularly dark and unkempt alley of Brigantia.
 Rats scurry across the cobbled ground, squeaking at you.  Empty crates and
 tattered rags are lying about.  The alley stretches to the east and west,
 while the mysterious Guild of Thieves lies to the north.
 ~
 0 1048576 1
 D0
-The thieves of Darkhaven have set up their guild in the building to the north.
+The thieves of Brigantia have set up their guild in the building to the north.
 ~
 ~
 0 -1 21141
@@ -3829,7 +3829,7 @@ The Thieves Alley continues in this direction.
 S
 #21065
 Thieves Alley~
-You are walking through a particularly dark and unkempt alley of Darkhaven.
+You are walking through a particularly dark and unkempt alley of Brigantia.
 Rats scurry across the cobbled ground, squeaking at you.  Empty crates and
 tattered rags are lying about.  The alley opens up to Vertic Avenue to the
 east, while to the west the darkness deepens.
@@ -3891,7 +3891,7 @@ The inn lies to the east.
 0 -1 21069
 S
 #21069
-The Darkhaven Inn~
+The Brigantia Inn~
 Here a weary traveller can seek a good rest in comfort without fear of
 theft or, worse yet, murder.  A long counter stretches across much of
 the room, and for a few coins the innkeeper will gladly rent you one
@@ -3958,7 +3958,7 @@ The Court of the Conclave is to the northwest.
 S
 #21074
 Inside the Southern Gate~
-You stand inside the southern gate of Darkhaven.  To the north is the
+You stand inside the southern gate of Brigantia.  To the north is the
 intersection of Vertic Avenue and Law Avenue.
 ~
 0 1048580 1
@@ -3968,20 +3968,20 @@ Two roads cross to the north.
 ~
 0 -1 21020
 D2
-The gate leads outside of Darkhaven.
+The gate leads outside of Brigantia.
 ~
 gate~
 7 21073 21075
 S
 #21075
 Outside the Southern Gate~
-You are standing just outside the southern gate of Darkhaven.  To the south
-you see the southern bridge, which crosses the Darkhaven River.  As you are
+You are standing just outside the southern gate of Brigantia.  To the south
+you see the southern bridge, which crosses the Brigantia River.  As you are
 about to leave, something compels you to investigate the foliage near here.
 ~
 0 1048580 1
 D0
-The gate leads into the city of Darkhaven.
+The gate leads into the city of Brigantia.
 ~
 gate~
 7 21073 21074
@@ -4018,7 +4018,7 @@ the east and west.
 ~
 0 1048576 1
 D1
-To the east the southern gate of Darkhaven.
+To the east the southern gate of Brigantia.
 ~
 ~
 0 -1 21075
@@ -4029,9 +4029,9 @@ The road continues to the west.
 0 -1 21077
 S
 #21077
-On a Trail Rounding Darkhaven~
-You are on a dirt road set against the southern wall of Darkhaven.  The
-blue waters of Darkhaven River can be seen to the south.  The trail you
+On a Trail Rounding Brigantia~
+You are on a dirt road set against the southern wall of Brigantia.  The
+blue waters of Brigantia River can be seen to the south.  The trail you
 so faithfully travel continues to the east and west.
 ~
 0 1048576 1
@@ -4047,9 +4047,9 @@ The road continues to the west.
 0 -1 21078
 S
 #21078
-On a Trail Rounding Darkhaven~
-You are on a dirt path rounding the southern wall of Darkhaven.  The
-familiar sound of running water emanates from the Darkhaven River to
+On a Trail Rounding Brigantia~
+You are on a dirt path rounding the southern wall of Brigantia.  The
+familiar sound of running water emanates from the Brigantia River to
 the south.  The trail stretches to the east and west.
 ~
 0 1048576 1
@@ -4065,10 +4065,10 @@ The trail continues to the west.
 0 -1 21079
 S
 #21079
-On a Trail Rounding Darkhaven~
-You are on a dirt trail which lines the southern wall of Darkhaven.
+On a Trail Rounding Brigantia~
+You are on a dirt trail which lines the southern wall of Brigantia.
 The sound of rushing water can be heard to the south, surely coming
-from Darkhaven River.  The road extends to the east and west.
+from Brigantia River.  The road extends to the east and west.
 ~
 0 1048576 1
 D1
@@ -4083,10 +4083,10 @@ The road continues to the west.
 0 -1 21080
 S
 #21080
-On a Trail Rounding Darkhaven~
-You are on a dirt road hugging the southern wall of Darkhaven.  A
+On a Trail Rounding Brigantia~
+You are on a dirt road hugging the southern wall of Brigantia.  A
 steep hill, one too steep to descend, lies to the south, cradling
-Darkhaven River.  The trail ranges to the east and west.
+Brigantia River.  The trail ranges to the east and west.
 ~
 0 1048576 1
 D1
@@ -4102,9 +4102,9 @@ The path continues to the west.
 S
 #21081
 Before the Precarious Bridge~
-You have come to what remains of Darkhaven's ancient stone bridge, which
+You have come to what remains of Brigantia's ancient stone bridge, which
 allowed passage to what was once the concourse.  Its supports are cracked,
-and the entire structure seems liable to fall into the Darkhaven River
+and the entire structure seems liable to fall into the Brigantia River
 at any moment.  To the north and east are two plain dirt roads, while
 you can see the ruins of the concourse to the south.
 ~
@@ -4126,8 +4126,8 @@ The precarious bridge lies to the south.
 0 -1 21296
 S
 #21082
-On a Trail Rounding Darkhaven~
-You travel a dirt road hugging the western wall of Darkhaven.  The stunted
+On a Trail Rounding Brigantia~
+You travel a dirt road hugging the western wall of Brigantia.  The stunted
 trees of Haon Dor can be seen to the west, while the trail ranges to the
 north and south.
 ~
@@ -4144,8 +4144,8 @@ The trail continues to the south.
 0 -1 21081
 S
 #21083
-On a Trail Rounding Darkhaven~
-You are on a dirt path situated but a few feet west of Darkhaven.
+On a Trail Rounding Brigantia~
+You are on a dirt path situated but a few feet west of Brigantia.
 The dark forest of Haon Dor lies to the west, while the unkempt
 road stretches to the north and south.
 ~
@@ -4162,8 +4162,8 @@ The path continues to the south.
 0 -1 21082
 S
 #21084
-On a Trail Rounding Darkhaven~
-You are on a dirt trail set against the western wall of Darkhaven.
+On a Trail Rounding Brigantia~
+You are on a dirt trail set against the western wall of Brigantia.
 The gloomy forest of Haon Dor is situated to your west, while the
 path extends to the north and south.
 ~
@@ -4180,8 +4180,8 @@ The path continues to the south.
 0 -1 21083
 S
 #21085
-On a Trail Rounding Darkhaven~
-You are on a dirt road hugging the western wall of Darkhaven.  The
+On a Trail Rounding Brigantia~
+You are on a dirt road hugging the western wall of Brigantia.  The
 forest of Haon Dor lies to the west, while the path ranges to the
 north and south.
 ~
@@ -4199,28 +4199,28 @@ The road continues to the south.
 S
 #21086
 On a Trail South of the Western Gate~
-You are on a dirt road hugging the western wall of Darkhaven.  Gazing
+You are on a dirt road hugging the western wall of Brigantia.  Gazing
 northward, you see a patrol of guards returning to their city after a
 hard day's work.  The path continues to the south.
 ~
 0 1048576 1
 D0
-The western entrance to Darkhaven lies to the north.
+The western entrance to Brigantia lies to the north.
 ~
 ~
 0 -1 21087
 D2
-The train continues rounding the city wall of Darkhaven.
+The train continues rounding the city wall of Brigantia.
 ~
 ~
 0 -1 21085
 S
 #21087
 Outside the Western Gate~
-You are standing just outside the western gate of Darkhaven.  Gazing up at
+You are standing just outside the western gate of Brigantia.  Gazing up at
 the battlements, you notice a particularly well dressed lord organizing this
 gate's defense.  A dirt road lies to the north and south, circling around
-Darkhaven.  To the west you see a wide path which passes through the
+Brigantia.  To the west you see a wide path which passes through the
 dark forest of Haon Dor.
 ~
 0 1048580 1
@@ -4230,7 +4230,7 @@ A path begins to the north.
 ~
 0 -1 21089
 D1
-The gate leads into the city of Darkhaven.
+The gate leads into the city of Brigantia.
 ~
 gate~
 7 21070 21088
@@ -4247,7 +4247,7 @@ Into the forest...
 S
 #21088
 Inside the Western Gate~
-You stand the western gate of Darkhaven.  To the east is the intersection of
+You stand the western gate of Brigantia.  To the east is the intersection of
 Horizon Road and Falcon Road.
 ~
 0 1048580 1
@@ -4265,9 +4265,9 @@ S
 #21089
 On a Trail North of the Western Gate~
 You are walking down an endless dirt road which circles the city of
-Darkhaven.  To the west is the forest of Haon Dor, and from somewhere
+Brigantia.  To the west is the forest of Haon Dor, and from somewhere
 within a crow resting in a tree cries out at you.  The western gate
-of Darkhaven is just south of here, and the path stretches northward.
+of Brigantia is just south of here, and the path stretches northward.
 ~
 0 1048576 1
 D0
@@ -4282,8 +4282,8 @@ The western gate is to the south.
 0 -1 21087
 S
 #21090
-On a Trail Rounding Darkhaven~
-You are on a dirt road which circles the city of Darkhaven.  A trail
+On a Trail Rounding Brigantia~
+You are on a dirt road which circles the city of Brigantia.  A trail
 extends westward into a strange forest.  A wooden sign at the path's
 entrance attracts your attention, while the road stretches off to
 the north and south.
@@ -4314,8 +4314,8 @@ level, and welcomes you.
 ~
 S
 #21091
-On a Trail Rounding Darkhaven~
-You are circling the city of Darkhaven by way of a long dirt road.
+On a Trail Rounding Brigantia~
+You are circling the city of Brigantia by way of a long dirt road.
 To the south is an entrance to the Pixie Forest, while the path
 continues northward.
 ~
@@ -4332,9 +4332,9 @@ The road continues to the south.
 0 -1 21090
 S
 #21092
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 Your legs begin to feel weak and you realize that you have been in the
-wilderness far too long.  A nice rest in Darkhaven will do you much
+wilderness far too long.  A nice rest in Brigantia will do you much
 good.  The unending dirt road stretches to the north and south.
 ~
 0 1048576 1
@@ -4350,8 +4350,8 @@ The trail continues to the south.
 0 -1 21091
 S
 #21093
-On a Trail Rounding Darkhaven~
-The long dirt road curves around the northwestern corner of Darkhaven 
+On a Trail Rounding Brigantia~
+The long dirt road curves around the northwestern corner of Brigantia 
 just north of here.  A gentle sea breeze cools your skin, coming from
 the northwest.  The lengthy trail also continues to the south.
 ~
@@ -4368,8 +4368,8 @@ The path continues to the south.
 0 -1 21092
 S
 #21094
-On a Trail Rounding Darkhaven~
-The long dirt road circles around the northwest corner of Darkhaven's
+On a Trail Rounding Brigantia~
+The long dirt road circles around the northwest corner of Brigantia's
 city walls.  A small trail branches off here, heading roughly westward,
 and the smell of a gentle sea breeze blows in from this direction.
 The path continues to the east and south.
@@ -4387,8 +4387,8 @@ The road continues to the south.
 0 -1 21093
 S
 #21095
-On a Trail Rounding Darkhaven~
-The long dirt road curves around the northwest corner of Darkhaven west
+On a Trail Rounding Brigantia~
+The long dirt road curves around the northwest corner of Brigantia west
 of here.  The unending road continues to the east and west.
 ~
 0 1048576 1
@@ -4404,9 +4404,9 @@ The road continues to the west.
 0 -1 21094
 S
 #21096
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 Lying at your feet is the freshly severed head of a cityguard.  A scroll
-has been tied to the horrid gift, obviously a message to Darkhaven.  The
+has been tied to the horrid gift, obviously a message to Brigantia.  The
 dirt road extends to the east and west.
 ~
 0 1048576 1
@@ -4423,11 +4423,11 @@ The path continues to the west.
 E
 scroll~
 Runes of preservation and permanence cover the scroll, as well as the
-words:  Darkhaven's Time Will Come, Just As Thalos.
+words:  Brigantia's Time Will Come, Just As Thalos.
 ~
 S
 #21097
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 The ground here is packed in, not like the loose dirt you have become
 accustomed to.  Two tracks stretch across the terrain, those of a horse
 and the cart it was pulling.  The road stretches to the east and west.
@@ -4446,13 +4446,13 @@ The path continues to the west.
 S
 #21098
 On a Trail West of the Northern Gate~
-You are walking down a dirt road just west of Darkhaven's northern gate.
+You are walking down a dirt road just west of Brigantia's northern gate.
 Footprints in the dirt tells you that a patrol of guards passed not long
 ago. The trail ranges to the east and west.
 ~
 0 1048576 1
 D1
-Darkhaven's northern gate is to the east.
+Brigantia's northern gate is to the east.
 ~
 ~
 0 -1 21099
@@ -4475,7 +4475,7 @@ The path begins to the east.
 ~
 0 -1 21101
 D2
-The gate leads into Darkhaven.
+The gate leads into Brigantia.
 ~
 gate~
 7 21071 21100
@@ -4487,12 +4487,12 @@ The road begins to the west.
 S
 #21100
 Inside the Northern Gate~
-You stand inside the northern gate of Darkhaven.  To the south lies the
+You stand inside the northern gate of Brigantia.  To the south lies the
 intersection of Vertic Avenue and Justice Road.
 ~
 0 1048580 1
 D0
-The gate leads out of Darkhaven.
+The gate leads out of Brigantia.
 ~
 gate~
 7 21071 21099
@@ -4515,14 +4515,14 @@ The trail continues to the east.
 ~
 0 -1 21102
 D3
-Darkhaven's northern gate is to the west.
+Brigantia's northern gate is to the west.
 ~
 ~
 0 -1 21099
 S
 #21102
-On a Trail Rounding Darkhaven~
-You are a plain road which lines to the northern wall of Darkhaven.
+On a Trail Rounding Brigantia~
+You are a plain road which lines to the northern wall of Brigantia.
 A broken sign lies in the dirt, its message still visible in black
 letters.  The road ranges to the east and west.
 ~
@@ -4540,13 +4540,13 @@ The path continues to the west.
 E
 sign~
 The sign reads:
- Welcome to Darkhaven - City of Hope.
+ Welcome to Brigantia - City of Hope.
 ~
 S
 #21103
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 You feel a craving for adventure and excitement as you walk down this bland
-road which circles the city of Darkhaven.  A forest to the north blocks your
+road which circles the city of Brigantia.  A forest to the north blocks your
 view of the plains.  The path stretches to the east and west.
 ~
 0 1048576 1
@@ -4562,8 +4562,8 @@ The trail continues to the west.
 0 -1 21102
 S
 #21105
-On a Trail Rounding Darkhaven~
-You are on a long dirt road which circles the city of Darkhaven.  The path
+On a Trail Rounding Brigantia~
+You are on a long dirt road which circles the city of Brigantia.  The path
 curves around here, eventually bringing you to the northern gate.
 ~
 0 1048576 1
@@ -4579,8 +4579,8 @@ The road continues to the west.
 0 -1 21103
 S
 #21106
-On a Trail Rounding Darkhaven~
-The path curves around the northeastern corner of Darkhaven here.
+On a Trail Rounding Brigantia~
+The path curves around the northeastern corner of Brigantia here.
 Thick, impassable woods are to the north and east, while the long
 dirt road continues to the west and south.
 ~
@@ -4597,9 +4597,9 @@ The path stretches westward.
 0 -1 21105
 S
 #21107
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 The long path begins to curve here, preparing for a turn around the
-northeastern corner of Darkhaven.  A line of archers stand atop the
+northeastern corner of Brigantia.  A line of archers stand atop the
 city's battlements.  The path stretches to the north and south.
 ~
 0 1048576 1
@@ -4615,8 +4615,8 @@ The road continues to the south.
 0 -1 21108
 S
 #21108
-On a Trail Rounding Darkhaven~
-You are on a long dirt road which lines the eastern wall of Darkhaven.
+On a Trail Rounding Brigantia~
+You are on a long dirt road which lines the eastern wall of Brigantia.
 A thick, impassable forest lies to the east, while to the north the
 trail begins to curve.
 ~
@@ -4633,7 +4633,7 @@ The path continues to the south.
 0 -1 21109
 S
 #21109
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 A mystical portal floats in the sky above here, the glowing myriad
 of colors which emanates from within mesmerizes you, urging you to
 explore what lies beyond.  Suddenly a moment of clarity comes to
@@ -4654,11 +4654,11 @@ The road extends to the south.
 0 -1 21110
 S
 #21110
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 You begin to kick a rock down the long dirt trail, growing bored at
 the endless trees to the east and the limitless wall to the west.
 Yet the trail continues to the north and south, leading onward
-around the city of Darkhaven.
+around the city of Brigantia.
 ~
 0 1048576 1
 D0
@@ -4686,14 +4686,14 @@ The path continues to the north.
 ~
 0 -1 21110
 D2
-Darkhaven's eastern gate is to the south.
+Brigantia's eastern gate is to the south.
 ~
 ~
 0 -1 21112
 S
 #21112
 Outside the Eastern Gate~
-You are standing just ouside the eastern gate of Darkhaven.  Soldiers walk
+You are standing just ouside the eastern gate of Brigantia.  Soldiers walk
 the city's walls, keeping guard against whatever may come.  A road runs 
 to the north and south around the city walls.
 ~
@@ -4714,19 +4714,19 @@ A road begins to the south.
 ~
 0 -1 21114
 D3
-The gate leads into Darkhaven.
+The gate leads into Brigantia.
 ~
 gate~
 7 21072 21113
 S
 #21113
 Inside the Eastern Gate~
-You stand inside the eastern gate of Darkhaven.  To the west is the
+You stand inside the eastern gate of Brigantia.  To the west is the
 intersection of Horizon Road and Hawk Street.
 ~
 0 1048580 1
 D1
-The gate leads out of Darkhaven.
+The gate leads out of Brigantia.
 ~
 gate~
 7 21072 21112
@@ -4754,7 +4754,7 @@ The road continues to the south.
 0 -1 21115
 S
 #21115
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 The dirt road curves slightly here as it maneuvers around an old abandoned
 cart.  The cart is missing its two rear wheels, probably stolen during the
 night by a band of thieves.  The lengthy path ranges north and south.
@@ -4772,8 +4772,8 @@ The path continues to the south.
 0 -1 21116
 S
 #21116
-On a Trail Rounding Darkhaven~
-You are on a dirt road which lines the eastern wall of Darkhaven, famed
+On a Trail Rounding Brigantia~
+You are on a dirt road which lines the eastern wall of Brigantia, famed
 City of Hope.  From here, you can see the Tower of Sorcery peeking into
 view above the towering wall.  The path continues north and south.
 ~
@@ -4790,9 +4790,9 @@ The path continues to the south.
 0 -1 21117
 S
 #21117
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 You are walking down a long dirt road which hugs the outer wall of
-Darkhaven tightly.  An impassable forest is to the east, while the
+Brigantia tightly.  An impassable forest is to the east, while the
 trail extends to the north and south.
 ~
 0 1048576 1
@@ -4808,9 +4808,9 @@ The road continues to the south.
 0 -1 21118
 S
 #21118
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 You are on a lengthy dirt road which circles all around the city of
-Darkhaven.  The path here ranges to the north and south.
+Brigantia.  The path here ranges to the north and south.
 ~
 0 1048576 1
 D0
@@ -4825,10 +4825,10 @@ The road continues to the south.
 0 -1 21119
 S
 #21119
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 You begin to grow tired of seeing the lengthy dirt road which lines
-the outer walls of Darkhaven.  Gazing to the south, you can make out
-the Darkhaven River flowing from a tunnel in a huge mountain.  The
+the outer walls of Brigantia.  Gazing to the south, you can make out
+the Brigantia River flowing from a tunnel in a huge mountain.  The
 path stretches to the north and west.
 ~
 0 1048576 1
@@ -4844,9 +4844,9 @@ The road continues to the west.
 0 -1 21120
 S
 #21120
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 You begin to run down the endless dirt road which circles the beautiful
-city of Darkhaven.  The sound of rushing water can be heard to the south,
+city of Brigantia.  The sound of rushing water can be heard to the south,
 while the path extends to the east and west.
 ~
 0 1048576 1
@@ -4862,10 +4862,10 @@ The road continues to the west.
 0 -1 21121
 S
 #21121
-On a Trail Rounding Darkhaven~
-You are rounding the city of Darkhaven by way of a dirt road.  The
+On a Trail Rounding Brigantia~
+You are rounding the city of Brigantia by way of a dirt road.  The
 tall southern wall looms over you, while to the south you can see
-the Darkhaven river.  The path ranges to the east and west.
+the Brigantia river.  The path ranges to the east and west.
 ~
 0 1048576 1
 D1
@@ -4880,8 +4880,8 @@ The path continues to the west.
 0 -1 21122
 S
 #21122
-On a Trail Rounding Darkhaven~
-You walk briskly down a path which lines the southern wall of Darkhaven.
+On a Trail Rounding Brigantia~
+You walk briskly down a path which lines the southern wall of Brigantia.
 The sound of rushing water can be heard to the south, and the road itself
 stretches to the east and west.
 ~
@@ -4898,10 +4898,10 @@ The path continues to the west.
 0 -1 21123
 S
 #21123
-On a Trail Rounding Darkhaven~
+On a Trail Rounding Brigantia~
 You are travelling down a dirt road lined with stunted pine trees.  The
-tall southern wall of Darkhaven looms over you.  A steep hill cradles the
-Darkhaven River to the south, andt the road extends to the east and west.
+tall southern wall of Brigantia looms over you.  A steep hill cradles the
+Brigantia River to the south, andt the road extends to the east and west.
 ~
 0 1048576 1
 D1
@@ -4928,12 +4928,12 @@ The road continues to the east.
 ~
 0 -1 21123
 D2
-The Darkhaven Marina lies to the south.
+The Brigantia Marina lies to the south.
 ~
 ~
 0 -1 21275
 D3
-To the west is the southern gate of Darkhaven.
+To the west is the southern gate of Brigantia.
 ~
 ~
 0 -1 21075
@@ -4941,7 +4941,7 @@ S
 #21126
 Outside the Tower of Sorcery~
 Green foliage borders a cobblestone path which leads up a flight of
-stairs into Darkhaven's Tower of Sorcery.  The tall monument to magic
+stairs into Brigantia's Tower of Sorcery.  The tall monument to magic
 looms ominously over you.  Rumor has it that only members of the Guild
 of Mages may enter the tower, all others being forced back northward.
 ~
@@ -4970,7 +4970,7 @@ S
 #21127
 Within the Tower of Sorcery~
 You walk beneath the impossibly high arches which support the great hall of
-Darkhaven's Tower of Sorcery.  Walls crafted of smooth obsidian are covered
+Brigantia's Tower of Sorcery.  Walls crafted of smooth obsidian are covered
 with hoards of sorcerous runes, splitting even the smallest reflection into
 a dazzling array of shimmering images.  A circular rune of power flares
 brightly in the center of the room as a mage recalls in from the wilderness.
@@ -4981,7 +4981,7 @@ leads to the Court of the Conclave.
 ~
 0 3145740 0
 D0
-The archway leads back to the streets of Darkhaven.
+The archway leads back to the streets of Brigantia.
 ~
 ~
 0 -1 21126
@@ -5043,7 +5043,7 @@ S
 #21131
 On a Stone Stairway~
 You find yourself on a long flight of stairs which spirals up to the top of
-Darkhaven's Tower of Sorcery.  The grey stone steps are steep and difficult
+Brigantia's Tower of Sorcery.  The grey stone steps are steep and difficult
 to climb, definitely the reason why most mages fly to the summit.  The main
 hall of the Guild of Mages is at the bottom of the steps, while the Court
 of the Conclave lies at their peak.
@@ -5063,7 +5063,7 @@ S
 #21132
 On a Stone Stairway~
 You find yourself on a long flight of stairs which spirals up to the top of
-Darkhaven's Tower of Sorcery.  The grey stone steps are steep and difficult
+Brigantia's Tower of Sorcery.  The grey stone steps are steep and difficult
 to climb, definitely the reason why most mages fly to the tower's summit.
 The main hall of the Guild of Mages is far below, while the Court of the
 Conclave lies just at the top of these steps.
@@ -5149,7 +5149,7 @@ S
 #21135
 Lair of the Vampires~
 You have entered a set of catacombs beneath one of the abandoned mansions
-of Darkhaven.  What should have been a musty, unused group of tunnels has
+of Brigantia.  What should have been a musty, unused group of tunnels has
 been renovated into the Guild of Vampires.  New chambers have been carved
 into the ground, and numerous coffins have been carried down into this
 very room.  Five corridors lie to the east, south, west, northeast
@@ -5382,7 +5382,7 @@ S
 A Plain Hallway~
 You walk through a bland hallway in the inn.  A dozen paintings have been
 hung on the walls, although they are not well done and were probably extras
-given away by Darkhaven Art Gallery.  Doors to the north and south lead to
+given away by Brigantia Art Gallery.  Doors to the north and south lead to
 the inn's more simple rooms, while the corridor stretches to the east
 and west.
 ~
@@ -5518,7 +5518,7 @@ S
 A Plain Hallway~
 You walk through a bland hallway in the inn.  A dozen paintings have been 
 hung on the walls, although they are not well done and were probably extras
-given away by Darkhaven Art Gallery.  Doors to the north and south lead to
+given away by Brigantia Art Gallery.  Doors to the north and south lead to
 the inn's more simple rooms, while the corridor stretches to the east and
 west.
 ~
@@ -5667,9 +5667,9 @@ S
 A Forested Path~
 This small forested path is very wide, large enough to allow the passage
 of carts and horses.  You realize from the constant flow of traffic here
-that it is wide out of necessity, as the citizens of Darkhaven constantly
+that it is wide out of necessity, as the citizens of Brigantia constantly
 pass through here on their way to cathedral to the northwest.  The
-Darkhaven Square is to the southeast.
+Brigantia Square is to the southeast.
 ~
 0 1048580 1
 D3
@@ -5678,7 +5678,7 @@ The path leads you toward the cathedral.
 ~
 0 -1 21165
 D8
-The path leads to Darkhaven Square.
+The path leads to Brigantia Square.
 ~
 ~
 0 -1 21000
@@ -5687,14 +5687,14 @@ S
 A Forested Path~
 You are walking down a wide forested path, passing by citizens here and
 there.  Gazing at the ground, you see that a pair of horses and a cart
-have passed here recently, most likely bringing supplies to Darkhaven's
+have passed here recently, most likely bringing supplies to Brigantia's
 church.  The cathedral lies in the distance to the northwest, although
 the path continues westward.  The path also leads eastward back to the
-Darkhaven Square.
+Brigantia Square.
 ~
 0 1048580 1
 D1
-The forested path leads back to Darkhaven Square.
+The forested path leads back to Brigantia Square.
 ~
 ~
 0 -1 21163
@@ -5717,7 +5717,7 @@ The path leads north to the cathedral.
 ~
 0 -1 21167
 D1
-The path leads back to Darkhaven Square.
+The path leads back to Brigantia Square.
 ~
 ~
 0 -1 21165
@@ -5729,7 +5729,7 @@ The path leads westward.
 S
 #21167
 Outside the Cathedral~
-The cathedral which houses the priests and priestesses of Darkhaven stands
+The cathedral which houses the priests and priestesses of Brigantia stands
 before you, open to all comers.  Traveling north will take you up a flight
 of stairs and into the structure, or you can head back to the south.
 ~
@@ -5740,14 +5740,14 @@ A flight of stairs leads up into the cathedral.
 ~
 0 -1 21168
 D2
-The forested path leads back to Darkhaven Square.
+The forested path leads back to Brigantia Square.
 ~
 ~
 0 -1 21166
 S
 #21168
 Entry of the Cathedral~
-You stand in the entrance hall of the cathedral of Darkhaven.  An aisle leads
+You stand in the entrance hall of the cathedral of Brigantia.  An aisle leads
 north into the main chamber, at the far end of which stands the cathedral's
 altar, where all come to pray.  To the east and west are hallways which lead
 to the Guild of Clerics.  The priests and priestesses of the cathedral have
@@ -6028,7 +6028,7 @@ E
 sign post signpost~
 North - The Altar
 East  - Donations
-South - Towards Darkhaven Square
+South - Towards Brigantia Square
 West  - Donations
 ~
 S
@@ -6059,10 +6059,10 @@ S
 #21186
 A Clearing in the Forest~
 You find yourself in a large clearing in the forest which surrounds the
-cathedral.  The remains of the ancient Temple of Darkhaven are scattered
+cathedral.  The remains of the ancient Temple of Brigantia are scattered
 about.  The head of Odin's statue, sliced from its body by some unholy blade,
 stares almost sadly at you.  A staircase leads down into what remains of the
-Temple's catacombs, which the druids of Darkhaven have reconstructed.  The
+Temple's catacombs, which the druids of Brigantia have reconstructed.  The
 forested path lies to the northeast.
 ~
 0 3145732 1
@@ -6089,7 +6089,7 @@ endif
 S
 #21187
 The Guild of Druids~
-The ancient cellar of the Temple of Darkhaven has been reconstructed into
+The ancient cellar of the Temple of Brigantia has been reconstructed into
 a magnificent guild hall.  Potted plants line the walls of the main hall,
 while creeping vines cover the walls.  In the center of the room, seven
 black lacquer chairs circle an oaken table.  Four corridors lie in the
@@ -6204,15 +6204,15 @@ The walkway leads back to the pews.
 ~
 0 -1 21182
 D3
-The public board room of Darkhaven lies to the west.
+The public board room of Brigantia lies to the west.
 ~
 ~
 0 -1 21174
 S
 #21200
 A Forested Path~
-You walk on a forested path within the city of Darkhaven.  The trail stretches
-to the northeast, while the Darkhaven Square lies to the southwest.
+You walk on a forested path within the city of Brigantia.  The trail stretches
+to the northeast, while the Brigantia Square lies to the southwest.
 ~
 0 1048580 1
 D6
@@ -6221,7 +6221,7 @@ The path leads deeper into the forest.
 ~
 0 -1 21201
 D9
-The Darkhaven Square lies to the southwest.
+The Brigantia Square lies to the southwest.
 ~
 ~
 0 -1 21000
@@ -6231,7 +6231,7 @@ A Forested Path~
 You travel through a small forest along a path leading toward two unique
 structures, one atop a hill to the east, one a short distance to the
 north.  The path becomes a hill to the east, while the southwestern path 
-leads back to the Darkhaven Square. ~
+leads back to the Brigantia Square. ~
 0 1048580 1
 D1
 This path leads further toward the structures.
@@ -6239,7 +6239,7 @@ This path leads further toward the structures.
 ~
 0 -1 21202
 D9
-This path leads back to the Darkhaven Square.
+This path leads back to the Brigantia Square.
 ~
 ~
 0 -1 21200
@@ -6252,7 +6252,7 @@ to climb than the one downhill.
 ~
 0 1048580 1
 D3
-This path leads back to Darkhaven Square.
+This path leads back to Brigantia Square.
 ~
 ~
 0 -1 21201
@@ -6280,7 +6280,7 @@ The Ranger's Guild lies at the end of this path.
 ~
 0 -1 21205
 D9
-The path leads back to Darkhaven Square.
+The path leads back to Brigantia Square.
 ~
 ~
 0 -1 21202
@@ -6288,7 +6288,7 @@ E
 sign~
 The sign reads:
   North: The Guild of Warriors
-  Southwest: Darkhaven Square
+  Southwest: Brigantia Square
   East: Ranger's Guild
 ~
 S
@@ -6421,7 +6421,7 @@ S
 Stone Tunnel~
 You enter a long, narrow stone tunnel which carries you northward into
 a large structure which houses the guild of warriors.  You can return
-to the forested section of Darkhaven back to the south.
+to the forested section of Brigantia back to the south.
 ~
 0 1048588 0
 D0
@@ -6446,7 +6446,7 @@ You stand in a large stone structure which houses the Guild of Warriors.
 Depictions of battle, heroism and physical prowess adorne the walls.  To
 the east is a large sparring circle, while a large room lies just to
 the north.  An archway to the south leads back into the forest
-inside Darkhaven.
+inside Brigantia.
 ~
 0 3145740 0
 D0
@@ -6535,28 +6535,28 @@ The plaque reads:
 ~
 S
 #21275
-The Darkhaven Marina~
-The odor of fish assaults your senses as you inhale.  The Darkhaven Marina
+The Brigantia Marina~
+The odor of fish assaults your senses as you inhale.  The Brigantia Marina
 is a rather large structure, housing several small boats and over a dozen
-rafts.  To the south you can see the Darkhaven River, while a dirt road
+rafts.  To the south you can see the Brigantia River, while a dirt road
 lies to the north.  A small path leads off to the east, following the
-Darkhaven river as it winds its way to the Ocean.
+Brigantia river as it winds its way to the Ocean.
 ~
 0 1048588 0
 D0
-The trail rounding Darkhaven is to the north.
+The trail rounding Brigantia is to the north.
 ~
 ~
 0 -1 21124
 D2
-To the south you can see the Darkhaven River.
+To the south you can see the Brigantia River.
 ~
 ~
 0 -1 21297
 S
 #21280
 Entrance to the Academy~
-You stand at the entrance to the Darkhaven Academy.  A large flight of
+You stand at the entrance to the Brigantia Academy.  A large flight of
 stone stairs lead down into the massive subterranean structure, which
 has the responsibility of training the young adventurers of the world.
 A small cobbled street leads eastward to a shop catering to the needs
@@ -6587,7 +6587,7 @@ endif
 S
 #21290
 The Ruins of the Concourse~
-You sigh longingly at the sight of Darkhaven's ruined concourse. What was
+You sigh longingly at the sight of Brigantia's ruined concourse. What was
 once a busy road is now a cobbled wasteland.  Debris from crushed buildings
 lies about, all that remains from that night of terror.  A single structure
 remains standing, a small house sitting beside an old elm tree.  To the
@@ -6610,7 +6610,7 @@ Among the Ruins of the Concourse~
 You stand at what was once an intersection of roads among the remains of
 the ruined concourse.  Far to the east is an ancient elm tree and a small,
 strange building.  Gazing southward, you notice that, curiously enough,
-the Darkhaven graveyard remains standing.  As you turn to move on, you
+the Brigantia graveyard remains standing.  As you turn to move on, you
 notice a large chain dangling high above you, just within jumping reach.
 ~
 0 1048576 2
@@ -6656,7 +6656,7 @@ This path leads back to the crumbling bridge.
 S
 #21293
 Entrance to the Graveyard~
-You are standing just outside the gates of the ancient Darkhaven graveyard.
+You are standing just outside the gates of the ancient Brigantia graveyard.
 A shiver runs down your spine as you remember the howling undead residing
 in the lower chambers of the place.  A path leads southward into the 
 graveyard, while the ruins of the concourse are to the north.
@@ -6692,11 +6692,11 @@ The Young Adventurer's Necessities~
 Water skins, rations and torches hang from the walls:  all necessary to 
 survival when adventuring.  A stack of books which have been designed to
 help the young adventurer lie stacked in the rear of the shop.  To the
-west is the entrance to the Darkhaven Academy.
+west is the entrance to the Brigantia Academy.
 ~
 0 1048588 0
 D3
-The entrance to the Darkhaven Academy is to the west.
+The entrance to the Brigantia Academy is to the west.
 ~
 ~
 0 -1 21280
@@ -6727,14 +6727,14 @@ mpecho A slight movement can be felt rumbling through the crumbling bridge.
 |
 S
 #21297
-On the Darkhaven River~
-You find yourself in a small artificial bay linking the Darkhaven Marina
+On the Brigantia River~
+You find yourself in a small artificial bay linking the Brigantia Marina
 to the town's beloved river.  The marina's beach is to the north, while
 the river lies to the east and west.
 ~
 0 1048580 7
 D0
-The Darkhaven Marina lies to the north.
+The Brigantia Marina lies to the north.
 ~
 ~
 0 -1 21275
@@ -6750,8 +6750,8 @@ The river continues in this direction.
 0 -1 21298
 S
 #21298
-On the Darkhaven River~
-You are travelling across the Darkhaven River.  Its blue waters are flowing
+On the Brigantia River~
+You are travelling across the Brigantia River.  Its blue waters are flowing
 slowly westward, dragging along any debris.  Far to the east you can make
 out a tunnel of some sort.
 ~
@@ -6768,8 +6768,8 @@ The river flows westward.
 0 -1 21297
 S
 #21299
-On the Darkhaven River~
-You are on the famed Darkhaven River.  Its strong currents push driftwood
+On the Brigantia River~
+You are on the famed Brigantia River.  Its strong currents push driftwood
 and other floating objects westward.  The blue waters themselves seem to
 emerge from a tunnel in the mountains to the east.
 ~
@@ -6781,9 +6781,9 @@ The river flows westward.
 0 -1 21298
 S
 #21300
-On the Darkhaven River~
+On the Brigantia River~
 The waters here are flowing slighty faster than to the east.  Gazing west,
-you can see that the river passes under the southern bridge of Darkhaven.
+you can see that the river passes under the southern bridge of Brigantia.
 The tale of the troll under the bridge passes through your head as you
 ponder where the river leads.
 ~
@@ -6802,7 +6802,7 @@ S
 #21301
 Under the Southern Bridge~
 You are forced to duck your head as you pass under the southern bridge of
-Darkhaven.  On the underside of the bridge is a slate plaque, which looks
+Brigantia.  On the underside of the bridge is a slate plaque, which looks
 aged beyond time.
 ~
 0 1048580 7
@@ -6842,7 +6842,7 @@ Blodkai, for endless insight and support.
 ~
 S
 #21302
-On the Darkhaven River~
+On the Brigantia River~
 The waters become rushing rapids here, forcing you to carefully monitor
 your actions.  Going upriver will bring you under the southern bridge,
 while following the river will lead you under the crumbling bridge.
@@ -6884,9 +6884,9 @@ close grate
 S
 #21307
 Atop the Battlements~
-You are standing atop Darkhaven's battlements.  The entire southwestern
+You are standing atop Brigantia's battlements.  The entire southwestern
 countryside is visible from here, ranging from the Miden'nir to the dark
-forest of Haon Dor.  You spot the Darkhaven River flowing its way swiftly
+forest of Haon Dor.  You spot the Brigantia River flowing its way swiftly
 from east to west just south of here.  The battlements continue to the
 north and east, while a stone stairway leads down to the streets.
 ~
@@ -6927,7 +6927,7 @@ The battlements continue to the south.
 S
 #21309
 Atop the Battlements~
-The massive western gate of Darkhaven is just north of here, creaking and
+The massive western gate of Brigantia is just north of here, creaking and
 groaning loudly as it opens and closes.  A rather wide trail leads through
 the center of the vast forest known as Haon Dor to the west, and a chimney
 can be seen poking out of the dark trees just to the southwest.  Far down
@@ -6943,9 +6943,9 @@ The battlements continue to the south.
 S
 #21311
 Atop the Battlements~
-The rushing waves of the Darkhaven river can be heard from here.  Far to
+The rushing waves of the Brigantia river can be heard from here.  Far to
 the south, you can see the dark forest of the gobline-infested Miden'nir
-(Goblinic for green blood).  Darkhaven's defenses continue to the east
+(Goblinic for green blood).  Brigantia's defenses continue to the east
 and west.
 ~
 0 1048576 1
@@ -6962,7 +6962,7 @@ The battlements continue to the west.
 S
 #21312
 Atop the Battlements~
-The massive southern gate of Darkhaven is just east of here, groaning and
+The massive southern gate of Brigantia is just east of here, groaning and
 creaking loudly as it opens and closes.  The southern bridge and the often
 dangerous, sometimes deadly, Miden'nir are clearly visible from here.  The,
 battlements stretch westward.
@@ -6976,7 +6976,7 @@ The battlements continue to the west.
 S
 #21314
 Atop the Battlements~
-You are standing atop Darkhaven's battlements.  The whole southeastern
+You are standing atop Brigantia's battlements.  The whole southeastern
 countryside is visible from here, ranging from the Miden'nir to even
 lands beyond.  The great battlements continue to the north and west,
 while a stone stairway leads back down to the city streets.
@@ -6993,14 +6993,14 @@ The battlements lie to the west.
 ~
 0 -1 21318
 D5
-The stairs lead back down to Darkhaven's streets.
+The stairs lead back down to Brigantia's streets.
 ~
 ~
 0 -1 21016
 S
 #21315
 Atop the Battlements~
-You are standing atop Darkhaven's eastern wall, where the city's guards
+You are standing atop Brigantia's eastern wall, where the city's guards
 have set up a series of defenses to ward off assailants.  A broad dirt
 road lines the wall outside of the city, and Hawk Street is to the west.
 A group of archers stand here, laughing about the goblins' last pathetic
@@ -7021,23 +7021,23 @@ The battlements continue to the south.
 S
 #21316
 Atop the Battlements~
-The massive eastern gate of Darkhaven is just to the north, groaning and
+The massive eastern gate of Brigantia is just to the north, groaning and
 creaking loudly as it opens and closes.  South and east from here you can
 clearly see the dark dwarven forest.
 ~
 0 1048576 1
 D2
-The battlements extend down the eastern wall of Darkhaven.
+The battlements extend down the eastern wall of Brigantia.
 ~
 ~
 0 -1 21315
 S
 #21318
 Atop the Battlements~
-The rushing waves of the Darkhaven River can be heard from here.  In the
+The rushing waves of the Brigantia River can be heard from here.  In the
 distance to the south, you can see a group of goblins skirting the edge of
 the dark forest known as the Miden'nir, its name signifying green blood in
-the tongue of the goblins.  Darkhaven's defenses continue east and west.
+the tongue of the goblins.  Brigantia's defenses continue east and west.
 ~
 0 1048576 1
 D1
@@ -7046,14 +7046,14 @@ The battlements extend down the southern wall.
 ~
 0 -1 21314
 D3
-The battlements extend down the southern wall of Darkhaven.
+The battlements extend down the southern wall of Brigantia.
 ~
 ~
 0 -1 21319
 S
 #21319
 Atop the Battlements~
-The massive southern gate of Darkhaven is just west of here, groaning and
+The massive southern gate of Brigantia is just west of here, groaning and
 creaking loudly as it opens and closes.  The crumbling southern bridge and
 the dangerous Miden'nir are clearly visible from here.  Tbe battlements
 stretch east from here.
@@ -7067,7 +7067,7 @@ The battlements continue east of here.
 S
 #21321
 Atop the Battlements~
-You are standing atop Darkhaven's battlements.  The whole northeastern
+You are standing atop Brigantia's battlements.  The whole northeastern
 countryside is visible from here.  A number of archers pace back and forth
 here along the battlements, knocking an arrow back at the slightest sign of
 danger.  The battlements extend to the west and south, while a stairway
@@ -7092,8 +7092,8 @@ The stairway leads back down to the streets.
 S
 #21322
 Atop the Battlements~
-You are standing atop Darkhaven's great eastern wall.  The guardians of
-Darkhaven, in their wisdom, have set up battlements here to fend off any
+You are standing atop Brigantia's great eastern wall.  The guardians of
+Brigantia, in their wisdom, have set up battlements here to fend off any
 attackers.  The battlements extend to the north and south.
 ~
 0 0 1
@@ -7110,7 +7110,7 @@ The battlements continue to the south.
 S
 #21323
 Atop the Battlements~
-You are standing atop the eastern wall of Darkhaven.  The battlements extend
+You are standing atop the eastern wall of Brigantia.  The battlements extend
 to the north and south.
 ~
 0 1048576 1
@@ -7127,7 +7127,7 @@ The battlements extend to the south.
 S
 #21324
 Atop the Battlements~
-The massive eastern gate of Darkhaven is just to the south, groaning and
+The massive eastern gate of Brigantia is just to the south, groaning and
 creaking loudly as it opens and closes.  South and east from here you can
 clearly see the dark dwarven forest.  The battlements continue to the north.
 ~
@@ -7158,7 +7158,7 @@ The battlements continue to the west.
 S
 #21326
 Atop the Battlements~
-You are standing atop Darkhaven's northern wall.  The battlements continue
+You are standing atop Brigantia's northern wall.  The battlements continue
 to the east and west.
 ~
 0 1048576 1
@@ -7176,7 +7176,7 @@ S
 #21327
 Atop the Battlements~
 This portion of the battlements stretches to the east, all the way back to
-northeastern corner of Darkhaven.
+northeastern corner of Brigantia.
 ~
 0 1048576 1
 D1
@@ -7187,7 +7187,7 @@ The battlements stretch eastward.
 S
 #21328
 Atop the Battlements~
-You are standing atop Darkhaven's battlements.  The whole northwestern
+You are standing atop Brigantia's battlements.  The whole northwestern
 countryside is visible from here, stretching away beyond the forest of
 Haon Dor.  The battlements continue to the east and south, while a
 stone stairway leads back down to the city streets.
@@ -7211,7 +7211,7 @@ The stairway leads back down to the city streets.
 S
 #21329
 Atop the Battlements~
-You are standing atop Darkhaven's northern wall.  The battlements range to
+You are standing atop Brigantia's northern wall.  The battlements range to
 the east and west.
 ~
 0 1048576 1
@@ -7229,7 +7229,7 @@ S
 #21330
 Atop the Battlements~
 The battlements here extend westward, leading back to the northwestern
-corner of Darkhaven.
+corner of Brigantia.
 ~
 0 1048576 1
 D3
@@ -7257,7 +7257,7 @@ The battlements continue to the south.
 S
 #21333
 Atop the Battlements~
-The massive western gate of Darkhaven is just south of here, creaking and
+The massive western gate of Brigantia is just south of here, creaking and
 groaning loudly as it opens and closes.  A rather wide trail leads through
 the center of the vast forest known as Haon Dor to the west, and a chimney
 can be seen poking out of the dark trees just to the southwest.  Far down
@@ -7287,9 +7287,9 @@ The lights of Horizon Street glimmer to the north.
 S
 #21337
 In the Air~
-You are floating in the air high above Darkhaven.  Gazing downward,
-you see that you are just above the Darkhaven Square.  The citizens
-of Darkhaven look like tiny mice scurrying about from this height.
+You are floating in the air high above Brigantia.  Gazing downward,
+you see that you are just above the Brigantia Square.  The citizens
+of Brigantia look like tiny mice scurrying about from this height.
 Looking upward, you see a rainbow in the distance.
 ~
 0 1048580 9
@@ -7299,14 +7299,14 @@ You gaze higher into the air.
 ~
 0 -1 21338
 D5
-Darkhaven Square is down from here.
+Brigantia Square is down from here.
 ~
 ~
 0 -1 21000
 S
 #21338
 In the Air~
-You are flying in the air high above Darkhaven.  You can see the whole
+You are flying in the air high above Brigantia.  You can see the whole
 countryside from here:  It is truly a splendid sight to behold.  Gazing
 upward, you see a bright rainbow.
 ~
@@ -7317,7 +7317,7 @@ A rainbow stretches into the distance...
 ~
 0 -1 800
 D5
-Darkhaven Square is far below.
+Brigantia Square is far below.
 ~
 ~
 0 -1 21337
@@ -7380,7 +7380,7 @@ The Court of the Conclave lies to the northeast.
 S
 #21390
 The Gold Room~
-This chamber is where Darkhaven shopkeepers deposit their gold.
+This chamber is where Brigantia shopkeepers deposit their gold.
 ~
 0 3155980 0
 S
@@ -7461,7 +7461,7 @@ A small junction in the forest.
 S
 #21409
 A Silent Corner of the Courier~
-You find yourself at the rear of the Darkhaven Courier.  Many small
+You find yourself at the rear of the Brigantia Courier.  Many small
 tables sit here, accompanied by similarly tiny wooden chairs, and
 unfinished missives have been left lying on a couple of ink-stained
 tables.  An unnatural silence also seems to haunt this portion of
@@ -7470,7 +7470,7 @@ the main chamber of the Courier.
 ~
 0 3212300 0
 D0
-The Darkhaven Courier
+The Brigantia Courier
 ~
 ~
 0 -1 21053
@@ -7569,7 +7569,7 @@ various smells of the forest around you.
 ~
 0 4 1
 D2
-This path leads back to Darkhaven Square.
+This path leads back to Brigantia Square.
 ~
 ~
 0 -1 21185

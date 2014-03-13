@@ -377,7 +377,7 @@ char *rev_exit( sh_int vdir )
 {
     switch( vdir )
     {
-	default: return "algun lugar";
+	default: return "algures";
 	case 0:  return "o sur";
 	case 1:  return "o oeste";
 	case 2:  return "o norte";

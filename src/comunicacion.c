@@ -266,9 +266,9 @@ int port;
   }
 #endif /* WIN32 */
 
-    log_string("Booting Database");
+    log_string("Iniciando -> Base de datos ... ");
     boot_db( );
-    log_string("Initializing socket");
+    log_string("Iniciando -> Socket");
     control  = init_socket( port   );
     control2 = init_socket( port+1 );
     conclient= init_socket( port+10);
@@ -281,7 +281,7 @@ int port;
       perror("main: gethostname");
       strcpy(hostn, "unresolved");
     }
-    sprintf( log_buf, "%s ready at address %s on port %d.",
+    sprintf( log_buf, "%s escoitando na direccion %s e no porto %d.",
 		sysdata.mud_name, hostn, port );
     
     log_string( log_buf );
@@ -316,7 +316,7 @@ int port;
     /*
      * That's all, folks.
      */
-    log_string( "Normal termination of game." );
+    log_string( "Terminacion normal do xogo." );
     exit( 0 );
     return 0;
 }
@@ -412,7 +412,7 @@ void caught_alarm()
     // Fix from Igor Romanenko
     sprintf( buf, "ALARM CLOCK!  In section %s", alarm_section );
     bug( buf );
-    strcpy( buf, "Alas, the hideous malevalent entity known only as 'Lag' rises once more!\n\r" );
+    strcpy( buf, "Compi, the hideous malevalent entity known only as 'Lag' rises once more!\n\r" );
     echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
     if ( newdesc )
     {
@@ -778,8 +778,8 @@ void new_descriptor( int new_desc )
     alarm_section = "new_descriptor::accept";
     if ( ( desc = accept( new_desc, (struct sockaddr *) &sock, &size) ) < 0 )
     {
-	perror( "New_descriptor: accept" );
-	sprintf(bugbuf, "[*****] BUG: New_descriptor: accept");
+	perror( "Novo_descriptor: aceptar" );
+	sprintf(bugbuf, "[*****] BUG: Novo_descriptor: aceptar");
 	log_string_plus( bugbuf, LOG_COMM, sysdata.log_level );
 	set_alarm( 0 );
 	return;
@@ -840,7 +840,7 @@ void new_descriptor( int new_desc )
     if ( check_total_bans( dnew ) )
     {
           write_to_descriptor (desc,
-                         "Your site has been banned from this Mud.\n\r", 0);
+                         "A tua IP foi baneada de Kallaikia.\n\r", 0);
           free_desc (dnew);
           set_alarm (0);
           return;
@@ -1455,7 +1455,7 @@ void show_classes_to_nanny( DESCRIPTOR_DATA *d )
 
     ch = d->character;
 
-    ch_printf_color( ch, "\n\r\n\r&GThe following classes are available (or type &W'help [class]'&G)\n\r" );
+    ch_printf_color( ch, "\n\r\n\r&GAs seguintes clases estan disponibles (ou teclea &W'axuda [clase]'&G)\n\r" );
     for ( iClass = 0; iClass < MAX_PC_CLASS-3; iClass++ )
     {	
 	if ( class_table[iClass]->who_name
@@ -1471,7 +1471,7 @@ void show_classes_to_nanny( DESCRIPTOR_DATA *d )
 	    cnt = 0;
 	}
     }
-    ch_printf_color( ch, "\n\r&GPlease select\n\r&W: " );
+    ch_printf_color( ch, "\n\r&GSelecciona unha\n\r&W: " );
     return;
 }
 
@@ -1549,11 +1549,11 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	/* Old players can keep their characters. -- Alty */
 	if ( !check_parse_name( argument, (d->newstate != 0) ) )
 	{
-	    write_to_buffer( d, "That name is reserved, please try another.\n\rName: ", 0 );
+	    write_to_buffer( d, "Ese nome esta reservado, proba outro.\n\rNome: ", 0 );
 	    return;
 	}
                                                 
-        if ( !str_cmp( argument, "New" ) )
+        if ( !str_cmp( argument, "Novo" ) )
 	  {
 	    if ( d->newstate == 0 )
 	    {
@@ -1561,19 +1561,19 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
               /* Don't allow new players if DENY_NEW_PLAYERS is true */
       	      if (sysdata.DENY_NEW_PLAYERS == TRUE)
       	      {
-       		sprintf( buf, "The mud is currently preparing for a reboot.\n\r" );
+       		sprintf( buf, "Kallaikia estase preparando para un reinicio.\n\r" );
       		write_to_buffer( d, buf, 0 );
-			sprintf( buf, "New players are not accepted during this time.\n\r" );
+			sprintf( buf, "Novos xogadores non poden ser aceptados por agora.\n\r" );
 			write_to_buffer( d, buf, 0 );
-      		sprintf( buf, "Please try again in a few minutes.\n\r" );
+      		sprintf( buf, "Proba en uns poucos minutos.\n\r" );
       		write_to_buffer( d, buf, 0 );
 			close_socket( d, FALSE );
               }
-              sprintf( buf, "\n\rChoosing a name is one of the most important parts of this game...\n\r"
-              			"Make sure to pick a name appropriate to the character you are going\n\r"
-               			"to role play, and be sure that it suits a medieval theme.\n\r"
-               			"If the name you select is not acceptable, you will be asked to choose\n\r"
-               			"another one.\n\r\n\rPlease choose a name for your character: ");
+              sprintf( buf, "\n\rEscoller un nome e unha das partes mais importantes de este xogo ...\n\r"
+              			"Asegurate de escoller un nome apropiado para a persoaxe que vas\n\r"
+               			"interpretar, preferiblemente debe axustarse a epoca castrexa.\n\r"
+               			"Si o nome que selecciones non e aceptable, seras avisado para\n\r"
+               			"escoller outro.\n\r\n\rPor favor, escolle o nome da tua persoaxe: ");
               write_to_buffer( d, buf, 0 );
 	      d->newstate++;
 	      d->connected = CON_GET_NAME;
@@ -1581,23 +1581,23 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	    }
 	    else
    	    {
-	      write_to_buffer(d, "That name is reserved, please try another.\n\rName: ", 0);
+	      write_to_buffer(d, "Ese nome esta reservado, proba con outro.\n\rName: ", 0);
 	      return;
 	    }
 	}
 
 	if ( check_playing( d, argument, FALSE ) == BERR )
 	{
-	    write_to_buffer( d, "Name: ", 0 );
+	    write_to_buffer( d, "Nome: ", 0 );
 	    return;
 	}
 
 	fOld = load_char_obj( d, argument, TRUE );
 	if ( !d->character )
 	{
-	    sprintf( log_buf, "Bad player file %s@%s.", argument, d->host );
+	    sprintf( log_buf, "Ficha de xogador incorrecta %s@%s.", argument, d->host );
 	    log_string( log_buf );
-	    write_to_buffer( d, "Your playerfile is corrupt...Please notify derek@idirect.com.\n\r", 0 );
+	    write_to_buffer( d, "O ficheiro da tua persoaxe está corrupta... Contacta con kallaikia@0ri0n.no-ip.biz.\n\r", 0 );
 	    close_socket( d, FALSE );
 	    return;
 	}
@@ -1605,7 +1605,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
       if ( check_bans( ch, BAN_SITE ) )
       {
               write_to_buffer (d,
-                         "Your site has been banned from this Mud.\n\r", 0);
+                         "A tua IP está baneada de Kallaikia, contacta con un administrador.\n\r", 0);
               close_socket (d, FALSE);
               return;
       }
@@ -1614,14 +1614,14 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
       if ( check_bans( ch, BAN_CLASS ) )
       {
               write_to_buffer (d,
-                         "Your class has been banned from this Mud.\n\r", 0);
+                         "Esta clase está baneada de Kallaikia.\n\r", 0);
               close_socket (d, FALSE);
               return;
       }
       if ( check_bans( ch, BAN_RACE ) )
       {
               write_to_buffer (d,
-                         "Your race has been banned from this Mud.\n\r", 0);
+                         "Esta raza esta baneada de Kallaikia.\n\r", 0);
               close_socket (d, FALSE);
               return;
       }
@@ -1629,7 +1629,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 
 	if ( xIS_SET(ch->act, PLR_DENY) )
 	{
-	    sprintf( log_buf, "Denying access to %s@%s.", argument, d->host );
+	    sprintf( log_buf, "Denegando acceso a %s@%s.", argument, d->host );
 	    log_string_plus( log_buf, LOG_COMM, sysdata.log_level );
 	    if (d->newstate != 0)
 	    {
@@ -1640,7 +1640,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	      d->character = NULL;
 	      return;
 	    }
-	    ch_printf_color( ch, "\n\r&RYou are denied access.\n\r" );
+	    ch_printf_color( ch, "\n\r&RDenegouseche o acceso.\n\r" );
 	    close_socket( d, FALSE );
 	    return;
 	}
@@ -1652,9 +1652,9 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
       if ( IS_IMMORTAL( ch ) && sysdata.check_imm_host
       &&  !check_immortal_domain( ch , d->host) )
       {
-        sprintf (log_buf, "%s's char being hacked from %s.", argument, d->host);
+        sprintf (log_buf, "a persoaxe %s esta sendo hackeada desde %s.", argument, d->host);
         log_string_plus (log_buf, LOG_COMM, sysdata.log_level);
-	  ch_printf_color( ch, "\n\r&RThis hacking attempt has been logged.\n\r" );
+	  ch_printf_color( ch, "\n\r&REste intento de hack foi rexistrado.\n\r" );
         close_socket (d, FALSE);
         return;
       }
@@ -1671,8 +1671,8 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	{
 	    if ( wizlock && !IS_IMMORTAL( ch ) )
 	    {
-		ch_printf_color( ch, "\n\r&RThe game is wizlocked.  Only immortals can connect at this time.\n\r" );
-		ch_printf_color( ch, "Please try back later ...\n\r" );
+		ch_printf_color( ch, "\n\r&RO xogo está bloqueado por inmortais. So inmortais poden conectar.\n\r" );
+		ch_printf_color( ch, "Proba mais tarde ...\n\r" );
 		close_socket( d, FALSE );
 		return;
 	    }
@@ -1682,7 +1682,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	{
 	    if (d->newstate != 0)
 	    {
-	      write_to_buffer( d, "That name is already taken.  Please choose another: ", 0 );
+	      write_to_buffer( d, "Ese nome xa esta en uso. Escolle outro: ", 0 );
 	      d->connected = CON_GET_NAME;
 	      d->character->desc = NULL;
 	      free_char( d->character ); /* Big Memory Leak before --Shaddai */
@@ -1690,7 +1690,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	      return;
 	    }
 	    /* Old player */
-	    write_to_buffer( d, "Password: ", 0 );
+	    write_to_buffer( d, "Contrasinal: ", 0 );
 	    write_to_buffer( d, echo_off_str, 0 );
 	    d->connected = CON_GET_OLD_PASSWORD;
 	    return;
@@ -1706,7 +1706,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	    if (d->newstate == 0)
 	    {
 	      /* No such player */
-	      write_to_buffer( d, "\n\rNo such player exists.\n\rPlease check your spelling, or type new to start a new player.\n\r\n\rName: ", 0 );
+	      write_to_buffer( d, "\n\rEsa persoaxe non existe!\n\rComproba a tua ortografia, ou escribe 'novo' para comezar unha nova persoaxe.\n\r\n\rNome: ", 0 );
 	      d->connected = CON_GET_NAME;
 	      d->character->desc = NULL;
 	      free_char( d->character ); /* Big Memory Leak before --Shaddai */
@@ -1714,7 +1714,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	      return;
 	    }
 
-            sprintf( buf, "Did I get that right, %s (Y/N)? ", argument );
+            sprintf( buf, "O nome da tua persoaxe e: %s (S/N)? ", argument );
             write_to_buffer( d, buf, 0 );
             d->connected = CON_CONFIRM_NEW_NAME;
 	    return;
@@ -1726,7 +1726,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 
 	if ( strcmp( sha256_crypt( argument ), ch->pcdata->pwd ) )
 	{
-	    write_to_buffer( d, "Wrong password.\n\r", 0 );
+	    write_to_buffer( d, "Contrasinal incorrecta.\n\r", 0 );
 	    /* clear descriptor pointer to get rid of bug message in log */
 	    d->character->desc = NULL;
 	    close_socket( d, FALSE );
@@ -1776,7 +1776,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	  ch->pcdata->filename,
 	  d->host );
 	append_to_file( CHARCOUNT_FILE, buf2 );
-	sprintf( log_buf, "%s@%s(%s) has connected. (INRoom %d)",
+	sprintf( log_buf, "%s@%s(%s) esta conectado. (ENRoom %d)",
           ch->pcdata->filename,
           d->host, d->user,
           ( ch->in_room ? ch->in_room->vnum : -1 ) );
@@ -1794,16 +1794,16 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
      case CON_CONFIRM_NEW_NAME:
 	switch ( *argument )
 	{
-	case 'y': case 'Y':
-	    sprintf( buf, "\n\rMake sure to use a password that won't be easily guessed by someone else."
-	    		  "\n\rPick a good password for %s: %s",
+	case 's': case 'S':
+	    sprintf( buf, "\n\rAsegurate de escoller unha contrasinal que non poda ser adivinada por ninguen."
+	    		  "\n\rEscolle unha boa contrasinal para %s: %s",
 		ch->name, echo_off_str );
 	    write_to_buffer( d, buf, 0 );
 	    d->connected = CON_GET_NEW_PASSWORD;
 	    break;
 
 	case 'n': case 'N':
-	    write_to_buffer( d, "Ok, what IS it, then? ", 0 );
+	    write_to_buffer( d, "Perfecto, cal e entonces? ", 0 );
 	    /* clear descriptor pointer to get rid of bug message in log */
 	    d->character->desc = NULL;
 	    free_char( d->character );
@@ -1812,7 +1812,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	    break;
 
 	default:
-	    write_to_buffer( d, "Please type Yes or No. ", 0 );
+	    write_to_buffer( d, "Por favor teclea 'Si' ou 'Non'. ", 0 );
 	    break;
 	}
 	break;
@@ -1823,7 +1823,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	if ( strlen(argument) < 5 )
 	{
 	    write_to_buffer( d,
-		"Password must be at least five characters long.\n\rPassword: ",
+		"As contrasinais deben ter polo menos 5 caracteres.\n\rContrasinal: ",
 		0 );
 	    return;
 	}
@@ -1834,7 +1834,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	    if ( *p == '~' )
 	    {
 		write_to_buffer( d,
-		    "New password not acceptable, try again.\n\rPassword: ",
+		    "A nova contrasinal non e aceptable, proba de novo.\n\rContrasinal: ",
 		    0 );
 		return;
 	    }
@@ -1842,7 +1842,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 
 	DISPOSE( ch->pcdata->pwd );
 	ch->pcdata->pwd	= str_dup( pwdnew );
-	write_to_buffer( d, "\n\rPlease retype the password to confirm: ", 0 );
+	write_to_buffer( d, "\n\rPor favor, teclea a contrasinal de novo para confirmar: ", 0 );
 	d->connected = CON_CONFIRM_NEW_PASSWORD;
 	break;
 
@@ -1851,13 +1851,13 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 
 	if ( strcmp( sha256_crypt( argument ), ch->pcdata->pwd ) )
 	{
-	    write_to_buffer( d, "Passwords don't match.\n\rRetype password: ",
+	    write_to_buffer( d, "As contrasinais non coinciden.\n\rEscribe a contrasinal: ",
 		0 );
 	    d->connected = CON_GET_NEW_PASSWORD;
 	    return;
 	}
 
-	write_to_buffer( d, "\n\rPlease select your color preference\n\r ANSI\n\r RIP\n\r No color support\n\r: ", 0 );
+	write_to_buffer( d, "\n\rSelecciona a tua preferencia de cores\n\r ANSI\n\r RIP\n\r Sin cor\n\r: ", 0 );
 	d->connected = CON_GET_WANT_RIPANSI;
         break;
 
@@ -1871,28 +1871,28 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	    xSET_BIT(ch->act,PLR_ANSI);
 	    break;
 	case 'a': case 'A': xSET_BIT(ch->act,PLR_ANSI);  break;
-	case 'n': case 'N': break;
+	case 's': case 'S': break;
 	default:
-	    write_to_buffer( d, "Invalid selection\n\r ANSI\n\r RIP\n\r No color support\n\r: ", 0 );
+	    write_to_buffer( d, "Seleccion invalida\n\r ANSI\n\r RIP\n\r Sin cor\n\r: ", 0 );
 	    return;
 	}
 
 	ch_printf_color( ch, "\n\r\n\r\n\r\n\r\n\r\n\r\n\r" );
-	ch_printf_color( ch, "&G&gRealms of Despair greets you, &G%s ...\n\r", capitalize( ch->name ) );
-	ch_printf_color( ch, "&gPlease continue and choose your gender, class and race.\n\r" );
+	ch_printf_color( ch, "&G&gKallaikia dache a benvida, &G%s ...\n\r", capitalize( ch->name ) );
+	ch_printf_color( ch, "&gPor favor continua e escolle un xenero, clase e raza.\n\r" );
         ch_printf_color( ch, "&G&g================================================================\n\r" );
-	ch_printf_color( ch, "\n\r&GWhich gender will your character be?\n\r &WMale\n\r Female\n\r Neutral\n\r&GPlease select\n\r&w: " );
+	ch_printf_color( ch, "\n\r&GQue xenero ten a tua persoaxe?\n\r &WHome\n\r Muller\n\r Neutral\n\r&GSelecciona un\n\r&w: " );
 	d->connected = CON_GET_NEW_SEX;
 	break;
 
       case CON_GET_NEW_SEX:
 	switch ( argument[0] )
 	{
-	case 'm': case 'M': ch->sex = SEX_MALE;    break;
-	case 'f': case 'F': ch->sex = SEX_FEMALE;  break;
+	case 'h': case 'H': ch->sex = SEX_MALE;    break;
+	case 'm': case 'M': ch->sex = SEX_FEMALE;  break;
 	case 'n': case 'N': ch->sex = SEX_NEUTRAL; break;
 	default:
-	    ch_printf_color( ch, "\n\r&GWhich gender will your character be?\n\r &WMale\n\r Female\n\r Neutral\n\r&GPlease select\n\r&W: " );
+	    ch_printf_color( ch, "\n\r&GQue xenero ten a tua persoaxe?\n\r &WHome\n\r Muller\n\r Neutral\n\r&GSelecciona un\n\r&W: " );
 	    return;
 	}
 
@@ -1903,7 +1903,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
       case CON_GET_NEW_CLASS:
 	argument = one_argument(argument, arg);
 
-      if ( !str_cmp( arg, "help" ) )
+      if ( !str_cmp( arg, "axuda" ) )
       {
 	    for ( iClass = 0; iClass < MAX_PC_CLASS; iClass++ )
 	    {
@@ -1914,12 +1914,12 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 		    &&  !str_prefix( argument, class_table[iClass]->who_name ) )
 		    {
 			do_nanny_help( ch, argument );
-			ch_printf_color( ch, "&G\n\rPlease select ( press &W[Enter]&G to see classes again )\n\r&W: " );
+			ch_printf_color( ch, "&G\n\rPor favor selecciona ( presiona &W[Enter]&G para ver as clases de novo )\n\r&W: " );
 			return;
 		    }
 		}
 	    }
-	    ch_printf_color( ch, "&R* I'm afraid there is no description for that class.\n\r\n\r" );
+	    ch_printf_color( ch, "&R* Sentimolo, non hay descripcion para esa clase.\n\r\n\r" );
 	    show_classes_to_nanny( d );
 	    return;
 	}
@@ -1944,14 +1944,14 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	||  !str_cmp( class_table[iClass]->who_name, "unused" ) )
 	{
 	    if ( arg[0] != '\0' )
-		ch_printf_color( ch, "&R* I'm afraid there is no such class available.\n\r\n\r" );
+		ch_printf_color( ch, "&R* Sentimolo, esa clase non esta disponhible.\n\r\n\r" );
 	    show_classes_to_nanny( d );
 	    return;
 	}
 
 	if ( check_bans( ch, BAN_CLASS ) )
 	{
-	    ch_printf_color( ch, "&R *I'm afraid there is no such class available.\n\r" );
+	    ch_printf_color( ch, "&R *Sentimolo, esa clase non esta disponible.\n\r" );
 	    show_classes_to_nanny( d );
 	    return;
 	}
@@ -1963,7 +1963,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	case CON_GET_NEW_RACE:
 	argument = one_argument( argument, arg );
     
-	if ( !str_cmp( arg, "help" ) )
+	if ( !str_cmp( arg, "axuda" ) )
 	{
 	    for ( iRace = 0; iRace < MAX_PC_RACE; iRace++ )
 	    {
@@ -2050,7 +2050,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
           do_help( ch, "nmotd" );
         else
           do_help( ch, "motd" );
-	send_to_pager( "\n\rPress [ENTER] ", ch );
+	send_to_pager( "\n\rPulsa [ENTER] ", ch );
         d->connected = CON_READ_MOTD;
         break;
 
@@ -2058,7 +2058,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	{
 	  char motdbuf[MAX_STRING_LENGTH];
 
-	  sprintf( motdbuf, "\n\rWelcome to %s...\n\r", sysdata.mud_name);
+	  sprintf( motdbuf, "\n\rBenvid@ a %s...\n\r", sysdata.mud_name);
 	  write_to_buffer( d, motdbuf, 0 );
 	}
 	add_char( ch );
@@ -2148,7 +2148,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	    	ch->alignment = 1000;
 
 	    if ( (iLang = skill_lookup( "common" )) < 0 )
-	    	bug( "Nanny: cannot find common language." );
+	    	bug( "Nanny: non se pode encontrar a lingua comun." );
 	    else
 	    	ch->pcdata->learned[iLang] = 100;
 	    	
@@ -2250,13 +2250,13 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
     if ( class_table[ch->class]->login_other )
        act( AT_ACTION, class_table[ch->class]->login_other, ch, NULL, NULL, TO_CANSEE );
     else
-       act( AT_ACTION, "$n has entered the game.",  ch, NULL, NULL, TO_CANSEE );
+       act( AT_ACTION, "$n entrou no xogo.",  ch, NULL, NULL, TO_CANSEE );
 
     if ( ch->pcdata->pet )
     {
-           act( AT_ACTION, "$n returns to $s master from the Void.",
+           act( AT_ACTION, "$n return to $s master from the Void.",
                       ch->pcdata->pet, NULL, ch, TO_NOTVICT );
-           act( AT_ACTION, "$N returns with you to the realms.",
+           act( AT_ACTION, "$N volve contigo ao reino.",
                         ch, NULL, ch->pcdata->pet, TO_CHAR );
     }         
     do_look( ch, "auto" );
@@ -2399,7 +2399,7 @@ bool check_reconnect( DESCRIPTOR_DATA *d, char *name, bool fConn )
 	{
 	    if ( fConn && ch->switched )
 	    {
-	      write_to_buffer( d, "Already playing.\n\rName: ", 0 );
+	      write_to_buffer( d, "Xa esta xogando.\n\rNome: ", 0 );
 	      d->connected = CON_GET_NAME;
 	      if ( d->character )
 	      {
@@ -2428,7 +2428,7 @@ bool check_reconnect( DESCRIPTOR_DATA *d, char *name, bool fConn )
                 if ( class_table[ch->class]->reconnect )
                         ch_printf(ch, "%s\n\r", class_table[ch->class]->reconnect );
                 else
-                        send_to_char( "Reconnecting.\n\r", ch );
+                        send_to_char( "Reconectando.\n\r", ch );
                 rprog_login_trigger(ch);
                 mprog_login_trigger(ch);
 		do_look( ch, "auto" );
@@ -2436,8 +2436,8 @@ bool check_reconnect( DESCRIPTOR_DATA *d, char *name, bool fConn )
                 if ( class_table[ch->class]->reconnect_other )
                    act( AT_ACTION, class_table[ch->class]->reconnect_other, ch, NULL, NULL, TO_CANSEE );
                 else
-                   act( AT_ACTION, "$n has reconnected.", ch, NULL, NULL, TO_CANSEE );
-                sprintf( log_buf, "%s@%s(%s) reconnected. (INRoom %d)",
+                   act( AT_ACTION, "$n reconnectou ao xogo.", ch, NULL, NULL, TO_CANSEE );
+                sprintf( log_buf, "%s@%s(%s) reconectado. (ENRoom %d)",
                   ch->pcdata->filename,
                   d->host,
                   d->user,
@@ -2481,16 +2481,16 @@ bool check_playing( DESCRIPTOR_DATA *d, char *name, bool kick )
 	    if ( !ch->name
 	    || ( cstate != CON_PLAYING && cstate != CON_EDITING ))
 	    {
-		write_to_buffer( d, "That character is already connected - try again.\n\r", 0 );
-		sprintf( log_buf, "%s already connected.", 
+		write_to_buffer( d, "Esa persoaxe xa esta conectada - proba de novo.\n\r", 0 );
+		sprintf( log_buf, "%s xa esta conectado.", 
 				ch->pcdata->filename );
 		log_string_plus( log_buf, LOG_COMM, sysdata.log_level );
 		return BERR;
 	    }
 	    if ( !kick )
 	      return TRUE;
-	    write_to_buffer( d, "Already playing... Kicking off old connection.\n\r", 0 );
-	    write_to_buffer( dold, "Kicking off old connection... bye!\n\r", 0 );
+	    write_to_buffer( d, "Xa esta conectado ... Liberando a conexio antigua.\n\r", 0 );
+	    write_to_buffer( dold, "Liberando a conexio antigua... adeus!\n\r", 0 );
 	    close_socket( dold, FALSE );
 	    /* clear descriptor pointer to get rid of bug message in log */
 	    d->character->desc = NULL;
@@ -2503,12 +2503,12 @@ bool check_playing( DESCRIPTOR_DATA *d, char *name, bool kick )
 	    if ( ch->switched )
 	      do_return( ch->switched, "" );
 	    ch->switched = NULL;
-	    send_to_char( "Reconnecting.\n\r", ch );
+	    send_to_char( "Reconectando.\n\r", ch );
 	    do_look( ch, "auto" );
 	    check_loginmsg( ch );
-	    act( AT_ACTION, "$n has reconnected, kicking off old link.",
+	    act( AT_ACTION, "$n reconectou, liberando o enlace antigo.",
 	         ch, NULL, NULL, TO_CANSEE );
-            sprintf( log_buf, "%s@%s reconnected, kicking off old link. (INRoom %d)",
+            sprintf( log_buf, "%s@%s reconectado, liberando enlace antigo. (ENRoom %d)",
                  ch->pcdata->filename,
                  d->host,
                  ( ch->in_room ? ch->in_room->vnum : -1 ) );
@@ -2563,7 +2563,7 @@ void stop_idling( CHAR_DATA *ch )
     /* Void triggers by Edmond */
     rprog_void_trigger( ch );
     mprog_void_trigger( ch );
-    act( AT_ACTION, "$n has returned from the void.", ch, NULL, NULL, TO_ROOM );
+    act( AT_ACTION, "$n regresou do olvido.", ch, NULL, NULL, TO_ROOM );
     return;
 }
 
@@ -3296,7 +3296,7 @@ void do_name( CHAR_DATA *ch, char *argument )
 
   if ( !NOT_AUTHED(ch) || ch->pcdata->auth_state != 2)
   {
-    send_to_char("Huh?\n\r", ch);
+    send_to_char("Desculpa?\n\r", ch);
     return;
   }
 
@@ -3304,7 +3304,7 @@ void do_name( CHAR_DATA *ch, char *argument )
 
   if (!check_parse_name(argument, TRUE))
   {
-    send_to_char("That name is reserved, please try another.\n\r", ch);
+    send_to_char("Ese nome esta reservado, proba con outro.\n\r", ch);
     return;
   }
 
@@ -3313,7 +3313,7 @@ void do_name( CHAR_DATA *ch, char *argument )
 
   if (!str_cmp(ch->name, argument))
   {
-    send_to_char("That's already your name!\n\r", ch);
+    send_to_char("Ese xa e o teu nome!\n\r", ch);
     return;
   }
 
@@ -3325,7 +3325,7 @@ void do_name( CHAR_DATA *ch, char *argument )
 
   if ( tmp )
   {
-    send_to_char("That name is already taken.  Please choose another.\n\r", ch);
+    send_to_char("Ese nome esta ocupado. Proba con outro.\n\r", ch);
     return;
   }
 
@@ -3333,7 +3333,7 @@ void do_name( CHAR_DATA *ch, char *argument )
                         capitalize( argument ) );
   if ( stat( fname, &fst ) != -1 )
   {
-    send_to_char("That name is already taken.  Please choose another.\n\r", ch);
+    send_to_char("Ese nome esta ocupado. Proba con outro.\n\r", ch);
     return;
   }
 
@@ -3341,7 +3341,7 @@ void do_name( CHAR_DATA *ch, char *argument )
   ch->name = STRALLOC( argument );
   STRFREE( ch->pcdata->filename );
   ch->pcdata->filename = STRALLOC( argument ); 
-  send_to_char("Your name has been changed.  Please apply again.\n\r", ch);
+  send_to_char("O teu nome cambiou.  Por favor aplica de novo.\n\r", ch);
   ch->pcdata->auth_state = 0;
   return;
 }
@@ -3483,7 +3483,7 @@ void display_prompt( DESCRIPTOR_DATA *d )
   CHAR_DATA *victim;
   bool ansi = (!IS_NPC(och) && xIS_SET(och->act, PLR_ANSI));
   const char *prompt;
-  const char *helpstart = "<Type HELP START>";
+  const char *helpstart = "<Teclea AXUDA INICIO>";
   char buf[MAX_STRING_LENGTH];
   char *pbuf = buf;
   int stat, percent;
@@ -3698,11 +3698,11 @@ void display_prompt( DESCRIPTOR_DATA *d )
           }
           break;
       case 'T':
-        if      ( time_info.hour <  5 ) strcpy( pbuf, "night" );
-        else if ( time_info.hour <  6 ) strcpy( pbuf, "dawn" );
-        else if ( time_info.hour < 19 ) strcpy( pbuf, "day" );
-        else if ( time_info.hour < 21 ) strcpy( pbuf, "dusk" );
-        else                            strcpy( pbuf, "night" );
+        if      ( time_info.hour <  5 ) strcpy( pbuf, "noite" );
+        else if ( time_info.hour <  6 ) strcpy( pbuf, "amencer" );
+        else if ( time_info.hour < 19 ) strcpy( pbuf, "mediodia" );
+        else if ( time_info.hour < 21 ) strcpy( pbuf, "anoitecer" );
+        else                            strcpy( pbuf, "noite" );
         break;
       case 'b':
 	if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
@@ -3953,7 +3953,7 @@ bool pager_output( DESCRIPTOR_DATA *d )
     lines = 0;
     break;
   /* Previous page */
-  case 'b':
+  case 'v':
     lines = -1-(pclines*2);
     break;
   /* Redraw */
@@ -3966,7 +3966,7 @@ bool pager_output( DESCRIPTOR_DATA *d )
     pclines = 0x7FFFFFFF;	/* As many lines as possible */
     break;
   /* Quit */
-  case 'q':
+  case 's':
     d->pagetop = 0;
     d->pagepoint = NULL;
     flush_buffer(d, TRUE);
@@ -4019,7 +4019,7 @@ bool pager_output( DESCRIPTOR_DATA *d )
       if ( write_to_descriptor(d->descriptor, "\033[1;36m", 7) == FALSE )
 	return FALSE;
   if ( (ret=write_to_descriptor(d->descriptor,
-	"(C)ontinue, (N)on-stop, (R)efresh, (B)ack, (Q)uit: [C] ", 0)) == FALSE )
+	"(C)ontinuar, (N)on-parar, (R)efrescar, (V)olver, (S)air: [C] ", 0)) == FALSE )
 	return FALSE;
   /* Restore previous color */
   if ( xIS_SET( ch->act, PLR_ANSI ) )
@@ -4045,9 +4045,9 @@ void shutdown_mud( char *reason );
 
 void bailout(void)
 {
-    echo_to_all( AT_IMMORT, "MUD shutting down by system operator NOW!!", ECHOTAR_ALL );
-    shutdown_mud( "MUD shutdown by system operator" );
-    log_string ("MUD shutdown by system operator");
+    echo_to_all( AT_IMMORT, "Kallaikia esta sendo parado por un administrador AGORA!!j!", ECHOTAR_ALL );
+    shutdown_mud( "Kallaikia parado por un administrador" );
+    log_string ("Kallaikia parado por un administrador");
     Sleep (5000);		/* give "echo_to_all" time to display */
     mud_down = TRUE;		/* This will cause game_loop to exit */
     service_shut_down = TRUE;	/* This will cause characters to be saved */

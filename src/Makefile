@@ -86,8 +86,8 @@ L_FLAGS = $(PROF) -lz $(NEED_DL)
 # Ficheiros Principais para compilar
 ########################################
 
-C_FILES =   administradores.c  clans.c  basedatos.c   cifracadea.c  inmortais_servidor.c  mapasaida.c  novas.c   peticions.c  tendas.c  estadisticas_obxetos.c \
-actores_informacion.c  banear.c        cores.c  deidades.c    consellos.c     interprete.c    xogador_varios.c      resetear.c      xogador_habilidades.c    taboas.c \
+C_FILES =   administradores.c  clans.c  basedatos.c   inmortais_servidor.c  mapasaida.c  novas.c   peticions.c  tendas.c  estadisticas_obxetos.c \
+actores_informacion.c  banear.c    cifracadea.c    cores.c  deidades.c    consellos.c     interprete.c    xogador_varios.c      resetear.c      xogador_habilidades.c    taboas.c \
 actores_movemento.c  taboeiros.c   comunicacion.c      xogador_loitar.c    fogar.c    liquidos.c   configurarmpx.c    xogador.c     gardar.c     especial.c  tracear.c \
 actores_obxetos.c   construir.c      comentarios.c  grub.c     iconstruir.c   xogador_maxia.c     kallaikia_comunicacion.c  polimorfismo.c  servizos.c  estancias.c  actualizar.c \
 actores_wiz.c   actores_comunicacion.c   constantes.c     manexador.c  identificar.c    crearobxetos.c  kallaikia_programas.c  renumerar.c   sha256.c   mapaestelar.c  variables.c
