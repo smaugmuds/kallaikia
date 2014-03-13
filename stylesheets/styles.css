@@ -889,7 +889,7 @@ section #title .credits.right {
 }
 
 .descargas nav li.title {
-  float: right;
+  float: left;
   margin: 10px auto 10px auto;
 }
 
