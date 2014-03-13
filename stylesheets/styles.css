@@ -822,7 +822,7 @@ section #title .credits.right {
 
 .descargas nav {
   max-width: 650px;
-  min-height: 30px;
+  min-height: 40px;
   margin: 0 auto;
   padding: 0 10px;
   margin: 6px auto;
@@ -835,7 +835,7 @@ section #title .credits.right {
   list-style: none;
   display: inline;
   color: white;
-  line-height: 8px;
+  line-height: 10px;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
@@ -885,12 +885,12 @@ section #title .credits.right {
 
 .descargas nav li.downloads {
   float: left;
-  margin: 10px auto 10px auto;
+  margin: auto 10px auto 10px;
 }
 
 .descargas nav li.title {
   float: left;
-  margin: 10px auto 10px auto;
+  margin: auto 10px auto 10px;
 }
 
 @media print, screen and (max-width: 720px) {
