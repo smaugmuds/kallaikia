@@ -1039,7 +1039,7 @@ int get_door( char *arg )
     else if ( !str_cmp( arg, "s"  ) || !str_cmp( arg, "sur"	  ) ) door = 2;
     else if ( !str_cmp( arg, "o"  ) || !str_cmp( arg, "oeste"	  ) ) door = 3;
     else if ( !str_cmp( arg, "su" ) || !str_cmp( arg, "subir"	  ) ) door = 4;
-    else if ( !str_cmp( arg, "b"  ) || !str_cmp( arg, "baixar"	  ) ) door = 5;
+    else if ( !str_cmp( arg, "ba" ) || !str_cmp( arg, "baixar"	  ) ) door = 5;
     else if ( !str_cmp( arg, "nl" ) || !str_cmp( arg, "norleste"  ) ) door = 6;
     else if ( !str_cmp( arg, "no" ) || !str_cmp( arg, "noroeste"  ) ) door = 7;
     else if ( !str_cmp( arg, "sl" ) || !str_cmp( arg, "surleste"  ) ) door = 8;
@@ -1100,7 +1100,7 @@ void do_look( CHAR_DATA *ch, char *argument )
     &&   room_is_dark( ch->in_room ) )
     {
 	set_char_color( AT_DGREY, ch );
-	send_to_char( "It is pitch black ... \n\r", ch );
+	send_to_char( "Esta oscuro e tebroso ... \n\r", ch );
 	show_char_to_char( ch->in_room->first_person, ch );
 	return;
     }
@@ -1166,7 +1166,7 @@ void do_look( CHAR_DATA *ch, char *argument )
 				if( pexit->vdir == DIR_UP )
 					sprintf( dir_u, "%sSU", exitcolor );
 				if( pexit->vdir == DIR_DOWN )
-					sprintf( dir_d, "%sB", exitcolor );
+					sprintf( dir_d, "%sBA", exitcolor );
 				if( pexit->vdir == DIR_NORTHEAST )
 					sprintf( dir_ne, "%sNL", exitcolor );
 				if( pexit->vdir == DIR_NORTHWEST )

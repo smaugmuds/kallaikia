@@ -1378,7 +1378,7 @@ EXIT_DATA *find_door( CHAR_DATA *ch, char *arg, bool quiet )
     else if ( !str_cmp( arg, "s"  ) || !str_cmp( arg, "sur"	  ) ) door = 2;
     else if ( !str_cmp( arg, "o"  ) || !str_cmp( arg, "oeste"	  ) ) door = 3;
     else if ( !str_cmp( arg, "su" ) || !str_cmp( arg, "subir"	  ) ) door = 4;
-    else if ( !str_cmp( arg, "b"  ) || !str_cmp( arg, "baixar"	  ) ) door = 5;
+    else if ( !str_cmp( arg, "ba" ) || !str_cmp( arg, "baixar"	  ) ) door = 5;
     else if ( !str_cmp( arg, "nl" ) || !str_cmp( arg, "norleste"  ) ) door = 6;
     else if ( !str_cmp( arg, "no" ) || !str_cmp( arg, "noroeste"  ) ) door = 7;
     else if ( !str_cmp( arg, "sl" ) || !str_cmp( arg, "surleste"   ) ) door = 8;

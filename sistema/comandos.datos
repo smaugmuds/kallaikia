@@ -4329,7 +4329,7 @@ Log         0
 End
 
 #COMMAND
-Name        west~
+Name        oeste~
 Code        do_west
 Position    112
 Level       0
@@ -4337,7 +4337,7 @@ Log         0
 End
 
 #COMMAND
-Name        wake~
+Name        despertar~
 Code        do_wake
 Position    104
 Level       0

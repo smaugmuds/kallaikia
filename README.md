@@ -163,6 +163,7 @@ Listado de comandos traducidos:
 - open -> abrir
 - exits -> saidas
 - leave -> abandoar
+- wake -> despertar
 - examine -> examinar
 - order -> orden
 - channels -> canais
