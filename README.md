@@ -1,5 +1,5 @@
 ```
-                            Benvid@ ... estas entrando en Kallaikia
+                           Benvid@ ... estas entrando en Kallaikia ...
 
                             O    R E I N O    D A S    T E B R A S !
             _________________________________________________________________________
