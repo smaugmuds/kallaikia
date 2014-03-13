@@ -26,7 +26,7 @@
 
 ##Benvido a Kallaikia ...
 
-Benvid@ a **Kallaikia ^O Reino das Tebras^**, podes visitarnos en [http://0ri0n.no-ip.biz/kallaikia] (Kallaikia), esta e a primeira xeneraci&oacute;n deste MUD en galego, nacido a partir do servidor **Smaug 1.8b** creado para [http://www.realmsofdespair.com] (Realms Of Despair) por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia [http://www.gnu.org/licenses/gpl-2.0.html] (GPLv2).
+Benvid@ a **Kallaikia ^O Reino das Tebras^**, podes visitarnos en [http://0ri0n.no-ip.biz/kallaikia], esta e a primeira xeneraci&oacute;n deste MUD en galego, nacido a partir do servidor **Smaug 1.8b** creado para [http://www.realmsofdespair.com] por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia [http://www.gnu.org/licenses/gpl-2.0.html].
 
 Dirección para conectar a **Kallaikia**: **0ri0n.no-ip.biz:4000**
 
