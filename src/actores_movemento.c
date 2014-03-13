@@ -33,8 +33,8 @@ const	sh_int	movement_loss	[SECT_MAX]	=
 
 char *	const	dir_name	[]		=
 {
-    "north", "east", "south", "west", "up", "down",
-    "northeast", "northwest", "southeast", "southwest", "somewhere"
+    "norte", "leste", "sur", "oeste", "subir", "baixar",
+    "norleste", "noroeste", "surleste", "suroeste", "algures"
 };
 
 const	int	trap_door	[]		=
@@ -61,13 +61,13 @@ OBJ_DATA	*has_key	args( ( CHAR_DATA *ch, int key ) );
 
 char *	const		sect_names[SECT_MAX][2] =
 {
-    { "In a room","inside"	},	{ "In a city",	"cities"	},
-    { "In a field","fields"	},	{ "In a forest","forests"	},
-    { "hill",	"hills"		},	{ "On a mountain","mountains"	},
-    { "In the water","waters"	},	{ "In rough water","waters"	},
-    { "Underwater", "underwaters" },	{ "In the air",	"air"		},
-    { "In a desert","deserts"	},	{ "Somewhere",	"unknown"	},
-    { "ocean floor", "ocean floor" },	{ "underground", "underground"	}
+    { "En unha habitacion","inside"	},	{ "Nunha cidade",	"cities"	},
+    { "En un campo","fields"	},	{ "Nunha fraga","forests"	},
+    { "colina",	"hills"		},	{ "Nunha montanha","mountains"	},
+    { "Na auga","waters"	},	{ "En augas profundas","waters"	},
+    { "Baixo da auga", "underwaters" },	{ "No aire",	"air"		},
+    { "Nun deserto","deserts"	},	{ "Nalgun lugar",	"unknown"	},
+    { "fondo oceanico", "ocean floor" },	{ "baixo terra", "underground"	}
 };
 
 
@@ -247,14 +247,14 @@ void decorate_room( ROOM_INDEX_DATA *room )
     int iRand, len;
     int previous[8];
     int sector = room->sector_type;
-    char *pre = "You notice ", *post = ".";
+    char *pre = "Percibes ", *post = ".";
 
     if ( room->name )
       STRFREE( room->name );
     if ( room->description )
       STRFREE( room->description );
 
-    room->name	  = STRALLOC( "In a virtual room" );
+    room->name	  = STRALLOC( "En unha habitacio virtual" );
     room->description = STRALLOC( "You're on a pathway.\n\r" );
 
     return; /* Return with above till I can figure out what is
@@ -289,10 +289,10 @@ void decorate_room( ROOM_INDEX_DATA *room )
 	    {
 	      switch( number_range(1, 2 * (iRand == nRand -1) ? 1 : 2) )
 	      {
-		case 1:	pre = "You notice ";	post = ".";	 break;
-		case 2: pre = "You see ";	post = ".";	 break;
-		case 3: pre = "You see ";	post = ", and "; break;
-		case 4: pre = "You notice ";	post = ", and "; break;
+		case 1:	pre = "Percibes ";	post = ".";	 break;
+		case 2: pre = "Ves ";	post = ".";	 break;
+		case 3: pre = "Ves ";	post = ", e "; break;
+		case 4: pre = "Percibes ";	post = ", e "; break;
 	      }
 	      sprintf( buf2, "%s%s%s", pre, room_sents[sector][x], post );
 	    }
@@ -302,18 +302,18 @@ void decorate_room( ROOM_INDEX_DATA *room )
 	      if ( buf[len-1] == '.' )
 	      switch( number_range(0, 3) )
 	      {
-		case 0:	pre = "you notice ";	post = ".";	 break;
-		case 1: pre = "you see ";	post = ", and "; break;
-		case 2: pre = "you see ";	post = ".";	 break;
+		case 0:	pre = "percibes ";	post = ".";	 break;
+		case 1: pre = "ves ";	post = ", e "; break;
+		case 2: pre = "ves ";	post = ".";	 break;
 		case 3: pre = "over yonder ";	post = ", and "; break;
 	      }
 	      else
 	      switch( number_range(0, 3) )
 	      {
 		case 0:	pre = ""; post = ".";			break;
-		case 1:	pre = ""; post = " not too far away.";	break;
-		case 2: pre = ""; post = ", and ";		break;
-		case 3: pre = ""; post = " nearby.";		break;
+		case 1:	pre = ""; post = " non moi lonxe.";	break;
+		case 2: pre = ""; post = ", e ";		break;
+		case 3: pre = ""; post = " cerquinha.";		break;
 	      }
 	      sprintf( buf2, "%s%s%s", pre, room_sents[sector][x], post );
 	    }
@@ -377,20 +377,20 @@ char *rev_exit( sh_int vdir )
 {
     switch( vdir )
     {
-	default: return "somewhere";
-	case 0:  return "the south";
-	case 1:  return "the west";
-	case 2:  return "the north";
-	case 3:  return "the east";
-	case 4:  return "below";
-	case 5:  return "above";
-	case 6:  return "the southwest";
-	case 7:  return "the southeast";
-	case 8:  return "the northwest";
-	case 9:  return "the northeast";
+	default: return "algun lugar";
+	case 0:  return "o sur";
+	case 1:  return "o oeste";
+	case 2:  return "o norte";
+	case 3:  return "o leste";
+	case 4:  return "abaixo";
+	case 5:  return "arriba";
+	case 6:  return "o suroeste";
+	case 7:  return "o surleste";
+	case 8:  return "o noroeste";
+	case 9:  return "o norleste";
     }
 
-    return "<unknown>";
+    return "<desconhecido>";
 }
 
 /*
@@ -403,7 +403,7 @@ EXIT_DATA *get_exit( ROOM_INDEX_DATA *room, sh_int dir )
 
     if ( !room )
     {
-	bug( "Get_exit: NULL room", 0 );
+	bug( "Coller saida: NULL habitacion", 0 );
 	return NULL;
     }
 
@@ -503,7 +503,7 @@ bool will_fall( CHAR_DATA *ch, int fall )
 	   return TRUE;
 	}
 	set_char_color( AT_FALLING, ch );
-	send_to_char( "You're falling down...\n\r", ch );
+	send_to_char( "Estas caendo ...\n\r", ch );
 	move_char( ch, get_exit(ch->in_room, DIR_DOWN), ++fall );
 	return TRUE;
     }
@@ -703,7 +703,7 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
 	else if ( drunk )
 	  act( AT_ACTION, "You stare around trying to make sense of things through your drunken stupor.", ch, NULL, NULL, TO_CHAR );
         else
-	  send_to_char( "Alas, you cannot go that way.\n\r", ch );
+	  send_to_char( "Compi, non podes ir en esa direccion.\n\r", ch );
 	return rNONE;
     }
 
@@ -717,14 +717,14 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
     if ( IS_SET( pexit->exit_info, EX_WINDOW )
     &&  !IS_SET( pexit->exit_info, EX_ISDOOR ) )
     {
-	send_to_char( "Alas, you cannot go that way.\n\r", ch );
+	send_to_char( "Compi, non podes ir en esa direccion.\n\r", ch );
 	return rNONE;
     }
 
     if (  IS_SET(pexit->exit_info, EX_PORTAL) 
        && IS_NPC(ch) )
     {
-        act( AT_PLAIN, "Mobs can't use portals.", ch, NULL, NULL, TO_CHAR );
+        act( AT_PLAIN, "As criaturas non poden usar portais.", ch, NULL, NULL, TO_CHAR );
 	return rNONE;
     }
 
@@ -750,14 +750,14 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
 		NULL, pexit->keyword, TO_CHAR ); 
 	  }
 	 else
-	  act( AT_PLAIN, "The $d is closed.", ch, NULL, pexit->keyword, TO_CHAR );
+	  act( AT_PLAIN, "A $d está cerrada.", ch, NULL, pexit->keyword, TO_CHAR );
 	}
        else
 	{
 	  if ( drunk )
 	    send_to_char( "You stagger around in your drunken state.\n\r", ch );
 	   else
-	    send_to_char( "Alas, you cannot go that way.\n\r", ch );
+	    send_to_char( "Compi, non podes ir en esa direccion.\n\r", ch );
 	}
 
 	return rNONE;
@@ -768,7 +768,7 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
      */
     if ( distance > 1 )
 	if ( (to_room=generate_exit(in_room, &pexit)) == NULL )
-	    send_to_char( "Alas, you cannot go that way.\n\r", ch );
+	    send_to_char( "Compi, non podes ir en esa direccion.\n\r", ch );
 
     if ( !fall
     &&   IS_AFFECTED(ch, AFF_CHARM)
@@ -1373,16 +1373,16 @@ EXIT_DATA *find_door( CHAR_DATA *ch, char *arg, bool quiet )
       return NULL;
 
     pexit = NULL;
-	 if ( !str_cmp( arg, "n"  ) || !str_cmp( arg, "north"	  ) ) door = 0;
-    else if ( !str_cmp( arg, "e"  ) || !str_cmp( arg, "east"	  ) ) door = 1;
-    else if ( !str_cmp( arg, "s"  ) || !str_cmp( arg, "south"	  ) ) door = 2;
-    else if ( !str_cmp( arg, "w"  ) || !str_cmp( arg, "west"	  ) ) door = 3;
-    else if ( !str_cmp( arg, "u"  ) || !str_cmp( arg, "up"	  ) ) door = 4;
-    else if ( !str_cmp( arg, "d"  ) || !str_cmp( arg, "down"	  ) ) door = 5;
-    else if ( !str_cmp( arg, "ne" ) || !str_cmp( arg, "northeast" ) ) door = 6;
-    else if ( !str_cmp( arg, "nw" ) || !str_cmp( arg, "northwest" ) ) door = 7;
-    else if ( !str_cmp( arg, "se" ) || !str_cmp( arg, "southeast" ) ) door = 8;
-    else if ( !str_cmp( arg, "sw" ) || !str_cmp( arg, "southwest" ) ) door = 9;
+	 if ( !str_cmp( arg, "n"  ) || !str_cmp( arg, "norte"	  ) ) door = 0;
+    else if ( !str_cmp( arg, "l"  ) || !str_cmp( arg, "leste"	  ) ) door = 1;
+    else if ( !str_cmp( arg, "s"  ) || !str_cmp( arg, "sur"	  ) ) door = 2;
+    else if ( !str_cmp( arg, "o"  ) || !str_cmp( arg, "oeste"	  ) ) door = 3;
+    else if ( !str_cmp( arg, "su" ) || !str_cmp( arg, "subir"	  ) ) door = 4;
+    else if ( !str_cmp( arg, "b"  ) || !str_cmp( arg, "baixar"	  ) ) door = 5;
+    else if ( !str_cmp( arg, "nl" ) || !str_cmp( arg, "norleste"  ) ) door = 6;
+    else if ( !str_cmp( arg, "no" ) || !str_cmp( arg, "noroeste"  ) ) door = 7;
+    else if ( !str_cmp( arg, "sl" ) || !str_cmp( arg, "surleste"   ) ) door = 8;
+    else if ( !str_cmp( arg, "so" ) || !str_cmp( arg, "suroeste"  ) ) door = 9;
     else
     {
 	for ( pexit = ch->in_room->first_exit; pexit; pexit = pexit->next )
@@ -1393,7 +1393,7 @@ EXIT_DATA *find_door( CHAR_DATA *ch, char *arg, bool quiet )
 		return pexit;
 	}
 	if ( !quiet )
-	  act( AT_PLAIN, "You see no $T here.", ch, NULL, arg, TO_CHAR );
+	  act( AT_PLAIN, "Non podes ver ningun $T aqui.", ch, NULL, arg, TO_CHAR );
 	return NULL;
     }
 
@@ -2366,7 +2366,7 @@ ch_ret pullcheck( CHAR_DATA *ch, int pulse )
     int pullfact, pull;
     int resistance;
     char *tochar = NULL, *toroom = NULL, *objmsg = NULL;
-    char *destrm = NULL, *destob = NULL, *dtxt = "somewhere";
+    char *destrm = NULL, *destob = NULL, *dtxt = "algures";
 
     if ( (room=ch->in_room) == NULL )
     {

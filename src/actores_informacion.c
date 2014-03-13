@@ -1034,16 +1034,16 @@ int get_door( char *arg )
 {
     int door;
 
-	 if ( !str_cmp( arg, "n"  ) || !str_cmp( arg, "north"	  ) ) door = 0;
-    else if ( !str_cmp( arg, "e"  ) || !str_cmp( arg, "east"	  ) ) door = 1;
-    else if ( !str_cmp( arg, "s"  ) || !str_cmp( arg, "south"	  ) ) door = 2;
-    else if ( !str_cmp( arg, "w"  ) || !str_cmp( arg, "west"	  ) ) door = 3;
-    else if ( !str_cmp( arg, "u"  ) || !str_cmp( arg, "up"	  ) ) door = 4;
-    else if ( !str_cmp( arg, "d"  ) || !str_cmp( arg, "down"	  ) ) door = 5;
-    else if ( !str_cmp( arg, "ne" ) || !str_cmp( arg, "northeast" ) ) door = 6;
-    else if ( !str_cmp( arg, "nw" ) || !str_cmp( arg, "northwest" ) ) door = 7;
-    else if ( !str_cmp( arg, "se" ) || !str_cmp( arg, "southeast" ) ) door = 8;
-    else if ( !str_cmp( arg, "sw" ) || !str_cmp( arg, "southwest" ) ) door = 9;
+	 if ( !str_cmp( arg, "n"  ) || !str_cmp( arg, "norte"	  ) ) door = 0;
+    else if ( !str_cmp( arg, "l"  ) || !str_cmp( arg, "leste"	  ) ) door = 1;
+    else if ( !str_cmp( arg, "s"  ) || !str_cmp( arg, "sur"	  ) ) door = 2;
+    else if ( !str_cmp( arg, "o"  ) || !str_cmp( arg, "oeste"	  ) ) door = 3;
+    else if ( !str_cmp( arg, "su" ) || !str_cmp( arg, "subir"	  ) ) door = 4;
+    else if ( !str_cmp( arg, "b"  ) || !str_cmp( arg, "baixar"	  ) ) door = 5;
+    else if ( !str_cmp( arg, "nl" ) || !str_cmp( arg, "norleste"  ) ) door = 6;
+    else if ( !str_cmp( arg, "no" ) || !str_cmp( arg, "noroeste"  ) ) door = 7;
+    else if ( !str_cmp( arg, "sl" ) || !str_cmp( arg, "surleste"  ) ) door = 8;
+    else if ( !str_cmp( arg, "so" ) || !str_cmp( arg, "suroeste"  ) ) door = 9;
     else door = -1;
     return door;
 }
@@ -1158,23 +1158,23 @@ void do_look( CHAR_DATA *ch, char *argument )
 				if( pexit->vdir == DIR_NORTH )
 					sprintf( dir_n, "%sN", exitcolor );
 				if( pexit->vdir == DIR_EAST )
-					sprintf( dir_e, "%sE", exitcolor );
+					sprintf( dir_e, "%sL", exitcolor );
 				if( pexit->vdir == DIR_SOUTH )
 					sprintf( dir_s, "%sS", exitcolor );
 				if( pexit->vdir == DIR_WEST )
-					sprintf( dir_w, "%sW", exitcolor );
+					sprintf( dir_w, "%sO", exitcolor );
 				if( pexit->vdir == DIR_UP )
-					sprintf( dir_u, "%sU", exitcolor );
+					sprintf( dir_u, "%sSU", exitcolor );
 				if( pexit->vdir == DIR_DOWN )
-					sprintf( dir_d, "%sD", exitcolor );
+					sprintf( dir_d, "%sB", exitcolor );
 				if( pexit->vdir == DIR_NORTHEAST )
-					sprintf( dir_ne, "%sNE", exitcolor );
+					sprintf( dir_ne, "%sNL", exitcolor );
 				if( pexit->vdir == DIR_NORTHWEST )
-					sprintf( dir_nw, "%sNW", exitcolor );
+					sprintf( dir_nw, "%sNO", exitcolor );
 				if( pexit->vdir == DIR_SOUTHEAST )
-					sprintf( dir_se, "%sSE", exitcolor );
+					sprintf( dir_se, "%sSL", exitcolor );
 				if( pexit->vdir == DIR_SOUTHWEST )
-					sprintf( dir_sw, "%sSW", exitcolor );
+					sprintf( dir_sw, "%sSO", exitcolor );
 			}
 		}
 
@@ -1996,7 +1996,7 @@ void do_exits( CHAR_DATA *ch, char *argument )
 	return;
 
     set_char_color( AT_EXITS, ch );
-    ch_printf_color( ch, "%s", fAuto ? "Exits: " : "Obvious exits:\n\r" );
+    ch_printf_color( ch, "%s", fAuto ? "Saidas: " : "Saidas obvias:\n\r" );
     found = FALSE;
     for ( pexit = ch->in_room->first_exit; pexit; pexit = pexit->next )
     {
@@ -2034,7 +2034,7 @@ void do_exits( CHAR_DATA *ch, char *argument )
 		sprintf( buf + strlen(buf), "%-5s - %s\n\r",
 		    capitalize( dir_name[pexit->vdir] ),
 		    room_is_dark( pexit->to_room )
-			?  "Too dark to tell"
+			?  "Demasiado oscuro para contalo"
 			: pexit->to_room->name
 		    );
 	    }
@@ -2042,7 +2042,7 @@ void do_exits( CHAR_DATA *ch, char *argument )
     }
 
     if ( !found )
-	strcat( buf, fAuto ? "none\n\r" : "None\n\r" );
+	strcat( buf, fAuto ? "none\n\r" : "Ningunha\n\r" );
     else
     if ( fAuto )
 	strcat( buf, "\n\r" );
@@ -2082,10 +2082,10 @@ void do_time( CHAR_DATA *ch, char *argument )
 
     set_char_color( AT_YELLOW, ch );
     ch_printf( ch,
-	"It is %d o'clock %s, Day of %s, %d%s the Month of %s.\n\r"  
-        "The mud started up at:    %s\r"
-        "The system time (E.S.T.): %s\r"
-        "Next Reboot is set for:   %s\r",
+	"Son as %d en punto %s, Dia de %s, %d%s do mes de %s.\n\r"  
+        "Kallaikia comezou en:    %s\r"
+        "Hora do sistema (GMT+1): %s\r"
+        "Proximo reinicio:   %s\r",
 
 	(time_info.hour % 12 == 0) ? 12 : time_info.hour % 12,
 	time_info.hour >= 12 ? "pm" : "am",
@@ -2147,7 +2147,7 @@ void do_weather(CHAR_DATA *ch, char *argument)
 
 	if ( !IS_OUTSIDE(ch) )
 	{
-	    ch_printf(ch, "You can't see the sky from here.\n\r");
+	    ch_printf(ch, "Non podes ver o ceo dende aqui.\n\r");
 	    return;
 	}
 
@@ -2169,7 +2169,7 @@ void do_weather(CHAR_DATA *ch, char *argument)
 	    single = precip_msg[precip];
 	}
 	
-	sprintf(buf, "%s and %s.\n\r", combo, single);
+	sprintf(buf, "%s e %s.\n\r", combo, single);
 	
 	set_char_color(AT_BLUE, ch);
 	

@@ -684,7 +684,7 @@ Log         0
 End
 
 #COMMAND
-Name        abaixo~
+Name        baixar~
 Code        do_down
 Position    112
 Level       0
@@ -4208,7 +4208,7 @@ Log         0
 End
 
 #COMMAND
-Name        arriba~
+Name        subir~
 Code        do_up
 Position    112
 Level       0

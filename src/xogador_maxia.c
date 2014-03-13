@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <string.h>
 #ifdef sun
-  #include <strings.h>
+#include <strings.h>
 #endif
 #include <time.h>
 #include "kallaikia.h"
@@ -3630,7 +3630,7 @@ ch_ret spell_locate_object( int sn, int level, CHAR_DATA *ch, void *vo )
 	{
 	    sprintf( buf, "%s in %s.\n\r",
 		obj_short(obj), in_obj->in_room == NULL
-		    ? "somewhere" : in_obj->in_room->name );
+		    ? "algures" : in_obj->in_room->name );
 	}
 
 	buf[0] = UPPER(buf[0]);

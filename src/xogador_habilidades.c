@@ -5349,7 +5349,7 @@ ch_ret ranged_attack( CHAR_DATA *ch, char *argument, OBJ_DATA *weapon,
     char buf[MAX_STRING_LENGTH];
     SKILLTYPE *skill = NULL;
     sh_int dir = -1, dist = 0, color = AT_GREY;
-    char *dtxt = "somewhere";
+    char *dtxt = "algures";
     char *stxt = "burst of energy";
     int count;
 

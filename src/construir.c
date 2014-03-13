@@ -207,8 +207,8 @@ char *	const	plr_flags [] =
 char *	const	trap_flags [] =
 {
 "room", "obj", "enter", "leave", "open", "close", "get", "put", "pick",
-"unlock", "north", "south", "east", "west", "up", "down", "examine",
-"northeast", "northwest", "southeast", "southwest", "r6", "r7", "r8", 
+"unlock", "norte", "sur", "leste", "oeste", "subir", "baixar", "examine",
+"norleste", "noroeste", "surleste", "suroeste", "r6", "r7", "r8", 
 "r9", "r10", "r11", "r12", "r13", "r14", "r15" 
 };
 
@@ -4405,15 +4405,15 @@ int get_dir( char *txt )
     int edir;
     char c1,c2;
 
-    if ( !str_cmp( txt, "northeast" ) )
+    if ( !str_cmp( txt, "norleste" ) )
       return DIR_NORTHEAST;
-    if ( !str_cmp( txt, "northwest" ) )
+    if ( !str_cmp( txt, "noroeste" ) )
       return DIR_NORTHWEST;
-    if ( !str_cmp( txt, "southeast" ) )
+    if ( !str_cmp( txt, "surleste" ) )
       return DIR_SOUTHEAST;
-    if ( !str_cmp( txt, "southwest" ) )
+    if ( !str_cmp( txt, "suroeste" ) )
       return DIR_SOUTHWEST;
-    if ( !str_cmp( txt, "somewhere" ) )
+    if ( !str_cmp( txt, "algures" ) )
       return 10;
 
     c1 = txt[0];
@@ -4427,22 +4427,23 @@ int get_dir( char *txt )
 	  switch ( c2 )
 	  {
 		    default:   edir = 0; break;	/* north */
-		    case 'e':  edir = 6; break; /* ne	 */
-		    case 'w':  edir = 7; break; /* nw	 */
+		    case 'l':  edir = 6; break; /* ne	 */
+		    case 'o':  edir = 7; break; /* nw	 */
 	  }
 	  break;    case '0':  edir = 0; break; /* north */
-	  case 'e': case '1':  edir = 1; break; /* east  */
+	  case 'l': case '1':  edir = 1; break; /* east  */
 	  case 's':
 	  switch ( c2 )
 	  {
 		    default:   edir = 2; break; /* south */
-		    case 'e':  edir = 8; break; /* se	 */
-		    case 'w':  edir = 9; break; /* sw	 */
+		    case 'l':  edir = 8; break; /* se	 */
+		    case 'o':  edir = 9; break; /* sw	 */
+	            case 'u':  edir = 4; break; /* up	 */
 	  }
-	  break;    case '2':  edir = 2; break; /* south */
-	  case 'w': case '3':  edir = 3; break; /* west	 */
+	  break; case '2':  edir = 2; break; /* south */
+	  case 'o': case '3':  edir = 3; break; /* west	 */
 	  case 'u': case '4':  edir = 4; break; /* up	 */
-	  case 'd': case '5':  edir = 5; break; /* down	 */
+	  case 'b': case '5':  edir = 5; break; /* down	 */
 		    case '6':  edir = 6; break; /* ne	 */
 		    case '7':  edir = 7; break; /* nw	 */
 		    case '8':  edir = 8; break; /* se	 */
@@ -4812,32 +4813,32 @@ void do_redit( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg, "substate" ) )
     {
 	  argument = one_argument( argument, arg2);
-          if( !str_cmp( arg2, "north" )  )
+          if( !str_cmp( arg2, "norte" )  )
 	  {
                ch->inter_substate = SUB_NORTH; 
 	       return;
 	  }
-          if( !str_cmp( arg2, "east" )  )
+          if( !str_cmp( arg2, "leste" )  )
 	  {
                ch->inter_substate = SUB_EAST; 
 	       return;
 	  }
-          if( !str_cmp( arg2, "south" )  )
+          if( !str_cmp( arg2, "sur" )  )
 	  {
                ch->inter_substate = SUB_SOUTH; 
 	       return;
 	  }
-          if( !str_cmp( arg2, "west" )  )
+          if( !str_cmp( arg2, "oeste" )  )
 	  {
                ch->inter_substate = SUB_WEST; 
 	       return;
 	  }
-          if( !str_cmp( arg2, "up" )  )
+          if( !str_cmp( arg2, "subir" )  )
 	  {
                ch->inter_substate = SUB_UP; 
 	       return;
 	  }
-          if( !str_cmp( arg2, "down" )  )
+          if( !str_cmp( arg2, "baixar" )  )
 	  {
                ch->inter_substate = SUB_DOWN; 
 	       return;
@@ -5241,11 +5242,11 @@ void do_redit( CHAR_DATA *ch, char *argument )
 	argument = one_argument( argument, arg2 );
         switch(ch->inter_substate)
 	{
-	    case SUB_EAST : dir = 'e'; edir = 1; break;
-	    case SUB_WEST : dir = 'w'; edir = 3; break;
+	    case SUB_EAST : dir = 'l'; edir = 1; break;
+	    case SUB_WEST : dir = 'o'; edir = 3; break;
 	    case SUB_SOUTH: dir = 's'; edir = 2; break;
 	    case SUB_UP   : dir = 'u'; edir = 4; break;
-	    case SUB_DOWN : dir = 'd'; edir = 5; break;
+	    case SUB_DOWN : dir = 'b'; edir = 5; break;
 	    default:
 	    case SUB_NORTH: dir = 'n'; edir = 0; break;
 	}
@@ -5272,11 +5273,11 @@ void do_redit( CHAR_DATA *ch, char *argument )
 	argument = one_argument( argument, arg2 );
         switch(ch->inter_substate)
 	{
-	    case SUB_EAST : dir = 'e'; edir = 1; break;
-	    case SUB_WEST : dir = 'w'; edir = 3; break;
+	    case SUB_EAST : dir = 'l'; edir = 1; break;
+	    case SUB_WEST : dir = 'o'; edir = 3; break;
 	    case SUB_SOUTH: dir = 's'; edir = 2; break;
 	    case SUB_UP   : dir = 'u'; edir = 4; break;
-	    case SUB_DOWN : dir = 'd'; edir = 5; break;
+	    case SUB_DOWN : dir = 'b'; edir = 5; break;
 	    default:
 	    case SUB_NORTH: dir = 'n'; edir = 0; break;
 	}
@@ -5306,11 +5307,11 @@ void do_redit( CHAR_DATA *ch, char *argument )
 	argument = one_argument( argument, arg2 );
         switch(ch->inter_substate)
 	{
-	    case SUB_EAST : dir = 'e'; edir = 1; break;
-	    case SUB_WEST : dir = 'w'; edir = 3; break;
+	    case SUB_EAST : dir = 'l'; edir = 1; break;
+	    case SUB_WEST : dir = 'o'; edir = 3; break;
 	    case SUB_SOUTH: dir = 's'; edir = 2; break;
 	    case SUB_UP   : dir = 'u'; edir = 4; break;
-	    case SUB_DOWN : dir = 'd'; edir = 5; break;
+	    case SUB_DOWN : dir = 'b'; edir = 5; break;
 	    default:
 	    case SUB_NORTH: dir = 'n'; edir = 0; break;
 	}
@@ -5328,11 +5329,11 @@ void do_redit( CHAR_DATA *ch, char *argument )
     {
         switch(ch->inter_substate)
 	{
-	    case SUB_EAST : dir = 'e'; edir = 1; break;
-	    case SUB_WEST : dir = 'w'; edir = 3; break;
+	    case SUB_EAST : dir = 'l'; edir = 1; break;
+	    case SUB_WEST : dir = 'o'; edir = 3; break;
 	    case SUB_SOUTH: dir = 's'; edir = 2; break;
 	    case SUB_UP   : dir = 'u'; edir = 4; break;
-	    case SUB_DOWN : dir = 'd'; edir = 5; break;
+	    case SUB_DOWN : dir = 'b'; edir = 5; break;
 	    default:
 	    case SUB_NORTH: dir = 'n'; edir = 0; break;
 	}
@@ -5350,11 +5351,11 @@ void do_redit( CHAR_DATA *ch, char *argument )
     {
         switch(ch->inter_substate)
 	{
-	    case SUB_EAST : dir = 'e'; edir = 1; break;
-	    case SUB_WEST : dir = 'w'; edir = 3; break;
+	    case SUB_EAST : dir = 'l'; edir = 1; break;
+	    case SUB_WEST : dir = 'o'; edir = 3; break;
 	    case SUB_SOUTH: dir = 's'; edir = 2; break;
 	    case SUB_UP   : dir = 'u'; edir = 4; break;
-	    case SUB_DOWN : dir = 'd'; edir = 5; break;
+	    case SUB_DOWN : dir = 'b'; edir = 5; break;
 	    default:
 	    case SUB_NORTH: dir = 'n'; edir = 0; break;
 	}

@@ -59,10 +59,10 @@ convivían, loitaban e disfrutaban polo encanto da nosa fermosa terra ... **Kall
 
 * Engadíronse **Novas Clases** cos suas habilidades:
 
-	- **Demon**
-	- **Angel**
-	- **Assassin**
-	- **Archer**
+	- **Demon -> Demo **
+	- **Angel -> Anxo **
+	- **Assassin -> Asasino **
+	- **Archer -> Arqueiro **
 
 * Engadíronse os **Clans** para as novas clases.
 
@@ -98,7 +98,7 @@ convivían, loitaban e disfrutaban polo encanto da nosa fermosa terra ... **Kall
 
 * Traducción da estructura de ficheiros ao Galego.
 
-####COMANDOS TRADUCIDOS
+####COMANDOS TRADUCIDOS A GALEGO
 
 Listado de comandos traducidos:
 
@@ -157,8 +157,8 @@ Listado de comandos traducidos:
 - nw -> no
 - se -> sl
 - sw -> so
-- up -> arriba
-- down -> abaixo
+- up -> subir (su)
+- down -> baixar (b)
 - close -> fechar
 - open -> abrir
 - exits -> saidas

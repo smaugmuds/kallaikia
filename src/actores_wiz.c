@@ -7983,7 +7983,7 @@ void do_vsearch( CHAR_DATA *ch, char *argument )
 	  pager_printf( ch, "[%2d] [%-5d] %s in %s.\n\r", obj_counter,
 		( ( in_obj->in_room ) ? in_obj->in_room->vnum : 0 ),
 		obj_short(obj), ( in_obj->in_room == NULL ) ?
-		"somewhere" : in_obj->in_room->name );
+		"algures" : in_obj->in_room->name );
 
 	obj_counter++;
     }

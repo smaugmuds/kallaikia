@@ -3641,12 +3641,12 @@ void do_memory( CHAR_DATA *ch, char *argument )
  
     set_char_color( AT_PLAIN, ch );
     argument = one_argument( argument, arg );
-    send_to_char_color( "\n\r&wSystem Memory [arguments - hash, check, showhigh]\n\r", ch );
-    ch_printf_color( ch, "&wAffects: &W%5d\t\t\t&wAreas:   &W%5d\n\r",
+    send_to_char_color( "\n\r&wMemoria Sistema [arguments - hash, check, showhigh]\n\r", ch );
+    ch_printf_color( ch, "&wAfectos: &W%5d\t\t\t&wZonas:   &W%5d\n\r",
         top_affect, top_area   );
-    ch_printf_color( ch, "&wExtDes:  &W%5d\t\t\t&wExits:   &W%5d\n\r",
+    ch_printf_color( ch, "&wExtDes:  &W%5d\t\t\t&wSaidas:   &W%5d\n\r",
         top_ed,     top_exit   );
-    ch_printf_color( ch, "&wHelps:   &W%5d\t\t\t&wResets:  &W%5d\n\r",
+    ch_printf_color( ch, "&wAxudas:   &W%5d\t\t\t&wResets:  &W%5d\n\r",
         top_help,   top_reset  );
     ch_printf_color( ch, "&wIdxMobs: &W%5d\t\t\t&wMobiles: &W%5d\n\r",
         top_mob_index, nummobsloaded );
@@ -3654,11 +3654,11 @@ void do_memory( CHAR_DATA *ch, char *argument )
         top_obj_index, numobjsloaded, physicalobjects );
     ch_printf_color( ch, "&wRooms:   &W%5d\t\t\t&wVRooms:  &W%5d\n\r",
         top_room,   top_vroom   );
-    ch_printf_color( ch, "&wShops:   &W%5d\t\t\t&wRepShps: &W%5d\n\r",
+    ch_printf_color( ch, "&wTendass:   &W%5d\t\t\t&wRepShps: &W%5d\n\r",
         top_shop,   top_repair );
     ch_printf_color( ch, "&wCurOq's: &W%5d\t\t\t&wCurCq's: &W%5d\n\r",
         cur_qobjs,  cur_qchars );
-    ch_printf_color( ch, "&wPlayers: &W%5d\t\t\t&wMaxplrs: &W%5d\n\r",
+    ch_printf_color( ch, "&wXogadores: &W%5d\t\t\t&wMaxplrs: &W%5d\n\r",
         num_descriptors, sysdata.maxplayers );
     ch_printf_color( ch, "&wMaxEver: &W%5d\t\t\t&wTopsn:   &W%5d(%d)\n\r",
  	sysdata.alltimemax, top_sn, MAX_SKILL );
