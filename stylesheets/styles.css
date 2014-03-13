@@ -822,6 +822,7 @@ section #title .credits.right {
 
 .descargas nav {
   max-width: 650px;
+  min-height: 80px;
   margin: 0 auto;
   padding: 0 10px;
   margin: 6px auto;
@@ -883,7 +884,7 @@ section #title .credits.right {
 }
 
 .descargas nav li.downloads {
-  float: right;
+  float: left;
   margin-left: 6px;
 }
 
