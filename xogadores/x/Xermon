@@ -6,7 +6,7 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       128814
+Played       138274
 Room         10319
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
@@ -45,11 +45,11 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         217.124.245.87
+Site         orion.local.lan
 Tongue       100 'common'
-AffectData   'bless' 186   3  18 0
-AffectData   'bless' 186  -3  24 0
-AffectData   'armor' 196 -20  17 0
+AffectData   'bless' 183   3  18 0
+AffectData   'bless' 183  -3  24 0
+AffectData   'armor' 121 -20  17 0
 End
 
 #END

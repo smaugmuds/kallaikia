@@ -259,7 +259,7 @@ kbd,
 samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
-  font-size: 1em;
+  font-size: 10px;
 }
 
 /*
@@ -609,10 +609,10 @@ strong {
 }
 
 .wrapper {
-  max-width: 650px;
+  max-width: 800px;
   margin: 0 auto;
   position: relative;
-  padding: 0 20px;
+  padding: 0px;
 }
 
 section img {
@@ -702,7 +702,6 @@ dt {
   z-index: 100;
   left: 0;
   top: 0px;
-  height: 60px;
   width: 100%;
   position: fixed;
   background: url(../images/nav-bg.gif) #353535;
@@ -785,15 +784,15 @@ dt {
 }
 
 section {
-  max-width: 650px;
+  max-width: 800px;
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 section #title {
   border: 0;
   outline: none;
-  margin: 0 0 50px 0;
+  margin: 0 0 10px 0;
   padding: 0 0 5px 0;
 }
 section #title h1 {
@@ -825,7 +824,7 @@ section #title .credits.right {
 }
 
 .descargas nav {
-  max-width: 650px;
+  max-width: 800px;
   min-height: 40px;
   margin: 0 auto;
   padding: 0 10px;
