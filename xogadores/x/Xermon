@@ -6,8 +6,8 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       98203
-Room         10300
+Played       127607
+Room         10319
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -25,9 +25,9 @@ Favor	       0
 Glory        0
 MGlory       0
 Honour       0
-Hitroll      0
+Hitroll      3
 Damroll      0
-Armor        1000
+Armor        980
 Wimpy        200
 Mentalstate  -100
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
@@ -45,8 +45,11 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         localhost
+Site         217.124.245.87
 Tongue       100 'common'
+AffectData   'bless'  18   3  18 0
+AffectData   'bless'  18  -3  24 0
+AffectData   'armor'  14 -20  17 0
 End
 
 #END
