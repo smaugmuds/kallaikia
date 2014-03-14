@@ -1993,63 +1993,63 @@ riba dos fogares cara o norleste.
 ~
 0 1081344 1
 D0
-Vertic Avenue lies to the north.
+A Avenida Nordica cae cara o norte.
 ~
 ~
 0 -1 21001
 D1
-To the east lies Horizon Road.
+Cara o Leste cae a Rua Media.
 ~
 ~
 0 -1 21043
 D2
-Vertic Avenue lies to the south.
+A Avenida Nordica cae cara o sur.
 ~
 ~
 0 -1 21042
 D3
-To the west lies Horizon Road.
+Cara o Oeste cae a Rua Media.
 ~
 ~
 0 -1 21039
 D4
-You gaze up into the air.
+Levantaste no aire.
 ~
 ~
 0 -1 21337
 D6
-The forested path continues...
+O caminho arbolado continua ...
 ~
 ~
 0 -1 21200
 D7
-The forested path leads up to the cathedral.
+O caminho arborado leva cara a torre.
 ~
 ~
 0 -1 21163
 E
 sign post signpost~
-North - Vertic Avenue
-        - To Justice Road
-East  - Horizon Road
-        - To Hawk Street
-South - Vertic Avenue
-        - To Horizon Road
-        - To Market Street
-        - To Law Avenue
-West  - Horizon Road
-        - To Falcon Road
-Northwest - Cathedral
-            - To the Guild of Clerics
-            - To the Guild of Druids
-            - To the cathdral altar
-Northeast - Forest
-            - To the Guild of Rangers
-            - To the Guild of Warriors
+Norte    - Avenida Nordica
+            - A Rua da Xustiza
+Leste    - Rua Media
+            - A Rua do Falcon
+Sur      - Avenida Nordica
+            - A Rua Media
+            - A Rua do Mercado
+            - A Avenida das Leis
+Oeste    - Rua Media
+            - A Rua do Falcon
+Noroeste - Torre de Ith
+            - A Irmandade dos Clerigos
+            - A Irmandade dos Druidas
+            - Ao Altar da Torre
+Noreste  - Fraga
+            - A Irmandade dos Cazadores
+            - A Irmandade dos Guerreiros
 ~
 S
 #21001
-Vertic Avenue~
+Avenida Nordica~
 Here the roadway passes by a circular platform, atop which stands a man of
 ultimately stern countenance.  A wall surrounding the cathedral rises to
 the west, and a small forested area lines the eastern roadway.  Vertic

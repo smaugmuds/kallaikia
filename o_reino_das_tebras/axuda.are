@@ -1,12 +1,12 @@
 #AXUDAS
 
 0 !~
-Syntax: !
+Sintaxis: !
 
-! repeats the last command you typed.
+! repite o ultimo comando tecleado.
 ~
 
-1 "ANCIENT CITY OF AURORA" AURORA~
+1 "ISLA DE AVALON" AVALON~
 Suggested level range: 15 - 35
  
 Legend speaks of a mystical city isolated from all civilization by a 
@@ -18,12 +18,12 @@ exists. Aurora now stands ready for curious individuals to explore its
 streets and meet its citizens.
 ~
 
-2 "ARMOR CLASS" ARMORCLASS ARMOR_LEVELS AC~
-The following lists the armor scale as listed on the 'score' sheet.
+2 "CLASE ARMADURA" CLASEARMADURA ARMADURA_NIVEIS CA~
+The following lists the armor scale as listed on the 'puntuacion' sheet.
 Once you reach level 25 you are able to see the numerical value of your
-armor class, until then this will serve as a 'guide':
+armor class, until then this will serve as a 'guia':
  
-  AC           |  Description
+  CA           |  Description
 ---------------------------------------------------
 +101 and up    |  the rags of a beggar   (worst AC)
 +100  -  +80   |  improper for adventure
@@ -67,7 +67,7 @@ guarantees the safety of all that reside in the park. After
 nightfall however, anything can happen.
 ~
 
-62 "LAWS CHANNELS"~
+62 "CANAIS LEIS"~
 ~
 
 57 "MASSIGN" "OASSIGN" "RASSIGN"~
@@ -8850,18 +8850,16 @@ do not ask them to arbitrate your disputes.
 See also: RETIRED
 ~
 
-1 GUIDE~
-All players get a copy of The adventurer's guide to the Realms of Despair
-when they enter the game.  To use this guide, type LOOK BOOK.  This guide
-has been created to answer the most commonly asked questions and to give
-you a general grasp of the commands and rules of the game. 
+1 GUIA~
+Todos os xogadores obtenhen unha copia da Guia do Aventureiro de Kallaikia
+cando entran no xogo. Para usar esta guia, teclea MIRAR LIBRO. Esta guia
+foi creada para respostar as preguntas mais comuns e para darche unha
+vision xeral das regras do xogo.
+
+E mellor que revises esta Guia detidamente antes de adentrarte no noso
+mundo, sobre todo se eres novo en estes Reinos das Tebras.
  
-This first section of the Guide deals with commonly asked questions.  It's
-advised that you take the time to read this section first if you are new
-to our Realms.  
- 
-Please enclose in text or subject that you would like a copy of the guide.
-If you have problems understanding matters in the guide type:  &BAXUDA NC
+Se tes problemas entendendo os temas da guia teclea: &BAXUDA NC
 ~
 
 2 GUILD GUILDS~
@@ -9157,15 +9155,17 @@ To release a player from hell, simply "unhell <character>".
 ~
 
 0 AXUDA AXUDAFILES AXUDAFILE~
-The helpfile system of the Realms of Despair has been created to aid
-game play as well as provide valuable information for players.
- 
-To access these files, type AXUDA topic and the information will appear.
-If no help is available on that topic, similar helpfiles will be
-suggested.  A list of sample topics can be seen under AXUDA INICIO.
- 
-Before asking a question on a public channel or requesting help from
-another player, try looking up the helpfile.  For example, try AXUDA LEVERS.
+O sistema de axuda de Kallaikia foi creado para asistir no xogo asi
+como para publicar informacion de valor para os xogadores.
+
+Para acceder a este sistema, teclea AXUDA tema e a informacion aparecera.
+
+Se non existe axuda en ese tema, unha paxina similar sera suxerida, un
+listado de temas pode ser obtido tecleando AXUDA INICIO.
+
+Antes de preguntar sobre unha cuestion en unha canle publica ou requerir
+axuda de outro xogador, proba a mirar as paxinas de axuda. Por exemplo:
+AXUDA LEVERS
 ~
 
 60 AXUDA KONTAUR~
@@ -9534,7 +9534,7 @@ of lower level than you, and to all mobiles.
 
 When an immortal is INVIS, they will have a flag on the who list which 
 indicates their level of invisibility, such as (51) for INVIS 51.  A 
-similar flag will also appear when you 'LOOK' in a room - this flag will 
+similar flag will also appear when you 'MIRAR' in a room - this flag will 
 say (Invis 51).
 
 HOLYLIGHT will not allow you to see immortal INVIS characters who are
@@ -17778,12 +17778,10 @@ wholehearted effort to oppose the forces of Evil.
 ~
 
 1 'NOVO' 'NOVATO' 'CHATNOVATOS' 'INICIO' 'COMEZAR' 'COMEZO'~
-If you are new to the Realms, here are a few help files that will help you
-get acquainted with our world. Please remember that during peak times
-we host updwards of 500+ players online, so we have tried to make the help
-system as detailed as possible for everyone's benefit:
+Si eres novo en Kallaikia, existen alguns ficheiros de axuda que che poden
+axudar en este mundo. 
  
-GUIDE -       Will help you learn to use your Adventurers Guide Book.
+GUIA -        Will help you learn to use your Adventurers Guide Book.
 RULES -       Will lead you through the laws of the land.
 SPAM -        Will explain what spam is, and why you should not do it.
 CONFIG -      Will teach you about our configuration menu.
@@ -18539,20 +18537,21 @@ by the pull/push force.
 See also: pulltypes, pullforces
 ~
 
-1 OBJECTS~
-To see the objects you currently possess, type INVENTORY and EQUIPMENT>
-INVENTORY is the items you are carrying, but are not currently wearing.
-EQUIPMENT shows you the equipment you are currently wearing.
+1 OBXETOS~
+Para ver os obxetos que posees actualmente, teclea INVENTARIO e EQUIPAMENTO:
+
+INVENTARIO son os obxetos que estas transportando contigo, pero que non vistes.
+EQUIPAMENTO mostra o equipamento vestido. 
  
-You may WEAR, WIELD, or HOLD equipment to use it.  To stop using a piece
-of equipment, you REMOVE it.  Before you may wield a new weapon, you must
-first REMOVE the old weapon. 
+Ti debes VESTIR, EMPUNHAR, ou SOSTER equipamento para poder usalo. Para deixar de
+usar algunha parte do equipo, debes ELIMINAR esa parte. Antes de EMPUNHAR unha
+nova arma, debes ELIMINAR a anterior. 
  
-You can gain information on your objects by using LOOK or EXAMINE.  EXAMINE
-tells you the condition of your item, as a more detailed form of LOOK.
+You can gain information on your objects by using MIRAR or EXAMINAR.  EXAMINAR
+tells you the condition of your item, as a more detailed form of MIRAR.
  
 To find out more information on objects, read sections 9, 10 and 17 of your
-Adventurer's Guide book.
+Guia do Aventureiro.
 ~
 
 56 OBJECTTEMPLATE~

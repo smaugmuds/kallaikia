@@ -6,8 +6,8 @@ Class        3
 Race         0
 Languages    1 1
 Level        2
-Played       934
-Room         21036
+Played       1190
+Room         21201
 HpManaMove   34 34 100 100 110 110
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -39,7 +39,7 @@ MDeaths      0
 IllegalPK    0
 AttrPerm     18 16 12 12 12 13 12
 AttrMod      0 0 0 0 0 0 0
-Condition    0 36 36 10
+Condition    0 33 33 10
 Site         139.Red-79-146-234.dynamicIP.rima-tde.net
 Tongue       100 'common'
 End

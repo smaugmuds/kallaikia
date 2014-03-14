@@ -1,6 +1,4 @@
-#AREA   Unholy Grounds~
-
-
+#AREA Camposanto dos desterrados~
 
 #AUTHOR Eldaera~
 
@@ -8,7 +6,7 @@
 5 15 0 60
 $
 
-#RESETMSG The grief of mourners is audible throughout the burial ground...~
+#RESETMSG Os gritos dos desterrados poden oirse a través dos lamentos que trae o vento ...~
 
 #FLAGS
 0 10
@@ -249,14 +247,13 @@ the unholy confines of the cemetery.
 0 0 99385 0 0 0 0 0
 #0
 
-
 #OBJECTS
 #2101
 robe muddy~
 a gravedigger's muddy robe~
 A gravedigger's robe lays here caked in mud.~
 ~
-9 0 9
+9 0 9 0
 5 0 0 0
 5 320 32
 A
@@ -266,7 +263,7 @@ shawl black~
 a black woolen shawl~
 A mourner's shawl lays here in a crumpled pile.~
 ~
-9 4 9
+9 4 9 0
 5 4 0 0
 4 840 84
 A
@@ -276,7 +273,7 @@ gravedigger spade shovel~
 a gravedigger's spade~
 A rusty gravedigger's shovel has been stuck into the ground.~
 ~
-5 524288 8193
+5 524288 8193 0
 0 2 7 4
 9 900 90
 A
@@ -288,7 +285,7 @@ headstone plaque~
 a headstone's stolen plaque~
 Stolen from a headstone, a brass plaque has been dropped here.~
 ~
-9 524288 513
+9 524288 513 0
 4 4 0 0
 5 540 54
 A
@@ -300,7 +297,7 @@ crucifix wooden cross~
 a shattered crucifix~
 An old wooden crucifix lays here, shattered into several pieces.~
 ~
-3 2 16385
+3 2 16385 0
 11 3 3 22
 1 300 30
 #2106
@@ -308,7 +305,7 @@ chisel rusted~
 a graverobber's chisel~
 A rusty chisel has been dropped here.~
 ~
-5 524292 8193
+5 524292 8193 0
 0 7 2 11
 3 354 35
 A
@@ -320,7 +317,7 @@ slippers mourner black~
 black pair of slippers caked with mud~
 A pair of black slippers are here covered in mud.~
 ~
-9 4 65
+9 4 65 0
 3 0 0 0
 3 760 76
 A
@@ -332,7 +329,7 @@ bible~
 a preacher's bible~
 A tattered old bible lays on the ground gathering dust.~
 ~
-4 1345 16385
+4 1345 16385 0
 6 2 2 56
 1 1000 100
 #2109
@@ -340,7 +337,7 @@ gold bracelet~
 Arabella's golden bracelet~
 Arabella's shiny gold bracelet lays twinklink brightly on the ground.~
 ~
-9 524544 257
+9 524544 257 0
 2 0 0 0
 2 500 50
 A
@@ -354,7 +351,7 @@ cane widow ebony~
 a widow's cane~
 A shiny black ebony cane rests on the ground.~
 ~
-5 4 8193
+5 4 8193 0
 0 1 12 7
 3 675 67
 A
@@ -366,7 +363,7 @@ ring diamond Thomas~
 a golden ring encrusted with diamonds~
 A small, glittering diamond ring lays on the ground, sparkling brightly.~
 ~
-9 1 3
+9 1 3 0
 4 0 0 0
 1 10000 1000
 A
@@ -380,7 +377,7 @@ gloves skin chunk~
 gloves of rotten flesh~
 A leathery chunk of flesh is here decaying in a pool of blood.~
 ~
-9 262144 129
+9 262144 129 0
 -15 0 0 0
 1 2000 200
 A
@@ -394,7 +391,7 @@ pine coffin~
 Thomas' pine coffin~
 An old, moldy pine box lays here, broken in several places.~
 ~
-12 262144 0
+12 262144 0 0
 0 0 0 0
 1000 0 0
 #2114
@@ -402,31 +399,31 @@ fountain granite~
 a crumbling fountain~
 A crumbling granite fountain stands here, filled with stagnant water.~
 ~
-25 0 0
+25 0 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2115
 tree dead fall~
 a large dead tree~
 A giant tree has fallen here, blocking your way to the east.~
 ~
-12 262144 0
+12 262144 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2116
 glass coffin~
 Anastacia's glass coffin~
 A crystal clear coffin made of glass lies upon a platform of swirled marble.~
 ~
-15 0 0
+15 0 0 0
 2 0 0 0
-0 0 0
+1 0 0
 #2117
 petals rose bed~
 a bed of scattered white rose petals~
 Thousands of white rose petals lay here, a floral bed of scented softness.~
 ~
-13 262144 0
+13 262144 0 0
 0 0 0 0
 2 0 0
 #2118
@@ -434,7 +431,7 @@ lily flower~
 a large white lily~
 A large white flower grows along the earth.~
 ~
-13 262144 16385
+13 262144 16385 0
 0 0 0 0
 1 0 0
 A
@@ -444,7 +441,7 @@ bell brass cracked rope~
 a shriveled rope attached to a bell~
 A large brass bell hangs from the ceiling, suspended from a rotten wooden beam.~
 ~
-37 524288 0
+37 524288 0 0
 0 0 0 0
 1000 0 0
 > push_prog 100~
@@ -461,7 +458,7 @@ veil black~
 a thin black veil~
 A ragged black veil has been tossed here.~
 ~
-9 4 131073
+9 4 131073 0
 4 4 0 0
 5 970 97
 A
@@ -473,83 +470,82 @@ swirled headstone~
 a swirled black marble headstone~
 A swirled marble headstone lays on its side, sinking in the earth.~
 ~
-12 0 0
+12 0 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2122
 rugged cross~
 old rugged cross~
 A splintered old cross stands here, entangled in vines.~
 ~
-12 0 0
+12 0 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2123
 piles corpse limbs~
 mangled limbs and bloody corpses~
 Several piles of decapitated corpses and mangled limbs litter the ground.~
 ~
-12 0 0
+12 0 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2124
 corpse suicide rope~
 decaying corpse hanging from a rope~
 Dangling from an old rotten rope, a decaying corpse sways in the wind.~
 ~
-12 262144 0
+12 262144 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2125
 headstone flowered preacher~
 a preacher's headstone~
 Crumbly, dead flowers lay decaying at the base of a dull black headstone.~
 ~
-12 0 0
+12 0 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2126
 crushed corpse stone~
 fallen headstone~
 A large headstone lays on the ground, resting at a strange angle.~
 ~
-12 0 0
+12 0 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2127
 withered old oak tree~
 a withered old oak tree~
 A withered old oak tree now lays on its side, decaying in the rains.~
 ~
-12 0 0
+12 0 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2128
 statue beheaded~
 a beheaded statue~
 A grisly statue caked in blood stands before you.~
 ~
-12 0 0
+12 0 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2129
 statue gargoyle~
 statue of a woman~
 A statue, well worn and eroded, stands here dripping blood.~
 ~
-12 262144 0
+12 262144 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #2150
 border object~
 a newly created border object~
 Some god dropped a newly created border object here.~
 ~
-13 1073741824 0
+13 1073741824 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #0
-
 
 #ROOMS
 #2101
@@ -564,17 +560,17 @@ the ghoulish creatures which burrow through the grounds, searching for
 fresh new corpses that lay buried inside their wooden boxes like well-
 prepared banquet tables before their fiendish devourers.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 The graves lay this way, hoping that you will be their occupant.
 ~
 ~
-0 -1 2102
+0 -1 2102 0
 D3
 The path becomes smoother.
 ~
 ~
-0 -1 2172
+0 -1 2172 0
 E
 twigs~
 Twisted brown twigs lay dead at your feet, blown away from the fingers
@@ -587,7 +583,7 @@ scatter the grounds, covered in the slippery green carpet-like mold.
 ~
 S
 #2102
-Unholy Grounds of the Dead~
+O camposanto dos desterrados da escuridade~
 Trampling slowly through the cemetery, you find yourself standing at the
 beginning of the many graves of the former dwellers of the land.  Hastily
 buried by uncaring gravediggers, many corpses now protrude from the earth,
@@ -598,22 +594,22 @@ their broken coffin lids cracked and broken away.  Several statues, their
 faces worn away to horrid stumps by the rains and the wind, stand as
 mangled monuments tothe very gods who stole the lives of those buried here.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 More graves await you...
 ~
 ~
-0 -1 2103
+0 -1 2103 0
 D3
 Darkness dissipates slightly.
 ~
 ~
-0 -1 2101
+0 -1 2101 0
 D8
 Eternal death awaits...
 ~
 ~
-0 -1 2109
+0 -1 2109 0
 E
 corpses~
 Sloppily buried in shallow graves, several corpses lay beneath the earth.
@@ -638,22 +634,22 @@ leg as if to pull you deep under the earth to a horrible death.  Tearing
 yourself from its grasp, you move quickly forward in hopes that you will
 soon be away from this terrifying nightmare.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 The darkness continues...
 ~
 ~
-0 -1 2104
+0 -1 2104 0
 D2
 The foggy darkness continues...
 ~
 ~
-0 -1 2110
+0 -1 2110 0
 D3
 The darkness continues...
 ~
 ~
-0 -1 2102
+0 -1 2102 0
 E
 footstone~
 This grey marble stone lays sunken into the earth, crumbling to the touch.
@@ -678,22 +674,22 @@ markings left by countless thieves scavaging for anything of value.  A
 single dead and decaying rose rests in Thomas' hands, tied carefully with
 a faded red ribbon which attaches a solemn note.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 The darkness continues...
 ~
 ~
-0 -1 2105
+0 -1 2105 0
 D2
 The fog grows thicker...
 ~
 ~
-0 -1 2111
+0 -1 2111 0
 D3
 The darkness continues ...
 ~
 ~
-0 -1 2103
+0 -1 2103 0
 E
 box~
 Inside the box lay the corpse of Thomas.  Though thoroughly decaying,
@@ -709,13 +705,13 @@ a faded note attached to it.
 E
 note~
 Thomas,
- 
+
 Though the gods have taken you from me before we were to be married,
 my heart will always remain with you.  In my darkest hours I find
 myself wishing to join you forever in your deathly slumber for I know
 that I can not live without you.  I give you this rose to carry with
 you eternally until I too join you and we walk together.
- 
+
                                 Eternal Love,
                                           Arabella
 ~
@@ -733,17 +729,17 @@ horizontally in the black of night.  Along the stoney face, in the
 headstone's center, hangs a simple white plaque, muddy and worn and
 off-setting the dull black stone around it.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 The fog gets thicker...
 ~
 ~
-0 -1 2106
+0 -1 2106 0
 D3
 More darkness continues...
 ~
 ~
-0 -1 2104
+0 -1 2104 0
 E
 headstone~
 Caused by the rain-soaked, uneven grounds, this tombstone appears to have
@@ -769,22 +765,22 @@ tools.  The wind begins to blow slightly, bringing forth a slight odor of
 fresh death somewhere to the south of you, and raising your desires to
 leave this place, never to return.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 The weeds grow thicker...
 ~
 ~
-0 -1 2107
+0 -1 2107 0
 D2
 An old cross stands in the shadows of the cemetary...
 ~
 ~
-0 -1 2113
+0 -1 2113 0
 D3
 Darkness overcomes the fog...
 ~
 ~
-0 -1 2105
+0 -1 2105 0
 E
 headstone~
 Two old swords are mounted here, crossed in a rusty brown tribute to the
@@ -812,17 +808,17 @@ into the ground with each miserable rain, forcing the cold, lifeless mud
 to seep through the weeds and thickly cover the footstoney, burying any
 chance you may have in learning who is buried here.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 A large tree now lays on its side...
 ~
 ~
-0 -1 2108
+0 -1 2108 0
 D3
 The thick fog almost chokes you...
 ~
 ~
-0 -1 2106
+0 -1 2106 0
 E
 grass~
 The tall brown grass grows thick here, in a smothering unkept jungle,
@@ -854,17 +850,17 @@ later ravage the soil in search of anything that lay decaying on the
 ground.  A single worm, its belly partially exposed above the ground,
 tunnels through the earth, seeking new corpses to devour.
 ~
-0 1 1
+0 1 1 0 0 0
 D3
 The weeds grow thicker...
 ~
 ~
-0 -1 2107
+0 -1 2107 0
 D8
 The misty fog almost chokes you...
 ~
 ~
-0 -1 2115
+0 -1 2115 0
 E
 tree~
 This tree, possibly a sycamore, lies rotting on its side, fallen to its
@@ -893,17 +889,17 @@ image of a child's face, now deformed by the tools of vandals into the
 sickening head of a mutilated wolf.  A tiny rosary, with several beads
 broken and cracked, lay covered in mud near the rattle's handle.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 A lone wolf cries in the distance...
 ~
 ~
-0 -1 2110
+0 -1 2110 0
 D7
 The ground becomes more uneven...
 ~
 ~
-0 -1 2102
+0 -1 2102 0
 S
 #2110
 Uneven Grounds of the Mourned~
@@ -917,27 +913,27 @@ buried here lay overturned on their sides by thieves savaging the area
 in search of any trinket that may be buried with the dead beneath the
 wretched earth at your feet.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 giant tree now lays on its side...
 ~
 ~
-0 -1 2103
+0 -1 2103 0
 D1
 The grounds grow uneven...
 ~
 ~
-0 -1 2111
+0 -1 2111 0
 D2
 A giant tree now lays on its side...
 ~
 ~
-0 -1 2116
+0 -1 2116 0
 D3
 A small dead mulberry bush lay this way.
 ~
 ~
-0 -1 2109
+0 -1 2109 0
 > rand_prog 5~
 mpecho The solemm howl of a wolf echoes in the distance...
 ~
@@ -954,22 +950,22 @@ small trees fallen to the ground, leaving behind their own brown rotting
 corpses of moldy bark and mangled limbs to shrivel in resignation to the
 lifeless existance within the rusty gates of this sickening place.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 You barely make out a plain pine box laying on the ground...
 ~
 ~
-0 -1 2104
+0 -1 2104 0
 D2
 Several twisted roots protrude above the soil of a grave...
 ~
 ~
-0 -1 2117
+0 -1 2117 0
 D3
 Darkness unforgivingly blurs your vision...
 ~
 ~
-0 -1 2110
+0 -1 2110 0
 S
 #2112
 Within the Graveyard~
@@ -981,17 +977,17 @@ the gods that have stolen the lives of each person buried here within
 the muddy grounds.  Throughout the area a terrible stench permeates the
 air, arising from partially buried corpses rotting in the elements.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 A tall wooden cross stands in the shadows of the cemetary...
 ~
 ~
-0 -1 2113
+0 -1 2113 0
 D2
 A broken skull lays on the ground...
 ~
 ~
-0 -1 2118
+0 -1 2118 0
 S
 #2113
 The Old Rugged Cross~
@@ -1006,22 +1002,22 @@ answered.  The ground is slippery here, causing you to fall before the
 cross, cutting your leg on a jagged branch severed from one of the skeletal
 trees inhabiting the wretched grounds of the graveyard.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 You barely make out a tombstone through the fog...
 ~
 ~
-0 -1 2106
+0 -1 2106 0
 D1
 Branches litter the ground...
 ~
 ~
-0 -1 2114
+0 -1 2114 0
 D3
 The odor of rotting corpses permeates the air...
 ~
 ~
-0 -1 2112
+0 -1 2112 0
 S
 #2114
 The Twig-Covered Grave~
@@ -1036,17 +1032,17 @@ Just as horrid during the day, this graveyard's poorly kept condition
 enhances the fear you feel as you travel through it at night, causing
 you to want to leave this place as quickly as possible.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 A rusty iron fence stands, enclosing the cemetary...
 ~
 ~
-0 -1 2115
+0 -1 2115 0
 D3
 A large cross stands silently in the mists...
 ~
 ~
-0 -1 2113
+0 -1 2113 0
 S
 #2115
 Along the Wrought Iron Fence~
@@ -1058,22 +1054,22 @@ of chewed human bones strewn across the ground amongst rotting
 human flesh savaged by wolves.  The ground is uneven here,
 causing you to rethink any ideas of travelling farther.
 ~
-0 1 1
+0 1 1 0 0 0
 D2
 The wrought iron fence stretches farther in the distance...
 ~
 ~
-0 -1 2120
+0 -1 2120 0
 D3
 A filthy grave lies covered with branches...
 ~
 ~
-0 -1 2114
+0 -1 2114 0
 D7
 A large tree now lays on its side...
 ~
 ~
-0 -1 2108
+0 -1 2108 0
 S
 #2116
 The Withered Old Tree~
@@ -1087,17 +1083,17 @@ beneath a wide, rotten trunk lined deeply by hungry termites which
 chew through its fleshy bark.  Forever abandoned to its own fate, the
 tree now blocks your way south.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 A forlorn wolf howls in the distance...
 ~
 ~
-0 -1 2110
+0 -1 2110 0
 D1
 The thick, broken roots of the tree extend unto the east...
 ~
 ~
-0 -1 2117
+0 -1 2117 0
 S
 #2117
 Grave Beneath the Tree~
@@ -1111,22 +1107,22 @@ brass plaque mounted upon it.  Large twisted roots of a tree to the west
 extend beneath the ground, causing you to almost trip over them as they
 protrude through the rotten soil which now marks this grave.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 The ground grows muddy, causing you to slow your pace...
 ~
 ~
-0 -1 2111
+0 -1 2111 0
 D2
 A muddy trail lays to the south...
 ~
 ~
-0 -1 2121
+0 -1 2121 0
 D3
 A withered old tree now lays withered on its side...
 ~
 ~
-0 -1 2116
+0 -1 2116 0
 > rand_prog 10~
 mpecho Cold damp winds begin to blow miserably through the graveyard...
 ~
@@ -1145,17 +1141,17 @@ struggle for each breath while you examine the cracked headstone before
 you.  Newly exhumed from the grave beneath you, the skeletal corpse now
 lays scattered on the ground in a trail leading to the east.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 The fog grows thicker...
 ~
 ~
-0 -1 2112
+0 -1 2112 0
 D1
 A trail of rotten old bones lay this way...
 ~
 ~
-0 -1 2119
+0 -1 2119 0
 > entry_prog 40~
 if isimmort($n)
 or isnpc($n)
@@ -1182,17 +1178,17 @@ you travel nervously along the path.  You gasp in horror as one hand,
 no longer attached to its body, reaches to grab your legs, causing your
 pace to quicken as you seek desperate escape from this ghastly place.
 ~
-0 1 1
+0 1 1 0 0 0
 D2
 The trail of bloody, broken bones ends...
 ~
 ~
-0 -1 2123
+0 -1 2123 0
 D3
 A freshly exhumed grave lays this way...
 ~
 ~
-0 -1 2118
+0 -1 2118 0
 S
 #2120
 Along the Wrought-Iron Fence~
@@ -1205,17 +1201,17 @@ large chunks of flesh rotting slowly against the bones.  A gut-wrenching
 stench seems too common throughout the graveyard, making it dificult to
 stay here for very much longer.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 The wrought iron fence stretches onward...
 ~
 ~
-0 -1 2115
+0 -1 2115 0
 D2
 The fence seems to have toppled to the ground...
 ~
 ~
-0 -1 2125
+0 -1 2125 0
 S
 #2121
 Trail of the Mourned~
@@ -1228,17 +1224,17 @@ oozing mud which cakes your feet in a slippery mixture of dead leaves and
 thick brown slime.  Further to the southeast, you see several tombstones
 crumbling away on their sides, while others remain still upright.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 A crumbling black headstone marks the grave of another soul...
 ~
 ~
-0 -1 2117
+0 -1 2117 0
 D8
 A white marble cross lies on the ground, broken from its headstone...
 ~
 ~
-0 -1 2122
+0 -1 2122 0
 S
 #2122
 Along the Trail of the Mourned~
@@ -1254,17 +1250,17 @@ separated from the marker by a violent kick from cruel graverobber's
 boot in an attempt to gain quicker access to the coffin buried beneath
 the soggy earth.  Several more tombstones lie towards the southeast.
 ~
-0 1 1
+0 1 1 0 0 0
 D7
 The odor of rotting corpses fills the air...
 ~
 ~
-0 -1 2121
+0 -1 2121 0
 D8
 Dismembered corpses lie scattered along the ground...
 ~
 ~
-0 -1 2127
+0 -1 2127 0
 S
 #2123
 The Trail Ends~
@@ -1278,12 +1274,12 @@ partially chewed away by voracious wolves.  Still other corpses, decaying
 away to reveal white bones, lay completely intact among the mounds of
 cadavers at your feet.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 A trail of bones leads off into the distance...
 ~
 ~
-0 -1 2119
+0 -1 2119 0
 S
 #2124
 The Broken Old Fountain~
@@ -1296,12 +1292,12 @@ decomposing in the murky stagnant water that fills the waterbowl, adding
 to the already stale odor that fills the air and causing your stomach to
 churn miserably in protest of the vile stench that surrounds you.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 A rusty wrought iron fence has fallen...
 ~
 ~
-0 -1 2125
+0 -1 2125 0
 S
 #2125
 The Fallen Fence~
@@ -1314,17 +1310,17 @@ broken by thieves in their feverish attempts to plunder treasures
 buried beneath the earth.  Twigs crackle loudly beneath your feet with
 each step you take through the unkept grounds.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 The rusty fence stretches onward...
 ~
 ~
-0 -1 2120
+0 -1 2120 0
 D3
 A broken fountain stands filled with stagnant water...
 ~
 ~
-0 -1 2124
+0 -1 2124 0
 S
 #2126
 Mournful Death Trail~
@@ -1337,17 +1333,17 @@ Large chunks of flesh from the corpse are missing, chewed away by hungry
 scavengers, revealing rotten greay bones beneath shrivelled and decaying
 skin.  Fearing your own safety, you turn to flee from the morbid trail.
 ~
-0 1 1
+0 1 1 0 0 0
 D2
 A barren headstone stands surrounded by thick whisps of fog...
 ~
 ~
-0 -1 2131
+0 -1 2131 0
 D6
 Dismembered corpses lay decaying along the trail...
 ~
 ~
-0 -1 2127
+0 -1 2127 0
 S
 #2127
 The Mournful Trail Continues~
@@ -1360,17 +1356,17 @@ frenzy upon the vile remains of the exhumed bodies.  Turning away from
 the horrid sight, you find yourself whispering a silent prayer to the
 gods, begging them to remove you from this horrific ground.
 ~
-0 1 1
+0 1 1 0 0 0
 D7
 A white marble cross lay broken away from the headstone...
 ~
 ~
-0 -1 2122
+0 -1 2122 0
 D9
 A tombstone lays on its side, atop a decaying corpse...
 ~
 ~
-0 -1 2126
+0 -1 2126 0
 S
 #2128
 The Crypts~
@@ -1384,17 +1380,17 @@ stomach as you notice a bloody leg, covered in maggots, hanging lifeless
 from one of the cells along the northern wall.  Still another crypt, its
 contents ripped from its stone confines, leaks thickened brown blood.
 ~
-0 1 0
+0 1 0 0 0 0
 D1
 Still more crypts stand before you...
 ~
 ~
-0 -1 2129
+0 -1 2129 0
 D2
 Puddles of dried blood stains streak the floor...
 ~
 ~
-0 -1 2133
+0 -1 2133 0
 S
 #2129
 Beyond the Shadow of Death~
@@ -1409,21 +1405,21 @@ torso for a later time when hunger again strikes the belly of the beast.
 Feeling an urge to flee, your hands begin to tremble as you hear a growl
 resonate from somewhere below the crypt.
 ~
-0 1 0
+0 1 0 0 0 0
 D2
 A thick heavy stench chokes you breathless...
 ~
 ~
-0 -1 2134
+0 -1 2134 0
 D3
 Several crypts stand broken open...
 ~
 ~
-0 -1 2128
+0 -1 2128 0
 D5
 ~
 grate~
-2098187 -1 2130
+2098187 -1 2130 0
 E
 floor bones corpse body torso~
 Scavaging through the broken bones, you find a large puddle of a thick
@@ -1454,17 +1450,17 @@ its eyes still bulging from the realization that death drew near, lies
 on one of the many piles of discarded body parts, forgotten by the beast
 in its frenzy to feed upon less boney pieces of its victim.
 ~
-0 1 0
+0 1 0 0 0 0
 D1
 Several chewed corpses lay on the floor...
 ~
 ~
-0 -1 2135
+0 -1 2135 0
 D4
 A quick escape into the mausoleum is your only hope...
 ~
 grate~
-1027 -1 2129
+1027 -1 2129 0
 S
 #2131
 The Barren Headstone~
@@ -1477,17 +1473,17 @@ masses, now carelessly thrown upon the ground by a long forgotten relative.
 Along the top of the stone you see tool markings left behind by thieves in
 their quick haste to remove whatever it was that once adorned it.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 A tombstone lays on its side atop a decaying corpse...
 ~
 ~
-0 -1 2126
+0 -1 2126 0
 D1
 A thick blanket of fog hovers over the ground...
 ~
 ~
-0 -1 2132
+0 -1 2132 0
 > rand_prog 10~
 mpecho The thick swirls of fog smothers the ground...
 ~
@@ -1505,17 +1501,17 @@ forgotten time when this area was filled with life.  Broken bones lie
 entangled in the weeds of some graves while others lay covered with
 broken slabs of stone.
 ~
-0 1 1
+0 1 1 0 0 0
 D2
 Thick armlike vines grow thickly, entangling your feet...
 ~
 ~
-0 -1 2137
+0 -1 2137 0
 D3
 A barren headstone stands here, cluttered with dead flowers...
 ~
 ~
-0 -1 2131
+0 -1 2131 0
 E
 fog~
 A damp thick fog surrounds you, causing you to stumble across the
@@ -1555,21 +1551,21 @@ their blood still dripping from the gashes left by teeth marks of a
 carnivourous beast.  Wanting to flee, you turn to run away, only to trip
 over a splintered coffin visciously ripped apart from one of the crypts.
 ~
-0 1 0
+0 1 0 0 0 0
 D0
 An unusual silence fills the air...
 ~
 ~
-0 -1 2128
+0 -1 2128 0
 D1
 Cracked walls allow just enough light in, giving this place an eerie glow...
 ~
 ~
-0 -1 2134
+0 -1 2134 0
 D2
 ~
 gate~
-1027 -1 2138
+1027 -1 2138 0
 S
 #2134
 Within the Decaying Mausoleum~
@@ -1585,17 +1581,17 @@ leaving a sick feeling in the pit of your stomach.  Terror fills your
 mind, paralyzing you with fear as you notice the arm twitching in a
 reflexive motion.
 ~
-0 1 0
+0 1 0 0 0 0
 D0
 Several crypts, violently broken open, line the northern wall...
 ~
 ~
-0 -1 2129
+0 -1 2129 0
 D3
 Dried blood stains streak the floor...
 ~
 ~
-0 -1 2133
+0 -1 2133 0
 S
 #2135
 Darkened Trails of the Beast~
@@ -1603,16 +1599,16 @@ A stomach-churning stench chokes you as you enter.  Chewed and bloodied
 corpses, some with gaping wounds exposing the white bones beneath their
 flesh, lie on the floor waiting to be devoured by the creature that
 inhabits this mausoleum.  A rusty-red pool of blood covers the floor,
-staining it the colour of death.  A loud growl fills the air as you 
+staining it the colour of death.  A loud growl fills the air as you
 suddenly realize that you may be the next victim to the vile
 beast that resides within the room you have just entered.
 ~
-0 1 0
+0 1 0 0 0 0
 D3
 A trail of blood leads away from the beast's lair...
 ~
 ~
-0 -1 2130
+0 -1 2130 0
 S
 #2136
 Arabella's Final Resting Place~
@@ -1627,22 +1623,22 @@ bringing with it an unholy terror that whatever lies beneath this stone
 is still moving, seeking any opportunity to remove the stone and pull
 you deep within its graven belly ... and devour you whole.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 A misty fog blankets the cemetary...
 ~
 ~
-0 -1 2137
+0 -1 2137 0
 D2
 Outlines of tombstones become visible...
 ~
 ~
-0 -1 2146
+0 -1 2146 0
 D5
 The grave of Triabella lies open here...
 ~
 slab~
-3 -1 2141
+3 -1 2141 0
 > rand_prog 10~
 mpecho The muffled sound of scratching fills the air...
 ~
@@ -1661,22 +1657,22 @@ stealing your soul, leaving your rotting corpse to fill one of
 the weed-covered plots reserved for the future warriors who dare
 to travel throughout these lands.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 A thick misty fog blankets the ground...
 ~
 ~
-0 -1 2132
+0 -1 2132 0
 D1
 small withered building stands surrounded by a cast iron gate...
 ~
 ~
-0 -1 2138
+0 -1 2138 0
 D3
 A stoney slab rests on the ground, marking another grave...
 ~
 ~
-0 -1 2136
+0 -1 2136 0
 E
 twigs~
 Dead broken twigs lay here, fallen from the huge tree that marks
@@ -1707,27 +1703,27 @@ have been broken away with hammers or crumbled away during the hellish
 departure of the many souls that lay buried within this tomb.  Your
 heart races in fear as you open the cast-iron gate to the mausoleum.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 Through the rusty cast iron gate you see the inside of a small mausoleum...
 ~
 gate~
-1027 -1 2133
+1027 -1 2133 0
 D1
 A statue stands eroding in the elements...
 ~
 ~
-0 -1 2140
+0 -1 2140 0
 D2
 Deeper into the graveyard...
 ~
 ~
-0 -1 2143
+0 -1 2143 0
 D3
 Long armlike vines grow thickly within the graveyard...
 ~
 ~
-0 -1 2137
+0 -1 2137 0
 E
 building~
 To the north, you see what appears to be a mausoleum.  The gate, clearly
@@ -1768,12 +1764,12 @@ thousands barrel through the earth, slithering grotesquely at your feet
 as you stand up slowly, gathering all of your strength to climb out of
 this gaping hole in the rotting earth.
 ~
-0 1 1
+0 1 1 0 0 0
 D4
 Eerie shadows block any view of way lies above you...
 ~
 ~
-0 -1 2144
+0 -1 2144 0
 > rand_prog 100~
 if ispc($r)
   mpecho Leeches burrow deep into your face, feeding hungrily upon your flesh.
@@ -1794,17 +1790,17 @@ to a flesh-tearing sharpness, awaiting their chance to rip your soul from
 your body.  Its fiery eyes not bore down through your skin as you notice
 fresh blood dripping fiendishly from its mouth.
 ~
-0 1 1
+0 1 1 0 0 0
 D2
 A small granite footstone marks the grave of another victim...
 ~
 ~
-0 -1 2145
+0 -1 2145 0
 D3
 The entrance to a small mausoleum lies this way...
 ~
 ~
-0 -1 2138
+0 -1 2138 0
 S
 #2141
 Inside the Grave of Arabella~
@@ -1818,17 +1814,17 @@ contents in a dark, musty sleep.  A simple brass plaque engraved with the
 single name "Arabella", tarnished and rusty due to neglect, adorns the
 head of the coffin.
 ~
-0 1 0
+0 1 0 0 0 0
 D4
 The stoney slab that once covered your escape now lays torn away...
 ~
 slab~
-3 -1 2136
+3 -1 2136 0
 D5
 Upon opening the coffin, grey rats scurry away from your light...
 ~
 coffin~
-3 -1 2142
+3 -1 2142 0
 S
 #2142
 Arabella's Coffin~
@@ -1840,12 +1836,12 @@ Arabella's skeletal wrist.  Bits of flesh fall from Arabella's face,
 revealing a skull writhing with maggots undisturbed by your presence.  A
 throaty scream fills the air as Arabella sits up, reaching out to you.
 ~
-0 1 0
+0 1 0 0 0 0
 D4
 An excape lies this way...
 ~
 coffin~
-3 -1 2141
+3 -1 2141 0
 S
 #2143
 Deeper into the Cemetary~
@@ -1860,22 +1856,22 @@ spine as a warm trickle of blood flows down your leg, and you tear away a
 small rat crazed by the sight of the fleshy meal you've come to represent.
 A small grove of forboding trees to the south beckons you...
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 An old mausoleum stands crumbling in the mists...
 ~
 ~
-0 -1 2138
+0 -1 2138 0
 D1
 Grey mists and dark shadows almost hide the grave here...
 ~
 ~
-0 -1 2144
+0 -1 2144 0
 D2
 A darkened grove of trees awaits in the distance...
 ~
 ~
-0 -1 2147
+0 -1 2147 0
 S
 #2144
 The Shadowy Grave~
@@ -1887,22 +1883,22 @@ encase the grave before you.  The thick, musty odor of death is strong,
 choking you in its attempt to steal your life slowly from you, making you
 another victim that forever rots in this cemetery.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 A small broken footstone lies in the ground...
 ~
 ~
-0 -1 2145
+0 -1 2145 0
 D3
 Deeper into the graveyard...
 ~
 ~
-0 -1 2143
+0 -1 2143 0
 D5
 A cold eerie blackness of the unknown lies beneath you...
 ~
 ~
-0 -1 2139
+0 -1 2139 0
 > rand_prog 10~
 mpecho The wind blows coldly, howling with an echo of fury...
 ~
@@ -1921,22 +1917,22 @@ marks left in an attempt to remove the old name that was once carved in
 the stone, causing its surface to bow inward and bringing a darkened
 shadow over the name now carved upon it.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 A single statue of an angel stands erroding in the elements..
 ~
 ~
-0 -1 2140
+0 -1 2140 0
 D2
 Several trees line this side of the graveyard...
 ~
 ~
-0 -1 2149
+0 -1 2149 0
 D3
 Thick mists and shadows cover a grave...
 ~
 ~
-0 -1 2144
+0 -1 2144 0
 S
 #2146
 Dark Trail of Vines~
@@ -1949,17 +1945,17 @@ that tortures your very soul.  As you gather your wits, long grey vines
 entangle your feet in a thorny grip of horror, causing you to choose
 each step carefully within the evil confines of the graveyard.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 A large stoney slab marks the grave of another soul lain to rest...
 ~
 ~
-0 -1 2136
+0 -1 2136 0
 D2
 The trail continues...
 ~
 ~
-0 -1 2150
+0 -1 2150 0
 > entry_prog 33~
 if isimmort($n)
 or isnpc($n)
@@ -1986,17 +1982,17 @@ the holes dug by wolves clawing the cold rotting earth in search of a fleshy
 feast.  Several dead trees line the area, their mangled branches seeming to
 grab ahold of you as you pass by.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 An unmarked grave lies forgotten...
 ~
 ~
-0 -1 2143
+0 -1 2143 0
 D2
 The grove gets darker with each step...
 ~
 ~
-0 -1 2152
+0 -1 2152 0
 S
 #2148
 Man's Best Friend~
@@ -2013,12 +2009,12 @@ realization that you were the intended meal of the hellish hound that is
 buried here.  At the foot of the grave, a single word - "beware" - has
 been scribed in blood across the face of the footstone.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 Several withered old trees surround you...
 ~
 ~
-0 -1 2149
+0 -1 2149 0
 S
 #2149
 A Small Grove of Forgotten Trees~
@@ -2032,22 +2028,22 @@ covered rubble crumbling slowly away into the moldy earth.  Though most of the
 grave sites can be found to the north, a few graves lay within this grove,
 long forgotten as the winds and the rains howl throughout the cemetary.
 ~
-0 1 3
+0 1 3 0 0 0
 D0
 A small granite footstone marks a fresh grave...
 ~
 ~
-0 -1 2145
+0 -1 2145 0
 D2
 Piles of broken coffins and old broken headstones litter the ground...
 ~
 ~
-0 -1 2154
+0 -1 2154 0
 D3
 A small grave lies hidden within withering hedges...
 ~
 ~
-0 -1 2148
+0 -1 2148 0
 S
 #2150
 Overgrown Trail of Vines~
@@ -2062,22 +2058,22 @@ breaking rather then the sound of a freshly exhumed corpse being wrested
 from its grave.  Farther to the east, you see the beginning of a small
 grove of trees.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 A dangerous trail of vines extends northward...
 ~
 ~
-0 -1 2146
+0 -1 2146 0
 D1
 A small darkened grove of trees lies this way...
 ~
 ~
-0 -1 2151
+0 -1 2151 0
 D2
 The thorny trail of weeds and vines continues...
 ~
 ~
-0 -1 2160
+0 -1 2160 0
 S
 #2151
 The Edge of the Darkened Grove~
@@ -2091,16 +2087,16 @@ the many pilegoto s of debris tossed haphazardly within the grove fills
 your nostrils with the odour of death and decay.  To the easy, the grove
 grows darker, causing you to rethink any ideas of further travel.
 ~
-0 1 3
+0 1 3 0 0 0
 D1
 The grove thickens...
 ~
 ~
-0 -1 2152
+0 -1 2152 0
 D3
 ~
 ~
-0 -1 2150
+0 -1 2150 0
 S
 #2152
 The Midsts of the Grove~
@@ -2113,22 +2109,22 @@ debris that clutters the grove.  Somewhere in the distance, you hear the
 lonely hoot of an owl perched high upon one of the many dead trees that line
 the area.
 ~
-0 1 3
+0 1 3 0 0 0
 D0
 An old oak tree marks the edge of the grove...
 ~
 ~
-0 -1 2147
+0 -1 2147 0
 D2
 The grove lightens to the south...
 ~
 ~
-0 -1 2157
+0 -1 2157 0
 D3
 The edge of the grove can be seen...
 ~
 ~
-0 -1 2151
+0 -1 2151 0
 S
 #2153
 Deep Inside the Brightened Grove~
@@ -2140,22 +2136,22 @@ iron confines of the graveyard.  Looking down, you see a blanket of
 lush grass thickly covering the grove, almost hiding a very faint
 trail that leads to the south.
 ~
-0 1 3
+0 1 3 0 0 0
 D1
 Small blue and white wildflowers bloom in patches along the ground...
 ~
 ~
-0 -1 2159
+0 -1 2159 0
 D2
 A hidden mausoleum lies this way...
 ~
 ~
-3 -1 2158
+3 -1 2158 0
 D3
 Small wildflowers blossom brightly in patches of color along the ground...
 ~
 ~
-0 -1 2157
+0 -1 2157 0
 S
 #2154
 The Grove Thickens~
@@ -2170,17 +2166,17 @@ seeking trinkets buried beneath the large tombstone that once marked the
 site of one laid to eternal rest.  Sadly enough, the grave has been looted
 of its precious contents, its owner robbed of his earthly possessions.
 ~
-0 1 3
+0 1 3 0 0 0
 D0
 Crooked skeletal trees line the grove...
 ~
 ~
-0 -1 2149
+0 -1 2149 0
 D2
 The grove of trees seems to brighten...
 ~
 ~
-0 -1 2159
+0 -1 2159 0
 S
 #2155
 The Chapel Foyer~
@@ -2192,22 +2188,22 @@ soon to be laid to rest in the cemetary.  Brown muddy floors creak under
 your weight with each step you take adding to the commotion that now grows
 louder as you move towards the sanctuary.
 ~
-0 1 0
+0 1 0 0 0 0
 D1
 The wails of mourners echo loudly...
 ~
 ~
-0 -1 2156
+0 -1 2156 0
 D2
 A splintered old door leads to the graveyard...
 ~
 ~
-1027 -1 2162
+1027 -1 2162 0
 S
 #2156
 The Mournful Sanctuary~
 Three solitary pews rest upon a wooden floor precariously slanted
-from the dark brown mud oozing from beneath.  A gray haired man, 
+from the dark brown mud oozing from beneath.  A gray haired man,
 slumped horribly in his old age, stands crookedly in front of a candle-
 lit podium, preaching hollow words of comfort to mourners grieving
 another miserable life ended hastily...soon to be forgotten.  Hanging upon
@@ -2218,17 +2214,17 @@ ladder leading to the belfry which houses a bell that will soon sound
 throughout the cemetary, marking death's triumphant vicotry over life
 just recently ended.
 ~
-0 1 0
+0 1 0 0 0 0
 D3
 A small table stands within the chapel foyer...
 ~
 ~
-0 -1 2155
+0 -1 2155 0
 D4
 The bellfry looms above you...
 ~
 trapdoor~
-65539 -1 2163
+65539 -1 2163 0
 S
 #2157
 Within the Brightened Grove~
@@ -2242,22 +2238,22 @@ in search of their fleshy meals.  Small wildflowers blossom colourfully
 in patches of pink, blue and yellow along the ground.
 pink, blue, and yellow along the ground.
 ~
-0 1 3
+0 1 3 0 0 0
 D0
 The grove grows darker, failing to disguise the piles of broker headstones littering the ground...
 ~
 ~
-0 -1 2152
+0 -1 2152 0
 D1
 Wildflowers grow colorfully near the center of the grove...
 ~
 ~
-0 -1 2153
+0 -1 2153 0
 D2
 The grove grows darker...
 ~
 ~
-0 -1 2164
+0 -1 2164 0
 S
 #2158
 Before A Hidden Tomb~
@@ -2269,17 +2265,17 @@ by a white picket fence. Over the doorway you see the name "Anastacia"
 embossed in golden letters glittering softly in the light that has
 broken through the heavy canopy of trees that enshroud this tomb.
 ~
-0 1 3
+0 1 3 0 0 0
 D0
 Wildflowers explode with vibrant colorful blossums...
 ~
 ~
-3 -1 2153
+3 -1 2153 0
 D2
 A door with the name "Anastacia" stands here, marking the entrance...
 ~
 ~
-3 -1 2165
+3 -1 2165 0
 S
 #2159
 Brightened Grove~
@@ -2292,17 +2288,17 @@ the hellish gophers that scavenge the area in search of fleshy meals buried
 in their cold dark graves deep beneath the cemetary.  Small blue and
 white wild flowers grow in patches all throughout the trees.
 ~
-0 1 3
+0 1 3 0 0 0
 D0
 The grove darkens considerably...
 ~
 ~
-0 -1 2154
+0 -1 2154 0
 D3
 Wildflowers bloom brightly in the middle of the grove...
 ~
 ~
-0 -1 2153
+0 -1 2153 0
 S
 #2160
 Along the Dark Trail of Vines~
@@ -2315,17 +2311,17 @@ graveyard.  The heavy odor of decomposing flesh is thick here, causing you to
 gasp for anything that may resemble fresh air as you hope that you will not
 be the next resident of this hellish place.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 The weedy trail of vines continues...
 ~
 ~
-0 -1 2150
+0 -1 2150 0
 D8
 A neglected grave lies in the shadows of the chapel...
 ~
 ~
-0 -1 2161
+0 -1 2161 0
 S
 #2161
 The Death of a Holy Man~
@@ -2339,17 +2335,17 @@ flowers, once vibrant with color and scent, now lay lifeless at the base
 of the headstone, trampled by uncaring gravediggers as they carry their
 coffins from the chapel.  An overgrown trail lies to the northwest.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 The entrance to a run down chapel can be seen...
 ~
 ~
-0 -1 2162
+0 -1 2162 0
 D7
 Thorny weeds smother the ground...
 ~
 ~
-0 -1 2160
+0 -1 2160 0
 S
 #2162
 In Front of a Shoddy Old Chapel~
@@ -2360,25 +2356,25 @@ hinges that creak in a bone-shivering moan when opened by gravediggers
 performing their ghastly rituals of burying their dead.  Somewhere above you,
 an old bell hangs in its belfry, awaiting to announce the final hours in which
 all mortals must surrender their lives.  The chapel's roof, sagging with age
-and disrepair does little to shelter the mourners, saddened by their loss, 
+and disrepair does little to shelter the mourners, saddened by their loss,
 from the cold wind and rain plaguing the cemetary.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 The chapel foyer stands void of furnature except a small table...
 ~
 ~
-1027 -1 2155
+1027 -1 2155 0
 D2
 A small urn lays shattered in several pieces...
 ~
 ~
-0 -1 2166
+0 -1 2166 0
 D3
 A large headstone stands neglected...
 ~
 ~
-0 -1 2161
+0 -1 2161 0
 S
 #2163
 For Whom The Bell Tolls~
@@ -2393,12 +2389,12 @@ The tarnished bell, cracked in several places, hangs in a darkened silence
 as the winds howl visciously outside, moaning with anticipation for your
 soul to join those laid to rest in this sickening place.
 ~
-0 1 0
+0 1 0 0 0 0
 D5
 Wails of sorrowful mourners echo from beneath your feet...
 ~
 trapdoor~
-65539 -1 2156
+65539 -1 2156 0
 S
 #2164
 Grove of the Dead~
@@ -2411,17 +2407,17 @@ with boney, finger-like branches.  Your eyes widen as you sight a rotting
 corpse swaying by a dangling rope in the wind, and you to consider making
 yourself scarce as quickly as possible.
 ~
-0 1 3
+0 1 3 0 0 0
 D0
 Past the debris stands a bright grove...
 ~
 ~
-0 -1 2157
+0 -1 2157 0
 D2
 Large piles of debris block your view to the south...
 ~
 ~
-0 -1 2169
+0 -1 2169 0
 S
 #2165
 The Shrine of Anastacia~
@@ -2436,17 +2432,17 @@ A single lock of hair tied with a small red ribbon adorns a tiny white
 velvet pillow delicately placed in a rocking chair directly leading to
 the room where Anastacia now sleeps eternally.
 ~
-0 1 0
+0 1 0 0 0 0
 D0
 The well lit grove lies this way...
 ~
 ~
-3 -1 2158
+3 -1 2158 0
 D2
 A beautiful glass topped coffin lies this way...
 ~
 ~
-0 -1 2170
+0 -1 2170 0
 S
 #2166
 Near the Cemetary's Chapel~
@@ -2459,17 +2455,17 @@ you to huddle closely to the dead brown hedges that grow alongside the
 rusty fence. Farther to the east you can barely make out the shadowy
 outlines of several headstones.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 An old shabby chapel stands to the north...
 ~
 ~
-0 -1 2162
+0 -1 2162 0
 D1
 A statue of a woman stands alongside the rusty wrought iron fence...
 ~
 ~
-0 -1 2167
+0 -1 2167 0
 S
 #2167
 The Beheaded Statue~
@@ -2482,24 +2478,24 @@ alone...only to meet an untimely death at the jaws of a hungry wolf in
 search of a fresh meal.  Praying aloud, you beg the gods to spare your
 life and allow you to flee the cemetary in one piece.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 A bloody headstone lies within the hedges along the wrought iron fence...
 ~
 ~
-0 -1 2168
+0 -1 2168 0
 D3
 A small urn lays shattered on the ground...
 ~
 ~
-0 -1 2166
+0 -1 2166 0
 S
 #2168
 The Bloody Headstone~
 A rusty wrought-iron fence, crumbling with age and neglect, lines the
 southern side of the graveyard, barely withstanding the heavy winds and
-rains that frequent the area.  Tall untrimmed hedges, now a dull brown 
-colour, stand wretchedly alongside the fence, almost hiding a small 
+rains that frequent the area.  Tall untrimmed hedges, now a dull brown
+colour, stand wretchedly alongside the fence, almost hiding a small
 black marble headstone.  A closer look at the stone reveals several
 streaks of dried blood smeared across the face of the stone, flooding
 your mind with horrid visions of the struggle which resulted in this
@@ -2508,17 +2504,17 @@ a permanent member.  To the east, a darkened grove of trees stands among
 broken tombstones and piles of splintered coffins, their lids barely
 attached by their old rusty hinges.
 ~
-0 1 1
+0 1 1 0 0 0
 D1
 The rusty wrought iron fence disappears within the grove...
 ~
 ~
-0 -1 2169
+0 -1 2169 0
 D3
 A statue of a woman stands alongside the rusty wrought iron fence...
 ~
 ~
-0 -1 2167
+0 -1 2167 0
 S
 #2169
 The Beginning of a Small Grove Within the Graveyard~
@@ -2531,17 +2527,17 @@ as if to grasp anything that comes within reach.  Piles of splintered coffins,
 some with rotten corpses tucked inside, lay scattered upon the ground,
 causing your stomach to convulse reflexively.
 ~
-0 1 3
+0 1 3 0 0 0
 D0
 Large piles of debris clutter the grove...
 ~
 ~
-0 -1 2164
+0 -1 2164 0
 D3
 A rusty wrought iron fence crumbles in the elements along the southern side..
 ~
 ~
-0 -1 2168
+0 -1 2168 0
 S
 #2170
 The Eternal Sleep of Anastacia~
@@ -2556,12 +2552,12 @@ rest softly across her waist.  Her full ruby lips almost seem to smile at you,
 bringing a warmth into the room as she eternally rests upon her delicate red
 satin pillow.
 ~
-0 1 0
+0 1 0 0 0 0
 D0
 A small shrine to Anastacia lies undisturbed...
 ~
 ~
-0 -1 2165
+0 -1 2165 0
 S
 #2171
 Before the Graveyard~
@@ -2575,12 +2571,12 @@ failing to stave off the stench of rot and decaying flesh that assails your
 nostrils.  A large gate, long ago unhinged, lays inextricably entangled in
 a lush thicket, forever entombing it within the cold ground.
 ~
-0 1 1
+0 1 1 0 0 0
 D2
 You see the entrance to the graveyard.
 ~
 ~
-0 -1 2172
+0 -1 2172 0
 E
 fence~
 This tall, wrought iron fence encircles the area, locking all
@@ -2614,17 +2610,17 @@ with life.  Graves strewn with broken bones lie entangled amongst
 the weeds while others fall carelessly, covered with broken slabs
 of stone.
 ~
-0 1 1
+0 1 1 0 0 0
 D0
 You see a possible escape this way.
 ~
 ~
-0 -1 2171
+0 -1 2171 0
 D1
 The graveyard expands around you this way.
 ~
 ~
-0 -1 2101
+0 -1 2101 0
 E
 tree~
 A tall, crooked tree stands before you with it's finger-like branches
@@ -2655,186 +2651,175 @@ the names inscribed upon them.
 S
 #0
 
-
 #RESETS
-M 0 2107 12 2103
-E 1 2110 10 16
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2120 12 20
-M 0 2102 12 2103
-E 1 2104 12 11
-E 1 2106 12 16
-O 1 2113 1 2104
-M 0 2102 12 2105
-E 1 2104 12 11
-E 1 2106 12 16
-M 0 2107 12 2106
-E 1 2110 10 16
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2120 12 20
-M 0 2102 12 2107
-E 1 2104 12 11
-E 1 2106 12 16
-M 0 2107 12 2108
-E 1 2110 10 16
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2120 12 20
-O 1 2115 1 2108
-M 0 2107 12 2115
-E 1 2110 10 16
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2120 12 20
-M 0 2107 12 2116
-E 1 2110 10 16
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2120 12 20
-M 0 2102 12 2116
-E 1 2104 12 11
-E 1 2106 12 16
-M 0 2102 12 2123
-E 1 2104 12 11
-E 1 2106 12 16
-D 0 2129 5 1
-D 0 2130 4 1
-M 0 2102 12 2133
-E 1 2104 12 11
-E 1 2106 12 16
-D 0 2133 2 1
-M 0 2106 1 2135
-E 1 2112 3 9
-D 0 2136 5 1
-M 0 2102 12 2137
-E 1 2104 12 11
-E 1 2106 12 16
-M 0 2102 12 2137
-E 1 2106 12 16
-E 1 2104 12 11
-D 0 2138 0 1
-M 0 2107 12 2140
-E 1 2110 10 16
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2120 12 20
-D 0 2141 4 1
-D 0 2141 5 1
-M 0 2103 1 2142
-E 1 2109 1 10
-E 1 2111 1 1
-M 0 2108 2 2142
-M 0 2108 2 2142
-D 0 2142 4 1
-M 0 2102 12 2143
-E 1 2104 12 11
-E 1 2106 12 16
-M 0 2102 12 2147
-E 1 2104 12 11
-E 1 2106 12 16
-M 0 2107 12 2148
-E 1 2110 10 16
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2120 12 20
-M 0 2107 12 2150
-E 1 2110 10 16
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2120 12 20
-M 0 2102 12 2152
-E 1 2106 12 16
-E 1 2104 12 11
-D 0 2153 2 1
-M 0 2102 12 2154
-E 1 2104 12 11
-E 1 2106 12 16
-D 0 2155 2 1
-M 0 2105 1 2156
-E 1 2108 1 17
-G 1 2105 2
-M 0 2107 12 2156
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2112 3 9
-E 1 2120 12 20
-M 0 2107 12 2156
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2112 3 9
-E 1 2120 12 20
-D 0 2156 4 1
-M 0 2107 12 2158
-E 1 2110 10 16
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2120 12 20
-D 0 2158 0 1
-D 0 2158 2 1
-M 0 2120 1 2164
-D 0 2165 0 1
-M 0 2107 12 2168
-E 1 2110 10 16
-E 1 2102 12 5
-E 1 2107 12 8
-E 1 2120 12 20
-M 0 2104 1 2170
-G 1 2105 2
-E 1 2118 1 17
-O 1 2116 1 2170
-P 1 2117 1 2116
-O 0 2114 1 2124
-M 0 2101 4 2103
-E 1 2103 1 16
-E 1 2101 1 5
-M 0 2101 4 2105
-E 1 2103 1 16
-E 1 2101 1 5
-M 0 2101 4 2112
-E 1 2103 1 16
-E 1 2101 1 5
-M 0 2101 4 2140
-E 1 2103 1 16
-M 0 2110 4 2152
-G 1 2103 1
-E 1 2101 1 5
-M 0 2110 4 2159
-G 1 2103 1
-E 1 2101 1 5
-M 0 2110 4 2171
-G 1 2103 1
-E 1 2101 1 5
-M 0 2110 4 2101
-G 1 2103 1
-E 1 2101 1 5
-O 0 2125 1 2161
-O 0 2121 1 2105
-O 0 2122 1 2113
-O 0 2126 1 2126
-O 0 2127 1 2116
-O 0 2128 1 2167
-O 0 2129 1 2140
-O 0 2119 1 2163
-O 0 2123 1 2123
-O 0 2124 1 2164
+M 0 2107 12 2103  ; Mob: #2107 a mourner => #2103 An Unkempt Grave
+E 1 2110 10 16  ; -- Equip: #2110 a widow's cane (Wield)
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+M 0 2102 12 2103  ; Mob: #2102 a graverobber => #2103 An Unkempt Grave
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+O 1 2113 1 2104  ; Object: #2113 Thomas' pine coffin => #2104 The Coffin of Thomas
+M 0 2102 12 2105  ; Mob: #2102 a graverobber => #2105 The Fallen Headstone
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+M 0 2107 12 2106  ; Mob: #2107 a mourner => #2106 Darkened Grave of the Unknown Warrior
+E 1 2110 10 16  ; -- Equip: #2110 a widow's cane (Wield)
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+M 0 2102 12 2107  ; Mob: #2102 a graverobber => #2107 An Overgrown Grave
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+M 0 2107 12 2108  ; Mob: #2107 a mourner => #2108 The Fallen Tree
+E 1 2110 10 16  ; -- Equip: #2110 a widow's cane (Wield)
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+O 1 2115 1 2108  ; Object: #2115 a large dead tree => #2108 The Fallen Tree
+M 0 2107 12 2115  ; Mob: #2107 a mourner => #2115 Along the Wrought Iron Fence
+E 1 2110 10 16  ; -- Equip: #2110 a widow's cane (Wield)
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+M 0 2107 12 2116  ; Mob: #2107 a mourner => #2116 The Withered Old Tree
+E 1 2110 10 16  ; -- Equip: #2110 a widow's cane (Wield)
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+M 0 2102 12 2116  ; Mob: #2102 a graverobber => #2116 The Withered Old Tree
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+M 0 2102 12 2123  ; Mob: #2102 a graverobber => #2123 The Trail Ends
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+D 0 2129 5 1  ; Door: #2129 Beyond the Shadow of Death/Down => closed
+D 0 2130 4 1  ; Door: #2130 Beneath the Mausoleum/Up => closed
+M 0 2102 12 2133  ; Mob: #2102 a graverobber => #2133 Hall of Death and Destruction
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+D 0 2133 2 1  ; Door: #2133 Hall of Death and Destruction/South => closed
+M 0 2106 1 2135  ; Mob: #2106 the savage beast => #2135 Darkened Trails of the Beast
+E 1 2112 3 9  ; -- Equip: #2112 gloves of rotten flesh (Hands)
+D 0 2136 5 1  ; Door: #2136 Arabella's Final Resting Place/Down => closed
+M 0 2102 12 2137  ; Mob: #2102 a graverobber => #2137 The Misty Cemetary
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+M 0 2102 12 2137  ; Mob: #2102 a graverobber => #2137 The Misty Cemetary
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+D 0 2138 0 1  ; Door: #2138 Pallbearer's Lament/North => closed
+M 0 2107 12 2140  ; Mob: #2107 a mourner => #2140 The Unholy Statue
+E 1 2110 10 16  ; -- Equip: #2110 a widow's cane (Wield)
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+D 0 2141 4 1  ; Door: #2141 Inside the Grave of Arabella/Up => closed
+D 0 2141 5 1  ; Door: #2141 Inside the Grave of Arabella/Down => closed
+M 0 2103 1 2142  ; Mob: #2103 Arabella => #2142 Arabella's Coffin
+E 1 2109 1 10  ; -- Equip: #2109 Arabella's golden bracelet (Arms)
+E 1 2111 1 1  ; -- Equip: #2111 a golden ring encrusted with diamonds (Finger-L)
+M 0 2108 2 2142  ; Mob: #2108 a small grey rat => #2142 Arabella's Coffin
+M 0 2108 2 2142  ; Mob: #2108 a small grey rat => #2142 Arabella's Coffin
+D 0 2142 4 1  ; Door: #2142 Arabella's Coffin/Up => closed
+M 0 2102 12 2143  ; Mob: #2102 a graverobber => #2143 Deeper into the Cemetary
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+M 0 2102 12 2147  ; Mob: #2102 a graverobber => #2147 Small Unholy Grove of Trees Within the Graveyard
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+M 0 2107 12 2148  ; Mob: #2107 a mourner => #2148 Man's Best Friend
+E 1 2110 10 16  ; -- Equip: #2110 a widow's cane (Wield)
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+M 0 2107 12 2150  ; Mob: #2107 a mourner => #2150 Overgrown Trail of Vines
+E 1 2110 10 16  ; -- Equip: #2110 a widow's cane (Wield)
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+M 0 2102 12 2152  ; Mob: #2102 a graverobber => #2152 The Midsts of the Grove
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+D 0 2153 2 1  ; Door: #2153 Deep Inside the Brightened Grove/South => closed
+M 0 2102 12 2154  ; Mob: #2102 a graverobber => #2154 The Grove Thickens
+E 1 2104 12 11  ; -- Equip: #2104 a headstone's stolen plaque (Shield)
+E 1 2106 12 16  ; -- Equip: #2106 a graverobber's chisel (Wield)
+D 0 2155 2 1  ; Door: #2155 The Chapel Foyer/South => closed
+M 0 2105 1 2156  ; Mob: #2105 a grey haired preacher => #2156 The Mournful Sanctuary
+E 1 2108 1 17  ; -- Equip: #2108 a preacher's bible (Hold)
+G 1 2105 2 ; -- Give:  #2105 a shattered crucifix
+M 0 2107 12 2156  ; Mob: #2107 a mourner => #2156 The Mournful Sanctuary
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2112 3 9  ; -- Equip: #2112 gloves of rotten flesh (Hands)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+M 0 2107 12 2156  ; Mob: #2107 a mourner => #2156 The Mournful Sanctuary
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2112 3 9  ; -- Equip: #2112 gloves of rotten flesh (Hands)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+D 0 2156 4 1  ; Door: #2156 The Mournful Sanctuary/Up => closed
+M 0 2107 12 2158  ; Mob: #2107 a mourner => #2158 Before A Hidden Tomb
+E 1 2110 10 16  ; -- Equip: #2110 a widow's cane (Wield)
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+D 0 2158 0 1  ; Door: #2158 Before A Hidden Tomb/North => closed
+D 0 2158 2 1  ; Door: #2158 Before A Hidden Tomb/South => closed
+M 0 2120 1 2164  ; Mob: #2120 an owl => #2164 Grove of the Dead
+D 0 2165 0 1  ; Door: #2165 The Shrine of Anastacia/North => closed
+M 0 2107 12 2168  ; Mob: #2107 a mourner => #2168 The Bloody Headstone
+E 1 2110 10 16  ; -- Equip: #2110 a widow's cane (Wield)
+E 1 2102 12 5  ; -- Equip: #2102 a black woolen shawl (Body)
+E 1 2107 12 8  ; -- Equip: #2107 black pair of slippers caked with mud (Feet)
+E 1 2120 12 20  ; -- Equip: #2120 a thin black veil (Eyes)
+M 0 2104 1 2170  ; Mob: #2104 Anastacia => #2170 The Eternal Sleep of Anastacia
+G 1 2105 2 ; -- Give:  #2105 a shattered crucifix
+E 1 2118 1 17  ; -- Equip: #2118 a large white lily (Hold)
+O 1 2116 1 2170  ; Object: #2116 Anastacia's glass coffin => #2170 The Eternal Sleep of Anastacia
+P 1 2117 1 2116  ; Put: #2117 a bed of scattered white rose petals => #2116 Anastacia's glass coffin
+O 0 2114 1 2124  ; Object: #2114 a crumbling fountain => #2124 The Broken Old Fountain
+M 0 2101 4 2103  ; Mob: #2101 a gravedigger => #2103 An Unkempt Grave
+E 1 2103 1 16  ; -- Equip: #2103 a gravedigger's spade (Wield)
+E 1 2101 1 5  ; -- Equip: #2101 a gravedigger's muddy robe (Body)
+M 0 2101 4 2105  ; Mob: #2101 a gravedigger => #2105 The Fallen Headstone
+E 1 2103 1 16  ; -- Equip: #2103 a gravedigger's spade (Wield)
+E 1 2101 1 5  ; -- Equip: #2101 a gravedigger's muddy robe (Body)
+M 0 2101 4 2112  ; Mob: #2101 a gravedigger => #2112 Within the Graveyard
+E 1 2103 1 16  ; -- Equip: #2103 a gravedigger's spade (Wield)
+E 1 2101 1 5  ; -- Equip: #2101 a gravedigger's muddy robe (Body)
+M 0 2101 4 2140  ; Mob: #2101 a gravedigger => #2140 The Unholy Statue
+E 1 2103 1 16  ; -- Equip: #2103 a gravedigger's spade (Wield)
+M 0 2110 4 2152  ; Mob: #2110 a gravedigger => #2152 The Midsts of the Grove
+G 1 2103 1 ; -- Give:  #2103 a gravedigger's spade
+E 1 2101 1 5  ; -- Equip: #2101 a gravedigger's muddy robe (Body)
+M 0 2110 4 2159  ; Mob: #2110 a gravedigger => #2159 Brightened Grove
+G 1 2103 1 ; -- Give:  #2103 a gravedigger's spade
+E 1 2101 1 5  ; -- Equip: #2101 a gravedigger's muddy robe (Body)
+M 0 2110 4 2171  ; Mob: #2110 a gravedigger => #2171 Before the Graveyard
+G 1 2103 1 ; -- Give:  #2103 a gravedigger's spade
+E 1 2101 1 5  ; -- Equip: #2101 a gravedigger's muddy robe (Body)
+M 0 2110 4 2101  ; Mob: #2110 a gravedigger => #2101 The Broken, Uneven Grounds
+G 1 2103 1 ; -- Give:  #2103 a gravedigger's spade
+E 1 2101 1 5  ; -- Equip: #2101 a gravedigger's muddy robe (Body)
+O 0 2125 1 2161  ; Object: #2125 a preacher's headstone => #2161 The Death of a Holy Man
+O 0 2121 1 2105  ; Object: #2121 a swirled black marble headstone => #2105 The Fallen Headstone
+O 0 2122 1 2113  ; Object: #2122 old rugged cross => #2113 The Old Rugged Cross
+O 0 2126 1 2126  ; Object: #2126 fallen headstone => #2126 Mournful Death Trail
+O 0 2127 1 2116  ; Object: #2127 a withered old oak tree => #2116 The Withered Old Tree
+O 0 2128 1 2167  ; Object: #2128 a beheaded statue => #2167 The Beheaded Statue
+O 0 2129 1 2140  ; Object: #2129 statue of a woman => #2140 The Unholy Statue
+O 0 2119 1 2163  ; Object: #2119 a shriveled rope attached to a bell => #2163 For Whom The Bell Tolls
+O 0 2123 1 2123  ; Object: #2123 mangled limbs and bloody corpses => #2123 The Trail Ends
+O 0 2124 1 2164  ; Object: #2124 decaying corpse hanging from a rope => #2164 Grove of the Dead
 S
-
-
-#SHOPS
-0
-
-
-#REPAIRS
-0
-
 
 #SPECIALS
-M  2102 spec_janitor
-M  2106 spec_fido
-M  2108 spec_fido
+M 2102 spec_janitor   ; a graverobber
+M 2106 spec_fido   ; the savage beast
+M 2108 spec_fido   ; a small grey rat
 S
-
 
 #$

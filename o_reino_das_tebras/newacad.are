@@ -1,14 +1,12 @@
-#AREA   Brigantia Academy~
+#AREA Academia de Brigantia~
 
-
-
-#AUTHOR Scarab~
+#AUTHOR BuRZuM-iSHi~
 
 #RANGES
 1 5 0 60
 $
 
-#RESETMSG You hear the patter of little feet as the battleground teems with life...~
+#RESETMSG Oes pequenos pasos que se poden distinguir entre os chasquidos da fragorosa batalla ...~
 
 #FLAGS
 1 3
@@ -17,9 +15,9 @@ $
 
 #MOBILES
 #10300
-wolf arena~
-the dread wolf~
-A dread wolf is hunting here
+lobo da area~
+Un lobo esfameado~
+Un lobo esfameado está cazando por aqui
 ~
 ~
 1073741889 0 0 C
@@ -31,9 +29,9 @@ A dread wolf is hunting here
 0 3 0 0 1 1 0
 0 0 66692 0 2048 0 0 0
 #10301
-slug arena~
-a slimy slug~
-A slimy slug is here scrounging up a meal
+lumacha area~
+Unha lumacha~
+Unha lumacha anda buscando algo de picar ...
 ~
 ~
 65 0 0 C
@@ -46,7 +44,7 @@ A slimy slug is here scrounging up a meal
 0 0 66560 0 2048 0 0 0
 #10302
 naga arena~
-the bone naga~
+o naga esqueletico~
 A bone naga rears up on its tail, ready to strike at you.
 ~
 Possessing the lower body of a snake and the upper body of a skeleton,
@@ -61,9 +59,9 @@ this creature is something to be careful of.
 0 0 0 0 131073 131073 0
 0 0 66561 0 2048 0 0 0
 #10303
-crawler arena~
-a carrion crawler~
-A carrion crawler growls at you.
+aguilon da area~
+Un aguilon da area~
+Una aguilon da area fixouse en ti.
 ~
 ~
 65 56 0 C
@@ -75,22 +73,26 @@ A carrion crawler growls at you.
 0 3 0 0 1 1 0
 0 0 1159 0 2048 0 0 0
 #10304
-~
-the naga~
-A naga is here, eyes narrowed in anger.
+naga cage~
+o naga~
+Un naga esta aqui, cos ollos inxectados en sangue
 ~
 Not the prettiest creature you have evere seen. This beast's entire lower
 half is that of a snake, while the upper part of it's body is that of a
 woman, and she doesn't look happy to see you.
 ~
-1073741891 0 0 S
+1073741891 0 0 C
 1 0 94 11d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10305
 naga cage~
-the naga~
-A naga is here, eyes narrowed in anger
+o naga~
+Un naga esta aqui, cos ollos inxectados en sangue
 ~
 Not the prettiest creature you have ever seen. This beasts entire lower
 half is that of a snake. The upper part of its body is that of a woman.
@@ -106,8 +108,8 @@ She does not look happy to see you.
 0 0 1159 0 0 0 0 0
 #10306
 naga cage~
-the naga~
-A naga is here, eyes narrowed in anger
+o naga~
+Un naga esta aqui, cos ollos inxectados en sangue
 ~
 Not the prettiest creature you have ever seen. This beasts entire lower
 half is that of a snake. The upper part of its body is that of a woman.
@@ -123,8 +125,8 @@ She does not look happy to see you.
 0 0 1159 0 0 0 0 0
 #10307
 naga cage~
-the naga~
-A naga is here, eyes narrowed in anger
+o naga~
+Un naga esta aqui, cos ollos inxectados en sangue
 ~
 Not the prettiest creature you have ever seen. This beasts entire lower
 half is that of a snake. The upper part of its body is that of a woman.
@@ -140,8 +142,8 @@ She does not look happy to see you.
 0 0 1159 0 0 0 0 0
 #10308
 naga cage~
-the naga~
-A naga is here, eyes narrowed in anger
+o naga~
+Un naga esta aqui, cos ollos inxectados en sangue
 ~
 Not the prettiest creature you have ever seen. This beasts entire lower
 half is that of a snake. The upper part of its body is that of a woman.
@@ -157,8 +159,8 @@ She does not look happy to see you.
 0 0 1159 0 0 0 0 0
 #10309
 naga cage~
-the naga~
-A naga is here, eyes narrowed in anger
+o naga~
+Un naga esta aqui, cos ollos inxectados en sangue
 ~
 Not the prettiest creature you have ever seen. This beasts entire lower
 half is that of a snake. The upper part of its body is that of a woman.
@@ -174,8 +176,8 @@ She does not look happy to see you.
 0 0 1159 0 0 0 0 0
 #10310
 naga cage~
-the naga~
-A naga is here, eyes narrowed in anger
+o naga~
+Un naga esta aqui, cos ollos inxectados en sangue
 ~
 Not the prettiest creature you have ever seen. This beasts entire lower
 half is that of a snake. The upper part of its body is that of a woman.
@@ -191,8 +193,8 @@ She does not look happy to see you.
 0 0 1159 0 0 0 0 0
 #10311
 naga cage~
-the naga~
-A naga is here, eyes narrowed in anger
+o naga~
+Un naga esta aqui, cos ollos inxectados en sangue
 ~
 Not the prettiest creature you have ever seen. This beasts entire lower
 half is that of a snake. The upper part of its body is that of a woman.
@@ -208,8 +210,8 @@ She does not look happy to see you.
 0 0 1159 0 0 0 0 0
 #10312
 gnoll cage~
-the gnoll~
-A young gnoll is here ready to attack you.
+o gnoll~
+Un xove gnoll esta aqui disposto a atacarte.
 ~
 Eager to test his prowess in battle, this young gnoll bares his fangs at you.
 He is trying to strike fear in your heart.
@@ -234,8 +236,8 @@ endif
 |
 #10313
 gnoll cage~
-the gnoll~
-A young gnoll is here ready to attack you.
+o gnoll~
+Un xove gnoll esta aqui disposto a atacarte.
 ~
 Eager to test his prowess in battle, this young gnoll bares his fangs at you.
 He is trying to strike fear in your heart.
@@ -260,8 +262,8 @@ endif
 |
 #10314
 gnoll cage~
-the gnoll~
-A young gnoll is here ready to attack you.
+o gnoll~
+Un xove gnoll esta aqui disposto a atacarte.
 ~
 Eager to test his prowess in battle, this young gnoll bares his fangs at you.
 He is trying to strike fear in your heart.
@@ -286,8 +288,8 @@ endif
 |
 #10315
 gnoll cage~
-the gnoll~
-A young gnoll is here ready to attack you.
+o gnoll~
+Un xove gnoll esta aqui disposto a atacarte.
 ~
 Eager to test his prowess in battle, this young gnoll bares his fangs at you.
 He is trying to strike fear in your heart.
@@ -312,8 +314,8 @@ endif
 |
 #10316
 gnoll cage~
-the gnoll~
-A young gnoll is here ready to attack you.
+o gnoll~
+Un xove gnoll esta aqui disposto a atacarte.
 ~
 Eager to test his prowess in battle, this young gnoll bares his fangs at you.
 He is trying to strike fear in your heart.
@@ -338,8 +340,8 @@ endif
 |
 #10317
 gnoll cage~
-the gnoll~
-A young gnoll is here ready to attack you
+o gnoll~
+Un xove gnoll esta aqui disposto a atacarte.
 ~
 Eager to test his prowess in battle, this young gnoll bares his fangs at you.
 He is trying to strike fear in your heart.
@@ -364,8 +366,8 @@ endif
 |
 #10318
 gnoll cage~
-the gnoll~
-A young gnoll is here ready to attack you.
+o gnoll~
+Un xove gnoll esta aqui disposto a atacarte.
 ~
 Eager to test his prowess in battle, this young gnoll bares his fangs at you.
 He is trying to strike fear in your heart.
@@ -509,10 +511,14 @@ A minotaur is here snorting at your intrusion.
 Not the largest of the species you have ever seen. Actually this minotaur
 looks pretty small compared to the others of its kind that you have seen.
 ~
-67 0 0 S
+67 0 0 C
 1 0 94 11d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10327
 minotaur cage~
 the minotaur~
@@ -521,10 +527,14 @@ A minotaur is here snorting at your intrusion.
 Not the largest of the species you have ever seen. Actually this minotaur
 looks pretty small compared to the others of its kind that you have seen.
 ~
-67 0 0 S
+67 0 0 C
 1 0 94 11d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10328
 minotaur cage~
 the minotaur~
@@ -533,10 +543,14 @@ A minotaur is here snorting at your intrusion.
 Not the largest of the species you have ever seen. Actually this minotaur
 looks pretty small compared to the others of its kind that you have seen.
 ~
-67 0 0 S
+67 0 0 C
 1 0 94 11d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10329
 minotaur cage~
 the minotaur~
@@ -545,10 +559,14 @@ A minotaur is here snorting at your intrusion.
 Not the largest of the species you have ever seen. Actually this minotaur
 looks pretty small compared to the others of its kind that you have seen.
 ~
-67 0 0 S
+67 0 0 C
 1 0 94 11d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10330
 minotaur cage~
 the minotaur~
@@ -557,10 +575,14 @@ A minotaur is here snorting at your intrusion.
 Not the largest of the species you have ever seen. Actually this minotaur
 looks pretty small compared to the others of its kind that you have seen.
 ~
-67 0 0 S
+67 0 0 C
 1 0 94 11d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10331
 minotaur cage~
 the minotaur~
@@ -569,10 +591,14 @@ A minotaur is here snorting at your intrusion.
 Not the largest of the species you have ever seen. Actually this minotaur
 looks pretty small compared to the others of its kind that you have seen.
 ~
-67 0 0 S
+67 0 0 C
 1 0 94 11d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10332
 minotaur cage~
 the minotaur~
@@ -581,10 +607,14 @@ A minotaur is here snorting at your intrusion.
 Not the largest of the species you have ever seen. Actually this minotaur
 looks pretty small compared to the others of its kind that you have seen.
 ~
-67 0 0 S
+67 0 0 C
 1 0 94 11d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10333
 healer spectre cage~
 the spectre~
@@ -804,11 +834,11 @@ tell $n Are you ready for your lessons?
 ~
 |
 #10342
-Toric lord healer~
-Lord Toric~
-A Lord of Healing stands here, overseeing your progress.
+BuRZuM-iSHi senhor curacion~
+BuRZuM-iSHi~
+Un Senhor da Curacion esta aqui, revisando o teu progreso.
 ~
-This is Toric, a Lord of Healing.  If you grovel before him, you might
+This is BuRZuM-iSHi, a Lord of Healing.  If you grovel before him, you might
 receive extra assistance.  Groveling before the Lords will not get you
 very far in the game, but honest play, helping others and strategy will.
 ~
@@ -866,7 +896,7 @@ else
     smile $n
     say You are too experienced to have need of my assistance, $n.
   else
-    clap $n 
+    clap $n
     say Well done, $n.
     c fly $n
     tell $n that will help you with your movements.
@@ -880,7 +910,7 @@ Zurg~
 A sage storekeeper is here, selling his wares.
 ~
 This is a friendly shopkeeper. His eyes sparkle with amusement. He seems
-patient with those still learning to use the shop. 
+patient with those still learning to use the shop.
 ~
 3 4194856 0 C
 1 0 94 1000d1+0 0d0+0
@@ -953,9 +983,9 @@ endif
 ~
 |
 #10346
-Silvina receptionist woman~
-Silvina~
-An aged woman sits here, assisting Adventurers into the proper portals.
+Silvana recepcionista~
+Senhorita Silvana~
+A fantastica Senhorita Silvana esta aqui para recibir os novatos na Academia.
 ~
 This is a woman of average beauty, her face is wrinkled from both time
 and laughter.  She enjoys her duties in the Academy, aiding the new
@@ -1375,7 +1405,7 @@ the statue~
 A marble statue of an ancient vampire
 ~
 This is a marble carving of a seductress, only the fangs give away her
-vampiric nature. Her eyes are hypnotic, making you feel like she is 
+vampiric nature. Her eyes are hypnotic, making you feel like she is
 looking deep into your soul.
 ~
 3 680 1000 C
@@ -1645,10 +1675,14 @@ a test mob~
 This is a test mob.
 ~
 ~
-1073741825 0 0 S
+1073741825 0 0 C
 1 0 0 11d1+0 0d0+0
 0 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10359
 None~
 this is a none~
@@ -1687,10 +1721,14 @@ this is a none~
 This is a nones long
 ~
 ~
-1073741827 0 -400 S
+1073741827 0 -400 C
 1 0 0 11d1+0 0d0+0
 300 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10362
 None~
 this is a none~
@@ -1732,10 +1770,14 @@ No fur covers the body of this beast, only a pastey white skin. So thin
 is the skin on this beast that you can see the organs working to keep
 this thing alive. Even from a distance you can smell it's fetid breath.
 ~
-1073741889 0 -1000 S
+1073741889 0 -1000 C
 1 0 90 11d1+0 0d0+0
 0 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10365
 None~
 this is a none~
@@ -1876,10 +1918,14 @@ this is a none~
 This is a nones long
 ~
 ~
-1073742017 0 0 S
+1073742017 0 0 C
 1 0 94 11d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10386
 None~
 this is a none~
@@ -1888,10 +1934,14 @@ This is a nones long
 Wallowing in a pool of it's own slime, this slug turns sightless eyes
 towards you thinking you may make a good meal.
 ~
-1073742017 0 0 S
+1073742017 0 0 C
 1 0 94 11d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10393
 None~
 this is a none~
@@ -1910,8 +1960,8 @@ possess an "undying" loyalty to thier Queen.
 3 0 0 0 131073 131072 0
 0 0 0 0 0 0 0 0
 #10394
-Abbigayle language teacher~
-abbigayle~
+Abbigail language teacher~
+abbigail~
 A beautiful lady stands here, waiting for her students.
 ~
 This has to be one of the most beautiful women in these Realms, both inside
@@ -2030,10 +2080,14 @@ You can barely take your eyes from her, she is hypnotizing.  She smiles at
 you, knowing you are appreciating her beauty.  You bet she is as deadly as
 she is beautiful to gain the position of headmistress of this Academy.
 ~
-3 4194472 0 S
+3 4194472 0 C
 1 0 0 1000d1+0 0d0+0
 0 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 > death_prog 100~
 mpmload 10399
 say You may kill this body, but my spirit will not die!
@@ -2228,16 +2282,20 @@ woman.  She does not look happy to see you.
 0 0 1159 0 0 0 0 0
 #10403
 minotaur cage~
-the minotaur~
+o minotauro~
 A minotaur is here snorting at your intrusion.
 ~
 Not the largest of the species you have ever seen.  Actually, this minotaur
 looks rather small compared to others of its kind you have encountered.
 ~
-67 0 0 S
+67 0 0 C
 1 0 94 8d1+0 0d0+0
 100 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10404
 gnoll cage~
 the gnoll~
@@ -2490,8 +2548,8 @@ watch your every movement.
 0 0 1775 0 2048 0 1 0
 #10418
 mole arena~
-a mole~
-A dirty mole appears from a hole in the ground.
+unha mole~
+Unha mole noxenta aparece dunha fochanca no chan.
 ~
 This mole is covered in mud!  His body is plump and his movements
 are slow.  You can see his small, beady eyes, but doubt that he
@@ -2507,8 +2565,8 @@ can really see you.
 0 0 1775 0 2048 0 0 0
 #10419
 mole arena~
-a mole~
-A dirty mole appears from a hole in the ground.
+unha mole~
+Unha mole noxenta aparece dunha fochanca no chan.
 ~
 This mole is covered in mud!  His body is plump and his movements
 are slow.  You can see his small, beady eyes, but doubt that he
@@ -2524,8 +2582,8 @@ can really see you.
 0 0 1775 0 2048 0 0 0
 #10420
 mole arena~
-a mole~
-A dirty mole appears from a hole in the ground.
+unha mole~
+Unha mole noxenta aparece dunha fochanca no chan.
 ~
 This mole is covered in mud!  His body is plump and his movements
 are slow.  You can see his small, beady eyes, but doubt that he
@@ -2541,8 +2599,8 @@ can really see you.
 0 0 1775 0 2048 0 0 0
 #10421
 mole arena~
-a mole~
-A dirty mole appears from a hole in the ground.
+unha mole~
+Unha mole noxenta aparece dunha fochanca no chan.
 ~
 This mole is covered in mud!  His body is plump and his movements
 are slow.  You can see his small, beady eyes, but doubt that he
@@ -2562,32 +2620,43 @@ Hungrily, a hollow voice~
 Hvak1 Advancer is here (should always be in 10499)
 ~
 ~
-1073741825 4194344 0 S
+1073741825 4194344 0 C
 50 0 0 0d0+0 0d0+0
 0 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10498
 hvak2 advancer~
 A rasping voice~
 Hvak2 Advancer is here (should always be in 10499)
 ~
 ~
-1073741825 4194344 0 S
+1073741825 4194344 0 C
 50 0 0 0d0+0 0d0+0
 0 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #10499
 final mob~
 a newly created final mob~
 Some god abandoned a newly created final mob here.
 ~
 ~
-1073741825 0 0 S
+1073741825 0 0 C
 1 0 0 0d0+0 0d0+0
 0 0
 8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 0 0
 #0
-
 
 #OBJECTS
 #10300
@@ -2595,7 +2664,7 @@ bracelet charm academy~
 a charm bracelet~
 A charm bracelet from the academy lies here~
 ~
-9 0 4097
+9 0 4097 0
 2 2 0 0
 2 0 0
 E
@@ -2614,7 +2683,7 @@ combat boots academy~
 a pair of black combat boots~
 A pair of black combat boots from the Academy lies here~
 ~
-9 0 65
+9 0 65 0
 3 3 0 0
 3 0 0
 E
@@ -2633,7 +2702,7 @@ belt leather academy~
 a braided leather belt~
 A braided leather belt from the Academy lies here~
 ~
-9 0 2049
+9 0 2049 0
 2 2 0 0
 2 0 0
 E
@@ -2652,7 +2721,7 @@ leggings mail academy~
 heavy mail leggings~
 Heavy mail leggings from the Academy lie here~
 ~
-9 0 33
+9 0 33 0
 2 2 0 0
 3 0 0
 E
@@ -2669,7 +2738,7 @@ helmet iron academy~
 a wrought iron helmet~
 A wrought iron helmet from the Academy~
 ~
-9 0 17
+9 0 17 0
 3 3 0 0
 2 0 0
 E
@@ -2688,7 +2757,7 @@ cape brocade academy~
 a black brocade cape~
 A black brocade cape from the academy~
 ~
-9 0 1025
+9 0 1025 0
 2 2 0 0
 3 0 0
 E
@@ -2706,7 +2775,7 @@ collar metal academy~
 a strong metal collar~
 A strong metal collar from the academy~
 ~
-9 0 5
+9 0 5 0
 3 2 0 0
 5 0 0
 E
@@ -2723,7 +2792,7 @@ visor completion academy~
 a visor of completion~
 A visor of completion is here, emitting a faint glow.~
 ~
-9 64 131073
+9 64 131073 0
 2 0 0 0
 1 0 0
 E
@@ -2745,20 +2814,20 @@ plate armour academy~
 a plate of armour~
 A plate of armour from the Academy lies here~
 ~
-9 0 9
+9 0 9 0
 2 2 0 0
 5 0 0
 E
 plate armour~
 This plate of armour will give you protection until you can find
-something better. 
+something better.
 ~
 #10309
 sleeves tin academy~
 lightweight tin sleeves~
 Lightweight tin sleeves from the academy~
 ~
-9 0 257
+9 0 257 0
 3 3 0 0
 1 0 0
 E
@@ -2777,7 +2846,7 @@ shield crest academy~
 a shield with the Brigantia Academy crest~
 A shield with the Brigantia Academy crest lies here~
 ~
-9 0 513
+9 0 513 0
 2 2 0 0
 5 0 0
 E
@@ -2790,7 +2859,7 @@ orb eye enlightenment academy.~
 an eye of enlightenment~
 A glistening orbs shines as a guiding light to new adventurers.~
 ~
-1 65 1
+1 65 1 0
 0 0 -1 0
 1 0 0
 A
@@ -2800,7 +2869,7 @@ academy dagger~
 a finely honed dagger~
 You see a finely honed dagger here.~
 ~
-5 64 8193
+5 64 8193 0
 12 1 6 11
 2 0 0
 A
@@ -2812,7 +2881,7 @@ sword academy~
 a finely honed sword~
 You see a finely honed sword here.~
 ~
-5 64 8193
+5 64 8193 0
 12 0 0 3
 2 0 0
 E
@@ -2829,15 +2898,15 @@ dragonskin skin water~
 a dragonskin~
 You see a dragonskin water container here.~
 ~
-17 0 1
+17 0 1 0
 15 15 0 0
-0 30 3
+1 30 3
 #10315
 mace academy~
 a finely wrought mace~
 You see a finely wrought mace here.~
 ~
-5 64 8193
+5 64 8193 0
 12 3 6 7
 2 0 0
 E
@@ -2854,7 +2923,7 @@ torch~
 a torch~
 A piece of wood, partly wrapped in cloth is here.~
 ~
-1 0 65537
+1 0 65537 0
 0 0 24 0
 1 20 2
 #10317
@@ -2862,7 +2931,7 @@ dried rabbit meat~
 dried rabbit meat~
 Some sort of dried meat is on the ground here.~
 ~
-19 0 1
+19 0 1 0
 24 0 0 0
 1 40 4
 #10318
@@ -2870,7 +2939,7 @@ shortsword sword snakebite~
 a shortsword named "Snakebite"~
 A sword lies here, twitching on its own.~
 ~
-5 8389184 8193
+5 8389184 8193 0
 12 0 0 3
 3 0 0
 A
@@ -2882,7 +2951,7 @@ gloves kid academy~
 kid gloves~
 A pair of kid gloves from the Academy lie here~
 ~
-9 0 129
+9 0 129 0
 3 0 0 0
 2 0 0
 A
@@ -2896,7 +2965,7 @@ bag tricks~
 a bag of tricks~
 A mage seems to have left their bag here.~
 ~
-15 0 1
+15 0 1 0
 75 1 0 0
 5 0 0
 E
@@ -2908,7 +2977,7 @@ bag healing~
 a bag of healing~
 A cleric seems to have left their bag here.~
 ~
-15 0 1
+15 0 1 0
 75 1 0 0
 5 0 0
 E
@@ -2920,7 +2989,7 @@ bag stealth~
 a bag of stealth~
 A thief seems to have left their bag here.~
 ~
-15 0 1
+15 0 1 0
 75 1 0 0
 5 0 0
 E
@@ -2932,7 +3001,7 @@ bag war~
 a bag of war~
 A warrior seems to have left their bag here.~
 ~
-15 0 1
+15 0 1 0
 75 1 0 0
 5 0 0
 E
@@ -2944,7 +3013,7 @@ bag darkness~
 a bag of darkness~
 A vampire seems to have left their bag here.~
 ~
-15 0 1
+15 0 1 0
 75 1 0 0
 5 0 0
 E
@@ -2956,7 +3025,7 @@ bag nature~
 a bag of nature~
 A druid seems to have left their bag here.~
 ~
-15 0 1
+15 0 1 0
 75 1 0 0
 5 0 0
 E
@@ -2968,7 +3037,7 @@ bag freedom~
 a bag of freedom~
 A ranger seems to have left their bag here.~
 ~
-15 0 1
+15 0 1 0
 75 1 0 0
 5 0 0
 E
@@ -2980,7 +3049,7 @@ anti-death antideath elixir potion~
 an anti-death elixir~
 An odd, glowing potion lays here.~
 ~
-10 1 1
+10 1 1 0
 20 16 61 81
 2 0 0
 E
@@ -2992,7 +3061,7 @@ scroll escape recall~
 a scroll of escape~
 A dark paper covered in arcane writing lies here.~
 ~
-2 0 1
+2 0 1 0
 10 35 43 42
 5 0 0
 #10333
@@ -3000,7 +3069,7 @@ adventurer's guide book academy~
 The Adventurer's Guide~
 A book with "DON'T PANIC, LOOK AT ME!" written on the cover lies here.~
 ~
-9 524288 16385
+9 524288 16385 0
 5 5 0 0
 1 1234 123
 E
@@ -3031,7 +3100,7 @@ Regular equipment setup:              Equipment setup during dual wield:
 E
 guide book~
 Some helpful files for those new to mudding:
- 
+
 SPAM -        Will explain what spam is, and why you should not do it.
 CONFIG -      Will teach you about our configuration menu.
 SCORE -       Will tell you about your characters personal score sheet.
@@ -3044,7 +3113,7 @@ COMBAT -      Will teach you how to choose, start and stop a fight.
 DEATH -       Will tell you about the death experience in the game.
 PRACTICE -    Will teach you about training spells, skills, and weapons.
 INFORMATION - Will cover ways to find certain types of information.
- 
+
 To use these help files, type AXUDA <topic> from the topics listed in
 capital letters above.
 ~
@@ -3066,15 +3135,15 @@ kobold~
 a newly created kobold~
 Some god dropped a newly created kobold here.~
 ~
-13 1073741824 0
+13 1073741824 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #10345
 chains Chadoyn bindings~
 the chadoyn's bindings~
 A set of of sturdy chains attached to a collar splays over the floor.~
 ~
-9 524288 5
+9 524288 5 0
 0 3 0 0
 2 1 0
 A
@@ -3084,57 +3153,57 @@ gnoll~
 a newly created gnoll~
 Some god dropped a newly created gnoll here.~
 ~
-13 1073741824 0
+13 1073741824 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #10360
 gnoll~
 a newly created gnoll~
 Some god dropped a newly created gnoll here.~
 ~
-13 1073741824 0
+13 1073741824 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #10362
 gnoll~
 a newly created gnoll~
 Some god dropped a newly created gnoll here.~
 ~
-13 1073741824 0
+13 1073741824 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #10363
 gnoll~
 a newly created gnoll~
 Some god dropped a newly created gnoll here.~
 ~
-13 1073741824 0
+13 1073741824 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #10365
 gnoll~
 a newly created gnoll~
 Some god dropped a newly created gnoll here.~
 ~
-13 1073741824 0
+13 1073741824 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #10366
 gnoll~
 a newly created gnoll~
 Some god dropped a newly created gnoll here.~
 ~
-13 1073741824 0
+13 1073741824 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #10367
 board academy~
 the Newbie Council Noteboard~
 A board stands here, ready for your posts.~
 ~
-13 0 0
+13 0 0 0
 0 0 0 0
-0 0 0
+1 0 0
 E
 board newbie~
 This board can be read by typing NOTE LIST and then NOTE READ <#>.
@@ -3145,7 +3214,7 @@ staff shimmering magical~
 a shimmering, magical staff~
 A magical staff shimmers on the ground.~
 ~
-4 321 16385
+4 321 16385 0
 5 1 1 36
 1 60 6
 #10371
@@ -3153,7 +3222,7 @@ shield shiny~
 a shiny shield~
 A shiny shield lies here, surrounded by an aura of magic.~
 ~
-9 321 16385
+9 321 16385 0
 2 2 0 0
 1 200 20
 #10372
@@ -3161,21 +3230,21 @@ map hand-drawn~
 a hand-drawn map~
 A hand-drawn map has been carelessly forgotten.~
 ~
-35 321 1
+35 321 1 0
 0 0 0 0
 1 100 10
 E
 map~
 Instructions for use:
- 
+
 This map will magically point you in the right direction.  To invoke its
 magical powers, you must examine it.  Remember, this map will only work
 on a roadway or path.  It will not work within the Academy, and this map
 will _not_ direct you back to Brigantia.
- 
+
 Be warned that this map's power will eventually wane.  When this happens,
 it will vanish...
- 
+
 ~
 > exa_prog 100~
 mea $n _yel The map radiates pulsating blasts of energy!
@@ -3196,7 +3265,7 @@ or level($n) <= 12
   if inroom($n) == 21020
     mea $n _cha The map draws you to the east.
   else
-  if inroom($n) == 21019 
+  if inroom($n) == 21019
     mea $n _cha The map draws you to the north.
   else
   if inroom($n) < 21000
@@ -3218,25 +3287,25 @@ endif
 ~
 |
 #10373
-map magic~
-a magical map~
+mapa maxico~
+un mapa maxico~
 A map glows with a magical blessing.~
 ~
-35 321 1
+35 321 1 0
 0 0 0 0
 1 100 10
 E
 map~
 Instructions for use:
- 
+
 This map will magically point you in the right direction.  To invoke its
 magical powers, you must examine it.  Remember, this map will only work
 on a roadway or path.  It will not work within the Academy, and this map
 will _not_ direct you back to Brigantia.
- 
+
 Be warned that this map's power will eventually wane.  When this happens,
 it will vanish...
- 
+
 ~
 > exa_prog 100~
 mea $n _yel The map showers you with pulses of energy!
@@ -3277,20 +3346,20 @@ map old decaying~
 an old, decaying map~
 An old map lies here, crushed and decaying.~
 ~
-2 321 1
+2 321 1 0
 50 42 -1 -1
 1 1 0
 E
 map~
 Instructions for use:
- 
+
 This map will lead you to a room of magic, from which you can be transported
 out of the city of Brigantia.  The map will point you in the right direction
 when you examine it...
- 
+
 The map is magical, and will eventually disappear from your inventory.  If
 you want to return to the city, you can "recite map" and you will recall.
- 
+
 ~
 > exa_prog 100~
 mpecho _whi $O glows with a blinding white light!
@@ -3316,7 +3385,7 @@ or level($n) <= 12
   if inroom($n) < 21000
   or inroom($n) > 21407
     mea $n The map spins and glows, but is too far from Brigantia to function.
-  else 
+  else
     mea $n The map seems unable to direct you.
   endif
 endif
@@ -3335,7 +3404,7 @@ map wizard's wizard~
 a wizard's map~
 An absent-minded wizard dropped a map here.~
 ~
-2 321 1
+2 321 1 0
 51 42 -1 -1
 1 100 10
 E
@@ -3343,14 +3412,14 @@ map~
 This map will lead you to a room of magic, from which you can be transported
 out of the city of Brigantia.  The map will point you in the right direction
 when you examine it...
- 
+
 This map is magical, and will eventually disappear from your inventory.  If
 you want to return to the city, you can "recite map" and you will recall.
- 
+
 ~
 > exa_prog 100~
 mpecho _dbl $O glows with an aura of magic.
-if isimmort($n) 
+if isimmort($n)
 or level($n) <= 12
   if inroom($n) == 21038
   or inroom($n) == 21037
@@ -3395,31 +3464,31 @@ scboots~
 black deerskin boots~
 A pair of black boots lies here.~
 ~
-9 0 65
+9 0 65 0
 0 0 0 0
-0 0 0
+1 0 0
 #10398
 scrobes~
 midnight black robes~
 A pile of dark cloth is lieing here.~
 ~
-9 0 1025
+9 0 1025 0
 0 0 0 0
-0 0 0
+1 0 0
 #10399
 scstaff~
 staff of the Arcane~
 A staff is here, standing by itself~
 ~
-4 80 16385
+4 80 16385 0
 54 100 100 30
-0 0 0
+1 0 0
 #10400
 bag wit~
 a bag of wit~
 An augurer seems to have left their bag here.~
 ~
-15 0 1
+15 0 1 0
 75 1 0 0
 5 0 0
 E
@@ -3427,11 +3496,11 @@ bag wit~
 This bag of tricks belongs to a member of the augurer class.
 ~
 #10401
-fountain~
-a fountain~
-A large marble fountain gushes forth here.~
+fonte~
+unha fonte~
+Unha fonte brota por aqui ...~
 ~
-25 0 0
+25 0 0 0
 50 50 0 0
 500 3000 300
 E
@@ -3443,7 +3512,7 @@ menacing granitic blade~
 a menacing granitic blade~
 A blade of metallic stone protrudes from a leather-wrapped hilt.~
 ~
-5 68 8193
+5 68 8193 0
 12 1 6 11
 2 0 0
 E
@@ -3459,7 +3528,7 @@ adamantium mace~
 a gleaming adamantium mace~
 A mace of brightly gleaming metal hums with inner power.~
 ~
-5 524610 8193
+5 524610 8193 0
 12 0 0 7
 2 0 0
 E
@@ -3475,7 +3544,7 @@ heavy broadsword broad sword~
 a heavy, iron-forged broadsword~
 Light glints from the blade of a heavy, iron-forged broadsword.~
 ~
-5 524352 8193
+5 524352 8193 0
 12 0 0 3
 2 0 0
 E
@@ -3491,7 +3560,7 @@ root dirty arena~
 a dirty root~
 A root, covered in dirt, lies here on the ground.~
 ~
-26 537133056 16385
+26 537133056 16385 0
 20 15 84 -1
 3 1200 120
 A
@@ -3499,44 +3568,44 @@ A
 A
 4 1
 #10499
-final object~
-a newly created final object~
-Some god dropped a newly created final object here.~
+obxeto final~
+un novo obxeto final creado~
+Algun deus deixou un obxeto final por aqui.~
 ~
-13 1073741824 0
+13 1073741824 0 0
 0 0 0 0
-0 0 0
+1 0 0
 #0
-
 
 #ROOMS
 #10300
-Brigantia Academy~
-You stand inside the Brigantia Academy, an establishment designed to teach
-the basics of play inside this game.  Each room has a specific purpose and
-contains information on the various commands to maneuver around and interact 
-with the players.  We recommend you explore the Academy in full, taking the 
-time to read the instructions in each room.
- 
-Type N to move north to the next room in the Academy.  If you have already
-completed the rigors of the Academy and wish to test your combat mettle in
-the battlegrounds, type OPEN S or OPEN DOOR, then S to enter the arena.
+Academia de Brigantia~
+Estas enfrente da Academia de Brigantia, o lugar indicado para ensinarche os
+conceptos basicos deste mundo. Cada habitacion ten unha finalidade especifica
+e conten informacion sobre os comandos precisos para manexarte polo mundo e
+interacturar con outros xogadores. Recomendamosche que explores a Academia
+ao completo, tomandote o teu tempo para ler as instruccions de de cada habitacion
+coidadosamente.
+
+Teclea N para moverte ao norte hacia a proxima habitacion da Academia. Si xa
+conheces a Academia de Brigantia e queres probar as tuas habilidades nas areas,
+teclea ABRIR S ou ABRIR PORTA, despois S ou SUR para entrar a area.
 ~
-0 1049608 3
+0 1049608 3 0 0 0
 D0
 A Stone Corridor
 ~
 ~
-16777216 -1 10301
+16777216 -1 10301 0
 D2
 ~
 door~
-16777219 -1 10382
+16777219 -1 10382 0
 D4
 Above you is the entrance to the town of Brigantia.
 ~
 ~
-0 -1 21280
+0 -1 21280 0
 E
 door~
 You see a solid oak door.
@@ -3559,34 +3628,34 @@ endif
 |
 S
 #10301
-A Stone Corridor~
-To the west is the language lessons room. Lady Abbigalye is there
-to assist you in learning the languages of the land.  To the east
-is where Domick will assist you in practicing your weapons, skills
-and spells.  When you are finished with your lessons, come back
-here and continue north through the Academy.
+Un Corredor de Pedra~
+Deica o oeste esta a habitacion de leccions de linguaxe.
+A Mestra Abbigail esta ahi para asistirte aprendendo as linguas desta terra.
+En direccion leste esta Domick que te asistira practicando con armas,
+habilidades e feitizos. Cando remates as tuas leccions, volve aqui e
+continua cada o Norte a traves da Academia.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 Reading Room
 ~
 ~
-0 -1 10304
+0 -1 10304 0
 D1
 The Laboratory of Skills and Spells.
 ~
 ~
-0 -1 10303
+0 -1 10303 0
 D2
 Entrance to Brigantia Academy
 ~
 ~
-0 -1 10300
+0 -1 10300 0
 D3
 Abbigayle's Language Lessons.
 ~
 ~
-0 -1 10306
+0 -1 10306 0
 > leave_prog 100~
 if isimmort($n)
 else
@@ -3606,141 +3675,141 @@ endif
 |
 S
 #10302
-Somewhere~
-You did it! You are an excellent student! To continue your education,
-please leave north. That will return you to the Reading room.
+Nalgures~
+Conseguichelo! Eres un estudante excelente! Para continuar a tua educacion,
+dirixete cada o Norte. Isto devolverate a habitacion de Lectura.
 ~
-0 3145740 0
+0 3145740 0 0 0 0
 D0
 The Reading Room
 ~
 ~
-0 -1 10304
+0 -1 10304 0
 S
 #10303
-The Laboratory of Skills and Spells~
-This is where you will practice your arsenal of weapons, spells and skills.
-Type PRACTICE to get a list of these currently available to you.  Everyone
+O Laboratorio das Habilidades e Feitizos~
+This is where you will practice your arsenal of weapons, spells and skills
+Teclea PRACTICAR to get a list of these currently available to you.  Everyone
 will have sections listing skills, weapons and languages.  Spells casters
 will have an additional section for spells.  To practice a spell, skill or
-weapons style, type PRACTICE <full name of spell, skill or weapon style>.
- 
+weapons style, teclea PRACTICAR <full name of spell, skill or weapon style>.
+
 For instance, to practice dispel magic, you would type PRAC DISPEL MAGIC.
 When practicing, you start at 0% and one practice will earn you between
 15% and 20% proficieny.  Additional knowledge is gained through usage of
 the skill or spell until adept, which is a maximum of 30% - 95%.
- 
-To get see information using spells, skills or weapons, type AXUDA CAST or
+
+To get see information using spells, skills or weapons, type AXUDA INVOCAR or
 AXUDA <spell, skill or weapon style>.  For general questions on practicing,
-type AXUDA PRACTICE.  The number of practice sessions you may gain at each
+type AXUDA PRACTICAR.  The number of practice sessions you may gain at each
 level is determined by the amount of wisdom you have when you level.
 ~
-0 1049608 0
+0 1049608 0 0 0 0
 D3
 A Stone Corridor
 ~
 ~
-0 -1 10301
+0 -1 10301 0
 S
 #10304
-The Reading Room~
+A Habitacion de Lectura~
 This is a silent room, which means while here you will not see any of the
 channels. In fact, you can only use socials, emotes and group tell here.
 The room was created to give you a quiet place to read our help files.
-You can reduce your own screen scroll by reducing the number of channels 
-you receive. You can get a full list of channels by typing CHAN. You may 
-turn off a channel by type CHAN -<channel> and reactive a channel by 
-typing CHAN +<channel>. For example, you can turn off auction channel by 
-type CHAN -AUCTION and you can turn it back on by typing CHAN +AUCTION. 
-You can also turn off ALL your channels by typing CHAN -ALL and turn them 
+You can reduce your own screen scroll by reducing the number of channels
+you receive. You can get a full list of channels by typing CHAN. You may
+turn off a channel by type CHAN -<channel> and reactive a channel by
+typing CHAN +<channel>. For example, you can turn off auction channel by
+type CHAN -AUCTION and you can turn it back on by typing CHAN +AUCTION.
+You can also turn off ALL your channels by typing CHAN -ALL and turn them
 all on again by typing CHAN +ALL. Once you have finished reading, you are
 ready to test your ability to negotiate your way around.
 Going west will take you into another part of the Academy. The test is to
-follow all the room descriptions until you can find your way back to this 
-point. If at any time you become lost, type U to return to this room. Once 
+follow all the room descriptions until you can find your way back to this
+point. If at any time you become lost, type U to return to this room. Once
 you have successfully returned here, please continue to the north to
 explore the rest of the Academy.
 ~
-0 3211272 0
+0 3211272 0 0 0 0
 D0
 A Marble Corridor
 ~
 ~
-0 -1 10314
+0 -1 10314 0
 D2
 A Stone Corridor
 ~
 ~
-0 -1 10301
+0 -1 10301 0
 D3
 Wandering the Academy
 ~
 ~
-0 -1 10307
+0 -1 10307 0
 S
 #10305
-Chamber of Trials for Rangers~
+Camara para Probas de Cazadores~
 Here you will experience your first full combat against MOBILES, also known
 as MOBS. Mobile is the name used for monsters and the like in the game.
 All exits, except down, lead to a CAGE mob. Some of these cage mobs may be
-aggressive and will attack you upon entering their room. As you kill them, 
-you will gain experience, as well as academy equipment and gold. Once you 
+aggressive and will attack you upon entering their room. As you kill them,
+you will gain experience, as well as academy equipment and gold. Once you
 have defeated a mob, type GET ALL CORPSE to loot the coins and equipment.
 You may also type CONFIG +AUTOLOOT or CONFIG +AUTOGOLD. Autoloot will take
 everything from the corpse when you kill it. Autogold will take only the
 gold from the corpse. When you loot a corpse of equipment, the items are
-transferred to your inventory. You may suffer injury during the battle, so 
-return here and type REST or SLEEP. This will speed your healing process. 
+transferred to your inventory. You may suffer injury during the battle, so
+return here and type REST or SLEEP. This will speed your healing process.
 When you are finished healing, type WAKE or STAND to continue.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D0
 A cage
 ~
 ~
-0 -1 10389
+0 -1 10389 0
 D1
 A cage
 ~
 ~
-0 -1 10388
+0 -1 10388 0
 D2
 A cage
 ~
 ~
-0 -1 10387
+0 -1 10387 0
 D3
 A cage
 ~
 ~
-0 -1 10390
+0 -1 10390 0
 D5
 A Stone Corridor
 ~
 ~
-0 -1 10356
+0 -1 10356 0
 S
 #10306
-Abbigayle's Language Lessons~
+Leccions de Lingua con Abbigail~
 This is where you LEARN your LANGUAGES.  Languages are learned differently
 than spells, skills and weapons, as you must be adept ata language before
 you may use it.  To see a list of the languages available to you, simply
 type PRACTICE.  You do not need to learn the TONGUE of your race nor the
 common language, as they both come naturally to you.  To learn a language,
 type LANGUAGE LEARN <language type>.
- 
+
 For more information on how to learn a language, type AXUDA LANGUAGES.  To
 learn how to use languages, type AXUDA SPEAK and AXUDA TONGUE.  It will cost
 a few practice sessions each time you wish to increase your fluency in a
 language.  Those who are intelligent, wise and lucky will find it takes
 fewer practice sessions to become adept at a language.
 ~
-0 1049608 0
+0 1049608 0 0 0 0
 D1
 A Stone Corridor
 ~
 ~
-0 -1 10301
+0 -1 10301 0
 S
 #10307
 Wandering the Academy~
@@ -3753,24 +3822,24 @@ type EXIT, it shows you the room names each exit shown under obvious exits.
 You can use this command to get hints of dangers and death traps that might
 be close by. You may also try to LOOK in adjoining rooms. You do this by
 typing LOOK <direction>. Your next move is to the west, to see what you
-are walking into, try typing EXIT and L W. 
+are walking into, try typing EXIT and L W.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 The Reading Room
 ~
 ~
-0 -1 10304
+0 -1 10304 0
 D3
 Wandering Brigantia Academy, it looks safe
 ~
 ~
-0 -1 10309
+0 -1 10309 0
 D4
 Back to the beginning
 ~
 ~
-0 -1 10304
+0 -1 10304 0
 E
 Door~
 You see a solid oak door.
@@ -3784,21 +3853,21 @@ in chains for use as a teaching aid.  With him you can practice attacking
 and fleeing, but hopefully not dying.  You will also want to make use of
 the 'consider' command.  This command compares your level and hitpoints
 to that of the creature.  To use here, type 'con chadoyn'.
- 
+
 To use the consider command elsewhere, type CON <MOBNAME>.  It is wise to
 ALWAYS consider a mob before fighting it the first time.  This will many
 times save your life, as mobs are often a lot more difficult then they
 outwardly appear.  Be careful and enjoy your fight.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D3
 A Dank Pit
 ~
 ~
-0 -1 10316
+0 -1 10316 0
 S
 #10309
-Wandering Brigantia Academy~
+Wandering Academia de Brigantia~
 This is where you will start learning about exits not listed under "Exits".
 Doors are not seen on the game. You must read room description and LOOK
 <direction> to find them. Another method of finding a door is to "bump" into
@@ -3808,38 +3877,38 @@ may end up in a room you would rather not visit. Now, type OPEN N or OPEN
 DOOR. Next type EXIT, you will now see the north exit listed under "Exits".
 Type AXUDA OPEN to find out more information on doors.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 An Enclosed Room
 ~
 door~
-3 -1 10310
+3 -1 10310 0
 D1
 Wandering the Academy
 ~
 ~
-0 -1 10307
+0 -1 10307 0
 D3
 Lost in Brigantia Academy
 ~
 ~
-0 -1 10311
+0 -1 10311 0
 D4
 Back to the beginning
 ~
 ~
-0 -1 10304
+0 -1 10304 0
 E
 door~
 You see a solid oak door.
 ~
 S
 #10310
-An Enclosed Room~
+Unha Habitacion Fechada~
 You did it! Well done. You will find many rooms such as this all over the
 game. Some are easy to find because of hints in the room descriptions.
 Some are very hard to find, as the clues could be rooms away. However, you
-are now armed with the tools to locate them. You know how to use "look", 
+are now armed with the tools to locate them. You know how to use "look",
 bump, and "exit". Many classes also get a spell called "scry". This spell
 will allow the person affected by it to see the into the adjoining rooms.
 It is used like "look", but gives you more detailed information. To see if
@@ -3849,15 +3918,15 @@ gives you information on what level you may practice each, to what percent
 you are currently practiced in each, and what the maximum percent that you
 may practice each.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 Wandering Brigantia Academy
 ~
 door~
-3 -1 10309
+3 -1 10309 0
 S
 #10311
-Lost in Brigantia Academy~
+Perdido na Academia de Brigantia~
 There are several special exit types that you may encounter in your travels.
 You have experienced open exits and closed doors to this point. There are
 also hidden doors. The hidden door can not be found with the "bump" method.
@@ -3873,25 +3942,25 @@ N, E, W, S, NE, NW, SE, SW, U, or D. There are also SOMEWHERE exits that
 use "leave", "climb", "enter", or just a word to use. To the north you
 will experience a hidden exit, use the room description to find the door name.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 Lost in Brigantia Academy
 ~
 ~
-0 -1 10312
+0 -1 10312 0
 D1
 Wandering Brigantia Academy
 ~
 ~
-0 -1 10309
+0 -1 10309 0
 D4
 Back to the beginning
 ~
 ~
-0 -1 10304
+0 -1 10304 0
 S
 #10312
-Lost in Brigantia Academy~
+Perdido na Academia de Brigantia~
 You are standing in a richly decorated room. A large oak table surrounded
 by twelve chairs dominates a large portion of the area. Crystal globes with
 continual light spells cast on them hover about the room, providing a soft
@@ -3900,24 +3969,24 @@ quality. The tapestry on the west wall draws your attention more so than
 the others. Now, you have many clues on the possible exit. Try to find the
 right word by typing LOOK <word>. For example, try LOOK GLOBES. Sometimes
 looking at other things in the rooms description will lead you to the word
-that will open the exit. 
+that will open the exit.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 Lost in Brigantia Academy
 ~
 ~
-0 -1 10311
+0 -1 10311 0
 D3
 door
 ~
 tapestry door~
-11 -1 10313
+11 -1 10313 0
 D4
 Back to the beginning
 ~
 ~
-0 -1 10304
+0 -1 10304 0
 E
 tapestry~
 Upon closer inspection you realise that this is not even a tapestry, but
@@ -3943,30 +4012,30 @@ tapestry almost appears to be an opening.
 ~
 S
 #10313
-A Secret Alcove~
+Unha Alcoba Secreta~
 Well Done! You have found this secret room. Sometimes these secret rooms
 will contain valuable items or will lead to other parts of the area you
 are exploring. Always pay close attention to room descriptions, mobiles
 descriptions and items, this will many times bring profitable results.
 This is a where you will experience a Somewhere exit. To find your way
-out, try looking at the picture on the wall. If you can not figure it out, 
+out, try looking at the picture on the wall. If you can not figure it out,
 you may leave by the up exit. Good luck!
 ~
-0 3145740 0
+0 3145740 0 0 0 0
 D1
 Lost in Brigantia Academy
 ~
 door~
-3 -1 10312
+3 -1 10312 0
 D4
 Back to the beginning
 ~
 ~
-0 -1 10304
+0 -1 10304 0
 D10
 ~
 crack~
-524288 -1 10302
+524288 -1 10302 0
 E
 door~
 You see an oak door.
@@ -3976,11 +4045,11 @@ picture~
 This is a picture of fresh cut flowers in a glass vase. It seems to
 be hanging here just to cover a huge crack. That crack is so large, you
 can probably squeeze through it! Perhaps you should look closer at the
-crack. HINT: type CRACK. 
+crack. HINT: type CRACK.
 ~
 E
 crack~
-This is a huge CRACK, you could probably squeeze through it. 
+This is a huge CRACK, you could probably squeeze through it.
 ~
 E
 wall~
@@ -3991,62 +4060,62 @@ crack. HINT: type CRACK.
 ~
 S
 #10314
-A Marble Corridor~
-This room will teach you several commands to check your statistics and 
+Un Corredor de Marmore~
+This room will teach you several commands to check your statistics and
 character health. These commands are SCORE, EQUIPMENT, INVENTORY, and
 LEVEL. Score is used by typing SC, it tells you all the basic statistics
-about your character. Equipment is used by typing EQ, this shows you all 
-the items you are currently wearing. Inventory is used by typing I, and 
+about your character. Equipment is used by typing EQ, this shows you all
+the items you are currently wearing. Inventory is used by typing I, and
 shows you all items you are carrying other than your worn equipment.
 Level is used by typing LEVEL, it show your current level, your current
 experience points, and the experience needed for the next few levels.
 Use the help menu to get more information on the topics covered here,
 type AXUDA <subject>.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 Preparing for combat
 ~
 ~
-0 -1 10315
+0 -1 10315 0
 D2
 The Reading Room
 ~
 ~
-0 -1 10304
+0 -1 10304 0
 S
 #10315
-Preparing for combat~
+Preparandose para o Combate~
 The time is drawing near to experience combat.  Directly below you now is
 the Chadoyn Pit, the home of a creature which will assist you in learning
 how to initiate combat.  The Chadoyn is not aggressive, which means you
 must begin the fight.  There are many ways to start a fight, the quickest
 way is to type KILL <mob>.  As you gain skills and spells, you may find
 many of them are also capable of initiating combat.
- 
+
 Some of the more popular spells used to start an attack are DISPEL MAGIC,
 SLEEP, CHARM PERSON, BLINDNESS, WEAKEN, CURSE, and FAERIE FIRE.  Some of
 the most popular skills used to begin an attack are STEAL and BACKSTAB.
   ** These skills and spells WILL also begin an attack on a player **
- 
-Wands, staves and scrolls may also be used to start fights. 
+
+Wands, staves and scrolls may also be used to start fights.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 A Marble Corridor
 ~
 ~
-0 -1 10317
+0 -1 10317 0
 D2
 A Marble Corridor
 ~
 ~
-0 -1 10314
+0 -1 10314 0
 D5
 A Dank Pit
 ~
 ~
-0 -1 10316
+0 -1 10316 0
 S
 #10316
 A Dank Pit~
@@ -4059,59 +4128,59 @@ of experience lost will generally be less then the amount lost from death.
 You may also manually withdraw from a fight with flee. To use flee, just
 type FLEE. You may flee out of the fight at any amount of hitpoints. Fleeing
 will cost you loss of experience. You may also "recall" from a fight. This
-is done with the spell "word of recall" or reciting a recall scroll. You 
+is done with the spell "word of recall" or reciting a recall scroll. You
 lose more experience when you recall from a fight then when you use wimpy
 or flee. Recall should be used as a last resort.
 ~
-0 3145740 0
+0 3145740 0 0 0 0
 D1
 A Dank Pit
 ~
 ~
-0 -1 10308
+0 -1 10308 0
 D4
 Preparing for combat
 ~
 ~
-0 -1 10315
+0 -1 10315 0
 S
 #10317
-A Marble Corridor~
+Un Corredor de Marmore~
 Congratulations! You have come far in your training. Your next step is
 getting your equipment from the cage mobs for your chosen class. North
 of here is the Academy Healer, Lord Toric.  He will cast spells on you,
 to help with your fights. Sit with him until you are ready to proceed in
 your training.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D0
 The Academy Healer
 ~
 ~
-0 -1 10319
+0 -1 10319 0
 D2
 Preparing for combat
 ~
 ~
-0 -1 10315
+0 -1 10315 0
 S
 #10318
-Hall of the Warrior~
+O Altar dos Guerreiros~
 You see shields of every make and shape mounted on the walls here. Donated
 by the warriors who have passed through these hallowed halls before you. The
 clash and ring of steel can be heard coming from the floor beneath you.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D5
 Chamber of Trials for Warriors
 ~
 ~
-0 -1 10325
+0 -1 10325 0
 S
 #10319
-The Academy Healer~
+O Curandeiro da Academia~
 This is a healer. You will find many of them throughout the game. Their
-purpose is to cast spells of armor, bless, cure blindness, cure poison, 
+purpose is to cast spells of armor, bless, cure blindness, cure poison,
 cure light, and refresh. The healer casts these spells randomly to the
 characters in the room. Some healers have programs that will allow you
 to purchase certain spells for coins. Others have programs that will give
@@ -4120,88 +4189,88 @@ to them. It is important to look at mobiles to read their descriptions.
 Many will have hints in their descriptions that will tell you what to
 say or do to get their favor.
 ~
-0 1049612 0
+0 1049612 0 0 0 0
 D0
 The Room of Portals
 ~
 ~
-16777216 -1 10355
+16777216 -1 10355 0
 D2
 A Marble Corridor
 ~
 ~
-0 -1 10317
+0 -1 10317 0
 S
 #10320
-Hall of the Druid~
+O Altar dos Druidas~
 Walking along this hall is strangely reminiscent of a stroll through a
 lush forest. A light breeze touches your cheek and you look twice to make
 sure you are indeed in Brigantia Academy. You see a soft glow coming from
 the floor.
 ~
-0 3146752 0
+0 3146752 0 0 0 0
 D5
 Chamber of Trials for Druids
 ~
 ~
-0 -1 10326
+0 -1 10326 0
 S
 #10321
-Hall of the Vampire~
+O Altar dos _Vampiros_~
 The hall is so dimly lit here that details are hard to discern. The rustle
 of dead leaves, blowing in the wind, fills your ears. As you grow to realize
 they are more whispers than leaves, you find yourself compelled. Willingly,
 you proceed to their source.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D5
 Chamber of Trials for Vampires
 ~
 ~
-0 -1 10327
+0 -1 10327 0
 S
 #10322
-Hall of the Thief~
+O Altar dos Ladrons~
 You have the distinct feeling that you are not the only person here.
 Every now and then you catch glimpses of shadows dancing across the wall.
 You can feel a slight breeze, as if someone has passed close by you. Upon
 searching the area, you confirm you are the only person in sight.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D5
 Chamber of Trials for Thieves
 ~
 ~
-0 -1 10328
+0 -1 10328 0
 S
 #10323
-Hall of the Mage~
+O Altar dos Magos~
 The pungent odour of sulphur is dominant here. Fine mists cover the floor,
 and a harsh chanting seems to be coming from all around you. Thunder claps
 and bursts of light can be seen and heard coming from below you.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D5
 Chamber of Trials for Mages
 ~
 ~
-0 -1 10329
+0 -1 10329 0
 S
 #10324
-Hall of the Cleric~
+O Altar dos Clerigos~
 A feeling of utter peace and tranquility fills your spirit, ahead you
 see the horrors of your nightmares come to life, not giving them a second
 glance you pass right through them to fulfill your destiny.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D5
 Chamber of Trials for Clerics
 ~
 ~
-0 -1 10330
+0 -1 10330 0
 S
 #10325
-Chamber of Trials for Warriors~
+Camara para Probas de Guerreiros~
 Here you will experience your first full combat against MOBILES, also known
 as MOBS. Mobile is the name used for monsters and the like in the game.
 All exits, except down, lead to a CAGE mob. Some of these cage mobs may be
@@ -4215,35 +4284,35 @@ transferred to your inventory. You may suffer injury during the battle, so
 return here and type REST or SLEEP. This will speed your healing process.
 When you are finished healing, type WAKE or STAND to continue.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D0
 A cage
 ~
 ~
-0 -1 10339
+0 -1 10339 0
 D1
 A cage
 ~
 ~
-0 -1 10342
+0 -1 10342 0
 D2
 A cage
 ~
 ~
-0 -1 10340
+0 -1 10340 0
 D3
 A cage
 ~
 ~
-0 -1 10341
+0 -1 10341 0
 D5
 A Stone Corridor
 ~
 ~
-0 -1 10356
+0 -1 10356 0
 S
 #10326
-Chamber of Trials for Druids~
+Camara para Probas de Druidas~
 Here you will experience your first full combat against MOBILES, also known
 as MOBS. Mobile is the name used for monsters and the like in the game.
 All exits, except down, lead to a CAGE mob. Some of these cage mobs may be
@@ -4257,35 +4326,35 @@ transferred to your inventory. You may suffer injury during the battle, so
 return here and type REST or SLEEP. This will speed your healing process.
 When you are finished healing, type WAKE or STAND to continue.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D0
 A cage
 ~
 ~
-0 -1 10343
+0 -1 10343 0
 D1
 A cage
 ~
 ~
-0 -1 10346
+0 -1 10346 0
 D2
 A cage
 ~
 ~
-0 -1 10344
+0 -1 10344 0
 D3
 A cage
 ~
 ~
-0 -1 10345
+0 -1 10345 0
 D5
 A Stone Corridor
 ~
 ~
-0 -1 10356
+0 -1 10356 0
 S
 #10327
-Chamber of Trials for Vampires~
+Camara para Probas de _Vampiros_~
 Here you will experience your first full combat against MOBILES, also known
 as MOBS. Mobile is the name used for monsters and the like in the game.
 All exits, except down, lead to a CAGE mob. Some of these cage mobs may be
@@ -4299,35 +4368,35 @@ transferred to your inventory. You may suffer injury during the battle, so
 return here and type REST or SLEEP. This will speed your healing process.
 When you are finished healing, type WAKE or STAND to continue.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D0
 A cage
 ~
 ~
-0 -1 10347
+0 -1 10347 0
 D1
 A cage
 ~
 ~
-0 -1 10350
+0 -1 10350 0
 D2
 A cage
 ~
 ~
-0 -1 10348
+0 -1 10348 0
 D3
 A cage
 ~
 ~
-0 -1 10349
+0 -1 10349 0
 D5
 A Stone Corridor
 ~
 ~
-0 -1 10356
+0 -1 10356 0
 S
 #10328
-Chamber of Trials for Thieves~
+Camara para Probas de Ladrons~
 Here you will experience your first full combat against MOBILES, also known
 as MOBS. Mobile is the name used for monsters and the like in the game.
 All exits, except down, lead to a CAGE mob. Some of these cage mobs may be
@@ -4341,35 +4410,35 @@ transferred to your inventory. You may suffer injury during the battle, so
 return here and type REST or SLEEP. This will speed your healing process.
 When you are finished healing, type WAKE or STAND to continue.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D0
 A cage
 ~
 ~
-0 -1 10351
+0 -1 10351 0
 D1
 A cage
 ~
 ~
-0 -1 10354
+0 -1 10354 0
 D2
 A cage
 ~
 ~
-0 -1 10352
+0 -1 10352 0
 D3
 A cage
 ~
 ~
-0 -1 10353
+0 -1 10353 0
 D5
 A Stone Corridor
 ~
 ~
-0 -1 10356
+0 -1 10356 0
 S
 #10329
-Chamber of Trials for Mages~
+Camara para Probas de Magos~
 Here you will experience your first full combat against MOBILES, also known
 as MOBS. Mobile is the name used for monsters and the like in the game.
 All exits, except down, lead to a CAGE mob. Some of these cage mobs may be
@@ -4383,35 +4452,35 @@ transferred to your inventory. You may suffer injury during the battle, so
 return here and type REST or SLEEP. This will speed your healing process.
 When you are finished healing, type WAKE or STAND to continue.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D0
 A cage
 ~
 ~
-0 -1 10335
+0 -1 10335 0
 D1
 A cage
 ~
 ~
-0 -1 10338
+0 -1 10338 0
 D2
 A cage
 ~
 ~
-0 -1 10336
+0 -1 10336 0
 D3
 A cage
 ~
 ~
-0 -1 10337
+0 -1 10337 0
 D5
 A Stone Corridor
 ~
 ~
-0 -1 10356
+0 -1 10356 0
 S
 #10330
-Chamber of Trials for Clerics~
+Camara para Probas de Clerigos~
 Here you will experience your first full combat against MOBILES, also known
 as MOBS. Mobile is the name used for monsters and the like in the game.
 All exits, except down, lead to a CAGE mob. Some of these cage mobs may be
@@ -4425,32 +4494,32 @@ transferred to your inventory. You may suffer injury during the battle, so
 return here and type REST or SLEEP. This will speed your healing process.
 When you are finished healing, type WAKE or STAND to continue.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D0
 A cage
 ~
 ~
-0 -1 10332
+0 -1 10332 0
 D1
 A cage
 ~
 ~
-0 -1 10334
+0 -1 10334 0
 D2
 A cage
 ~
 ~
-0 -1 10333
+0 -1 10333 0
 D3
 A cage
 ~
 ~
-0 -1 10331
+0 -1 10331 0
 D5
 A Stone Corridor
 ~
 ~
-0 -1 10356
+0 -1 10356 0
 S
 #10331
 Clerics West Cage~
@@ -4460,12 +4529,12 @@ the corpse to the gods and they reward you for it. To use, type SAC CORPSE.
 You may also sacrifice unwanted items, by first dropping them on the ground,
 then typing SAC <item>. For more information on sacrifice, see the help.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 Chamber of Trials for Clerics
 ~
 ~
-0 -1 10330
+0 -1 10330 0
 S
 #10332
 Clerics North Cage~
@@ -4482,12 +4551,12 @@ and repaired. To see the condition of a piece of equipment, type EXAM <item>.
 If is it in need of repair, you need to find a blacksmith. Once in the room
 with the blacksmith, remove item to inventory and type REPAIR <item>.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 Chamber of Trials for Clerics
 ~
 ~
-0 -1 10330
+0 -1 10330 0
 S
 #10333
 Clerics South Cage~
@@ -4500,12 +4569,12 @@ if you have CONFIG +AUTOLOOT, there are times when your hands are full or
 you have reached maximum weight and will be unable to get everything from
 the corpse.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 Chamber of Trials for Clerics
 ~
 ~
-0 -1 10330
+0 -1 10330 0
 S
 #10334
 Clerics East Cage~
@@ -4516,12 +4585,12 @@ as "arena" in addition to their name. Also, all equipment available in the
 Academy is named "academy". You can WEAR ACADEMY or REMOVE ACADEMY in
 addition to the actual name of the item.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D3
 Chamber of Trials for Clerics
 ~
 ~
-0 -1 10330
+0 -1 10330 0
 S
 #10335
 Mages North Cage~
@@ -4538,12 +4607,12 @@ and repaired. To see the condition of a piece of equipment, type EXAM <item>.
 If is it in need of repair, you need to find a blacksmith. Once in the room
 with the blacksmith, remove item to inventory and type REPAIR <item>.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 Chamber of Trials for Mages
 ~
 ~
-0 -1 10329
+0 -1 10329 0
 S
 #10336
 Mages South Cage~
@@ -4556,12 +4625,12 @@ if you have CONFIG +AUTOLOOT, there are times when your hands are full or
 you have reached maximum weight and will be unable to get everything from
 the corpse.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 Chamber of Trials for Mages
 ~
 ~
-0 -1 10329
+0 -1 10329 0
 S
 #10337
 Mages West Room~
@@ -4571,12 +4640,12 @@ the corpse to the gods and they reward you for it. To use, type SAC CORPSE.
 You may also sacrifice unwanted items, by first dropping them on the ground,
 then typing SAC <item>. For more information on sacrifice, see the help.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 Chamber of Trials for Mages
 ~
 ~
-0 -1 10329
+0 -1 10329 0
 S
 #10338
 Mages East Room~
@@ -4587,12 +4656,12 @@ as "arena" in addition to their name. Also, all equipment available in the
 Academy is named "academy". You can WEAR ACADEMY or REMOVE ACADEMY in
 addition to the actual name of the item.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D3
 Chamber of Trials for Mages
 ~
 ~
-0 -1 10329
+0 -1 10329 0
 S
 #10339
 Warriors North Cage~
@@ -4609,12 +4678,12 @@ and repaired. To see the condition of a piece of equipment, type EXAM <item>.
 If is it in need of repair, you need to find a blacksmith. Once in the room
 with the blacksmith, remove item to inventory and type REPAIR <item>.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 Chamber of Trials for Warriors
 ~
 ~
-0 -1 10325
+0 -1 10325 0
 S
 #10340
 Warriors South Cage~
@@ -4627,12 +4696,12 @@ if you have CONFIG +AUTOLOOT, there are times when your hands are full or
 you have reached maximum weight and will be unable to get everything from
 the corpse.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 Chamber of Trials for Warriors
 ~
 ~
-0 -1 10325
+0 -1 10325 0
 S
 #10341
 Warriors West Cage~
@@ -4642,12 +4711,12 @@ the corpse to the gods and they reward you for it. To use, type SAC CORPSE.
 You may also sacrifice unwanted items, by first dropping them on the ground,
 then typing SAC <item>. For more information on sacrifice, see the help.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 Chamber of Trials for Warriors
 ~
 ~
-0 -1 10325
+0 -1 10325 0
 S
 #10342
 Warriors East Cage~
@@ -4658,12 +4727,12 @@ as "arena" in addition to their name. Also, all equipment available in the
 Academy is named "academy". You can WEAR ACADEMY or REMOVE ACADEMY in
 addition to the actual name of the item.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D3
 Chamber of Trials for Warriors
 ~
 ~
-0 -1 10325
+0 -1 10325 0
 S
 #10343
 Druids North Cage~
@@ -4680,12 +4749,12 @@ and repaired. To see the condition of a piece of equipment, type EXAM <item>.
 If is it in need of repair, you need to find a blacksmith. Once in the room
 with the blacksmith, remove item to inventory and type REPAIR <item>.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 Chamber of Trials for Druids
 ~
 ~
-0 -1 10326
+0 -1 10326 0
 S
 #10344
 Druids South Cage~
@@ -4698,12 +4767,12 @@ if you have CONFIG +AUTOLOOT, there are times when your hands are full or
 you have reached maximum weight and will be unable to get everything from
 the corpse.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 Chamber of Trials for Druids
 ~
 ~
-0 -1 10326
+0 -1 10326 0
 S
 #10345
 Druids West Cage~
@@ -4713,12 +4782,12 @@ the corpse to the gods and they reward you for it. To use, type SAC CORPSE.
 You may also sacrifice unwanted items, by first dropping them on the ground,
 then typing SAC <item>. For more information on sacrifice, see the help.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 Chamber of Trials for Druids
 ~
 ~
-0 -1 10326
+0 -1 10326 0
 S
 #10346
 Druids East Cage~
@@ -4729,12 +4798,12 @@ as "arena" in addition to their name. Also, all equipment available in the
 Academy is named "academy". You can WEAR ACADEMY or REMOVE ACADEMY in
 addition to the actual name of the item.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D3
 Chamber of Trials for Druids
 ~
 ~
-0 -1 10326
+0 -1 10326 0
 S
 #10347
 Vampires North Cage~
@@ -4751,12 +4820,12 @@ and repaired. To see the condition of a piece of equipment, type EXAM <item>.
 If is it in need of repair, you need to find a blacksmith. Once in the room
 with the blacksmith, remove item to inventory and type REPAIR <item>.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 Chamber of Trials for Vampires
 ~
 ~
-0 -1 10327
+0 -1 10327 0
 S
 #10348
 Vampires South Cage~
@@ -4769,12 +4838,12 @@ if you have CONFIG +AUTOLOOT, there are times when your hands are full or
 you have reached maximum weight and will be unable to get everything from
 the corpse.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 Chamber of Trials for Vampires
 ~
 ~
-0 -1 10327
+0 -1 10327 0
 S
 #10349
 Vampires West Cage~
@@ -4784,12 +4853,12 @@ the corpse to the gods and they reward you for it. To use, type SAC CORPSE.
 You may also sacrifice unwanted items, by first dropping them on the ground,
 then typing SAC <item>. For more information on sacrifice, see the help.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 Chamber of Trials for Vampires
 ~
 ~
-0 -1 10327
+0 -1 10327 0
 S
 #10350
 Vampires East Cage~
@@ -4800,12 +4869,12 @@ as "arena" in addition to their name. Also, all equipment available in the
 Academy is named "academy". You can WEAR ACADEMY or REMOVE ACADEMY in
 addition to the actual name of the item.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D3
 Chamber of Trials for Vampires
 ~
 ~
-0 -1 10327
+0 -1 10327 0
 S
 #10351
 Thieves North Cage~
@@ -4821,12 +4890,12 @@ and repaired. To see the condition of a piece of equipment, type EXAM <item>.
 If is it in need of repair, you need to find a blacksmith. Once in the room
 with the blacksmith, remove item to inventory and type REPAIR <item>.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 Chamber of Trials for Thieves
 ~
 ~
-0 -1 10328
+0 -1 10328 0
 S
 #10352
 Thieves South Cage~
@@ -4839,12 +4908,12 @@ if you have CONFIG +AUTOLOOT, there are times when your hands are full or
 you have reached maximum weight and will be unable to get everything from
 the corpse.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 Chamber of Trials for Thieves
 ~
 ~
-0 -1 10328
+0 -1 10328 0
 S
 #10353
 Thieves West Cage~
@@ -4854,12 +4923,12 @@ the corpse to the gods and they reward you for it. To use, type SAC CORPSE.
 You may also sacrifice unwanted items, by first dropping them on the ground,
 then typing SAC <item>. For more information on sacrifice, see the help.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 Chamber of Trials for Thieves
 ~
 ~
-0 -1 10328
+0 -1 10328 0
 S
 #10354
 Thieves East Cage~
@@ -4870,15 +4939,15 @@ as "arena" in addition to their name. Also, all equipment available in the
 Academy is named "academy". You can WEAR ACADEMY or REMOVE ACADEMY in
 addition to the actual name of the item.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D3
 Chamber of Trials for Thieves
 ~
 ~
-0 -1 10328
+0 -1 10328 0
 S
 #10355
-The Room of Portals~
+A Habitacion dos Portais~
 This is the portal room which leads to the training hall for each of the
 classes.  Prepare to be transferred once your presence is noticed.  It may
 take a few moments, so please be patient.  Should you decide you are not
@@ -4886,12 +4955,12 @@ ready to face the Chamber of Trials, you can return to the south.  You
 notice a large certificate on the wall; at least you have something
 to read while you wait.
 ~
-0 3146764 0
+0 3146764 0 0 0 0
 D2
 The Academy Healer
 ~
 ~
-0 -1 10319
+0 -1 10319 0
 E
 certificate wall~
 I have enjoyed writing the revision of the Brigantia Academy. I wanted
@@ -4905,7 +4974,7 @@ adventuring. May you enjoy many hours of joy and develop many friendships.
                      Warm Huggles,
                      Brittany Seccunda-DethBlayde
                      February 9, 1996
- 
+
 ** Please be sure to read AXUDA RULES STAKE prior to engaging in fighting.
 ** Staking a mob is illegal, as is stealing a kill.
 ~
@@ -4956,100 +5025,100 @@ endif
 |
 S
 #10356
-A Stone Corridor~
+Un Corredor de Pedra~
 This is the stage of your training where you may begin to feel pangs of
 hunger and a parched throat. In other words, you need food and drink.
 To the east is the Brigantia Supply Store. You may purchase water and
 some meat. Once you have eaten and drunk, you will be ready to proceed
 north.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 A Stone Corridor
 ~
 ~
-0 -1 10358
+0 -1 10358 0
 D1
 To the east is the Brigantia Academy Supply Store.
 ~
 ~
-0 -1 10357
+0 -1 10357 0
 S
 #10357
-Brigantia Academy Supply Store~
+Tenda de Suplementos da Academia de Brigantia~
 This is a regular shop, you type LIST to see what you can purchase and
 BUY <item> to make the purchase. Like many other places in the game,
 you may bribe the storekeeper to give you an item. There are many mobs
 in this world that will sell you keys, items or information in exchange
 for a few gold coins. Be sure to look at the mobiles for hints on these
-types of programs. 
+types of programs.
 ~
-0 3146760 0
+0 3146760 0 0 0 0
 D3
 A Stone Corridor can be seen to the west.
 ~
 ~
-0 -1 10356
+0 -1 10356 0
 S
 #10358
-A Stone Corridor~
+Un Corredor de Pedra~
 In this part of the academy you will learn about the Death Trap, more
 commonly known as a DT. A death trap is exactly as its name states, a
 room that causes your death. Unlike a regular death, you do not lose
-your hitpoints and you do not leave a corpse behind. All the items you 
+your hitpoints and you do not leave a corpse behind. All the items you
 were wearing and carrying are destroyed. You do not leave a corpse behind.
 You are then transported back to the Temple in Brigantia. Going west will
 give you more information about death traps.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 A Stone Corridor
 ~
 ~
-0 -1 10360
+0 -1 10360 0
 D2
 A Stone Corridor
 ~
 ~
-0 -1 10356
+0 -1 10356 0
 D3
 This is a DEATH TRAP!! The only one in the game that won't kill you!
 ~
 ~
-0 -1 10359
+0 -1 10359 0
 S
 #10359
-Slow Death~
+Morte Lenta~
 This is what you will see if you stumble into a death trap.  As previously
 stated, a DT kills instantaneously and destroys any and all equipment you
 have at the time.  Hints as to the placement of a death trap are sometimes
 given in the room that preceeds them.  Also remember to use "exit" and
 "look" to find these deadly rooms.  Note:  no DTS are found in Brigantia.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 A Stone Corridor
 ~
 ~
-0 -1 10358
+0 -1 10358 0
 S
 #10360
-A Stone Corridor~
+Un Corredor de Pedra~
 One final challenge remains for you. Then you may enter the battlegrounds
 to further hone your combat skills. To the west is a creature that holds
 the visor of completion. Kill him and it is yours.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 A Stone Corridor
 ~
 ~
-0 -1 10358
+0 -1 10358 0
 D3
 A Final Test
 ~
 ~
-0 -1 10361
+0 -1 10361 0
 S
 #10361
 A Final Test~
@@ -5058,16 +5127,16 @@ you. This room smells of decay. The walls are dripping with some sort of
 green ichor. It looks as if it is burning right through. You see a flash
 of light from the above, then it is gone.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 ~
 ~
-0 -1 10360
+0 -1 10360 0
 D4
 A door leading to the Battlegrounds
 ~
 ~
-3 -1 10362
+3 -1 10362 0
 > act_prog P from the east.~
 if mobinroom(10344) < 1
 mpmload 10344
@@ -5087,28 +5156,28 @@ level of the Academy. The battleground were supplied to allow you to further
 hone the combat skills learned in your schooling. Kill the beasts that wander
 here. If you wish to leave, exiting up will take you to Lord Toric.
 ~
-0 3145740 0
+0 3145740 0 0 0 0
 D0
 ~
 ~
-0 -1 10363
+0 -1 10363 0
 D2
 ~
 ~
-0 -1 10365
+0 -1 10365 0
 D3
 ~
 ~
-0 -1 10369
+0 -1 10369 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 D5
 A door that leads to the lower level of the Academy
 ~
 ~
-3 -1 10361
+3 -1 10361 0
 S
 #10363
 Along the eastern wall~
@@ -5116,43 +5185,43 @@ You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10364
+0 -1 10364 0
 D2
 ~
 ~
-0 -1 10362
+0 -1 10362 0
 D3
 ~
 ~
-0 -1 10370
+0 -1 10370 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10364
-North-East Corner~
+Esquina Noreste~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 ~
 ~
-0 -1 10363
+0 -1 10363 0
 D3
 ~
 ~
-0 -1 10371
+0 -1 10371 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10365
 Along the eastern wall~
@@ -5160,43 +5229,43 @@ You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10362
+0 -1 10362 0
 D2
 ~
 ~
-0 -1 10366
+0 -1 10366 0
 D3
 ~
 ~
-0 -1 10368
+0 -1 10368 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10366
-South-East Corner~
+Esquina Sureste~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10365
+0 -1 10365 0
 D3
 ~
 ~
-0 -1 10367
+0 -1 10367 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10367
 Along the southern wall~
@@ -5204,107 +5273,107 @@ You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10368
+0 -1 10368 0
 D1
 ~
 ~
-0 -1 10366
+0 -1 10366 0
 D3
 ~
 ~
-0 -1 10376
+0 -1 10376 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10368
-Battle Grounds~
+Campos de Batalla~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10369
+0 -1 10369 0
 D1
 ~
 ~
-0 -1 10365
+0 -1 10365 0
 D2
 ~
 ~
-0 -1 10367
+0 -1 10367 0
 D3
 ~
 ~
-0 -1 10375
+0 -1 10375 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10369
-Mid-way in the Battlegrounds~
+En medio dos Campos de Batalla~
 You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145740 0
+0 3145740 0 0 0 0
 D0
 ~
 ~
-0 -1 10370
+0 -1 10370 0
 D1
 ~
 ~
-0 -1 10362
+0 -1 10362 0
 D2
 ~
 ~
-0 -1 10368
+0 -1 10368 0
 D3
 ~
 ~
-0 -1 10374
+0 -1 10374 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10370
-Battle Grounds~
+Campos de Batalla~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10371
+0 -1 10371 0
 D1
 ~
 ~
-0 -1 10363
+0 -1 10363 0
 D2
 ~
 ~
-0 -1 10369
+0 -1 10369 0
 D3
 ~
 ~
-0 -1 10373
+0 -1 10373 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10371
 Along the northern wall~
@@ -5312,23 +5381,23 @@ You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 ~
 ~
-0 -1 10364
+0 -1 10364 0
 D2
 ~
 ~
-0 -1 10370
+0 -1 10370 0
 D3
 ~
 ~
-0 -1 10372
+0 -1 10372 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10372
 In the middle of the northern wall~
@@ -5336,23 +5405,23 @@ This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 ~
 ~
-0 -1 10371
+0 -1 10371 0
 D2
 ~
 ~
-0 -1 10373
+0 -1 10373 0
 D3
 ~
 ~
-0 -1 10381
+0 -1 10381 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10373
 Central Battlegrounds~
@@ -5362,32 +5431,32 @@ of creature ... but what?  You can hear a load wail of pain coming from
 somewhere below!  Yet another sound catches your attention, as someone
 succumbs to death.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10372
+0 -1 10372 0
 D1
 ~
 ~
-0 -1 10370
+0 -1 10370 0
 D2
 ~
 ~
-0 -1 10374
+0 -1 10374 0
 D3
 ~
 ~
-0 -1 10380
+0 -1 10380 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 D5
 Below is a dark, muddy tunnel, leading deep underground.
 ~
 ~
-16777216 -1 10406
+16777216 -1 10406 0
 S
 #10374
 The Center of the Battlegrounds~
@@ -5395,27 +5464,27 @@ This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10373
+0 -1 10373 0
 D1
 ~
 ~
-0 -1 10369
+0 -1 10369 0
 D2
 ~
 ~
-0 -1 10375
+0 -1 10375 0
 D3
 ~
 ~
-0 -1 10379
+0 -1 10379 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10375
 Central Battlegrounds~
@@ -5423,27 +5492,27 @@ You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10374
+0 -1 10374 0
 D1
 ~
 ~
-0 -1 10368
+0 -1 10368 0
 D2
 ~
 ~
-0 -1 10376
+0 -1 10376 0
 D3
 ~
 ~
-0 -1 10378
+0 -1 10378 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10376
 In the middle of the southern wall~
@@ -5451,23 +5520,23 @@ This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10375
+0 -1 10375 0
 D1
 ~
 ~
-0 -1 10367
+0 -1 10367 0
 D3
 ~
 ~
-0 -1 10377
+0 -1 10377 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10377
 Along the southern wall~
@@ -5475,51 +5544,51 @@ You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10378
+0 -1 10378 0
 D1
 ~
 ~
-0 -1 10376
+0 -1 10376 0
 D3
 ~
 ~
-0 -1 10386
+0 -1 10386 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10378
-Battle Grounds~
+Campos de Batalla~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10379
+0 -1 10379 0
 D1
 ~
 ~
-0 -1 10375
+0 -1 10375 0
 D2
 ~
 ~
-0 -1 10377
+0 -1 10377 0
 D3
 ~
 ~
-0 -1 10385
+0 -1 10385 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10379
 Mid-way in the Battlegrounds~
@@ -5527,55 +5596,55 @@ You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10380
+0 -1 10380 0
 D1
 ~
 ~
-0 -1 10374
+0 -1 10374 0
 D2
 ~
 ~
-0 -1 10378
+0 -1 10378 0
 D3
 ~
 ~
-0 -1 10384
+0 -1 10384 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10380
-Battle Grounds~
+Campos de Batalla~
 This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10381
+0 -1 10381 0
 D1
 ~
 ~
-0 -1 10373
+0 -1 10373 0
 D2
 ~
 ~
-0 -1 10379
+0 -1 10379 0
 D3
 ~
 ~
-0 -1 10383
+0 -1 10383 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10381
 Along the northern wall~
@@ -5583,23 +5652,23 @@ You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 ~
 ~
-0 -1 10372
+0 -1 10372 0
 D2
 ~
 ~
-0 -1 10380
+0 -1 10380 0
 D3
 ~
 ~
-0 -1 10382
+0 -1 10382 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10382
 North-West Corner~
@@ -5607,23 +5676,23 @@ This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145740 0
+0 3145740 0 0 0 0
 D0
 ~
 ~
-16777219 -1 10300
+16777219 -1 10300 0
 D1
 ~
 ~
-0 -1 10381
+0 -1 10381 0
 D2
 ~
 ~
-0 -1 10383
+0 -1 10383 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 > leave_prog 100~
 if isimmort($n)
 else
@@ -5648,23 +5717,23 @@ You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10382
+0 -1 10382 0
 D1
 ~
 ~
-0 -1 10380
+0 -1 10380 0
 D2
 ~
 ~
-0 -1 10384
+0 -1 10384 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10384
 In the middle of the western wall~
@@ -5672,23 +5741,23 @@ This area will allow you to further hone your combat skills. Kill the beasts
 that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10383
+0 -1 10383 0
 D1
 ~
 ~
-0 -1 10379
+0 -1 10379 0
 D2
 ~
 ~
-0 -1 10385
+0 -1 10385 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10385
 Along the western wall~
@@ -5696,23 +5765,23 @@ You hear the howl of some unnatural beast echo off the walls. The ground
 is stained with dried blood, looking closer you see tracks of some sort
 of creature ... but what?
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 ~
 ~
-0 -1 10384
+0 -1 10384 0
 D1
 ~
 ~
-0 -1 10378
+0 -1 10378 0
 D2
 ~
 ~
-0 -1 10386
+0 -1 10386 0
 D4
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 S
 #10386
 South-West Corner~
@@ -5721,26 +5790,26 @@ that wander here. If you wish to leave, exiting up will take you to the room
 for Toric, the Lord of Healing, in the Brigantia Academy. You see some strange
 symbols glowing in the ground here.  They look like RUNES.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 West Wall
 ~
 ~
-0 -1 10385
+0 -1 10385 0
 D1
 East Wall
 ~
 ~
-0 -1 10377
+0 -1 10377 0
 D4
 The Temple Of Brigantia
 ~
 ~
-16777216 -1 10319
+16777216 -1 10319 0
 D5
 ~
 ~
-3 -1 10392
+3 -1 10392 0
 E
 Runes~
 Going down into this hole will take you to the domain of the Naga. Be careful
@@ -5750,20 +5819,20 @@ S
 #10387
 Rangers South Cage~
 The stench of rotting corpses assaults your senses. Bits of bone and pieces
-of rusted armor are strewn about the cage. Remember, kill, loot the corpse, 
+of rusted armor are strewn about the cage. Remember, kill, loot the corpse,
 then sacrifice the corpse. You may type CONFIG +AUTOSAC to have all corpse
 sacrificed automatically at the mobiles death. You must use caution when
-using autosac as items still inside the corpse are also sacrificed. Even 
+using autosac as items still inside the corpse are also sacrificed. Even
 if you have CONFIG +AUTOLOOT, there are times when your hands are full or
 you have reached maximum weight and will be unable to get everything from
 the corpse.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D0
 Chamber of Trials
 ~
 ~
-0 -1 10305
+0 -1 10305 0
 S
 #10388
 Rangers East Cage~
@@ -5774,12 +5843,12 @@ as "arena" in addition to their name. Also, all equipment available in the
 Academy is named "academy". You can WEAR ACADEMY or REMOVE ACADEMY in
 addition to the actual name of the item.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D3
 Chamber of Trials
 ~
 ~
-0 -1 10305
+0 -1 10305 0
 S
 #10389
 Rangers North Cage~
@@ -5789,19 +5858,19 @@ WEAR, WIELD, HOLD, REMOVE, REPAIR, and EXAMINE. To get a piece of equipment
 from a corpse you type GET <item> CORPSE. To get an item from the ground
 you type GET <item>. To drop a piece of equipment from your inventory, type
 DROP <item>. To wear an item, type WEAR <item> or WEAR ALL. To wield a
-weapon, type WIELD <item>. You may not wield a weapon if you are already 
+weapon, type WIELD <item>. You may not wield a weapon if you are already
 wielding one, you must first remove the weapon you are using. To remove a
 weapon or item, type REMOVE <item>. Many pieces of equipment may be damaged
 and repaired. To see the condition of a piece of equipment, type EXAM <item>.
 If is it in need of repair, you need to find a blacksmith. Once in the room
 with the blacksmith, remove item to inventory and type REPAIR <item>.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D2
 Chamber of Trials
 ~
 ~
-0 -1 10305
+0 -1 10305 0
 S
 #10390
 Rangers West Cage~
@@ -5811,12 +5880,12 @@ the corpse to the gods and they reward you for it. To use, type SAC CORPSE.
 You may also sacrifice unwanted items, by first dropping them on the ground,
 then typing SAC <item>. For more information on sacrifice, see the help.
 ~
-0 3145736 0
+0 3145736 0 0 0 0
 D1
 Chamber of Trials
 ~
 ~
-0 -1 10305
+0 -1 10305 0
 S
 #10391
 Hall of the Ranger~
@@ -5824,28 +5893,28 @@ The freedom of the wild, always has it fascinated you. To be free in the
 land, independent of cities and civilizations. These thoughts flood your
 mind as you walk this hallway.
 ~
-0 3146764 0
+0 3146764 0 0 0 0
 D5
 Chamber of Trials for Rangers
 ~
 ~
-0 -1 10305
+0 -1 10305 0
 S
 #10392
-In a Humid Cavern.~
+En unha Caverna Humida~
 You are standing in an underground cavern, moss is prevalent along the ceiling
 and walls. A steady dripping is echoing through the area and seems to be coming
 from everywhere.
 ~
-0 3145741 0
+0 3145741 0 0 0 0
 D3
 ~
 ~
-0 -1 10393
+0 -1 10393 0
 D4
 ~
 ~
-3 -1 10386
+3 -1 10386 0
 > entry_prog 100~
 if level($n) < 4
 mpechoat $n This dark cavern is full of aggressive mobs!  Perhaps you should
@@ -5861,64 +5930,64 @@ endif
 |
 S
 #10393
-In the Cavern~
+En unha Caverna~
 The steady sound of hissing can be heard in the distance.  The air here
 is extremely humid, you are finding it very difficult to breathe.
 ~
-0 3145737 0
+0 3145737 0 0 0 0
 D1
 ~
 ~
-0 -1 10392
+0 -1 10392 0
 D2
 ~
 ~
-0 -1 10394
+0 -1 10394 0
 S
 #10394
-In the Cavern~
+En unha Caverna~
 You feel as if you are being pulled into the mire, the constant dampness
 of the cavern has caused the ground to be turned into a mud bog.
 ~
-0 3145737 0
+0 3145737 0 0 0 0
 D0
 ~
 ~
-0 -1 10393
+0 -1 10393 0
 D1
 ~
 ~
-0 -1 10395
+0 -1 10395 0
 D3
 ~
 ~
-0 -1 10396
+0 -1 10396 0
 S
 #10395
-Deeper in the Cavern~
+Moi profundo na Caverna~
 The steady sound of hissing can be heard in the distance, closer actually
 than you would like. The air here is humid and breathing is difficult.
 ~
-0 3145737 0
+0 3145737 0 0 0 0
 D2
 ~
 ~
-0 -1 10397
+0 -1 10397 0
 D3
 ~
 ~
-0 -1 10394
+0 -1 10394 0
 S
 #10396
-In the Cavern~
+En unha Caverna~
 You feel you are being pulled into the mire, the constant dampness and
 humidity have caused the ground to be transformed into a mud bog.
 ~
-0 3145737 0
+0 3145737 0 0 0 0
 D1
 ~
 ~
-0 -1 10394
+0 -1 10394 0
 S
 #10397
 Cove of the Queen~
@@ -5926,11 +5995,11 @@ You have inadvertently stumbled upon the cove of the Queen of the Nagas.
 This room is littered with bloated corpses of adventurers who have been
 reported lost in the past few days.
 ~
-0 3145737 0
+0 3145737 0 0 0 0
 D0
 ~
 ~
-0 -1 10395
+0 -1 10395 0
 S
 #10398
 DELETE THIS ROOM~
@@ -5945,12 +6014,12 @@ is no use of profanity on this or any note board.
 
 **--**     Any note posted here may be removed at any time.     **--**
 ~
-0 3211276 0
+0 3211276 0 0 0 0
 D3
 Entrance to Brigantia Academy
 ~
 ~
-0 -1 10300
+0 -1 10300 0
 > leave_prog 100~
 if isimmort($n)
 else
@@ -5990,7 +6059,7 @@ his mortal self before he passed onto the realm of immortality. Looking
 you discover a t.v. and vcr behind the throne for use when the Realms are
 not in need of the Lord of Dark Magic.
 ~
-0 2097164 0
+0 2097164 0 0 0 0
 > act_prog p purge~
 mppurge
 mpecho The room is purged!
@@ -6005,12 +6074,12 @@ Augurers come to meditate and reflect upon their activities of the
 day.  Small, spartan cots line the walls, each well-padded to make a
 comfortable resting place for an exhausted adventurer.
 ~
-0 3146764 0
+0 3146764 0 0 0 0
 D5
 Chamber of Trials for Augurers.
 ~
 ~
-0 -1 10401
+0 -1 10401 0
 E
 cots~
 Several cots line each wall. They look like they are very comfortable.
@@ -6035,32 +6104,32 @@ transferred to your inventory. You may suffer injury during the battle, so
 return here and type REST or SLEEP. This will speed your healing process.
 When you are finished healing, type WAKE or STAND to continue.
 ~
-0 3146764 0
+0 3146764 0 0 0 0
 D0
 A cage.
 ~
 ~
-0 -1 10402
+0 -1 10402 0
 D1
 A cage.
 ~
 ~
-0 -1 10403
+0 -1 10403 0
 D2
 A cage.
 ~
 ~
-0 -1 10404
+0 -1 10404 0
 D3
 A cage.
 ~
 ~
-0 -1 10405
+0 -1 10405 0
 D5
 A Stone Corridor.
 ~
 ~
-0 -1 10356
+0 -1 10356 0
 S
 #10402
 Augurers North Cage~
@@ -6074,12 +6143,12 @@ inventory, type "drop <item>".  To wield a weapon, type "wield <weapon>".
 Many items may be damaged and repaired.  To see an item's condition, type
 "exam <item>".  To repair an item type "repair <item>" at a blacksmith.
 ~
-0 3145740 0
+0 3145740 0 0 0 0
 D2
 Chamber of Trials for Augurers.
 ~
 ~
-0 -1 10401
+0 -1 10401 0
 S
 #10403
 Augurers East Cage~
@@ -6089,12 +6158,12 @@ the corpse to the gods and they reward you for it (albeit minorly).  To use,
 type 'sac corpse'.  You may also sacrifice unwanted items by first dropping
 them and then typing 'sac <item>'.  See 'help sacrifice' for information.
 ~
-0 3145740 0
+0 3145740 0 0 0 0
 D3
 Chamber of Trials for Augurers.
 ~
 ~
-0 -1 10401
+0 -1 10401 0
 S
 #10404
 Augurers South Cage~
@@ -6107,12 +6176,12 @@ are also sacrificed.  Even if you have 'config +autloot', there are times
 when your hands are full or you have reached maximum weight and will be
 unable to get everything from the corpse automatically.
 ~
-0 3145740 0
+0 3145740 0 0 0 0
 D0
 Chamber of Trials for Augurers.
 ~
 ~
-0 -1 10401
+0 -1 10401 0
 S
 #10405
 Augurers West Cage~
@@ -6123,15 +6192,15 @@ be referred to as "arena" in addition to their name.  Also, all equipment
 available in the Academy is named "academy".  You can 'wear academy' or
 'remove academy' in addition to the actual name of the item.
 ~
-0 3145740 0
+0 3145740 0 0 0 0
 D1
 Chamber of Trials for Augurers.
 ~
 ~
-0 -1 10401
+0 -1 10401 0
 S
 #10406
-A dark tunnel below the Battlegrounds~
+Un escuro tunel baixo os Campos de Batalla~
 You have left the relative saftey of the battlegrounds above.  A thick
 stench of death, moisture, and heat mix to assault your every breath.
 The walls of this tunnel are covered with a slimy layer of a liquid
@@ -6139,259 +6208,259 @@ similar to sweat.  Below your feet, the ground seems to sink slightly,
 barely handling your weight.  Crudely carved tunnels lead deeper into
 this underground chamber to the southwest and southeast.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D4
 Above you is the Brigantia Academy battlegrounds.
 ~
 ~
-16777216 -1 10373
+16777216 -1 10373 0
 D8
 To the southeast is a tunnel leading away from the Battlegrounds.
 ~
 ~
-0 -1 10407
+0 -1 10407 0
 D9
 To the southwest is a tunnel leading away from the Battlegrounds.
 ~
 ~
-0 -1 10427
+0 -1 10427 0
 S
 #10407
-A dark tunnel below the Battlegrounds~
+Un escuro tunel baixo os Campos de Batalla~
 The walls of this tunnel are close, barely allowing you passage.
 The earth under your feet is damp and sticking to your boots.  A
 squeal can be heard coming from the south.  You may want to return
 back to the safety of the Battlegrounds.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D2
 ~
 ~
-0 -1 10408
+0 -1 10408 0
 D7
 ~
 ~
-0 -1 10406
+0 -1 10406 0
 S
 #10408
-A dark tunnel below the Battlegrounds~
-Darkness engulfs this tunnel, making it impossible to see without a 
-light source.  Water drips slowly down the tunnel walls, adding to
-the moisture in the soil and humidity in the air.  This place does
-appear to be very welcoming.
-~
-0 3145737 13
-D0
-~
-~
-0 -1 10407
-D1
-~
-~
-0 -1 10409
-S
-#10409
-A dark tunnel below the Battlegrounds~
-The walls of this tunnel are close, barely allowing you passage.
-The earth under your feet is damp and sticking to your boots.  A
-squeal can be heard coming from the south.  You may want to return
-back to the safety of the Battlegrounds far towards the north.
-~
-0 3145737 13
-D2
-~
-~
-0 -1 10410
-D3
-~
-~
-0 -1 10408
-S
-#10410
-A dark tunnel below the Battlegrounds~
+Un escuro tunel baixo os Campos de Batalla~
 Darkness engulfs this tunnel, making it impossible to see without a
 light source.  Water drips slowly down the tunnel walls, adding to
 the moisture in the soil and humidity in the air.  This place does
 appear to be very welcoming.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10409
+0 -1 10407 0
+D1
+~
+~
+0 -1 10409 0
+S
+#10409
+Un escuro tunel baixo os Campos de Batalla~
+The walls of this tunnel are close, barely allowing you passage.
+The earth under your feet is damp and sticking to your boots.  A
+squeal can be heard coming from the south.  You may want to return
+back to the safety of the Battlegrounds far towards the north.
+~
+0 3145737 13 0 0 0
 D2
 ~
 ~
-0 -1 10411
+0 -1 10410 0
+D3
+~
+~
+0 -1 10408 0
+S
+#10410
+Un escuro tunel baixo os Campos de Batalla~
+Darkness engulfs this tunnel, making it impossible to see without a
+light source.  Water drips slowly down the tunnel walls, adding to
+the moisture in the soil and humidity in the air.  This place does
+appear to be very welcoming.
+~
+0 3145737 13 0 0 0
+D0
+~
+~
+0 -1 10409 0
+D2
+~
+~
+0 -1 10411 0
 S
 #10411
-A dark tunnel below the Battlegrounds~
+Un escuro tunel baixo os Campos de Batalla~
 You have entered a opening in the rock, and can see a large cavern
 to the east.  Sounds echo around you, coming from everywhere and
 nowhere. This place gives you a sick feeling in the pit of your
 stomach.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10410
+0 -1 10410 0
 D2
 ~
 ~
-0 -1 10412
+0 -1 10412 0
 D3
 ~
 ~
-0 -1 10420
+0 -1 10420 0
 D9
 ~
 ~
-0 -1 10416
+0 -1 10416 0
 S
 #10412
-A dark tunnel below the Battlegrounds~
-The tunnel stops abruptly at the southern wall.  There are several 
+Un escuro tunel baixo os Campos de Batalla~
+The tunnel stops abruptly at the southern wall.  There are several
 openings leading away from the tunnel, into a large cavern.  You can
 hear a lot of noise in the area, and none of it sounds pleasant.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10411
+0 -1 10411 0
 D3
 ~
 ~
-0 -1 10416
+0 -1 10416 0
 D7
 ~
 ~
-0 -1 10420
+0 -1 10420 0
 D9
 ~
 ~
-0 -1 10413
+0 -1 10413 0
 S
 #10413
-A hollow cavern deep underground~
+Unha caverna horrorosamente profunda~
 Booming echoes overwhelm your senses.  Loud dripping, sounding like
 many large hammers crashing against the stone walls, assault your every
 moment. Cries of death surround and torment you.  You get a distinct
 urge to move away from here as quickly, and unnoticed, as possible.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10416
+0 -1 10416 0
 D3
 ~
 ~
-0 -1 10414
+0 -1 10414 0
 D6
 ~
 ~
-0 -1 10412
+0 -1 10412 0
 D7
 ~
 ~
-0 -1 10417
+0 -1 10417 0
 S
 #10414
-A hollow cavern deep underground~
+Unha caverna horrorosamente profunda~
 The sounds seem to coalesces here, making one noise indistinguishable
-from the next.  The cavern wall to the south seems to be sweating, 
+from the next.  The cavern wall to the south seems to be sweating,
 drips of water roll down its face, collecting in a puddle at your feet.
 You have a desire to leave this place, and venture somewhere less
 deafening.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10417
+0 -1 10417 0
 D1
 ~
 ~
-0 -1 10413
+0 -1 10413 0
 D3
 ~
 ~
-0 -1 10415
+0 -1 10415 0
 D6
 ~
 ~
-0 -1 10416
+0 -1 10416 0
 D7
 ~
 ~
-0 -1 10418
+0 -1 10418 0
 S
 #10415
-A hollow cavern deep underground~
+Unha caverna horrorosamente profunda~
 Booming echoes overwhelm your senses.  Loud dripping, sounding like
 many large hammers crashing against the stone walls, assault your every
 moment. Cries of death surround and torment you.  You get a distinct
 urge to move away from here as quickly, and unnoticed, as possible.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10418
+0 -1 10418 0
 D1
 ~
 ~
-0 -1 10414
+0 -1 10414 0
 D6
 ~
 ~
-0 -1 10417
+0 -1 10417 0
 D7
 ~
 ~
-0 -1 10419
+0 -1 10419 0
 S
 #10416
-A hollow cavern deep underground~
+Unha caverna horrorosamente profunda~
 You sink a few inches into the mud that makes up the floor of this
 cavern. Darkness and noise punctuate the devestating nothingness
-that fills this space.  If there is life to be found in this place, 
+that fills this space.  If there is life to be found in this place,
 you are sure you do not want to run across it.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10420
+0 -1 10420 0
 D1
 ~
 ~
-0 -1 10412
+0 -1 10412 0
 D2
 ~
 ~
-0 -1 10413
+0 -1 10413 0
 D3
 ~
 ~
-0 -1 10417
+0 -1 10417 0
 D6
 ~
 ~
-0 -1 10411
+0 -1 10411 0
 D7
 ~
 ~
-0 -1 10421
+0 -1 10421 0
 D9
 ~
 ~
-0 -1 10414
+0 -1 10414 0
 S
 #10417
-A hollow cavern deep underground~
+Unha caverna horrorosamente profunda~
 As you wander through the muggy darkness, your nose detects the musty
 scents of fungus and decay as your passing stirs the still air.  The
 sounds of battle echo around you as you continue your journey through
@@ -6400,618 +6469,610 @@ corner you may find two combatents struggling for life. You continue
 onwards through the gloom, your senses screaming for you to flee before
 it's too late.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10421
+0 -1 10421 0
 D1
 ~
 ~
-0 -1 10416
+0 -1 10416 0
 D2
 ~
 ~
-0 -1 10414
+0 -1 10414 0
 D3
 ~
 ~
-0 -1 10418
+0 -1 10418 0
 D6
 ~
 ~
-0 -1 10420
+0 -1 10420 0
 D7
 ~
 ~
-0 -1 10422
+0 -1 10422 0
 D8
 ~
 ~
-0 -1 10413
+0 -1 10413 0
 D9
 ~
 ~
-0 -1 10415
+0 -1 10415 0
 S
 #10418
-A hollow cavern deep underground~
+Unha caverna horrorosamente profunda~
 Hollow and barren of color and light, this place is overwhelming with
 sounds and moisture.  The sound of water dripping and wails of pain and
 death can be heard all around you.  Whatever resides in this awful place
 does not welcome strangers.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10422
+0 -1 10422 0
 D1
 ~
 ~
-0 -1 10417
+0 -1 10417 0
 D2
 ~
 ~
-0 -1 10415
+0 -1 10415 0
 D3
 ~
 ~
-0 -1 10419
+0 -1 10419 0
 D6
 ~
 ~
-0 -1 10421
+0 -1 10421 0
 D7
 ~
 ~
-0 -1 10423
+0 -1 10423 0
 D8
 ~
 ~
-0 -1 10414
+0 -1 10414 0
 S
 #10419
-A dark tunnel below the Battlegrounds~
+Un escuro tunel baixo os Campos de Batalla~
 The tunnel stops abruptly at the southern wall.  There are several
 openings leading away from the tunnel, into a large cavern.  You can
 hear a lot of noise in the area, and none of it sounds pleasant.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10423
+0 -1 10423 0
 D1
 ~
 ~
-0 -1 10418
+0 -1 10418 0
 D6
 ~
 ~
-0 -1 10422
+0 -1 10422 0
 D8
 ~
 ~
-0 -1 10415
+0 -1 10415 0
 S
 #10420
-A hollow cavern deep underground~
+Unha caverna horrorosamente profunda~
 Hollow and barren of color and light, this place is overwhelming with
 sounds and moisture.  The sound of water dripping and wails of pain and
 death can be heard all around you.  Whatever resides in this awful place
 does not welcome strangers.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D1
 ~
 ~
-0 -1 10411
+0 -1 10411 0
 D2
 ~
 ~
-0 -1 10416
+0 -1 10416 0
 D3
 ~
 ~
-0 -1 10421
+0 -1 10421 0
 D8
 ~
 ~
-0 -1 10412
+0 -1 10412 0
 D9
 ~
 ~
-0 -1 10417
+0 -1 10417 0
 S
 #10421
-A hollow cavern deep underground~
+Unha caverna horrorosamente profunda~
 To the north is a craggy rock wall of the cavern, covered in a slimy
 film of an unknown source.  From all directions you are assaulted by
 howls of pain, and cries of death.  Moisture clings to your skin,
 making you feel much hotter then you should for the air temperature.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D1
 ~
 ~
-0 -1 10420
+0 -1 10420 0
 D2
 ~
 ~
-0 -1 10417
+0 -1 10417 0
 D3
 ~
 ~
-0 -1 10422
+0 -1 10422 0
 D8
 ~
 ~
-0 -1 10416
+0 -1 10416 0
 D9
 ~
 ~
-0 -1 10418
+0 -1 10418 0
 S
 #10422
-A hollow cavern deep underground~
+Unha caverna horrorosamente profunda~
 You sink a few inches into the mud that makes up the floor of this
 cavern. Darkness and noise punctuate the devestating nothingness
 that fills this space.  If there is life to be found in this place,
 you are sure you do not want to run across it.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D1
 ~
 ~
-0 -1 10421
+0 -1 10421 0
 D2
 ~
 ~
-0 -1 10418
+0 -1 10418 0
 D3
 ~
 ~
-0 -1 10423
+0 -1 10423 0
 D8
 ~
 ~
-0 -1 10417
+0 -1 10417 0
 D9
 ~
 ~
-0 -1 10419
+0 -1 10419 0
 S
 #10423
-A dark tunnel below the Battlegrounds~
+Un escuro tunel baixo os Campos de Batalla~
 You have entered a opening in the rock, and can see a large cavern
 to the west.  Sounds echo around you, coming from everywhere and
 nowhere. This place gives you a sick feeling in the pit of your
 stomach.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10424
+0 -1 10424 0
 D1
 ~
 ~
-0 -1 10422
+0 -1 10422 0
 D2
 ~
 ~
-0 -1 10419
+0 -1 10419 0
 D8
 ~
 ~
-0 -1 10418
+0 -1 10418 0
 S
 #10424
-A dark tunnel below the Battlegrounds~
+Un escuro tunel baixo os Campos de Batalla~
 Darkness engulfs this tunnel, making it impossible to see without a
 light source.  Water drips slowly down the tunnel walls, adding to
 the moisture in the soil and humidity in the air.  This place does
 appear to be very welcoming.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10425
+0 -1 10425 0
 D2
 ~
 ~
-0 -1 10423
+0 -1 10423 0
 S
 #10425
-A dark tunnel below the Battlegrounds~
+Un escuro tunel baixo os Campos de Batalla~
 The walls of this tunnel are close, barely allowing you passage.
 The earth under your feet is damp and sticking to your boots.  A
 squeal can be heard coming from the south.  You may want to return
 back to the safety of the Battlegrounds far towards the north.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D1
 ~
 ~
-0 -1 10426
+0 -1 10426 0
 D2
 ~
 ~
-0 -1 10424
+0 -1 10424 0
 S
 #10426
-A dark tunnel below the Battlegrounds~
+Un escuro tunel baixo os Campos de Batalla~
 Darkness engulfs this tunnel, making it impossible to see without a
 light source.  Water drips slowly down the tunnel walls, adding to
 the moisture in the soil and humidity in the air.  This place does
 appear to be very welcoming.
 ~
-0 3145737 13
+0 3145737 13 0 0 0
 D0
 ~
 ~
-0 -1 10427
+0 -1 10427 0
 D3
 ~
 ~
-0 -1 10425
+0 -1 10425 0
 S
 #10427
-A dark tunnel below the Battlegrounds~
+Un escuro tunel baixo os Campos de Batalla~
 The walls of this tunnel are close, barely allowing you passage.
 The earth under your feet is damp and sticking to your boots.  A
 squeal can be heard coming from the south.  You may want to return
 back to the safety of the Battlegrounds.
 ~
-0 3145737 0
+0 3145737 0 0 0 0
 D2
 ~
 ~
-0 -1 10426
+0 -1 10426 0
 D6
 ~
 ~
-0 -1 10406
+0 -1 10406 0
 S
 #10429
 Not currently used~
 ~
-0 1075838980 1
+0 1075838980 1 0 0 0
 S
 #10498
-Floating in a void~
+Flotando por ahi~
 ~
-0 1073741828 1
+0 1073741828 1 0 0 0
 S
 #10499
-Chamber of the Watch~
+Camara da Vision~
 Here reside the watchers of the gateway between the Realms and the
 outside world, and from here all new adventurers are observed and
 noted by the inhabitants herein.
- 
+
 ** This room should *not* be used for any activities of any kind
 other than those of the two mobs residing here.  Do not ever move
 or purge either of these mobiles if the pre-auth system is used. **
 ~
-0 1075838980 1
+0 1075838980 1 0 0 0
 S
 #0
 
-
 #RESETS
-M 0 10399 1 10300
-D 0 10300 2 1
-M 0 10340 1 10303
-M 0 10333 1 10305
-M 0 10394 1 10306
-M 0 10345 1 10308
-E 1 10345 1 3
-D 0 10309 0 1
-D 0 10310 2 1
-D 0 10312 3 1
-D 0 10313 1 1
-M 0 10352 1 10318
-M 0 10342 1 10319
-M 0 10354 1 10320
-M 0 10353 1 10321
-M 0 10351 1 10322
-M 0 10349 1 10323
-M 0 10350 1 10324
-M 0 10334 1 10325
-M 0 10335 1 10326
-M 0 10336 1 10327
-M 0 10337 1 10328
-M 0 10338 1 10329
-M 0 10339 1 10330
-M 0 10326 2 10331
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10326 2 10331
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10305 2 10332
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10305 2 10332
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10312 2 10333
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10312 2 10333
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10319 2 10334
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10319 2 10334
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10306 2 10335
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10306 2 10335
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10313 2 10336
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10313 2 10336
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10327 2 10337
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10327 2 10337
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10320 2 10338
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10320 2 10338
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10307 2 10339
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10307 2 10339
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10314 2 10340
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10314 2 10340
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10328 2 10341
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10328 2 10341
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10321 2 10342
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10321 2 10342
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10308 2 10343
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10308 2 10343
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10315 2 10344
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10315 2 10344
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10329 2 10345
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10329 2 10345
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10322 2 10346
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10322 2 10346
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10309 2 10347
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10309 2 10347
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10316 2 10348
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10316 2 10348
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10330 2 10349
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10330 2 10349
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10323 2 10350
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10323 2 10350
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10310 2 10351
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10310 2 10351
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10317 2 10352
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10317 2 10352
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10331 2 10353
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10331 2 10353
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10324 2 10354
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10324 2 10354
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10343 1 10357
-G 1 10316 1
-G 1 10317 1
-G 1 10314 1
-D 0 10361 4 1
-D 0 10362 5 1
-M 0 10303 4 10363
-M 0 10301 4 10365
-M 0 10300 4 10365
-M 0 10301 4 10367
-M 0 10301 4 10368
-M 0 10302 4 10370
-M 0 10302 4 10370
-M 0 10303 4 10370
-M 0 10302 4 10372
-M 0 10302 4 10372
-M 0 10300 4 10373
-M 0 10300 4 10374
-M 0 10301 4 10375
-M 0 10303 4 10377
-M 0 10300 4 10379
-M 0 10303 4 10381
-D 0 10382 0 1
-D 0 10386 5 1
-M 0 10318 2 10387
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10318 2 10387
-E 1 10304 14 6
-E 1 10305 14 12
-M 0 10325 2 10388
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10325 2 10388
-E 1 10300 14 14
-E 1 10301 14 8
-M 0 10311 2 10389
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10311 2 10389
-E 1 10302 14 13
-E 1 10303 14 7
-M 0 10332 2 10390
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10332 2 10390
-E 1 10306 14 3
-E 1 10319 14 9
-M 0 10355 1 10391
-D 0 10392 4 1
-M 0 10396 4 10395
-M 0 10396 4 10395
-M 0 10396 4 10396
-M 0 10396 4 10396
-M 0 10397 1 10397
-E 1 10318 2 16
-O 0 10367 1 10398
-M 0 10401 1 10401
-M 0 10400 1 10400
-M 0 10402 2 10402
-E 1 10302 1 13
-E 1 10303 1 7
-M 0 10402 2 10402
-E 1 10302 1 13
-E 1 10303 1 7
-M 0 10403 2 10403
-E 1 10306 1 3
-E 1 10319 1 9
-M 0 10403 2 10403
-E 1 10306 1 3
-E 1 10319 1 9
-M 0 10405 2 10405
-E 1 10300 1 14
-E 1 10301 1 8
-M 0 10405 2 10405
-E 1 10300 1 14
-E 1 10301 1 8
-M 0 10404 2 10404
-E 1 10304 1 6
-E 1 10305 1 12
-M 0 10404 2 10404
-E 1 10304 1 6
-E 1 10305 1 12
-M 0 10346 1 10355
-M 0 10497 1 10499
-M 0 10498 1 10499
-O 0 10401 1 10300
-O 0 10401 1 10319
-O 0 10401 1 10374
-O 0 10401 1 10386
-O 0 10401 1 10382
-O 0 10401 1 10364
-O 0 10401 1 10366
-O 0 10401 1 10325
-O 0 10401 1 10326
-O 0 10401 1 10327
-O 0 10401 1 10328
-O 0 10401 1 10329
-O 0 10401 1 10330
-O 0 10401 1 10401
-O 0 10401 1 10305
-M 0 10406 1 10413
-M 0 10407 1 10418
-M 0 10408 1 10424
-M 0 10409 1 10408
-M 0 10410 1 10423
-M 0 10411 1 10412
-M 0 10412 1 10415
-M 0 10413 1 10421
-M 0 10414 1 10425
-M 0 10415 1 10407
-M 0 10416 1 10414
-M 0 10417 1 10411
-M 0 10418 1 10409
-M 0 10419 1 10426
-M 0 10420 1 10422
-M 0 10421 1 10427
+M 0 10399 1 10300  ; Mob: #10399 Mistress Tsythia => #10300 Academia de Brigantia
+D 0 10300 2 1  ; Door: #10300 Academia de Brigantia/South => closed
+M 0 10340 1 10303  ; Mob: #10340 Domick => #10303 O Laboratorio das Habilidades e Feitizos
+M 0 10333 1 10305  ; Mob: #10333 the spectre => #10305 Camara para Probas de Cazadores
+M 0 10394 1 10306  ; Mob: #10394 abbigail => #10306 Leccions de Lingua con Abbigail
+M 0 10345 1 10308  ; Mob: #10345 the chadoyn => #10308 A Dank Pit
+E 1 10345 1 3  ; -- Equip: #10345 the chadoyn's bindings (Neck-1)
+D 0 10309 0 1  ; Door: #10309 Wandering Academia de Brigantia/North => closed
+D 0 10310 2 1  ; Door: #10310 Unha Habitacion Fechada/South => closed
+D 0 10312 3 1  ; Door: #10312 Perdido na Academia de Brigantia/West => closed
+D 0 10313 1 1  ; Door: #10313 Unha Alcoba Secreta/East => closed
+M 0 10352 1 10318  ; Mob: #10352 the statue => #10318 O Altar dos Guerreiros
+M 0 10342 1 10319  ; Mob: #10342 BuRZuM-iSHi => #10319 O Curandeiro da Academia
+M 0 10354 1 10320  ; Mob: #10354 the statue => #10320 O Altar dos Druidas
+M 0 10353 1 10321  ; Mob: #10353 the statue => #10321 O Altar dos _Vampiros_
+M 0 10351 1 10322  ; Mob: #10351 the statue => #10322 O Altar dos Ladrons
+M 0 10349 1 10323  ; Mob: #10349 the statue => #10323 O Altar dos Magos
+M 0 10350 1 10324  ; Mob: #10350 the statue => #10324 O Altar dos Clerigos
+M 0 10334 1 10325  ; Mob: #10334 the spectre => #10325 Camara para Probas de Guerreiros
+M 0 10335 1 10326  ; Mob: #10335 the spectre => #10326 Camara para Probas de Druidas
+M 0 10336 1 10327  ; Mob: #10336 the spectre => #10327 Camara para Probas de _Vampiros_
+M 0 10337 1 10328  ; Mob: #10337 the spectre => #10328 Camara para Probas de Ladrons
+M 0 10338 1 10329  ; Mob: #10338 the spectre => #10329 Camara para Probas de Magos
+M 0 10339 1 10330  ; Mob: #10339 the spectre => #10330 Camara para Probas de Clerigos
+M 0 10326 2 10331  ; Mob: #10326 the minotaur => #10331 Clerics West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10326 2 10331  ; Mob: #10326 the minotaur => #10331 Clerics West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10305 2 10332  ; Mob: #10305 o naga => #10332 Clerics North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10305 2 10332  ; Mob: #10305 o naga => #10332 Clerics North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10312 2 10333  ; Mob: #10312 o gnoll => #10333 Clerics South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10312 2 10333  ; Mob: #10312 o gnoll => #10333 Clerics South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10319 2 10334  ; Mob: #10319 the kobold => #10334 Clerics East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10319 2 10334  ; Mob: #10319 the kobold => #10334 Clerics East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10306 2 10335  ; Mob: #10306 o naga => #10335 Mages North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10306 2 10335  ; Mob: #10306 o naga => #10335 Mages North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10313 2 10336  ; Mob: #10313 o gnoll => #10336 Mages South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10313 2 10336  ; Mob: #10313 o gnoll => #10336 Mages South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10327 2 10337  ; Mob: #10327 the minotaur => #10337 Mages West Room
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10327 2 10337  ; Mob: #10327 the minotaur => #10337 Mages West Room
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10320 2 10338  ; Mob: #10320 the kobold => #10338 Mages East Room
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10320 2 10338  ; Mob: #10320 the kobold => #10338 Mages East Room
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10307 2 10339  ; Mob: #10307 o naga => #10339 Warriors North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10307 2 10339  ; Mob: #10307 o naga => #10339 Warriors North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10314 2 10340  ; Mob: #10314 o gnoll => #10340 Warriors South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10314 2 10340  ; Mob: #10314 o gnoll => #10340 Warriors South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10328 2 10341  ; Mob: #10328 the minotaur => #10341 Warriors West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10328 2 10341  ; Mob: #10328 the minotaur => #10341 Warriors West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10321 2 10342  ; Mob: #10321 the kobold => #10342 Warriors East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10321 2 10342  ; Mob: #10321 the kobold => #10342 Warriors East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10308 2 10343  ; Mob: #10308 o naga => #10343 Druids North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10308 2 10343  ; Mob: #10308 o naga => #10343 Druids North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10315 2 10344  ; Mob: #10315 o gnoll => #10344 Druids South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10315 2 10344  ; Mob: #10315 o gnoll => #10344 Druids South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10329 2 10345  ; Mob: #10329 the minotaur => #10345 Druids West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10329 2 10345  ; Mob: #10329 the minotaur => #10345 Druids West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10322 2 10346  ; Mob: #10322 the kobold => #10346 Druids East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10322 2 10346  ; Mob: #10322 the kobold => #10346 Druids East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10309 2 10347  ; Mob: #10309 o naga => #10347 Vampires North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10309 2 10347  ; Mob: #10309 o naga => #10347 Vampires North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10316 2 10348  ; Mob: #10316 o gnoll => #10348 Vampires South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10316 2 10348  ; Mob: #10316 o gnoll => #10348 Vampires South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10330 2 10349  ; Mob: #10330 the minotaur => #10349 Vampires West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10330 2 10349  ; Mob: #10330 the minotaur => #10349 Vampires West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10323 2 10350  ; Mob: #10323 the kobold => #10350 Vampires East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10323 2 10350  ; Mob: #10323 the kobold => #10350 Vampires East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10310 2 10351  ; Mob: #10310 o naga => #10351 Thieves North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10310 2 10351  ; Mob: #10310 o naga => #10351 Thieves North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10317 2 10352  ; Mob: #10317 o gnoll => #10352 Thieves South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10317 2 10352  ; Mob: #10317 o gnoll => #10352 Thieves South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10331 2 10353  ; Mob: #10331 the minotaur => #10353 Thieves West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10331 2 10353  ; Mob: #10331 the minotaur => #10353 Thieves West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10324 2 10354  ; Mob: #10324 the kobold => #10354 Thieves East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10324 2 10354  ; Mob: #10324 the kobold => #10354 Thieves East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10343 1 10357  ; Mob: #10343 Zurg => #10357 Tenda de Suplementos da Academia de Brigantia
+G 1 10316 1 ; -- Give:  #10316 a torch
+G 1 10317 1 ; -- Give:  #10317 dried rabbit meat
+G 1 10314 1 ; -- Give:  #10314 a dragonskin
+D 0 10361 4 1  ; Door: #10361 A Final Test/Up => closed
+D 0 10362 5 1  ; Door: #10362 In the middle of the eastern wall/Down => closed
+M 0 10303 4 10363  ; Mob: #10303 Un aguilon da area => #10363 Along the eastern wall
+M 0 10301 4 10365  ; Mob: #10301 Unha lumacha => #10365 Along the eastern wall
+M 0 10300 4 10365  ; Mob: #10300 Un lobo esfameado => #10365 Along the eastern wall
+M 0 10301 4 10367  ; Mob: #10301 Unha lumacha => #10367 Along the southern wall
+M 0 10301 4 10368  ; Mob: #10301 Unha lumacha => #10368 Campos de Batalla
+M 0 10302 4 10370  ; Mob: #10302 o naga esqueletico => #10370 Campos de Batalla
+M 0 10302 4 10370  ; Mob: #10302 o naga esqueletico => #10370 Campos de Batalla
+M 0 10303 4 10370  ; Mob: #10303 Un aguilon da area => #10370 Campos de Batalla
+M 0 10302 4 10372  ; Mob: #10302 o naga esqueletico => #10372 In the middle of the northern wall
+M 0 10302 4 10372  ; Mob: #10302 o naga esqueletico => #10372 In the middle of the northern wall
+M 0 10300 4 10373  ; Mob: #10300 Un lobo esfameado => #10373 Central Battlegrounds
+M 0 10300 4 10374  ; Mob: #10300 Un lobo esfameado => #10374 The Center of the Battlegrounds
+M 0 10301 4 10375  ; Mob: #10301 Unha lumacha => #10375 Central Battlegrounds
+M 0 10303 4 10377  ; Mob: #10303 Un aguilon da area => #10377 Along the southern wall
+M 0 10300 4 10379  ; Mob: #10300 Un lobo esfameado => #10379 Mid-way in the Battlegrounds
+M 0 10303 4 10381  ; Mob: #10303 Un aguilon da area => #10381 Along the northern wall
+D 0 10382 0 1  ; Door: #10382 North-West Corner/North => closed
+D 0 10386 5 1  ; Door: #10386 South-West Corner/Down => closed
+M 0 10318 2 10387  ; Mob: #10318 o gnoll => #10387 Rangers South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10318 2 10387  ; Mob: #10318 o gnoll => #10387 Rangers South Cage
+E 1 10304 14 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 14 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10325 2 10388  ; Mob: #10325 the kobold => #10388 Rangers East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10325 2 10388  ; Mob: #10325 the kobold => #10388 Rangers East Cage
+E 1 10300 14 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 14 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10311 2 10389  ; Mob: #10311 o naga => #10389 Rangers North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10311 2 10389  ; Mob: #10311 o naga => #10389 Rangers North Cage
+E 1 10302 14 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 14 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10332 2 10390  ; Mob: #10332 the minotaur => #10390 Rangers West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10332 2 10390  ; Mob: #10332 the minotaur => #10390 Rangers West Cage
+E 1 10306 14 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 14 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10355 1 10391  ; Mob: #10355 the statue => #10391 Hall of the Ranger
+D 0 10392 4 1  ; Door: #10392 En unha Caverna Humida/Up => closed
+M 0 10396 4 10395  ; Mob: #10396 the spirit naga => #10395 Moi profundo na Caverna
+M 0 10396 4 10395  ; Mob: #10396 the spirit naga => #10395 Moi profundo na Caverna
+M 0 10396 4 10396  ; Mob: #10396 the spirit naga => #10396 En unha Caverna
+M 0 10396 4 10396  ; Mob: #10396 the spirit naga => #10396 En unha Caverna
+M 0 10397 1 10397  ; Mob: #10397 Asp => #10397 Cove of the Queen
+E 1 10318 2 16  ; -- Equip: #10318 a shortsword named "Snakebite" (Wield)
+O 0 10367 1 10398  ; Object: #10367 the Newbie Council Noteboard => #10398 DELETE THIS ROOM
+M 0 10401 1 10401  ; Mob: #10401 The spectre => #10401 Chamber of Trials for Augurers
+M 0 10400 1 10400  ; Mob: #10400 The statue => #10400 Hall of the Augurer
+M 0 10402 2 10402  ; Mob: #10402 the naga => #10402 Augurers North Cage
+E 1 10302 1 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 1 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10402 2 10402  ; Mob: #10402 the naga => #10402 Augurers North Cage
+E 1 10302 1 13  ; -- Equip: #10302 a braided leather belt (Waist)
+E 1 10303 1 7  ; -- Equip: #10303 heavy mail leggings (Legs)
+M 0 10403 2 10403  ; Mob: #10403 o minotauro => #10403 Augurers East Cage
+E 1 10306 1 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 1 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10403 2 10403  ; Mob: #10403 o minotauro => #10403 Augurers East Cage
+E 1 10306 1 3  ; -- Equip: #10306 a strong metal collar (Neck-1)
+E 1 10319 1 9  ; -- Equip: #10319 kid gloves (Hands)
+M 0 10405 2 10405  ; Mob: #10405 the kobold => #10405 Augurers West Cage
+E 1 10300 1 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 1 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10405 2 10405  ; Mob: #10405 the kobold => #10405 Augurers West Cage
+E 1 10300 1 14  ; -- Equip: #10300 a charm bracelet (Wrist-L)
+E 1 10301 1 8  ; -- Equip: #10301 a pair of black combat boots (Feet)
+M 0 10404 2 10404  ; Mob: #10404 the gnoll => #10404 Augurers South Cage
+E 1 10304 1 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 1 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10404 2 10404  ; Mob: #10404 the gnoll => #10404 Augurers South Cage
+E 1 10304 1 6  ; -- Equip: #10304 a wrought iron helmet (Head)
+E 1 10305 1 12  ; -- Equip: #10305 a black brocade cape (About)
+M 0 10346 1 10355  ; Mob: #10346 Senhorita Silvana => #10355 A Habitacion dos Portais
+M 0 10497 1 10499  ; Mob: #10497 Hungrily, a hollow voice => #10499 Camara da Vision
+M 0 10498 1 10499  ; Mob: #10498 A rasping voice => #10499 Camara da Vision
+O 0 10401 1 10300  ; Object: #10401 unha fonte => #10300 Academia de Brigantia
+O 0 10401 1 10319  ; Object: #10401 unha fonte => #10319 O Curandeiro da Academia
+O 0 10401 1 10374  ; Object: #10401 unha fonte => #10374 The Center of the Battlegrounds
+O 0 10401 1 10386  ; Object: #10401 unha fonte => #10386 South-West Corner
+O 0 10401 1 10382  ; Object: #10401 unha fonte => #10382 North-West Corner
+O 0 10401 1 10364  ; Object: #10401 unha fonte => #10364 Esquina Noreste
+O 0 10401 1 10366  ; Object: #10401 unha fonte => #10366 Esquina Sureste
+O 0 10401 1 10325  ; Object: #10401 unha fonte => #10325 Camara para Probas de Guerreiros
+O 0 10401 1 10326  ; Object: #10401 unha fonte => #10326 Camara para Probas de Druidas
+O 0 10401 1 10327  ; Object: #10401 unha fonte => #10327 Camara para Probas de _Vampiros_
+O 0 10401 1 10328  ; Object: #10401 unha fonte => #10328 Camara para Probas de Ladrons
+O 0 10401 1 10329  ; Object: #10401 unha fonte => #10329 Camara para Probas de Magos
+O 0 10401 1 10330  ; Object: #10401 unha fonte => #10330 Camara para Probas de Clerigos
+O 0 10401 1 10401  ; Object: #10401 unha fonte => #10401 Chamber of Trials for Augurers
+O 0 10401 1 10305  ; Object: #10401 unha fonte => #10305 Camara para Probas de Cazadores
+M 0 10406 1 10413  ; Mob: #10406 a Fire Ant => #10413 Unha caverna horrorosamente profunda
+M 0 10407 1 10418  ; Mob: #10407 a Fire Ant => #10418 Unha caverna horrorosamente profunda
+M 0 10408 1 10424  ; Mob: #10408 a Fire Ant => #10424 Un escuro tunel baixo os Campos de Batalla
+M 0 10409 1 10408  ; Mob: #10409 a Fire Ant => #10408 Un escuro tunel baixo os Campos de Batalla
+M 0 10410 1 10423  ; Mob: #10410 a centipede => #10423 Un escuro tunel baixo os Campos de Batalla
+M 0 10411 1 10412  ; Mob: #10411 a centipede => #10412 Un escuro tunel baixo os Campos de Batalla
+M 0 10412 1 10415  ; Mob: #10412 a centipede => #10415 Unha caverna horrorosamente profunda
+M 0 10413 1 10421  ; Mob: #10413 a centipede => #10421 Unha caverna horrorosamente profunda
+M 0 10414 1 10425  ; Mob: #10414 a large grey rat => #10425 Un escuro tunel baixo os Campos de Batalla
+M 0 10415 1 10407  ; Mob: #10415 a large grey rat => #10407 Un escuro tunel baixo os Campos de Batalla
+M 0 10416 1 10414  ; Mob: #10416 a large grey rat => #10414 Unha caverna horrorosamente profunda
+M 0 10417 1 10411  ; Mob: #10417 a large grey rat => #10411 Un escuro tunel baixo os Campos de Batalla
+M 0 10418 1 10409  ; Mob: #10418 unha mole => #10409 Un escuro tunel baixo os Campos de Batalla
+M 0 10419 1 10426  ; Mob: #10419 unha mole => #10426 Un escuro tunel baixo os Campos de Batalla
+M 0 10420 1 10422  ; Mob: #10420 unha mole => #10422 Unha caverna horrorosamente profunda
+M 0 10421 1 10427  ; Mob: #10421 unha mole => #10427 Un escuro tunel baixo os Campos de Batalla
 S
-
 
 #SHOPS
- 10343    0  0  0  0  0   120  90         0 23    ; Zurg
- 10357    0  0  0  0  0   120  90         0 23    ; a tiny pixie
+10343 0 0 0 0 0 120 90 0 23 ; Zurg
+10357 0 0 0 0 0 120 90 0 23 ; a tiny pixie
 0
-
-
-#REPAIRS
-0
-
 
 #SPECIALS
-M  10325 spec_guard
-M  10333 spec_cast_adept
-M  10334 spec_cast_adept
-M  10335 spec_cast_adept
-M  10336 spec_cast_adept
-M  10337 spec_cast_adept
-M  10338 spec_cast_adept
-M  10339 spec_cast_adept
-M  10342 spec_cast_adept
-M  10398 spec_cast_undead
-M  10401 spec_cast_adept
+M 10325 spec_guard   ; the kobold
+M 10333 spec_cast_adept   ; the spectre
+M 10334 spec_cast_adept   ; the spectre
+M 10335 spec_cast_adept   ; the spectre
+M 10336 spec_cast_adept   ; the spectre
+M 10337 spec_cast_adept   ; the spectre
+M 10338 spec_cast_adept   ; the spectre
+M 10339 spec_cast_adept   ; the spectre
+M 10342 spec_cast_adept   ; BuRZuM-iSHi
+M 10398 spec_cast_undead   ; an apprentice of Scarab
+M 10401 spec_cast_adept   ; The spectre
 S
-
 
 #$

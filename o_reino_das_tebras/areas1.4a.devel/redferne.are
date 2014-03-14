@@ -1,6 +1,4 @@
-#AREA   Redferne's Residence~
-
-
+#AREA Residencia de Redferne~
 
 #AUTHOR Diku~
 
@@ -8,8 +6,10 @@
 20 30 0 60
 $
 
+#RESETMSG ~
+
 #FLAGS
-0
+0 0
 
 #ECONOMY 0 1246000
 
@@ -33,16 +33,15 @@ help the innocent.
 0 0 1775 0 0 0 1073742048 524291
 #0
 
-
 #OBJECTS
 #7909
 treasure coins~
 a huge treasure~
 A huge treasure is lying here, looking very valuable.~
 ~
-20 0 1
+20 0 1 0
 -100 0 0 0
-0 0 0
+1 0 0
 E
 treasure~
 Looks like a LOT of coins.  One of them has writing on it.
@@ -56,7 +55,7 @@ chest~
 a wooden chest~
 A wooden chest stands in the corner.~
 ~
-15 0 1
+15 0 1 0
 100 15 7911 0
 400 100 10
 E
@@ -69,7 +68,7 @@ key~
 a small brass key~
 A small brass key lies here.~
 ~
-18 0 1
+18 0 1 0
 7910 0 0 0
 1 10 1
 E
@@ -77,7 +76,6 @@ key~
 It is a small, simple brass key with no inscriptions or marks of any kind.
 ~
 #0
-
 
 #ROOMS
 #7900
@@ -88,17 +86,17 @@ cloud you can hear the faint sounds of Brigantia. Right before you to the
 north lies the grand Mansion of Naris, the residence of the Greater God
 Redferne.
 ~
-0 3146244 0
+0 3146244 0 0 0 0
 D0
 You see a HUGE arched gate leading into this magnificent building.
 ~
 gate door huge arched~
-35 -1 7901
+35 -1 7901 0
 D5
 You see a Huge Chain that anchors the Mansion of Naris to the ground.
 ~
 ~
-0 -1 7918
+0 -1 7918 0
 > act_prog p has lost~
 mpforce 0.$n quit
 ~
@@ -116,39 +114,39 @@ north from here. To the south you can see a huge, and VERY heavy-
 looking iron-wrought door. It looks like this is the only exit from
 this magnificent old house. To the west you can see a large ashen door.
 ~
-0 524 0
+0 524 0 0 0 0
 D0
 The hallway continues that way. You can see more doorways under the
 wooden staircase in that direction.
 ~
 ~
-0 -1 7904
+0 -1 7904 0
 D1
 You see there a tall oak door. It looks quite tightly closed to you.
 On it little runes are chiselled into the wood.
 ~
 oak tall east oakdoor talldoor eastdoor~
-35 -1 7910
+35 -1 7910 0
 D2
 Here you see a REAL door. It would be more proper to call this a
 "GATE", rather than a "door". It's really HUGE! On it hangs a large
 sign with very large letters spelling : "EMERGENCY EXIT".
 ~
 gate~
-35 -1 7900
+35 -1 7900 0
 D3
 This looks like a "door" in the meaning of the word. The ashen wood
 is painted in a peculiar yellow colour. Small letters are written
 with black on it.
 ~
 ashen ash door west yellow~
-35 -1 7902
+35 -1 7902 0
 D4
 You see the staircase extending upwards into the very high tower.
 It ends in what seems like a large bedroom up there.
 ~
 ~
-0 -1 7909
+0 -1 7909 0
 E
 runes~
 These runes are utterly strange to you, but you are in luck today: Under
@@ -161,7 +159,7 @@ They read "LIBRARY".
 ~
 S
 #7902
-Redferne's Library~
+A biblioteca de Redferne~
 This is truly a magnificent place! Books and scrolls lie together on every
 shelf. A large globe, with the map of the Mud-world upon it, stands in the
 dimly lit north-western corner of the room. Two large and comfortable-
@@ -171,12 +169,12 @@ hanging down from the ceiling approximately 10 feet off the floor. To the
 east there is a great old ashen door. A large glass window is set in the
 west wall.
 ~
-0 524 0
+0 524 0 0 0 0
 D1
 You can see an old ashen door, painted in a peculiar yellow colour.
 ~
 door ash ashen east~
-35 -1 7901
+35 -1 7901 0
 E
 globe world map~
 You see a large world map stretch out on the enormous globe. It has towns
@@ -223,7 +221,7 @@ walls. A bunch of funny-looking items fill the center of the room. There are
 no furniture here what-so-ever. The only way out seems to be west, through
 the low steel door.
 ~
-0 524 0
+0 524 0 0 0 0
 S
 #7904
 The Northern end of the hall~
@@ -233,11 +231,11 @@ but this doesn't bother your sight at all. To the north lies the kitchen.
 To the south lies the Southern end of the hall. To the east there is a huge
 metal door. To the west there is a large aspenwood door.
 ~
-0 524 0
+0 524 0 0 0 0
 D0
 ~
 ~
-0 -1 7906
+0 -1 7906 0
 D1
 You see a huge metal door. From it a foul stench emanates. The smell is the
 most awful experience in your entire life. A thought seeps through this
@@ -245,18 +243,18 @@ terrible stench and into your mind : "Monsters", you feel BAD about opening
 that door.
 ~
 steel metal huge~
-35 -1 7913
+35 -1 7913 0
 D2
 The rest of the hall lies in that direction, and so does the exit.
 ~
 ~
-0 -1 7901
+0 -1 7901 0
 D3
 The door has "SITTING ROOM" written on it. It is made from Aspenwood and
 is beautifully carven with small elves as main issue of sculpture.
 ~
 aspen asp~
-35 -1 7905
+35 -1 7905 0
 S
 #7905
 The Sitting room of Naris~
@@ -265,13 +263,13 @@ decorated with paintings of smiling Kings and Queens. The most attractive
 picture is one of a Prince in shiny armour. By one of the walls there is an
 old arm-chair. The only exit is through the aspenwood door to the east.
 ~
-0 524 0
+0 524 0 0 0 0
 D1
 The door seems to be a very HEAVY door, carved completely from the trunk of
 an Aspen tree.
 ~
 asp aspen door heavy~
-35 -1 7904
+35 -1 7904 0
 E
 chair arm-chair~
 This is truly a wonderful relic of the past. In it is a large cushion.
@@ -279,76 +277,76 @@ This is truly a wonderful relic of the past. In it is a large cushion.
 S
 #7906
 The Kitchen of Naris~
-This must be the place of food and drink. You can hear the faint noise of 
+This must be the place of food and drink. You can hear the faint noise of
 rats feasting on meat and bread from somewhere undeterminable. The sound
 makes you feel the agony of HUNGER. The only visible exit is south to the
 Northern end of the hall. To the north there is a larder, and to the east
 stands a fridge.
 ~
-0 524 0
+0 524 0 0 0 0
 D0
 It's dark in there,  but the sounds from there are unmistakably from rats.
 ~
 larder wooden cupboard~
-35 -1 7907
+35 -1 7907 0
 D1
 You can see the fridge from here. In it are drinks all over.
 ~
 fridge~
-35 -1 7908
+35 -1 7908 0
 D2
 You can see the northern end of the hall.
 ~
 ~
-0 -1 7904
+0 -1 7904 0
 S
 #7907
 The Larder~
 You can see food all over. Among the heaps of food you notice HUGE rats
 scuttering around, nibbling pieces off the heaps here and there.
 ~
-0 524 0
+0 524 0 0 0 0
 D2
 ~
 door wooden larder exit~
-35 -1 7906
+35 -1 7906 0
 S
 #7908
 The Fridge~
 This place is LOADED with drink, water and booze.
 ~
-0 524 0
+0 524 0 0 0 0
 D3
 ~
 door exit fridge~
-35 -1 7906
+35 -1 7906 0
 S
 #7909
 On the stairs~
 You can see up and down the stairway. It seems to take forever, either going
-up OR down. It's just a seemingly insurmountable climb, either way. Up is the 
+up OR down. It's just a seemingly insurmountable climb, either way. Up is the
 bedroom of Redferne, and Down leads to the Southern end of the hall.
 ~
-0 524 0
+0 524 0 0 0 0
 D4
 ~
 ~
-0 -1 7911
+0 -1 7911 0
 D5
 ~
 ~
-0 -1 7901
+0 -1 7901 0
 S
 #7910
 The Treasure room~
 This place is gloomy.  The only visible exit is west, through the oak door.
 ~
-0 524 0
+0 524 0 0 0 0
 D3
 You see a tall oak door.
 ~
 door oak tall~
-35 -1 7901
+35 -1 7901 0
 S
 #7911
 Redferne's Bedroom~
@@ -357,18 +355,18 @@ A large fireplace adorns the east wall, and sizzling away is the wood that
 is ablaze within.  The bed is enormous, covering at least HALF of this great
 room.  This stretches at least 300 square feet, so can you imagine the BED?
 A large staircase leads down to the hall.  A couple of doors open up to a
-broad balcony to the south. 
+broad balcony to the south.
 ~
-0 524 0
+0 524 0 0 0 0
 D2
 The sun seems to shine out there, warmly and comforting.
 ~
 doors~
-3 -1 7912
+3 -1 7912 0
 D5
 ~
 ~
-0 -1 7909
+0 -1 7909 0
 S
 #7912
 The Balcony of Redferne's Residence~
@@ -377,27 +375,27 @@ far as the eye reaches to the south from here. Down below you can see
 the entrance of this magnificent building. To the north are the doors
 to Redferne's Bedroom.
 ~
-0 516 0
+0 516 0 0 0 0
 D0
 You see the comfortable bedroom of Naris, the mansion of Redferne the Greater
 God.
 ~
 doors~
-35 -1 7911
+35 -1 7911 0
 S
 #7913
 The Monster Pen~
 This looks like the cage in which a large carnivore is being kept. Judging by
-the state the walls are in, this could very well be a large AGGRESSIVE animal. 
-This makes you pretty insecure, this stating your feeling about the place, 
+the state the walls are in, this could very well be a large AGGRESSIVE animal.
+This makes you pretty insecure, this stating your feeling about the place,
 quite mildly.
 ~
-0 8 0
+0 8 0 0 0 0
 D3
 This looks like the only exit from here.
 ~
 door cage metal pen~
-35 -1 7904
+35 -1 7904 0
 S
 #7914
 On the Huge Chain~
@@ -406,17 +404,17 @@ seems to extend only to up and down. Unless you want to let go of the secure
 and seemingly unmoveable chain, then those are the directions you should take
 from here.
 ~
-0 4 5
+0 4 5 0 0 0
 D4
 Up the way you see the chain disappearing into the clouds above.
 ~
 ~
-0 -1 7916
+0 -1 7916 0
 D5
 Down below you see the huge chain anchored to the ground in the Road Crossing.
 ~
 ~
-0 -1 21291
+0 -1 21291 0
 S
 #7916
 On the Great Chain of Naris~
@@ -425,12 +423,12 @@ and death will come and collect you quickly. The chain leads upwards and down.
 No way are you going to descend now ... you've only just begun your climb.
 Besides it could cost you your life.  Look down and you'll see why.
 ~
-0 4 5
+0 4 5 0 0 0
 D4
 There seems to be only one way from here and that's up.
 ~
 ~
-0 -1 7918
+0 -1 7918 0
 S
 #7918
 The Mighty Chain of Naris~
@@ -440,64 +438,53 @@ you can now see the Mansion of Naris, Residence of the Greater God Redferne.
 The chain beneath you seems to evaporate in the mustering clouds that
 surround you by now.
 ~
-0 4 5
+0 4 5 0 0 0
 D4
 You see the sunny top of the clouds. Beyond these, the Mansion towers before
 your eyes. Beautiful!!
 ~
 ~
-0 -1 7900
+0 -1 7900 0
 S
 #0
 
-
 #RESETS
-D 0 7900 0 1
-D 0 7901 2 1
-D 0 7902 1 1
-D 0 7901 3 1
-D 0 7901 1 1
-D 0 7910 3 1
-D 0 7904 1 1
-D 0 7913 3 1
-D 0 7911 2 1
-D 0 7912 0 1
-D 0 7904 3 1
-D 0 7905 1 1
-D 0 7906 1 1
-D 0 7908 3 1
-D 0 7906 0 1
-D 0 7907 2 1
-M 0 7900 1 7900
-E 1 7216 99 16
-E 1 7217 99 5
-E 1 7218 99 7
-E 1 7219 99 9
-E 1 7220 99 6
-E 1 7221 99 11
-E 1 7223 99 10
-E 1 7222 99 8
-E 1 7224 99 12
-G 1 7911 99
-O 0 6013 10 7908
-O 0 7910 1 7910
-P 1 7298 1 7910
-P 1 7208 6 7910
-O 0 7909 10 7903
+D 0 7900 0 1  ; Door: #7900 Outside Redferne's residence/North => closed
+D 0 7901 2 1  ; Door: #7901 The Southern end of the hall/South => closed
+D 0 7902 1 1  ; Door: #7902 A biblioteca de Redferne/East => closed
+D 0 7901 3 1  ; Door: #7901 The Southern end of the hall/West => closed
+D 0 7901 1 1  ; Door: #7901 The Southern end of the hall/East => closed
+D 0 7910 3 1  ; Door: #7910 The Treasure room/West => closed
+D 0 7904 1 1  ; Door: #7904 The Northern end of the hall/East => closed
+D 0 7913 3 1  ; Door: #7913 The Monster Pen/West => closed
+D 0 7911 2 1  ; Door: #7911 Redferne's Bedroom/South => closed
+D 0 7912 0 1  ; Door: #7912 The Balcony of Redferne's Residence/North => closed
+D 0 7904 3 1  ; Door: #7904 The Northern end of the hall/West => closed
+D 0 7905 1 1  ; Door: #7905 The Sitting room of Naris/East => closed
+D 0 7906 1 1  ; Door: #7906 The Kitchen of Naris/East => closed
+D 0 7908 3 1  ; Door: #7908 The Fridge/West => closed
+D 0 7906 0 1  ; Door: #7906 The Kitchen of Naris/North => closed
+D 0 7907 2 1  ; Door: #7907 The Larder/South => closed
+M 0 7900 1 7900  ; Mob: #7900 the Grand Knight of paladins => #7900 Outside Redferne's residence
+E 1 7216 99 16  ; -- Equip: #7216 (not in area) (Wield)
+E 1 7217 99 5  ; -- Equip: #7217 (not in area) (Body)
+E 1 7218 99 7  ; -- Equip: #7218 (not in area) (Legs)
+E 1 7219 99 9  ; -- Equip: #7219 (not in area) (Hands)
+E 1 7220 99 6  ; -- Equip: #7220 (not in area) (Head)
+E 1 7221 99 11  ; -- Equip: #7221 (not in area) (Shield)
+E 1 7223 99 10  ; -- Equip: #7223 (not in area) (Arms)
+E 1 7222 99 8  ; -- Equip: #7222 (not in area) (Feet)
+E 1 7224 99 12  ; -- Equip: #7224 (not in area) (About)
+G 1 7911 99 ; -- Give:  #7911 a small brass key
+O 0 6013 10 7908  ; Object: water barrel [Haon Dor] => #7908 The Fridge
+O 0 7910 1 7910  ; Object: #7910 a wooden chest => #7910 The Treasure room
+P 1 7298 1 7910  ; Put: #7298 (not in area) => #7910 a wooden chest
+P 1 7208 6 7910  ; Put: #7208 (not in area) => #7910 a wooden chest
+O 0 7909 10 7903  ; Object: #7909 a huge treasure => #7903 The Artifact room of Naris
 S
-
-
-#SHOPS
-0
-
-
-#REPAIRS
-0
-
 
 #SPECIALS
-M  7900 spec_cast_cleric
+M 7900 spec_cast_cleric   ; the Grand Knight of paladins
 S
-
 
 #$
