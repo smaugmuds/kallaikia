@@ -1,30 +1,30 @@
-Name        Elf~
-Race        1
-Classes     512
-Str_Plus    -1
-Dex_Plus    2
-Wis_Plus    0
-Int_Plus    1
-Con_Plus    -1
-Cha_Plus    1
-Lck_Plus    1
-Hit         -2
-Mana        10
-Affected    16
-Resist      2
+Name        Homelagarto~
+Race        13
+Classes     16383
+Str_Plus    2
+Dex_Plus    -3
+Wis_Plus    -6
+Int_Plus    -6
+Con_Plus    2
+Cha_Plus    -2
+Lck_Plus    -4
+Hit         2
+Mana        0
+Affected    -2147483648
+Resist      64
 Suscept     0
-Language    2
+Language    1
 Align       0
 Min_Align  -1000
-Max_Align	1000
+Max_Align	500
 AC_Plus    0
-Exp_Mult   110
-Attacks    0
+Exp_Mult   91
+Attacks    4
 Defenses   0
-Height     70
-Weight     110
-Hunger_Mod  0
-Thirst_mod  0
+Height     78
+Weight     215
+Hunger_Mod  -2
+Thirst_mod  -3
 Mana_Regen  0
 HP_Regen    0
 Race_Recall 0
@@ -50,5 +50,12 @@ WhereName  <dual wielded>      ~
 WhereName  <worn on ears>      ~
 WhereName  <worn on eyes>      ~
 WhereName  <missile wielded>   ~
+WhereName  <worn on back>  ~
+WhereName  <worn over face>  ~
+WhereName  <worn around ankle>  ~
+WhereName  <worn around ankle>  ~
+WhereName  <BUG Inform Nivek>  ~
+WhereName  <BUG Inform Nivek>  ~
+WhereName  <BUG Inform Nivek>  ~
 WhereName  (null)~
 End

@@ -1,5 +1,5 @@
 ../clases/Mago.clase
-../clases/Clerigo.clase
+../clases/Crego.clase
 ../clases/Ladron.clase
 ../clases/Guerreiro.clase
 ../clases/_Vampiro_.clase
@@ -7,7 +7,7 @@
 ../clases/Cazador.clase
 ../clases/Agoreiro.clase
 ../clases/Paladin.clase
-../clases/Nephandi.clase
+../clases/Nefandi.clase
 ../clases/Salvaxe.clase
 ../clases/Pirata.clase
 ../clases/Monxe.clase

@@ -32,7 +32,7 @@ char *tiny_affect_loc_name(int location);
 void do_gold(CHAR_DATA * ch, char *argument)
 {
    set_char_color( AT_GOLD, ch );
-   ch_printf( ch,  "You have %s gold pieces.\n\r", num_punct(ch->gold) );
+   ch_printf( ch,  "Tes %s pezas de ouro.\n\r", num_punct(ch->gold) );
    return;
 }
 
@@ -64,18 +64,18 @@ void do_worth(CHAR_DATA *ch, char *argument)
       return;
 
     set_pager_color(AT_GREEN, ch);
-    pager_printf_color(ch, "\n\r&GWorth for &w%s&G%s.\n\r", ch->name, ch->pcdata->title);
+    pager_printf_color(ch, "\n\r&GValor de &w%s&G%s.\n\r", ch->name, ch->pcdata->title);
     send_to_pager_color(" &g----------------------------------------------------------------------------\n\r", ch);
     if (!ch->pcdata->deity)		 sprintf( buf, "N/A" );
-    else if (ch->pcdata->favor > 2250)	 sprintf( buf, "loved" );
-    else if (ch->pcdata->favor > 2000)	 sprintf( buf, "cherished" );
-    else if (ch->pcdata->favor > 1750) 	 sprintf( buf, "honored" );
-    else if (ch->pcdata->favor > 1500)	 sprintf( buf, "praised" );
-    else if (ch->pcdata->favor > 1250)	 sprintf( buf, "favored" );
-    else if (ch->pcdata->favor > 1000)	 sprintf( buf, "respected" );
-    else if (ch->pcdata->favor > 750)	 sprintf( buf, "liked" );
-    else if (ch->pcdata->favor > 250)	 sprintf( buf, "tolerated" );
-    else if (ch->pcdata->favor > -250)	 sprintf( buf, "ignored" );
+    else if (ch->pcdata->favor > 2250)	 sprintf( buf, "amado" );
+    else if (ch->pcdata->favor > 2000)	 sprintf( buf, "querido" );
+    else if (ch->pcdata->favor > 1750) 	 sprintf( buf, "honorado" );
+    else if (ch->pcdata->favor > 1500)	 sprintf( buf, "orado" );
+    else if (ch->pcdata->favor > 1250)	 sprintf( buf, "favorecido" );
+    else if (ch->pcdata->favor > 1000)	 sprintf( buf, "respetado" );
+    else if (ch->pcdata->favor > 750)	 sprintf( buf, "gustado" );
+    else if (ch->pcdata->favor > 250)	 sprintf( buf, "tolerado" );
+    else if (ch->pcdata->favor > -250)	 sprintf( buf, "ignorado" );
     else if (ch->pcdata->favor > -750)	 sprintf( buf, "shunned" );
     else if (ch->pcdata->favor > -1000)	 sprintf( buf, "disliked" );
     else if (ch->pcdata->favor > -1250)	 sprintf( buf, "dishonored" );
@@ -155,30 +155,30 @@ void do_score(CHAR_DATA * ch, char *argument)
     }
     set_pager_color(AT_SCORE, ch);
 
-    pager_printf(ch, "\n\rScore for %s%s.\n\r", ch->name, ch->pcdata->title);
+    pager_printf(ch, "\n\rPuntuación para %s%s.\n\r", ch->name, ch->pcdata->title);
     if ( get_trust( ch ) != ch->level )
-	pager_printf( ch, "You are trusted at level %d.\n\r", get_trust( ch ) );
+	pager_printf( ch, "Eres creíble no nivel %d.\n\r", get_trust( ch ) );
     
     send_to_pager("----------------------------------------------------------------------------\n\r", ch);
 
-    pager_printf(ch, "LEVEL: %-3d         Race : %-10.10s        Played: %d hours\n\r",
+    pager_printf(ch, "NIVEL: %-3d         Raza : %-10.10s        Xogado: %d horas\n\r",
 	ch->level, capitalize(get_race(ch)), (get_age(ch) - 17) * 2);
 
-    pager_printf(ch, "YEARS: %-6d      Class: %-11.11s       Log In: %s\r",
+    pager_printf(ch, "ANOS: %-6d      Clase: %-11.11s       Log En: %s\r",
 		get_age(ch), capitalize(get_class(ch)), ctime(&(ch->logon)) );
 
     if (ch->level >= 15
     ||  IS_PKILL( ch ) )
     {
-	pager_printf(ch, "STR  : %2.2d(%2.2d)      HitRoll: %-4d            Saved:  %s\r",
+	pager_printf(ch, "FOR  : %2.2d(%2.2d)      HitRoll: %-4d            Gardado:  %s\r",
 		get_curr_str(ch), ch->perm_str, GET_HITROLL(ch), ch->save_time ? ctime(&(ch->save_time)) : "no save this session\n" );
 
-	pager_printf(ch, "INT  : %2.2d(%2.2d)      DamRoll: %-4d            Time:   %s\r",
+	pager_printf(ch, "INT  : %2.2d(%2.2d)      DamRoll: %-4d            Tempo:   %s\r",
 		get_curr_int(ch), ch->perm_int, GET_DAMROLL(ch), ctime(&current_time) );
     }
     else
     {
-	pager_printf(ch, "STR  : %2.2d(%2.2d)                               Saved:  %s\r",
+	pager_printf(ch, "FOR  : %2.2d(%2.2d)                               Saved:  %s\r",
 		get_curr_str(ch), ch->perm_str, ch->save_time ? ctime(&(ch->save_time)) : "no\n" );
 
 	pager_printf(ch, "INT  : %2.2d(%2.2d)                               Time:   %s\r",
@@ -216,10 +216,10 @@ void do_score(CHAR_DATA * ch, char *argument)
     else
 	sprintf(buf, "that of an avatar");
     if (ch->level > 24)
-	pager_printf(ch, "WIS  : %2.2d(%2.2d)      Armor: %4.4d, %s\n\r",
+	pager_printf(ch, "WIS  : %2.2d(%2.2d)      Armadura: %4.4d, %s\n\r",
 		get_curr_wis(ch), ch->perm_wis, GET_AC(ch), buf);
     else
-	pager_printf(ch, "WIS  : %2.2d(%2.2d)      Armor: %s \n\r",
+	pager_printf(ch, "WIS  : %2.2d(%2.2d)      Armadura: %s \n\r",
 		get_curr_wis(ch), ch->perm_wis, buf);
 
     if (ch->alignment > 900)
@@ -324,14 +324,14 @@ void do_score(CHAR_DATA * ch, char *argument)
         }
     pager_printf(ch, "Style: %-10.10s\n\r", buf);
     if ( ch->level >= 50 )
-	pager_printf(ch, "Honour: %3.3d        Rank: %s\n\r", ch->pcdata->honour, get_honour ( ch ));
+	pager_printf(ch, "Honor: %3.3d        Rango: %s\n\r", ch->pcdata->honour, get_honour ( ch ));
 
 #ifdef SHADDAI
-    pager_printf(ch, "Glory: %4.4d(%4.4d)  Stance: %s\n\r",
+    pager_printf(ch, "Gloria: %4.4d(%4.4d)  Estancia: %s\n\r",
 	ch->pcdata->quest_curr, ch->pcdata->quest_accum,
 	get_stance_name (ch->stance));
 #else
-    pager_printf(ch, "Glory: %4.4d(%4.4d)\n\r",
+    pager_printf(ch, "Gloria: %4.4d(%4.4d)\n\r",
 	ch->pcdata->quest_curr, ch->pcdata->quest_accum);
 #endif
 
@@ -341,7 +341,7 @@ void do_score(CHAR_DATA * ch, char *argument)
 	ch->pcdata->pagerlen, xIS_SET(ch->act, PLR_AUTOEXIT) ? 'X' : ' ');
 
     if (IS_VAMPIRE(ch) || IS_DEMON(ch))
-	pager_printf(ch, "XP   : %-9d       Blood: %-5d of %5d   MKills:  %-5.5d    AutoLoot(%c)\n\r",
+	pager_printf(ch, "XP   : %-9d       Sangue: %-5d of %5d   MKills:  %-5.5d    AutoLoot(%c)\n\r",
 		ch->exp, ch->pcdata->condition[COND_BLOODTHIRST], 10 + ch->level, ch->pcdata->mkills,
 		xIS_SET(ch->act, PLR_AUTOLOOT) ? 'X' : ' ');
     else if (ch->class == CLASS_WARRIOR)
@@ -351,10 +351,10 @@ void do_score(CHAR_DATA * ch, char *argument)
 	pager_printf(ch, "XP   : %-9d        Mana: %-5d of %5d   MKills:  %-5.5d    AutoLoot(%c)\n\r",
 		ch->exp, ch->mana, ch->max_mana, ch->pcdata->mkills, xIS_SET(ch->act, PLR_AUTOLOOT) ? 'X' : ' ');
 
-    pager_printf(ch, "GOLD : %-13s    Move: %-5d of %5d   Mdeaths: %-5.5d    AutoSac (%c)\n\r",
+    pager_printf(ch, "OURO : %-13s    Move: %-5d of %5d   Mdeaths: %-5.5d    AutoSac (%c)\n\r",
 	num_punct(ch->gold), ch->move, ch->max_move, ch->pcdata->mdeaths, xIS_SET(ch->act, PLR_AUTOSAC) ? 'X' : ' ');
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_DRUNK] > 10)
-	send_to_pager("You are drunk.\n\r", ch);
+	send_to_pager("Estás bébedo.\n\r", ch);
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_THIRST] == 0)
 	send_to_pager("You are in danger of dehydrating.\n\r", ch);
     if (!IS_NPC(ch) && ch->pcdata->condition[COND_FULL] == 0)

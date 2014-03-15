@@ -6,7 +6,7 @@
 1 5 0 60
 $
 
-#RESETMSG Oes pequenos pasos que se poden distinguir entre os chasquidos da fragorosa batalla ...~
+#RESETMSG Sentes pequenos pasos que se poden distinguir entre os chasquidos da fragorosa batalla ...~
 
 #FLAGS
 1 3
@@ -31,7 +31,7 @@ Un lobo esfameado está cazando por aqui
 #10301
 lumacha area~
 Unha lumacha~
-Unha lumacha anda buscando algo de picar ...
+Unha lumacha anda buscando algo que picar ...
 ~
 ~
 65 0 0 C
@@ -903,12 +903,12 @@ endif
 ~
 |
 #10343
-Zurg sage storekeeper~
+Zurg sabio loxista~
 Zurg~
-A sage storekeeper is here, selling his wares.
+Un sabio loxista está aquí vendendo as súas mercadorías.
 ~
-This is a friendly shopkeeper. His eyes sparkle with amusement. He seems
-patient with those still learning to use the shop.
+Este é un loxista agradable. Os seus ollos brilan con diversión. Parece 
+paciente con aqueles que aínda están aprendendo a usar a tenda.
 ~
 3 4194856 0 C
 1 0 94 1000d1+0 0d0+0
@@ -919,27 +919,27 @@ patient with those still learning to use the shop.
 3 0 0 0 131072 131073 0
 0 0 3 0 1048576 0 0 0
 > all_greet_prog 100~
-smile $n
-say Welcome to my store!
+sorrir $n
+decir Benvido á miña tenda!
 ~
 > death_prog 100~
 mpgoto 10399
-drop all
+deixar todo
 mpmload 10343
-mpforce 2.sage get torch
-mpforce 2.sage get meat
-mpforce 2.sage get dragonskin
+mpforce 2.sage coller facho
+mpforce 2.sage coller carne
+mpforce 2.sage coller pelexodragon
 mpforce 2.sage mpgoto 10357
-mpat 10357 mpecho The corpse of the sage disappears in a flash!
+mpat 10357 mpecho O cadaver do Sage desaparece nunha chispa!
 ~
 |
 #10344
-dragonsnake dragon snake cage~
-the dragonsnake~
-A dragonsnake is here, venomous saliva dripping from its jaws.
+serpedragon dragon serpe~
+a serpedragon~
+Unha Serpe Dragón está aquí, venenosa saliva sae das súas fauces.
 ~
-This is a small, but vicious dragon. His body is long and serpentine.
-This will be quite a battle, but the prize is well worth the effort.
+Este é un pequeno, pero vicioso dragón. O seu corpo é longo e sinuoso. 
+Esto vai ser un gran combate, pero o premio ben vale a pena o esforzo.
 ~
 3 0 0 C
 4 0 35 50d1+0 0d0+0
@@ -998,57 +998,60 @@ aventureiros para na zona de formación da súa clase escollida.
 0 0 0 0 131072 131073 0
 0 0 3 0 0 0 0 0
 > all_greet_prog 100~
-mpechoat $n Silvina looks up from her filing and appraises your needs.
-say Hello there, $n.
-if class ($n) == Mage
-mpechoat $n I will direct you to the mage portal momentarily.
+mpechoat $n Silvana mira por riba do seu monte e valora as necesidades.
+decir Saúdote, $n.
+if class ($n) == Mago
+mpechoat $n Dirixireite ao portal dos Magos momentaneamente.
 endif
-if class ($n) == Cleric
-mpechoat $n I will direct you to the cleric portal momentarily.
+if class ($n) == Crego
+mpechoat $n Dirixireite ao portal dos Cregos momentaneamente.
 endif
-if class ($n) == Warrior
-mpechoat $n I will direct you to the warrior portal momentarily.
+if class ($n) == Guerreiro
+mpechoat $n Dirixireite ao portal dos Guerreiros momentaneamente.
 endif
-if class ($n) == Vampire
-mpechoat $n I will direct you to the vampire portal momentarily.
+if class ($n) == _Vampiro_
+mpechoat $n Dirixireite ao portal dos _Vampiros_ momentaneamente.
 endif
-if class ($n) == Druid
-mpechoat $n I will direct you to the druid portal momentarily.
+if class ($n) == Druida
+mpechoat $n Dirixireite ao portal dos Druidas momentaneamente.
 endif
-if class ($n) == Ranger
-mpechoat $n I will direct you to the ranger portal momentarily.
+if class ($n) == Cazador
+mpechoat $n Dirixireite ao portal dos Cazadores momentaneamente.
 endif
-if class ($n) == Thief
-mpechoat $n I will direct you to the thief portal momentarily.
+if class ($n) == Ladron
+mpechoat $n Dirixireite ao portal dos Ladrons momentaneamente.
 endif
-if class ($n) == Augurer
-mpechoat $n I will direct you to the augurer portal momentarily.
+if class ($n) == Agoreiro
+mpechoat $n Dirixireite ao portal dos Agoreiros momentaneamente.
 endif
-mpechoat $n Please, read the certificate on the wall as you wait.
+if class ($n) == Demo
+mpechoat $n Dirixireite ao portal dos _Vampiros_ momentaneamente.
+endif
+mpechoat $n Por favor, tomate o teu tempo para ler o certificado da parede.
 ~
 > rand_prog 33~
-if class ($r) == Mage
+if class ($r) == Mago
 mpechoat $r The ground opens beneath you!  You drop into the Mages portal.
 mpechoat $r You land in the Mages Hall with a bounce.
 mpechoaround $r $r disappears down a portal marked:  Mages Only!
 mptransfer $r 10323
 mpat $r mpforce $r bounce
 endif
-if class ($r) == Cleric
+if class ($r) == Crego
 mpechoat $r The ground opens beneath you!  You drop into the Clerics portal.
 mpechoat $r You land in the Clerics Hall with a bounce.
 mpechoaround $r $r disappears down a portal marked:  Clerics Only!
 mptransfer $r 10324
 mpat $r mpforce $r bounce
 endif
-if class ($r) == Warrior
+if class ($r) == Guerreiro
 mpechoat $r The ground opens beneath you!  You drop into the Warriors portal.
 mpechoat $r You land in the Warriors Hall with a bounce.
 mpechoaround $r $r disappears down a portal marked:  Warriors Only!
 mptransfer $r 10318
 mpat $r mpforce $r bounce
 endif
-if class ($r) == Vampire
+if class ($r) == _Vampiro_
 mpechoat $r The ground opens beneath you!  You drop into the Vampires portal.
 mpechoat $r You land in the Vampires Hall with a bounce.
 mpechoaround $r $r disappears down a portal marked:  Vampires Only!
@@ -1064,25 +1067,32 @@ mpechoaround $r $r disappears down a portal marked:  Rangers Only!
 mptransfer $r 10391
 mpat $r mpforce $r bounce
 endif
-if class ($r) == Druid
+if class ($r) == Druida
 mpechoat $r The ground opens beneath you!  You drop into the Druids portal.
 mpechoat $r You land in the Druids Hall with a bounce.
 mpechoaround $r $r disappears down a portal marked:  Druids Only!
 mptransfer $r 10320
 mpat $r mpforce $r bounce
 endif
-if class ($r) == Thief
+if class ($r) == Ladron
 mpechoat $r The ground opens beneath you!  You drop into the Thieves portal.
 mpechoat $r You land in the Thieves Hall with a bounce.
 mpechoaround $r $r disappears down a portal marked:  Thieves Only!
 mptransfer $r 10322
 mpat $r mpforce $r bounce
 endif
-if class ($r) == Augurer
+if class ($r) == Agoreiro
 mpechoat $r The ground opens beneath you!  You drop into the Augurers portal.
-mpechoat $r You land in the Augurers Hall with a bounce.
+mpechoat $r You land in the Agoreiros Hall with a bounce.
 mpechoaround $r $r disappears down a portal marked:  Augurers Only!
 mptransfer $r 10400
+mpat $r mpforce $r bounce
+endif
+if class ($r) == Demo
+mpechoat $r The ground opens beneath you!  You drop into the Vampires portal.
+mpechoat $r You land in the Demos Hall with a bounce.
+mpechoaround $r $r disappears down a portal marked:  Vampires Only!
+mptransfer $r 10321
 mpat $r mpforce $r bounce
 endif
 ~
@@ -1621,29 +1631,32 @@ A tiny pixie floats about you.
 0 0 0 0 0 0 0 0
 > act_prog p glances at you.~
 nudge $n
-if class ($n) == Cleric
+if class ($n) == Crego
   say This place is far too easy for a cleric of your power!
 endif
-if class($n) == Mage
+if class($n) == Mago
   say Look at you!  Such a strong mage, and you're massacring gnolls?
 endif
-if class($n) == Thief
+if class($n) == Ladron
   say Look at you!  A stealthy thief, murdering gnolls?
 endif
-if class($n) == Warrior
+if class($n) == Guerreiro
   say Such a strong warrior, and you're killing gnolls?
 endif
-if class($n) == Vampire
+if class($n) == _Vampiro_
   say Do you not thirst for more blood?  A greater challenge?
 endif
-if class($n) == Druid
+if class($n) == Druida
   say Do you not feel nature calling you to a greater challenge?
 endif
-if class($n) == Ranger
+if class($n) == Cazador
   say Such a strong ranger!  These gnolls are far too simple for you!
 endif
-if class($n) == Augurer
+if class($n) == Agoreiro
   say Do you not crave a greater challenge?
+endif
+if class($n) == Demo
+  say Do you not thirst for more blood?  A greater challenge?
 endif
 shake
 mea $n The small pixie pulls you close to her and whispers into your ear...
@@ -1668,9 +1681,9 @@ mpat 10399 mpecho purge
 ~
 |
 #10358
-mob~
-a test mob~
-This is a test mob.
+criatura~
+criatura de proba~
+Esta é unha criatura de proba.
 ~
 ~
 1073741825 0 0 C
@@ -1682,12 +1695,12 @@ This is a test mob.
 0 3 0 0 0 0 0
 0 0 0 0 0 0 0 0
 #10359
-None~
-this is a none~
-This is a nones long
+Nada~
+esto non e nada~
+Esto é absolutamente nada.
 ~
-Eager to test hit prowess in battle this young gnoll bares his fangs at you
-in an attempt to strike fear into your heart.
+Ansioso de proezas quer probar na batalla esta nova gnoll descobre súas presas
+en ti nun intento de golpear o medo no seu corazón.
 ~
 1073741859 0 0 C
 1 0 94 11d1+0 0d0+0
@@ -1698,12 +1711,12 @@ in an attempt to strike fear into your heart.
 3 0 0 0 131073 131072 0
 0 0 0 0 0 0 0 0
 #10360
-None~
-this is a none~
-This is a nones long
+Nada~
+esto non e nada~
+Esto é absolutamente nada.
 ~
-Eager to test hit prowess in battle this young gnoll bares his fangs at you
-in an attempt to strike fear into your heart.
+Ansioso de proezas quer probar na batalla esta nova gnoll descobre súas presas
+en ti nun intento de golpear o medo no seu corazón.
 ~
 1073741859 0 0 C
 1 0 94 11d1+0 0d0+0
@@ -1714,9 +1727,9 @@ in an attempt to strike fear into your heart.
 3 0 0 0 131073 131072 0
 0 0 0 0 0 0 0 0
 #10361
-None~
-this is a none~
-This is a nones long
+Nada~
+esto non e nada~
+Esto é absolutamente nada.
 ~
 ~
 1073741827 0 -400 C
@@ -1728,12 +1741,12 @@ This is a nones long
 0 3 0 0 0 0 0
 0 0 0 0 0 0 0 0
 #10362
-None~
-this is a none~
-This is a nones long
+Nada~
+esto non e nada~
+Esto é absolutamente nada.
 ~
-Eager to test hit prowess in battle this young gnoll bares his fangs at you
-in an attempt to strike fear into your heart.
+Ansioso de proezas quer probar na batalla esta nova gnoll descobre súas presas
+en ti nun intento de golpear o medo no seu corazón.
 ~
 1073741859 0 0 C
 1 0 94 11d1+0 0d0+0
@@ -1744,12 +1757,12 @@ in an attempt to strike fear into your heart.
 3 0 0 0 131073 131072 0
 0 0 0 0 0 0 0 0
 #10363
-None~
-this is a none~
-This is a nones long
+Nada~
+esto non e nada~
+Esto é absolutamente nada.
 ~
-Eager to test hit prowess in battle this young gnoll bares his fangs at you
-in an attempt to strike fear into your heart.
+Ansioso de proezas quer probar na batalla esta nova gnoll descobre súas presas
+en ti nun intento de golpear o medo no seu corazón.
 ~
 1073741859 0 0 C
 1 0 94 11d1+0 0d0+0
@@ -1760,13 +1773,14 @@ in an attempt to strike fear into your heart.
 3 0 0 0 131073 131072 0
 0 0 0 0 0 0 0 0
 #10364
-None~
-this is a none~
-This is a nones long
+Nada~
+esto non e nada~
+Esto é absolutamente nada.
 ~
-No fur covers the body of this beast, only a pastey white skin. So thin
-is the skin on this beast that you can see the organs working to keep
-this thing alive. Even from a distance you can smell it's fetid breath.
+Sen pel sobre o corpo deste animal, só unha pel branca pastel. Tan fina 
+é a pel sobre esta fera que se poden ver os órganos que traballan para manter 
+esta cousa viva. Mesmo a distancia, podese sentir o cheiro do séu alento
+fétido.
 ~
 1073741889 0 -1000 C
 1 0 90 11d1+0 0d0+0
@@ -1777,12 +1791,12 @@ this thing alive. Even from a distance you can smell it's fetid breath.
 0 3 0 0 0 0 0
 0 0 0 0 0 0 0 0
 #10365
-None~
-this is a none~
-This is a nones long
+Nada~
+esto non e nada~
+Esto é absolutamente nada.
 ~
-Eager to test hit prowess in battle, this young gnoll bares his fangs at you.
-He is trying to strike fear in your heart.
+Ansioso de proezas quer probar na batalla esta nova gnoll descobre súas presas
+en ti nun intento de golpear o medo no seu corazón.
 ~
 1073741859 0 0 C
 1 0 94 11d1+0 0d0+0
@@ -1793,12 +1807,12 @@ He is trying to strike fear in your heart.
 0 0 0 0 131073 131072 0
 0 0 1031 0 0 0 0 0
 #10366
-None~
-this is a none~
-This is a nones long
+Nada~
+esto non e nada~
+Esto é absolutamente nada.
 ~
-Eager to test hit prowess in battle this young gnoll bares his fangs at you
-in an attempt to strike fear into your heart.
+Ansioso de proezas quer probar na batalla esta nova gnoll descobre súas presas
+en ti nun intento de golpear o medo no seu corazón.
 ~
 1073741859 0 0 C
 1 0 94 11d1+0 0d0+0
@@ -1958,17 +1972,17 @@ possess an "undying" loyalty to thier Queen.
 3 0 0 0 131073 131072 0
 0 0 0 0 0 0 0 0
 #10394
-Abbigail language teacher~
+Abbigail profesora lingua linguas idioma idiomas linguaxe~
 abbigail~
-A beautiful lady stands here, waiting for her students.
+Unha preciosa dama espera aqui polos seus estudantes.
 ~
-This has to be one of the most beautiful women in these Realms, both inside
-and out. Her eyes have a sparkle of amusement and her face an easy smile.
-She knows you are admiring her, and she does not seem to mind. She is
-comfortable and confident that the picture she makes is breath taking. Her
-voice at last breaks the spell. Her voice is like satin, you can hardly
-wait for your lessons to begin. Any reason to hear her speak the tongues
-foreign to your ears.
+Esta debe ser unha das máis belas mulleres neste Reino, tanto dentro 
+como fóra. Os seus ollos teñen un brilo de diversión e súa cara un sorriso
+fermoso. Sabe que están admirandoa, e non parece importarlle. Está segura de
+que a imaxe que dá é para quitar o alento. A sua voz ao fin rompe o feitizo.
+A súa voz é como o cetim, dificilmente se pode esperar ao comezo da súa
+seguinte clase. Escoitala falar as linguas estranxeiras e agradable para os
+teus oídos.
 ~
 1048579 4194472 0 C
 5 16 5 1000d1+0 1d6+3
@@ -1982,23 +1996,23 @@ foreign to your ears.
 if ispc($n)
 wink $n
 if level($n) < 20
-tell $n My lessons start when you reach level 20. Have fun until then.
+contar $n As miñas leccións comezarán cando cheges a nivel 20. Divirtete ata entón.
 else
-tell $n I am ready to teach you, are you prepared for the lessons?
+contar $n Estou lista para ensinarche, estás preparado para as leccións?
 endif
 grin $n
 endif
 ~
 > death_prog 100~
-say You know, I am really a lover, not a fighter ...
+decir Sabes, realmente son unha amante, non unha loitadora ...
 mpslay $n
-mpat $n mpechoat $n But alas, killing me was a slaying offense.
+mpat $n mpechoat $n Pero compi, matarme a min é unha gran ofensa.
 mpgoto 10399
 mpat 10306 mpmload 10394
 ~
-> act_prog p flees head over heels!~
+> act_prog p fuxe a fume de carozo!~
 mptrans 0.$n
-mpechoat $n Abbigayle says, 'You fled, so I shall spare your life!'
+mpechoat $n Abbigail di, 'Fuxiche! Perdoarei a túa vida!'
 mpgoto 10399
 mpat 10306 mpmload 10394
 ~
@@ -3582,12 +3596,12 @@ Estas enfrente da Academia de Brigantia, o lugar indicado para ensinarche os
 conceptos basicos deste mundo. Cada habitacion ten unha finalidade especifica
 e conten informacion sobre os comandos precisos para manexarte polo mundo e
 interacturar con outros xogadores. Recomendamosche que explores a Academia
-ao completo, tomandote o teu tempo para ler as instruccions de de cada habitacion
-coidadosamente.
+ao completo, tomandote o teu tempo para ler as instruccions de de cada
+habitacion coidadosamente.
 
-Teclea N para moverte ao norte hacia a proxima habitacion da Academia. Si xa
-conheces a Academia de Brigantia e queres probar as tuas habilidades nas areas,
-teclea ABRIR S ou ABRIR PORTA, despois S ou SUR para entrar a area.
+Teclea N para moverte ao norte hacia a proxima habitacion da Academia. Si
+xa conheces a Academia de Brigantia e queres probar as tuas habilidades nas
+areas, teclea ABRIR S ou ABRIR PORTA, despois S ou SUR para entrar a area.
 ~
 0 1049608 3 0 0 0
 D0
@@ -3597,24 +3611,24 @@ A Stone Corridor
 16777216 -1 10301 0
 D2
 ~
-door~
+porta~
 16777219 -1 10382 0
 D4
-Above you is the entrance to the town of Brigantia.
+En frente a ti está a entrada ao Castro de Brigantia.
 ~
 ~
 0 -1 21280 0
 E
-door~
-You see a solid oak door.
+porta~
+Ves unha sólida porta de carballo.
 ~
 E
 s~
-You see an oak door.
+Ves unha sólida porta de carballo.
 ~
 E
-south~
-You see a door.
+sur~
+Ves unha sólida porta de carballo.
 ~
 > leave_prog 100~
 if ispc($n)
@@ -3635,22 +3649,22 @@ continua cada o Norte a traves da Academia.
 ~
 0 3145736 0 0 0 0
 D0
-Reading Room
+Cámara de Lectura
 ~
 ~
 0 -1 10304 0
 D1
-The Laboratory of Skills and Spells.
+O Laboratorio de Feitizos e Habilidades.
 ~
 ~
 0 -1 10303 0
 D2
-Entrance to Brigantia Academy
+Entrada a Academia de Brigantia.
 ~
 ~
 0 -1 10300 0
 D3
-Abbigayle's Language Lessons.
+Abbigail Leccións de lingua.
 ~
 ~
 0 -1 10306 0
@@ -3663,10 +3677,10 @@ endif
 > entry_prog 100~
 if ispc($n)
 if level($n) == 1
-mpechoat $n _whi You cannot proceed until you have reached level 2!
-mpechoat $n _whi I shall return you to Tsythia promptly.
+mpechoat $n _whi Non podes continuar ata alcanzar nivel 2!
+mpechoat $n _whi Mandareite xunto Tsythia na maior brevidade.
 mptransfer 0.$n 10300
-mpat 10300 mpforce 0.$n look
+mpat 10300 mpforce 0.$n mirar
 endif
 endif
 ~
@@ -3686,47 +3700,51 @@ The Reading Room
 S
 #10303
 O Laboratorio das Habilidades e Feitizos~
-This is where you will practice your arsenal of weapons, spells and skills
-Teclea PRACTICAR to get a list of these currently available to you.  Everyone
-will have sections listing skills, weapons and languages.  Spells casters
-will have an additional section for spells.  To practice a spell, skill or
-weapons style, teclea PRACTICAR <full name of spell, skill or weapon style>.
+Este é o lugar onde vas practicar o teu arsenal de armas, maxias e habilidades
+Teclea PRACTICAR para obter unha lista destes actualmente dispoñibles para ti.
+Todo o mundo terá seccións na lista de habilidades, armas e idiomas. As maxias
+terán unha sección adicional para feitizos. Para a práctica dunha maxia,
+habilidade ou estilo de armas, teclea:
+ 
+ practicar nome <completo habilidade feitizo, ou estilo arma> .
 
-For instance, to practice dispel magic, you would type PRAC DISPEL MAGIC.
-When practicing, you start at 0% and one practice will earn you between
-15% and 20% proficieny.  Additional knowledge is gained through usage of
-the skill or spell until adept, which is a maximum of 30% - 95%.
+Por exemplo, para a práctica de disipar maxia, tes que escribir <PRAC disipar
+ maxia>. Ao practicar , comeza en 0% unha práctica, gañas entre un 15% e 20%
+de beneficio. O coñecemento adicional é adquirido a través do uso da
+habilidade ou maxia ata adepto, que é un máximo do 30% - 95%.
 
-To get see information using spells, skills or weapons, type AXUDA INVOCAR or
-AXUDA <spell, skill or weapon style>.  For general questions on practicing,
-type AXUDA PRACTICAR.  The number of practice sessions you may gain at each
-level is determined by the amount of wisdom you have when you level.
+Para conseguir ver información usando maxias, habilidades ou armas , tipo
+<AXUDA invocar> ou habilidade <feitizo, AXUDA ou estilo arma>. Para preguntas
+xerais sobre a práctica, escribe <AXUDA practicar>. O número de sesións de
+práctica podes gañar en cada nivel está determinado pola cantidade de
+sabedoría que tes cando subas de nivel.
 ~
 0 1049608 0 0 0 0
 D3
-A Stone Corridor
+Un corredor de pedra
 ~
 ~
 0 -1 10301 0
 S
 #10304
 A Habitacion de Lectura~
-This is a silent room, which means while here you will not see any of the
-channels. In fact, you can only use socials, emotes and group tell here.
-The room was created to give you a quiet place to read our help files.
-You can reduce your own screen scroll by reducing the number of channels
-you receive. You can get a full list of channels by typing CHAN. You may
-turn off a channel by type CHAN -<channel> and reactive a channel by
-typing CHAN +<channel>. For example, you can turn off auction channel by
-type CHAN -AUCTION and you can turn it back on by typing CHAN +AUCTION.
-You can also turn off ALL your channels by typing CHAN -ALL and turn them
-all on again by typing CHAN +ALL. Once you have finished reading, you are
-ready to test your ability to negotiate your way around.
-Going west will take you into another part of the Academy. The test is to
-follow all the room descriptions until you can find your way back to this
-point. If at any time you become lost, type U to return to this room. Once
-you have successfully returned here, please continue to the north to
-explore the rest of the Academy.
+Esta é unha sala en silencio, o que significa que aquí non vas ver ningunha
+das canles. De feito, só se poden usar sociais, emoticonos e "grupo decir"
+aquí. O cuarto foi creado para darlle un lugar tranquilo para ler os nosos
+arquivos de axuda. Podes reducir a súa propia desprazamento de pantalla,
+reducindo o número de canles que recibe. Podes obter unha lista completa de
+canles, escribindo <canles>. pode desactivar unha canle por tipo 
+canle - <canle> e reactivar unha canle escribindo CANLE + <canle>. Por
+exemplo, pode desactivar a canle de poxa por escriba CANLE -poxa e pode
+liga-lo de novo, escribindo CANLE + poxa.
+Tamén pode desactivar as súas canles , escribindo Canle- ALL e transformalo
+los todo de novo, escribindo CANLE + ALL. Tras terminar a lectura , que é
+listo para probar a súa capacidade de negociar o seu camiño de volta.
+Indo cara ao oeste levate a outra parte da Academia. A proba consiste en
+seguir todas as descricións dos cuartos ata que poida atopar o seu camiño
+de volta a esta punto. Se nalgún momento se perder , tipo U para volver a
+esta sala. xa vostede retornou con éxito aquí, por favor , siga cara ao
+norte para explotar o resto da Academia.
 ~
 0 3211272 0 0 0 0
 D0
