@@ -2070,14 +2070,14 @@ void do_sleep( CHAR_DATA *ch, char *argument )
     switch ( ch->position )
     {
     case POS_SLEEPING:
-	send_to_char( "You are already sleeping.\n\r", ch );
+	send_to_char( "Xa estas a dormir.\n\r", ch );
 	return;
 
     case POS_RESTING:
 	if ( ch->mental_state > 30 && (number_percent()+10) < ch->mental_state )
 	{
-	    send_to_char( "You just can't seem to calm yourself down enough to sleep.\n\r", ch );
-	    act( AT_ACTION, "$n closes $s eyes for a few moments, but just can't seem to go to sleep.", ch, NULL, NULL, TO_ROOM );
+	    send_to_char( "Parece que non podes calmarte o suficiente para dormir.\n\r", ch );
+	    act( AT_ACTION, "$n cerra $s ollos por un momento, pero non parece que vaia dormir.", ch, NULL, NULL, TO_ROOM );
 	    return;
 	}
         send_to_char( "You close your eyes and drift into slumber.\n\r", ch );
@@ -2088,8 +2088,8 @@ void do_sleep( CHAR_DATA *ch, char *argument )
     case POS_SITTING:
 	if ( ch->mental_state > 30 && (number_percent()+5) < ch->mental_state )
 	{
-	    send_to_char( "You just can't seem to calm yourself down enough to sleep.\n\r", ch );
-	    act( AT_ACTION, "$n closes $s eyes for a few moments, but just can't seem to go to sleep.", ch, NULL, NULL, TO_ROOM );
+	    send_to_char( "Parece que non podes calmarte o suficiente para dormir.\n\r", ch );
+	    act( AT_ACTION, "$n cerra $s ollos por un momento, pero non parece que vaia dormir.", ch, NULL, NULL, TO_ROOM );
 	    return;
 	}
         send_to_char( "You slump over and fall dead asleep.\n\r", ch );
@@ -2100,14 +2100,14 @@ void do_sleep( CHAR_DATA *ch, char *argument )
     case POS_STANDING: 
 	if ( ch->mental_state > 30 && number_percent() < ch->mental_state )
 	{
-	    send_to_char( "You just can't seem to calm yourself down enough to sleep.\n\r", ch );
-	    act( AT_ACTION, "$n closes $s eyes for a few moments, but just can't seem to go to sleep.", ch, NULL, NULL, TO_ROOM );
+	    send_to_char( "Parece que non podes calmarte o suficiente para dormir.\n\r", ch );
+	    act( AT_ACTION, "$n cerra $s ollos por un momento, pero non parece que vaia dormir.", ch, NULL, NULL, TO_ROOM );
 	    return;
 	}
         if (ch->stance > STANCE_NONE)
            do_stance (ch, "");
-        send_to_char( "You collapse into a deep sleep.\n\r", ch );
-	act( AT_ACTION, "$n collapses into a deep sleep.", ch, NULL, NULL, TO_ROOM );
+        send_to_char( "Caes inmerso nun profundo sono.\n\r", ch );
+	act( AT_ACTION, "$n cae inmerso nun profundo sono.", ch, NULL, NULL, TO_ROOM );
         ch->position = POS_SLEEPING;
         break;
 
@@ -2116,7 +2116,7 @@ void do_sleep( CHAR_DATA *ch, char *argument )
     case POS_DEFENSIVE:
     case POS_AGGRESSIVE:
     case POS_BERSERK:
-	send_to_char( "You are busy fighting!\n\r", ch );
+	send_to_char( "Estas ocupado loitando!\n\r", ch );
 	return;
     case POS_MOUNTED:
         send_to_char( "You really should dismount first.\n\r", ch );

@@ -116,9 +116,9 @@ A blood doll hangs limply here.
 0 1 0 0 1 1 0
 0 0 2047 0 4194303 0 0 0
 #21009
-home mariñeiro~
-o mariñeiro~
-O mariñeiro ofreceche esta seleccion de chalanos.
+home marinheiro~
+o marinheiro~
+O marinheiro ofreceche esta seleccion de chalanos.
 ~
 ~
 67 4194344 0 C
@@ -258,7 +258,7 @@ O Carniceiro saudate mentres corta a cabeza dun polo coa macheta.
 #21019
 panadeiro~
 o panadeiro~
-O panadeiro esta aqui, recuberto de fariña.
+O panadeiro esta aqui, recuberto de farinha.
 ~
 ~
 3 4194344 0 C
@@ -314,7 +314,7 @@ O Garda do Estabro esta atendendo dos animais.
 #21023
 maestro ladron~
 o Maestro Ladron~
-Un Maestro Ladron esta aqui para demostrarche os camiños da pilleria.
+Un Maestro Ladron esta aqui para demostrarche os caminhos da pilleria.
 ~
 ~
 1027 4194344 0 C
@@ -430,8 +430,8 @@ Un home xigante esta aqui, esperando para entrenar xoves guerreiros.
 0 0 2047 0 3156992 0 0 0
 #21037
 home garda~
-the garda~
-A garda patrols the streets of the city.
+o garda~
+Un garda patrulla as calles do castro.
 ~
 ~
 65 32 1000 C
@@ -444,8 +444,8 @@ A garda patrols the streets of the city.
 2 2 2047 0 3072 0 0 3
 #21041
 garda~
-the garda~
-A tired garda is here.
+o garda~
+Un garda cansado está aquí.
 ~
 ~
 3 0 1000 C
@@ -457,9 +457,9 @@ A tired garda is here.
 0 3 0 0 1 1 2
 0 0 2047 0 0 0 0 0
 #21043
-bowman~
-the bowman~
-A bowman stares out over the ramparts.
+arqueiro~
+o arqueiro~
+Un arqueiro mira para fóra ao longo das murallas.
 ~
 ~
 65 32 0 C
@@ -471,9 +471,9 @@ A bowman stares out over the ramparts.
 0 3 0 0 1 1 2
 0 0 2047 0 0 0 0 2
 #21044
-executioner~
-the Executioner~
-A executioner stands silently before you.
+verdugo~
+o Verdugo~
+Un Verdugo está silencioso diante túa.
 ~
 ~
 3 4202668 0 C
@@ -499,9 +499,9 @@ A stray dog noses along the street.
 30 3 0 0 1634468353 513 0
 0 0 1725 0 0 0 0 2
 #21052
-thief figure~
-the thief~
-A strange figure lurks furtively.
+ladrón figura~
+o ladrón~
+Unha figura estraña escondese furtivamente.
 ~
 ~
 65 98336 0 C
@@ -513,12 +513,12 @@ A strange figure lurks furtively.
 0 3 0 0 1 1 2
 0 0 2047 2048 0 0 0 0
 #21055
-beggar home beggarprog~
-the beggar~
-A decrepit old beggar sits on the cobbles of the road, pleading.
+beggar casa fogar beggarprog~
+o beggar~
+Un vello e decrepito beggar sentase nas pedras do camiño, suplicando.
 ~
-The old home is clad in the rags of what was once a nobleman's clothes.
-He eyes you warily and holds out a tin cup in supplication...
+A vella casa esta revestida cos trapos de roupa que antes eran dun nobre. 
+Mirando con cautela, suxeita unha cunca de lata en súplica ...
 ~
 3 0 300 C
 3 0 100 1d1+20 2d3+3
@@ -532,11 +532,11 @@ He eyes you warily and holds out a tin cup in supplication...
 if name($n) == dog stray
   emote pets the dog.
   mpforce stray lick beggar
-  say That's a good boy, here's a small treat.
+  say Isto é un bo canciño, aquí está un pequeno agasallo.
   mpecho The beggar tosses a scrap of meat across the road.
   mpecho The stray quickly chases after it, eager to fill his belly.
 else
-  say Could you spare a few coins please?
+  say Podes tirar unhas poucas moedas por favor?
   beg $n
 endif
 ~
@@ -544,10 +544,10 @@ endif
 , rummages in one of many pouches, searching for gold no doubt.
 ~
 > bribe_prog 1000~
-say OHHH MY!!!
+say OH DEUSES!!!
 mpecho The beggar suddenly clutches his chest and doubles over.
 mpecho In the blink of an eye, he is dead. 
-mpecho The surprise and shock must have been too much for him.
+mpecho The Surprise and shock must have been too much for him.
 mpat 21194 mpforce cleric mpat beggarprog mppurge beggarprog
 ~
 > bribe_prog 100~
@@ -561,12 +561,12 @@ thank $n
 ~
 |
 #21056
-hawk~
-the regal hawk~
-A proud hawk perches regally here, defiant to all.
+falcón~
+o falcón real~
+Un falcón orgulloso e rexio está aquí, reto para todos.
 ~
-The hawk returns your stare with unfeeling eyes.  Its beak and talons
-appear as though they could rend even the toughest of flesh.
+O falcón regresa o seu ollar cos ollos insensíveis. O seu pico e as garras 
+aparecen como se podidesen raxar mesmo as máis difíciles carnes.
 ~
 3 4718632 0 C
 15 0 -20 3d75+100 3d10+10
@@ -702,7 +702,7 @@ lock e
 #21064
 home garda~
 o garda~
-O Garda vixia a porta norte de saida.
+O Garda vixia a porta Norte de saida.
 ~
 ~
 3 32 1000 C
@@ -787,8 +787,8 @@ un w
 op w
 ~
 > time_prog 20~
-close w
-lock w
+fechar w
+bloquear w
 ~
 |
 #21068
@@ -1094,6 +1094,7 @@ Algun deus abandonou unha nova criatura final por aqui.
 0 0
 112 112 0
 #0
+
 
 #OBJECTS
 #21000
@@ -1428,8 +1429,8 @@ An iron neck garda has fallen here.~
 3 600 60
 #21058
 crested plate~
-a crested brlesteplate~
-A brlesteplate has fallen here.~
+a crested brLesteplate~
+A brLesteplate has fallen here.~
 ~
 9 0 9
 6 6 0 0
@@ -1528,32 +1529,32 @@ A longsword has fallen here.~
 6 300 30
 #21070
 key~
-the key Cara o western gate of Brigantia~
-The key Cara o western gate of Brigantia lies here.~
+the key Cara o Oesteern gate of Brigantia~
+The key Cara o Oesteern gate of Brigantia lies here.~
 ~
 9 0 16385
 0 0 0 0
 1 1000 100
 #21071
 key~
-the key Cara o norteern gate of Brigantia~
-The key to Brigantia's norteern gate lies here.~
+the key Cara o Norteern gate of Brigantia~
+The key to Brigantia's Norteern gate lies here.~
 ~
 9 0 16385
 0 0 0 0
 1 1000 100
 #21072
 key~
-the key Cara o lesteern gate of Brigantia~
-The key to Brigantia's lesteern gate lies here.~
+the key Cara o Lesteern gate of Brigantia~
+The key to Brigantia's Lesteern gate lies here.~
 ~
 9 0 16385
 0 0 0 0
 1 1000 100
 #21073
 key~
-the key Cara o surern gate of Brigantia~
-The key to Brigantia's surern gate lies here.~
+the key Cara o Surern gate of Brigantia~
+The key to Brigantia's Surern gate lies here.~
 ~
 9 0 16385
 0 0 0 0
@@ -1805,7 +1806,7 @@ During the excavation for New DarkHaven, a chest of weapons and artifacts
 was uncovered, was concluded to have originated with an ancient clan of
 pkillers...
  
-All the weapons of this clan with shiny metal surfaces had been covered
+All the weapons of this clan with shiny metal Surfaces had been covered
 by black tar.  The conclusion was that the clan had attempted to avoid
 detection in sunlight by preventing the blades of their weapons from
 reflecting the sun's rays.
@@ -1852,7 +1853,7 @@ and heals and you must be prepared to get them and use them instantly.  This
 means you have to carry some in your inventory and some in containers.  You
 need to have macros set up to get them and use them.  If you do not use
 macros, you need to know which items are stored in which containers so you
-can get them instantly.  When attacked by surprise, you cannot afford to
+can get them instantly.  When attacked by Surprise, you cannot afford to
 start fumbling around hunting for supplies -- you will likely die.
  
 How do you get all these scrolls, potions and other items?  Well, mages and
@@ -1867,7 +1868,7 @@ E
 3a~
 Area Knowledge
  
-Area Knowledge is important to survival whether engaging in pkilling or mob
+Area Knowledge is important to Survival whether engaging in pkilling or mob
 killing.  You should try to learn as much about an area before attempting
 to operate in it.  Know nearby safe zones and where you can or cannot
 recall from.  This knowledge may save you in the future.
@@ -1983,23 +1984,23 @@ Praza de Brigantia~
 Estas de frente a Gran Praza de Brigantia. Unha estatua de Breogan
 ocupa o centro da praza, rodeada de verdes xardins que ensalzan  o aire
 de serenidade e paz no centro de Brigantia. A rua principal sigue as
-direccions cardinais, mentres o norleste e noroeste son camiños as
+direccions cardinais, mentres o norLeste e norOeste son caminhos as
 fragas de Kallaika. A punta da torre de Ith pode verse asomando por
-riba dos fogares cara o norleste.
+riba dos fogares cara o norLeste.
 ~
 0 1081344 1
 D0
-A Avenida Nordica cae cara o norte.
+A Avenida Nordica cae cara o Norte.
 ~
 ~
 0 -1 21001
 D1
-Cara o leste cae a Rua Horizonte.
+Cara o Leste cae a Rua Horizonte.
 ~
 ~
 0 -1 21043
 D2
-A Avenida Nordica cae cara o sur.
+A Avenida Nordica cae cara o Sur.
 ~
 ~
 0 -1 21042
@@ -2014,12 +2015,12 @@ Levantaste no aire.
 ~
 0 -1 21337
 D6
-O camiño arbolado continua ...
+O caminho arbolado continua ...
 ~
 ~
 0 -1 21200
 D7
-O camiño arborado leva cara a torre.
+O caminho arborado leva cara a torre.
 ~
 ~
 0 -1 21163
@@ -2035,8 +2036,8 @@ Sur      - Avenida Nordica
             - A Avenida das Leis
 Oeste    - Rua Horizonte
             - A Rua do Falcon
-Noroeste - Torre de Ith
-            - A Irmandade dos Clerigos
+NorOeste - Torre de Ith
+            - A Irmandade dos Cregoss
             - A Irmandade dos Druidas
             - Ao Altar da Torre
 Noreste  - Fraga
@@ -2047,9 +2048,9 @@ S
 #21001
 Avenida Nordica~
 Aquí, a estrada pasa por unha plataforma circular, que se atopa na parte
-superior dunha casa. Un muro que rodea a Torre de Ith elevase ao oeste,
-e unha pequena area de fraga segue a liña da estrada leste. A Avenida Nordica
-vai de norte a sur.
+superior dunha casa. Un muro que rodea a Torre de Ith elevase ao Oeste,
+e unha pequena area de fraga segue a liña da estrada Leste. A Avenida Nordica
+vai de Norte a Sur.
 ~
 0 1318916 1
 D0
@@ -2058,7 +2059,7 @@ Avenida Nordica cae en esta direccion.
 ~
 0 -1 21002
 D2
-A rua cara o sur dirixese a Praza de Brigantia.
+A rua cara o Sur dirixese a Praza de Brigantia.
 ~
 ~
 0 -1 21000
@@ -2068,7 +2069,7 @@ or isimmort($n)
 else
 if ispkill($n)
 if level($n) == 50
-mpechoat 0.$n Extrañas bretemas levante mais ala...
+mpechoat 0.$n Extranhas brevemas levante mais ala...
 mptrans 0.$n 3001
 endif
 endif
@@ -2080,7 +2081,7 @@ S
 Avenida Nordica~
 Nada en especial chama a tua atención como andar esta parte da Avenida nórdica.
 Parece case como se os cidadáns do castro se esquecesen de colocar unha estatua
-aquí, ou quizais unha tarxeta. Os a estrada alongase cara ao norte e sur.
+aquí, ou quizais unha tarxeta. Os a estrada alongase cara ao Norte e Sur.
 ~
 0 1048576 1
 D0
@@ -2089,7 +2090,7 @@ O chan pavimentado da Avenida Nordica cae en esta direccion.
 ~
 0 -1 21003
 D2
-A peculiar seccion da Avenida Nordica cae cara o sur.
+A peculiar seccion da Avenida Nordica cae cara o Sur.
 ~
 ~
 0 -1 21001
@@ -2097,25 +2098,25 @@ S
 #21003
 Avenida Nordica~
 Continuas pola Avenida Nórdica. Cara o Leste podes ver a estructura de pedra 
-do guerreiro, a catedral nace no oeste, e cara o norte podes ver un cruce.
+do guerreiro, a catedral nace no Oeste, e cara o Norte podes ver un cruce.
 ~
 0 1048576 1
 D0
-Avenida Nordica e a Rua da Xustiza cruzanse ao norte de aqui.
+Avenida Nordica e a Rua da Xustiza cruzanse ao Norte de aqui.
 ~
 ~
 0 -1 21004
 D2
-Unha parte moi pequena da Avenida Nordica cae cara o sur.
+Unha parte moi pequena da Avenida Nordica cae cara o Sur.
 ~
 ~
 0 -1 21002
 S
 #21004
 Intersection of Avenida Nordica and Rua da Xustiza~
-Estás no cruce da Avenida nórdica e da Rúa da Xustiza. Ao norte verás a
-Porta Norte de Brigantia. Rúa da Xustiza cae de cara ao leste eo oeste,
-mentres a Avenida Nórdica se pode ver cara ao norte e sur.
+Estás no cruce da Avenida nórdica e da Rúa da Xustiza. Ao Norte verás a
+Porta Norte de Brigantia. Rúa da Xustiza cae de cara ao Leste eo Oeste,
+mentres a Avenida Nórdica se pode ver cara ao Norte e Sur.
 ~
 0 1048576 1
 D0
@@ -2124,17 +2125,17 @@ Podese ver a Porta Norte en esta direccion.
 ~
 0 -1 21100
 D1
-A Rua da Xustiza extendese cara o leste.
+A Rua da Xustiza extendese cara o Leste.
 ~
 ~
 0 -1 21005
 D2
-Ir ao sur traete cerca do corazon do castro.
+Ir ao Sur traete cerca do corazon do castro.
 ~
 ~
 0 -1 21003
 D3
-A Rua da Xustiza extendese cara o oeste.
+A Rua da Xustiza extendese cara o Oeste.
 ~
 ~
 0 -1 21035
@@ -2155,18 +2156,18 @@ S
 #21005
 Rua da Xustiza~
 Esta parte da Rúa da Xustiza parece despenteada. Un asubío pode enrolarse
-polo noreste e ser oído pasando por entre as árbores para o sur, e sorrír
+polo noreste e ser oído pasando por entre as árbores para o Sur, e sorrír
 para si mesmo ao continuar o seu camiño. Rúa da Xustiza estendese ata o
 Leste eo Oeste.
 ~
 0 1048576 1
 D1
-Rua da Xustiza cae para o leste.
+Rua da Xustiza cae para o Leste.
 ~
 ~
 0 -1 21006
 D3
-A interseccion da Avenida Nordica e Rua da Xustiza e para o oeste.
+A interseccion da Avenida Nordica e Rua da Xustiza e para o Oeste.
 ~
 ~
 0 -1 21004
@@ -2181,30 +2182,30 @@ máis o Leste eo Oeste.
 ~
 0 1048576 1
 D1
-Rua da Xustiza e cara o leste.
+Rua da Xustiza e cara o Leste.
 ~
 ~
 0 -1 21007
 D3
-Rua da Xustiza extendese cara o oeste.
+Rua da Xustiza extendese cara o Oeste.
 ~
 ~
 0 -1 21005
 S
 #21007
 Rua da Xustiza~
-Estas camiñando Rua da Xustiza. O longo camiño, que reviste a norteern 
-cerramento de Brigantia, reunese coa Rua do Falcon ao leste para formar
-un dos catro cantos de Brigantia. A rúa continua cara ao oeste.
+Estas caminhando Rua da Xustiza. O longo caminho, que reviste a Norteern 
+cerramento de Brigantia, reunese coa Rua do Falcon ao Leste para formar
+un dos catro cantos de Brigantia. A rúa continua cara ao Oeste.
 ~
 0 1048576 1
 D1
-Rua da Xustiza cruzase coa Rua do Falcon deica o leste.
+Rua da Xustiza cruzase coa Rua do Falcon deica o Leste.
 ~
 ~
 0 -1 21008
 D3
-Rua da Xustiza continua cara o oeste.
+Rua da Xustiza continua cara o Oeste.
 ~
 ~
 0 -1 21006
@@ -2214,17 +2215,17 @@ Cruce da Rua Falcon coa Rua da Xustiza~
 A Rua do Falcon e a Rua da Xustiza reunense aqui para formar un dos catro 
 cantos Brigantia. Unha escaleira de pedra leva a parte superior dos
 fantásticos muros do Castro de Brigantia, de onde mesmo o inimigo máis 
-forte pode ser repelido. A Rua Falcon queda ao sur, mentres a Rúa da 
-Xustiza esténdese cara ao oeste.
+forte pode ser repelido. A Rua Falcon queda ao Sur, mentres a Rúa da 
+Xustiza esténdese cara ao Oeste.
 ~
 0 1048576 1
 D2
-A Rua Falcon cae ao sur.
+A Rua Falcon cae ao Sur.
 ~
 ~
 0 -1 21009
 D3
-Rua da Xustiza cae ao oeste.
+Rua da Xustiza cae ao Oeste.
 ~
 ~
 0 -1 21007
@@ -2249,16 +2250,16 @@ Rua Falcon~
 Esta sección da Rua Falcon esta reservado para albergar no Muro
 do Leste o material de defensa. Feixes de frechas son amoreadas
 para o alto, case ao alcance dos Gardas nos muros. A Rua Falcon 
-esténdese ao norte e sur.
+esténdese ao Norte e Sur.
 ~
 0 1048576 1
 D0
-A Rua Falcon cruzase coa Rua da Xustiza deica o norte.
+A Rua Falcon cruzase coa Rua da Xustiza deica o Norte.
 ~
 ~
 0 -1 21008
 D2
-A Rua Falcon continua deica o sur.
+A Rua Falcon continua deica o Sur.
 ~
 ~
 0 -1 21010
@@ -2267,36 +2268,36 @@ S
 Rua Falcon~
 Esta parte da Rua Falcon e moi pobre e despenteada. Rags e outros 
 da infelices da castro crearon residencia aqui. 
-Unha tenda foi inaugurada no lado leste da estrada, a casa dalguen
-moi pobre sen dubida. A Rua Falcon segue ao norte e sur.
+Unha tenda foi inaugurada no lado Leste da estrada, a casa dalguen
+moi pobre sen dubida. A Rua Falcon segue ao Norte e Sur.
 ~
 0 1048576 1
 D0
-A Rua Falcon continua cara o norte.
+A Rua Falcon continua cara o Norte.
 ~
 ~
 0 -1 21009
 D2
-A rua chega ata o sur.
+A rua chega ata o Sur.
 ~
 ~
 0 -1 21011
 S
 #21011
 Rua Falcon~
-Estas camiñando pola metade norte da Rua Falcon a un ritmo acelerado. 
-Ao Leste a parede leste altaneira de Brigantia, mentras se ve unha 
-fraga rodeada por unha mureta cara ao oeste. A Rua Falcon varia ao 
-norte e sur.
+Estas caminhando pola metade Norte da Rua Falcon a un ritmo acelerado. 
+Ao Leste a parede Leste altaneira de Brigantia, mentras se ve unha 
+fraga rodeada por unha mureta cara ao Oeste. A Rua Falcon varia ao 
+Norte e Sur.
 ~
 0 1048576 1
 D0
-A Rua Falcon estendese cara o norte.
+A Rua Falcon estendese cara o Norte.
 ~
 ~
 0 -1 21010
 D2
-A Rua Horizonte e a Rua Falcon cruzanse ao sur.
+A Rua Horizonte e a Rua Falcon cruzanse ao Sur.
 ~
 ~
 0 -1 21012
@@ -2304,27 +2305,27 @@ S
 #21012
 Interseccion da Rua Horizonte e a Rua Falcon~
 Estas no cruce da Rúa Horizonte e a Rua Falcon. ao Leste podes ver a
-enorme porta leste de Brigantia, mentres a Rua Falcon fica ao norte e 
-sur, e a Rúa Horizonte corre cara o oeste.
+enorme porta Leste de Brigantia, mentres a Rua Falcon fica ao Norte e 
+Sur, e a Rúa Horizonte corre cara o Oeste.
 ~
 0 1048576 1
 D0
-A Rua Falcon esta cara o norte.
+A Rua Falcon esta cara o Norte.
 ~
 ~
 0 -1 21011
 D1
-Cara o leste esta a Porta Leste de Brigantia.
+Cara o Leste esta a Porta Leste de Brigantia.
 ~
 ~
 0 -1 21113
 D2
-Podes ver a Rua Falcon estirarse moito para o sur.
+Podes ver a Rua Falcon estirarse moito para o Sur.
 ~
 ~
 0 -1 21013
 D3
-A Rua Horizonte cae cara o leste.
+A Rua Horizonte cae cara o Leste.
 ~
 ~
 0 -1 21038
@@ -2343,17 +2344,17 @@ S
 #21013
 Rua Falcon~
 Tomate unha breve pausa no teu camiño pola Rua Falcon, e podes escoitar o 
-chilrear dos paxaros que veñen do outro lado do muro da castro. Colle 
-aire, e reune as tuas pertenzas para seguir no teu camiño.
+chilrear dos paxaros que venhen do outro lado do muro da castro. Colle 
+aire, e reune as tuas pertenzas para seguir no teu caminho.
 ~
 0 1048576 1
 D0
-A Rua Horizonte e a Rua Falcon cruzanse ao norte de aqui.
+A Rua Horizonte e a Rua Falcon cruzanse ao Norte de aqui.
 ~
 ~
 0 -1 21012
 D2
-O Mercado e a Rua Falcon cruzanse ao sur de aqui.
+O Mercado e a Rua Falcon cruzanse ao Sur de aqui.
 ~
 ~
 0 -1 21014
@@ -2362,8 +2363,8 @@ S
 Cruce da Rua do Mercado e a Rua Falcon~
 Estas no cruce da Rua do Mercado e a Rúa Falcon. Unha parede de torres
 esta frente a ti cara ao Leste, mantendo os intrusos fóra de Brigantia.
-Para o oeste estan os pavillóns gloriosos e tendas de Brigantia, mentres 
-a Rúa Falcón continúa de norte a sur.
+Para o Oeste estan os pavillóns gloriosos e tendas de Brigantia, mentres 
+a Rúa Falcón continúa de Norte a Sur.
 ~
 0 1048576 1
 D0
@@ -2372,7 +2373,7 @@ A Rua Falcon cae en esta direccion.
 ~
 0 -1 21013
 D2
-A Rua Falcon sigue cara o sur tan lonxe como podes ver.
+A Rua Falcon sigue cara o Sur tan lonxe como podes ver.
 ~
 ~
 0 -1 21015
@@ -2396,17 +2397,17 @@ Rua Falcon~
 Esta parte da Rúa Falcón está vencellada con piñeiros e pequenos e coloridos
 xardíns. Dous bancos de mármore sentanse en lados opostos da estrada
 pavimentada, o que invita ao descanso. Podes ver o cruce da Avenida das Leis
-coa Rua Falcon ao sur, mentres ao norte ves a Rúa do Mercado e o cruce coa
+coa Rua Falcon ao Sur, mentres ao Norte ves a Rúa do Mercado e o cruce coa
 Rua Falcon.
 ~
 0 1048576 1
 D0
-A Rua do Mercado e Rua Falcon cruzanse no norte.
+A Rua do Mercado e Rua Falcon cruzanse no Norte.
 ~
 ~
 0 -1 21014
 D2
-Mirando ao sur, ves o canto surleste de Brigantia.
+Mirando ao Sur, ves o canto SurLeste de Brigantia.
 ~
 ~
 0 -1 21016
@@ -2416,17 +2417,17 @@ Encontro da Rua Falcon e a Avenida das Leis~
 Rúa Falcón e Avenida das Leis reúnense aquí para formar un dos catro 
 cantos Brigantia. Unha escaleira de pedra leva cara arriba dos fantásticos 
 muros do castro, dende onde mesmo o inimigo máis forte pode ser repelido. 
-A Rúa Falcón queda ao norte, mentres que a Avenida das Leis esténdese cara
-ao oeste.
+A Rúa Falcón queda ao Norte, mentres que a Avenida das Leis esténdese cara
+ao Oeste.
 ~
 0 1048576 1
 D0
-A Rua Falcon cae cara o norte.
+A Rua Falcon cae cara o Norte.
 ~
 ~
 0 -1 21015
 D3
-Avenida das Leis cae cara o oeste.
+Avenida das Leis cae cara o Oeste.
 ~
 ~
 0 -1 21017
@@ -2448,31 +2449,31 @@ Oeste  - Avenida das Leis
 S
 #21017
 Avenida das Leis~
-Estas camiñando pola Avenida das Leis, a estrada que reviste a parede sur
-de Brigantia. Os lastros aquí parecen gastados e usados. Cara ao norte 
-esta a razón para iso: unha tenda de Mascotas e Acompañantes. Mesmo dende
+Estas caminhando pola Avenida das Leis, a estrada que reviste a parede Sur
+de Brigantia. Os lastros aquí parecen gastados e usados. Cara ao Norte 
+esta a razón para iso: unha tenda de Mascotas e Acompanhantes. Mesmo dende
 aquí podes sentir o cheiro feble de estrume. Ao Leste esta un dos catro cantos 
-de Brigantia, mentres a Avenida das Leis continúa cara ao oeste.
+de Brigantia, mentres a Avenida das Leis continúa cara ao Oeste.
 ~
 0 1048576 1
 D0
-A tenda de Mascotas e Acompañantes cae cara o norte.
+A tenda de Mascotas e Acompanhantes cae cara o Norte.
 ~
 ~
 0 -1 21339
 D1
-A Avenida das Leis xuntase coa Rua Falcon cara o leste.
+A Avenida das Leis xuntase coa Rua Falcon cara o Leste.
 ~
 ~
 0 -1 21016
 D3
-Avenida das Leis continua cara o oeste.
+Avenida das Leis continua cara o Oeste.
 ~
 ~
 0 -1 21018
 E
 tarxeta placa rueiro~
-Norte  - Monturas e Acompañantes
+Norte  - Monturas e Acompanhantes
 Leste  - Avenida das Leis
          - A Rua Falcon
 Oeste  - Avenida das Leis
@@ -2491,12 +2492,12 @@ estendese tanto o Leste coma ao Oeste.
 ~
 0 1048576 1
 D1
-A rua extendese cara o leste.
+A rua extendese cara o Leste.
 ~
 ~
 0 -1 21017
 D3
-Avenida das Leis continua cara o oeste tan lonxe como podes ver.
+Avenida das Leis continua cara o Oeste tan lonxe como podes ver.
 ~
 ~
 0 -1 21019
@@ -2507,25 +2508,25 @@ Inscripcion da placa: 'Debes descansar en paz, Iber o Tebroso.'
 S
 #21019
 Avenida das Leis~
-A pesar de pasar polo edificio ao norte con frecuencia, aínda tes dificultade
-para crer que está ahi. As Compañia exportadora de Dragóns, coñecida por
+A pesar de pasar polo edificio ao Norte con frecuencia, aínda tes dificultade
+para crer que está ahi. As Companhia exportadora de Dragóns, coñecida por
 distribuir bizarros colecionáveis de ​​dragón e o seu comportamento ocultista,
-creou unha filial en Brigantia dentro da gran estrutura de pedra ao norte. A
-estrada varía ao leste e oeste de aquí.
+creou unha filial en Brigantia dentro da gran estrutura de pedra ao Norte. A
+estrada varía ao Leste e Oeste de aquí.
 ~
 0 1048576 1
 D0
-Cara ao norte é a recepción para a Compañia exportadora de Dragóns.
+Cara ao Norte é a recepción para a Companhia exportadora de Dragóns.
 ~
 ~
 0 -1 9850
 D1
-A Avenida das Leis continua cara o leste.
+A Avenida das Leis continua cara o Leste.
 ~
 ~
 0 -1 21018
 D3
-A Avenida Nordica e a Avenida das Leis cruzanse cara o oeste.
+A Avenida Nordica e a Avenida das Leis cruzanse cara o Oeste.
 ~
 ~
 0 -1 21020
@@ -2541,12 +2542,12 @@ Oeste  - Avenida das Leis
 S
 #21020
 Estas no cruce da Avenida Nórdica e a Avenida das Leis. mirando para 
-o sur, ves a enorme Porta Sur de Brigantia. As estradas pavimentadas 
+o Sur, ves a enorme Porta Sur de Brigantia. As estradas pavimentadas 
 da Avenida Nórdica e a Avenida das Leis miran nos catro puntos cardeais.
 ~
 0 1048576 1
 D0
-Cara o norte esta a Avenida Nordica.
+Cara o Norte esta a Avenida Nordica.
 ~
 0 -1 21044
 D1
@@ -2555,12 +2556,12 @@ Podes ver a lexendaria Avenida das Leis.
 ~
 0 -1 21019
 D2
-Cara o sur esta a Porta Sur de Brigantia.
+Cara o Sur esta a Porta Sur de Brigantia.
 ~
 ~
 0 -1 21074
 D3
-Avenida das Leis extendese cara o oeste.
+Avenida das Leis extendese cara o Oeste.
 ~
 ~
 0 -1 21021
@@ -2581,10 +2582,10 @@ S
 #21021
 Avenida das Leis~
 Estas percorrendo as estradas de paralelepípedos da Avenida das Leis a un
-ritmo frenetico. Cara o norte esta a Galería de Arte de Brigantia, un edificio
+ritmo frenetico. Cara o Norte esta a Galería de Arte de Brigantia, un edificio
 coñecido en todo o Reino das Tebras pola súa rara beleza e exquisitas artes.
 Senteste obrigado a pagar ao antigo edificio con unha visita. A Avenida das
-Leis extendese dende o  leste ao oeste.
+Leis extendese dende o  Leste ao Oeste.
 ~
 0 1048576 1
 D0
@@ -2593,12 +2594,12 @@ A Galeria de Arte esperate ...
 ~
 0 -1 24800
 D1
-A Avenida das Leis e a Avenida Nordica cruzanse cara o leste.
+A Avenida das Leis e a Avenida Nordica cruzanse cara o Leste.
 ~
 ~
 0 -1 21020
 D3
-Avenida das Leis apunta cara o oeste.
+Avenida das Leis apunta cara o Oeste.
 ~
 ~
 0 -1 21022
@@ -2616,22 +2617,22 @@ S
 Avenida das Leis~
 Estas camiñando por unha parte moi comercial da Avenida das Leis. Os mercaderes 
 perturbante para gastar o teu ouro nada te tenta a continuar no teu camiño. 
-Mirando cara o norte, ves a única tenda paga a pena visitar, e de propiedade do 
+Mirando cara o Norte, ves a única tenda paga a pena visitar, e de propiedade do 
 respetable Annir. A Avenida das Leis extendese cara o Leste e o Oeste.
 ~
 0 1048576 1
 D0
-A tenda de roupa esta situada cara o norte.
+A tenda de roupa esta situada cara o Norte.
 ~
 ~
 0 -1 21066
 D1
-Avenida das Leis extendes cara o leste.
+Avenida das Leis extendes cara o Leste.
 ~
 ~
 0 -1 21021
 D3
-Avenida das Leis continua cara o oeste.
+Avenida das Leis continua cara o Oeste.
 ~
 ~
 0 -1 21023
@@ -2648,14 +2649,14 @@ S
 #21023
 Avenida das Leis ~
 Este tramo da Avenida das Leis esta pavimentada e ben conservada, como a
-maioría das rúas de Brigantia . Mirando ao norte, ves unha pequena mansión que
-parece abandoada. Dúas gárgolas de pedra Gardan as portas do extraño
+maioría das rúas de Brigantia . Mirando ao Norte, ves unha pequena mansión que
+parece abandoada. Dúas gárgolas de pedra Gardan as portas do extranho
 edificio cos seus ollos de brilo suave. A longa estrada esténdese cara o Leste
 e o Oeste.
 ~
 0 1048576 1
 D0
-Unha mansión abandonada esta cara o norte.
+Unha mansión abandonada esta cara o Norte.
 ~
 ~
 0 -1 21353
@@ -2665,7 +2666,7 @@ A Avenida das Leis segue nesa dirección.
 ~
 0 -1 21022
 D3
-Avenida das Leis cruza coa Rua Falcon cara ao oeste.
+Avenida das Leis cruza coa Rua Falcon cara ao Oeste.
 ~
 ~
 0 -1 21024
@@ -2685,11 +2686,11 @@ Xuntanza da Rua Falcon e a Avenida das Leis ~
 A Rua Falcon e a Avenida das Leis reúnense aquí para formar un dos catro
 cantos Brigantia. Unha escaleira de pedra leva ata o fantástico muro do castro,
 dende onde mesmo o inimigo máis forte pode ser repelido.
-A Rua Falcon cae de cara ao norte, mentres a Avenida das Leis extende ao leste.
+A Rua Falcon cae de cara ao Norte, mentres a Avenida das Leis extende ao Leste.
 ~
 0 1048576 1
 D0
-A Rua Falcon cae cara o norte.
+A Rua Falcon cae cara o Norte.
 ~
 ~
 0 -1 21025
@@ -2717,23 +2718,23 @@ S
 #21025
 Rua Falcon ~
 Escolle o teu ritmo para viaxar por baixo desta parte da Rua Falcon.
-Mirando ao leste, ves o que é facilmente e a pista máis escura da castro,
+Mirando ao Leste, ves o que é facilmente e a pista máis escura da castro,
 a pesar dun raio de claridade que se pode ver escintilando nas sombras da rúa.
-Cara ao norte vese un cruce, mentres a Rua Falcon continúa de cara o sur.
+Cara ao Norte vese un cruce, mentres a Rua Falcon continúa de cara o Sur.
 ~
 0 1048576 1
 D0
-A Calexa dos Ladróns esta ao leste de aquí.
+A Calexa dos Ladróns esta ao Leste de aquí.
 ~
 ~
 0 -1 21026
 D1
-A Calexa dos Ladróns esta ao leste de aquí.
+A Calexa dos Ladróns esta ao Leste de aquí.
 ~
 ~
 0 -1 21063
 D2
-Un dos catro cantos de Brigantia está situado cara o sur.
+Un dos catro cantos de Brigantia está situado cara o Sur.
 ~
 ~
 0 -1 21024
@@ -2752,9 +2753,9 @@ S
 #21026
 Cruce da Rúa do Mercado e da Rua Falcon ~
 Estas no cruce da Rúa do Mercado e Rua Falcon. Unha parede de torres esta
-sobre ti cara ao oeste, serve para manter aos intrusos fóra de Brigantia. 
+sobre ti cara ao Oeste, serve para manter aos intrusos fóra de Brigantia. 
 Ao Leste estan os pavillóns gloriosos e tendas de Brigantia, mentres A Rua
-Falcon segue do norte ao sur.
+Falcon segue do Norte ao Sur.
 ~
 0 1048576 1
 D0
@@ -2768,7 +2769,7 @@ Vense os pavillóns e tendas da Rúa do Mercado.
 ~
 0 -1 21045
 D2
-Cara o sur esta a Rua Falcon.
+Cara o Sur esta a Rua Falcon.
 ~
 ~
 0 -1 21025
@@ -2786,29 +2787,29 @@ S
 Rua Falcon ~
 Estas camiñando por unha sección máis pobre da Rua Falcon. As estradas
 pavimentadas parecen descoidadas e sucias, en definitiva inusual neste castro
-que representa a esperanza e da orde. A rúa varía cara ao norte e sur.
+que representa a esperanza e da orde. A rúa varía cara ao Norte e Sur.
 ~
 0 1048576 1
 D0
-A Rúa Horizonte e a Rua Falcon cruzanse de cara ao norte.
+A Rúa Horizonte e a Rua Falcon cruzanse de cara ao Norte.
 ~
 ~
 0 -1 21028
 D2
-A Rúa do Mercado e a Rua Falcon encrucillada ó sur de aquí.
+A Rúa do Mercado e a Rua Falcon encrucillada ó Sur de aquí.
 ~
 ~
 0 -1 21026
 S
 #21028
 Encrucillada de Rúa Horizonte e Rua Falcon ~
-Estas na encrucillada da Rúa Horizonte e a Rua Falcon. Mirando para o oeste,
+Estas na encrucillada da Rúa Horizonte e a Rua Falcon. Mirando para o Oeste,
 ves a enorme Porta Oeste de Brigantia. As estradas pavimentadas da Rúa
 Horizonte e a Rua Falcon apuntan aos catro puntos cardeais.
 ~
 0 1048576 1
 D0
-A Rua Falcon apunta cara ao norte.
+A Rua Falcon apunta cara ao Norte.
 ~
 ~
 0 -1 21029
@@ -2818,12 +2819,12 @@ Camiñar nesa dirección vaite levar de cara ao corazón do castro.
 ~
 0 -1 21041
 D2
-A Rua Falcon cae cara o sur.
+A Rua Falcon cae cara o Sur.
 ~
 ~
 0 -1 21027
 D3
-Cara o oeste esta a Porta Oeste de Brigantia.
+Cara o Oeste esta a Porta Oeste de Brigantia.
 ~
 ~
 0 -1 21088
@@ -2841,18 +2842,18 @@ Norte - Rua Falcon
 S
 #21029
 Rua Falcon ~
-Estas camiñando por unha porción raramente usada de Falcon Road. Cara o leste 
+Estas camiñando por unha porción raramente usada de Falcon Road. Cara o Leste 
 esta o Camposanto e Catacombas de Brigantia, mentres Rua Falcon varía cara ao
-norte e sur.
+Norte e Sur.
 ~
 0 1048576 1
 D0
-Rua Falcon exténdese ao norte.
+Rua Falcon exténdese ao Norte.
 ~
 ~
 0 -1 21030
 D2
-A encrucillada da Rúa Horizonte e a Rua Falcon esta sur de aquí.
+A encrucillada da Rúa Horizonte e a Rua Falcon esta Sur de aquí.
 ~
 ~
 0 -1 21028
@@ -2861,16 +2862,16 @@ S
 Rua Falcon ~
 Atravesas unha sección pobre, case abandoada de Brigantia. Efectivamente,
 esta parte da Rua Falcon non esta nin porca nin limpa, só sin tocar.
-A estrada continúa cara ao norte e o sur.
+A estrada continúa cara ao Norte e o Sur.
 ~
 0 1048576 1
 D0
-A Rua Falcon extende ao norte.
+A Rua Falcon extende ao Norte.
 ~
 ~
 0 -1 21031
 D2
-A Rua Falcon esténdese ao sur.
+A Rua Falcon esténdese ao Sur.
 ~
 ~
 0 -1 21029
@@ -2879,16 +2880,16 @@ S
 Rua Falcon ~
 Aquí mirar as torres e vidreiras da Torre de Ith, axerar afora da fraga
 verdexante cultivada no centro deste próspero castro. A Rua Falcon vai
-tanto de norte a sur.
+tanto de Norte a Sur.
 ~
 0 1048576 1
 D0
-A Rua Falcon encóntrase coa Rúa da Xustiza cara o norte.
+A Rua Falcon encóntrase coa Rúa da Xustiza cara o Norte.
 ~
 ~
 0 -1 21032
 D2
-A Rua Falcon cae cara o sur.
+A Rua Falcon cae cara o Sur.
 ~
 ~
 0 -1 21030
@@ -2898,7 +2899,7 @@ Reunión da Rua Falcon e a Rúa da Xustiza ~
 A Rua Falcon e a Rúa da Xustiza reúnense aquí para formar un dos catro
 cantos Brigantia. A escaleira principal de pedra superior encara o fantástico
 muro castro, de onde mesmo o inimigo máis forte pode ser repelido.
-A Rua Falcon cae cara o sur, mentres a Rúa da Xustiza extende ao leste.
+A Rua Falcon cae cara o Sur, mentres a Rúa da Xustiza extende ao Leste.
 ~
 0 1048576 1
 D1
@@ -2907,7 +2908,7 @@ A Rúa da Xustiza cae de cara o Leste.
 ~
 0 -1 21033
 D2
-A Rua Falcon cae de cara ao sur.
+A Rua Falcon cae de cara ao Sur.
 ~
 ~
 0 -1 21031
@@ -2921,7 +2922,7 @@ firmar publicar firmarpublicacion ~
 Leste - Rúa da Xustiza
          - A Avenida Nórdica
          - A Rúa Falcon
-sur - Rua Falcon
+Sur - Rua Falcon
          - A Rúa Horizonte
          - A Rúa do Mercado
          - A Avenida das Leis
@@ -2930,17 +2931,17 @@ S
 #21033
 Rúa da Xustiza ~
 Esta é unha parte moi banal da Rúa da Xustiza, nada fóra do comun
-chama a tua atención. As liñas da parede norte coa Rua da Xustiza,
+chama a tua atención. As liñas da parede Norte coa Rua da Xustiza,
 que vai de cara o Leste e ao Oeste.
 ~
 0 1048576 1
 D1
-A Rúa da Xustiza extendese ao leste.
+A Rúa da Xustiza extendese ao Leste.
 ~
 ~
 0 -1 21034
 D3
-A Rúa da Xustiza e a Rua Falcon atenden cara ao oeste.
+A Rúa da Xustiza e a Rua Falcon atenden cara ao Oeste.
 ~
 ~
 0 -1 21032
@@ -2948,7 +2949,7 @@ S
 #21034
 Rúa da Xustiza ~
 Viaxa abaixo unha parte estraña da Rúa da Xustiza . No bosque ao
-sur pode escoitar cánticos estraños para Thoric . A misteriosa melodía envía
+Sur pode escoitar cánticos estraños para Thoric . A misteriosa melodía envía
 arrepios na espiña , facendo vostede se preguntar quen ía cantar unha canción
 en un castro de paz e bondade. Rúa da Xustiza fragmentos Leste e Oeste.
 ~
@@ -2959,7 +2960,7 @@ Rúa da Xustiza cae de cara o Leste.
 ~
 0 -1 21035
 D3
-Rúa da Xustiza segue de cara ao oeste.
+Rúa da Xustiza segue de cara ao Oeste.
 ~
 ~
 0 -1 21033
@@ -2967,17 +2968,17 @@ S
 #21035
 Rúa da Xustiza ~
 Estas camiñando con cautela por esta parte da Rúa da Xustiza. Ultimamente
-teñense oído rumores de ladróns roldando esas pezas, mofando o propio nome
+tenhense oído rumores de ladróns roldando esas pezas, mofando o propio nome
 da estrada. A Rua da Xustiza varía cara o Leste eo Oeste.
 ~
 0 1048576 1
 D1
-O cruce da Avenida Nórdica e a Rúa da Xustiza esta ao leste de aquí.
+O cruce da Avenida Nórdica e a Rúa da Xustiza esta ao Leste de aquí.
 ~
 ~
 0 -1 21004
 D3
-A Rúa da Xustiza esténdese cara ao oeste.
+A Rúa da Xustiza esténdese cara ao Oeste.
 ~
 ~
 0 -1 21034
@@ -2986,7 +2987,7 @@ S
 Rúa Horizonte ~
 Viaxar polas rúas de lastros da Rúa Horizonte, é o pracer de ver o
 adro do vello Castro de Brigantia que segue en pé. A Estrada Horizonte segue
-de cara ao leste eo oeste.
+de cara ao Leste eo Oeste.
 ~
 0 1048576 1
 D1
@@ -2995,7 +2996,7 @@ A Rúa Horizonte esténdese á fronte neste sentido.
 ~
 0 -1 21037
 D3
-A estrada cara o oeste leva a Praza de Brigantia .
+A estrada cara o Oeste leva a Praza de Brigantia .
 ~
 ~
 0 -1 21000
@@ -3015,7 +3016,7 @@ S
 #21037
 Rúa Horizonte ~
 Mentres vas atravesando a Rúa Horizonte, ollas a Torre do Encantamento
-de Brigantia, cuxa entrada cae de cara o sur. A longa estrada esténdese
+de Brigantia, cuxa entrada cae de cara o Sur. A longa estrada esténdese
 cara o Leste eo Oeste.
 ~
 0 1048576 1
@@ -3025,7 +3026,7 @@ A Rúa Horizonte segue nesa dirección.
 ~
 0 -1 21038
 D2
-As portas para a Torre do Encantamento de Brigantia son cara o sur.
+As portas para a Torre do Encantamento de Brigantia son cara o Sur.
 ~
 ~
 0 -1 21126
@@ -3049,7 +3050,7 @@ S
 #21038
 Rúa Horizonte ~
 Mozo aventureiro e vertixinoso pasar por aqui mentres viaxas a esta parte da
-Rua Horizonte. Mirando ao sur, ves a ilustre Academia de Brigantia, que ten a
+Rua Horizonte. Mirando ao Sur, ves a ilustre Academia de Brigantia, que ten a
 responsabilidade de adestrar aos novos aventureiros. As rúas de lastros da Rúa
 Horizonte seguen cara o Leste eo Oeste.
 ~
@@ -3060,12 +3061,12 @@ A encrucillada da Rúa Horizonte e Rúa Falcon cae de cara o Leste.
 ~
 0 -1 21012
 D2
-A entrada para a Academia de Brigantia cae de cara o sur.
+A entrada para a Academia de Brigantia cae de cara o Sur.
 ~
 ~
 0 -1 21280
 D3
-Rúa Horizonte estende Cara ao oeste, tanto como os ollos poden ver.
+Rúa Horizonte estende Cara ao Oeste, tanto como os ollos poden ver.
 ~
 ~
 0 -1 21037
@@ -3083,14 +3084,14 @@ S
 #21039
 Rúa Horizonte ~
 Aceleras o teu ritmo sobre os lastros da Rúa Horizonte.
-Mirando cara o norte, ves a Torre de Ith en toda a súa beleza. Cara o Leste
-esta a Praza de Brigantia, mentres a Rúa Horizonte leva cara ao oeste. Estas
+Mirando cara o Norte, ves a Torre de Ith en toda a súa beleza. Cara o Leste
+esta a Praza de Brigantia, mentres a Rúa Horizonte leva cara ao Oeste. Estas
 no Adro Oeste, e un punto popular da congregación, está situado nun edificio
-só para o sur.
+só para o Sur.
 ~
 0 1048576 1
 D1
-A estrada cara o leste leva a Praza de Brigantia .
+A estrada cara o Leste leva a Praza de Brigantia .
 ~
 ~
 0 -1 21000
@@ -3117,12 +3118,12 @@ Oeste - Rúa Horizonte
 S
 #21040
 Rúa Horizonte ~
-A pousada do castro fica cara o sur, toma nota para lembrar este lugar para
+A pousada do castro fica cara o Sur, toma nota para lembrar este lugar para
 máis tarde. Mirando cara o Leste eo Oeste, so podes ver a Rúa Horizonte.
 ~
 0 1048576 1
 D1
-Rúa Horizonte vai máis lonxe cara o leste.
+Rúa Horizonte vai máis lonxe cara o Leste.
 ~
 ~
 0 -1 21039
@@ -3132,7 +3133,7 @@ A pousada do castro agarda por ti.
 ~
 0 -1 21069
 D3
-A Rúa Horizonte vai máis lonxe cara ao oeste.
+A Rúa Horizonte vai máis lonxe cara ao Oeste.
 ~
 ~
 0 -1 21041
@@ -3150,7 +3151,7 @@ S
 #21041
 Rúa Horizonte ~
 Un riso animador pode ser oído nesta sección da Rúa Horizonte. escoitase
-de preto, non estas sorprendido ao atopar a risa vindo da taberna cara o sur.
+de preto, non estas sorprendido ao atopar a risa vindo da taberna cara o Sur.
 Campesiños que pasan tamén parecen interesados ​​en quen poda atopar alegría
 nestes tempos escuros. A Rúa Horizonte varía cara o Leste eo Oeste.
 ~
@@ -3161,12 +3162,12 @@ A Rúa Horizonte segue nesa dirección.
 ~
 0 -1 21040
 D2
-A Pousada cae de cara o sur.
+A Pousada cae de cara o Sur.
 ~
 ~
 0 -1 21068
 D3
-A Rúa Horizonte e a Rua Falcon cruzanse de cara ao oeste.
+A Rúa Horizonte e a Rua Falcon cruzanse de cara ao Oeste.
 ~
 ~
 0 -1 21028
@@ -3183,18 +3184,18 @@ Oeste - Rúa Horizonte
 S
 #21042
 Avenida Nórdica ~
-Estas viaxando enriba da parte sur da Avenida Nórdica. As tendas
+Estas viaxando enriba da parte Sur da Avenida Nórdica. As tendas
 dos mercados Brigantia suben alto cara o Leste eo Oeste. Os lastros
 da estrada esténdese cara o Norte e Sur, onde se pode ver un cruce.
 ~
 0 1048576 1
 D0
-A estrada Cara o norte leva a Praza de Brigantia .
+A estrada Cara o Norte leva a Praza de Brigantia .
 ~
 ~
 0 -1 21000
 D2
-A movida encrucilla cae de cara o sur.
+A movida encrucilla cae de cara o Sur.
 ~
 ~
 0 -1 21043
@@ -3203,12 +3204,12 @@ S
 Encrucillada da Avenida Nórdica e Rúa do Mercado ~
 Estas na encrucillada da Avenida Nórdica e a Rúa do Mercado. A encrucillada
 axitase coas actividades dos cidadáns que levan os seus negocios.
-Cara o leste e oeste corre a Rúa do Mercado, aliñada coas tendas exóticas de
-Brigantia, mentres Avenida Nórdica cae de cara ao norte e sur.
+Cara o Leste e Oeste corre a Rúa do Mercado, aliñada coas tendas exóticas de
+Brigantia, mentres Avenida Nórdica cae de cara ao Norte e Sur.
 ~
 0 1048576 1
 D0
-Avenida Nórdica cae de cara o norte.
+Avenida Nórdica cae de cara o Norte.
 ~
 ~
 0 -1 21042
@@ -3218,7 +3219,7 @@ Podes ver os mercados exóticos de Brigantia .
 ~
 0 -1 21048
 D2
-Avenida Nórdica estende cara o sur, tan lonxe como os ollos poden ver.
+Avenida Nórdica estende cara o Sur, tan lonxe como os ollos poden ver.
 ~
 ~
 0 -1 21044
@@ -3246,7 +3247,7 @@ Avenida Nórdica ~
 Mentres atravesando as movidas rúas de lastros de Brigantia, entras
 nunha rúa especialmente escura que os cidadáns xeralmente evitan.
 Sorrindo, imaxina un ladrón camuflado á espreita nas sombras.
-A Avenida Nórdica estendese de norte a sur.
+A Avenida Nórdica estendese de Norte a Sur.
 ~
 0 1048576 1
 D0
@@ -3255,7 +3256,7 @@ Encrucillada da Avenida Nórdica e a Rúa do Mercado
 ~
 0 -1 21043
 D2
-O cruce da Avenida Nórdica e Avenida das Leis cae cara o sur.
+O cruce da Avenida Nórdica e Avenida das Leis cae cara o Sur.
 ~
 ~
 0 -1 21020
@@ -3280,13 +3281,13 @@ S
 #21045
 Rúa do Mercado ~
 Sorris coa visión familiar da Rúa do Mercado e os seus gloriosos
-pavillóns. Un home loiro coma o lume chama a atención na tenda cara o sur,
-mentres a tenda cara ao norte é estrañamente silenciosa. A Rúa do Mercado
+pavillóns. Un home loiro coma o lume chama a atención na tenda cara o Sur,
+mentres a tenda cara ao Norte é estrañamente silenciosa. A Rúa do Mercado
 estendese cara o Leste eo Oeste.
 ~
 0 1048576 1
 D0
-A tenda do escriba está situada ao norte de aquí.
+A tenda do escriba está situada ao Norte de aquí.
 ~
 ~
 0 -1 21051
@@ -3296,12 +3297,12 @@ Máis tendas de atraen a tua atención cara o Leste.
 ~
 0 -1 21046
 D2
-A xoiaría foi esta cara o sur.
+A xoiaría foi esta cara o Sur.
 ~
 ~
 0 -1 21052
 D3
-A Rúa do Mercado atópase co Rua Falcon Cara ao oeste.
+A Rúa do Mercado atópase co Rua Falcon Cara ao Oeste.
 ~
 ~
 0 -1 21026
@@ -3319,13 +3320,13 @@ S
 #21046
 Rúa do Mercado ~
 Os cidadáns de Brigantia corren e rodean, ansiosos para completar as súas
-compras. Mirando ao norte, podes ver unha cervexa elfa e unha infinidade
-de pocións, mentres cara o sur ves o Servizo de Mensaxeria de Brigantia.
+compras. Mirando ao Norte, podes ver unha cervexa elfa e unha infinidade
+de pocións, mentres cara o Sur ves o Servizo de Mensaxeria de Brigantia.
 A Rúa do Mercado vai do Leste ao Oeste.
 ~
 0 1048576 1
 D0
-O Alquimista esta cara o norte.
+O Alquimista esta cara o Norte.
 ~
 ~
 0 -1 21054
@@ -3335,12 +3336,12 @@ Máis tendas atraen a túa atención cara o Leste.
 ~
 0 -1 21047
 D2
-O Servizo de Mensaxeria de Brigantia está situado nun edificio cara o sur.
+O Servizo de Mensaxeria de Brigantia está situado nun edificio cara o Sur.
 ~
 ~
 0 -1 21053
 D3
-Máis tendas atraen a túa atención cara o oeste.
+Máis tendas atraen a túa atención cara o Oeste.
 ~
 ~
 0 -1 21045
@@ -3359,13 +3360,13 @@ S
 Rúa do Mercado ~
 A estrada pavimentada vese movida coa actividade. Ansias, berros de moitas
 tendas e pavillóns, impulsan aos clientes potenciais para vir a inspeccionar
-un Tendeiro. Cara ao norte esta a tenda do Encantador, mentres que un
-traficante de pergamiños está cara o sur. A Rúa do Mercado segue cara o
+un Tendeiro. Cara ao Norte esta a tenda do Encantador, mentres que un
+traficante de pergaminhos está cara o Sur. A Rúa do Mercado segue cara o
 Leste eo Oeste.
 ~
 0 1048576 1
 D0
-A tenda do Encantador esta cara o norte.
+A tenda do Encantador esta cara o Norte.
 ~
 ~
 0 -1 21055
@@ -3375,12 +3376,12 @@ Podes ver the intersection da Avenida Nordica e a Rua do Mercado.
 ~
 0 -1 21043
 D2
-Unha tenda de pergamiños cae cara o sur.
+Unha tenda de pergaminhos cae cara o Sur.
 ~
 ~
 0 -1 21056
 D3
-Mais tendas atraen a tua atencio cara o oeste.
+Mais tendas atraen a tua atencio cara o Oeste.
 ~
 ~
 0 -1 21046
@@ -3390,7 +3391,7 @@ Norte  - A Tenda do Encantador
 Leste  - Rua do Mercado
          - A Rua Falcon
          - A Avenida Nordica
-Sur    - Quills e Pergamiños
+Sur    - Quills e pergaminhos
 Oeste  - Rua do Mercado
          - A Falcon Road
 ~
@@ -3399,7 +3400,7 @@ S
 Rúa do Mercado ~ 
 A estrada pavimentada é movida pola actividade. Ansiosos berros de moitas tendas 
 e pavillóns impulsan aos clientes potenciais para vir inspeccionar un Tendeiro.
-Cara ao norte queda o mercado de alimentos, mentres que a tenda cara o Sur esta 
+Cara ao Norte queda o mercado de alimentos, mentres que a tenda cara o Sur esta 
 adicada a reparar elementos. A Rúa do Mercado estirase cara o Leste eo Oeste. 
 ~ 
 0 1048576 1 
@@ -3419,7 +3420,7 @@ Podes ver un equipo de reparación anano.
 ~ 
 0 -1 21058 
 D3 
-O cruce da Avenida Nórdica e a Rúa do Mercado cae de cara ao oeste.
+O cruce da Avenida Nórdica e a Rúa do Mercado cae de cara ao Oeste.
 ~
 ~
 0 -1 21043
@@ -3437,13 +3438,13 @@ S
 #21049
 Rua do Mercado~
 Os cidadáns de Brigantia pulam sobre ti, ansiosos por rematar as súas compras. 
-O aroma de pan fresco invade o teu nariz, vindo dun panadeiro ao norte, e oes
-o clangor metálico de aneis fóra de Brigantia no Arsenal cara o sur. A Rúa do
+O aroma de pan fresco invade o teu nariz, vindo dun panadeiro ao Norte, e oes
+o clangor metálico de aneis fóra de Brigantia no Arsenal cara o Sur. A Rúa do
 Mercado varía cara o Leste eo Oeste.
 ~
 0 1048576 1
 D0
-Podes ver ao panadeiro cara o norte.
+Podes ver ao panadeiro cara o Norte.
 ~
 ~
 0 -1 21060
@@ -3453,7 +3454,7 @@ Mais tendas atraen a tua atencion nesta direccion.
 ~
 0 -1 21050
 D2
-Parry O Solido esta cara o sur.
+Parry O Solido esta cara o Sur.
 ~
 ~
 0 -1 21059
@@ -3476,8 +3477,8 @@ S
 #21050
 Rua do Mercado~
 Sorris ante a visión familiar da Rúa do Mercado e os seus gloriosos pavillóns. 
-O anel da espada pode ser oído cara o sur, mentres que a leiteira esta situada 
-cara o norte. A Rúa do Mercado estendese de Leste a Oeste.
+O anel da espada pode ser oído cara o Sur, mentres que a leiteira esta situada 
+cara o Norte. A Rúa do Mercado estendese de Leste a Oeste.
 ~
 0 1048576 1
 D0
@@ -3486,12 +3487,12 @@ Productos lacteos cara ao Norte, tenhen ofertas en todos os produtos.
 ~
 0 -1 21061
 D1
-A Rua do Mercado xuntase coa Rua Falcon cara o leste.
+A Rua do Mercado xuntase coa Rua Falcon cara o Leste.
 ~
 ~
 0 -1 21014
 D2
-As armas poden ser compradas na Armeria cara o sur.
+As armas poden ser compradas na Armeria cara o Sur.
 ~
 ~
 0 -1 21062
@@ -3519,11 +3520,11 @@ maioría fosen coidadosamente categorizados e colocados en diferentes caixas. A
 mesa que está situada no centro da sala, onde o Escriba escribe unha cantidade
 infinita de pergamiños. Sentes case pena a causa do seu traballo, ata que ves 
 súa bolsa de moedas. Cara ao Leste esta o boticario, mentres un oco da tenda
-ao sur leva de volta para a Rúa do Mercado.
+ao Sur leva de volta para a Rúa do Mercado.
 ~
 0 1048584 0
 D1
-A tenda do alquimista cae cara o leste.
+A tenda do alquimista cae cara o Leste.
 ~
 ~
 0 -1 21054
@@ -3539,8 +3540,8 @@ O cadro de exposición domina esta tenda en particular. Baixo o vidro
 do cadro dunha infinidade de pedras preciosas, descansa deitado
 suavemente sobre unha almofada minúscula. 
 Colgado nas paredes vense varias pinturas, esculturas, mentres ocupan
-o resto do espazo. Cara o leste esta a Mensaxeiria de Brigantia, mentres
-que unha Entrada na tenda cara o norte leva de volta para a Rúa do Mercado.
+o resto do espazo. Cara o Leste esta a Mensaxeiria de Brigantia, mentres
+que unha Entrada na tenda cara o Norte leva de volta para a Rúa do Mercado.
 ~
 0 1048584 0
 D0
@@ -3549,20 +3550,20 @@ Unha apertura na tenda levate de novo a Rua do Mercado.
 ~
 0 -1 21045
 D1
-A Mensaxeria de Brigantia cae cara o leste.
+A Mensaxeria de Brigantia cae cara o Leste.
 ~
 ~
 0 -1 21053
 S
 #21053
 A Mensaxeria de Brigantia~
-Un inmenso estante apoiase contra a parede sur da tenda que esta 
+Un inmenso estante apoiase contra a parede Sur da tenda que esta 
 organizada en pequenas entallas, cada unha contendo cartas de e para os
 cidadáns de Brigantia. Mozos de recados clasifícanse entrando a recoller
 paquetes para a súa entrega. Cara o Leste esta a tenda de Quill e
-Pergamiños, mentres a tenda cara o Oeste ten ofertas en xoias e outros
+Pergaminhos, mentres a tenda cara o Oeste ten ofertas en xoias e outros
 tesouros raros. Un oco na tenda leva de volta para a Rúa do Mercado cara
-o norte.
+o Norte.
 ~
 0 3407880 0
 D0
@@ -3571,7 +3572,7 @@ Unha abertura na tenda levate de novo a Rua do Mercado.
 ~
 0 -1 21046
 D1
-A Tenda de Quills e Pergamiños cae cara o leste.
+A Tenda de Quills e Pergaminhos cae cara o Leste.
 ~
 ~
 0 -1 21056
@@ -3582,7 +3583,7 @@ pensamentos.
 ~
 16777216 -1 21409
 D3
-Un negociante de xoias finas montou unha tenda de cara ao oeste.
+Un negociante de xoias finas montou unha tenda de cara ao Oeste.
 ~
 ~
 0 -1 21052
@@ -3593,12 +3594,12 @@ Esta porción da tenda explica o cheiro de produtos químicos. De xeito que as
 baldas están repletas de pocións, cada unha de cores variadas. Unha barra senta 
 no centro da sala. Andando máis preto, entendese unha pequena placa sobre o
 mostrador onde se le "O éxito está na alquimia". Un oco na tenda leva de volta
-para a Rúa do Mercado que cae de cara o sur, mentres outras duas tendas de
+para a Rúa do Mercado que cae de cara o Sur, mentres outras duas tendas de
 maxia están situadas cara o Leste eo Oeste.
 ~
 0 1048584 0
 D1
-Cara o leste esta a tenda do Encantador.
+Cara o Leste esta a tenda do Encantador.
 ~
 ~
 0 -1 21055
@@ -3620,7 +3621,7 @@ desta parte da tenda, cada andel esta cheo de elementos máxicos. Paraste
 a inspeccionar varias das baldas, ves que todos estan cubertos de po. Un
 balcón de madeira cadrado está situado no centro da sala, e unha Entrada na
 tenda leva de voltae para a Rúa do Mercado, mentres que a Tenda que cae de
-cara o oeste e do alquimista.
+cara o Oeste e do alquimista.
 ~
 0 1048584 0
 D2
@@ -3635,13 +3636,13 @@ Podes ver a tenda do alquimista.
 0 -1 21054
 S
 #21056
-Quills e Pergamiños~
+Quills e Pergaminhos~
 Atópaste na tenda un número moi pequeno de pergamiños amarrados 
 en envases limpos pusados de forma desorganizada. Un mostrador no 
 centro da sala alberga numerosos espiños, así como un par de 
 ferramentas mais de escritura únicas. A Mensaxeria de Brigantia é o cara
-o oeste, e o cargo público do boletín de novas esta o cara o sur, fixaste nun
-oco da tenda que conduce cara o norte e leva de volta á Rúa do Mercado.
+o Oeste, e o cargo público do boletín de novas esta o cara o Sur, fixaste nun
+oco da tenda que conduce cara o Norte e leva de volta á Rúa do Mercado.
 ~
 0 1048584 0
 D0
@@ -3650,7 +3651,7 @@ A abertura na tenda levate de volta a Rua do Mercado.
 ~
 0 -1 21047
 D3
-A Mensaxeroa de Brigantia esta situada na tenda cara o oeste.
+A Mensaxeroa de Brigantia esta situada na tenda cara o Oeste.
 ~
 ~
 0 -1 21053
@@ -3659,12 +3660,12 @@ S
 A Carniceria~
 O cheiro a carne fresca está presente no aire desta tenda. Sostida baixo
 refrixeración en maxicas arcas de fosco, o carniceiro do castro vende súas
-carnes aquí, importadas de terras moi distantes. Cara o sur esta a famosa
+carnes aquí, importadas de terras moi distantes. Cara o Sur esta a famosa
 Rúa do Mercado, mentres a Panaderia de Brigantia cae de cara o Leste.
 ~
 0 1048584 0
 D1
-A Panaderia do castro esta cara o leste.
+A Panaderia do castro esta cara o Leste.
 ~
 ~
 0 -1 21060
@@ -3677,7 +3678,7 @@ S
 #21058
 A Ferreria de Brigantia~
 Estas dentro da sufocante Ferreria do castro de Brigantia. O Armeiro cae de 
-cara ao leste, mentres un oco na tenda leva de volta para fora a Rúa do
+cara ao Leste, mentres un oco na tenda leva de volta para fora a Rúa do
 Mercado.
 ~
 0 1048584 0
@@ -3687,7 +3688,7 @@ A apertura na tenda devolvete a Rua do Mercado.
 ~
 0 -1 21048
 D1
-A Armeria de Brigantia cae cara o leste.
+A Armeria de Brigantia cae cara o Leste.
 ~
 ~
 0 -1 21059
@@ -3696,8 +3697,8 @@ S
 Armeria de Brigantia~
 O propietario desta tenda é un creador dedicado de armaduras e escudos. Tras
 perder ao seu fillo, asumiu o traballo de poñer roupa de protección aos
-mensaxeiros. Cara ao oeste esta o Ferreiro de Brigantia, mentres que o armeiro
-da cara o Leste. Un oco na tenda leva de volta ao norte cara a Rúa do Mercado.
+mensaxeiros. Cara ao Oeste esta o Ferreiro de Brigantia, mentres que o armeiro
+da cara o Leste. Un oco na tenda leva de volta ao Norte cara a Rúa do Mercado.
 ~
 0 1048584 0
 D0
@@ -3706,12 +3707,12 @@ Unha apertura na tenda dirixete de novo a Rua do Mercado.
 ~
 0 -1 21049
 D1
-A tenda de Armas esta cara o leste.
+A tenda de Armas esta cara o Leste.
 ~
 ~
 0 -1 21062
 D3
-A Ferrería esta cara o oeste.
+A Ferrería esta cara o Oeste.
 ~
 ~
 0 -1 21058
@@ -3720,13 +3721,13 @@ S
 A Panaderia de Brigantia~
 Ao entrar na panaderia de Brigantia, encóntraste rodeado por cidadáns do
 da marabilloso castro, cada un esperando na cola para o pan de cada día. Mirando 
-ao leste, ves unha tenda de agricultores que vende todo tipo de produtos lácteos. 
-Unha Carniceria cae de cara ao oeste, mentres un oco na tenda levarate de volta
+ao Leste, ves unha tenda de agricultores que vende todo tipo de produtos lácteos. 
+Unha Carniceria cae de cara ao Oeste, mentres un oco na tenda levarate de volta
 para a Rúa do Mercado.
 ~
 0 1048584 0
 D1
-Productos do dia poden ser comprados na tenda ao leste.
+Productos do dia poden ser comprados na tenda ao Leste.
 ~
 ~
 0 -1 21061
@@ -3736,7 +3737,7 @@ A abertura na tenda levate de volta a Rua do Mercado.
 ~
 0 -1 21049
 D3
-A Carniceria cae cara o oeste.
+A Carniceria cae cara o Oeste.
 ~
 ~
 0 -1 21057
@@ -3745,10 +3746,10 @@ S
 Productos Lacteos~
 Esta pequena tenda de cheiro forte a queixo, ves decenas de tipos de queixos 
 que foron colocados e rotulados adecuadamente en varias baldas longas. Tamen 
-ves moitas botellas de leite, coidadosamente amoreadas na esquina norteleste,
-e producidas polas vaquiñas de Brigantia, este leite esta considerado máis
-importante que ata a mesma auga. Cara ao oeste esta a Panaderia de Brigantia,
-mentres a Rúa do Mercado cae de cara o sur.
+ves moitas botellas de leite, coidadosamente amoreadas na esquina NorteLeste,
+e producidas polas vaquinhas de Brigantia, este leite esta considerado máis
+importante que ata a mesma auga. Cara ao Oeste esta a Panaderia de Brigantia,
+mentres a Rúa do Mercado cae de cara o Sur.
 ~
 0 1048584 0
 D2
@@ -3757,7 +3758,7 @@ A abertura na tenda levate de volta a Rua do Mercado.
 ~
 0 -1 21050
 D3
-A Panaderia de Brigantia esta situada na tenda cara o oeste.
+A Panaderia de Brigantia esta situada na tenda cara o Oeste.
 ~
 ~
 0 -1 21060
@@ -3767,7 +3768,7 @@ Armería de Brigantia~
 Armarios repletos de armas revisten as paredes desta tenda. 
 Sorris maldosamente para os elementos de destrución, e revisas unha parella de 
 maniquíes de práctica colgados do teito. Un mostrador no centro do cuarto é o
-lugar onde o titular desta tenda fai negocios. Cara o oeste esta a tenda do
+lugar onde o titular desta tenda fai negocios. Cara o Oeste esta a tenda do
 armeiro, mentres que un oco na tenda leva ao Norte volvendo para a Rúa do
 Mercado.
 ~
@@ -3778,7 +3779,7 @@ A abertura na tenda levata de novo a Rua do Mercado.
 ~
 0 -1 21050
 D3
-Parry O Solido esta cara o oeste.
+Parry O Solido esta cara o Oeste.
 ~
 ~
 0 -1 21059
@@ -3788,7 +3789,7 @@ Calexa dos Ladrons~
 Estas camiñando por unha rúa escura e particularmente despenteada de Brigantia. 
 Ratos corren polo chan de lastros, diante de ti. Engradados, baleiros e
 esfarrapados trapos están tirados no chan. O calello abrese para a Rua Falcon
-ata o oeste, mentres que ao leste cara afondas cara a escuridade.
+ata o Oeste, mentres que ao Leste cara afondas cara a escuridade.
 ~
 0 1048576 1
 D1
@@ -3797,7 +3798,7 @@ A Calexa dos Ladrons continua en esta direccion.
 ~
 0 -1 21064
 D3
-A Rua Falcon cae cara o oeste.
+A Rua Falcon cae cara o Oeste.
 ~
 ~
 0 -1 21025
@@ -3806,12 +3807,12 @@ S
 Calexa dos Ladrons~
 Estas camiñando por unha rúa escura e particularmente despenteada de Brigantia. 
 Ratos corren polo chan de lastros, diante de ti. Engradados, baleiros e
-esfarrapados trapos están tirados no chan. O calello abrese cara o leste eo
-oeste, mentres a misteriosa Irmandade dos Ladrons cae cara o norte.
+esfarrapados trapos están tirados no chan. O calello abrese cara o Leste eo
+Oeste, mentres a misteriosa Irmandade dos Ladrons cae cara o Norte.
 ~
 0 1048576 1
 D0
-Os Ladrons de Brigantia teñen a sua Irmandade no edificio cara o norte.
+Os Ladrons de Brigantia tenhen a sua Irmandade no edificio cara o Norte.
 ~
 ~
 0 -1 21141
@@ -3831,11 +3832,11 @@ Calexa dos Ladrons~
 Estas camiñando por unha rúa escura e particularmente despenteada de Brigantia.
 Ratos corren polo chan de lastros, diante de ti. Engradados, baleiros e
 esfarrapados trapos están tirados no chan. O calello abrese cara a Avenida
-Nordica deica o leste, mentres cara ao oeste a escuridade faise mais profunda.
+Nordica deica o Leste, mentres cara ao Oeste a escuridade faise mais profunda.
 ~
 0 1048576 1
 D1
-Avenida Nordica cae cara o leste.
+Avenida Nordica cae cara o Leste.
 ~
 ~
 0 -1 21044
@@ -3849,8 +3850,8 @@ S
 Vestuario Annir~
 A tenda na que acabas de entrar cheira fortemente a coiro. Mirando ao arredor,
 podes ver todo tipo de roupa, de coiro e seda. As liñas do balcón de madeira 
-da parede norte da tenda, e varias reservados arranxados na parede leste, 
-onde poderas probar as súas roupas. Unha porta cara o sur leva de volta a 
+da parede Norte da tenda, e varias reservados arranxados na parede Leste, 
+onde poderas probar as súas roupas. Unha porta cara o Sur leva de volta a 
 Avenida das Leis.
 ~
 0 1048584 0
@@ -3861,11 +3862,11 @@ A porta levate de volta a Avenida das Leis
 0 -1 21022
 S
 #21067
-Monturas e Acompañantes~
+Monturas e Acompanhantes~
 Andas nunha gran tenda, que ten cheiro a cabalos e estrume. Detrás do longo 
 balcón de madeira ves decenas de gaiolas que conteñen distintos tipos de
 animais. Podes escoitar sons de cabalos procedentes da parte de atrás da
-tenda. Unha porta cara o sur levarate de volta para fóra de cara a ocupada
+tenda. Unha porta cara o Sur levarate de volta para fóra de cara a ocupada
 Avenida das Leis.
 ~
 0 12 0
@@ -3875,8 +3876,8 @@ A Taberna~
 Entras na sucia taberna do castro, en realidade, o único bar dentro do castro 
 en si, apropiadamente conectado cara a pousada e cara o castro ao Leste. Fume
 e cheiros a alcohol mesturados con risos, rapidamente provocanche unha dor de
-cabeza machacante. Cara o leste esta a Pousada de Brigantia, mentres que o
-aire fresco do exterior proven da cala cara ao norte.
+cabeza machacante. Cara o Leste esta a Pousada de Brigantia, mentres que o
+aire fresco do exterior proven da cala cara ao Norte.
 ~
 0 1048584 0
 D0
@@ -3885,7 +3886,7 @@ A porta dirixete cara a Rua Horizonte.
 ~
 0 -1 21041
 D1
-A Pousada de Brigantia esta cara o leste.
+A Pousada de Brigantia esta cara o Leste.
 ~
 ~
 0 -1 21069
@@ -3895,17 +3896,17 @@ A Pousada de Brigantia (Inn)~
 Aquí, un viaxeiro canso pode buscar un bo descanso e confort, sen medo de 
 furto ou, peor aínda, de asasinato. Unha longa barra estendese por gran
 parte do cuarto, e por algunhas moedas o pousadeiro ten o pracer de alugarche
-un dos seus cuartos. Un riso de bebedo emerxe dun adro cara ao oeste. Para 
-o sur ademais dunha porta pechada polo director estan os cuartos.
+un dos seus cuartos. Un riso de bebedo emerxe dun adro cara ao Oeste. Para 
+o Sur ademais dunha porta pechada polo director estan os cuartos.
 ~
 0 1048588 0
 D0
-A Rua Horizonte cae cara o norte.
+A Rua Horizonte cae cara o Norte.
 ~
 ~
 0 -1 21040
 D3
-A Taberna cae cara o oeste.
+A Taberna cae cara o Oeste.
 ~
 ~
 0 -1 21068
@@ -3914,11 +3915,11 @@ S
 Unha Camara coberta con Runas~
 As Runas da protección e conservación foron coidadosamente gravadas nas 
 paredes desta cámara. É aquí que os arquimagos deixan as alianzas detrás
-de varios pergamiños, a variña que posúen e de pouco valor para eles pero
+de varios pergamiños, a varinha que posúen e de pouco valor para eles pero
 pode ser de gran utilidade para un iniciado. A maxia poderosa que está a
 ser traballada nesta sala dache a sensación de que os elementos deixados
 aquí poderían sobrevivir as maiores das calamidades. Un corredor levate
-de volta cara o adro principal da irmandade no norteleste.
+de volta cara o adro principal da irmandade no NorteLeste.
 ~
 0 3686408 0
 D6
@@ -3937,7 +3938,7 @@ de Xustiza do Conclave.
 ~
 0 3145740 0
 D2
-O Conclave cae cara o sur.
+O Conclave cae cara o Sur.
 ~
 ~
 0 -1 21133
@@ -3952,19 +3953,19 @@ Xustiza do Conclave.
 ~
 0 3145740 0
 D7
-O Tribunal de Xustiza do Conclave esta cara o noroeste.
+O Tribunal de Xustiza do Conclave esta cara o norOeste.
 ~
 ~
 0 -1 21133
 S
 #21074
 Dentro da Porta Sur de Brigantia~
-Estas dentro da Porta Sur de Brigantia. Cara ao norte esta a encrucillada
+Estas dentro da Porta Sur de Brigantia. Cara ao Norte esta a encrucillada
 coa Avenida Nórdica e a Avenida das Leis.
 ~
 0 1048580 1
 D0
-Duas ruas cruzanse cara o norte.
+Duas ruas cruzanse cara o Norte.
 ~
 ~
 0 -1 21020
@@ -3976,7 +3977,7 @@ porta~
 S
 #21075
 Afora da Porta Sur~
-Estas en pé do lado de fóra da Porta Sur de Brigantia. Cara o sur 
+Estas en pé do lado de fóra da Porta Sur de Brigantia. Cara o Sur 
 ves a Ponte Sur, que atravesa o río de Brigantia. Como estas a piques
 de saír, algo te obriga a investigar a follaxe preto de aquí.
 ~
@@ -3987,7 +3988,7 @@ A porta dirixese cara o Castro de Brigantia.
 gate~
 7 21073 21074
 D1
-Un camiño comeza cara o leste.
+Un caminho comeza cara o Leste.
 ~
 ~
 0 -1 21124
@@ -3997,7 +3998,7 @@ Unha ponte longa e oxidada leva para lonxe cara unha fraga tebrosa ...
 ~
 0 -1 3504
 D3
-Un camiño comeza cara o oeste.
+Un caminho comeza cara o Oeste.
 ~
 ~
 0 -1 21076
@@ -4012,18 +4013,18 @@ Buscando ben, descobres un bueiro oculto baixo un dos moitos arbustos.
 ~
 S
 #21076
-Nun tramo ao oeste da Porta Sur~
-Estas nunha estrada de terra ao oeste da Porta Sur. O camiño esténdese a 
+Nun tramo ao Oeste da Porta Sur~
+Estas nunha estrada de terra ao Oeste da Porta Sur. O camiño esténdese a 
 o Leste eo Oeste.
 ~
 0 1048576 1
 D1
-Cara o leste the surern gate of Brigantia.
+Cara o Leste the Surern gate of Brigantia.
 ~
 ~
 0 -1 21075
 D3
-A rua continua cara o oeste.
+A rua continua cara o Oeste.
 ~
 ~
 0 -1 21077
@@ -4031,17 +4032,17 @@ S
 #21077
 Nun tramo contornando Brigantia~
 Estas en unha estrada de terra contra a parede Sur de Brigantia. As 
-augas azuis do Río Brigantia podense ver cara o sur. O tramo que 
+augas azuis do Río Brigantia podense ver cara o Sur. O tramo que 
 pretendes viaxar fielmente segue cara o Leste eo Oeste.
 ~
 0 1048576 1
 D1
-A rua continua cara o leste.
+A rua continua cara o Leste.
 ~
 ~
 0 -1 21076
 D3
-A rua continua cara o oeste.
+A rua continua cara o Oeste.
 ~
 ~
 0 -1 21078
@@ -4049,17 +4050,17 @@ S
 #21078
 Nun tramo contornando Brigantia~
 Estas nun camiño de terra contornando a parede Sur de Brigantia. O 
-son familiar de auga corrente emana do Río de Brigantia ao sur. O
+son familiar de auga corrente emana do Río de Brigantia ao Sur. O
 tramo esténdese cara o Leste eo Oeste.
 ~
 0 1048576 1
 D1
-O sendeiro continua cara o leste.
+O sendeiro continua cara o Leste.
 ~
 ~
 0 -1 21077
 D3
-O tramo continua cara o oeste.
+O tramo continua cara o Oeste.
 ~
 ~
 0 -1 21079
@@ -4067,17 +4068,17 @@ S
 #21079
 Nun tramo contornando Brigantia~
 Estas nunha pista de terra que contorna a parede Sur de Brigantia. 
-O son de auga correndo pode ser oído cara o sur, certamente benvida 
+O son de auga correndo pode ser oído cara o Sur, certamente benvida 
 do Río de Brigantia. A rúa esténdese cara o Leste eo Oeste.
 ~
 0 1048576 1
 D1
-O sendeiro continua cara o leste.
+O sendeiro continua cara o Leste.
 ~
 ~
 0 -1 21078
 D3
-A rua continua cara o oeste.
+A rua continua cara o Oeste.
 ~
 ~
 0 -1 21080
@@ -4085,17 +4086,17 @@ S
 #21080
 Nun tramo contornando Brigantia~
 Estas nunha estrada de terra asumindo a parede Sur de Brigantia. O 
-outeiro íngreme, moi íngreme para descender, cae de cara o sur, abalando 
+outeiro íngreme, moi íngreme para descender, cae de cara o Sur, abalando 
 o de Río Brigantia. O tramo varía cara o Leste eo Oeste.
 ~
 0 1048576 1
 D1
-A rua continua cara o leste.
+A rua continua cara o Leste.
 ~
 ~
 0 -1 21079
 D3
-O sendeiro continua cara o oeste.
+O sendeiro continua cara o Oeste.
 ~
 ~
 0 -1 21081
@@ -4105,22 +4106,22 @@ Antes da Precaria Ponte~
 Miras para o que queda da antiga ponte de pedra de Brigantia, que 
 permitirá o paso ao que antes era o curso do rio. Os seus soportes están
 rachados, e toda a estrutura parece suxeita a caer no Río Brigantia 
-en calquera momento. Cara ao norte e leste estan dúas estradas de terra
-simple, mentres podes ver as ruínas do curso cara o sur.
+en calquera momento. Cara ao Norte e Leste estan dúas estradas de terra
+simple, mentres podes ver as ruínas do curso cara o Sur.
 ~
 0 1048576 1
 D0
-Un sendeiro comeza cara o norte.
+Un sendeiro comeza cara o Norte.
 ~
 ~
 0 -1 21082
 D1
-Unha carretera comeza cara o leste.
+Unha carretera comeza cara o Leste.
 ~
 ~
 0 -1 21080
 D2
-A precaria ponte esta cara o sur.
+A precaria ponte esta cara o Sur.
 ~
 ~
 0 -1 21296
@@ -4128,53 +4129,53 @@ S
 #21082
 Nun tramo contornando Brigantia~
 Viaxas unha estrada de terra asumindo a parede occidental de Brigantia. As
-atrofiadas árbores de Haon Dor podense ver cara ao oeste, mentres que as
-pistas de monte van cara o norte e sur.
+atrofiadas árbores de Haon Dor podense ver cara ao Oeste, mentres que as
+pistas de monte van cara o Norte e Sur.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
+O sendeiro continua cara o Norte.
 ~
 ~
 0 -1 21083
 D2
-O tramo continua cara o sur.
+O tramo continua cara o Sur.
 ~
 ~
 0 -1 21081
 S
 #21083
 Nun tramo contornando Brigantia~
-Estas nun camiño de terra situado a mais duns poucos pasos ao oeste
-de Brigantia. A tebrosa fraga de Haon Dor esta de cara ao oeste,
-mentres que a despenteada estrada esténdese de norte a sur.
+Estas nun camiño de terra situado a mais duns poucos pasos ao Oeste
+de Brigantia. A tebrosa fraga de Haon Dor esta de cara ao Oeste,
+mentres que a despenteada estrada esténdese de Norte a Sur.
 ~
 0 1048576 1
 D0
-O tramo continua cara o norte.
+O tramo continua cara o Norte.
 ~
 ~
 0 -1 21084
 D2
-O sendeiro continua cara o sur.
+O sendeiro continua cara o Sur.
 ~
 ~
 0 -1 21082
 S
 #21084
 Nun tramo contornando Brigantia~
-Estas nun camiño de terra situado a mais duns poucos pasos ao oeste
-de Brigantia. A tebrosa fraga de Haon Dor esta de cara ao oeste,
-mentres que a despenteada estrada esténdese de norte a sur.
+Estas nun camiño de terra situado a mais duns poucos pasos ao Oeste
+de Brigantia. A tebrosa fraga de Haon Dor esta de cara ao Oeste,
+mentres que a despenteada estrada esténdese de Norte a Sur.
 ~
 0 1048576 1
 D0
-A rua continua cara o norte.
+A rua continua cara o Norte.
 ~
 ~
 0 -1 21085
 D2
-O sendeiro continua cara o sur.
+O sendeiro continua cara o Sur.
 ~
 ~
 0 -1 21083
@@ -4182,35 +4183,35 @@ S
 #21085
 Nun tramo contornando Brigantia~
 Ests nunha estrada de terra asumindo a parede occidental de Brigantia. O 
-bosque de Haon Dor cae de cara ao oeste, mentres a ruta varía ao 
-norte e sur.
+bosque de Haon Dor cae de cara ao Oeste, mentres a ruta varía ao 
+Norte e Sur.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
+O sendeiro continua cara o Norte.
 ~
 ~
 0 -1 21086
 D2
-A rua continua cara o sur.
+A rua continua cara o Sur.
 ~
 ~
 0 -1 21084
 S
 #21086
 Nun tramo ao Sur da Porta Oeste~
-Estas nun camiño de terra situado ao oeste de Brigantia. 
-A tebrosa fraga de Haon Dor cae de cara ao oeste, mentres que a despenteada 
-estrada esténdese cara o norte eo sur.
+Estas nun camiño de terra situado ao Oeste de Brigantia. 
+A tebrosa fraga de Haon Dor cae de cara ao Oeste, mentres que a despenteada 
+estrada esténdese cara o Norte eo Sur.
 ~
 0 1048576 1
 D0
-A Entrada Oeste de Brigantia cae cara o norte.
+A Entrada Oeste de Brigantia cae cara o Norte.
 ~
 ~
 0 -1 21087
 D2
-O camiño continua contorneando os muros do Castro de Brigantia.
+O caminho continua contorneando os muros do Castro de Brigantia.
 ~
 ~
 0 -1 21085
@@ -4219,12 +4220,12 @@ S
 Fora da Porta Oeste~
 Estas en pé do lado de fóra da Porta Oeste de Brigantia. Mirando para 
 os muros, ves a un señor moi ben vestido organizando a defensa da porta.
-Unha estrada de terra cae de norte e sur, circulando en torno a Brigantia.
-Cara ao oeste ves un ancho camiño que pasa pola tebrosa fraga de Haon Dor.
+Unha estrada de terra cae de Norte e Sur, circulando en torno a Brigantia.
+Cara ao Oeste ves un ancho camiño que pasa pola tebrosa fraga de Haon Dor.
 ~
 0 1048580 1
 D0
-Un sendeiro comeza Cara o norte.
+Un sendeiro comeza Cara o Norte.
 ~
 ~
 0 -1 21089
@@ -4234,24 +4235,24 @@ A Porta dirixese cara o Castro de Brigantia.
 porta~
 7 21070 21088
 D2
-A estrada comeza cara o sur.
+A estrada comeza cara o Sur.
 ~
 ~
 0 -1 21086
 D3
-camiño da fraga ...
+Caminho da fraga ...
 ~
 ~
 0 -1 6000
 S
 #21088
 Dentro da Porta Oeste~
-Estas na Porta Oeste de Brigantia. Cara o leste esta a intersección da 
+Estas na Porta Oeste de Brigantia. Cara o Leste esta a intersección da 
 Rúa Horizonte e a Rua Falcon.
 ~
 0 1048580 1
 D1
-Duas ruas cruzanse cara o leste.
+Duas ruas cruzanse cara o Leste.
 ~
 ~
 0 -1 21028
@@ -4264,18 +4265,18 @@ S
 #21089
 Nun tramo ao Norte da Porta Oeste~
 Está camiñando por unha estrada de terra sen fin que circunda o castro
-de Brigantia. Cara ao oeste esta a fraga tebrosa de Haon Dor, nalgures
+de Brigantia. Cara ao Oeste esta a fraga tebrosa de Haon Dor, nalgures
 oes un corvo gritar no teu interior. A porta occidental de Brigantia esta
-ao sur de aquí, eo camiño esténdese ao norte.
+ao Sur de aquí, eo camiño esténdese ao Norte.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
+O sendeiro continua cara o Norte.
 ~
 ~
 0 -1 21090
 D2
-A Porta Oeste esta cara o sur.
+A Porta Oeste esta cara o Sur.
 ~
 ~
 0 -1 21087
@@ -4283,17 +4284,17 @@ S
 #21090
 Nun tramo contornando Brigantia~
 Estas en unha estrada de terra que rodea a cidade de Brigantia. Unha ruta 
-esténdese cara ao oeste nunha fraga estraña. A tarxeta de madeira no camiño da 
-entrada atrae a tua atención, mentres a estrada se estende ao norte e sur.
+esténdese cara ao Oeste nunha fraga estraña. A tarxeta de madeira no camiño da 
+entrada atrae a tua atención, mentres a estrada se estende ao Norte e Sur.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
+O sendeiro continua cara o Norte.
 ~
 ~
 0 -1 21091
 D2
-A rua continua cara o sur.
+A rua continua cara o Sur.
 ~
 ~
 0 -1 21089
@@ -4313,291 +4314,291 @@ S
 #21091
 Nun tramo contornando Brigantia~
 Estas circulando no castro de Brigantia a través dunha longa estrada de
-terra. Cara o sur vai unha entrada cara a Fraga dos Pixies, mentres a ruta
-segue ao norte.
+terra. Cara o Sur vai unha entrada cara a Fraga dos Pixies, mentres a ruta
+segue ao Norte.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
+O sendeiro continua cara o Norte.
 ~
 ~
 0 -1 21092
 D2
-A rua continua cara o sur.
+A rua continua cara o Sur.
 ~
 ~
 0 -1 21090
 S
 #21092
 Nun tramo contornando Brigantia~
-Your legs begin to feel weak and you realize that you have been in the
-wilderness far too long.  A nice rest in Brigantia will do you much
-good.  The unending dirt road stretches Cara o norte and sur.
+As túas pernas comezan a sentirse febles e entendes que levas no 
+deserto moito tempo. Un bo descanso en Brigantia vai ser o mellor.
+A estrada de terra sen fin estendese cara o Norte e Sur.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
+O sendeiro continua cara o Norte.
 ~
 ~
 0 -1 21093
 D2
-O tramo continua cara o sur.
+O tramo continua cara o Sur.
 ~
 ~
 0 -1 21091
 S
 #21093
 Nun tramo contornando Brigantia~
-The long dirt road curves around the nortewestern corner of Brigantia 
-just norte of here.  A gentle sea breeze cools your skin, coming from
-the nortewest.  The lengthy trail also continua cara o sur.
+As curvas da longa estrada de terra ao redor do canto NorteOeste de Brigantia 
+ao Norte de aquí. A suave brisa do mar refresca a pel, procedente do norOeste.
+A banda longa tamén segue cara o Sur.
 ~
 0 1048576 1
 D0
-A gentle sea breeze is coming in from the norte.
+A suave brisa do mar provén do Norte.
 ~
 ~
 0 -1 21094
 D2
-O sendeiro continua cara o sur.
+O sendeiro continúa cara o Sur.
 ~
 ~
 0 -1 21092
 S
 #21094
 Nun tramo contornando Brigantia~
-The long dirt road circles around the nortewest corner of Brigantia's
-city walls.  A small trail branches off here, heading roughly westward,
-and the smell of a gentle sea breeze blows in from this direction.
-O sendeiro continua cara o leste and sur.
+Os longos círculos da estrada de terra ao redor do canto norOeste de Brigantia 
+dos muros do castro. Un pequeno camiño ramificase aquí, dirixíndose cara ao
+Oeste, preto do cheiro dunha suave brisa do mar que sopra nesa dirección. 
+O Sendeiro segue de cara o Leste eo Sur.
 ~
 0 1048576 1
 D1
-O sendeiro continua cara o leste.
+O sendeiro continua cara o Leste.
 ~
 ~
 0 -1 21095
 D2
-A rua continua cara o sur.
+A rua continua cara o Sur.
 ~
 ~
 0 -1 21093
 S
 #21095
 Nun tramo contornando Brigantia~
-The long dirt road curves around the nortewest corner of Brigantia oeste
-of here.  The unending road continua cara o leste and oeste.
+Sigues as curvas da longa estrada de terra ao redor do canto norOeste de
+Brigantia. A interminable estrada segue de cara o Leste eo Oeste.
 ~
 0 1048576 1
 D1
-O sendeiro continua cara o leste.
+O sendeiro continua cara o Leste.
 ~
 ~
 0 -1 21096
 D3
-A rua continua cara o oeste.
+A rua continua cara o Oeste.
 ~
 ~
 0 -1 21094
 S
 #21096
 Nun tramo contornando Brigantia~
-Lying at your feet is the freshly severed head of a citygarda.  A scroll
-has been tied Cara o horrid gift, obviously a message to Brigantia.  The
-dirt road extends Cara o leste and oeste.
+Sentes aos teus pés a cabeza recén cortada dun garda da cidade. Un pergamiño 
+foi amarrado no presente, horrible, obviamente, unha mensaxe para Brigantia. A 
+estrada de terra esténdese cara o Leste eo Oeste.
 ~
 0 1048576 1
 D1
-O tramo continua cara o leste.
+O tramo continua cara o Leste.
 ~
 ~
 0 -1 21097
 D3
-O sendeiro continua cara o oeste.
+O sendeiro continua cara o Oeste.
 ~
 ~
 0 -1 21095
 E
-scroll~
-Runes of preservation and permanence cover the scroll, as well as the
-words:  Brigantia's Time Will Come, Just As Thalos.
+pergamiño~
+Runas de preservación e permanencia cubren o libro, así como as
+palabras: A Hora de Brigantia chegará, con Thalos.
 ~
 S
 #21097
 Nun tramo contornando Brigantia~
-The ground here is packed in, not like the loose dirt you have become
-accustomed to.  Two tracks stretch across the terrain, those of a horse
-and the cart it was pulling.  A rua stretches Cara o leste and oeste.
+O chan aquí esta apretado, non como a terra solta a que ves acostumado.
+Dúas pistas estiranse por todo o terreo, oes un cabalo eo carro que está
+tirando. A rúa esténdese cara o Leste e Oeste.
 ~
 0 1048576 1
 D1
-A rua continua cara o leste.
+A rua continua cara o Leste.
 ~
 ~
 0 -1 21098
 D3
-O sendeiro continua cara o oeste.
+O sendeiro continua cara o Oeste.
 ~
 ~
 0 -1 21096
 S
 #21098
-On a Trail Oeste of the Norteern Gate~
-You are walking down a dirt road just oeste of Brigantia's norteern gate.
-Footprints in the dirt tells you that a patrol of gardas passed not long
-ago. O tramo ranges Cara o leste and oeste.
+Nun tramo ao Oeste da Porta Norte~
+O chan aquí esta apretado, non como a terra solta a que ves acostumado.
+Dúas pistas estiranse por todo o terreo, oes un cabalo eo carro que está
+tirando. A rúa esténdese cara o Leste e Oeste.
 ~
 0 1048576 1
 D1
-Brigantia's norteern gate is Cara o leste.
+A Porta Norte de Brigantia está cara o Leste.
 ~
 ~
 0 -1 21099
 D3
-A rua continua cara o oeste.
+A rua continua cara o Oeste.
 ~
 ~
 0 -1 21097
 S
 #21099
-Outside the Norteern Gate~
-You are walking down a dirt road just oeste of the norteern gate.  Footprints
-in the dirt tells you that a patrol of gardas passed not long ago.  O tramo
-ranges Cara o leste and oeste.
+Fora da Porta Norte~
+Estás camiñando por unha estrada de terra aó Oeste da porta Norte. Pegadas 
+na suciedade dinche que unha patrulla de Gardas pasau non moito tempo atrás.
+O tramo varía do Leste ao Oeste.
 ~
 0 1048580 1
 D1
-O sendeiro begins Cara o leste.
+O sendeiro comeza cara o Leste.
 ~
 ~
 0 -1 21101
 D2
-The gate leads into Brigantia.
+A Porta conduce dentro de Brigantia.
 ~
 gate~
 7 21071 21100
 D3
-A rua begins Cara o oeste.
+A rua comeza cara o Oeste.
 ~
 ~
 0 -1 21098
 S
 #21100
-Inside the Norteern Gate~
-You stand inside the norteern gate of Brigantia.  Cara o sur lies the
-intersection of Avenida Nordica and Rua da Xustiza.
+Dentro da Porta Norte~
+Estás dentro da porta Norte de Brigantia. Cara o Sur atópase a 
+encrucillada da Avenida nórdica e Rúa da Xustiza.
 ~
 0 1048580 1
 D0
-The gate leads out of Brigantia.
+A porta conduce fora de Brigantia.
 ~
 gate~
 7 21071 21099
 D2
-Two roads meet Cara o sur.
+Dúas ruas encóntranse cara o Sur.
 ~
 ~
 0 -1 21004
 S
 #21101
-On a Trail leste of the Norteern Gate~
-You are walking down a dirt road not far leste of the norteern gate.  Tracks
-in the ground show that a band of men passed not long ago, probably a roving
-patrol of gardas.  A rua extends Cara o leste and oeste.
+Nun tramo ao Leste da Porta Norte~
+Estás camiñando por unha estrada de terra non moi lonxe ao Leste da Porta
+Norte. Fixaste que unha banda de homes pasaron hai pouco tempo, probablemente
+unha itinerante patrulla de Gardas. A rúa esténdese cara o Leste e Oeste.
 ~
 0 1048576 1
 D1
-O tramo continua cara o leste.
+O tramo continua cara o Leste.
 ~
 ~
 0 -1 21102
 D3
-Brigantia's norteern gate is Cara o oeste.
+A Porta Norte de Brigantia está cara o Oeste.
 ~
 ~
 0 -1 21099
 S
 #21102
 Nun tramo contornando Brigantia~
-You are a plain road which lines Cara o norteern wall of Brigantia.
-A broken sign lies in the dirt, its message still visible in black
-letters.  A rua ranges Cara o leste and oeste.
+Estás unha estrada lisa que reviste a cara Norte de Brigantia. 
+Unha sinal dobre está no lixo, a súa mensaxe aínda visible en letras negras.
+A rúa varía Cara o Leste e Oeste.
 ~
 0 1048576 1
 D1
-A rua continua cara o leste.
+A rua continua cara o Leste.
 ~
 ~
 0 -1 21103
 D3
-O sendeiro continua cara o oeste.
+O sendeiro continua cara o Oeste.
 ~
 ~
 0 -1 21101
 E
-sign~
-The sign reads:
- Welcome to Brigantia - City of Hope.
+sinal~
+A sinal pon:
+ Benvido a Brigantia - Asentamento castrexo da esperanza.
 ~
 S
 #21103
 Nun tramo contornando Brigantia~
-You feel a craving for adventure and excitement as you walk down this bland
-road which circles the city of Brigantia.  A forest Cara o norte blocks your
-view of the plains.  O sendeiro stretches Cara o leste and oeste.
+Sentes un desexo de aventura e emoción andando este tramo da estrada que 
+circunda a cidade de Brigantia. Distingues unha fraga cara os bloques Norte
+a vista das chairas. O Sendeiro estende cara o Leste e Oeste.
 ~
 0 1048576 1
 D1
-A rua continua cara o leste.
+A rua continua cara o Leste.
 ~
 ~
 0 -1 21105
 D3
-O tramo continua cara o oeste.
+O tramo continua cara o Oeste.
 ~
 ~
 0 -1 21102
 S
 #21105
 Nun tramo contornando Brigantia~
-You are on a long dirt road which circles the city of Brigantia.  O sendeiro
-curves around here, eventually bringing you Cara o norteern gate.
+Estás en unha longa estrada de terra que rodea a cidade de Brigantia. O Sendeiro 
+curvase por aquí, acaba levandote cara a Porta Norte.
 ~
 0 1048576 1
 D1
-O sendeiro continua cara o leste.
+O sendeiro continua cara o Leste.
 ~
 ~
 0 -1 21106
 D3
-A rua continua cara o oeste.
+A rua continua cara o Oeste.
 ~
 ~
 0 -1 21103
 S
 #21106
 Nun tramo contornando Brigantia~
-O sendeiro curves around the nortelesteern corner of Brigantia here.
-Thick, impassable woods are Cara o norte and leste, while the long
-dirt road continua cara o oeste and sur.
+O sendeiro curves around the NorteLesteern corner of Brigantia here.
+Thick, impassable woods are Cara o Norte and Leste, while the long
+dirt road continua cara o Oeste and Sur.
 ~
 0 1048576 1
 D2
-O sendeiro continua cara o sur.
+O sendeiro continua cara o Sur.
 ~
 ~
 0 -1 21107
 D3
-O sendeiro segue cara o oeste.
+O sendeiro segue cara o Oeste.
 ~
 ~
 0 -1 21105
 S
 #21107
 Nun tramo contornando Brigantia~
-The long path begins to curve here, preparing for a turn around the
-nortelesteern corner of Brigantia.  A line of archers stand atop the
-city's battlements.  O sendeiro stretches Cara o norte and sur.
+Curvase o Sendeiro á volta da esquina NorteLeste de Brigantia. 
+Grosas fragas son intransitables cara o norte e leste, mentres que ao longo 
+a estrada de terra segue de cara o Oeste e Sur.
 ~
 0 1048576 1
 D0
@@ -4606,46 +4607,45 @@ O sendeiro curvase arredor da esquina norleste de Brigantia.
 ~
 0 -1 21106
 D2
-A rua continua cara o sur.
+A rua continua cara o Sur.
 ~
 ~
 0 -1 21108
 S
 #21108
 Nun tramo contornando Brigantia~
-You are on a long dirt road which lines the lesteern wall of Brigantia.
-A thick, impassable forest cae cara o leste, while Cara o norte the
-trail begins to curve.
+Estás nunha longa estrada de terra que reviste a parede Leste de Brigantia. 
+O espesor, intransponível fraga que cae de cara o Leste, mentres que ao Norte
+comeza a curva.
 ~
 0 1048576 1
 D0
-O tramo stretches norteward.
+O tramo ensanchase ao Norte.
 ~
 ~
 0 -1 21107
 D2
-O sendeiro continua cara o sur.
+O sendeiro continua cara o Sur.
 ~
 ~
 0 -1 21109
 S
 #21109
 Nun tramo contornando Brigantia~
-A mystical portal floats in the sky above here, the glowing myriad
-of colors which emanates from within mesmerizes you, urging you to
-explore what lies beyond.  Suddenly a moment of clarity comes to
-you as you realize the dangers of entering the Machine Dream.
-You think twice about taking the step, and cast your eyes down the
-dirt road which leads norte and sur from here.
+Un portal místico flota no ceo por riba de aquí, a miríade brillante 
+de cor que emana do seu interior fascinate, pedíndo para explotar o que está
+alén. De súpeto, un momento de claridade chega a ti, como entendes o perigo
+de entrar na Máquina dos Soños, pensas dúas veces antes de dar o paso, e
+lanzas os ollos para abaixo da estrada de terra que leva ao Norte e Sur daquí.
 ~
 0 1048576 1
 D0
-A rua heads norteward.
+A rua encabeza ao Norte.
 ~
 ~
 0 -1 21108
 D2
-A rua extends Cara o sur.
+A rua extendese cara o Sur.
 ~
 ~
 0 -1 21110
@@ -4653,135 +4653,134 @@ S
 #21110
 Nun tramo contornando Brigantia~
 You begin to kick a rock down the long dirt trail, growing bored at
-the endless trees Cara o leste and the limitless wall Cara o oeste.
-Yet the trail continua cara o norte and sur, leading onward
+the endless trees Cara o Leste and the limitless wall Cara o Oeste.
+Yet the trail continua cara o Norte and Sur, leading onward
 around the city of Brigantia.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
+O sendeiro continua cara o Norte.
 ~
 ~
 0 -1 21109
 D2
-A rua continua cara o sur.
+A rua continua cara o Sur.
 ~
 ~
 0 -1 21111
 S
 #21111
-On a Trail Norte of the lesteern Gate~
-You are walking down a trail just norte of the lesteern gate.  A forest thick
-with undergrowth is Cara o leste, and as you approach it you realize it is
-too dense to allow you to proceed further.  The long road extends to the
-norte and sur.
+Comeza a chutar unha pedra pola banda de terra longa, crecendo o aburrimento
+nas árbores infinitas cara o Leste e a parede sen límites ao Oeste. Con todo,
+a banda segue de cara o Norte e Sur, levandote adiante ao redor da cidade de
+Brigantia.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
-~
+O sendeiro continua cara o Norte.
 ~
 0 -1 21110
 D2
-Brigantia's lesteern gate is Cara o sur.
+A Porta Leste de Brigantia está cara o Sur.
 ~
 ~
 0 -1 21112
 S
 #21112
-Outside the lesteern Gate~
-You are standing just ouside the lesteern gate of Brigantia.  Soldiers walk
-the city's walls, keeping garda against whatever may come.  A road runs 
-Cara o norte and sur around the city walls.
+Fora da Porta Leste~
+Estás en pé só fora da porta Leste de Brigantia. Soldados a pé nos muros do  
+castro, manteñen Garda contra o que pode vir. A estrada discorre cara o Norte
+e Sur en torno ós muros do castro.
 ~
 0 1048580 1
 D0
-Un sendeiro comeza Cara o norte.
+Un sendeiro comeza Cara o Norte.
 ~
 ~
 0 -1 21111
 D1
-A rua continues out inCara o countryside.
+A rua continua fora cara a chaira.
 ~
 ~
 0 -1 3503
 D2
-A road begins Cara o sur.
+Unha rúa comeza cara o Sur.
 ~
 ~
 0 -1 21114
 D3
-The gate leads into Brigantia.
+A Porta conduce dentro de Brigantia.
 ~
-gate~
+porta~
 7 21072 21113
 S
 #21113
-Inside the lesteern Gate~
-You stand inside the lesteern gate of Brigantia.  Cara o oeste is the
-intersection of Rua Horizonte and Rua Falcon.
+Dentro da Porta Leste~
+Estás dentro da porta Leste de Brigantia. Cara o Oeste esta a intersección
+da Rúa Horizonte e a Rúa Falcon.
 ~
 0 1048580 1
 D1
-The gate leads out of Brigantia.
+A Porta conduce fora de Brigantia.
 ~
 gate~
 7 21072 21112
 D3
-Two roads cruzanse cara o oeste.
+Dúas rúas cruzanse cara o Oeste.
 ~
 ~
 0 -1 21012
 S
 #21114
-On a Trail sur of the leste Gate~
-You are walking on a dirt trail just sur of the lesteern gate on a road
-which circles the city walls.
+Nun tramo ao Sur da Porta Leste~
+Estás camiñando nunha montaña de terra aó Sur da porta Leste nunha estrada 
+que rodea as murallas do castro.
 ~
 0 1048576 1
 D0
-The lesteern gate is Cara o norte.
+A Porta Leste está cara o Norte.
 ~
 ~
 0 -1 21112
 D2
-A rua continua cara o sur.
+A rua continua cara o Sur.
 ~
 ~
 0 -1 21115
 S
 #21115
 Nun tramo contornando Brigantia~
-The dirt road curves slightly here as it maneuvers around an old abandoned
-cart.  The cart is missing its two rear wheels, probably stolen during the
-night by a band of thieves.  The lengthy path ranges norte and sur.
+As curvas da estrada de terra suavizanse un pouco aquí, ves as manobras en
+torno a un vello abandonado carro. A cesta falta das dúas rodas traseiras,
+probablemente roubada durante a noite por unha banda de ladróns. O camiño
+e longo e varía de Norte a Sur
 ~
 0 1048576 1
 D0
-O tramo continua cara o norte.
+O tramo continua cara o Norte.
 ~
 ~
 0 -1 21114
 D2
-O sendeiro continua cara o sur.
+O sendeiro continua cara o Sur.
 ~
 ~
 0 -1 21116
 S
 #21116
 Nun tramo contornando Brigantia~
-You are on a dirt road which lines the lesteern wall of Brigantia, famed
-City of Hope.  From here, you can see the Tower of Sorcery peeking into
-view above the towering wall.  O sendeiro continues norte and sur.
+Estás nunha estrada de terra que reviste a parede Leste de Brigantia, o famoso 
+Castro da Esperanza. A partir de aquí, podes ver a Torre do Encantamento espiando 
+ver enriba o muro imponente. O Sendeiro segue Norte e Sur
 ~
 0 1048576 1
 D0
-A rua continua cara o norte.
+A rua continua cara o Norte.
 ~
 ~
 0 -1 21115
 D2
-O sendeiro continua cara o sur.
+O sendeiro continua cara o Sur.
 ~
 ~
 0 -1 21117
@@ -4789,17 +4788,17 @@ S
 #21117
 Nun tramo contornando Brigantia~
 You are walking down a long dirt road which hugs the outer wall of
-Brigantia tightly.  An impassable forest is Cara o leste, while the
-trail extends Cara o norte and sur.
+Brigantia tightly.  An impassable forest is Cara o Leste, while the
+trail extends Cara o Norte and Sur.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
+O sendeiro continua cara o Norte.
 ~
 ~
 0 -1 21116
 D2
-A rua continua cara o sur.
+A rua continua cara o Sur.
 ~
 ~
 0 -1 21118
@@ -4807,16 +4806,16 @@ S
 #21118
 Nun tramo contornando Brigantia~
 You are on a lengthy dirt road which circles all around the city of
-Brigantia.  O sendeiro here ranges Cara o norte and sur.
+Brigantia.  O sendeiro here ranges Cara o Norte and Sur.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
+O sendeiro continua cara o Norte.
 ~
 ~
 0 -1 21117
 D2
-A rua continua cara o sur.
+A rua continua cara o Sur.
 ~
 ~
 0 -1 21119
@@ -4824,18 +4823,18 @@ S
 #21119
 Nun tramo contornando Brigantia~
 You begin to grow tired of seeing the lengthy dirt road which lines
-the outer walls of Brigantia.  Gazing Cara o sur, you can make out
+the outer walls of Brigantia.  Gazing Cara o Sur, you can make out
 the Brigantia River flowing from a tunnel in a huge mountain.  The
-path stretches Cara o norte and oeste.
+path stretches Cara o Norte and Oeste.
 ~
 0 1048576 1
 D0
-O sendeiro continua cara o norte.
+O sendeiro continua cara o Norte.
 ~
 ~
 0 -1 21118
 D3
-A rua continua cara o oeste.
+A rua continua cara o Oeste.
 ~
 ~
 0 -1 21120
@@ -4843,17 +4842,17 @@ S
 #21120
 Nun tramo contornando Brigantia~
 You begin to run down the endless dirt road which circles the beautiful
-city of Brigantia.  The sound of rushing water can be heard Cara o sur,
-while the path extends Cara o leste and oeste.
+city of Brigantia.  The sound of rushing water can be heard Cara o Sur,
+while the path extends Cara o Leste and Oeste.
 ~
 0 1048576 1
 D1
-O sendeiro continua cara o leste.
+O sendeiro continua cara o Leste.
 ~
 ~
 0 -1 21119
 D3
-A rua continua cara o oeste.
+A rua continua cara o Oeste.
 ~
 ~
 0 -1 21121
@@ -4861,35 +4860,35 @@ S
 #21121
 Nun tramo contornando Brigantia~
 You are rounding the city of Brigantia by way of a dirt road.  The
-tall surern wall looms over you, while Cara o sur you can see
-the Brigantia river.  O sendeiro ranges Cara o leste and oeste.
+tall Surern wall looms over you, while Cara o Sur you can see
+the Brigantia river.  O sendeiro ranges Cara o Leste and Oeste.
 ~
 0 1048576 1
 D1
-A rua continua cara o leste.
+A rua continua cara o Leste.
 ~
 ~
 0 -1 21120
 D3
-O sendeiro continua cara o oeste.
+O sendeiro continua cara o Oeste.
 ~
 ~
 0 -1 21122
 S
 #21122
 Nun tramo contornando Brigantia~
-You walk briskly down a path which lines the surern wall of Brigantia.
-The sound of rushing water can be heard Cara o sur, and the road itself
-stretches Cara o leste and oeste.
+You walk briskly down a path which lines the Surern wall of Brigantia.
+The sound of rushing water can be heard Cara o Sur, and the road itself
+stretches Cara o Leste and Oeste.
 ~
 0 1048576 1
 D1
-A rua continua cara o leste.
+A rua continua cara o Leste.
 ~
 ~
 0 -1 21121
 D3
-O sendeiro continua cara o oeste.
+O sendeiro continua cara o Oeste.
 ~
 ~
 0 -1 21123
@@ -4897,40 +4896,40 @@ S
 #21123
 Nun tramo contornando Brigantia~
 You are travelling down a dirt road lined with stunted pine trees.  The
-tall surern wall of Brigantia looms over you.  A steep hill cradles the
-Brigantia River Cara o sur, andt the road extends Cara o leste and oeste.
+tall Surern wall of Brigantia looms over you.  A steep hill cradles the
+Brigantia River Cara o Sur, andt the road extends Cara o Leste and Oeste.
 ~
 0 1048576 1
 D1
-O sendeiro continua cara o leste.
+O sendeiro continua cara o Leste.
 ~
 ~
 0 -1 21122
 D3
-A rua continua cara o oeste.
+A rua continua cara o Oeste.
 ~
 ~
 0 -1 21124
 S
 #21124
-On a Trail leste of the surern Gate~
-You are on a dirt road just leste of the surern gate.  You can hear the
-sound of a hammer striking wood Cara o sur and smile as you picture the
-citiy's Marina which must lie just ahead.  O tramo continues leste and oeste.
+On a Trail Leste of the Surern Gate~
+You are on a dirt road just Leste of the Surern gate.  You can hear the
+sound of a hammer striking wood Cara o Sur and smile as you picture the
+citiy's Marina which must lie just ahead.  O tramo continues Leste and Oeste.
 ~
 0 1048576 1
 D1
-A rua continua cara o leste.
+A rua continua cara o Leste.
 ~
 ~
 0 -1 21123
 D2
-The Brigantia Marina cae cara o sur.
+The Brigantia Marina cae cara o Sur.
 ~
 ~
 0 -1 21275
 D3
-Cara o oeste is the surern gate of Brigantia.
+Cara o Oeste is the Surern gate of Brigantia.
 ~
 ~
 0 -1 21075
@@ -4940,16 +4939,16 @@ Outside the Tower of Sorcery~
 Green foliage borders a cobblestone path which leads up a flight of
 stairs into Brigantia's Tower of Sorcery.  The tall monument to magic
 looms ominously over you.  Rumor has it that only members of the Guild
-of Mages may enter the tower, all others being forced back norteward.
+of Mages may enter the tower, all others being forced back Norteward.
 ~
 0 3145732 1
 D0
-Rua Horizonte is Cara o norte.
+Rua Horizonte is Cara o Norte.
 ~
 ~
 0 -1 21037
 D2
-The Tower of High Sorcery cae cara o sur.
+The Tower of High Sorcery cae cara o Sur.
 ~
 ~
 0 -1 21127
@@ -4971,9 +4970,9 @@ Brigantia's Tower of Sorcery.  Walls crafted of smooth obsidian are covered
 with hoards of sorcerous runes, splitting even the smallest reflection into
 a dazzling array of shimmering images.  A circular rune of power flares
 brightly in the center of the room as a mage recalls in from the wilderness.
-adroways extend Cara o surleste, surwest and oeste.  A huge library opens
-Cara o oeste, a chamber covered with runes is Cara o surwest and a chamber
-of meditation is Cara o surleste.  Almost hidden from view above, an alcove
+adroways extend Cara o SurLeste, SurOeste and Oeste.  A huge library opens
+Cara o Oeste, a chamber covered with runes is Cara o SurOeste and a chamber
+of meditation is Cara o SurLeste.  Almost hidden from view above, an alcove
 leads Cara o Court of the Conclave.
 ~
 0 3145740 0
@@ -4983,7 +4982,7 @@ The archway leads back Cara o streets of Brigantia.
 ~
 0 -1 21126
 D3
-An immense library is at the end of the corridor Cara o oeste.
+An immense library is at the end of the corridor Cara o Oeste.
 ~
 ~
 0 -1 21128
@@ -4993,12 +4992,12 @@ A long stairway leads upward.
 ~
 0 -1 21131
 D8
-The Chamber of Meditation cae cara o surleste.
+The Chamber of Meditation cae cara o SurLeste.
 ~
 ~
 0 -1 21129
 D9
-A chamber covered with runes cae cara o surwest.
+A chamber covered with runes cae cara o SurOeste.
 ~
 ~
 0 -1 21071
@@ -5010,7 +5009,7 @@ the guild keep their irreplaceable tomes of magic.  The domed chamber is
 illuminated by a cluster of floating globes of light.  In the dead center
 of the library is a podium made of gold, stone and obsidian, upon which
 sits a magical tome, allowing you to communicate with your fellow mages
-by will alone.  Cara o leste, a corridor leads back Cara o main adro of
+by will alone.  Cara o Leste, a corridor leads back Cara o main adro of
 the Tower of Sorcery.
 ~
 0 3145740 0
@@ -5026,9 +5025,9 @@ A powerful magical heat strikes you upon entering this room.  It is here
 that the mages practice their diverse number of spells.  A powerful altar
 in the center of the chamber channels the power of the Mistress of Magic
 to all who stand here.  A sage is resting upon a marble bench, teaching
-a group of initiates a new spell. Lining the lesteern wall is a row of
+a group of initiates a new spell. Lining the Lesteern wall is a row of
 statues, each one made of different materials and elements. A corridor
-leads back Cara o main adro Cara o nortewest.
+leads back Cara o main adro Cara o NorteOeste.
 ~
 0 3145740 0
 D7
@@ -5084,13 +5083,13 @@ the members of the Irmandade dos Mages, regardless of the color of robe they
 have chosen, gather to discuss topics from the mundane Cara o supernatural.
 Seats made of either white ivory, grey stone, or black obsidian have been
 situated around a single podium in the center of the room, behind which
-the speaker stands.  Three aisles lead off Cara o norte, surleste and
-surwest, while an alcove cloaked in shadows leads back down to the
+the speaker stands.  Three aisles lead off Cara o Norte, SurLeste and
+SurOeste, while an alcove cloaked in shadows leads back down to the
 main adro of the Tower of Sorcery.
 ~
 0 3145740 0
 D0
-The Court of the Grey Robes cae cara o norte.
+The Court of the Grey Robes cae cara o Norte.
 ~
 ~
 0 -1 21072
@@ -5100,12 +5099,12 @@ The stairs lead back down Cara o main adro.
 ~
 0 -1 21132
 D8
-The Court of the Black Robes cae cara o surleste.
+The Court of the Black Robes cae cara o SurLeste.
 ~
 ~
 0 -1 21073
 D9
-The Court of the White Robes cae cara o surwest.
+The Court of the White Robes cae cara o SurOeste.
 ~
 ~
 0 -1 21380
@@ -5115,10 +5114,10 @@ Foyer of an Abandoned Mansion~
 You find yourself in a large and seemingly abandoned mansion.  It is quite
 aged, and its furniture and tapestries have been ruined utterly.  A single
 decoration remains undamaged:  the statue of a fearsome vampire, which you
-notice seems to drip fresh blood from its stone fangs, surely a warning to
+notice seems to drip fresh blood from its stone fangs, Surely a warning to
 any who would disturb the rest of the undead.  A flight of stone stairs
 leads into a foreboding darkness beneath the mansion, while a door to
-the sur exits onto Avenida das Leis.
+the Sur exits onto Avenida das Leis.
 ~
 0 3145740 0
 D2
@@ -5149,18 +5148,18 @@ You have entered a set of catacombs beneath one of the abandoned mansions
 of Brigantia.  What should have been a musty, unused group of tunnels has
 been renovated inCara o Irmandade dos Vampires.  New chambers have been carved
 inCara o ground, and numerous coffins have been carried down into this
-very room.  Five corridors lie Cara o leste, sur, oeste, norteleste
-and nortewest, while a staircase leads back up inCara o mansion and a
+very room.  Five corridors lie Cara o Leste, Sur, Oeste, NorteLeste
+and NorteOeste, while a staircase leads back up inCara o mansion and a
 private staircase leads inCara o Leadership Chamber below.
 ~
 0 3145736 0
 D1
-A sparring room cae cara o leste.
+A sparring room cae cara o Leste.
 ~
 ~
 0 -1 21137
 D2
-A silent reading room is Cara o sur.
+A silent reading room is Cara o Sur.
 ~
 ~
 0 -1 21136
@@ -5170,12 +5169,12 @@ The stairs lead back up inCara o mansion.
 ~
 0 -1 21134
 D6
-A room covered with blood cae cara o norteleste.
+A room covered with blood cae cara o NorteLeste.
 ~
 ~
 0 -1 21138
 D7
-The Hoard of the Undead is Cara o nortewest.
+The Hoard of the Undead is Cara o NorteOeste.
 ~
 ~
 0 -1 21139
@@ -5189,8 +5188,8 @@ A Stone Grotto~
 This low stone chamber is completely silent, its walls covered in runes
 of privacy and secrecy.  A single altar of obsidian resides in the center
 of the floor, droplets of fresh blood rolling endlessly down its smooth
-surface.  Atop the beautiful stone lies an ancient tome recording the
-times of the kindred.  A corridor norte leads back Cara o main adro.
+Surface.  Atop the beautiful stone lies an ancient tome recording the
+times of the kindred.  A corridor Norte leads back Cara o main adro.
 ~
 0 3145736 0
 D0
@@ -5204,8 +5203,8 @@ The Chamber of Discipline~
 The Chamber of Discipline is where those of the Kindred come to learn and
 apply new skills and spells.  A horrid rune of death has been drawn in blood
 on the cold stone floor, and a rack sporting numerous bloodied weapons sits
-against the lesteern wall, inspiring within you an eagerness for battles to
-come.  A corridor Cara o oeste leads back Cara o main adro.
+against the Lesteern wall, inspiring within you an eagerness for battles to
+come.  A corridor Cara o Oeste leads back Cara o main adro.
 ~
 0 3145736 0
 D3
@@ -5238,8 +5237,8 @@ This incredibly large chamber is where the Kindred keep their gathered
 valuables, and some kindred have even been known to leave items behind
 here for the use of their brethren.  The room is enchanted with runes
 of preservation, protecting items left here from even the greatest of
-disasters.  A corridor Cara o surleste leads back Cara o main adro,
-and a passage through the lesteern wall leads to a smaller chamber.
+disasters.  A corridor Cara o SurLeste leads back Cara o main adro,
+and a passage through the Lesteern wall leads to a smaller chamber.
 ~
 0 3686408 0
 D1
@@ -5259,22 +5258,22 @@ Estas dentro do principal adro da Irmandade dos Ladróns. Sofás de veludo
 revestir nas paredes, sen dúbida roubadas dalgún comerciante rico. Pinturas 
 e tapicerías colgadas nas paredes de pedra, mostrando escenas de combate, 
 ladrocinio e vinganza. A sala de adestramento queda cara o Leste mentres
-unha pequena sala de doazón queda cara o norte e unha rúa escura acena cara
-o sur.
+unha pequena sala de doazón queda cara o Norte e unha rúa escura acena cara
+o Sur.
 ~
 0 3145740 0
 D0
-A sala de doazon da Irmandade dos Ladrons esta cara o norte.
+A sala de doazon da Irmandade dos Ladrons esta cara o Norte.
 ~
 ~
 0 -1 21144
 D1
-Cara o leste esta unha sala de entrenamento.
+Cara o Leste esta unha sala de entrenamento.
 ~
 ~
 0 -1 21142
 D2
-A Calexa dos Ladrons cae cara o sur.
+A Calexa dos Ladrons cae cara o Sur.
 ~
 ~
 0 -1 21064
@@ -5299,7 +5298,7 @@ as campás. Ao Oeste esta o principal adro da Irmandade dos Ladróns.
 ~
 0 3145736 0
 D3
-O adro principal da Irmandade dos Ladrons esta cara o oeste.
+O adro principal da Irmandade dos Ladrons esta cara o Oeste.
 ~
 ~
 0 -1 21141
@@ -5309,17 +5308,17 @@ Chamber of the Loot~
 This silent room is where the thieves leave items of little or no value
 to them, usually acquired during their 'spare time'.  Other thieves often
 find the items left here useful and in this way the thieves of the guild
-help each other.  Cara o leste is a small, silent room, while the main
-adro is Cara o sur.
+help each other.  Cara o Leste is a small, silent room, while the main
+adro is Cara o Sur.
 ~
 0 3145736 0
 D1
-The room Cara o leste is where thieves leave notes for their comrades.
+The room Cara o Leste is where thieves leave notes for their comrades.
 ~
 ~
 0 -1 21145
 D2
-The main adro of the guild is Cara o sur.
+The main adro of the guild is Cara o Sur.
 ~
 ~
 0 -1 21141
@@ -5328,25 +5327,25 @@ S
 A Darkened Back Room~
 This shadowed, silent room is bare of any furnishings save for a large
 podium.  Resting atop the podium is a ledger containing notes relevant
-Cara o thieves of the guild.  Cara o oeste is the Chamber of the Loot.
+Cara o thieves of the guild.  Cara o Oeste is the Chamber of the Loot.
 ~
 0 3145736 0
 D3
-The Chamber of the Loot is Cara o oeste.
+The Chamber of the Loot is Cara o Oeste.
 ~
 ~
 0 -1 21144
 S
 #21146
 A Plain adroway~
-You are in a plain adroway inside the inn.  Corridors extend Cara o leste and
-oeste, leading Cara o various rooms of the inn.  Behind a large door to the
-norte is the inn's entrance adro, while beyond a door Cara o sur lies one
+You are in a plain adroway inside the inn.  Corridors extend Cara o Leste and
+Oeste, leading Cara o various rooms of the inn.  Behind a large door to the
+Norte is the inn's entrance adro, while beyond a door Cara o Sur lies one
 of more luxurious rooms.
 ~
 0 3145740 0
 D1
-A plain adroway is Cara o leste.
+A plain adroway is Cara o Leste.
 ~
 ~
 0 -1 21148
@@ -5356,18 +5355,18 @@ A luxurious room lies beyond the door.
 ~
 3 -1 21147
 D3
-A plain adroway is Cara o oeste.
+A plain adroway is Cara o Oeste.
 ~
 ~
 0 -1 21155
 S
 #21147
 A Luxurious Room~
-You are in a fairly luxurious room.  A mirror hangs on the lesteern wall,
+You are in a fairly luxurious room.  A mirror hangs on the Lesteern wall,
 reflecting your staring visage.  Paintings and tapestries hang from the 
 stone walls, making you feel as though you were in a castle.  A large bed 
-which could easily fit three has been set against the surern wall, and 
-a great fire burns quietly in the fireplace in the oeste wall. 
+which could easily fit three has been set against the Surern wall, and 
+a great fire burns quietly in the fireplace in the Oeste wall. 
 ~
 0 3146248 0
 D0
@@ -5380,9 +5379,9 @@ S
 A Plain adroway~
 You walk through a bland adroway in the inn.  A dozen paintings have been
 hung on the walls, although they are not well done and were probably extras
-given away by Brigantia Art Gallery.  Doors Cara o norte and sur lead to
-the inn's more simple rooms, while the corridor stretches Cara o leste
-and oeste.
+given away by Brigantia Art Gallery.  Doors Cara o Norte and Sur lead to
+the inn's more simple rooms, while the corridor stretches Cara o Leste
+and Oeste.
 ~
 0 3145740 0
 D0
@@ -5391,7 +5390,7 @@ Beyond this door is a plain room of the inn.
 ~
 3 -1 21150
 D1
-The adroway continua cara o leste.
+The adroway continua cara o Leste.
 ~
 ~
 0 -1 21151
@@ -5401,7 +5400,7 @@ Beyond this door is a plain room of the inn.
 ~
 3 -1 21149
 D3
-The adroway stretches westward.
+The adroway stretches Oesteward.
 ~
 ~
 0 -1 21146
@@ -5409,14 +5408,14 @@ S
 #21149
 A Plain Room~
 You are in a simple room of the inn, so simple that you are slightly 
-surprised at its low quality, even for the price you paid.  An uncomfortable
+Surprised at its low quality, even for the price you paid.  An uncomfortable
 wooden bed sits in a corner, a small vanity mirror is lying on a desk, and
-more cheap paintings decorate the room's walls.  The door Cara o norte leads
+more cheap paintings decorate the room's walls.  The door Cara o Norte leads
 back out inCara o adroway.
 ~
 0 3146248 0
 D0
-A adroway of the inn is Cara o norte.
+A adroway of the inn is Cara o Norte.
 ~
 ~
 3 -1 21148
@@ -5424,9 +5423,9 @@ S
 #21150
 A Plain Room~
 You are in a simple room of the inn, so simple that you are slightly 
-surprised at its low quality, even for the price you paid.  An uncomfortable
+Surprised at its low quality, even for the price you paid.  An uncomfortable
 wooden bed sits in a corner, a small vanity mirror is lying on a desk, and
-more cheap paintings decorate the room's walls.  The door Cara o sur
+more cheap paintings decorate the room's walls.  The door Cara o Sur
 leads back out inCara o adroway.
 ~
 0 3146248 0
@@ -5439,9 +5438,9 @@ S
 #21151
 A Plain adroway~
 The plain adroway you are walking through is quite drab and is decorated
-by only a few cheap paintings.  The doors Cara o norte and sur lead to
-the inn's simpler rooms, while beyond the lesteern door lies a luxurious
-room intended for wealthier adventurers.  The corridor ranges westward,
+by only a few cheap paintings.  The doors Cara o Norte and Sur lead to
+the inn's simpler rooms, while beyond the Lesteern door lies a luxurious
+room intended for wealthier adventurers.  The corridor ranges Oesteward,
 leading back Cara o entrance adro.
 ~
 0 3145740 0
@@ -5469,9 +5468,9 @@ S
 #21152
 A Plain Room~
 You are in a simple room of the inn, so simple that you are slightly 
-surprised at its low quality, even for the price you paid.  An uncomfortable
+Surprised at its low quality, even for the price you paid.  An uncomfortable
 wooden bed sits in a corner, a small vanity mirror is lying on a desk, and
-more cheap paintings decorate the room's walls.  The door Cara o sur leads
+more cheap paintings decorate the room's walls.  The door Cara o Sur leads
 back out inCara o adroway.
 ~
 0 3146248 0
@@ -5484,9 +5483,9 @@ S
 #21153
 A Plain Room~
 You are in a simple room of the inn, so simple that you are slightly 
-surprised at its low quality, even for the price you paid. An uncomfortable
+Surprised at its low quality, even for the price you paid. An uncomfortable
 wooden bed sits in a corner, a small vanity mirror is lying on a desk, and
-more cheap paintings decorate the room's walls.  The door Cara o norte leads
+more cheap paintings decorate the room's walls.  The door Cara o Norte leads
 back out inCara o adroway.
 ~
 0 3146248 0
@@ -5499,11 +5498,11 @@ S
 #21154
 A Luxurious Room~
 You are in a luxurious room.  You whistle tunelessly as you enjoy the 
-various splendors of the expensive room.  A mirror hangs on the lesteern
+various splendors of the expensive room.  A mirror hangs on the Lesteern
 wall, reflecting your staring visage.  Paintings and tapestries hang from 
 the stone walls, making you feel as though you were in a castle.  A large
-bed which could easily fit three has been set against the surern wall,
-and a great fire burns quietly in the fireplace in the oeste wall.
+bed which could easily fit three has been set against the Surern wall,
+and a great fire burns quietly in the fireplace in the Oeste wall.
 ~
 0 3146248 0
 D3
@@ -5516,9 +5515,9 @@ S
 A Plain adroway~
 You walk through a bland adroway in the inn.  A dozen paintings have been 
 hung on the walls, although they are not well done and were probably extras
-given away by Brigantia Art Gallery.  Doors Cara o norte and sur lead to
-the inn's more simple rooms, while the corridor stretches Cara o leste and
-oeste.
+given away by Brigantia Art Gallery.  Doors Cara o Norte and Sur lead to
+the inn's more simple rooms, while the corridor stretches Cara o Leste and
+Oeste.
 ~
 0 3145740 0
 D0
@@ -5527,7 +5526,7 @@ Beyond the door is a rather plain room.
 ~
 3 -1 21156
 D1
-The adroway stretches lesteward.
+The adroway stretches Lesteward.
 ~
 ~
 0 -1 21146
@@ -5537,33 +5536,33 @@ Past this door is a regular room of the inn.
 ~
 3 -1 21157
 D3
-The corridor continua cara o oeste.
+The corridor continua cara o Oeste.
 ~
 ~
 0 -1 21159
 S
 #21156
 A Plain Room~
-You are in a simple room of the inn, and are slightly surprised to see 
+You are in a simple room of the inn, and are slightly Surprised to see 
 that the chamber is of such a low quality, even for the price you paid.  
 An uncomfortable wooden bed sits in a corner, while a vanity mirror is
 propped up on a desk and more of the same cheap paintings decorate the
-room's walls.  A door Cara o sur leads back out inCara o adroway.
+room's walls.  A door Cara o Sur leads back out inCara o adroway.
 ~
 0 3146248 0
 D2
-A adroway cae cara o sur.
+A adroway cae cara o Sur.
 ~
 ~
 3 -1 21155
 S
 #21157
 A Plain Room~
-You are in a simple room of the inn, and are slightly surprised to see 
+You are in a simple room of the inn, and are slightly Surprised to see 
 that the chamber is of such a low quality, even for the price you paid.  
 An uncomfortable wooden bed sits in a corner, while a vanity mirror is 
 propped up on a desk and more of the same cheap paintings decorate the 
-room's walls.  A door Cara o norte leads back out inCara o adroway.
+room's walls.  A door Cara o Norte leads back out inCara o adroway.
 ~
 0 3146248 0
 D0
@@ -5574,11 +5573,11 @@ The inn's adroway is behind this door.
 S
 #21158
 A Plain Room~
-You are in a simple room of the inn, and are slightly surprised to see 
+You are in a simple room of the inn, and are slightly Surprised to see 
 that the chamber is of such a low quality, even for the price you paid.  
 An uncomfortable wooden bed sits in a corner, while a vanity mirror is 
 propped up on a desk and more of the same cheap paintings decorate the 
-room's walls.  A door Cara o norte leads back out inCara o adroway.
+room's walls.  A door Cara o Norte leads back out inCara o adroway.
 ~
 0 3146248 0
 D0
@@ -5590,9 +5589,9 @@ S
 #21159
 A Plain adroway~
 The plain adroway you are walking through is quite drab, decorated by only
-a few cheap paintings.  The doors Cara o norte and sur lead Cara o inn's
-simpler rooms, while beyond the western one is a luxurious room intended
-for wealthy adventurers.  The corridor ranges lesteward, leading back to
+a few cheap paintings.  The doors Cara o Norte and Sur lead Cara o inn's
+simpler rooms, while beyond the Oesteern one is a luxurious room intended
+for wealthy adventurers.  The corridor ranges Lesteward, leading back to
 the entrance adro.
 ~
 0 3145740 0
@@ -5602,7 +5601,7 @@ A plain room lies beyond this door.
 ~
 3 -1 21160
 D1
-The adroway continua cara o leste.
+The adroway continua cara o Leste.
 ~
 ~
 0 -1 21155
@@ -5619,11 +5618,11 @@ Behind this door is a luxurious room.
 S
 #21160
 A Plain Room~
-You are in a simple room of the inn, and are slightly surprised to see 
+You are in a simple room of the inn, and are slightly Surprised to see 
 that the chamber is of such a low quality, even for the price you paid.
 An uncomfortable wooden bed sits in a corner, while a vanity mirror is
 propped up on a desk and more of the same cheap paintings decorate the 
-room's walls.  A door Cara o sur leads back out inCara o adroway.
+room's walls.  A door Cara o Sur leads back out inCara o adroway.
 ~
 0 3146248 0
 D2
@@ -5635,11 +5634,11 @@ S
 #21161
 A Luxurious Room~
 You are in a luxurious room.  You whistle tunelessly as you enjoy the 
-various splendors of the expensive room.  A mirror hangs on the lesteern 
+various splendors of the expensive room.  A mirror hangs on the Lesteern 
 wall, reflecting your staring visage.  Paintings and tapestries hang from 
 the stone walls, making you feel as though you were in a castle.  A large 
-bed which could easily fit three has been set against the surern wall, 
-and a small fire burns brightly in a fireplace in the oeste wall. 
+bed which could easily fit three has been set against the Surern wall, 
+and a small fire burns brightly in a fireplace in the Oeste wall. 
 ~
 0 3146248 0
 D1
@@ -5652,7 +5651,7 @@ S
 A Shadowy Room Covered With Blood~
 You have entered a shadowy room literally smeared with scarlet stains.
 The stone walls of the square chamber are covered with the blood of 
-innocents, and you smile as you remember your last fleste.  As you look 
+innocents, and you smile as you remember your last fLeste.  As you look 
 around you notice a pretty virgin has been left here for you.
 ~
 0 3145736 0
@@ -5666,8 +5665,8 @@ A Forested Path~
 This small forested path is very wide, large enough to allow the passage
 of carts and horses.  You realize from the constant flow of traffic here
 that it is wide out of necessity, as the citizens of Brigantia constantly
-pass through here on their way to cathedral Cara o nortewest.  The
-Praza de Brigantia is Cara o surleste.
+pass through here on their way to cathedral Cara o NorteOeste.  The
+Praza de Brigantia is Cara o SurLeste.
 ~
 0 1048580 1
 D3
@@ -5686,8 +5685,8 @@ A Forested Path~
 You are walking down a wide forested path, passing by citizens here and
 there.  Gazing at the ground, you see that a pair of horses and a cart
 have passed here recently, most likely bringing supplies to Brigantia's
-church.  The cathedral lies in the distance Cara o nortewest, although
-the path continues westward.  O sendeiro also leads lesteward back to the
+church.  The cathedral lies in the distance Cara o NorteOeste, although
+the path continues Oesteward.  O sendeiro also leads Lesteward back to the
 Praza de Brigantia.
 ~
 0 1048580 1
@@ -5705,12 +5704,12 @@ S
 #21166
 A Fork in the Path~
 The wide, forested road splits here, presenting you with a decision to make.
-Standing in the center of the intersection, paths extend Cara o norte, leste
-and oeste.
+Standing in the center of the intersection, paths extend Cara o Norte, Leste
+and Oeste.
 ~
 0 1048580 1
 D0
-O sendeiro leads norte Cara o cathedral.
+O sendeiro leads Norte Cara o cathedral.
 ~
 ~
 0 -1 21167
@@ -5720,7 +5719,7 @@ O sendeiro leads back to Praza de Brigantia.
 ~
 0 -1 21165
 D3
-O sendeiro leads westward.
+O sendeiro leads Oesteward.
 ~
 ~
 0 -1 21185
@@ -5728,8 +5727,8 @@ S
 #21167
 Outside the Cathedral~
 The cathedral which houses the priests and priestesses of Brigantia stands
-before you, open to all comers.  Traveling norte will take you up a flight
-of stairs and inCara o structure, or you can head back Cara o sur.
+before you, open to all comers.  Traveling Norte will take you up a flight
+of stairs and inCara o structure, or you can head back Cara o Sur.
 ~
 0 1048580 3
 D0
@@ -5744,134 +5743,134 @@ The forested path leads back to Praza de Brigantia.
 0 -1 21166
 S
 #21168
-Entry of the Cathedral~
-You stand in the entrance adro of the cathedral of Brigantia.  An aisle leads
-norte inCara o main chamber, at the far end of which stands the cathedral's
-altar, where all come to pray.  Cara o leste and oeste are adroways which lead
-Cara o Irmandade dos Clerics.  The priests and priestesses of the cathedral have
-have allowed the clerics to established their guild within the confines of
-the temple for a small fee.  A large archway Cara o sur leads outside.
+Entrada a Torre de Ith~
+Estás no adro principal da entrada da Torre de Ith en Brigantia. Un corredor
+leva ao Norte encara a cámara principal, no extremo do cal se ergue o altar da 
+Torre, onde todos veñen a rezar. Cara o Leste e Oeste son adros que levan á
+Irmandade dos Cregoss. Os sacerdotes e sacerdotisas da Torre permitiron que
+os clérigos establecesen a súa Irmandade dentro dos límites da Torre por unha
+pequena taxa. Un gran arco cara o Sur levarate fóra.
 ~
 0 1048588 0
 D0
-The carpeted walkway leads up Cara o altar.
+A pasarela acarpetada leva ata cara o altar.
 ~
 ~
 0 -1 21181
 D1
-A Irmandade dos Clerics is at the end of this corridor.
+A Irmandade dos Cregoss está ao final deste corredor.
 ~
 ~
 0 -1 21170
 D2
-The archway leads out of the church.
+O Arco condúcirate fora da Torre.
 ~
 ~
 0 -1 21167
 D3
-A Irmandade dos Clerics is at the end of this corridor.
+A Irmandade dos Cregoss está ao final deste corredor.
 ~
 ~
 0 -1 21177
 S
 #21170
-The Cleric's Guild~
-You are standing in the lesteern adro of the cleric's guild, an organization
-dedicated to bringing clerics together in worship.  Paintings and tapestries
-decorate the walls, while a large oval carpet covers the marble floor.  To
-the leste is the Altar to Evil, while two corridors extend Cara o norte and
-sur.  The entrance adro of the cathedral is Cara o oeste.
+A Irmandade dos Cregoss~
+Estás en pé no adro Leste da Irmandade dos Cregoss, unha organización 
+dedicada a ensinar clérigos xuntos en adoración. Pinturas e tapices decoran as
+paredes, mentres que unha gran alfombra oval cobre o chan de mármore. Para ao
+Leste esta o Altar do Mal, mentres dous corredores esténdense cara o Norte
+e Sur do adro na entrada da catedral e cara o Oeste.
 ~
 0 3145740 0
 D0
-A long corridor leads Cara o Chamber of Prayer.
+Un longo corredor leva cara a Cámara de Oración.
 ~
 ~
 0 -1 21171
 D1
-The Altar of Evil is Cara o leste.
+O Altar do Mal está cara o Leste.
 ~
 ~
 0 -1 21176
 D2
-A long corridor leads to a silent room.
+Un longo corredor leva a unha sala silenciosa.
 ~
 ~
 0 -1 21172
 D3
-The entrance adro of the church is Cara o oeste.
+A entrada ao adro da Torre está cara o Oeste.
 ~
 ~
 0 -1 21168
 > entry_prog 100~
 if isimmort($n)
 or isnpc($n)
-or guild($n) == Irmandade dos Clerics
+or guild($n) == Irmandade dos Cregoss
 else
-  mea 0.$n You may not trespass on this guild.
+  mea 0.$n Non debes entrar en esta Irmandade.
   mptrans 0.$n 21168
 endif
 ~
 |
 S
 #21171
-The Chamber of Prayer~
-This circular chamber is where the clerics of the guild come to pray and
-meditate, as well as to train their various skills and spells.  A circle
-of white and black candles sit in the center of the chamber, flickering
-quietly, and the walls are covered with tapestries of the known Gods
-whom the clerics worship.  A long corridor Cara o sur leads back
-Cara o lesteern adro of the Cleric's Guild.
+A Cámara da Oración~
+Esta cámara circular é onde os clérigos da Irmandade veñen para rezar e 
+meditar, así como para adestrar as súas varias habilidades e maxias. Un
+círculo de velas brancas e negras asentase no centro da cámara, chiscando 
+en voz baixa, as paredes están cubertas con tapicerías dos deuses coñecidos 
+os cales os clérigos adoran. Un longo corredor cara o Sur leva de volta 
+cara o Adro Leste da Irmandade dos Cregoss.
 ~
 0 3145740 0
 D2
-The corridor leads back Cara o lesteern adro.
+Este corredor volve cara o Adro Leste.
 ~
 ~
 0 -1 21170
 S
 #21172
-The Chamber of the Scriptures~
-You enter a strangely silent room.  A single podium sits in the center of
-the chamber, atop which rests an ancient tome, whispering the words of
-the Gods.  It is here that the members of the Cleric's Guild come to
-communicate with each other, and with their Gods.  A long corridor
-leads norteward back Cara o lesteern adro.
+A Cámara das Escrituras~
+Entras nunha sala estrañamente silenciosa. Un único podio queda no centro da 
+cámara, sobre a cal repousa un tomo antigo, murmurando as palabras de Deuses.
+É aquí que os membros da Alianza dos Cregoss chegan a comunicar uns cos
+outros, e cos seus deuses. Un longo corredor ao Norte leva de volta cara o
+Adro Leste.
 ~
 0 3145740 0
 D0
-The corridor leads back Cara o lesteern adro.
+The corridor leads back Cara o Lesteern adro.
 ~
 ~
 0 -1 21170
 S
 #21174
-Public Notices~
-Here the citizens of the city come to read and trade information about the
-events of their time.  A large board hangs on the far wall, serving to carry
-the word of the common people one to another, and people mill slowly by,
-reading and perusing notes in the silent atmosphere.
+Novas Públicas~
+Aquí, os cidadáns da cidade chegan a ler información sobre o comercio e 
+acontecementos do seu tempo. Un gran cadro colgado na parede do fondo, serve
+para levar a palabra das persoas comúns duns para os outros, e todos
+lentamente por quendas, van lendo e lendo notas na atmosfera silenciosa.
 ~
 0 1377292 0
 D1
-The cathedral altar is Cara o leste.
+O Altar da Torre está cara o Leste.
 ~
 ~
 1 -1 21194
 S
 #21176
-Before the Altar to Evil~
-The Altar to Evil glows ominously here, a foul wound in this pristine
-temple.  Barely accepted by those of the cathedral, the cleric's
-guild was allowed to keep the shrine due to a necessity to maintain
-the True Neutral.  The altar is made of cold obsidian which seems to
-radiate a darkness, and runes of permanence, preservation and death
-have been engraved in it.  The clerics of evil often come here to
-receive blessing and healing.
+Entrando no Altar do Mal~
+O Altar do Mal brilla ameazadoramente aquí, unha ferida falla neste
+intocable templo. O Mal aceptado por aqueles da Torre, o Crego da Irmandade
+foi autorizado a manter o santuario, debido a unha necesidade de manter a
+neutralidade. O altar está feito de fría obsidiana e parece irradiar unha
+escuridade, e tradición de permanencia, a preservación ea morte a
+ser gravado nel. Os clérigos do mal, moitas veces veñen aquí para recibir
+bendición e curarse.
 ~
 0 3145740 0
 D3
-The lesteern adro of the cleric's guild cae cara o oeste.
+O Adro Leste da Irmandade dos Cregoss cae cara o Oeste.
 ~
 ~
 0 -1 21170
@@ -5879,8 +5878,8 @@ The lesteern adro of the cleric's guild cae cara o oeste.
 if isimmort($r)
 or isgood($r)
 else
-  mpforce $r pray
-  c heal $r
+  mpforce $r rezar
+  c curar $r
 endif
 ~
 > rand_prog 50~
@@ -5888,72 +5887,72 @@ if isimmort($r)
 or isgood($r)
 else
   mpforce $r grovel
-  c bless $r
+  c bendecir $r
 endif
 ~
 |
 S
 #21177
-The Cleric's Guild~
-You are standing in the western adro of the cleric's guild, an organization
-dedicated to bringing clerics together in worship.  Paintings and tapestries
-decorate the walls while a large oval carpet covers the marble floor.  To
-the oeste is the Altar to Good, while a corridor extends Cara o norte.  The
-entrance adro of the cathedral is Cara o leste.
+A Irmandade dos Cregoss~
+Estás en pé no adro Oeste da Irmandade dos Cregoss, unha organización 
+dedicada a causar clérigos xuntos en adoración. Pinturas e tapices 
+decoran as paredes, mentres que un gran alfombra oval cobre o chan de mármore.
+Para o Oeste está o Altar do Ben, mentres que un corredor se estende cara o
+Norte. A entrada ao adro da catedral está o cara o Leste.
 ~
 0 3145740 0
 D0
-The Chamber of Donation is Cara o norte.
+A Cámara de Doación está cara o Norte.
 ~
 ~
 0 -1 21178
 D1
-The entrance adro Cara o church is Cara o leste.
+A entrada para o Adro da Torre está cara o Leste.
 ~
 ~
 0 -1 21168
 D3
-The Altar to Good is situated Cara o oeste.
+O Altar do Ben está situadoi cara o Oeste.
 ~
 ~
 0 -1 21180
 > entry_prog 100~
 if isimmort($n)
 or isnpc($n)
-or guild($n) == Irmandade dos Clerics
+or guild($n) == Irmandade dos Cregoss
 else
-  mea 0.$n You may not trespass on this guild.
+  mea 0.$n Non debes entrar en esta Irmandade.
   mptrans 0.$n 21168
 endif
 ~
 |
 S
 #21178
-The Chamber of Charity~
-This large chamber is where the clerics of the guild leave donations for
-their comrades.  The room is filled with a multitude of religious artifacts
-and symbols, as well as thousands of vials of holy water.  A long corridor
-leads back Cara o western adro of the Cleric's Guild Cara o sur.
+A Cámara da Caridade~
+Esta gran cámara é onde os clérigos da Irmandade deixan doazóns para os 
+seus camaradas. A sala está chea dunha infinidade de artefactos relixiosos 
+e símbolos, así como de miles de frascos de auga bendita. Un longo corredor 
+leva de volta cara o adro Oeste da Irmandade dos Cregos cara o Sur.
 ~
 0 3686412 0
 D2
-The corridor leads Cara o western adro of the guild.
+O corredor conduce cara o adro Oeste da Irmandade.
 ~
 ~
 0 -1 21177
 S
 #21180
-Before the Altar to Good~
-You are standing before the Altar to Good, a monument Cara o powers of
-light.  The altar's smooth platinum surface radiates a brilliant white
-light, and being near it gives you a sense of peace and security.  The
-priests and priestesses of the cathedral themselves encouraged the
-placement of this altar, unlike its antithesis, Cara o leste.  The
-western adro of the cleric's guild is Cara o leste.
+Entrando no Altar do Ben~
+Estás en pé diante do Altar do Ben, un monumento cara o poder da luz.
+A superficie lisa de platino do altar irradia un branco de luz brillante,
+estar preto dá unha sensación de paz e seguridade. Os sacerdotes e
+sacerdotisas da Torre están encoraxados a colocación deste altar, ao
+contrario que a súa antítese, cara o Leste. O Adro Oeste da Irmandade dos
+Cregos está o cara Leste.
 ~
 0 3145740 0
 D1
-The western adro of the guild cae cara o leste.
+The Oesteern adro of the guild cae cara o Leste.
 ~
 ~
 0 -1 21177
@@ -5979,8 +5978,8 @@ S
 Inside the Cathedral~
 Walking down the aisle leads Cara o cathedral altar, you smile at the beauty
 this church.  Rows of pews are to your left and right, filled with citizens
-paying their dues to their gods in prayer.  Two archways Cara o norte lead
-into chambers of donation, while the cathedral entrance is Cara o sur.
+paying their dues to their gods in prayer.  Two archways Cara o Norte lead
+into chambers of donation, while the cathedral entrance is Cara o Sur.
 ~
 0 1048588 0
 D0
@@ -5997,18 +5996,18 @@ S
 #21182
 Inside the Cathedral~
 You are in the aisle which leads Cara o cathedral's altar.  A serene melody
-floats through the air.  Two grand archways lie Cara o leste and oeste, opening
-into chambers of donation.  The pews of the church are Cara o sur, while
-the altar itself cae cara o norte.
+floats through the air.  Two grand archways lie Cara o Leste and Oeste, opening
+into chambers of donation.  The pews of the church are Cara o Sur, while
+the altar itself cae cara o Norte.
 ~
 0 3407884 0
 D0
-The Altar to Thoric is Cara o norte.
+The Altar to Thoric is Cara o Norte.
 ~
 ~
 16777216 -1 21194
 D1
-A chamber of donation is Cara o leste.
+A chamber of donation is Cara o Leste.
 ~
 ~
 0 -1 21192
@@ -6018,7 +6017,7 @@ The aisle leads back Cara o pews of the cathedral.
 ~
 0 -1 21181
 D3
-A chamber of donation is Cara o oeste.
+A chamber of donation is Cara o Oeste.
 ~
 ~
 0 -1 21193
@@ -6034,8 +6033,8 @@ S
 A Forested Path~
 This part of the forested path is much more narrow, definitely due to the
 lack of horses and carts that pass through here.  The merry chirping of
-birds amuses you as you continue on your way.  Cara o surwest is a
-forest clearing, while a fork in the road cae cara o leste.
+birds amuses you as you continue on your way.  Cara o SurOeste is a
+forest clearing, while a fork in the road cae cara o Leste.
 ~
 0 1048580 1
 D0
@@ -6044,24 +6043,24 @@ This path leads Cara o Irmandade dos Agoreiros.
 ~
 0 -1 21435
 D1
-A fork in the road is Cara o leste.
+A fork in the road is Cara o Leste.
 ~
 ~
 0 -1 21166
 D9
-A large clearing cae cara o surwest.
+A large clearing cae cara o SurOeste.
 ~
 ~
 0 -1 21186
 S
 #21186
 A Clearing in the Forest~
-You find yourself in a large clearing in the forest which surrounds the
+You find yourself in a large clearing in the forest which Surrounds the
 cathedral.  The remains of the ancient Temple of Brigantia are scattered
 about.  The head of Odin's statue, sliced from its body by some unholy blade,
 stares almost sadly at you.  A staircase leads down into what remains of the
 Temple's catacombs, which the druids of Brigantia have reconstructed.  The
-forested path cae cara o norteleste.
+forested path cae cara o NorteLeste.
 ~
 0 3145732 1
 D5
@@ -6070,7 +6069,7 @@ The steps lead down inCara o Irmandade dos Druids.
 ~
 0 -1 21187
 D6
-The forested trail extends Cara o norteleste.
+The forested trail extends Cara o NorteLeste.
 ~
 ~
 0 -1 21185
@@ -6092,7 +6091,7 @@ a magnificent guild adro.  Potted plants line the walls of the main adro,
 while creeping vines cover the walls.  In the center of the room, seven
 black lacquer chairs circle an oaken table.  Four corridors lie in the
 four cardinal directions, while the thud of staff striking staff
-emerges from a room Cara o sur.
+emerges from a room Cara o Sur.
 ~
 0 3145740 0
 D0
@@ -6101,17 +6100,17 @@ A spacious room lies at the end of this corridor.
 ~
 0 -1 21188
 D2
-A training room cae cara o sur.
+A training room cae cara o Sur.
 ~
 ~
 0 -1 21190
 D3
-A silent room is located oeste of here.
+A silent room is located Oeste of here.
 ~
 ~
 0 -1 21191
 D4
-A flight of stairs lead back up Cara o surface.
+A flight of stairs lead back up Cara o Surface.
 ~
 ~
 0 -1 21186
@@ -6121,13 +6120,13 @@ A Spacious Room~
 This spacious room is where the druids of the guild leave items for their
 fellow druids, and mounds of equipment, scrolls and potions are lying here.
 The tiled floor of the large room is covered with runes of preservation and
-permanence, giving you the feeling that items in this room could survive
-even the greatest of disasters.  A corridor Cara o sur leads back to
+permanence, giving you the feeling that items in this room could Survive
+even the greatest of disasters.  A corridor Cara o Sur leads back to
 the main adro.
 ~
 0 3686412 0
 D2
-The main adro of the guild cae cara o sur.
+The main adro of the guild cae cara o Sur.
 ~
 ~
 0 -1 21187
@@ -6137,7 +6136,7 @@ The Trial of Lore~
 This room is where the druids come to train and meditate.  A large circle
 formed of green shrubs lies in the center of the room, and within it spar
 two elder druids, each wielding a heavy oaken staff.  A corridor to the
-norte leads back Cara o main adro of the Irmandade dos Druids.
+Norte leads back Cara o main adro of the Irmandade dos Druids.
 ~
 0 3145740 0
 D0
@@ -6152,7 +6151,7 @@ This strange room is rather empty, save for a single oaken podium which
 sits in the center of the eerily silent chamber.  Upon it rests a tome so
 fraught with age that its pages are a sickened yellow.  This is where the
 druids of the guild leave messages for one another.  A corridor to the
-leste leads back Cara o main adro of the Irmandade dos Druids.
+Leste leads back Cara o main adro of the Irmandade dos Druids.
 ~
 0 3146252 0
 D1
@@ -6162,11 +6161,11 @@ A corridor leads back Cara o main adro of the guild.
 0 -1 21187
 S
 #21192
-lesteern Donation Room~
+Lesteern Donation Room~
 This small chamber is where those of charitable hearts leave behind items
 of use to other adventurers.  The priests and priestesses of the cathedral
 do not condone those who leave armor and weapons here however, as that is
-reserved for the chamber Cara o far oeste.
+reserved for the chamber Cara o far Oeste.
 ~
 0 1851404 0
 D3
@@ -6180,7 +6179,7 @@ Oesteern Donation Room~
 This small chamber is where those of charitable hearts may leave behind
 weapons and pieces of armor for others.  The priests and priestesses of
 the cathedral do not condone those who leave other types of items here,
-as that is reserved for the room Cara o far leste.
+as that is reserved for the room Cara o far Leste.
 ~
 0 1851404 0
 D1
@@ -6193,7 +6192,7 @@ S
 The Cathedral Altar~
 You are before the cathedral's altar.  Those of ill luck or poor faith often
 come here to pray to their God for guidance, or chance.  An aisle leads back
-sur through the cathedral, while a large public board cae cara o oeste.
+Sur through the cathedral, while a large public board cae cara o Oeste.
 ~
 0 1319944 0
 D2
@@ -6202,7 +6201,7 @@ The walkway leads back Cara o pews.
 ~
 0 -1 21182
 D3
-The public board room of Brigantia cae cara o oeste.
+The public board room of Brigantia cae cara o Oeste.
 ~
 ~
 0 -1 21174
@@ -6210,7 +6209,7 @@ S
 #21200
 A Forested Path~
 You walk on a forested path within the city of Brigantia.  O tramo stretches
-Cara o norteleste, while the Praza de Brigantia cae cara o surwest.
+Cara o NorteLeste, while the Praza de Brigantia cae cara o SurOeste.
 ~
 0 1048580 1
 D6
@@ -6219,7 +6218,7 @@ O sendeiro leads deeper inCara o forest.
 ~
 0 -1 21201
 D9
-The Praza de Brigantia cae cara o surwest.
+The Praza de Brigantia cae cara o SurOeste.
 ~
 ~
 0 -1 21000
@@ -6227,8 +6226,8 @@ S
 #21201
 A Forested Path~
 You travel through a small forest along a path leading toward two unique
-structures, one atop a hill Cara o leste, one a short distance to the
-norte.  O sendeiro becomes a hill Cara o leste, while the surwestern path 
+structures, one atop a hill Cara o Leste, one a short distance to the
+Norte.  O sendeiro becomes a hill Cara o Leste, while the SurOesteern path 
 leads back Cara o Praza de Brigantia. ~
 0 1048580 1
 D1
@@ -6264,7 +6263,7 @@ S
 A Fork in the Path~
 You have come to a fork in the forested path, leaving you with a decision
 to make.  A large wooden sign cries out for attention here, guiding any
-confused travellers, as paths lie Cara o norte, leste and surwest.
+confused travellers, as paths lie Cara o Norte, Leste and SurOeste.
 ~
 0 1048580 1
 D0
@@ -6286,25 +6285,25 @@ E
 sign~
 The sign reads:
   Norte: A Irmandade dos Guerreiros
-  surwest: Praza de Brigantia
-  leste: Ranger's Guild
+  SurOeste: Praza de Brigantia
+  Leste: Ranger's Guild
 ~
 S
 #21205
 A Forested Path~
-The forested path is much more narrow here than Cara o oeste.  Only
+The forested path is much more narrow here than Cara o Oeste.  Only
 an experienced ranger could run down this path without tripping a on
-tree's roots.  A fork in the path is Cara o oeste, while a steep hill
-can be seen Cara o surleste.
+tree's roots.  A fork in the path is Cara o Oeste, while a steep hill
+can be seen Cara o SurLeste.
 ~
 0 1048580 1
 D3
-A fork in the path cae cara o oeste.
+A fork in the path cae cara o Oeste.
 ~
 ~
 0 -1 21204
 D8
-A steep hill can be seen Cara o surleste.
+A steep hill can be seen Cara o SurLeste.
 ~
 ~
 0 -1 21207
@@ -6315,7 +6314,7 @@ You are at the bottom of a long, steep hill.  Gazing upward, you wish
 you could just fly up, but the tree canopy blocks your ascendance.  It
 is no wonder that the Ranger's Guild chose to settle at the top of this
 hill, for only the skilled climbers of the guild could climb the sheer
-face of this near cliff.  O sendeiro leads back nortewest Cara o fork.
+face of this near cliff.  O sendeiro leads back NorteOeste Cara o fork.
 ~
 0 1048580 1
 D4
@@ -6337,7 +6336,7 @@ adro itself is much less of an actual building, and much more of a reshaping
 of natural elements.  Situated around an open clearing in the forest, owing
 Cara o preference most rangers share for being in the open, only a scant few
 buildings can be seen, each scattered one from the other.  Paths lead off to
-the norteleste, leste and sur.
+the NorteLeste, Leste and Sur.
 ~
 0 3145732 1
 D1
@@ -6346,7 +6345,7 @@ O sendeiro leads off to a large clearing.
 ~
 0 -1 21210
 D2
-An ensorcelled building cae cara o sur.
+An ensorcelled building cae cara o Sur.
 ~
 ~
 0 -1 21212
@@ -6377,7 +6376,7 @@ This immense clearing is filled with various items left behind for other
 rangers of the guild.  The eerie hum of magic fills the room, giving you
 the feeling that these items are quite literally under the protection of
 the Gods.  You mutter a silent prayer and slowly begin searching for
-items of use.  Cara o oeste is the main clearing of the Ranger's Guild.
+items of use.  Cara o Oeste is the main clearing of the Ranger's Guild.
 ~
 0 3686404 1
 D3
@@ -6389,7 +6388,7 @@ S
 #21212
 A Silent Building~
 This strange building has been enchanted with runes of silence.  Not a
-single sound can be heard.  Gazing norteward, you see the path leading
+single sound can be heard.  Gazing Norteward, you see the path leading
 back Cara o main clearing.
 ~
 0 3211276 0
@@ -6404,9 +6403,9 @@ Tracking the Prey~
 A Irmandade dos Rangers has built a large practice yard in their part of
 these woods.  An arena sits in the center of the clearing, where the
 young adventurers first begin to fight and learn new spells.  A number
-of other stations surround the arena, teaching young ones how to hunt
+of other stations Surround the arena, teaching young ones how to hunt
 and track.  It is obvious that the Ranger's Guild is a tightly knit
-organization. A path leads back Cara o main clearing Cara o surwest.
+organization. A path leads back Cara o main clearing Cara o SurOeste.
 ~
 0 3145732 1
 D9
@@ -6417,13 +6416,13 @@ The main clearing is at the end of this path.
 S
 #21233
 Stone Tunnel~
-You enter a long, narrow stone tunnel which carries you norteward into
+You enter a long, narrow stone tunnel which carries you Norteward into
 a large structure which houses the guild of warriors.  You can return
-Cara o forested section of Brigantia back Cara o sur.
+Cara o forested section of Brigantia back Cara o Sur.
 ~
 0 1048588 0
 D0
-A Irmandade dos Guerreiros cae cara o norte.
+A Irmandade dos Guerreiros cae cara o Norte.
 ~
 ~
 0 -1 21236
@@ -6442,18 +6441,18 @@ S
 A Irmandade dos Guerreiros~
 You stand in a large stone structure which houses the Irmandade dos Guerreiros.
 Depictions of battle, heroism and physical prowess adorne the walls.  To
-the leste is a large sparring circle, while a large room lies just to
-the norte.  An archway Cara o sur leads back inCara o forest
+the Leste is a large sparring circle, while a large room lies just to
+the Norte.  An archway Cara o Sur leads back inCara o forest
 inside Brigantia.
 ~
 0 3145740 0
 D0
-A large room cae cara o norte.
+A large room cae cara o Norte.
 ~
 ~
 0 -1 21240
 D1
-A sparring circle is situated leste of here.
+A sparring circle is situated Leste of here.
 ~
 ~
 0 -1 21237
@@ -6477,26 +6476,26 @@ S
 O Rondo de Puxilismo~
 A ring of steel outlines a sparring circle here.  The initiates of the
 warriors' guild have long been known to come here for training and insight
-on the ways of the warrior.  Cara o norte is a silent corner reserved for
-notes of great importance, while the guild's main adro is Cara o oeste.
+on the ways of the warrior.  Cara o Norte is a silent corner reserved for
+notes of great importance, while the guild's main adro is Cara o Oeste.
 ~
 0 3145740 0
 D0
-A silent corner of the adro is Cara o norte.
+A silent corner of the adro is Cara o Norte.
 ~
 ~
 0 -1 21239
 D3
-The main adro of the warriors' guild is oeste of here.
+The main adro of the warriors' guild is Oeste of here.
 ~
 ~
 0 -1 21236
 S
 #21239
 Unha esquina silenciosa no Adro~
-Esta esquina silenciosa no inmenso adro e donde os guerreiros veñen
-a publicar os seus anuncios de gran importancias. Cara o sur podese
-observar un rondo de puxilismo, mentres que cara o oeste esta a
+Esta esquina silenciosa no inmenso adro e donde os guerreiros venhen
+a publicar os seus anuncios de gran importancias. Cara o Sur podese
+observar un rondo de puxilismo, mentres que cara o Oeste esta a
 longa estancia de donacions.
 ~
 0 3145740 0
@@ -6506,7 +6505,7 @@ You can see a sparring circle.
 ~
 0 -1 21237
 D3
-A large storage room cae cara o oeste.
+A large storage room cae cara o Oeste.
 ~
 ~
 0 -1 21240
@@ -6514,16 +6513,16 @@ S
 #21240
 Armor Dump~
 Here the warriors of the guild store items intended for donation to other
-guildmembers in need.  The main adro is Cara o sur.
+guildmembers in need.  The main adro is Cara o Sur.
 ~
 0 3686412 0
 D1
-A silent corner in the adro is leste of here.
+A silent corner in the adro is Leste of here.
 ~
 ~
 0 -1 21239
 D2
-The main adro of the warriors' guild is Cara o sur.
+The main adro of the warriors' guild is Cara o Sur.
 ~
 ~
 0 -1 21236
@@ -6537,18 +6536,18 @@ S
 The Brigantia Marina~
 The odor of fish assaults your senses as you inhale.  The Brigantia Marina
 is a rather large structure, housing several small boats and over a dozen
-rafts.  Cara o sur you can see the Brigantia River, while a dirt road
-cae cara o norte.  A small path leads off Cara o leste, following the
+rafts.  Cara o Sur you can see the Brigantia River, while a dirt road
+cae cara o Norte.  A small path leads off Cara o Leste, following the
 Brigantia river as it winds its way Cara o Ocean.
 ~
 0 1048588 0
 D0
-O tramo rounding Brigantia is Cara o norte.
+O tramo rounding Brigantia is Cara o Norte.
 ~
 ~
 0 -1 21124
 D2
-Cara o sur you can see the Brigantia River.
+Cara o Sur you can see the Brigantia River.
 ~
 ~
 0 -1 21297
@@ -6559,17 +6558,17 @@ Estas enfrente a Academia de Brigantia. Un largo corredor de escaleiras
 de pedra baixa cara a masiva estructura subterranea, que ten a responsa-
 bilidade de entrenar aos xoves aventureiros de este mundo.
 Unha pequena e oscura rua dirixese cara unha tenda que dispon de
-productos para satisfacer as necesidades dos aventureiros. Cara o norte
+productos para satisfacer as necesidades dos aventureiros. Cara o Norte
 podes ver a longa Rua Horizonte.
 ~
 0 1048580 1
 D0
-Rua Horizonte cae cara o norte.
+Rua Horizonte cae cara o Norte.
 ~
 ~
 0 -1 21038
 D1
-The Young Adventurer's Necessities is leste of here.
+The Young Adventurer's Necessities is Leste of here.
 ~
 ~
 0 -1 21295
@@ -6591,16 +6590,16 @@ You sigh longingly at the sight of Brigantia's ruined concourse. What was
 once a busy road is now a cobbled wasteland.  Debris from crushed buildings
 lies about, all that remains from that night of terror.  A single structure
 remains standing, a small house sitting beside an old elm tree.  To the
-norte is the crumbling bridge.
+Norte is the crumbling bridge.
 ~
 0 1048576 2
 D0
-The crumbling bridge is Cara o norte.
+The crumbling bridge is Cara o Norte.
 ~
 ~
 0 -1 21296
 D1
-The remains of the concourse continue Cara o leste.
+The remains of the concourse continue Cara o Leste.
 ~
 ~
 0 -1 21291
@@ -6608,19 +6607,19 @@ S
 #21291
 Among the Ruins of the Concourse~
 You stand at what was once an intersection of roads among the remains of
-the ruined concourse.  Far Cara o leste is an ancient elm tree and a small,
-strange building.  Gazing surward, you notice that, curiously enough,
+the ruined concourse.  Far Cara o Leste is an ancient elm tree and a small,
+strange building.  Gazing Surward, you notice that, curiously enough,
 the Brigantia graveyard remains standing.  As you turn to move on, you
 notice a large chain dangling high above you, just within jumping reach.
 ~
 0 1048576 2
 D1
-Far Cara o leste you see an old elm tree.
+Far Cara o Leste you see an old elm tree.
 ~
 ~
 0 -1 21292
 D2
-The entrance Cara o graveyard is Cara o sur.
+The entrance Cara o graveyard is Cara o Sur.
 ~
 ~
 0 -1 21293
@@ -6638,7 +6637,7 @@ S
 #21292
 Near the Elm Tree~
 You are walking down what remains of a cobbled road, picking your way
-through the debris which clogs the unkempt street.  Cara o leste is the
+through the debris which clogs the unkempt street.  Cara o Leste is the
 only remaining building of the concourse, as well as the ancient tree
 of Elm Street. 
 ~
@@ -6658,8 +6657,8 @@ S
 Entrance Cara o Graveyard~
 You are standing just outside the gates of the ancient Brigantia graveyard.
 A shiver runs down your spine as you remember the howling undead residing
-in the lower chambers of the place.  A path leads surward inCara o 
-graveyard, while the ruins of the concourse are Cara o norte.
+in the lower chambers of the place.  A path leads Surward inCara o 
+graveyard, while the ruins of the concourse are Cara o Norte.
 ~
 0 1048580 2
 D0
@@ -6676,7 +6675,7 @@ S
 #21294
 Beneath the Elm Tree~
 You are standing amid the debris beneath the ancient elm tree of what
-used to be Elm Street.  Cara o sur is the only remaining building on
+used to be Elm Street.  Cara o Sur is the only remaining building on
 the concourse and you now realize why it still stands; its walls are
 covered with powerful runes of protection.
 ~
@@ -6690,13 +6689,13 @@ S
 #21295
 The Young Adventurer's Necessities~
 Water skins, rations and torches hang from the walls:  all necessary to 
-survival when adventuring.  A stack of books which have been designed to
+Survival when adventuring.  A stack of books which have been designed to
 help the young adventurer lie stacked in the rear of the shop.  To the
-oeste is the entrance Cara o Academia de Brigantia.
+Oeste is the entrance Cara o Academia de Brigantia.
 ~
 0 1048588 0
 D3
-The entrance Cara o Academia de Brigantia is Cara o oeste.
+The entrance Cara o Academia de Brigantia is Cara o Oeste.
 ~
 ~
 0 -1 21280
@@ -6705,16 +6704,16 @@ S
 Crossing the Precarious Bridge~
 You tread carefully across the crumbling bridge.  Gazing fearfully at the
 cracked supports, you feel a sense of relief to see they are still somewhat
-sturdy.  Cara o sur, the ruins of the old concourse spread haphazardly.
+sturdy.  Cara o Sur, the ruins of the old concourse spread haphazardly.
 ~
 0 1048580 2
 D0
-A dirt road cae cara o norte.
+A dirt road cae cara o Norte.
 ~
 ~
 0 -1 21081
 D2
-The ruins of the concourse are Cara o sur.
+The ruins of the concourse are Cara o Sur.
 ~
 ~
 0 -1 21290
@@ -6729,17 +6728,17 @@ S
 #21297
 On the Brigantia River~
 You find yourself in a small artificial bay linking the Brigantia Marina
-Cara o town's beloved river.  The marina's beach is Cara o norte, while
-the river cae cara o leste and oeste.
+Cara o town's beloved river.  The marina's beach is Cara o Norte, while
+the river cae cara o Leste and Oeste.
 ~
 0 1048580 7
 D0
-The Brigantia Marina cae cara o norte.
+The Brigantia Marina cae cara o Norte.
 ~
 ~
 0 -1 21275
 D3
-The river flows westward.
+The river flows Oesteward.
 ~
 ~
 0 -1 21300
@@ -6752,17 +6751,17 @@ S
 #21298
 On the Brigantia River~
 You are travelling across the Brigantia River.  Its blue waters are flowing
-slowly westward, dragging along any debris.  Far Cara o leste you can make
+slowly Oesteward, dragging along any debris.  Far Cara o Leste you can make
 out a tunnel of some sort.
 ~
 0 1048580 7
 D1
-The river cae cara o leste.
+The river cae cara o Leste.
 ~
 ~
 0 -1 21299
 D7
-The river flows westward.
+The river flows Oesteward.
 ~
 ~
 0 -1 21297
@@ -6770,20 +6769,20 @@ S
 #21299
 On the Brigantia River~
 You are on the famed Brigantia River.  Its strong currents push driftwood
-and other floating objects westward.  The blue waters themselves seem to
-emerge from a tunnel in the mountains Cara o leste.
+and other floating objects Oesteward.  The blue waters themselves seem to
+emerge from a tunnel in the mountains Cara o Leste.
 ~
 0 1048580 7
 D3
-The river flows westward.
+The river flows Oesteward.
 ~
 ~
 0 -1 21298
 S
 #21300
 On the Brigantia River~
-The waters here are flowing slighty faster than Cara o leste.  Gazing oeste,
-you can see that the river passes under the surern bridge of Brigantia.
+The waters here are flowing slighty faster than Cara o Leste.  Gazing Oeste,
+you can see that the river passes under the Surern bridge of Brigantia.
 The tale of the troll under the bridge passes through your head as you
 ponder where the river leads.
 ~
@@ -6794,25 +6793,25 @@ Podes ver a small artificial bay which connects Cara o marina.
 ~
 0 -1 21297
 D3
-The river flows under the surern bridge.
+The river flows under the Surern bridge.
 ~
 ~
 0 -1 21301
 S
 #21301
-Under the surern Bridge~
-You are forced to duck your head as you pass under the surern bridge of
+Under the Surern Bridge~
+You are forced to duck your head as you pass under the Surern bridge of
 Brigantia.  On the underside of the bridge is a slate plaque, which looks
 aged beyond time.
 ~
 0 1048580 7
 D1
-The river cae cara o leste.
+The river cae cara o Leste.
 ~
 ~
 0 -1 21300
 D3
-The river flows westward.
+The river flows Oesteward.
 ~
 ~
 0 -1 21302
@@ -6844,17 +6843,17 @@ S
 #21302
 On the Brigantia River~
 The waters become rushing rapids here, forcing you to carefully monitor
-your actions.  Going upriver will bring you under the surern bridge,
+your actions.  Going upriver will bring you under the Surern bridge,
 while following the river will lead you under the crumbling bridge.
 ~
 0 1048580 7
 D1
-The river passes under the surern bridge Cara o leste.
+The river passes under the Surern bridge Cara o Leste.
 ~
 ~
 0 -1 21301
 D3
-The river passes under the crumbling bridge Cara o oeste.
+The river passes under the crumbling bridge Cara o Oeste.
 ~
 ~
 0 -1 21303
@@ -6863,17 +6862,17 @@ S
 Under the Crumbling Bridge~
 You carefully wade through the waters under this low bridge, praying that
 it does not crash down upon your head.  The river flows inCara o ocean to
-the oeste, and you spy a grate in the norteern underside of the bridge.
+the Oeste, and you spy a grate in the Norteern underside of the bridge.
 ~
 0 1048580 7
 D1
-The river continua cara o leste.
+The river continua cara o Leste.
 ~
 ~
 0 -1 21302
 E
 grate~
-Constructed inCara o underside of the norteern bridge-support, it looks
+Constructed inCara o underside of the Norteern bridge-support, it looks
 quite old but quite sturdy.  Looking closer, you notice it has a set of
 swing-hinges and a bolted fastener; you may be able to open it.
 ~
@@ -6884,20 +6883,20 @@ close grate
 S
 #21307
 Atop the Battlements~
-You are standing atop Brigantia's battlements.  The entire surwestern
+You are standing atop Brigantia's battlements.  The entire SurOesteern
 countryside is visible from here, ranging from the Miden'nir Cara o dark
 forest of Haon Dor.  You spot the Brigantia River flowing its way swiftly
-from leste to oeste just sur of here.  The battlements continue to the
-norte and leste, while a stone stairway leads down Cara o streets.
+from Leste to Oeste just Sur of here.  The battlements continue to the
+Norte and Leste, while a stone stairway leads down Cara o streets.
 ~
 0 1048580 1
 D0
-The battlements continue Cara o norte.
+The battlements continue Cara o Norte.
 ~
 ~
 0 -1 21308
 D1
-The battlements continue Cara o leste.
+The battlements continue Cara o Leste.
 ~
 ~
 0 -1 21311
@@ -6909,34 +6908,34 @@ The stairway leads back down Cara o city streets.
 S
 #21308
 Atop the Battlements~
-The beautiful yet deadly forest of Haon Dor stretches oeste as far as the
-eye can see.  Far Cara o surwest, you can barely make out the big, blue
-ocean.  The battlements continue Cara o norte and sur.
+The beautiful yet deadly forest of Haon Dor stretches Oeste as far as the
+eye can see.  Far Cara o SurOeste, you can barely make out the big, blue
+ocean.  The battlements continue Cara o Norte and Sur.
 ~
 0 1048576 1
 D0
-The battlements continue Cara o norte.
+The battlements continue Cara o Norte.
 ~
 ~
 0 -1 21309
 D2
-The battlements continue Cara o sur.
+The battlements continue Cara o Sur.
 ~
 ~
 0 -1 21307
 S
 #21309
 Atop the Battlements~
-The massive western gate of Brigantia is just norte of here, creaking and
+The massive Oesteern gate of Brigantia is just Norte of here, creaking and
 groaning loudly as it opens and closes.  A rather wide trail leads through
-the center of the vast forest known as Haon Dor Cara o oeste, and a chimney
-can be seen poking out of the dark trees just Cara o surwest.  Far down
-the trail Cara o oeste one enormous tree seems to rise above the all others.
-The battlements stretch surward.
+the center of the vast forest known as Haon Dor Cara o Oeste, and a chimney
+can be seen poking out of the dark trees just Cara o SurOeste.  Far down
+the trail Cara o Oeste one enormous tree seems to rise above the all others.
+The battlements stretch Surward.
 ~
 0 1048576 1
 D2
-The battlements continue Cara o sur.
+The battlements continue Cara o Sur.
 ~
 ~
 0 -1 21308
@@ -6944,51 +6943,51 @@ S
 #21311
 Atop the Battlements~
 The rushing waves of the Brigantia river can be heard from here.  Far to
-the sur, you can see the dark forest of the gobline-infested Miden'nir
-(Goblinic for green blood).  Brigantia's defenses continue Cara o leste
-and oeste.
+the Sur, you can see the dark forest of the gobline-infested Miden'nir
+(Goblinic for green blood).  Brigantia's defenses continue Cara o Leste
+and Oeste.
 ~
 0 1048576 1
 D1
-The battlements end leste of here.
+The battlements end Leste of here.
 ~
 ~
 0 -1 21312
 D3
-The battlements continue Cara o oeste.
+The battlements continue Cara o Oeste.
 ~
 ~
 0 -1 21307
 S
 #21312
 Atop the Battlements~
-The massive surern gate of Brigantia is just leste of here, groaning and
-creaking loudly as it opens and closes.  The surern bridge and the often
+The massive Surern gate of Brigantia is just Leste of here, groaning and
+creaking loudly as it opens and closes.  The Surern bridge and the often
 dangerous, sometimes deadly, Miden'nir are clearly visible from here.  The,
-battlements stretch westward.
+battlements stretch Oesteward.
 ~
 0 1048576 1
 D3
-The battlements continue Cara o oeste.
+The battlements continue Cara o Oeste.
 ~
 ~
 0 -1 21311
 S
 #21314
 Atop the Battlements~
-You are standing atop Brigantia's battlements.  The whole surlesteern
+You are standing atop Brigantia's battlements.  The whole SurLesteern
 countryside is visible from here, ranging from the Miden'nir to even
-lands beyond.  The great battlements continue Cara o norte and oeste,
+lands beyond.  The great battlements continue Cara o Norte and Oeste,
 while a stone stairway leads back down Cara o city streets.
 ~
 0 1048580 1
 D0
-The battlements lie Cara o norte.
+The battlements lie Cara o Norte.
 ~
 ~
 0 -1 21315
 D3
-The battlements lie Cara o oeste.
+The battlements lie Cara o Oeste.
 ~
 ~
 0 -1 21318
@@ -7000,34 +6999,34 @@ The stairs lead back down to Brigantia's streets.
 S
 #21315
 Atop the Battlements~
-You are standing atop Brigantia's lesteern wall, where the city's gardas
+You are standing atop Brigantia's Lesteern wall, where the city's gardas
 have set up a series of defenses to ward off assailants.  A broad dirt
-road lines the wall outside of the city, and Rua Falcon is Cara o oeste.
+road lines the wall outside of the city, and Rua Falcon is Cara o Oeste.
 A group of archers stand here, laughing about the goblins' last pathetic
 attempt to invade the majestic city.  The battlements continue to the
-norte and sur.
+Norte and Sur.
 ~
 0 1048576 1
 D0
-The battlements continue Cara o norte.
+The battlements continue Cara o Norte.
 ~
 ~
 0 -1 21316
 D2
-The battlements continue Cara o sur.
+The battlements continue Cara o Sur.
 ~
 ~
 0 -1 21314
 S
 #21316
 Atop the Battlements~
-The massive lesteern gate of Brigantia is just Cara o norte, groaning and
-creaking loudly as it opens and closes.  sur and leste from here you can
+The massive Lesteern gate of Brigantia is just Cara o Norte, groaning and
+creaking loudly as it opens and closes.  Sur and Leste from here you can
 clearly see the dark dwarven forest.
 ~
 0 1048576 1
 D2
-The battlements extend down the lesteern wall of Brigantia.
+The battlements extend down the Lesteern wall of Brigantia.
 ~
 ~
 0 -1 21315
@@ -7035,52 +7034,52 @@ S
 #21318
 Atop the Battlements~
 The rushing waves of the Brigantia River can be heard from here.  In the
-distance Cara o sur, you can see a group of goblins skirting the edge of
+distance Cara o Sur, you can see a group of goblins skirting the edge of
 the dark forest known as the Miden'nir, its name signifying green blood in
-the tongue of the goblins.  Brigantia's defenses continue leste and oeste.
+the tongue of the goblins.  Brigantia's defenses continue Leste and Oeste.
 ~
 0 1048576 1
 D1
-The battlements extend down the surern wall.
+The battlements extend down the Surern wall.
 ~
 ~
 0 -1 21314
 D3
-The battlements extend down the surern wall of Brigantia.
+The battlements extend down the Surern wall of Brigantia.
 ~
 ~
 0 -1 21319
 S
 #21319
 Atop the Battlements~
-The massive surern gate of Brigantia is just oeste of here, groaning and
-creaking loudly as it opens and closes.  The crumbling surern bridge and
+The massive Surern gate of Brigantia is just Oeste of here, groaning and
+creaking loudly as it opens and closes.  The crumbling Surern bridge and
 the dangerous Miden'nir are clearly visible from here.  Tbe battlements
-stretch leste from here.
+stretch Leste from here.
 ~
 0 1048576 1
 D1
-The battlements continue leste of here.
+The battlements continue Leste of here.
 ~
 ~
 0 -1 21318
 S
 #21321
 Atop the Battlements~
-You are standing atop Brigantia's battlements.  The whole nortelesteern
+You are standing atop Brigantia's battlements.  The whole NorteLesteern
 countryside is visible from here.  A number of archers pace back and forth
 here along the battlements, knocking an arrow back at the slightest sign of
-danger.  The battlements extend Cara o oeste and sur, while a stairway
+danger.  The battlements extend Cara o Oeste and Sur, while a stairway
 leads back down Cara o streets.
 ~
 0 1048580 1
 D2
-The battlements continue down the lesteern wall.
+The battlements continue down the Lesteern wall.
 ~
 ~
 0 -1 21323
 D3
-The battlements extend down the norteern wall.
+The battlements extend down the Norteern wall.
 ~
 ~
 0 -1 21326
@@ -7092,114 +7091,114 @@ The stairway leads back down Cara o streets.
 S
 #21322
 Atop the Battlements~
-You are standing atop Brigantia's great lesteern wall.  The gardaians of
+You are standing atop Brigantia's great Lesteern wall.  The gardaians of
 Brigantia, in their wisdom, have set up battlements here to fend off any
-attackers.  The battlements extend Cara o norte and sur.
+attackers.  The battlements extend Cara o Norte and Sur.
 ~
 0 0 1
 D0
-The battlements stretch norteward.
+The battlements stretch Norteward.
 ~
 ~
 0 -1 21321
 D2
-The battlements continue Cara o sur.
+The battlements continue Cara o Sur.
 ~
 ~
 0 -1 21323
 S
 #21323
 Atop the Battlements~
-You are standing atop the lesteern wall of Brigantia.  The battlements extend
-Cara o norte and sur.
+You are standing atop the Lesteern wall of Brigantia.  The battlements extend
+Cara o Norte and Sur.
 ~
 0 1048576 1
 D0
-The battlements continue Cara o norte.
+The battlements continue Cara o Norte.
 ~
 ~
 0 -1 21321
 D2
-The battlements extend Cara o sur.
+The battlements extend Cara o Sur.
 ~
 ~
 0 -1 21324
 S
 #21324
 Atop the Battlements~
-The massive lesteern gate of Brigantia is just Cara o sur, groaning and
-creaking loudly as it opens and closes.  sur and leste from here you can
-clearly see the dark dwarven forest.  The battlements continue Cara o norte.
+The massive Lesteern gate of Brigantia is just Cara o Sur, groaning and
+creaking loudly as it opens and closes.  Sur and Leste from here you can
+clearly see the dark dwarven forest.  The battlements continue Cara o Norte.
 ~
 0 1048576 1
 D0
-The battlements continue Cara o norte.
+The battlements continue Cara o Norte.
 ~
 ~
 0 -1 21323
 S
 #21325
 Atop the Battlements~
-You sigh at the beauty of the norte countryside.  Athough he has doubtless
+You sigh at the beauty of the Norte countryside.  Athough he has doubtless
 seen this view countless times before, a nearby archer whistles as he
-gazes norteward with you.  The battlements extend Cara o leste and oeste.
+gazes Norteward with you.  The battlements extend Cara o Leste and Oeste.
 ~
 0 0 1
 D1
-The battlements lead off Cara o leste.
+The battlements lead off Cara o Leste.
 ~
 ~
 0 -1 21321
 D3
-The battlements continue Cara o oeste.
+The battlements continue Cara o Oeste.
 ~
 ~
 0 -1 21326
 S
 #21326
 Atop the Battlements~
-You are standing atop Brigantia's norteern wall.  The battlements continue
-Cara o leste and oeste.
+You are standing atop Brigantia's Norteern wall.  The battlements continue
+Cara o Leste and Oeste.
 ~
 0 1048576 1
 D1
-The battlements continue tothe leste.
+The battlements continue tothe Leste.
 ~
 ~
 0 -1 21321
 D3
-The battlements extend westward.
+The battlements extend Oesteward.
 ~
 ~
 0 -1 21327
 S
 #21327
 Atop the Battlements~
-This portion of the battlements stretches Cara o leste, all the way back to
-nortelesteern corner of Brigantia.
+This portion of the battlements stretches Cara o Leste, all the way back to
+NorteLesteern corner of Brigantia.
 ~
 0 1048576 1
 D1
-The battlements stretch lesteward.
+The battlements stretch Lesteward.
 ~
 ~
 0 -1 21326
 S
 #21328
 Atop the Battlements~
-You are standing atop Brigantia's battlements.  The whole nortewestern
+You are standing atop Brigantia's battlements.  The whole NorteOesteern
 countryside is visible from here, stretching away beyond the forest of
-Haon Dor.  The battlements continue Cara o leste and sur, while a
+Haon Dor.  The battlements continue Cara o Leste and Sur, while a
 stone stairway leads back down Cara o city streets.
 ~
 0 1048580 1
 D1
-The battlements continue Cara o leste.
+The battlements continue Cara o Leste.
 ~
 ~
 0 -1 21329
 D2
-The battlements continue Cara o sur.
+The battlements continue Cara o Sur.
 ~
 ~
 0 -1 21332
@@ -7211,62 +7210,62 @@ The stairway leads back down Cara o city streets.
 S
 #21329
 Atop the Battlements~
-You are standing atop Brigantia's norteern wall.  The battlements range to
-the leste and oeste.
+You are standing atop Brigantia's Norteern wall.  The battlements range to
+the Leste and Oeste.
 ~
 0 1048576 1
 D1
-The battlements continue leste of here.
+The battlements continue Leste of here.
 ~
 ~
 0 -1 21330
 D3
-The battlements continue Cara o oeste.
+The battlements continue Cara o Oeste.
 ~
 ~
 0 -1 21328
 S
 #21330
 Atop the Battlements~
-The battlements here extend westward, leading back Cara o nortewestern
+The battlements here extend Oesteward, leading back Cara o NorteOesteern
 corner of Brigantia.
 ~
 0 1048576 1
 D3
-The battlements continue Cara o oeste.
+The battlements continue Cara o Oeste.
 ~
 ~
 0 -1 21329
 S
 #21332
 Atop the Battlements~
-The beautiful yet deadly forest of Haon Dor stretches westward as far as
-the eye can see.  The great battlements continue Cara o norte and sur.
+The beautiful yet deadly forest of Haon Dor stretches Oesteward as far as
+the eye can see.  The great battlements continue Cara o Norte and Sur.
 ~
 0 1048576 1
 D0
-The battlements continue Cara o norte.
+The battlements continue Cara o Norte.
 ~
 ~
 0 -1 21328
 D2
-The battlements continue Cara o sur.
+The battlements continue Cara o Sur.
 ~
 ~
 0 -1 21333
 S
 #21333
 Atop the Battlements~
-The massive western gate of Brigantia is just sur of here, creaking and
+The massive Oesteern gate of Brigantia is just Sur of here, creaking and
 groaning loudly as it opens and closes.  A rather wide trail leads through
-the center of the vast forest known as Haon Dor Cara o oeste, and a chimney
-can be seen poking out of the dark trees just Cara o surwest.  Far down
-the trail Cara o oeste one enormous tree seems to rise above the all others.
-The battlements stretch norteward.
+the center of the vast forest known as Haon Dor Cara o Oeste, and a chimney
+can be seen poking out of the dark trees just Cara o SurOeste.  Far down
+the trail Cara o Oeste one enormous tree seems to rise above the all others.
+The battlements stretch Norteward.
 ~
 0 1048576 1
 D0
-The battlements continue Cara o norte.
+The battlements continue Cara o Norte.
 ~
 ~
 0 -1 21332
@@ -7280,7 +7279,7 @@ who sit down.
 ~
 0 1049608 0
 D0
-The lights of Rua Horizonte glimmer Cara o norte.
+The lights of Rua Horizonte glimmer Cara o Norte.
 ~
 ~
 0 -1 21039
@@ -7323,16 +7322,16 @@ Praza de Brigantia is far below.
 0 -1 21337
 S
 #21339
-Monturas e Acompañantes~
-Camiñas por unha longa tenda que cheira a cabalos e estrume. Tras un
+Monturas e Acompanhantes~
+Caminhas por unha longa tenda que cheira a cabalos e estrume. Tras un
 gran panel de madeira vense doceas de xaulas con varios tipos de animais,
 podes escoitar os sons dos cabalos que chega desde un gran almacen na
-parte traseira da tenda. Unha porta cada o sur levate de volta a Avenida
+parte traseira da tenda. Unha porta cada o Sur levate de volta a Avenida
 das Leis.
 ~
 0 1052672 1
 D2
-A Avenida das Leis queda cara o sur.
+A Avenida das Leis queda cara o Sur.
 ~
 ~
 0 -1 21017
@@ -7346,9 +7345,9 @@ S
 A Corridor in the Abandoned Mansion~
 You walk carefully down the corridor, noticing its smooth stone floor and
 walls. The walls and floor have been smoothed by age, and stains of blood
-seem to randomly mark the stone surfaces.  Podes ver a large foyer ahead of
+seem to randomly mark the stone Surfaces.  Podes ver a large foyer ahead of
 you, and this corridor seems quite abandoned.  A strong wooden doorframe
-is etched inCara o wall Cara o oeste, and through the doorway you can see a
+is etched inCara o wall Cara o Oeste, and through the doorway you can see a
 faintly lit room.
 ~
 0 8 0
@@ -7373,7 +7372,7 @@ back Cara o Court of the Conclave.
 ~
 0 3145740 0
 D6
-The Court of the Conclave cae cara o norteleste.
+The Court of the Conclave cae cara o NorteLeste.
 ~
 ~
 0 -1 21133
@@ -7388,8 +7387,8 @@ S
 Plunging through the brambles~
 You plunge down the narrow wooded trail, mindful of the overreaching
 brambles and twigs which have crowded together here at the forest's
-edge.  O tramo continua cara o surwest, and a wide dirt road
-can be seen through the foliage Cara o leste.
+edge.  O tramo continua cara o SurOeste, and a wide dirt road
+can be seen through the foliage Cara o Leste.
 ~
 0 0 3
 D1
@@ -7398,7 +7397,7 @@ A wide dirt road skirting a high battlement.
 ~
 0 -1 21090
 D9
-O tramos continues safely Cara o surwest.
+O tramos continues safely Cara o SurOeste.
 ~
 ~
 0 -1 21402
@@ -7406,8 +7405,8 @@ S
 #21402
 On a forest trail~
 Your way here bends around in two directions.  The forest grows thicker
-Cara o oeste, the scents and sounds beckoning to you.  Peering to the
-norteleste, you think you can see a break in the trees.  Mayhap the
+Cara o Oeste, the scents and sounds beckoning to you.  Peering to the
+NorteLeste, you think you can see a break in the trees.  Mayhap the
 trail is nearing its end.
 ~
 0 0 3
@@ -7424,10 +7423,10 @@ Brambles and twigs crowd the path.
 S
 #21403
 On a forest trail~
-O tramo here continues on both leste and oeste.  The peak of a cathedral
-tower can barely be made out in the distance Cara o leste through the
+O tramo here continues on both Leste and Oeste.  The peak of a cathedral
+tower can barely be made out in the distance Cara o Leste through the
 overhang of limbs, and a sound much like that of small wings fluttering
-comes frequently from the forest Cara o oeste.
+comes frequently from the forest Cara o Oeste.
 ~
 0 0 3
 D1
@@ -7444,8 +7443,8 @@ S
 #21404
 A turn in the forest trail~
 You stand at a curve on a narrow, peaceful forest trail.  The sounds of
-small fluttering wings comes from the nortewest, and a the narrow but
-well-trodden pathway continues roughly lesteward through the forest.
+small fluttering wings comes from the NorteOeste, and a the narrow but
+well-trodden pathway continues roughly Lesteward through the forest.
 ~
 0 0 3
 D1
@@ -7465,7 +7464,7 @@ You find yourself at the rear of the Brigantia Courier.  Many small
 tables sit here, accompanied by similarly tiny wooden chairs, and
 unfinished missives have been left lying on a couple of ink-stained
 tables.  An unnatural silence also seems to haunt this portion of
-the tent, allowing you to collect your thoughts.  Cara o norte is
+the tent, allowing you to collect your thoughts.  Cara o Norte is
 the main chamber of the Courier.
 ~
 0 3212300 0
@@ -7487,12 +7486,12 @@ peace as you walk through the vast adro.
 ~
 0 3145740 0
 D2
-The Chamber of Bounty cae cara o sur.
+The Chamber of Bounty cae cara o Sur.
 ~
 ~
 0 -1 21434
 D3
-The Plank of Musing cae cara o leste.
+The Plank of Musing cae cara o Leste.
 ~
 ~
 0 -1 21433
@@ -7533,7 +7532,7 @@ escrituras e utensilios de escritura sobre o mesmo. Varias cadeiras
 requintadas cerca da gran mesa de carballo, e ás veces podes atopar outros
 Agoreiros aqui ponderando sobre a existencia da vida, a importancia das súas
 accións diarias e calquera outra cousa que desexen discutir. Os sons do lado
-de fóra non son facilmente recoñecibles dende esta pequena sala que parece
+de fóra non son facilmente reconhecibles dende esta pequena sala que parece
 estar afastada do resto da Irmandade dos Agoreiros.
 ~
 0 3145740 0
@@ -7550,12 +7549,12 @@ life and soul.  The Chamber of Bounty is a darkened room, illuminated only
 by torches fixed Cara o walls held by antiqued sconce holders.  All around 
 you lie items donated by your fellow guild members, and those items that
 may seem useless to one may be invaluable to others.  Precious armours,
-treasures and pieces of magic lie here, and more are certainly welcome to
+treaSures and pieces of magic lie here, and more are certainly welcome to
 be donated for use by other Agoreiros.
 ~
 0 3686412 0
 D0
-The main adro of the Irmandade dos Agoreiros lies norte of here.
+The main adro of the Irmandade dos Agoreiros lies Norte of here.
 ~
 ~
 0 -1 21430
@@ -7563,7 +7562,7 @@ S
 #21435
 Along the forested path~
 As you walk further through the forest around the cathedral, you notice an
-illuminated edifice lying Cara o norte of you.  A faint smell of spices and
+illuminated edifice lying Cara o Norte of you.  A faint smell of spices and
 other pungent scents wafts from this granitelike structure, mixing with the
 various smells of the forest around you.
 ~
@@ -7593,7 +7592,7 @@ A tumba da Rectificacion~
 As you enter this cramped room, the smell of burning oil and the stench of
 day old sweat nearly bowls you over with a strong force. A large metal table
 stands in the middle of the room, covered in many smithing tools. The constant
-clank of metal on metal pierces your ears, and you look over Cara o western
+clank of metal on metal pierces your ears, and you look over Cara o Oesteern
 wall of the room to see a large home stooping over the great table, repairing
 a poor soul's gear.  Scraps of leather, cloth and fine fabrics lie in disarray
 about this tiny room.
@@ -7606,12 +7605,12 @@ Walking down the adroway, you can see various depictions of Agoreiros in
 battle, as well as their participation in theatrical pursuits, teaching,
 learning and conversing with others of their class.  The walls are
 smooth like marble, and the floors are well polished and shine brightly.
-Soft light flows in from the leste and coloured rays of sunshine seem to
+Soft light flows in from the Leste and coloured rays of sunshine seem to
 beam in from above.
 ~
 0 3145740 0
 D1
-A warm light flows in from the leste where the Niche of Convergence lies.
+A warm light flows in from the Leste where the Niche of Convergence lies.
 ~
 ~
 0 -1 21438
@@ -7641,18 +7640,18 @@ after a long day of fighting, training and ascertaining the local lore.
 ~
 0 3146760 0
 D3
-The adro of Repose cae cara o leste.
+The adro of Repose cae cara o Leste.
 ~
 ~
 0 -1 21437
 S
 #21439
 O Cubiculo do Saber~
-Asi como camiñas por esta estancia espaciosa, podes ver alguns Agoreiros
+Asi como caminhas por esta estancia espaciosa, podes ver alguns Agoreiros
 meditando e aprendendo os saberes da sua clase. A estabcia esta ben
 iluminada por apliques sobres as paredes de granito puro, o aire e case
-insipido. A medida que o Agoreiro esta moi interesado no seu coñecemento,
-un maestro do coñecemento esta aqui para axudar a encamiñar as suas
+insipido. A medida que o Agoreiro esta moi interesado no seu conhecemento,
+un maestro do conhecemento esta aqui para axudar a encaminhar as suas
 habilidades e feitizos.
 ~
 0 3146764 0
@@ -8156,7 +8155,7 @@ S
  21001    3  4  0  0  0   120  90         0 23    ; o encantador
  21003   26 10  0  0  0   115  90         0 23    ; o alquemista
  21004    2  0  0  0  0   120  90         0 23    ; o escriba
- 21009   22  0  0  0  0   120  90         0 23    ; o mariñeiro
+ 21009   22  0  0  0  0   120  90         0 23    ; o marinheiro
  21010    0  0  0  0  0   120  90         0 23    ; o waitress
  21011    0  0  0  0  0   120  90         0 23    ; o impresor
  21013    0  0  0  0  0   120  90         0 23    ; o taberneiro
