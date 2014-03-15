@@ -757,7 +757,7 @@ void do_note( CHAR_DATA *ch, char *arg_passed, bool IS_MAIL )
         arg_passed = one_argument( arg_passed, arg2 );
 
         if ( !IS_IMMORTAL(ch) ) {
-                send_to_char("Huh?\n\r",ch);
+                send_to_char("Que dis?\n\r",ch);
         }
         board = find_board( ch );
         if ( !board )
@@ -1363,7 +1363,7 @@ void do_note( CHAR_DATA *ch, char *arg_passed, bool IS_MAIL )
 	{
 	  if ( !IS_IMMORTAL(ch) )
 	  {
-	    send_to_char( "Huh?  Type 'help note' for usage.\n\r", ch );
+	    send_to_char( "Que dis?  Type 'help note' for usage.\n\r", ch );
 	    return;
 	  }
 	  take = 2;
@@ -1505,7 +1505,7 @@ void do_note( CHAR_DATA *ch, char *arg_passed, bool IS_MAIL )
 	return;
     }
 
-    send_to_char( "Huh?  Type 'help note' for usage.\n\r", ch );
+    send_to_char( "Que dis?  Type 'help note' for usage.\n\r", ch );
     return;
 }
 

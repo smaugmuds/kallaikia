@@ -66,6 +66,14 @@ Log         1
 End
 
 #COMMAND
+Name        desbandar~
+Code        do_dimiss
+Position    100
+Level       3
+Log         1
+End
+
+#COMMAND
 Name        abandoar~
 Code        do_leave
 Position    112
@@ -575,7 +583,7 @@ Log         0
 End
 
 #COMMAND
-Name        cocinhar~
+Name        cociñar~
 Code        do_cook
 Position    100
 Level       1
@@ -1343,7 +1351,7 @@ Log         0
 End
 
 #COMMAND
-Name        gardarzona~
+Name        zonagardar~
 Code        do_savearea
 Position    100
 Level       53
@@ -3049,7 +3057,7 @@ Log         0
 End
 
 #COMMAND
-Name        ponher~
+Name        poñer~
 Code        do_put
 Position    106
 Level       0
@@ -3107,7 +3115,7 @@ Flags       16
 End
 
 #COMMAND
-Name        purgadinho~
+Name        purgadiño~
 Code        do_low_purge
 Position    100
 Level       54
@@ -4022,7 +4030,7 @@ Log         0
 End
 
 #COMMAND
-Name        split~
+Name        dividir~
 Code        do_split
 Position    106
 Level       0
@@ -4038,7 +4046,7 @@ Log         1
 End
 
 #COMMAND
-Name        stand~
+Name        estar~
 Code        do_stand
 Position    104
 Level       0

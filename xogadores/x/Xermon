@@ -6,8 +6,8 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       138274
-Room         10319
+Played       178922
+Room         21064
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -25,9 +25,9 @@ Favor	       0
 Glory        0
 MGlory       0
 Honour       0
-Hitroll      3
+Hitroll      0
 Damroll      0
-Armor        980
+Armor        1000
 Wimpy        200
 Mentalstate  -100
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
@@ -47,9 +47,6 @@ AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
 Site         orion.local.lan
 Tongue       100 'common'
-AffectData   'bless' 183   3  18 0
-AffectData   'bless' 183  -3  24 0
-AffectData   'armor' 121 -20  17 0
 End
 
 #END

@@ -598,7 +598,7 @@ void do_setkingdom( CHAR_DATA *ch, char *argument )
 
   if( IS_NPC(ch) )
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -824,7 +824,7 @@ void do_showkingdom( CHAR_DATA *ch, char *argument )
 
   if( IS_NPC(ch) )
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -986,7 +986,7 @@ void do_fealty( CHAR_DATA *ch, char *argument )
 
   if( IS_NPC(ch) )
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -996,7 +996,7 @@ void do_fealty( CHAR_DATA *ch, char *argument )
     kingdom = get_kingdom(ch->pcdata->kingdom_name);
     if( !kingdom )
     {
-      send_to_char( "Huh?\n\r", ch );
+      send_to_char( "Que dis?\n\r", ch );
       return;
     }
   }
@@ -1010,7 +1010,7 @@ void do_fealty( CHAR_DATA *ch, char *argument )
     ;
   else
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -1078,7 +1078,7 @@ void do_exile( CHAR_DATA *ch, char *argument )
 
   if( IS_NPC(ch) )
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -1088,7 +1088,7 @@ void do_exile( CHAR_DATA *ch, char *argument )
     kingdom = get_kingdom(ch->pcdata->kingdom_name);
     if( !kingdom )
     {
-      send_to_char( "Huh?\n\r", ch );
+      send_to_char( "Que dis?\n\r", ch );
       return;
     }
   }
@@ -1102,7 +1102,7 @@ void do_exile( CHAR_DATA *ch, char *argument )
     ;
   else
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -1178,7 +1178,7 @@ void do_abdicate( CHAR_DATA *ch, char *argument )
 
   if( IS_NPC(ch) || !ch->pcdata->kingdom )
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -1805,7 +1805,7 @@ void do_settroop( CHAR_DATA *ch, char *argument )
 
   if( IS_NPC(ch) )
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -2232,7 +2232,7 @@ void do_showtroop( CHAR_DATA *ch, char *argument )
 
   if( IS_NPC(ch) )
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -2696,7 +2696,7 @@ void do_sethero( CHAR_DATA *ch, char *argument )
 
   if( IS_NPC(ch) )
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -2979,7 +2979,7 @@ void do_showhero( CHAR_DATA *ch, char *argument )
 
   if( IS_NPC(ch) )
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 

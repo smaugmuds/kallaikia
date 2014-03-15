@@ -1123,17 +1123,17 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
     && ( IS_NPC(ch) || !xIS_SET(ch->act, PLR_WIZINVIS) ) )
     {
       if ( fall )
-        txt = "falls";
+        txt = "cae";
       else
       if ( ch->mount )
       {
 	if ( IS_AFFECTED( ch->mount, AFF_FLOATING ) )
-	  txt = "floats in";
+	  txt = "flota en";
 	else
 	if ( IS_AFFECTED( ch->mount, AFF_FLYING ) )
-	  txt = "flies in";
+	  txt = "voa en";
 	else
-	  txt = "rides in";
+	  txt = "monta un";
       }
       else
       {
@@ -1142,7 +1142,7 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
 	  if ( drunk )
 	    txt = "floats in unsteadily";
 	   else
-	    txt = "floats in";
+	    txt = "flota en";
 	}
 	else
 	if ( IS_AFFECTED( ch, AFF_FLYING ) )
@@ -1213,13 +1213,13 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
      */
     if ( xIS_SET( ch->in_room->room_flags, ROOM_DEATH ) && !IS_IMMORTAL( ch ) )
     {
-       act( AT_DEAD, "$n falls prey to a terrible death!", ch, NULL, NULL, TO_ROOM );
+       act( AT_DEAD, "$n caeu morto nunha agonia espantosa!", ch, NULL, NULL, TO_ROOM );
        set_char_color( AT_DEAD, ch );
-       send_to_char( "Oopsie... you're dead!\n\r", ch );
-       sprintf(buf, "%s hit a DEATH TRAP in room %d!",
+       send_to_char( "Oops... estas MORTO!\n\r", ch );
+       sprintf(buf, "%s golpeache unha TRAMPA MORTAL na estancia %d!",
 		     ch->name, ch->in_room->vnum );
        log_string( buf );
-       to_channel( buf, CHANNEL_DEATH, "Death", LEVEL_IMMORTAL );
+       to_channel( buf, CHANNEL_DEATH, "Morte", LEVEL_IMMORTAL );
        extract_char( ch, FALSE );
        return rCHAR_DIED;
     }
@@ -1246,7 +1246,7 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
 	&& fch->master == ch
 	&& fch->position == POS_STANDING )
 	{
-	act( AT_ACTION, "You follow $N.", fch, NULL, ch, TO_CHAR );
+	act( AT_ACTION, "Estas seguindo a $N.", fch, NULL, ch, TO_CHAR );
 	    move_char( fch, pexit, 0 );
 	}
       }
@@ -1283,14 +1283,14 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
 	|| ( ch->mount && !IS_AFFECTED( ch->mount, AFF_FLOATING ) ) )
 	{
 	  set_char_color( AT_HURT, ch );
-	  send_to_char( "OUCH! You hit the ground!\n\r", ch );
+	  send_to_char( "OUCH! Golpeache o chao!\n\r", ch );
 	  WAIT_STATE( ch, 20 );
 	  retcode = damage( ch, ch, 20 * fall, TYPE_UNDEFINED );
 	}
 	else
 	{
 	  set_char_color( AT_MAGIC, ch );
-	  send_to_char( "You lightly float down to the ground.\n\r", ch );
+	  send_to_char( "Caes flotando suavemente sobre o chao.\n\r", ch );
 	}
     }
     return retcode;
@@ -1737,7 +1737,7 @@ void do_unlock( CHAR_DATA *ch, char *argument )
 
     if ( arg[0] == '\0' )
     {
-	send_to_char( "Unlock what?\n\r", ch );
+	send_to_char( "Desbloquear o qué?\n\r", ch );
 	return;
     }
 
@@ -1747,17 +1747,17 @@ void do_unlock( CHAR_DATA *ch, char *argument )
 
         if (  IS_SET(pexit->exit_info, EX_SECRET) /* added */
         &&    pexit->keyword && !nifty_is_name( arg, pexit->keyword ) )
-            { ch_printf( ch, "You see no %s here.\n\r", arg ); return;   }
+            { ch_printf( ch, "Non ves ningun %s aqui.\n\r", arg ); return;   }
 	if ( !IS_SET(pexit->exit_info, EX_ISDOOR) )
-	    { send_to_char( "You can't do that.\n\r",      ch ); return; }
+	    { send_to_char( "Non podes facer iso.\n\r",      ch ); return; }
 	if ( !IS_SET(pexit->exit_info, EX_CLOSED) )
-	    { send_to_char( "It's not closed.\n\r",        ch ); return; }
+	    { send_to_char( "Non esta cerrada.\n\r",        ch ); return; }
 	if ( pexit->key < 0 )
-	    { send_to_char( "It can't be unlocked.\n\r",   ch ); return; }
+	    { send_to_char( "Non pode ser desbloqueada.\n\r",   ch ); return; }
 	if ( (key=has_key(ch, pexit->key)) == NULL )
-	    { send_to_char( "You lack the key.\n\r",       ch ); return; }
+	    { send_to_char( "Non tes a chave precisa.\n\r",       ch ); return; }
 	if ( !IS_SET(pexit->exit_info, EX_LOCKED) )
-	    { send_to_char( "It's already unlocked.\n\r",  ch ); return; }
+	    { send_to_char( "Xa está desbloqueada.\n\r",  ch ); return; }
 
 	if ( !IS_SET(pexit->exit_info, EX_SECRET)
 	||   (pexit->keyword && nifty_is_name( arg, pexit->keyword )) )
@@ -1765,7 +1765,7 @@ void do_unlock( CHAR_DATA *ch, char *argument )
 	    send_to_char( "*Click*\n\r", ch );
 	    count = key->count;
 	    key->count = 1;
-	    act( AT_ACTION, "$n unlocks the $d with $p.", ch, key, pexit->keyword, TO_ROOM );
+	    act( AT_ACTION, "$n desbloquea a $d con $p.", ch, key, pexit->keyword, TO_ROOM );
 	    key->count = count;
 	    if ( IS_SET(pexit->exit_info, EX_EATKEY) )
 	    {
@@ -1845,14 +1845,14 @@ void do_bashdoor( CHAR_DATA *ch, char *argument )
 
 	    if ( !IS_SET( pexit->exit_info, EX_CLOSED ) )
 	    {
-		send_to_char( "Calm down.  It is already open.\n\r", ch );
+		send_to_char( "Tranquilidade. Xa esta aberta.\n\r", ch );
 		return;
 	    }
 
 	    WAIT_STATE( ch, skill_table[gsn_bashdoor]->beats );
 
 	    if ( IS_SET( pexit->exit_info, EX_SECRET ) )
-		keyword = "wall";
+		keyword = "parede";
 	    else
 		keyword = pexit->keyword;
 	    if ( !IS_NPC(ch) )
@@ -1935,27 +1935,27 @@ void do_stand( CHAR_DATA *ch, char *argument )
     {
     case POS_SLEEPING:
 	if ( IS_AFFECTED(ch, AFF_SLEEP) )
-	    { send_to_char( "You can't seem to wake up!\n\r", ch ); return; }
+	    { send_to_char( "Non pareces esperto!\n\r", ch ); return; }
 
-	send_to_char( "You wake and climb quickly to your feet.\n\r", ch );
-	act( AT_ACTION, "$n arises from $s slumber.", ch, NULL, NULL, TO_ROOM );
+	send_to_char( "Levantaste rapidamente e poste en pé.\n\r", ch );
+	act( AT_ACTION, "$n regresa dunha $s soneca.", ch, NULL, NULL, TO_ROOM );
 	ch->position = POS_STANDING;
 	break;
 
     case POS_RESTING:
-        send_to_char( "You gather yourself and stand up.\n\r", ch );
+        send_to_char( "Espabilaste e levantaste.\n\r", ch );
 	act( AT_ACTION, "$n rises from $s rest.", ch, NULL, NULL, TO_ROOM );
         ch->position = POS_STANDING;
         break;
 
     case POS_SITTING:
-	send_to_char( "You move quickly to your feet.\n\r", ch );
+	send_to_char( "Poste rapidamente en pé.\n\r", ch );
 	act( AT_ACTION, "$n rises up.", ch, NULL, NULL, TO_ROOM );
 	ch->position = POS_STANDING;
 	break;
 
     case POS_STANDING:
-	send_to_char( "You are already standing.\n\r", ch );
+	send_to_char( "Ainda estas de pé.\n\r", ch );
 	break;
 
     case POS_FIGHTING:
@@ -1963,7 +1963,7 @@ void do_stand( CHAR_DATA *ch, char *argument )
     case POS_DEFENSIVE:
     case POS_AGGRESSIVE:
     case POS_BERSERK:
-	send_to_char( "You are already fighting!\n\r", ch );
+	send_to_char( "Ainda estas loitando!\n\r", ch );
 	break;
     }
 

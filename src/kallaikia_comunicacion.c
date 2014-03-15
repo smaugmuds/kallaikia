@@ -218,7 +218,7 @@ void do_mpasupress( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -263,7 +263,7 @@ void do_mpkill( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC(ch) || IS_AFFECTED(ch, AFF_CHARM) )
     {
-         send_to_char( "Huh?\n\r", ch );
+         send_to_char( "Que dis?\n\r", ch );
          return;
     }
     one_argument( argument, arg );
@@ -313,7 +313,7 @@ void do_mpjunk( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -390,7 +390,7 @@ void do_mpasound( CHAR_DATA *ch, char *argument )
     }
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -431,7 +431,7 @@ void do_mpechoaround( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -478,7 +478,7 @@ void do_mpechoat( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -527,7 +527,7 @@ void do_mpecho( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -558,7 +558,7 @@ void do_mpsoundaround( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -598,7 +598,7 @@ void do_mpsoundat( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -636,7 +636,7 @@ void do_mpsound( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -667,7 +667,7 @@ void do_mpmusicaround( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -696,7 +696,7 @@ void do_mpmusic( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -725,7 +725,7 @@ void do_mpmusicat( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -757,7 +757,7 @@ void do_mpmload( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -791,7 +791,7 @@ void do_mpoload( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -866,7 +866,7 @@ void do_mpplace( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -966,7 +966,7 @@ void do_mppardon( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1048,7 +1048,7 @@ void do_mppurge( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1113,7 +1113,7 @@ void do_mpinvis( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1168,7 +1168,7 @@ void do_mpgoto( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1213,7 +1213,7 @@ void do_mpat( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1256,7 +1256,7 @@ void do_mpadvance( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1397,7 +1397,7 @@ void do_mptransfer( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1544,7 +1544,7 @@ void do_mpforce( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1631,7 +1631,7 @@ void do_mpnuisance( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1683,7 +1683,7 @@ void do_mpunnuisance( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1744,7 +1744,7 @@ void do_mpbodybag( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1801,7 +1801,7 @@ void do_mpmorph( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1847,7 +1847,7 @@ void do_mpunmorph( CHAR_DATA *ch, char *argument )
 
   if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
   {
-        send_to_char( "Huh?\n\r", ch );
+        send_to_char( "Que dis?\n\r", ch );
         return;
   }
 
@@ -1884,7 +1884,7 @@ void do_mpechozone( CHAR_DATA *ch, char *argument ) /* Blod, late 97 */
  
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -1932,7 +1932,7 @@ void do_mp_practice( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2031,7 +2031,7 @@ void do_mpstrew( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2108,7 +2108,7 @@ void do_mpscatter( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2178,7 +2178,7 @@ void do_mp_slay( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2246,7 +2246,7 @@ void do_mp_damage( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2321,7 +2321,7 @@ void do_mp_log( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2349,7 +2349,7 @@ void do_mp_restore( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2405,7 +2405,7 @@ void  do_mpfavor( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2483,7 +2483,7 @@ void do_mp_open_passage( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2568,7 +2568,7 @@ void do_mp_fill_in( CHAR_DATA *ch, char *argument )
   
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ) || ch->desc )
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2601,7 +2601,7 @@ void do_mp_close_passage( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2671,7 +2671,7 @@ void do_mpnothing( CHAR_DATA *ch, char *argument )
 {
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2691,7 +2691,7 @@ void do_mpdream( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2718,7 +2718,7 @@ void do_mpapply( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2764,7 +2764,7 @@ void do_mpapplyb( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2891,7 +2891,7 @@ void do_mp_deposit( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2921,7 +2921,7 @@ void do_mp_withdraw( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2950,7 +2950,7 @@ void do_mpdelay( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -2995,7 +2995,7 @@ void do_mppeace( CHAR_DATA *ch, char *argument )
  
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -3038,7 +3038,7 @@ void do_mppkset( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -3087,7 +3087,7 @@ void do_mpoowner( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -3381,7 +3381,7 @@ void do_mphunt( CHAR_DATA *ch, char *argument)
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -3412,7 +3412,7 @@ void do_mphate( CHAR_DATA *ch, char *argument)
 
     if ( !IS_NPC( ch ) || ch->desc || IS_AFFECTED( ch, AFF_CHARM ))
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 

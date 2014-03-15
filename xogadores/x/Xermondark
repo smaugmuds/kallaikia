@@ -6,9 +6,9 @@ Class        11
 Race         11
 Languages    1 1
 Level        2
-Played       272
-Room         21050
-HpManaMove   27 32 114 114 90 110
+Played       626
+Room         21061
+HpManaMove   32 32 114 114 110 110
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
 Gold         0
@@ -30,7 +30,7 @@ Hitroll      0
 Damroll      0
 Armor        100
 Resistant    256
-Mentalstate  -2
+Mentalstate  0
 Password     15e4b6e5e28d5bf86404abe9cac35c23fc25d5d692e0237c3dc49bac17cd94ca~
 Title         the Attendant~
 Flags        8388616
@@ -41,7 +41,7 @@ MDeaths      0
 IllegalPK    0
 AttrPerm     12 15 15 14 16 11 12
 AttrMod      0 0 0 0 0 0 0
-Condition    0 45 42 10
+Condition    0 40 32 10
 Site         localhost
 Tongue       100 'common'
 Tongue       100 'elvish'

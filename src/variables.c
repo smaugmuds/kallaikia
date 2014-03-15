@@ -213,7 +213,7 @@ void do_mptag( CHAR_DATA *ch, char *argument )
     if ( (!IS_NPC(ch) && get_trust(ch) < LEVEL_GREATER)
     ||     IS_CHARMED(ch) )
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -297,7 +297,7 @@ void do_mprmtag( CHAR_DATA *ch, char *argument )
     if ( (!IS_NPC(ch) && get_trust(ch) < LEVEL_GREATER)
     ||     IS_CHARMED(ch) )
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -355,7 +355,7 @@ void do_mpflag( CHAR_DATA *ch, char *argument )
     if ( (!IS_NPC(ch) && get_trust(ch) < LEVEL_GREATER)
     ||     IS_CHARMED(ch) )
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 
@@ -458,7 +458,7 @@ void do_mprmflag( CHAR_DATA *ch, char *argument )
     if ( (!IS_NPC(ch) && get_trust(ch) < LEVEL_GREATER)
     ||     IS_CHARMED(ch) )
     {
-          send_to_char( "Huh?\n\r", ch );
+          send_to_char( "Que dis?\n\r", ch );
           return;
     }
 

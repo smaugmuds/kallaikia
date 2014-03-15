@@ -1003,7 +1003,7 @@ void close_socket( DESCRIPTOR_DATA *dclose, bool force )
 
     if ( dclose->character )
     {
-        sprintf( log_buf, "Closing link to %s. (INRoom %d)",
+        sprintf( log_buf, "Fechando enlace hacia %s. (Estancia %d)",
           ch->pcdata->filename,
           ( ch->in_room ? ch->in_room->vnum : -1 ) );
 	log_string_plus( log_buf, LOG_COMM, UMAX( sysdata.log_level, ch->level ) );
@@ -1776,7 +1776,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	  ch->pcdata->filename,
 	  d->host );
 	append_to_file( CHARCOUNT_FILE, buf2 );
-	sprintf( log_buf, "%s@%s(%s) esta conectado. (ENRoom %d)",
+	sprintf( log_buf, "%s@%s(%s) esta conectado. (Estancia %d)",
           ch->pcdata->filename,
           d->host, d->user,
           ( ch->in_room ? ch->in_room->vnum : -1 ) );
@@ -2437,7 +2437,7 @@ bool check_reconnect( DESCRIPTOR_DATA *d, char *name, bool fConn )
                    act( AT_ACTION, class_table[ch->class]->reconnect_other, ch, NULL, NULL, TO_CANSEE );
                 else
                    act( AT_ACTION, "$n reconnectou ao xogo.", ch, NULL, NULL, TO_CANSEE );
-                sprintf( log_buf, "%s@%s(%s) reconectado. (ENRoom %d)",
+                sprintf( log_buf, "%s@%s(%s) reconectado. (Estancia %d)",
                   ch->pcdata->filename,
                   d->host,
                   d->user,
@@ -2508,7 +2508,7 @@ bool check_playing( DESCRIPTOR_DATA *d, char *name, bool kick )
 	    check_loginmsg( ch );
 	    act( AT_ACTION, "$n reconectou, liberando o enlace antigo.",
 	         ch, NULL, NULL, TO_CANSEE );
-            sprintf( log_buf, "%s@%s reconectado, liberando enlace antigo. (ENRoom %d)",
+            sprintf( log_buf, "%s@%s reconectado, liberando enlace antigo. (Estancia %d)",
                  ch->pcdata->filename,
                  d->host,
                  ( ch->in_room ? ch->in_room->vnum : -1 ) );

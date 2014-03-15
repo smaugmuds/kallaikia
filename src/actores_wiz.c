@@ -3277,7 +3277,7 @@ void do_statshield( CHAR_DATA *ch, char *argument )
     one_argument( argument, arg );
     if ( IS_NPC ( ch ) || get_trust( ch ) < LEVEL_GREATER )
     {
-	send_to_char( "Huh?\n\r", ch );
+	send_to_char( "Que dis?\n\r", ch );
 	return;
     }
     if ( arg[0] == '\0' )
@@ -3380,7 +3380,7 @@ void do_return( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC( ch ) && get_trust(ch) < LEVEL_IMMORTAL )
     {
-	send_to_char("Huh?\n\r", ch );
+	send_to_char("Que dis?\n\r", ch );
 	return;
     }
 
@@ -3457,7 +3457,7 @@ void do_minvoke( CHAR_DATA *ch, char *argument )
 
 	if ( IS_NPC(ch) )
 	{
-	  send_to_char( "Huh?\n\r", ch );
+	  send_to_char( "Que dis?\n\r", ch );
 	  return;
 	}
 	if ( !ch->pcdata || !(pArea=ch->pcdata->area) )
@@ -3577,7 +3577,7 @@ void do_oinvoke( CHAR_DATA *ch, char *argument )
 
 	if ( IS_NPC(ch) )
 	{
-	  send_to_char( "Huh?\n\r", ch );
+	  send_to_char( "Que dis?\n\r", ch );
 	  return;
 	}
 	if ( !ch->pcdata || !(pArea=ch->pcdata->area) )
@@ -4210,7 +4210,7 @@ void do_imm_news( CHAR_DATA *ch, char *argument )
 
     if ( !IS_IMMORTAL( ch ) )
     {
-	send_to_char( "Huh?\n\r", ch );
+	send_to_char( "Que dis?\n\r", ch );
 	return;
     }
 
@@ -9845,7 +9845,7 @@ void do_qpset( CHAR_DATA *ch, char *argument )
   }
   if ( get_trust( ch ) < LEVEL_IMMORTAL ) 
   {
-    send_to_char( "Huh?\n\r", ch );
+    send_to_char( "Que dis?\n\r", ch );
     return;
   }
 
@@ -10500,7 +10500,7 @@ void do_khistory(CHAR_DATA *ch, char *argument)
 
 	if(IS_NPC(ch) || !IS_IMMORTAL(ch))
 	{
-		ch_printf(ch, "Huh?\n\r");
+		ch_printf(ch, "Que dis?\n\r");
 		return;
 	}
 		
@@ -11221,7 +11221,7 @@ void do_ipcompare ( CHAR_DATA *ch, char *argument )
 
   if ( IS_NPC(ch) )
   {
-        send_to_char("Huh?\n\r", ch );
+        send_to_char("Que dis?\n\r", ch );
         return;
   }
 
@@ -11489,7 +11489,7 @@ void do_nuisance ( CHAR_DATA *ch, char *argument )
 
   if ( IS_NPC(ch) )
   {
-        send_to_char("Huh?\n\r", ch );
+        send_to_char("Que dis?\n\r", ch );
         return;
   }
 
@@ -11644,7 +11644,7 @@ void do_unnuisance ( CHAR_DATA *ch, char *argument )
 
   if ( IS_NPC(ch) )
   {
-        send_to_char("Huh?\n\r", ch );
+        send_to_char("Que dis?\n\r", ch );
         return;
   }
   one_argument ( argument, arg );
@@ -11797,7 +11797,7 @@ void do_oowner( CHAR_DATA *ch, char *argument )
 
    if ( IS_NPC(ch) )
    {
-   	send_to_char("Huh?\n\r", ch );
+   	send_to_char("Que dis?\n\r", ch );
 	return;
    }
 
@@ -11854,7 +11854,7 @@ void do_appear( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) )
     {
-   	send_to_char("Huh?\n\r", ch );
+   	send_to_char("Que dis?\n\r", ch );
 	return;
     }
 
@@ -11939,7 +11939,7 @@ void do_disappear( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) )
     {
-   	send_to_char("Huh?\n\r", ch );
+   	send_to_char("Que dis?\n\r", ch );
 	return;
     }
 

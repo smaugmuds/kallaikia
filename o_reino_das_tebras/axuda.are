@@ -67,7 +67,7 @@ guarantees the safety of all that reside in the park. After
 nightfall however, anything can happen.
 ~
 
-62 "CANAIS LEIS"~
+62 "CANLES LEIS"~
 ~
 
 57 "MASSIGN" "OASSIGN" "RASSIGN"~
@@ -111,7 +111,7 @@ walks among them.
 ~
 
 0 "REMOVE INVIS"~
-Syntax: cast 'remove invis' <object>
+Sintaxis: cast 'remove invis' <object>
  
 This spell will make an invisible object in the character's inventory
 visible.
@@ -220,7 +220,7 @@ enjoy a picnic lunch.
 ~
 
 53 AASSIGN~
-Syntax: aassign <filename>.are  Example:  aassign edo.are
+Sintaxis: aassign <filename>.are  Example:  aassign edo.are
  
 AASSIGN temporarily assigns all rooms, objects, and mobiles in the area
 range to your pfile.  This allows you to use rlist, olist, mlist, and
@@ -252,7 +252,7 @@ salvation has become a haven of the damned, ruled by chaos unbridled.
 ~
 
 1 ACCESSORIES~
-Syntax:  accessories <argument>
+Sintaxis:  accessories <argument>
  
 Where the argument is one of:
  list
@@ -296,11 +296,11 @@ are in many cases minimal.
 ~
 
 0 'ACID BREATH' 'FIRE BREATH' 'FROST BREATH' 'GAS BREATH' 'LIGHTNING BREATH'~
-Syntax: cast 'acid breath'      <victim>
-Syntax: cast 'fire breath'      <victim>
-Syntax: cast 'frost breath'     <victim>
-Syntax: cast 'gas breath'
-Syntax: cast 'lightning breath' <victim>
+Sintaxis: cast 'acid breath'      <victim>
+Sintaxis: cast 'fire breath'      <victim>
+Sintaxis: cast 'frost breath'     <victim>
+Sintaxis: cast 'gas breath'
+Sintaxis: cast 'lightning breath' <victim>
 
 These spells are for the use of dragons.  Acid, fire, frost, and lightning
 damage one victim, whereas gas damages every PC in the room.  Fire and
@@ -391,7 +391,7 @@ given this respect, we will begin dealing extremely harshly
 with those who cannot see their way to such simple and civil
 guidelines.
  
-See also:  &WLAWS
+See also:  &WLEIS
 ~
 
 51 ADMINLIST~
@@ -441,7 +441,7 @@ head and/or co-head of the councils.
 ~
 
 60 ADVANCE~
-Syntax: advance <character> <level>
+Sintaxis: advance <character> <level>
 
 ADVANCE sets a character's level to the specified value.  It is the
 only way to create new immortal characters within the game.  ADVANCE
@@ -517,8 +517,8 @@ keyword for that exit:
 ~
 
 1 AFFECTED 'AFFECTED BY'~
-Syntax:  affected       (abbrevation:  af)
-Syntax:  affected by    (abbreviation: af by)
+Sintaxis:  affected       (abbrevation:  af)
+Sintaxis:  affected by    (abbreviation: af by)
  
 'Affected' is a spells-at-a-glance function, which displays only the spells
 (and skill affects) your character is currently under.  Each affect will be
@@ -580,7 +580,7 @@ See AFFECTEDBY
 ~
 
 0 AFK~
-Syntax:  afk (abbreviation for "away from keyboard")
+Sintaxis:  afk (abbreviation for "away from keyboard")
  
 The 'afk' command will place an [AFK] flag beside your name on the who 
 list when activated, as well as informing those who send tells that you
@@ -590,7 +590,7 @@ go off automatically when you enter any command.
 ~
 
 1 AGGRESSIVE~
-Syntax: style aggressive
+Sintaxis: style aggressive
  
 This style of combat allows a fighter to strike more effectively, but
 leaves many holes in his defenses as well. Fighters who know this tactic
@@ -601,7 +601,7 @@ See Also: style, evasive, defensive, standard, aggressive, berserk
 ~
 
 0 AID~
-Syntax: aid <character>
+Sintaxis: aid <character>
 
 This skill allows you to bring a stunned person back into consciousness.
 The skill will only work on those who are low in hitpoints or stunned by
@@ -609,7 +609,7 @@ a non-combat action.  A character paralyzed via combat can not be aided.
 ~
 
 1 ALERTNESS~
-Syntax:  c alertness <self>
+Sintaxis:  c alertness <self>
  
 Alertness renders the target resistant to the sleep spell.
 ~
@@ -735,7 +735,7 @@ from the ban list.  This also can be allowed by using # syntax.
 ~
 
 1 'ANIMATE DEAD~
-Syntax: cast 'animate dead' <victim>
+Sintaxis: cast 'animate dead' <victim>
  
 After a mobile has been killed, the magic user has the ability to animate
 the corpse of the recently deceased mob.  The mob will be animated with full
@@ -745,7 +745,7 @@ returning to the underworld.
 ~
 
 57 'ANIMATE DEAD'~
-Syntax: cast 'animate dead' <vicim>
+Sintaxis: cast 'animate dead' <vicim>
  
 After a mobile has been killed, the magic user has the ability to animate
 the corpse of the recently deceased mob.  The mob will be animated with
@@ -755,8 +755,8 @@ time before returning to the underworld.
 ~
 
 0 ANSI~
-Syntax:  ANSI
-Syntax:  ANSI on/off
+Sintaxis:  ANSI
+Sintaxis:  ANSI on/off
 
 The ANSI command will enable or disable ANSI colour.  ANSI colour
 display depends entirely on the compatibility of your terminal
@@ -967,7 +967,7 @@ Using the 'none/nobody/clear' argument clears all appearances.
 ~
 
 0 APPRAISE~
-Syntax: appraise <item>
+Sintaxis: appraise <item>
         appraise all
 
 Appraise, when at a repairshop type mob, will tell you the condition of 
@@ -977,7 +977,7 @@ not, and if so, how much it will cost.
 ~
 
 1 'AQUA BREATH' 'AQUA'~
-Syntax: cast 'aqua breath' <character>
+Sintaxis: cast 'aqua breath' <character>
  
 This spell allows you to breath in water areas and underwater.  Certain
 water sectors will require the use of aqua breath to prevent damage from
@@ -1072,9 +1072,9 @@ For more information on applying to Arcanes, type &RAXUDA ARCANES INDUCTIONS.
 ~
 
 1 AREAS~
-Syntax:  areas
-Syntax:  areas old
-Syntax:  areas <low range> <hi range>
+Sintaxis:  areas
+Sintaxis:  areas old
+Sintaxis:  areas <low range> <hi range>
  
 The 'areas' command displays an alphabetically sorted list of all areas
 within the game, together with the author and suggested level range of
@@ -1097,7 +1097,7 @@ on other muds, you must contact that individual.
 ~
 
 0 ARMOR~
-Syntax: cast armor <character>
+Sintaxis: cast armor <character>
 
 This spell decreases (improves) the armor class of the target character
 by 20 points.
@@ -1268,7 +1268,7 @@ and to assail the agents of chaos, subjecting them to their organized will.
 ~
 
 59 ASET~
-Syntax:  aset <area filename> <field> <value>
+Sintaxis:  aset <area filename> <field> <value>
  
 Aset is used to set the following fields for an individual area:
 author    - The name of the area's author
@@ -1311,8 +1311,8 @@ naturally aggressive nor in a room where is may assist/attack a player.
 ~
 
 59 ASTAT~
-Syntax:  astat                      (area stats for the area you are in)
-Syntax:  astat <filename of area>   (area stats for specified area)
+Sintaxis:  astat                      (area stats for the area you are in)
+Sintaxis:  astat <filename of area>   (area stats for specified area)
  
 Astat displays the vital stats of an area, including the following:
 Name:            title of the area
@@ -1340,8 +1340,8 @@ See ASET
 ~
 
 1 'ASTRAL WALK' 'FARSIGHT' 'PORTAL' 'HELICAL FLOW'~
-Syntax:  cast 'astral walk'  <victim>  Syntax:  cast 'farsight'     <victim>
-Syntax:  cast 'portal'       <victim>  Syntax:  cast 'helical flow' <victim>
+Sintaxis:  cast 'astral walk'  <victim>  Syntax:  cast 'farsight'     <victim>
+Sintaxis:  cast 'portal'       <victim>  Syntax:  cast 'helical flow' <victim>
  
 These spells allow the very shape of space and time to be warped at the
 caster's bidding:
@@ -1366,7 +1366,7 @@ See also TRANSPORT
 ~
 
 52 AT~
-Syntax: at <location> <command>
+Sintaxis: at <location> <command>
 
 AT executes the given command (which may have arguments) at the given
 location.  The location may be specified as a vnum, or as the name of
@@ -1434,8 +1434,8 @@ See MSET and DEFENSES  (Some are not implemented).
 
 1 AUC AUCTION~
 .Syntax: auction (abbreviations: a , auc)
-Syntax: auction <item name> <starting value>
-Syntax: auction bid <value>
+Sintaxis: auction <item name> <starting value>
+Sintaxis: auction bid <value>
  
 The auction command is used for performing auctions.  Simply typing auction
 will display the current item being auctioned, if there is one.  
@@ -1718,7 +1718,7 @@ the plains known as Aruncus, and say "Teach me of spurning and cuffing"
 ~
 
 51 AVTALK~
-Syntax: avtalk <message>
+Sintaxis: avtalk <message>
 
 This allows you to use the avtalk (level 50+) channel.
 ~
@@ -1827,8 +1827,8 @@ fireball may injure themselves when the spell backfires.
 ~
 
 1 BACKSTAB BS~
-Syntax:  backstab <victim>
-Syntax:  bs       <victim>
+Sintaxis:  backstab <victim>
+Sintaxis:  bs       <victim>
  
 A backstab is a method of attack, used primarily by thieves but able
 to be utilized by others in some circumstances, and which inflicts a
@@ -1868,8 +1868,8 @@ victim when they are unaware of your presence.
 ~
 
 51 BAMFIN BAMFOUT~
-Syntax: bamfin  <message>
-Syntax: bamfout <message>
+Sintaxis: bamfin  <message>
+Sintaxis: bamfout <message>
 
 The standard messages for GOTO are 'arrives in a swirling mist' and
 'leaves in a swirling mist'.  You can replace these messages with messages of
@@ -1941,7 +1941,7 @@ See also: 'BAN ALLOW' 'BAN 50' 'BAN DURATION'
 ~
 
 58 BARENUM BARESIZE~
-Syntax: mset <mob> barenum <number>
+Sintaxis: mset <mob> barenum <number>
 mset <mob> baresize <num>
 
 These mob fields control the mobs ability to fight without weapons.
@@ -1956,7 +1956,7 @@ Experience is calculated as follows:
 ~
 
 0 BASH~
-Syntax:  bash
+Sintaxis:  bash
  
 Bash can only be used once a fight has started.  It will inflict damage and
 temporarily daze both yourself and your opponent for approximately two rounds
@@ -2032,13 +2032,13 @@ If you are still wearing pants, something is wrong.
 ~
 
 1 BECKON~
-Syntax: 'beckon <name>'
+Sintaxis: 'beckon <name>'
  
 This command allows you to send an audible beep to the player whom you wish to
 speak to. This will only work if the player whom you are beckoning is "config
 +beckon".
  
-See also:  AXUDA CONFIG
+See also:  AXUDA CONFIGURACION
 ~
 
 50 BEDE~
@@ -2072,14 +2072,14 @@ See also:  AXUDA CONFIG
 ~
 
 1 'BENEDICTION'~
-Syntax: cast benediction
+Sintaxis: cast benediction
  
 The spell BENEDICTION lays upon the members of the casters group
 a strong, but short-lived Protection of The High Gods.
 ~
 
 1 'BENEFIC AURA'~
-Syntax:  c 'benefic aura'
+Sintaxis:  c 'benefic aura'
  
 The Paladin may infuse itself with a general protection from evil with
 this ancient cantrip.  As with most of the major Paladin spells, it
@@ -2088,7 +2088,7 @@ requires the utilization of the Paladin symbol.
 ~
 
 63 BERSERK~
-Syntax:  berserk
+Sintaxis:  berserk
  
 Going berserk sends your warrior into a frenzied state, increasing its
 attacks per round to a maximum of six and your strength by one.  While
@@ -2096,7 +2096,7 @@ you are berserking you cannot flee.
 ~
 
 1 BERSERK~
-Syntax: style berserk
+Sintaxis: style berserk
  
 This tactic is truly powerful, for it causes the fighter to allow pure
 rage to flow through him, at the cost of his own judgement and care for
@@ -2108,7 +2108,7 @@ See Also: style, evasive, defensive, standard, aggressive, berserk.
 ~
 
 60 BESTOW BESTOWMENTS~
-Syntax: bestow <victim> command [command] [command] etc
+Sintaxis: bestow <victim> command [command] [command] etc
 bestow <victim> list
 bestow <victim> none
  
@@ -2119,7 +2119,7 @@ none will remove all bestowments.
 ~
 
 58 BESTOWAREA~
-Syntax: bestowarea <victim> <filename>.are
+Sintaxis: bestowarea <victim> <filename>.are
  
 This command allows members of the Area Council to bestow area names
 to immortals so that they can engage in group building.
@@ -2138,7 +2138,7 @@ bestowarea joe none              removes all of joe's bestowed areas
 ~
 
 1 'BETHSAIDEAN TOUCH' BETHSAIDEAN TOUCH~
-Syntax:  c 'bethsaidean touch' <target>
+Sintaxis:  c 'bethsaidean touch' <target>
  
 With the use of the Paladin's holy symbol, one may endeavor to lift
 the blindness of the afflicted.
@@ -2146,7 +2146,7 @@ the blindness of the afflicted.
 ~
 
 1 BITE~
-Syntax:  bite
+Sintaxis:  bite
  
 Bite is a vampire skill which can only be used once combat has begun.
 It inflicts damage on the victim relative to the vampire's own level
@@ -2205,8 +2205,8 @@ powers of light still have a tenuous foothold here.
 ~
 
 0 BLAZEBANE~
-Syntax:  cast 'blazebane' <mob>
-Syntax:  cast 'blazebane' <player>
+Sintaxis:  cast 'blazebane' <mob>
+Sintaxis:  cast 'blazebane' <player>
 
 This spell makes the victim more susceptible to fire and heat.  It
 should only be cast on mobs.  Casting this spell on a player will be
@@ -2220,7 +2220,7 @@ cast upon yourself.
 ~
 
 0 BLESS~
-Syntax: cast bless <character>
+Sintaxis: cast bless <character>
 
 This spell improves the to-hit roll and saving throw versus spell of the
 target character by +1 each.
@@ -2248,7 +2248,7 @@ See also GOUGE, BLIND
 ~
 
 1 BLITZ~
-Syntax:  blitz
+Sintaxis:  blitz
  
 The warrior focuses his attention on his/her opponent and delivers a
 quick, crushing attack. This skill is an effective means of surprising
@@ -2368,7 +2368,7 @@ called. Confused? Mudmail myself with your question.
 ~
 
 1 BLOODLET~
-Syntax:  bloodlet
+Sintaxis:  bloodlet
  
 A vampire which is itself sated on blood may open his own veins to drain
 a small amount of the vitae for the consumption of a more needy comrade
@@ -2469,11 +2469,11 @@ at creation and gain 1/1 bp for each subsequent level.
 ~
 
 0 BRANDISH QUAFF RECITE ZAP STAFF WAND~
-Syntax:  brandish                       (to invoke a staff)
-Syntax:  quaff  <potion>                (to quaff potions)
+Sintaxis:  brandish                       (to invoke a staff)
+Sintaxis:  quaff  <potion>                (to quaff potions)
          quaff  <potion> <container>    (quaff directly from container)
-Syntax:  recite <scroll> <target>       (to recite a scroll)
-Syntax:  zap    <target>                (to use a wand on a target)
+Sintaxis:  recite <scroll> <target>       (to recite a scroll)
+Sintaxis:  zap    <target>                (to use a wand on a target)
   
 BRANDISH invokes a magical staff. Magical staves (staffs) are items that are
 held and brandished as to affect everyone in the room. Offensive spells will 
@@ -2498,7 +2498,7 @@ See EAT, BACKFIRE, RECHARGE, POTION, SCROLL
 ~
 
 1 BROACH~
-Syntax:  broach <direction>
+Sintaxis:  broach <direction>
  
 This skill when used successfully enables a vampire to bypass a
 locked/barred/or otherwise obstructed exit.
@@ -2623,12 +2623,12 @@ See also: &W'THE SHIRE'  HALFLING  NATIONS&w
 ~
 
 0 BUY LIST SELL VALUE~
-Syntax: buy   <object>
-Syntax: buy   <# of object> <object>
-Syntax: list
-Syntax: list  <object>
-Syntax: sell  <object>
-Syntax: value <object>
+Sintaxis: buy   <object>
+Sintaxis: buy   <# of object> <object>
+Sintaxis: list
+Sintaxis: list  <object>
+Sintaxis: sell  <object>
+Sintaxis: value <object>
  
 BUY buys an object from a shop keeper.
 BUY <# of object> <object> will allow you to buy up to twenty of a normal
@@ -2688,7 +2688,7 @@ VALUE asks the shop keeper how much he, she, or it will buy the item for.
 ~
 
 0 'CALL LIGHTNING'~
-Syntax: cast 'call lightning'
+Sintaxis: cast 'call lightning'
 
 This spell works only out of doors, and only when the weather is bad.
 It calls down lightning bolts from God.
@@ -2729,11 +2729,11 @@ player's characters from the Realms of Despair:
 of the Immortal involved. Any objections to sentences given
 by any Immortal may be addressed to: blodkai@game.org
  
-&YAlso see: &wAPPEALS, LAWS, DISCLAIMER, ADVERTISING
+&YAlso see: &wAPPEALS, LEIS, DISCLAIMER, ADVERTISING
 ~
 
 0 CAST~
-Syntax: cast <spell> <target>
+Sintaxis: cast <spell> <target>
 
 Before you can cast a spell, you have to practice it.  The more you practice,
 the higher chance you have of success when casting.  Casting spells costs mana.
@@ -2766,10 +2766,10 @@ well as its contents and secrets.
 ~
 
 0 'CAUSE LIGHT' 'CAUSE SERIOUS' 'CAUSE CRITICAL' HARM~
-Syntax: cast 'cause light'    <victim>
-Syntax: cast 'cause serious'  <victim>
-Syntax: cast 'cause critical' <victim>
-Syntax: cast harm             <victim>
+Sintaxis: cast 'cause light'    <victim>
+Sintaxis: cast 'cause serious'  <victim>
+Sintaxis: cast 'cause critical' <victim>
+Sintaxis: cast harm             <victim>
 
 These spells inflict damage on the victim.  The higher-level spells do
 more damage.
@@ -2784,11 +2784,11 @@ a wide variety of physical types.
 ~
 
 61 CEDIT~
-Syntax:  cedit save
-Syntax:  cedit <command> create [code]
-Syntax:  cedit <command> delete
-Syntax:  cedit <command> show
-Syntax:  cedit <command> [field]
+Sintaxis:  cedit save
+Sintaxis:  cedit <command> create [code]
+Sintaxis:  cedit <command> delete
+Sintaxis:  cedit <command> show
+Sintaxis:  cedit <command> [field]
  
 Field being one of:
   level position log code
@@ -2917,30 +2917,30 @@ invariably awaits....
 ~
 
 1 'CHANGE SEX'~
-Syntax: cast 'change sex' <victim>
+Sintaxis: cast 'change sex' <victim>
 
 This spell changes the sex of the victim (temporarily).
 ~
 
-51 CHANGES~
-Syntax:  changes
+51 CAMBIOS~
+Sintaxis:  cambios
  
-Simply type 'changes' to see a listing of currently recorded changes
+Simply type 'cambios' to see a listing of currently recorded changes
 to the Realms itself.  Use the 'pager' or your scrollback function to
 review older changes on the list, as it will usually run for some
 distance into the past.
  
-See also:  'news'
+See also:  'novas'
 ~
 
-1 CHANNELS~
-Syntax:  channels
-Syntax:  channels +<channel|all>
-Syntax:  channels -<channel|all>
+1 CANLES~
+Sintaxis:  canais
+Sintaxis:  canais +<channel|all>
+Sintaxis:  canais -<channel|all>
  
-With no options, CHANNELS show you your current channels.  With a plus or
-minus sign and an option, CHANNELS turns that channel on or off.  Using the
-'all' option, CHANNELS will turn on/off all normal channels.
+With no options, CANLES show you your current channels.  With a plus or
+minus sign and an option, CANLES turns that channel on or off.  Using the
+'all' option, CANLES will turn on/off all normal channels.
  
 Public channels are those that can be seen by everyone, regardless of their
 affiliation with clans, guilds, orders or councils.  Private channels are
@@ -2971,7 +2971,7 @@ of late.
 ~
 
 1 CHARDELETE~
-Syntax:  chardelete <password> yes
+Sintaxis:  chardelete <password> yes
  
 A player may often find that the new character they have created just
 isn't quite what they had wanted, and would like to recreate it from
@@ -2992,7 +2992,7 @@ See also:  AUTODELETE
 ~
 
 1 'CHARGED BEACON'~
-Syntax:  c 'charged beacon' <victim>
+Sintaxis:  c 'charged beacon' <victim>
  
 Charged beacon renders the victim susceptible to electricity attacks.
 ~
@@ -3027,11 +3027,11 @@ your creature and cause it to engage in combat.
 ~
 
 0 CHAT . MUSIC ASK ANSWER SHOUT YELL~
-Syntax: chat     <message>
-Syntax: music    <message>
-Syntax: ask      <message>
-Syntax: answer   <message>
-Syntax: yell     <message>
+Sintaxis: chat     <message>
+Sintaxis: music    <message>
+Sintaxis: ask      <message>
+Sintaxis: answer   <message>
+Sintaxis: yell     <message>
 
 These commands send messages through communication channels to other players.
 
@@ -3042,7 +3042,7 @@ both use the same 'question' channel
 
 YELL sends a message to all awake players within your area.
 
-You can use the CHANNELS command to hear, or not hear, any of these channels.
+You can use the CANLES command to hear, or not hear, any of these channels.
 ~
 
 58 CHECKVNUMS CHECKVNUM~
@@ -3058,7 +3058,7 @@ as you might spam yourself out :)
 ~
 
 0 'CHILL TOUCH'~
-Syntax:         c 'chill touch' <victim>
+Sintaxis:         c 'chill touch' <victim>
  
 This spell inflicts damage on the victim, and reduces their strength
 by one point for a short period of time.
@@ -3119,7 +3119,7 @@ See also:  DROW  NATIONS  HOMETOWN
 ~
 
 0 CLANS~
-Syntax:  clans
+Sintaxis:  clans
     or:  clans <clan name>
  
 The 'clans' displays a list of all current clans, the clan deity and its
@@ -3135,7 +3135,7 @@ See also GUILDS, ORDERS
 ~
 
 0 CLANTALK~
-Syntax: clantalk <message>
+Sintaxis: clantalk <message>
 
 Provided that you are in a clan, clantalk will send the message to all 
 current members, as well as the deity.
@@ -3256,7 +3256,7 @@ Warrior..&gQuintessential fighters. &GStrength&g, skill make formidable foes.
 ~
 
 0 CLEAR~
-Syntax: clear
+Sintaxis: clear
 
 This command clears the screen.
 
@@ -3312,13 +3312,13 @@ command always refers to the area which you are currently in.
 ~
 
 1 'CLIMB'~
-Syntax:  climb  <direction>
+Sintaxis:  climb  <direction>
  
 This skill enables you to climb into and out of rooms that require it.
 ~
 
 57 CMDTABLE~
-Syntax: cmdtable
+Sintaxis: cmdtable
 
 Lists all of the commands in the game, and how many times they have been used
 since the last startup.
@@ -3364,7 +3364,7 @@ add a tag to items for 10 glory..approved 1 0 1
 55 COINDUCT COOUTCAST COIN COOUT~
 COINDUCT COOUTCAST COIN COOUT
  
-Syntax:  coinduct <playername>
+Sintaxis:  coinduct <playername>
          cooutcast <playername>
  
 Coinduct inducts an player into a council.  Cooutcast removes a player
@@ -3413,8 +3413,8 @@ This command should only be used if it is your council unless authorized.
 ~
 
 51 COLORIZE~
-Syntax:   colorize [<TARGET>]
-Syntax:   colorize [<TARGET>] [<LOCATION> <COLOR>]
+Sintaxis:   colorize [<TARGET>]
+Sintaxis:   colorize [<TARGET>] [<LOCATION> <COLOR>]
 
 TARGETt: default to change the whole muds color scheme,
 the name of a player to change that players color scheme, or 
@@ -3461,8 +3461,8 @@ not be colored except by their defaults:
 ~
 
 1 COLORSCHEME COLORSCHEMES~
-Syntax:  colorscheme <scheme number>
-Syntax:  colorscheme default
+Sintaxis:  colorscheme <scheme number>
+Sintaxis:  colorscheme default
  
 Colorschemes allow you to pick from a pre-configured set of color sets
 for room names, room descriptions and room exits.  To restore your scheme
@@ -3485,7 +3485,7 @@ Current schemes are:
 See also:  ANSI
 ~
 
-1 COMBAT~
+1 LOITA LOITAR COMBATE PELEXA PELEXAR~
 You may choose a fight by finding a mob, and using LOOK, CONSIDER, and
 IDENTIFY to gauge the difficulty of the opponent.  You can LOOK <mob>
 to get a look at its equipment and description, this will often help
@@ -3510,8 +3510,8 @@ For more information on combat, read section 12 of your Adventurer's Guide.
 ~
 
 1 COMMANDS SOCIALS~
-Syntax:  commands <string>
-Syntax:  socials
+Sintaxis:  commands <string>
+Sintaxis:  socials
  
 COMMANDS shows you all the (non-social) commands available to you.  If you
 include a string you see all available commands that begin with that string.
@@ -3523,11 +3523,11 @@ See also EMOTE
 ~
 
 51 COMMENT~
-Syntax: comment write
-Syntax: comment subject <subject>
-Syntax: comment post <player>
-Syntax: comment list <player>
-Syntax: comment read <player> #
+Sintaxis: comment write
+Sintaxis: comment subject <subject>
+Sintaxis: comment post <player>
+Sintaxis: comment list <player>
+Sintaxis: comment read <player> #
  
 Comment write puts you into a buffer, and the commands work just like writing
 a note.  You may only read and post comments on players currently online.
@@ -3572,8 +3572,8 @@ Wasn't abused as a child, but should have been.
 ~
 
 0 COMPARE~
-Syntax: compare <object-1> <object-2>
-Syntax: compare <object>
+Sintaxis: compare <object-1> <object-2>
+Sintaxis: compare <object>
 
 COMPARE compares two objects in your inventory.  If both objects are weapons,
 it will report the one with the better average damage.  If both objects are
@@ -3586,9 +3586,9 @@ COMPARE doesn't consider any special modifiers of the objects.
 ~
 
 1 COMPASS~
-Syntax:  compass (toggles the compass on or off)
-Syntax:  compass on/off
-Syntax:  config +/- compass
+Sintaxis:  compass (toggles the compass on or off)
+Sintaxis:  compass on/off
+Sintaxis:  config +/- compass
  
 Displays a compass of visible exits on the screen as an adjunct
 or alternative to the traditional autoexit display.  Different
@@ -3671,8 +3671,8 @@ on its normal hits.
 SEE FIRST: AXUDA ARMOR CLASS, THAC0, HITROLL
 ~
 
-0 CONFIG~
-Syntax:  config + or - <option>
+0 CONFIGURACION~
+Sintaxis:  configuracion + or - <option>
  
 This command configures some of your character behavior.  Typing CONFIG
 alone shows you your current settings.  With a plus or minus sign and
@@ -3760,7 +3760,7 @@ To connect two 'piece' type items together, do the following:
 ~
 
 0 CONSIDER~
-Syntax: consider <character>
+Sintaxis: consider <character>
 
 CONSIDER tells you what your chances are of killing a character.
 Of course, it's only a rough estimate.
@@ -3790,7 +3790,7 @@ State | Description
    18 | Player has been authorized.
 ~
 
-0 CONTAINER CONTAINERS~
+0 CONTEDOR CONTENEDOR CONTEDORES CONTENEDORES~
 Containers are almost a necessity in the Realms.  They are used to carry
 items, food, and drinks.  They help allow you to sort things, by using two
 or more types of containers at once.  Corpses use many of the same commands
@@ -3848,16 +3848,16 @@ Container flag values:
 ~
 
 0 'CONTINUAL LIGHT'~
-Syntax: cast 'continual light'
+Sintaxis: cast 'continual light'
 
 This spell creates a ball of light, which you can hold as a light source.
 The ball of light will last indefinitely.
 ~
 
 0 'CONTROL WEATHER'~
-Syntax:  cast 'control weather' <warmer/colder>
-Syntax:  cast 'control weather' <wetter/drier>
-Syntax:  cast 'control weather' <windier/calmer>
+Sintaxis:  cast 'control weather' <warmer/colder>
+Sintaxis:  cast 'control weather' <wetter/drier>
+Sintaxis:  cast 'control weather' <windier/calmer>
  
 This spell allows you to change either the temperature, amount of
 precipitation, or amount of wind.  Note that these changes do not
@@ -3867,7 +3867,7 @@ take effect until the next tick.
 
 61 CONTROLS~
 Cset is used to set the system's 'control panel' settings.
-Syntax: cset <field> <level>
+Sintaxis: cset <field> <level>
 Fields: save - saves the control panel settings
         dodge_mod - divide dodge chance (% learned) by this (default 2)
         parry_mod - same as above, for parry                (default 2)
@@ -3908,7 +3908,7 @@ Fields: save - saves the control panel settings
 ~
 
 1 COOK~
-Syntax: Cook <item>
+Sintaxis: Cook <item>
  
 Cooking requires certain food types and a fire. Cooking ones' food will
 keep it preserved longer, and remove many poisons. However, overcooking
@@ -4050,7 +4050,7 @@ problem with only your character.
 start back up with your character at the last place you saved or the
 game saved you. 
  
-See &WAXUDA REIMBURSEMENT &w and &WAXUDA SAVE &w
+See &WAXUDA REIMBURSEMENT &w and &WAXUDA GARDAR &w
 ~
 
 0 'CREATE FIRE'~
@@ -4062,13 +4062,13 @@ not permanent, however, and will expire.
 ~
 
 0 'CREATE FOOD'~
-Syntax: cast 'create food'
+Sintaxis: cast 'create food'
 
 This spell creates a Magic Mushroom, which you or anyone else can eat.
 ~
 
 0 'CREATE SPRING'~
-Syntax: cast 'create spring'
+Sintaxis: cast 'create spring'
 
 This spell brings forth a magical spring from the ground, which has the
 same properties as a fountain.
@@ -4080,7 +4080,7 @@ powerful clerical spells.
 ~
 
 0 'CREATE WATER'~
-Syntax: cast 'create water' <drink-container>
+Sintaxis: cast 'create water' <drink-container>
 
 This spell replenishes a drink container with water.
 ~
@@ -5371,7 +5371,7 @@ mazes.
 
 59 CSET~
 Cset is used to set the system's 'control panel' settings.
-Syntax: cset <field> <level>
+Sintaxis: cset <field> <level>
 Fields: save - saves the control panel settings
         dodge_mod - divide dodge chance (% learned) by this (default 2)
         parry_mod - same as above, for parry                (default 2)
@@ -5493,7 +5493,7 @@ pkill conditions.
 ~
 
 0 'CURE BLINDNESS'~
-Syntax: cast 'cure blindness' <character>
+Sintaxis: cast 'cure blindness' <character>
 
 This spell cures blindness in one so unfortunate.
 ~
@@ -5510,13 +5510,13 @@ spells heal more damage.
 ~
 
 0 'CURE POISON'~
-Syntax: cast 'cure poison' <character>
+Sintaxis: cast 'cure poison' <character>
 
 This spell cures poison in one so unfortunate.
 ~
 
 0 CURSE~
-Syntax: cast 'curse' <character>
+Sintaxis: cast 'curse' <character>
 
 This spell reduces the character's to-hit roll by 1 and save versus spells
 by 1.  It also renders the character unclean in the eyes of God and
@@ -5763,7 +5763,7 @@ it is advisable to leave as soon as possible or you can be escorted
 out by an immortal.
 ~
 
-0 DEATH~
+0 MORTE~
 When your character dies, you are reincarnated at the Altar to Thoric in
 Brigantia (or your clan's temple).  Your corpse is left behind where you
 were killed, together with all of your equipment.  Your gold stays with
@@ -5780,7 +5780,7 @@ who can loot each other's corpses at will.
  
 If you have chosen a deity and have gained enough favor, you may be able
 to supplicate to your god for your corpse.  Also see 'axuda supplicate',
-'axuda deities', 'axuda favor' for more information on deities.
+'axuda deidades', 'axuda favor' for more information on deities.
  
 For more information on death, see section 13 of your Adventurers Guide.
  
@@ -5865,7 +5865,7 @@ See MSET and ATTACKS  (Some are not implemented).
 ~
 
 1 DEFENSIVE~
-Syntax: style defensive
+Sintaxis: style defensive
  
 This style emphasizes the deflecting of blows from an enemy. It is similar
 to the evasive style, except that it focuses on holding ground instead of
@@ -5877,14 +5877,14 @@ See Also: style, evasive, defensive, standard, aggressive, berserk
 ~
 
 1 DEHYDRATE~
-Syntax: c 'dehydrate' victim
+Sintaxis: c 'dehydrate' victim
  
 Nephandi's are rumoured to use this spell to cause thirst in their victims
 as their life is slowly sucked away.
 ~
 
 1 DEITIES DEITY~
-Syntax: 'deities'
+Sintaxis: 'deities'
         'deities <deity>'
  
 The deities command displays all the deities of the world.  Using an
@@ -5996,7 +5996,7 @@ Envelops your victim in flames from hell.
 ~
 
 1 'DEMONIC AURA'~
-Syntax: cast 'demonic' <victim>
+Sintaxis: cast 'demonic' <victim>
  
 This spell summons forth the Umbral spirits to protect the Nephandi from harm.
 ~
@@ -6007,9 +6007,9 @@ This spell makes you less susceptible to slashing attacks.
 ~
 
 58 DENY DISCONNECT FREEZE~
-Syntax: deny       <character>
-Syntax: disconnect <character>
-Syntax: freeze     <character>
+Sintaxis: deny       <character>
+Sintaxis: disconnect <character>
+Sintaxis: freeze     <character>
 
 DENY denies access to a particular player and throws them out of the game.
 DENY persists past reboots and crashes and can only be undone by either loading
@@ -6037,7 +6037,7 @@ To see available members, type:  who 'the symposium'
 ~
 
 0 DESCRIPTION BIO~
-Syntax: description
+Sintaxis: description
         bio
 
 The DESCRIPTION command puts you into an editor to edit your long character
@@ -6078,26 +6078,26 @@ wrought with poison.
 ~
 
 0 'DETECT EVIL'~
-Syntax: cast 'detect evil'
+Sintaxis: cast 'detect evil'
 
 This spell enables the caster to detect evil characters, which will
 reveal a characteristic red aura.
 ~
 
 0 'DETECT HIDDEN'~
-Syntax: cast 'detect hidden'
+Sintaxis: cast 'detect hidden'
 
 This spell enables the caster to detect hidden creatures.
 ~
 
 0 'DETECT INVIS'~
-Syntax: cast 'detect invis'
+Sintaxis: cast 'detect invis'
 
 This spell enables the caster to detect invisible objects and characters.
 ~
 
 0 'DETECT MAGIC'~
-Syntax: cast 'detect magic'
+Sintaxis: cast 'detect magic'
 
 This spell enables the character to detect the presence of magic in
 objects, and is also necessary to detect the magical affects of
@@ -6107,20 +6107,20 @@ See also DISPEL MAGIC
 ~
 
 0 'DETECT POISON'~
-Syntax: cast 'detect poison' <object>
+Sintaxis: cast 'detect poison' <object>
 
 This spell detects the presence of poison in food or drink.
 ~
 
 0 'DETECT TRAPS'~
-Syntax: cast 'detect traps'
+Sintaxis: cast 'detect traps'
 
 This spell makes one magically aware of dangerous traps for a period of
 time.
 ~
 
 0 DETRAP~
-Syntax: detrap <object>
+Sintaxis: detrap <object>
 
 This skill allows one to disarm a trapped object.
 
@@ -6128,7 +6128,7 @@ Use it with care.
 ~
 
 0 DEVOTE~
-Syntax: 'devote <deity>'
+Sintaxis: 'devote <deity>'
         'devote none'
  
 Devote allows you to devote yourself to a deity.  If you leave your deity
@@ -6168,9 +6168,9 @@ Dexterity is the prime attribute of thieves and vampires.
 ~
 
 61 DIAGNOSE~
-Syntax:  diagnose of <amount>
-Syntax:  diagnose mcount <amount>
-Syntax:  diagnose clones
+Sintaxis:  diagnose of <amount>
+Sintaxis:  diagnose mcount <amount>
+Sintaxis:  diagnose clones
  
 Diagnose of n - object frequency of top "n" objects.  The above example will
 return the 20 most numerous object vnums in the game at that time.
@@ -6245,7 +6245,7 @@ an immortal to get involved.
 ~
 
 54 'DIEROLL SETTINGS'~
-Syntax: dieroll <number of die to roll>
+Sintaxis: dieroll <number of die to roll>
  
 Any item of chance can be made "rollable".  The following settings determine
 what is "rolled".
@@ -6263,9 +6263,9 @@ v3 (0/1) - Whether to limit the number of rolls to the number of sides on the
 ~
 
 1 DIG DIGGING BURY BURYING~
-Syntax:  dig
-Syntax:  dig  <direction>
-Syntax:  bury <item>
+Sintaxis:  dig
+Sintaxis:  dig  <direction>
+Sintaxis:  bury <item>
  
 You can dig and bury items through the use of the dig skill and bury command.
 Buried items are not visible to players, even through the use of spells such
@@ -6309,7 +6309,7 @@ Realms of Despair was originally based on the Merc 2.1 code which was
 ~
 
 1 DISARM~
-Syntax:  disarm
+Sintaxis:  disarm
  
 Disarm is an auxiliary fighting command to attempt to disarm your opponent.
 Several things affect your ability to disarm or resist a disarm attempt
@@ -6350,7 +6350,7 @@ it will also reveal the caster.
 ~
 
 1 DISMISS~
-Syntax: dismiss <target>
+Sintaxis: dismiss <target>
 
 The dismiss command will force your charmed mobile to follow itself and
 will negate the charm effect.
@@ -6358,7 +6358,7 @@ will negate the charm effect.
 ~
 
 0 'DISPEL EVIL'~
-Syntax: cast 'dispel evil' <victim>
+Sintaxis: cast 'dispel evil' <victim>
  
 This spell invokes the wrath of the gods upon an evil victim.  If you do
 not specify a target, the spell's effect will strike you instead of a
@@ -6366,7 +6366,7 @@ secondary target.
 ~
 
 0 'DISPEL MAGIC'~
-Syntax:  cast 'dispel magic' <character>
+Sintaxis:  cast 'dispel magic' <character>
  
 This spell dispels magical affects on the victim.  It may be used as an
 offensive spell to remove an enemy's magical advantages, or as a benign
@@ -6398,13 +6398,13 @@ the victim exits and reenters his current plane of existence.
 ~
 
 1 DIVINITY~
-Syntax:  c divinity <target>
+Sintaxis:  c divinity <target>
  
 This spell heals the target of 200 hitpoints of damage.
 ~
 
 57 DMESG~
-Syntax: dmesg
+Sintaxis: dmesg
 
 Displays the contents of the boot log.
 
@@ -6470,7 +6470,7 @@ b) the immortal attempting the commands is of lower level than the
 ~
 
 0 DODGE~
-Syntax:  operates automatically
+Sintaxis:  operates automatically
  
 Dodge is a skill which assists in the evasion of incoming attacks.  If
 you are successful, your opponent's attack misses and you will
@@ -6478,7 +6478,7 @@ take no damage. Dodge is an automatic skill and requires no weapon.
 ~
 
 1 DOMINATE~
-Syntax:  dominate <victim>
+Sintaxis:  dominate <victim>
  
 Dominate allows the vampire to bend his victim's will to his own.
  
@@ -6500,7 +6500,7 @@ be sorted and placed appropriately by the Cathedral's clerics.
 ~
 
 1 DOORBASH BASHDOOR~
-Syntax: doorbash <direction>
+Sintaxis: doorbash <direction>
 
 This skill can be used to effectively bash open doors. NOTE: Not all doors
 are affected by this skill.
@@ -6530,7 +6530,7 @@ See REDIT, RSTAT and RESETCMDS.
 ~
 
 1 DRAG~
-Syntax:  drag  <character> <direction>
+Sintaxis:  drag  <character> <direction>
  
 Drag will drag the victim in the specified direction if they are not
 standing up.
@@ -6642,7 +6642,7 @@ be in grave danger.
 ~
 
 1 'DREAM'~
-Syntax:  cast 'dream' <player>  <message>
+Sintaxis:  cast 'dream' <player>  <message>
  
 This spell enables you to cast a dream or message on a sleeping player.
 ~
@@ -6691,15 +6691,15 @@ Imm of the Week - Sept 10 - Sept 16
 ~
 
 0 DROP GET GIVE PUT TAKE~
-Syntax:  drop <object>
+Sintaxis:  drop <object>
          drop <amount>  coins
-Syntax:  get  <object>
+Sintaxis:  get  <object>
          get  <object>  <container>
-Syntax:  give <object>  <character>
+Sintaxis:  give <object>  <character>
          give <amount>  coins <character>
-Syntax:  put  <object>  <container>
-Syntax:  get/put/drop   <# amount>  <object>
-Syntax:  get/put        <# amount>  <object> <container>
+Sintaxis:  put  <object>  <container>
+Sintaxis:  get/put/drop   <# amount>  <object>
+Sintaxis:  get/put        <# amount>  <object> <container>
  
 DROP drops an object, or some coins, on the ground.
  
@@ -6954,7 +6954,7 @@ from the skies and assail the races of Light.
 ~
 
 0 EARTHQUAKE~
-Syntax: cast 'earthquake'
+Sintaxis: cast 'earthquake'
 
 This spell inflicts damage on every enemy character in the room.
 Beware that other characters who are not yet fighting may attack
@@ -6965,8 +6965,8 @@ including pets, mounts and charmed creatures.
 ~
 
 0 EAT DRINK~
-Syntax:  drink <object>                  (drink liquid from a drink container)
-Syntax:  eat   <object>                  (eat food or a magical pill)
+Sintaxis:  drink <object>                  (drink liquid from a drink container)
+Sintaxis:  eat   <object>                  (eat food or a magical pill)
          eat   <object> <container>      (eat directly from a container)
  
 Drink instructs your character to drink from a fountain or a drink container
@@ -7009,10 +7009,10 @@ rapid negative affect on your mental state.
 ~
 
 52 ECHO RECHO~
-Syntax:  echo      <color> <message>
+Sintaxis:  echo      <color> <message>
          echo  imm <color> <message>
          echo  pc  <color> <message>
-Syntax:  recho     <color> <message>
+Sintaxis:  recho     <color> <message>
  
 ECHO sends a message to all players in the game, without any prefix indicating
 who sent it.  If 'echo imm <message>' is used, only level 51+ characters will 
@@ -7121,7 +7121,7 @@ arose to immortality.
 ~
 
 1 ELBOW~
-Syntax:  elbow
+Sintaxis:  elbow
  
 The fighter ducks suddenly to the left and comes up with a smashing elbow to
 their opponents face. It is quite effective in battle if successfully landed.
@@ -7230,7 +7230,7 @@ This spell makes you more charismatic for its duration.
 ~
 
 1 EMAIL~
-Syntax:  email <email addy>
+Sintaxis:  email <email addy>
          email
          email clear
  
@@ -7253,7 +7253,7 @@ definitely uncover something to their liking.
 ~
 
 1 EMOTE~
-Syntax:  emote <text>
+Sintaxis:  emote <text>
  
 Emote is a customized expression of emotions or actions.  For example:
  
@@ -7267,8 +7267,8 @@ See also SOCIALS
 ~
 
 0 EMPTY~
-Syntax:  empty <container>
-Syntax:  empty <container> <container>
+Sintaxis:  empty <container>
+Sintaxis:  empty <container> <container>
  
 This command allows you to empty a container of its contents.
  
@@ -7279,7 +7279,7 @@ first container into the second container.
 ~
 
 0 'ENCHANT WEAPON'~
-Syntax: cast 'enchant weapon' <weapon>
+Sintaxis: cast 'enchant weapon' <weapon>
  
 This spell imbues a weapon with a magical enchantment, increasing its to-hit
 and to-dam bonuses.  The weapon must be non-magical to start with, else the
@@ -7288,7 +7288,7 @@ aligned with the alignment of the caster.
 ~
 
 0 'ENERGY DRAIN'~
-Syntax: cast 'energy drain' <victim>
+Sintaxis: cast 'energy drain' <victim>
 
 This spell saps the experience points, mana, and movement points of its
 target.  This is an attack spell and should not be used against other
@@ -7301,8 +7301,8 @@ skill is automatic once you have practiced it.
 ~
 
 0 ENTER LEAVE~
-Syntax:  enter
-Syntax:  leave
+Sintaxis:  enter
+Sintaxis:  leave
  
 In rooms either 'somewhere' exits or exits responding only to keywords,
 you can simply type 'enter' or 'leave' to pass through that exit.
@@ -7328,9 +7328,9 @@ repair the damage done by "pitting and etching."
 ~
 
 0 EQUIPMENT GARB INVENTORY~
-Syntax: equipment
-Syntax: garb
-Syntax: inventory
+Sintaxis: equipment
+Sintaxis: garb
+Sintaxis: inventory
 
 EQUIPMENT lists your equipment (armor, weapons, and held items).
 GARB lists your equipment worn as well as the locations missing equipment.
@@ -7370,7 +7370,7 @@ This spell decreases the amount of damage taken from energy attacks.
 ~
 
 1 EVASIVE~
-Syntax: style evasive
+Sintaxis: style evasive
  
 This style of fighting focuses on the art of dodging and parrying blows.
 Less damage will be taken by a fighter using this style, but the damage
@@ -7382,15 +7382,15 @@ See also: style, defensive, standard, aggressive, berserk
 ~
 
 0 EXAMINE LOOK~
-Syntax: look
-Syntax: look    <object>
-Syntax: look    <character>
-Syntax: look    <direction>
-Syntax: look    <keyword>
-Syntax: look in <container>
-Syntax: look in <corpse>
-Syntax: examine <container>
-Syntax: examine <corpse>
+Sintaxis: look
+Sintaxis: look    <object>
+Sintaxis: look    <character>
+Sintaxis: look    <direction>
+Sintaxis: look    <keyword>
+Sintaxis: look in <container>
+Sintaxis: look in <corpse>
+Sintaxis: examine <container>
+Sintaxis: examine <corpse>
 
 LOOK looks at something and sees what you can see.
 
@@ -7436,7 +7436,7 @@ follow:
 ~
 
 1 EXECRATE~
-Syntax: cast execrate
+Sintaxis: cast execrate
  
 An execration is a powerful curse that should not be used without 
 much forethought. It will affect all within the reach of the Nephandi.
@@ -7494,7 +7494,7 @@ See EXITTYPES for generating the exit-type value.
 ~
 
 0 EXITS~
-Syntax: exits
+Sintaxis: exits
 
 Tells you the visible exits of the room you are in.  Not all exits are visible.
 You can use the 'bump' technique to find hidden exits.  (Try to walk in a
@@ -7526,17 +7526,17 @@ See EXFLAGS and EXITMAKING.
 ~
 
 1 EXORCISM~
-Syntax: cast 'exorcism' victim
+Sintaxis: cast 'exorcism' victim
  
 This spell releases demons from the possessed. It is rumoured to cure
 curses, blasphemies and execrations.
     In order to be successful, the caster must have a vial of holy water .
 ~
 
-0 EXPERIENCE LEVEL XP~
-Syntax:  level
+0 EXPERIENCE NIVEL XP~
+Sintaxis:  level
  
-Your character advances in power by gaining experience.  Type LEVEL to see
+Your character advances in power by gaining experience.  Type NIVEL to see
 how many experience points you'll need for the next few levels.
  
 You gain experience by:
@@ -7562,7 +7562,7 @@ advantage over you in combat.
 ~
 
 1 EXPURGATION~
-Syntax:  c expurgation
+Sintaxis:  c expurgation
  
 This spell was granted by the Gods, when it was discovered that many of 
 their devout Paladins were falling prey to poisons. This spell will cure
@@ -7571,7 +7571,7 @@ still require rest.
 ~
 
 1 EXTINGUISH~
-Syntax:  extinguish <light>
+Sintaxis:  extinguish <light>
  
 This will extinguish the light near you. Once extinguished, the light will stop
 burning until you once again "light" it.
@@ -7597,21 +7597,21 @@ them uninvokable by the other classes.
 ~
 
 0 'FAERIE FIRE'~
-Syntax: cast 'faerie fire' <victim>
+Sintaxis: cast 'faerie fire' <victim>
 
 This spell increases (makes worse) the armor class of its victim.  For each
 level of the caster, the victim's armor class is increased by two points.
 ~
 
 0 'FAERIE FOG'~
-Syntax: cast 'faerie fog'
+Sintaxis: cast 'faerie fog'
 
 This spell reveals all manner of invisible, hidden, and sneaking creatures in
 the same room as you.
 ~
 
 1 FATIGUE~
-Syntax:  c fatigue <victim>
+Sintaxis:  c fatigue <victim>
  
 Fatigue renders the victim susceptible to the sleep spell.
 ~
@@ -7626,10 +7626,10 @@ deity for special services.
 Note:  If you deviate from your deity's alignment, you shall suffer a penalty
 in favor for some actions.
  
-&GSee also:  &YDEVOTE, DEITIES, SUPPLICATE, FAVOR_LEVELS
+&GSee also:  &YDEVOTE, DEITIES, SUPPLICATE, FAVOR_NIVEIS
 ~
 
-1 FAVOR_LEVELS~
+1 FAVOR_NIVEIS~
 &G
 The following lists the favor scale as listed on the 'score' sheet.
 &w
@@ -7655,13 +7655,13 @@ Damned
 ~
 
 1 FEEBLENESS~
-Syntax:  c feebleness <victim>
+Sintaxis:  c feebleness <victim>
  
 Feebleness renders your victim susceptible to draining attacks.
 ~
 
 0 FEED~
-Syntax: feed
+Sintaxis: feed
  
 Vampires require copious amounts of blood to function properly, and
 often the small puddle remaining after a kill is insufficient to
@@ -7674,9 +7674,9 @@ be done and a varying amount of blood will be drawn.
 ~
 
 0 FILL~
-Syntax:  fill <drincon>
-Syntax:  fill <container>
-Syntax:  fill <pipe> <herb>
+Sintaxis:  fill <drincon>
+Sintaxis:  fill <container>
+Sintaxis:  fill <pipe> <herb>
  
 FILL can be used with drink containers, regular containers or pipes.
  - to fill a drink container, go to a fountain and 'fill <drinkcon>'
@@ -7688,7 +7688,7 @@ FILL can be used with drink containers, regular containers or pipes.
 ~
 
 1 FINDNOTE~
-Syntax: findnote <keyword>
+Sintaxis: findnote <keyword>
  
 This command searches through all the notes that you have on you. It
 searches through portals, within containers, etc.  It will
@@ -7697,7 +7697,7 @@ taken from the subject of the note you are trying to find.
 ~
 
 1 FIRE~
-Syntax: fire <direction> target
+Sintaxis: fire <direction> target
  
 This command is for use with bows and arrows. You must have the weapon
 type missileweapons, a bow wielded and a quiver or arrows in your inventory.
@@ -7705,7 +7705,7 @@ type missileweapons, a bow wielded and a quiver or arrows in your inventory.
 ~
 
 53 FIXED~
-Syntax:  fixed <message>
+Sintaxis:  fixed <message>
          fixed list
  
 This command records your message (250 chars or so max) to a permanent
@@ -7730,24 +7730,24 @@ will cause Brigantia mobs to treat you differently. You may be placed before
 Judge Kendra and be fined or thrown in jail until an immortal can impose
 a sentence upon you. For help on &P(ATTACKER) &Wor &P(KILLER) &Wflags, see
 &CAXUDA ATTACKER &Wor &CAXUDA KILLER&W. To find out what constitutes illegal
-theft, see &YLAWS STORES&W.
+theft, see &YLEIS STORES&W.
 ~
 
 0 FLAMESTRIKE~
-Syntax: cast 'flamestrike' <victim>
+Sintaxis: cast 'flamestrike' <victim>
 
 This spell inflicts damage on the victim.
 ~
 
 51 FLARE~
-Syntax: Cast flare <target>
+Sintaxis: Cast flare <target>
  
 This spell summons forth a blaze of fire to pummel your opponent.
 ~
 
 0 FLEE RESCUE~
-Syntax: flee
-Syntax: rescue   <character>
+Sintaxis: flee
+Sintaxis: rescue   <character>
 
 Once you start a fight, you can't just walk away from it.  If the fight
 is not going well, you can attempt to FLEE, or another character can
@@ -7780,7 +7780,7 @@ arrow. The flint must be in the caster's inventory.
 ~
 
 1 FLOAT~
-Syntax: cast 'float' <character>
+Sintaxis: cast 'float' <character>
  
 This spell enables the target character to float.  It is useful in saving
 mv (movement points), makes a character float slowly to the ground when
@@ -7793,7 +7793,7 @@ begin losing hps <hitpoints>, you should cast float immediately.
 ~
 
 57 'FLOAT'~
-Syntax:  cast 'float' <character>
+Sintaxis:  cast 'float' <character>
  
 The spell enables the target character to float.  It is useful in saving
 mv (movement points), as well as in preventing damage taken when falling
@@ -7880,7 +7880,7 @@ to travel through areas which require you to fly, however.
 ~
 
 0 FLY~
-Syntax:  cast 'fly' <character>
+Sintaxis:  cast 'fly' <character>
  
 This spell enables the target character to fly.  It is useful in saving
 mv (movement points), preventing a character from falling when in the
@@ -7893,7 +7893,7 @@ begin losing hps <hitpoints>, you should cast fly immediately.
 ~
 
 59 FOLDAREA~
-Syntax:  foldarea <area filename>
+Sintaxis:  foldarea <area filename>
  
 This command saves an area file, usually after modification.
  
@@ -7917,7 +7917,7 @@ See ASET, UNFOLDAREA and INSTALLAREA.
 ~
 
 1 FOLLOW~
-Syntax:  follow <character>
+Sintaxis:  follow <character>
  
 'Follow' starts you following another character.  To stop following, type
 'follow self'.  You cannot follow those more than ten levels above you.
@@ -7929,8 +7929,8 @@ See also GROUP
 ~
 
 59 FOR~
-Syntax:  for argument command
-Syntax:  for argument command target
+Sintaxis:  for argument command
+Sintaxis:  for argument command target
 For allows an immortal to perform a command at or even on a large
 number of targets.  The arguments include:  all, mobs, gods.
 Example:  for gods gl, you will 'glance' in the room of every god
@@ -7941,8 +7941,8 @@ every mob in the game.
 ~
 
 52 FORCE~
-Syntax: force <character> <command>
-Syntax: force all <command>
+Sintaxis: force <character> <command>
+Sintaxis: force all <command>
 
 FORCE forces one character or mob to execute a command.
 
@@ -7955,7 +7955,7 @@ Force is restricted to mob use only until level 57.
 ~
 
 54 FORCECLOSE~
-Syntax: forceclose <descriptor>
+Sintaxis: forceclose <descriptor>
 
 This command will force a certain descriptor to close.
 This is useful to disconnect connections that aren't really connected
@@ -7984,7 +7984,7 @@ code for a player would be, given the targetted password.
 ~
 
 0 FORTIFY~
-Syntax: cast fortify
+Sintaxis: cast fortify
  
 This spell heals damage suffered by all members of the caster's group.
 ~
@@ -8001,7 +8001,7 @@ within an undetermined mountain range.
 ~
 
 51 FQUIT~
-Syntax: fquit <character>
+Sintaxis: fquit <character>
  
 FQUIT forces a level one player to quit.
  
@@ -8051,7 +8051,7 @@ offense, do the following: checkvnums all (start) (finish)
  
 &wDESCRIPTION: &gThe FSHOW command when used with the MOBLOG
              variable, displays the current log of MPLOG. When
-             FSHOW is used with the PLEVEL variable, it will
+             FSHOW is used with the PNIVEL variable, it will
              display the current log of all character levels
              that have occurred since the last reboot.
  
@@ -8059,7 +8059,7 @@ offense, do the following: checkvnums all (start) (finish)
 ~
 
 1 GAG~
-Syntax:   config +/- gag
+Sintaxis:   config +/- gag
  
 The config gag option toggles whether or not you see filtered
 battle information.  With gag active you will not see things
@@ -8087,14 +8087,14 @@ opponents in combat.  The Whip may be called once per combat round.
 ~
 
 1 'GALVANIC WHIP'~
-Syntax:  c 'galvanic whip' (target)
+Sintaxis:  c 'galvanic whip' (target)
 The spell 'Galvanic Whip' allows the casting Mage to form in the air
 a highly charged rope of air that automatically lashes out at his
 opponents in combat.  The Whip may be called once per combat round.
  
 ~
 
-56 GAMERULES~
+56 XOGOREGRAS~
 Each dice roll is scored as follows:
  
 Three of a kind score 100*face value of one of the dice. If the face value is
@@ -8129,7 +8129,7 @@ Winner
 ~
 
 51 GATE~
-Syntax: cast gate
+Sintaxis: cast gate
 
 This spell gates in a guardian vampire.  Player characters don't have much use
 for it, but high demons, and guardian vampires themselves, like it a lot.
@@ -8386,7 +8386,7 @@ most powerful of godly magics.
 ~
 
 50 GOHOME~
-Syntax:  gohome
+Sintaxis:  gohome
  
 This command allows you to "recall" to your house.  It is restricted in the
 same fashions that 'word of recall' is. It is magical, and will therefore not
@@ -8394,7 +8394,7 @@ work where the spell will not work.
 ~
 
 1 GOLD~
-Syntax:  gold
+Sintaxis:  gold
  
 Displays the current total amount of gold you are carrying.
 
@@ -8426,7 +8426,7 @@ useless, so please be careful.
 ~
 
 51 GOTO~
-Syntax: goto <location>
+Sintaxis: goto <location>
 
 GOTO takes you to a location.  The location may be specified as a vnum,
 as the name of a mobile, or as the name of an object.
@@ -8456,7 +8456,7 @@ See also BLIND, BLINDED
 ~
 
 2 GRAPPLE~
-Syntax:  grapple <victim>
+Sintaxis:  grapple <victim>
  
 A pkill-only skill, usable only between primary fighters (tanks), which
 prevents the victim from fleeing for one or two rounds (depending).  The
@@ -8472,7 +8472,7 @@ Suggestions for any aspect of the skill are welcome.
 ~
 
 1 GRASP 'GRASP SUSPIRIA'~
-Syntax:  grasp
+Sintaxis:  grasp
  
 The suspiric grasp is the vampire's most lethal attack, allowing it to
 drain the life of its opponent in larger quantities than nearly any
@@ -8548,8 +8548,8 @@ thick, ancient trees.
  [| Haus/Narn/Scryn/Swordbearer/Tricops/Gorog/Rennard/Grishnakh/Fireblade/|]
  [| Nivek/BuRZuMiSHi                                                      |]
   \\_____________________________________________________________________//
- Escribe o nome polo cal se che conhece no reino
- (ou "novo" crea unha nova personaxe): ~
+ Escribe o nome polo cal eres coñecido no Reino
+ ("novo" crea unha nova personaxe): ~
 
 1 GRIP~
 This skill is automatic, once practiced.  The skill causes you to grip
@@ -8592,14 +8592,14 @@ you are engaged in fights where someone is attempting to disarm you.
 ~
 
 1 GROUNDING~
-Syntax:  c grounding
+Sintaxis:  c grounding
  
 Grounding renders the victim resistant to electricity attacks.
 This spell may not be used on a target.
 ~
 
 54 GROUNDROT~
-Syntax: oset <item> flag groundrot
+Sintaxis: oset <item> flag groundrot
  
 This will make the item have a timer and "poof" if on the ground.
 ~
@@ -8662,7 +8662,7 @@ are displayed by their first three letters.  Alignment reads:
 ~
 
 1 GROUP GROUPING~
-Syntax:  group <character>, group all, group, group disband
+Sintaxis:  group <character>, group all, group, group disband
  
 'Group <character>' adds someone who is following you into your group, making
 them a group member.  Group members share experience from kills, and may use
@@ -8778,7 +8778,7 @@ last quit the mud somewhere in New Brigantia.
 ~
 
 55 GRUB2~
-Syntax: grub # <or> field operator ## <field operator ##>
+Sintaxis: grub # <or> field operator ## <field operator ##>
 Where:  &g#         &GAny valid number.
         &g<or>      &GUsed with multiple expressions to denote that only one of
                   them need be true.
@@ -8807,13 +8807,13 @@ your getting a list 15000+ lines long.
 ~
 
 1 GTELL ; REPLY SAY TELL~
-Syntax:  say              <message>
-Syntax:  sayto   <target> <message>
-Syntax:  gtell            <message>
-Syntax:  tell    <target> <message>
-Syntax:  whisper <target> <message>
-Syntax:  reply            <message>
-Syntax:  retell           <message>
+Sintaxis:  say              <message>
+Sintaxis:  sayto   <target> <message>
+Sintaxis:  gtell            <message>
+Sintaxis:  tell    <target> <message>
+Sintaxis:  whisper <target> <message>
+Sintaxis:  reply            <message>
+Sintaxis:  retell           <message>
 
 All of these commands send messages to other players.
 
@@ -8913,7 +8913,7 @@ is legal or illegal within your Guild, please contact a leader.
 ~
 
 0 GUILDTALK~
-Syntax:  guildtalk <message>
+Sintaxis:  guildtalk <message>
  
 Provided that you are in a Guild, guildtalk will send the message to
 all members currently online.
@@ -9097,7 +9097,7 @@ adventurers who are brave (or foolish) enough to enter.
 ~
 
 1 HEADBUTT~
-Syntax:  headbutt
+Sintaxis:  headbutt
  
 Headbutt is a skill that is performed exactly as the name implies; by
 employing ones head as a weapon to their opponent. If successful, the
@@ -9107,10 +9107,10 @@ unless under pkill conditions.
 ~
 
 54 HEDIT~
-Syntax: hedit [help topic]
+Sintaxis: hedit [help topic]
  
 This command allows you to edit a help topic.  If the specified help topic
-does not exist, it will be created for you. The default help page (summary)
+does not exist, it will be created for you. The default help page (sumario)
 will be selected if you do not specify a page.
  
 NOTE - Always, when creating a new help entry, type Axuda <new entry name> 
@@ -9137,8 +9137,8 @@ See HSET, PCOLORS.
 ~
 
 51 HELL UNHELL~
-Syntax: hell <character> <number> <hours or days>
-Syntax: unhell <character>
+Sintaxis: hell <character> <number> <hours or days>
+Sintaxis: unhell <character>
  
 The hell command sends a character to hell for a given period of time.  It
 automatically releases the character when their time has been served.  Upon
@@ -9194,7 +9194,7 @@ Yet there lies a shining hope in this foul land, for A'enaar lifted her
 hand and protected a tribe of forest elves known as the Misinkii.
 ~
 
-64 AXUDA LAW~
+64 AXUDA LEI~
 ~
 
 1 HERBS HERB~
@@ -9238,7 +9238,7 @@ qOOb._      _.dOOOb dOOOOOo.             .oOOOOOb dOOOb._      _.dOOp
 ~
 
 1 HEZEKIAH HEZEKIAHS 'HEZEKIAHS CURE' HEZEKIAH'S~
-Syntax:  c 'hezekiahs cure' <target>
+Sintaxis:  c 'hezekiahs cure' <target>
           c hezekiahs        <target>
  
 Hezekiah was a great Paladin for whom the Gods showed great pleasure.
@@ -9248,9 +9248,9 @@ the Paladin Holy Symbol.
 ~
 
 1 HIDE SNEAK VISIBLE~
-Syntax:  hide
-Syntax:  sneak
-Syntax:  visible
+Sintaxis:  hide
+Sintaxis:  sneak
+Sintaxis:  visible
  
 If you successfully hide, creatures cannot see you unless they are affected
 by 'detect hidden'.  Player characters can detect you, however.
@@ -9325,7 +9325,7 @@ New hints can be submitted for review using the 'hintsubmit' command.
 ~
 
 2 HINTSUBMIT~
-Syntax:  hintsubmit <message>
+Sintaxis:  hintsubmit <message>
  
 This command enters your suggestion into a file for review by Newbie
 Council members and higher immortals for possible inclusion into the
@@ -9400,7 +9400,7 @@ fallen, and thus does Good's hope falter and wither...
 ~
 
 51 HITALL~
-Syntax: hitall
+Sintaxis: hitall
  
 Hitall is a fighter skill that will start a fight by hitting all the
 opponents in the room.  For nondeadly characters, the 'opponents' means
@@ -9444,7 +9444,7 @@ the number, the better.
 ~
 
 1 HLIST~
-Syntax: hlist <low level range> <high level range>
+Sintaxis: hlist <low level range> <high level range>
  
 This command will give you a listing of available help files. The list
 is in alphabetical order based on the first triggering keyword. While
@@ -9480,12 +9480,12 @@ Imm of the Week - December 23 to December 29
 ~
 
 0 HOLD REMOVE WEAR WIELD~
-Syntax:  hold   <object>
-Syntax:  remove <object>
-Syntax:  remove all
-Syntax:  wear   <object>
-Syntax:  wear   all
-Syntax:  wield  <object>
+Sintaxis:  hold   <object>
+Sintaxis:  remove <object>
+Sintaxis:  remove all
+Sintaxis:  wear   <object>
+Sintaxis:  wear   all
+Sintaxis:  wield  <object>
  
 Three of these commands will cause you to take an object from your inventory
 and use it as equipment:
@@ -9516,14 +9516,14 @@ crossing through time...
 ~
 
 1 'HOLY SANCTITY'~
-Syntax:  c 'holy sanctity'
+Sintaxis:  c 'holy sanctity'
  
 This spell casts sanctuary on every member of the cleric's group.
 ~
 
 51 HOLYLIGHT INVIS~
-Syntax: holylight
-Syntax: invis
+Sintaxis: holylight
+Sintaxis: invis
 
 HOLYLIGHT is a toggle that allows you to see (almost) every character and
 mobile in the game.  With holy light, you can see what's in the game more
@@ -9542,7 +9542,7 @@ higher level than you.
 ~
 
 1 HOMEBUY~
-Syntax:  homebuy <argument>
+Sintaxis:  homebuy <argument>
  
 Where the argument is one of:
  list
@@ -9579,8 +9579,8 @@ See Also:  HOUSE, SELLHOUSE, ACCESSORIES, HOUSING
 ~
 
 1 HOMEPAGE~
-Syntax:  homepage <url>
-Syntax:  homepage clear (removes your homepage setting)
+Sintaxis:  homepage <url>
+Sintaxis:  homepage clear (removes your homepage setting)
  
 Example:  homepage http://www.game.org/test.html
  
@@ -9849,7 +9849,7 @@ Travelers Checks, Discover, Diners Club
 ~
 
 1 HOUSE~
-Syntax:  house <argument>
+Sintaxis:  house <argument>
  
 Where the argument is one of:
  name <Desired Title of Room>
@@ -9947,7 +9947,7 @@ in punishment.
 ~
 
 54 HSET~
-Syntax: hset  <command> [value] [help topic]
+Sintaxis: hset  <command> [value] [help topic]
  save                            Saves all help pages (to help.are)
  level <level> <help topic>      Sets help topic to specified level
  keyword <keyword> <help topic>  Sets help keyword to specified keyword
@@ -10005,15 +10005,15 @@ Mage Cleric Thief Warrior Vampire Druid Ranger Augurer Paladin Nephandi
 1 ICESHIELD FIRESHIELD SHOCKSHIELD~
 Iceshield conjures an encompassing shield of ice which will return the
 attacks of your enemy with tongues of cold.
-Syntax:  cast iceshield
+Sintaxis:  cast iceshield
  
 Fireshield surrounds the caster with a wall of fire which returns your
 enemies' attacks with balls of fire.
-Syntax:  cast fireshield
+Sintaxis:  cast fireshield
  
 Shockshield surrounds the caster with a field of electric energy which will
 return your enemies' attacks with bolts of lightning.
-Syntax:  cast shockshield
+Sintaxis:  cast shockshield
  * shockshield cannot be cast on others
  
  
@@ -10026,7 +10026,7 @@ and his will counter any fireballs thrown by yours.
 ~
 
 1 ICQ~
-Syntax:  icq <icq>
+Sintaxis:  icq <icq>
          icq
          icq clear
  
@@ -10038,9 +10038,9 @@ See Also: email homepage whois
 ~
 
 0 IDEA IDEAS TYPO BUG~
-Syntax: bug <message>
-Syntax: idea <message>
-Syntax: typo <message>
+Sintaxis: bug <message>
+Sintaxis: idea <message>
+Sintaxis: typo <message>
 
 These commands will take your message and record it into a file as feedback
 to the mud implementors.
@@ -10235,7 +10235,7 @@ wasn't available to write it.)
 ~
 
 0 IDENTIFY~
-Syntax: cast identify <object>
+Sintaxis: cast identify <object>
 
 This spell reveals information about the object.
 ~
@@ -11150,13 +11150,13 @@ EXAMPLE:         if isleader($n)
 SEE ALSO: mpedit, opedit, rpedit, ifchecks.
 ~
 
-54 'IFCHECK LEVEL'~
+54 'IFCHECK NIVEL'~
 &r*-------------------------------------------------------------------*
 
         &GEXAMPLE:      &cif level($n) < 5
                       'You're just a wee baby, $n!
 
-    &GDESCRIPTION:      &cThe LEVEL ifcheck is used to determine the
+    &GDESCRIPTION:      &cThe NIVEL ifcheck is used to determine the
                       level of the target.
 
  &r*-------------------------------------------------------------------*
@@ -11253,13 +11253,13 @@ SEE ALSO: mpedit, opedit, rpedit, ifchecks.
 
 ~
 
-54 'IFCHECK MOBINVISLEVEL'~
+54 'IFCHECK MOBINVISNIVEL'~
 &r*-------------------------------------------------------------------*
 
         &GEXAMPLE:       &cif mobinvislevel($i) == 50
                        'I'm invisible to all under lvl 50 
 
-    &GDESCRIPTION:       &cThe MOBINVISLEVEL is used to determine
+    &GDESCRIPTION:       &cThe MOBINVISNIVEL is used to determine
                        the level the target is invisible to. 
 
  &r*-------------------------------------------------------------------*
@@ -12139,9 +12139,9 @@ See also:&G IFCHECKS, IFCHECKS2, IFCHECKS3, IFCHECKS4, WEARLOCS.
 ~
 
 1 IGNORE~
-Syntax:  ignore
-Syntax:  ignore <character>
-Syntax:  ignore reply/none
+Sintaxis:  ignore
+Sintaxis:  ignore <character>
+Sintaxis:  ignore reply/none
  
 Ignore allows you to ignore other characters in the Realms.  All tells,
 says, socials, and emotes from these characters will be blocked (gagged
@@ -12301,7 +12301,7 @@ Imm of the Week - January 14 - 20th, 2002
 ~
 
 1 'ILL FORTUNE'~
-Syntax: c 'ill fortune' <victim>
+Sintaxis: c 'ill fortune' <victim>
  
 Ill Fortune reduces the victim's luck by three.
 ~
@@ -12533,9 +12533,9 @@ knock off someone who it stuck online.
 58 'IMM FREEZE'~
 Associated help files: help freeze
  
-Syntax: deny         <character>
-Syntax: disconnect   <character>
-Syntax: freeze       <character>
+Sintaxis: deny         <character>
+Sintaxis: disconnect   <character>
+Sintaxis: freeze       <character>
  
 DENY denies access to a particular player and throws them out of the game.  
 Deny is permanent (persists across reboots) and is not undoable from within
@@ -12549,7 +12549,7 @@ commands at all.
 ~
 
 51 'IMM GOTO'~
-Syntax: goto <name>
+Sintaxis: goto <name>
 
 This is a reminder to use common courtesy when using such commands
 as goto.   Not only is it considered inappropriate to goto higher
@@ -12827,10 +12827,10 @@ Council is as follows:
 ~
 
 55 IMMHOST~
-Syntax:  immhost add    <name> <host>
-Syntax:  immhost delete <name> <host>
-Syntax:  immhost save
-Syntax:  immhost
+Sintaxis:  immhost add    <name> <host>
+Sintaxis:  immhost delete <name> <host>
+Sintaxis:  immhost save
+Sintaxis:  immhost
 This command is for setting the hosts allowed for immortals that are added
 with this command.  Wildcards are allowed (*), so *edu, would allow any domain
 from edu connect and 127*, would allow any local domain to connect.
@@ -12841,7 +12841,7 @@ for multiple hosts for a certain name.
 This file won't be saved until the immhost save command is issued.
 ~
 
-51 IMMLAW2 IMMLAWS2 IMMRULES2~
+51 IMMLEI2 IMMLEIS2 IMMRULES2~
 . -- Continued from immlaws1
 6) Auths
 * Names should sound medieval and not be offensive to a sex, religion, race etc
@@ -12864,7 +12864,7 @@ This file won't be saved until the immhost save command is issued.
 the new immortal guidebook as well as board 1214 for more info.
 ~
 
-51 IMMLAWS IMMLAW IMMLAWS1 IMMRULES IMMRULES1~
+51 IMMLEIS IMMLEI IMMLEIS1 IMMRULES IMMRULES1~
 1) Equipment
 * All eq must be made from vnum 1222.
 * No stats or affects can be added to the item.
@@ -12888,7 +12888,7 @@ the new immortal guidebook as well as board 1214 for more info.
 * You can NOT: give eq; info on areas, mobs, and items; spelling; transing
   to areas; act as spy; give out mortal stats.
  
- See also help IMMLAWS2 
+ See also help IMMLEIS2 
 ~
 
 61 IMMMOTD~
@@ -12999,13 +12999,13 @@ preconceived notions that immortals are shown favoritism.
 ~
 
 51 IMMTALK :~
-Syntax: immtalk <message>
+Sintaxis: immtalk <message>
 
 IMMTALK sends a message to all immortals.  : is a synonym for IMMTALK.
 ~
 
 50 IMMTALK :~
-Syntax: immtalk <message>
+Sintaxis: immtalk <message>
 
 IMMTALK sends a message to all avatars.  : is a synonym for IMMTALK.
 ~
@@ -13074,7 +13074,7 @@ should be less frequent than in the past.
 ~
 
 51 IMM_HINTS~
-Syntax:  hint <arguments>
+Sintaxis:  hint <arguments>
  
 Arguments:
  list                                   ... display all hints
@@ -13087,32 +13087,32 @@ Arguments:
 ~
 
 51 IMOTD~
-&R-&Y Destre slides up the ladder a bit and is  
-&Y  is promoted to level 52! Gratz!                &g      ,__
-&R                                               &g        \  \_       ,/|_
-&R- &YWork on the port continues! The big     &g      .       \   \_  ,/  ,  \_
-&Y  event draws ever closer. Have you   &g  /\,`/\.`/`.     |     ,/  ,/ |   \
-&Y  hugged a builder or coder today?    &g,/'/`'       `.   |  ,;/  ,/     \
+&R-&Y   
+&Y                                                 &g      ,__
+&Y                                               &g        \  \_       ,/|_
+&R- &YO traballo no desarrollo continua!      &g      .       \   \_  ,/  ,  \_
+&Y  Seguimos a traducir zonas e codigo! &g  /\,`/\.`/`.     |     ,/  ,/ |   \
+&Y  Eres constructor ou programador?    &g,/'/`'       `.   |  ,;/  ,/     \
 &Y                                    &g /(/`'    _  __,  `.|./  ,;/&G  ,'`
-&R- &YAn old face returns to the Realms &g/'/&R,&g) ,-'     &G`'.`,&g    `,/ &G
-&Y  for more torture! Welcome back   &g/ `  ,'    &G      \ \&g     ` . &G,'` 
-&Y  suc... errr... Kador!!        &g  /,   /           __&G\ \ &g      ` 
+&Y                                    &g/'/&R,&g) ,-'     &G`'.`,&g    `,/ &G
+&Y                                   &g/ `  ,'    &G      \ \&g     ` . &G,'` 
+&Y                                &g  /,   /           __&G\ \ &g      ` 
 &Y                               &g  / ./7            / __&G\&g_&G\&g__
-&R- &YDarshanin attempts to give &g   |,//            (((  / ____
-&Y  the immortals the illusion of&r / |     &g             (((  &G`,`,
-&r, &Ymorals as she takes on her  &r(` ;|                        &G`,`,
-&Y  new role. Welcome Darshanin!&r(.&R "`&r/ ('        )           &G  `,`,&g
+&Y                             &g   |,//            (((  / ____
+&Y                              &r / |     &g             (((  &G`,`,
+&r                                  &r(` ;|                        &G`,`,
+&Y                              &r(.&R "`&r/ ('        )           &G  `,`,&g
 &r ,         ,    (       `   )&R`-&Y'/&R l &r`                   ,  ,'  &G `,`
 &r    ) '   ' &R(_,'  )     )&Y '   ' (_,'  )     &R) '   ' (_,&r'  ) 
 &r ,)  7`  &R/  /,  (, (  ,)&Y  7`  /  /,  (, (  ,)&R  7`  /  /&r, (, (  ,)  7`
-&r  `&W___ &R (,-,` ,/`&W__ &Y,     ,    )` )&W___  ___  &R ).\  /)&r  `, (,)
-&r  &W/ _ \___ ___ _/ /_&Y/&W_  ___  &W___&Y`(&W/ _/ / _ \___ __  ___ ___ _(_)_
-&r`&W/ , _/ -_) _ `/ /  ' \(_-< / _ \/ _/ / // / -_|_-</ _ Y _ `/ / __/&r(,   -
-&W/_/|_|\__/\_,_/_/_/_/_/___/ \___/_/  /____/\__/___/ .__|_,_/_/_/   &r.` )  ,
+&r  `&W___ &R (,-,` ,/`&W   &Y,  ___,    )` )&W___  ___  &R ).\  /)&r  `, (,)
+&r  &W/ _ \___  __ __ ___&Y &W__/  /__ __&W    &Y`(&W/ _/ / _ \___ __  ___ ___ _(_)_
+&r`&W/ , _/ -_)/ /   / . /  / _/  /_  / _/ / // / -_|_-</ _ Y _ `/ / __/&r(,   -
+&W&W/_/|_|\___/_/_/_/___/  /_____/__ /__/ /_/_/___/ .__|_,_/_/_/   &r.` )  ,
 &r (,- `-'  &R/  (,   &Y-') ( (,- `-'  /  (,   -') ( (,&W/_/  &R/  (, &r  -') (
 &r-_(,_,&R'_(&Y_(__ )_, _`-_, _-_(,_,'_(_(__ )_, _`-_, _-_(,_,'_(_&R(__Ili,&r _
  
-       &WPlease remember to read immnews and news daily.
+       &WRecorda ler as novas dos inmortais diariamente.
 ~
 
 57 IMOTS~
@@ -13156,7 +13156,7 @@ exists at the end of a rainbow high above the city.
 ~
 
 1 'INDIGNATION'~
-Syntax: cast indignation
+Sintaxis: cast indignation
  
 This spell fills the members of the caster's group with the Fury of
 The High Gods, causing them to fight more effectively.  INDIGNATION
@@ -13179,39 +13179,39 @@ cannot be inducted by any member of the clan.
 ~
 
 1 'INFERNAL NODE'~
-Syntax: c 'infernal node'
+Sintaxis: c 'infernal node'
  
 Casting this spell will allow the caster to translocate themself
 randomly anywhere throughout the world.
 ~
 
-1 INFORMATION~
-SLIST   - a command that lists all your spells and skills and the level at
-          which you may practice them.
-AREAS   - Typing AREAS will get you a list of all areas.  You may get more
-          information on each area by typing AXUDA <full area name>.
-WIZLIST - This is a list of all Immortals of the game.
-COMMANDS- This is a list of all commands available to you.
-SOCIALS - This is a list of all socials available. 
-TIME    - This will tell you the current times inside the Realms, the time
-          the Realms was last rebooted, and the current time in Toronto.
-WHERE   - Where will give you a list of other players in the same area.
-SAVE    - After level two, typing SAVE will save your process.
-QUIT    - If you want to leave the game, type QUIT.
-WHO     - A list of other players visible to you in the Realms.
-TITLE   - Once you reach level five, you may make your own title.
-PASSWORD- Your password can be changed with PASSWORD <new> <new>
-DESC    - You may set up a personal description, type DESC to edit.
- 
-This is only a brief list of commands that will help you do things with your
-character.  More detailed information on each command can be found in the
-AXUDA files.  You may also read sections 1 and 20 in your Adventurer's Guide
-book to learn more about these commands.
+1 INFORMACION~
+SLISTA   - a command that lists all your spells and skills and the level at
+           which you may practice them.
+ZONAS    - Typing AREAS will get you a list of all areas.  You may get more
+           information on each area by typing AXUDA <full area name>.
+WIZLIST  - This is a list of all Immortals of the game.
+COMANDOS - This is a list of all commands available to you.
+SOCIAIS  - This is a list of all socials available. 
+TEMPO    - This will tell you the current times inside the Realms, the time
+           the Realms was last rebooted, and the current time in Toronto.
+ONDE     - Where will give you a list of other players in the same area.
+GARDAR   - After level two, typing SAVE will save your process.
+SAIR     - If you want to leave the game, type QUIT.
+QUEN 1   - A list of other players visible to you in the Realms.
+TITULO   - Once you reach level five, you may make your own title.
+CONTRASINAL - Your password can be changed with CONTRASINAL <new> <new>
+DESCRIPCION - You may set up a personal description, type DESC to edit.
+
+Esta e unha lista curta de comandos utiles para comezar a facer cousas coa
+tua persoaxe. Utiliza AXUDA para ver informacion mais detallada de cada 
+comando. Tamen podes ler as seccions 1 e 20 na tua Guia do Aventureiro
+para aprender mais sobre estes comandos.
 ~
 
 1 INFRAVISION INFRARED~
-Syntax:  c infravision
-Syntax:  c infravision <character>
+Sintaxis:  c infravision
+Sintaxis:  c infravision <character>
  
 This spell enables the character to detect the heat signatures of other
 players and creatures in the room with them.  This spell will also allow
@@ -13231,7 +13231,7 @@ This spell makes you more resistant to all forms of coldness.
 ~
 
 59 INSTALLAREA~
-Syntax: installarea <area filename> <full area name/title>
+Sintaxis: installarea <area filename> <full area name/title>
 
 Installs a prototype area into the mud as a non-prototype area.
 The filename can be fixed with aset, (don't forget to foldarea the new name.)
@@ -13252,7 +13252,7 @@ at the time when you perform an instaroom.
 ~
 
 54 INSTAZONE~
-Syntax: instazone [nodoors]
+Sintaxis: instazone [nodoors]
 
 This command lets your instantly create a whole set of resets for your area
 based on all the mobiles and objects contained within your area.
@@ -13294,8 +13294,8 @@ Intelligence is the prime attribute of the mage and nephandi.
 ~
 
 0 INVIS 'MASS INVIS'~
-Syntax: cast invis <character>
-Syntax: cast 'mass invis'
+Sintaxis: cast invis <character>
+Sintaxis: cast 'mass invis'
 
 The INVIS spell makes the target character invisible.  Invisible characters
 will become visible when they attack.
@@ -13376,7 +13376,7 @@ including the caster.
 ~
 
 52 IPCOMPARE~
-Syntax: ipcompare <name>
+Sintaxis: ipcompare <name>
         ipcompare <site>
         ipcompare <name or site> <room|area|world> <#>
         ipcompare pkill
@@ -13440,7 +13440,7 @@ ARMORCLASS, WEAPONCONDITION, MISSILES, and CONTAINERFLAGS
 ~
 
 1 JAB~
-Syntax:  jab
+Sintaxis:  jab
  
 This skill is another form of attack the fighter can use against their 
 primary opponent. If the attack successfully lands, it inflicts damage
@@ -13523,8 +13523,8 @@ not be used on your fellow players unless under pkill conditions.
              `-._,-'   `-._______,-'   `-._,-'
 ~
 
-51 JOURNAL~
-Syntax: Journal <command>
+51 XORNAL~
+Sintaxis: xornal <command>
  
 Where command is one of:
 &YWrite &c<&gpage number&c>&g Allows you to add/edit a page in your journal.
@@ -13539,12 +13539,12 @@ into the buffer of "page 1". Once there, the same commands are used as
 per editing notes.
 ~
 
-51 JOURNAL2~
--&GImmortals only guide to creating a "Journal" item type.&g
+51 XORNAL2~
+-&GImmortals only guide to creating a "Xornal" item type.&g
   
 A journal can be made from any vnum, with a few things needing to be set.
   
-Firstly, the item type needs to be set to "journal".
+Firstly, the item type needs to be set to "xornal".
 Secondly, the item requires to be "held" - so a wear location of held.
 And lastly, v0 determines how many pages the journal can contain. A maximum
 of 50 has been hard coded, anything above this number will be reset to 50.
@@ -13606,15 +13606,15 @@ Immortal of the Week: December 31, 2001 - Janaury 5, 2002
 ~
 
 58 KHISTORY~
-Syntax: khistory <player>
+Sintaxis: khistory <player>
  
 This command will display a list of mobs recently killed by the
 character in question.
 This is an imm only command.
 ~
 
-1 KICK~
-Syntax:  kick
+1 PATEXAR~
+Sintaxis:  kick
  
 Kick is a skill which can only be used once a fight has started, and
 can only be used against your primary opponent.  If it successfully
@@ -13622,9 +13622,9 @@ lands, it inflicts damage on your opponent.
  
 ~
 
-1 KILL MURDER~
-Syntax:  kill     <character>
-Syntax:  murder   <character>   -- must be level 5 or higher to murder
+1 MATAR ASASINAR~
+Sintaxis:  matar      <persoaxe>
+Sintaxis:  asasinar   <persoaxe>   -- must be level 5 or higher to murder
  
 KILL starts a fight, and, hopefully, kills something.
  
@@ -13634,13 +13634,13 @@ be level 5 or higher to be able to use the murder command.
  
 ~
 
-2 KILLER KILLERFLAG KILLERFLAGS~
+2 ASASINO ASASINOMARCA ASASINOMARCAS~
 &WThe mud will automatically assign you a &PKiller &Wflag if you cause the
 death of another player. Only situations which involve peacefuls being
 killed by mortals, or &RDeadlies &Wkilling fellow clanmembers will result
 in the assignment of this flag. You will receive a &PKiller &Wflag if:
  
-  1. You caused the DEATH of another player, regardless of who attacked first.
+  1. You caused the MORTE of another player, regardless of who attacked first.
   To help prevent yourself from acquiring a &PKiller &Wflag after being
   attacked, set yourself to &YConfig +Nice &W(See &CAxuda Config &Wfor info).
  
@@ -13682,7 +13682,7 @@ to go the extra mile and make sure nobody is intending on killing the mob.
 ~
 
 1 'KINDRED STRENGTH'~
-Syntax:  cast kindred <character>
+Sintaxis:  cast kindred <character>
 This spell increases the strength of the target character.
 ~
 
@@ -13739,7 +13739,7 @@ underground complex.
 ~
 
 1 KNEE~
-Syntax:  knee
+Sintaxis:  knee
  
 A well aimed knee to your opponents midsection could effectively cripple 
 them. This skill is somewhat effective in slowing down the primary
@@ -13772,13 +13772,13 @@ blackened land to its former glory and status.
 ~
 
 1 'KNOCK'~
-Syntax:  cast 'knock'  <direction>
+Sintaxis:  cast 'knock'  <direction>
  
 This spell enables one to unlock doors.
 ~
 
 0 'KNOW ALIGNMENT'~
-Syntax: cast 'know alignment' <character>
+Sintaxis: cast 'know alignment' <character>
 
 This spell reveals the alignment of the target character.
 ~
@@ -13898,8 +13898,8 @@ made an attempt to exterminate them.
 ~
 
 51 LANGUAGES~
-Syntax: languages
-Syntax: language learn <language name>
+Sintaxis: languages
+Sintaxis: language learn <language name>
 
 Languages alone shows which languages you know, and "language learn 
 <name>" will add to your percentage of language knowledge.  To learn a 
@@ -13980,7 +13980,7 @@ The Last command will show the player's last login date and time.
 &YSee Also&W:  GRUB, WHO
 ~
 
--1 'LAW ASSIST'~
+-1 'LEI ASSIST'~
 .
 &GA non-deadly may give, sell or trade scrolls, potions and equipment
 with a deadly character.
@@ -13992,7 +13992,7 @@ otherwise assist a deadly character (this includes charm).
  
 ~
 
--1 'LAW CHANNELS'~
+-1 'LEI CANLES'~
 .
 &GSpam (repeating the same message repeatedly or otherwise purposely causing
 the screen to scroll), harassment (including sexual) and abusive behavior are
@@ -14018,7 +14018,7 @@ resorting to public baiting and name-calling.
  
 ~
 
--1 'LAW CHARM'~
+-1 'LEI CHARM'~
 .
 &GDo not bring aggressive mobs into or near Brigantia, as when their charm
 wears off (either naturally or by attack) their aggressive nature will
@@ -14032,7 +14032,7 @@ means that if your mobs are spamming others, you will be liable under spam
 laws.
 ~
 
--1 'LAW CHEATING'~
+-1 'LEI CHEATING'~
 &GCheating is a very serious offense and subjects _all_ characters involved
 to a slay, purge (loss of all equipment), freeze, balzhur (destruction of
 all equipment and public demotion to level 2), deny or even a site ban.
@@ -14055,7 +14055,7 @@ _immediately_ to an Immortal or drop and sacrifice the item.
  
 ~
 
--1 'LAW HARASSMENT'~
+-1 'LEI HARASSMENT'~
 .
 &GHarassment is giving a person unwanted attention, whether you perceive it
 as negative or positive attention.  If a person is made to be uncomfortable
@@ -14078,7 +14078,7 @@ to harass an immortal, you will simply be deleted.
  
 ~
 
--1 'LAW KILLSTEAL'~
+-1 'LEI KILLSTEAL'~
 Don't do it.
  
 Kill stealing most commonly occurs when a player attacks a mob that is
@@ -14099,7 +14099,7 @@ previously in the rooms of mobs you wish to attack. It is never a bad thing
 to go the extra mile and make sure nobody is intending on killing the mob.
 ~
 
--1 LAW LAWS~
+-1 LEI LEIS~
 .
 &GThe Realms are governed by a set of laws, most of which are simple common
 sense and courtesy, and all of which must be followed to ensure everyone
@@ -14117,18 +14117,18 @@ online and visible, type "who 51" at any time.
  
 To read the laws, type "laws <topic>" for any of the following:
 &W 
-|  CHANNELS      |  PKILL     |  STORES  |  HARASSMENT  |  MOBASSIST  |
+|  CANLES        |  PKILL     |  STORES  |  HARASSMENT  |  MOBASSIST  |
 |  MULTIPLAYING  |  SHARING   |  STAKE   |  CHARM       |   
-|  OBJECTS       |  CHEATING  |  MURDER  |  ASSIST      |
+|  OBXECTOS      |  CHEATING  |  ASISTIR |  ASASINAR    |
  
 &GFor further explanation, see section 2 of the Adventurer's Guide...
 Also see:  &Wad&G, &Wadvertising
 ~
 
-59 'LAW LAWS'~
+59 'LEI LEIS'~
 ~
 
-1 'LAW MOBASSIST'~
+1 'LEI MOBASSIST'~
 A player attacking a mobile or being attacked by an aggressive mobile,
 is entitled to do combat with the mobile as it was originally designed.
  
@@ -14141,10 +14141,10 @@ equipped to do their job, without the assistance of players, and should
 not be assisted by way of helpful or shielding spells.
 ~
 
-64 'LAW MULTIPLAY'~
+64 'LEI MULTIPLAY'~
 ~
 
--1 'LAW MULTIPLAYING'~
+-1 'LEI MULTIPLAYING'~
 .
 &G
 Multi-playing up to 8 characters is permitted, with the following rules:
@@ -14167,7 +14167,7 @@ Multi-playing up to 8 characters is permitted, with the following rules:
 and including immediate deletion of any characters logged at the time.
 ~
 
--1 'LAW MURDER'~
+-1 'LEI MURDER'~
 .
 &GPlayer killing is decided the instant you cast any hostile spell or make
 any aggressive action against a non-deadly player.  Actually killing the
@@ -14182,7 +14182,7 @@ or site ban.
  
 ~
 
--1 'LAW OBJECTS'~
+-1 'LEI OBJECTS'~
 .
 &GIf you notice an item on the ground and there is a player in the room with
 it, do _not_ pick it up without first getting permission from the person<s>
@@ -14206,7 +14206,7 @@ includes removing gold from a corpse.
  
 ~
 
--1 'LAW PKILL'~
+-1 'LEI PKILL'~
 .
 &GDeadly Characters are those which appear on the who list under the section
 titled "Deadly Characters" (type 'who deadly').  A character must be level
@@ -14237,7 +14237,7 @@ Deadly characters &Ware &Gallowed to:
 attack; a deadly is open to attack every second online, link-live or not.
 ~
 
--1 'LAW SHARING'~
+-1 'LEI SHARING'~
 .
 &GCharacter sharing (when allowed) is always done at the risk of the players
 involved.  Immortals will &Wnot&G recover any character lost to trading or
@@ -14249,7 +14249,7 @@ A character may &Wnot&G be shared if:
  
 ~
 
--1 'LAW SPAM'~
+-1 'LEI SPAM'~
 No, we are not talking about a luncheon meat here.  Spam is the repeated use
 of a phrase, command, or channel that causes screen scroll for others.  Not
 only is spam considered rude, but excessive screen scroll can interfere with
@@ -14273,7 +14273,7 @@ and limit it to tells rather than having a one on one conversation over
 a public channel.
 ~
 
--1 'LAW STAKE'~
+-1 'LEI STAKE'~
 .
 &GThe first player to attack a mob has the rights to the kill.  Others should
 not get involved without being requested to do so.  Those receiving aid are 
@@ -14286,7 +14286,7 @@ handled according to the immortal's discretion.  All such decisions are
 final.
 ~
 
--1 'LAW STORES'~
+-1 'LEI STORES'~
 .
 &GShopkeepers inside Brigantia are protected by the laws of the city's Lord,
 Duke Luther.  As the gods have pledged their favor to Brigantia, they have
@@ -14305,10 +14305,10 @@ and the blacksmith.
  
 ~
 
-62 LAWS CHARM~
+62 LEIS CHARM~
 ~
 
-64 'LAWS MULTIPLAYING'~
+64 'LEIS MULTIPLAYING'~
 ~
 
 54 LAYERS~
@@ -14391,7 +14391,7 @@ regardless of whether they are peaceful or deadly.
 ~
 
 1 LEAP~
-Syntax:  leap
+Sintaxis:  leap
  
 Leap is a skill that allows the player to 'leap' into the air to deliver
 a kick or punch to the opponents head or upper chest area, depending on
@@ -14474,7 +14474,7 @@ often.  Also responsible for cleaning old notes in 1200 and 1213.
 ~
 
 1 LETHARGY~
-Syntax:  c lethargy <victim>
+Sintaxis:  c lethargy <victim>
  
 Lethargy reduces the victim's dexterity by two.
 ~
@@ -14535,7 +14535,7 @@ mload       teleport  teleportall  teleportplus  death     cast       fakeblade
 rand4       rand6     trapdoor     anotherroom   usedial   absolutevnum
 showroomdesc          autoreturn
  
-Syntax:  oset <item> tflags <flag>
+Sintaxis:  oset <item> tflags <flag>
  
 SEE ALSO:  'lever flags 2'
 ~
@@ -14573,14 +14573,14 @@ See OSET and ITEMVALUES.  * = not yet implemented.
 ~
 
 1 LEVITATE~
-Syntax: Cast levitate
+Sintaxis: Cast levitate
  
 This spell allows the Nephandi to hover above the ground using dark 
 powers of magic.
 ~
 
 1 LIGHT~
-Syntax:  light <pipe>
+Sintaxis:  light <pipe>
          light <light>
  
 This lights the herb in your pipe, or a light near you.  Once lit, the herb
@@ -14627,7 +14627,7 @@ for the worse.
 ~
 
 52 LITTERBUG~
-Syntax: litterbug <player>
+Sintaxis: litterbug <player>
 
 Places/removes the litterbug flag, allowing/prohibiting a player from
 dropping any objects.
@@ -14654,7 +14654,7 @@ longer able to create progeny.
 ~
 
 58 LOADUP~
-Syntax:  loadup <player>
+Sintaxis:  loadup <player>
  
 LOADUP allows one to load up a player's character (playing or not), to do
 whatever needs be done to the character.  (Modifying a flag, changing a
@@ -14678,7 +14678,7 @@ See FORCE
 ~
 
 0 LOCATE~
-Syntax: cast 'locate object' <name>
+Sintaxis: cast 'locate object' <name>
  
 A spell which helps reveal the location or bearer of objects
 with the given name.  Beware that such power may exact a
@@ -14689,7 +14689,7 @@ objects may be revealed.
 ~
 
 0 'LOCATE OBJECT'~
-Syntax: cast 'locate object' <name>
+Sintaxis: cast 'locate object' <name>
 
 A spell which helps reveal the location or bearer of objects
 with the given name.  Beware that such power may exact a
@@ -14700,14 +14700,14 @@ objects may be revealed.
 ~
 
 55 LOG SNOOP~
-Syntax: log   <character>
-Syntax: log   all
-Syntax: snoop <character>
+Sintaxis: log   <character>
+Sintaxis: log   all
+Sintaxis: snoop <character>
 
 LOG <character> causes all of a character's commands to be logged into
 the server's log file.  Like FREEZE, it is a permanent character toggle.
 
-Certain commands (PASSWORD) are protected against LOG.  Conversely, certain
+Certain commands (CONTRASINAL) are protected against LOG.  Conversely, certain
 commands (especially immortal commands) are always logged.
 
 LOG ALL logs all character commands.  It is a server-wide toggle; it does not
@@ -14821,7 +14821,7 @@ Imm of the Week - May 14 - 20th, 2001
 ~
 
 1 LUNGE~
-Syntax:  lunge
+Sintaxis:  lunge
  
 This skill allows the fighter to perform a lunging attack on their
 primary opponent. If successful, the opponent will suffer some damage.
@@ -14830,7 +14830,7 @@ your fellow players unless under pkill conditions.
 ~
 
 51 LUSH~
-Syntax: cast 'lush' <character>
+Sintaxis: cast 'lush' <character>
  
 This spell enables the spellcaster to morph any unsuspecting M/F/N
 into an avid beer drinker.
@@ -14850,7 +14850,7 @@ through magic.
 ~
 
 55 MAGICFLAG~
-Syntax: oset object flag magic
+Sintaxis: oset object flag magic
  
 If a container has a "magic" flag, then its contents will not contribute
 to your carried weight (note that the container weight limit still
@@ -14879,7 +14879,7 @@ Human Elf Pixie Half-Elf Gith Drow Sea-Elf Gnome
 ~
 
 1 MAGIC_MISSILE~
-Syntax: Cast Magic <mob>
+Sintaxis: Cast Magic <mob>
  
 Magic Missile  enables the caster to hit a victim with a blast of magic from a
 distance. In order to work, the conditions must be right and the victim must be
@@ -14890,7 +14890,7 @@ cast magic 'w orc'. (Note the single quotes needed)
 ~
 
 1 'MAGNETIC THRUST'~
-Syntax: c 'magnetic thrust' (target)
+Sintaxis: c 'magnetic thrust' (target)
 
 'Magnetic Thrust,' much like 'Sonic Resonance,' allows the casting
 Mage to control the nature of space and time in the immediate locale
@@ -14988,14 +14988,14 @@ If you ever want to remove yourself from this mailing list:
 ~
 
 1 'MAJOR INVOCATION'~
-Syntax: cast 'major invocation'
+Sintaxis: cast 'major invocation'
  
 The spell MAJOR INVOCATION lays upon the members of the casters group
 a strong, but short-lived Sanctuary of The High Gods.
 ~
 
 50 MAKE~
-Syntax:  make <object>
+Sintaxis:  make <object>
  
 For use by clan, Order or guild leaders only to make one of the three
 clan, Order or guild objects.
@@ -15060,7 +15060,7 @@ currently in use is acceptable.
 ~
 
 57 MAKEREPAIR~
-Syntax:  makerepair <mobvnum>
+Sintaxis:  makerepair <mobvnum>
  
 Automatically gives the mobile the ability to repair damaged equipment.
 Use 'repairset' to set the parameters by which the shop will function.
@@ -15069,7 +15069,7 @@ See REPAIRSET, REPAIRSTAT, REPAIRSHOPS
 ~
 
 54 MAKESHOP~
-Syntax: makeshop <mobile vnum>
+Sintaxis: makeshop <mobile vnum>
 
 Creates a new shop and assigns it to a mobile.
 
@@ -15138,7 +15138,7 @@ most information about the manor and this man are mere rumors...
      &G|  &O|       &W(7)  Ware &O||                 |  &G|    &R|&W   12 Magic Items
      &G|  &O+--&CThieves'&O-&CAlley&O- |                 |  &G|    &R|&W   13 Jewelry
      &G|  &O|  &W(8)  (22)  Art &O|| &WCult Pawn  Pets &O|  &G|    &R|&W   14 Courier/Post Office
-     &G|  &O+================='`===&CLAW&O=&CST&O========+  &G|    &R|&W   15 Notes/Quills
+     &G|  &O+================='`===&CLEI&O=&CST&O========+  &G|    &R|&W   15 Notes/Quills
      &G|                    ||                    |    &R|&W   16 Butcher
      &G+===================='`==+==PATHWAY========'  &cN &R|&W   17 Baker
      &G|             &YSouth      &G|                   &cW+E&R|&W   18 Dairy
@@ -15193,8 +15193,8 @@ See also: SEA-ELF NATIONS HOMETOWN
 ~
 
 54 MCREATE OCREATE~
-Syntax: mcreate <vnum> <keywords>
-Syntax: ocreate <vnum> <keywords>
+Sintaxis: mcreate <vnum> <keywords>
+Sintaxis: ocreate <vnum> <keywords>
 
 Create and new mobile / object.
 A prototype monster or object will be created with the selected vnum, and
@@ -15250,14 +15250,14 @@ See also:  TRANCE
 ~
 
 57 MEMORY~
-Syntax: memory
+Sintaxis: memory
 
 MEMORY reports the current counts of objects, mobiles, affects, rooms,
 areas, etc, etc.
 ~
 
 1 'MENTAL ANGUISH'~
-Syntax:  cast mental <victim>
+Sintaxis:  cast mental <victim>
 This Nephandi rite causes its' victim to suffer from mental pain and
 become susceptible to evil while under its' influence.
 ~
@@ -15420,8 +15420,8 @@ Displayed to the player on login will be:
 ~
 
 54 MFIND OFIND~
-Syntax: mfind <name>
-Syntax: ofind <name>
+Sintaxis: mfind <name>
+Sintaxis: ofind <name>
 
 MFIND finds all mobile types with a particular name.
 
@@ -15488,8 +15488,8 @@ OFIND finds all object types with a particular name.
 ~
 
 1 'MIDAS TOUCH' 'MIDAS'~
-Syntax:  cast 'midas touch' <name of object in inventory>
-Syntax:  c 'midas touch' <name of object in inventory>
+Sintaxis:  cast 'midas touch' <name of object in inventory>
+Sintaxis:  c 'midas touch' <name of object in inventory>
  
 A spell in keeping with its namesake from lore, this spell can be
 used to convert an item into gold coins.  The currency returned
@@ -15525,7 +15525,7 @@ and sometimes items as prizes.
 ~
 
 1 'MIND FORTRESS'~
-Syntax: Cast mind
+Sintaxis: Cast mind
  
 This spell works well for a group who can merge their minds to create
 a fortress against magic.
@@ -15554,7 +15554,7 @@ See Also: STYLES
 ~
 
 1 'MINOR INVOCATION'~
-Syntax:  cast 'minor invocation'
+Sintaxis:  cast 'minor invocation'
  
 This spell improves the to-hit roll and saving throw versus spell of all
 members of the caster's group by 1 each.
@@ -15585,9 +15585,9 @@ See also : Axuda STYLE
 ~
 
 54 MINVOKE OINVOKE~
-Syntax:  minvoke <vnum>
+Sintaxis:  minvoke <vnum>
          minvoke <keyword of mob>
-Syntax:  oinvoke <vnum>
+Sintaxis:  oinvoke <vnum>
          oinvoke <keyword of obj>
          oinvoke <vnum/keyword of obj> <level>
  
@@ -15639,7 +15639,7 @@ See also: PROJECTILES, ITEMVALUES, WEAPONTYPES and OSET.
 ~
 
 1 MISTFORM~
-Syntax:  mistform
+Sintaxis:  mistform
  
 The vampire may assume a form of lucent mist, capable of traveling
 through many barriers otherwise unpassable.
@@ -15647,8 +15647,8 @@ through many barriers otherwise unpassable.
 ~
 
 1 MISTWALK~
-Syntax:  mistwalk <victim>
-Syntax:  mistwalk '<multiple keywords for victim>'
+Sintaxis:  mistwalk <victim>
+Sintaxis:  mistwalk '<multiple keywords for victim>'
  
 The vampire may become a fine mist, capable of traveling with great speed
 and precision through the smallest of cracks and crevices to reach its
@@ -15684,7 +15684,7 @@ shall never arise from the canyon.
 ~
 
 54 MLIST~
-Syntax: mlist
+Sintaxis: mlist
       :	mlist <first mob>
       :	mlist <first mob> <last mob>
 
@@ -15695,7 +15695,7 @@ it will list all mobs including and between the two.
 ~
 
 54 MMENU~
-Syntax: mmenu <mob name> [menu page] (defaults to 'a' if none given)
+Sintaxis: mmenu <mob name> [menu page] (defaults to 'a' if none given)
 
 Mmenu will bring you into a menu system of editing mobiles.  To use mmenu,
 the mobile that you are editing should be in the same room as you.  To
@@ -15879,7 +15879,7 @@ the powerful skills in place.
 IN CONCLUSION.. &GWhat are the things you are considering when you build a mob?
 First, only make the mob as high a level as its hit points and damage returned
 rate. My general rule of thumb starts with NO LESS than 100 hitpoints PER
-LEVEL of mob. A 100 hitpoints/level mob is a decent leveling mob in most in-
+NIVEL of mob. A 100 hitpoints/level mob is a decent leveling mob in most in-
 stances. Any less than this, you have a powerleveling mob. Think about the
 level of characters intended to be in your area attacking your mobiles. Then go
 find out what their average stats are. Pay particular attention to Hitroll,
@@ -16072,8 +16072,8 @@ $$$$$$$F &c4MP"  `MP                  `&w$h
 ~
 
 0 MOUNT DISMOUNT~
-Syntax: mount <mob>
-Syntax: dismount
+Sintaxis: mount <mob>
+Sintaxis: dismount
 
 Mount is a skill, which allows you to mount certain mobs.  Being mounted 
 on a mob cuts down on movement points that are used whenever you move.
@@ -16105,7 +16105,7 @@ in those mountains are now long gone, replaced by rumours of hidden treasure,
 living legacies, and perhaps even the wandering dead.
 ~
 
-1 MOVE MOVEMENT~
+1 MOVERSE MOVER MOVEMENTO~
 This discusses the process of moving your character from one place in the
 Realms to another.  The common movements are north, east, south, west, up
 down, northeast, southeast, southwest, and northwest.  You may also move
@@ -16123,14 +16123,14 @@ For more detailed information on movement and doors, read sections 7 and
 ~
 
 54 MPADVANCE~
-Syntax: MPADVANCE <name> <level>
+Sintaxis: MPADVANCE <name> <level>
 
 Advances the level of a player (not functional in prototype programs).
 ~
 
 54 MPAPPLY MPAPPLYB~
-Syntax:  mpapply <victim>
-Syntax:  mpapplyb <victim>
+Sintaxis:  mpapply <victim>
+Sintaxis:  mpapplyb <victim>
  
 These commands are used in the pre-auth area to signal a new character's
 authorization status.  When a character first enters the game, it will
@@ -16142,13 +16142,13 @@ the character will be sent into the actual game.
 ~
 
 54 MPASOUND~
-Syntax: MPASOUND <phrase>
+Sintaxis: MPASOUND <phrase>
 
 Displays a phrase to all surrounding rooms.
 ~
 
 54 MPAT~
-Syntax: MPAT <vnum> <command>
+Sintaxis: MPAT <vnum> <command>
 
 Lets the mobile perform a command at another location.
 ~
@@ -16170,7 +16170,7 @@ Lets the mobile perform a command at another location.
 &cMPCLOSEPASSAGE &w<room> <direction>    &cMPOPENPASSAGE &w<room> <dest> <dir>
 &cMPECHOZONE     &w<text/phrase>         &cMPFILLIN      &w<direction>
 &cMPOSET         &w<field> <value>       &cMPMSET        &w<field> <value> 
-&cMPPRACTICE     &w<victim> (skill|spell) (max_percent)
+&cMPPRACTICAR     &w<victim> (skill|spell) (max_percent)
 &cMPFAVOR        &w<victim> <value>      &cMPTAG         &w<tag> <value>
 &cMPSCATTER      &w<victim> <#> <#>      &cMPFLAG        &w<flag> <bit>
   
@@ -16202,7 +16202,7 @@ Valid PROGRAM values include:
 ~
 
 54 MPDAMAGE~
-Syntax:  mpdamage <victim> <amount>
+Sintaxis:  mpdamage <victim> <amount>
  
 This command inflicts a specified amount of damage on the victim.
 This damage will be affected by sanctuary, but is not affected by
@@ -16212,8 +16212,8 @@ A mob should _never_ mpdamage itself.
 ~
 
 54 MPDEPOSIT MPWITHDRAW~
-Syntax:  mpdeposit <amount>
-Syntax:  mpwithdraw <amount>
+Sintaxis:  mpdeposit <amount>
+Sintaxis:  mpwithdraw <amount>
  
 This command orders the mobile to deposit or withdraw a specified number
 of gold coins from an area.  These can be used in conjunction with mpat
@@ -16229,25 +16229,25 @@ area in which it is located at the time.
 ~
 
 54 MPDREAM~
-Syntax: MPDREAM <name> <phrase>
+Sintaxis: MPDREAM <name> <phrase>
 Sends a message to a sleeping character.
 ~
 
 54 MPECHO~
-Syntax: MPECHO <phrase>
+Sintaxis: MPECHO <phrase>
 
 Displays a phrase to the entire room.
 ~
 
 54 MPECHOAROUND~
-Syntax: MPECHOAROUND <name> <phrase>
+Sintaxis: MPECHOAROUND <name> <phrase>
 
 Displays a phrase to all in the room except victim.
 The abbreviation "mer" may be used for mpechoaround.
 ~
 
 54 MPECHOAT~
-Syntax: MPECHOAT <name> <phrase>
+Sintaxis: MPECHOAT <name> <phrase>
 
 Displays a phrase to only the victim.
 The abbreviation "mea" may be used for mpechoat.
@@ -16269,12 +16269,12 @@ The abbreviation "mea" may be used for mpechoat.
 ~
 
 55 MPEDIT~
-Syntax:  mpedit <mobile> <command> [number]  [program] [arguments]
-Syntax:  mpedit <mobile> add       <program> <arguments>
-Syntax:  mpedit <mobile> insert    <number>  <program> <arguments>
-Syntax:  mpedit <mobile> edit      <number>  [program] [arguments]
-Syntax:  mpedit <mobile> delete    <number>
-Syntax:  mpedit <mobile> list
+Sintaxis:  mpedit <mobile> <command> [number]  [program] [arguments]
+Sintaxis:  mpedit <mobile> add       <program> <arguments>
+Sintaxis:  mpedit <mobile> insert    <number>  <program> <arguments>
+Sintaxis:  mpedit <mobile> edit      <number>  [program] [arguments]
+Sintaxis:  mpedit <mobile> delete    <number>
+Sintaxis:  mpedit <mobile> list
  
 Add, insert and edit will put you into the line editor to edit your
 program.  The arguments consist of a trigger, plus any arguments
@@ -16311,7 +16311,7 @@ See MPSTAT, TRIGGER, MPTRIGGERS, MPCOMMANDS, IFCHECKS, IFCHECKS2, VARIABLES
 ~
 
 54 MPFILLIN~
-Syntax: mpfillin <exit>
+Sintaxis: mpfillin <exit>
 
 New mpfillin, this simply sets a closed door bit, so can be used for
 several things, quietly closing a door, closing an exit that was dug, etc...
@@ -16346,7 +16346,7 @@ several things, quietly closing a door, closing an exit that was dug, etc...
 ~
 
 54 MPFLAG MPRMFLAG~
-Syntax:  mpflag      <victim> <flag> <value>
+Sintaxis:  mpflag      <victim> <flag> <value>
          mprmflag    <victim> <flag> <value>
  
 Using these commands you can assign variables based on 128 "bits". These bits
@@ -16377,21 +16377,21 @@ SEE ALSO: MPTAG, MPRMTAG, IFCHECK ISTAGGED, IFCHECK ISFLAGGED
 ~
 
 54 MPFORCE~
-Syntax: MPFORCE <name/all>
+Sintaxis: MPFORCE <name/all>
 
 Forces a player/mob to do a command (non-functional on immortals, all will
 only force all in room).
 ~
 
 54 MPGOTO~
-Syntax: MPGOTO <vnum>
+Sintaxis: MPGOTO <vnum>
 
 Goes to any room which is not private.
 ~
 
 54 MPINVIS~
-Syntax:  mpinvis
-Syntax:  mpinvis <level>
+Sintaxis:  mpinvis
+Sintaxis:  mpinvis <level>
  
 This command controls a mob's ability to use a modified form of wizinvis.
  
@@ -16412,13 +16412,13 @@ creature even if it is invisible.
 ~
 
 54 MPJUNK~
-Syntax: MPJUNK <name>
+Sintaxis: MPJUNK <name>
 
 Destroys an object in inventory/being worn - can be used with all.object .
 ~
 
 54 MPKILL~
-Syntax: MPKILL <name>
+Sintaxis: MPKILL <name>
 
 Kills a player without using murder.
 ~
@@ -16445,7 +16445,7 @@ Kills a player without using murder.
 ~
 
 53 MPMLOAD MPOLOAD~
-Syntax: MPMLOAD <vnum>
+Sintaxis: MPMLOAD <vnum>
         MPOLOAD <vnum> <level> <timer>
 
 Loads a mob or object. In the case of objects, the level must be set, or
@@ -16482,11 +16482,11 @@ timer for objects.
 ~
 
 54 MPOPENPASSAGE MPCLOSEPASSAGE~
-Syntax: MPOPENPASSAGE <origin> <destination> <direction>
+Sintaxis: MPOPENPASSAGE <origin> <destination> <direction>
 
 Opens a passage to a room (does not affect pre-existing doors)
 
-Syntax: MPCLOSEPASSAGE <room> <direction>
+Sintaxis: MPCLOSEPASSAGE <room> <direction>
 
 Closes a passage to a room (does not affect pre-existing doors that were
 not created with mpopenpassage)
@@ -16552,8 +16552,8 @@ Be sure the mob executing the command can see in the rooms he is dropping in.
 &r-----------------------------------------------------------------------------
 ~
 
-54 MPPRACTICE~
-Syntax:  mppractice <victim> <skill/spell/language> <amount>
+54 MPPRACTICAR~
+Sintaxis:  mppractice <victim> <skill/spell/language> <amount>
  
 This command will set the victim's percentage of proficiency in the
 specified skill/spell/language to the specified amount.
@@ -16580,20 +16580,20 @@ fireball, or a level 1 thief in gouge.
 ~
 
 56 MPREGOTO~
-Syntax:  mpregoto
+Sintaxis:  mpregoto
  
 This command will place a mob at the last location they were at
 before their last MPGOTO.
 ~
 
 54 MPRESTORE~
-Syntax:  mprestore <victim> <amount>
+Sintaxis:  mprestore <victim> <amount>
  
 This command restores a specified number of hitpoints to the victim.
 ~
 
 56 MPRETRAN~
-Syntax: MPRETRAN <victim>
+Sintaxis: MPRETRAN <victim>
  
 This command will return that player or mob to the room from which
 it was last transferred from.
@@ -16642,7 +16642,7 @@ Thank you, have a nice day.
 ~
 
 54 MPSTAT~
-Syntax:  mpstat <mob/mobvnum>
+Sintaxis:  mpstat <mob/mobvnum>
  
 Mpstat will display all of the mobprograms that have been written for the
 specified mob.  If an instance of that mob exists in the game, it can be
@@ -16652,7 +16652,7 @@ See MPEDIT, TRIGGER, MPTRIGGERS, MPCOMMANDS, IFCHECKS, IFCHECKS2, VARIABLES
 ~
 
 54 MPTAG MPRMTAG~
-Syntax:  mptag      <victim> <tag> [value]
+Sintaxis:  mptag      <victim> <tag> [value]
          mprmtag    <victim> <tag>
  
 Using these commands, you can assign a "tag", or "variable" to a character,
@@ -16663,7 +16663,7 @@ an "integer" variable, a number. If using a number you can use the ifcheck
 "istagged" to compare how big or little the number is using <>= operators.
  
 The tag assigned to a character will last on the character based on the mob's
-intelligence and level that assigned it. ( eg INT x LEVEL ) So a level 10 mob
+intelligence and level that assigned it. ( eg INT x NIVEL ) So a level 10 mob
 with an intelligence of 13 will tag for a length of 130 ticks. These tags will
 save to a characters pfile and will last over logging out and logging in.  You
 can also set the timer for a tag using the commands "noexpire" or "timer".
@@ -16694,7 +16694,7 @@ Transfers one or all in the room to a specified location.
 ~
 
 54 MSET~
-Syntax: mset <character> <field> <value>
+Sintaxis: mset <character> <field> <value>
         mset character on
  
 MSET sets the properties of mobiles. If a mobile has the PROTOTYPE flag, 
@@ -16720,17 +16720,17 @@ mset <target> pkill
  
 Before msetting a player to pkill, ensure the following conditions are met:
  
-Player has read AXUDA DEADLY and LAWS PKILL
+Player has read AXUDA DEADLY and LEIS PKILL
 Player understands he/she/it may not return to the peaceful side
 Player is config -nice
 Player is in an area appropriate for pkill.
 ~
 
 53 MSTAT OSTAT RSTAT~
-Syntax:  mstat <character/mob or mobvnum>
-Syntax:  ostat <object/object vnum>
-Syntax:  rstat 
-Syntax:  rstat <location>
+Sintaxis:  mstat <character/mob or mobvnum>
+Sintaxis:  ostat <object/object vnum>
+Sintaxis:  rstat 
+Sintaxis:  rstat <location>
  
 MSTAT shows you statistics on a character or mobile.  If a copy of the mobile
 is present in the game, you can access it using its vnum.
@@ -16773,16 +16773,16 @@ See MSET OSET and REDIT
 ~
 
 0 MUDMAIL MAIL~
-Syntax: mail list
-Syntax: mail read    <number>
-Syntax: mail read    all
-Syntax: mail write
-Syntax: mail subject <string>
-Syntax: mail to      <to-list>
-Syntax: mail take    <number>
-Syntax: mail show
-Syntax: mail post
-Syntax: mail remove  <number>
+Sintaxis: mail list
+Sintaxis: mail read    <number>
+Sintaxis: mail read    all
+Sintaxis: mail write
+Sintaxis: mail subject <string>
+Sintaxis: mail to      <to-list>
+Sintaxis: mail take    <number>
+Sintaxis: mail show
+Sintaxis: mail post
+Sintaxis: mail remove  <number>
 
 The mail command is very similar to the note command.  To write mail, as 
 in notes, you must have a blank note held in your hands, and a quill or 
@@ -16834,7 +16834,7 @@ the channel available to them.
 ~
 
 54 MWHERE~
-Syntax: mwhere <name>
+Sintaxis: mwhere <name>
 
 MWHERE shows you the locations of all mobiles with a particular name.
 ~
@@ -16897,7 +16897,7 @@ MWHERE shows you the locations of all mobiles with a particular name.
 ~
 
 1 MYSTIC 'MYSTIC AWARENESS' AWARENESS~
-Syntax: c 'mystic awareness'
+Sintaxis: c 'mystic awareness'
  
  
 This spell enables the Nephandi to have revelatory visions of what lies
@@ -17657,7 +17657,7 @@ players between the levels of 1 to 15.
 ~
 
 1 'NECROMANTIC TOUCH'~
-Syntax:  c 'necromantic touch' <victim>
+Sintaxis:  c 'necromantic touch' <victim>
  
 This spell drains hitpoints from the victim and returns some to the caster.
 ~
@@ -17781,21 +17781,21 @@ wholehearted effort to oppose the forces of Evil.
 Si eres novo en Kallaikia, existen alguns ficheiros de axuda que che poden
 axudar en este mundo. 
  
-GUIA -        Will help you learn to use your Adventurers Guide Book.
-RULES -       Will lead you through the laws of the land.
-SPAM -        Will explain what spam is, and why you should not do it.
-CONFIG -      Will teach you about our configuration menu.
-SCORE -       Will show your character's personal score sheet at level 2.
-MOVEMENT -    Will teach you various commands for moving about the Realms.
-OBJECTS -     Will teach you various commands to use your equipment.
-CONTAINER -   Will teach you about using containers to hold belongings.
-CHANNELS -    Will teach you about communication with other players.
-GROUP -       Will help you with grouping with other adventurers.
-COMBAT -      Will teach you how to choose, start and stop a fight.
-DEATH -       Will tell you about the death experience in the Realms.
-PRACTICE -    Will teach you about training spells, skills, and weapons.
-INFORMATION - Will cover ways to find certain types of information.
-PORTAL -      Will cover portals and how they can be dangerous.
+GUIA -          Will help you learn to use your Adventurers Guide Book.
+REGRAS -        Will lead you through the laws of the land.
+SPAM -          Will explain what spam is, and why you should not do it.
+CONFIGURACION - Will teach you about our configuration menu.
+PUNTUACION -    Will show your character's personal score sheet at level 2.
+MOVEMENTO -     Will teach you various commands for moving about the Realms.
+OBXETOS -       Will teach you various commands to use your equipment.
+CONTEDOR -      Will teach you about using containers to hold belongings.
+CANLES -        Will teach you about communication with other players.
+GRUPO -         Will help you with grouping with other adventurers.
+LOITA -         Will teach you how to choose, start and stop a fight.
+MORTE -         Will tell you about the death experience in the Realms.
+PRACTICAR -     Will teach you about training spells, skills, and weapons.
+INFORMACION -   Will cover ways to find certain types of information.
+PORTAL -        Will cover portals and how they can be dangerous.
 
 Para usar estes ficheiros, teclea AXUDA <topico>. Teclea 'axuda' para comandos xerais.
 ~
@@ -17808,7 +17808,7 @@ or problems the player may have.
 ~
 
 51 NEWBIESET~
-Syntax: newbieset <character>
+Sintaxis: newbieset <character>
 
 NEWBIESET puts the default (i.e. Brigantia Academy) equipment into the
 character's inventory.  Recipient must be level 5 or lower.
@@ -17968,9 +17968,9 @@ Ven     35                      40                      45
 ~
 
 -1 NEWS~
-Syntax:  news
-Syntax:  news all
-Syntax:  news <number of news item to read>
+Sintaxis:  news
+Sintaxis:  news all
+Sintaxis:  news <number of news item to read>
  
 The new 'news' system is based on Noplex's extended news snippet.
  
@@ -17978,7 +17978,7 @@ See also:  changes
 ~
 
 53 NEWZONES~
-Syntax: newzones [low] [high]
+Sintaxis: newzones [low] [high]
 Lists the vnum range for rooms/mobs/objects in prototype areas that have been
 loaded.
 ~
@@ -18006,7 +18006,7 @@ pulling sensation as strange and colorful mists swirl around you...
 ~
 
 1 NIGHTMARE~
-Syntax: c nightmare <player> <message>
+Sintaxis: c nightmare <player> <message>
  
 The casting of this spell will invade the blessed sleep of the victim.
 ~
@@ -18100,21 +18100,21 @@ all of the guild, hometown, clan, and order hqs
 ~
 
 1 NORTH SOUTH EAST WEST UP DOWN~
-Syntax: north or n
-Syntax: south or s
-Syntax: east or e
-Syntax: west or w
-Syntax: up or u
-Syntax: down or d
+Sintaxis: north or n
+Sintaxis: south or s
+Sintaxis: east or e
+Sintaxis: west or w
+Sintaxis: up or u
+Sintaxis: down or d
 
 Use these commands to walk in a particular direction.
 ~
 
 1 NORTHEAST NORTHWEST SOUTHEAST SOUTHWEST~
-Syntax: northeast or ne
-Syntax: northwest or nw
-Syntax: southeast or se
-Syntax: southwest or sw
+Sintaxis: northeast or ne
+Sintaxis: northwest or nw
+Sintaxis: southeast or se
+Sintaxis: southwest or sw
  
 Use these commands to walk in a particular direction.
 ~
@@ -18171,7 +18171,7 @@ must lurk below, their view of the mortals filtered by sewer bars.
 ~
 
 1 NOSTRUM~
-Syntax:  c nostrum
+Sintaxis:  c nostrum
  
 A restorative spell of the Augurer which heals the caster of wounds.
 The spell cannot be cast on others.
@@ -18255,11 +18255,11 @@ Also see Axuda &Wnote, &wAxuda &Wnote2, &wAxuda &Wvote &wand Axuda &Wediting&w.
 ~
 
 51 NOTELL NOEMOTE NOTITLE SILENCE UNSILENCE~
-Syntax: notitle <character>
-Syntax: noemote <character>
-Syntax: notell  <character>
-Syntax: silence <character>
-Syntax: unsilence <character>
+Sintaxis: notitle <character>
+Sintaxis: noemote <character>
+Sintaxis: notell  <character>
+Sintaxis: silence <character>
+Sintaxis: unsilence <character>
  
 NOTITLE, NOEMOTE, NOTELL, and SILENCE are used to muffle other characters, by
 preventing them from setting their title, emoting, telling, and using
@@ -18543,8 +18543,8 @@ Para ver os obxetos que posees actualmente, teclea INVENTARIO e EQUIPAMENTO:
 INVENTARIO son os obxetos que estas transportando contigo, pero que non vistes.
 EQUIPAMENTO mostra o equipamento vestido. 
  
-Ti debes VESTIR, EMPUNHAR, ou SOSTER equipamento para poder usalo. Para deixar de
-usar algunha parte do equipo, debes ELIMINAR esa parte. Antes de EMPUNHAR unha
+Ti debes VESTIR, EMPUÑAR, ou SOSTER equipamento para poder usalo. Para deixar de
+usar algunha parte do equipo, debes ELIMINAR esa parte. Antes de EMPUÑAR unha
 nova arma, debes ELIMINAR a anterior. 
  
 You can gain information on your objects by using MIRAR or EXAMINAR.  EXAMINAR
@@ -18649,7 +18649,7 @@ For objects see also: OPSTAT, OPEDIT, TRIGGER, OPCOMMANDS, IFCHECKS, VARIABLES.
 ~
 
 1 OCCULAR EXPLOSIUM~
-Syntax: c 'occular' victim
+Sintaxis: c 'occular' victim
  
 Warning: This spell may cause your victims eyes to explode.
 The caster will need a fresh eyeball in his/her inventory in order to
@@ -18657,7 +18657,7 @@ cast this spell.
 ~
 
 1 'OCCULUTUS VISUM'~
-Syntax:  occulutus visum
+Sintaxis:  occulutus visum
     or:  occu (or other unique abbreviation)
  
 Triggers the vampire's innate ability to sense all manner of the unseen.
@@ -18756,7 +18756,7 @@ very few visit, or attack, them.
 ~
 
 54 OGRUB~
-Syntax: ogrub <num of lines> <sort order> [keywords] [operands]
+Sintaxis: ogrub <num of lines> <sort order> [keywords] [operands]
  
 ogrub 20 level<8 avg>12
 Display weapons below level 8 that do more than 12 average damage.
@@ -18804,7 +18804,7 @@ See Also: AXUDA OGRUB DATA
 ~
 
 54 'OGRUB DATA'~
-Syntax: ogrub <num of lines> <sort order> [keywords] [operands]
+Sintaxis: ogrub <num of lines> <sort order> [keywords] [operands]
  
 Here is some reference data you will need in order to use OGRUB.
  
@@ -18843,7 +18843,7 @@ See also: AXUDA OGRUB
 ~
 
 54 OGRUB2~
-Syntax: &Wogrub <num of lines> <sort order> [keywords] [operands]
+Sintaxis: &Wogrub <num of lines> <sort order> [keywords] [operands]
 &w 
 Here is some reference data you will need in order to use OGRUB.
 &GFIELDS                      
@@ -18911,13 +18911,13 @@ been lost.
 ~
 
 0 OLDSCORE~
-Syntax: oldscore
+Sintaxis: oldscore
 
 Oldscore shows the score information in a different way than 'score'.
 ~
 
 54 OLIST~
-Syntax: olist
+Sintaxis: olist
       :	olist <first object>
       :	olist <first object> <last object>
 
@@ -18958,7 +18958,7 @@ by powerful Avatars.
 ~
 
 54 OMENU~
-Syntax: omenu <object name> [menu page] (defaults to 'a' if none given)
+Sintaxis: omenu <object name> [menu page] (defaults to 'a' if none given)
 
 Omenu will bring you into a menu system of editing objects.  To use omenu,
 you must be holding the object that you are editing in your inventory.  To
@@ -18995,12 +18995,12 @@ Valid PROGRAM values include:
 ~
 
 54 OPEDIT~
-Syntax:  opedit <object> <command> [number]  [program] [arguments]
-Syntax:  opedit <object> add       <program> <arguments>
-Syntax:  opedit <object> insert    <number>  <program> <arguments>
-Syntax:  opedit <object> edit      <number>  [program] [arguments]
-Syntax:  opedit <object> delete    <number>
-Syntax:  opedit <object> list
+Sintaxis:  opedit <object> <command> [number]  [program] [arguments]
+Sintaxis:  opedit <object> add       <program> <arguments>
+Sintaxis:  opedit <object> insert    <number>  <program> <arguments>
+Sintaxis:  opedit <object> edit      <number>  [program] [arguments]
+Sintaxis:  opedit <object> delete    <number>
+Sintaxis:  opedit <object> list
  
 Add, insert and edit will put you into the line editor to edit your program.
 The arguments consist of a trigger, plus any arguments associated with that
@@ -19012,13 +19012,13 @@ See OPSTAT, TRIGGER, OPTRIGGERS, OPCOMMANDS, IFCHECKS, IFCHECKS2, VARIABLES
 ~
 
 0 OPEN CLOSE LOCK UNLOCK PICK BOLT UNBOLT~
-Syntax: open   <object|direction>
-Syntax: close  <object|direction>
-Syntax: lock   <object|direction>
-Syntax: unlock <object|direction>
-Syntax: pick   <object|direction>
-Syntax: bolt   <direction>
-Syntax: unbolt <direction>
+Sintaxis: open   <object|direction>
+Sintaxis: close  <object|direction>
+Sintaxis: lock   <object|direction>
+Sintaxis: unlock <object|direction>
+Sintaxis: pick   <object|direction>
+Sintaxis: bolt   <direction>
+Sintaxis: unbolt <direction>
 
 OPEN and CLOSE open and close an object or a door.
 
@@ -19081,7 +19081,7 @@ whose own goals conflict with the End of Days.
 ~
 
 54 OPSTAT~
-Syntax: opstat <object/object vnum>
+Sintaxis: opstat <object/object vnum>
  
 Opstat will display all of the objprograms that have been written for the
 specified object.  If a copy of the object exists in the game, it can be
@@ -19106,8 +19106,8 @@ This function is under construction.
 ~
 
 0 ORDER~
-Syntax: order <character> command
-Syntax: order all command
+Sintaxis: order <character> command
+Sintaxis: order all command
 
 ORDER orders one or all of your charmed followers (including pets) to
 perform any command.  The command may have arguments.  You are responsible
@@ -19134,7 +19134,7 @@ your proposal should include the following:
 ~
 
 1 ORDERS~
-Syntax:  orders
+Sintaxis:  orders
     or:  orders <order name>
  
 This command will display a list of all currently existing Orders, as
@@ -19153,14 +19153,14 @@ anyone whose name starts or ends with Rat.
 ~
 
 0 ORDERTALK OT~
-Syntax:  ordertalk <message>
+Sintaxis:  ordertalk <message>
  
 Provided that you are in an Order, ordertalk will send the message to
 all members currently online, as well as the deity if they are online.
 ~
 
 54 OSET~
-Syntax:  oset <object>    <field> <value>
+Sintaxis:  oset <object>    <field> <value>
          oset object on
  
 If the copy of the object you are currently modifying has the PROTOTYPE flag,
@@ -19260,17 +19260,17 @@ be set when you are config +pager.
 ~
 
 0 PAGELENGTH~
-Syntax: pagelength <number of lines>
+Sintaxis: pagelength <number of lines>
 
 This command sets your screen to only display a certain amount of lines.
 After setting pagelength, type clear to reinitialize your screen.
 ~
 
 0 PAGER~
-Syntax:  Pager <# of lines per screen>
-Syntax:  Config +pager       (turns page pausing on)
-Syntax:  Config -pager       (turns page pausing off)
-Syntax:  Pager               (toggles pager on/off)
+Sintaxis:  Pager <# of lines per screen>
+Sintaxis:  Config +pager       (turns page pausing on)
+Sintaxis:  Config -pager       (turns page pausing off)
+Sintaxis:  Pager               (toggles pager on/off)
  
 Pager is a configurable item that will pause screen scrollage at the user
 specified pager length.  To set it, first set a desired page length using:
@@ -19287,7 +19287,7 @@ Commands available within the pager are:
 With 'continue' being the default item.  When the screen pauses, hit the
 enter key to continue, or type another choice and hit the enter key.
  
-See also: CONFIG
+See also: CONFIGURACION
 ~
 
 -1 PALADIN PALADINS~
@@ -19341,7 +19341,7 @@ for a brief time.
 ~
 
 1 'PARANOIA'~
-Syntax: c paranoia <victim>
+Sintaxis: c paranoia <victim>
  
 This evil spell will cause the victim to suffer from an unholy terror,
 making them more susceptible to attack, and less competent in the
@@ -19349,15 +19349,15 @@ use of the mystical arts.
 ~
 
 51 PARDON~
-Syntax: pardon <character> killer
-Syntax: pardon <character> thief
-Syntax: pardon <character> attacker
+Sintaxis: pardon <character> killer
+Sintaxis: pardon <character> thief
+Sintaxis: pardon <character> attacker
 
 PARDON pardons a player for their crimes.
 ~
 
 0 PARRY~
-Syntax:  operates automatically
+Sintaxis:  operates automatically
  
 Parry is a skill which assists in warding off incoming attacks.  If you
 successfully parry attack, you take no damage from it.  Parry is an
@@ -19372,22 +19372,22 @@ FINGERS  EAR     EYE    LONG_TONGUE  EYESTALKS   TENTACLES   FINS    WINGS
 TAIL     SCALES  HOOVES FORELEGS     HAUNCHES
  
 Used for attacking:
-CLAWS    HORNS   TUSKS  TAILATTACK   SHARPSCALES
+CLEIS    HORNS   TUSKS  TAILATTACK   SHARPSCALES
 ~
 
 0 'PASS DOOR'~
-Syntax: cast 'pass door'
+Sintaxis: cast 'pass door'
 
 This spell enables the caster to pass through closed doors.
 ~
 
-0 PASSWORD~
-Syntax:  password  <new password>   <new password>
+0 CONTRASINAL~
+Sintaxis:  contrasinal  <nova contrasinal>   <nova contrasinal>
  
-PASSWORD changes your character's password.  You repeat the new password only.
+CONTRASINAL changes your character's password.  You repeat the new password only.
 If you do not get it correctly it will not work.  This should end the typo
 locking you out of your character.
-The PASSWORD command is protected against being snooped or logged; it is
+The CONTRASINAL command is protected against being snooped or logged; it is
 impossible for any immortal to in any way see, find or retrieve it.  It
 is the responsibility of the player to ensure that the password of the
 character is kept secure.
@@ -19405,10 +19405,10 @@ not be dealt with by immortals. Beware of any who offer you money.
 
 &YThe password policy is:  password equals ownership.&w
  
-See also PASSWORD_ZMUD
+See also CONTRASINAL_ZMUD
 ~
 
-2 PASSWORD_ZMUD~
+2 CONTRASINAL_ZMUD~
 When you're using zMUD and want to change your password, remember to change
 it in the zMUD character settings as well as on the mud.  The MUD's command
 for this is:  password <new password> <new password>
@@ -19422,10 +19422,10 @@ box is not checked.  Click on 'Ok' to close the dialog box.
 Type the command #say %pass [enter].  Your password will be shown on your
 screen, but not sent to the mud.  Write it down, for future reference.
 
-For more information, see AXUDA PASSWORD and the zMUD web site:
+For more information, see AXUDA CONTRASINAL and the zMUD web site:
 http://www.zuggsoft.com
 
-See also PASSWORD
+See also CONTRASINAL
  
 ~
 
@@ -19534,7 +19534,7 @@ name already in the files.
 ~
 
 51 PEACE~
-Syntax: peace
+Sintaxis: peace
 
 PEACE causes all characters in a room to stop fighting.
 ~
@@ -19553,7 +19553,7 @@ to provide you a circle of protection.
 ~
 
 1 PESTILENCE~
-Syntax: c pest
+Sintaxis: c pest
  
 This spell requires a pentagram and a pixie wing and will utilize magic
 to transform the pixie wing into a swarm of fun loving locusts.
@@ -19811,7 +19811,7 @@ largely unpopulated and can be safely traveled at any time of day.
 ~
 
 0 'PLANT PASS'~
-Syntax:  cast 'plant pass' <victim>
+Sintaxis:  cast 'plant pass' <victim>
  
 This spell allows the caster to merge with nearby foliage, and flow through
 it to emerge near the victim.
@@ -19851,7 +19851,7 @@ Various races have been imbued by the gods with certain effects:
 ~
 
 0 POISON~
-Syntax: cast poison <victim>
+Sintaxis: cast poison <victim>
 
 This spell reduces the strength of the victim by two, as well as reducing the
 victim's regeneration rate.
@@ -19864,7 +19864,7 @@ recovery may still take some time on the part of the sufferer.
 ~
 
 0 'POISON WEAPON'~
-Syntax:  'poison weapon' <weapon>
+Sintaxis:  'poison weapon' <weapon>
 Abbrev:  poison <weapon>
  
 A skill unique to thieves which enables them to coat their weapon with a
@@ -19906,7 +19906,7 @@ happen to your possessed mobs, and you can always return.
 
 1 POTION~
 .
-Syntax: quaff potion             (to quaff potions)
+Sintaxis: quaff potion             (to quaff potions)
         quaff potion container   (quaff directly from container)
  
 Potions can be bought from shops or found on certain mobs. Different
@@ -19922,7 +19922,7 @@ See also: QUAFF
 ~
 
 2 POUNCE~
-Syntax:  pounce <victim>
+Sintaxis:  pounce <victim>
  
 A pkill-only skill similar to backstab.  Currently requires the use
 of either a slicing, stabbing, slashing, clawing, biting or
@@ -19930,14 +19930,14 @@ piercing weapon.
  
 ~
 
-1 PRACTICE~
-Syntax: PRACTICE
-Syntax: PRACTICE <skill|spell|weapon>
+1 PRACTICAR~
+Sintaxis: PRACTICAR
+Sintaxis: PRACTICAR <skill|spell|weapon>
 
-PRACTICE without an argument tells you your current ability level in all
+PRACTICAR without an argument tells you your current ability level in all
 the skills and spells available to you.  You can check this anywhere.
 
-PRACTICE with an argument practice that skill or spell.  Your learning
+PRACTICAR with an argument practice that skill or spell.  Your learning
 percentage starts off at 0% (unlearned), and can be practiced once.  
 After this initial practice, the skill/spell must be used to develop it 
 to the level of 'adept' (Adept is not always necessarily 100%)  You must 
@@ -20033,8 +20033,8 @@ Law. See &YLaws Pkill&W for more information on players vs. players.
 ~
 
 0 PROMPT FPROMPT~
-Syntax:   prompt  <string>
-Syntax:   fprompt <string>
+Sintaxis:   prompt  <string>
+Sintaxis:   fprompt <string>
  
 Sets your prompt to a given string.  The game automatically sets your prompt 
 when your character is created, but you can use PROMPT to change your prompt
@@ -20082,8 +20082,8 @@ there are separate prompt options for your use. See AXUDA IMMPROMPT.
 ~
 
 0 PROTECTION SANCTUARY~
-Syntax: cast protection
-Syntax: cast sanctuary  <character>
+Sintaxis: cast protection
+Sintaxis: cast sanctuary  <character>
 
 The PROTECTION spell reduces the damage taken from any attack by an evil
 creature by one quarter.
@@ -20095,7 +20095,7 @@ These spells may be used simultaneously for cumulative effect.
 ~
 
 1 PSIONIC BLAST~
-Syntax: Cast psi <target>
+Sintaxis: Cast psi <target>
  
 This spell uses dark magic to drain the opponent of magic and power.
 When successful, the caster will gain mana drained from the victim.
@@ -20122,8 +20122,8 @@ These skills are automatic:  you need not type anything to invoke them.
 ~
 
 0 PULL PUSH LEVERS PULLCHAINS SWITCHES BUTTONS~
-Syntax: pull <trigger>
-Syntax: push <trigger>
+Sintaxis: pull <trigger>
+Sintaxis: push <trigger>
 
 Levers, switches, pullchains and buttons can do all sorts of interesting
 things... open or unlock doors, change exits around, teleport you to another
@@ -20163,7 +20163,7 @@ See also: pulltypes, objectresistance
 ~
 
 53 PULLTYPES~
-Syntax: redit pulltype <exdir> <pulltype>
+Sintaxis: redit pulltype <exdir> <pulltype>
         redit pull <exdir> <force>
  
 Pull forces can be used to move characters/objects from room to room using 
@@ -20190,7 +20190,7 @@ See also: objectresistance, pullforces
 ~
 
 1 PUMMEL~
-Syntax:  pummel
+Sintaxis:  pummel
  
 When this skill is used, the fighter delivers a round of powerful blows
 to the primary opponent. If the blows successfully land, the opponent
@@ -20200,7 +20200,7 @@ conditions.
 ~
 
 1 PUNCH~
-Syntax:  punch
+Sintaxis:  punch
 Punch is a skill which can only be used once a fight has started, and
 can only be used against your primary opponent.  If it successfully
 lands, it inflicts damage on your opponent.
@@ -20208,7 +20208,7 @@ lands, it inflicts damage on your opponent.
 ~
 
 1 PUNT~
-Syntax:  punt
+Sintaxis:  punt
  
 This skill, when successfully executed, causes damage to your primary 
 opponent. NOTE: This skill may be used to start fights so should not
@@ -20216,8 +20216,8 @@ be used on your fellow players unless under pkill conditions.
 ~
 
 57 PURGE~
-Syntax: purge
-Syntax: purge <character>
+Sintaxis: purge
+Sintaxis: purge <character>
 
 PURGE is used to clean up the world.  PURGE with no arguments removes all the
 NPC's and objects in the current room.  PURGE with an argument purges one
@@ -20279,7 +20279,7 @@ physical world.
 ~
 
 0 QUEST~
-Syntax: QUEST <message>
+Sintaxis: QUEST <message>
 
 The quest channel is one which is typically used when a quest is being 
 run, to notify players who are involved as to new updates.
@@ -20380,14 +20380,14 @@ your personal wealth.
 ~
 
 1 QUICKENING~
-Syntax: c quickening
+Sintaxis: c quickening
  
 This spell increases the target's dexterity as it increases the adrenaline
 flow throughout one's body.
 ~
 
 1 QUIT~
-Syntax: QUIT
+Sintaxis: QUIT
  
 QUIT leaves the game.  You may QUIT anywhere.  When you re-enter the game
 you will be back in the same room, unless that room has a prog that moves
@@ -20442,7 +20442,7 @@ kingdoms from amongst the many territories of the land.
 ~
 
 2 RACETALK~
-Syntax:  racetalk <message>
+Sintaxis:  racetalk <message>
  
 The racetalk channel will send your message to all the members of
 your race currently online.  This channel can be used to roleplay
@@ -20576,7 +20576,7 @@ act_progs can be trigger by it.
 ~
 
 58 RASSIGN MASSIGN OASSIGN~
-Syntax: rassign
+Sintaxis: rassign
         oassign 
         massign
 
@@ -20603,7 +20603,7 @@ change the range for the area they have assigned and wipe out the area.
 ~
 
 58 RAT~
-Syntax: rat vnum1 vnum2 command [parameters]
+Sintaxis: rat vnum1 vnum2 command [parameters]
  
 Rat, or 'range at' is the at command with the added parameters of two
 room vnums.  Assuming the vnums are valid, your 'at' command will be
@@ -20629,7 +20629,7 @@ the tower Dom Caligh atop the Raven Tor, the highest hill of the moorlands.
 ~
 
 0 RAZORBAIT~
-Syntax: c razorbait (victim)
+Sintaxis: c razorbait (victim)
 
 This spell makes the victim more susceptible to stabbing attacks.
 ~
@@ -20730,7 +20730,7 @@ honest to themselves and their fellow members.
 ~
 
 57 RCODE~
-Syntax: rcode <message>
+Sintaxis: rcode <message>
 Sends a message to all who can see rcode.
 ~
 
@@ -20774,9 +20774,9 @@ See also:  help time, help save and help repop
 ~
 
 58 REBOOT SHUTDOWN WIZLOCK~
-Syntax: reboot <nosave>
-Syntax: shutdown <nosave>
-Syntax: wizlock
+Sintaxis: reboot <nosave>
+Sintaxis: shutdown <nosave>
+Sintaxis: wizlock
 
 REBOOT shuts down the server.  When the normal 'startup' script is used
 to control the server, a delay of sixty seconds will ensue (to allow
@@ -20805,7 +20805,7 @@ See also: 'word of recall'
 ~
 
 0 'RECHARGE'~
-Syntax: cast 'recharge' <wand/staff>
+Sintaxis: cast 'recharge' <wand/staff>
 
 This spell is used to recharge wands and staves after use.  The mage
 or cleric performing the recharge should always ensure the item is
@@ -20837,7 +20837,7 @@ dark gates in a quiet corner of what is now refered to as the 'Old Marsh.'
 ~
 
 53 REDIT~
-Syntax: REDIT FIELD [parameter list]
+Sintaxis: REDIT FIELD [parameter list]
         REDIT ON
  
 FIELD  | PARAMETERS             -- DESCRIPTION / NOTES
@@ -20874,7 +20874,7 @@ See EXITTYPES, EXFLAGS, EXITMAKING, SECTORTYPES and ROOMFLAGS.
 ~
 
 52 REDRAW~
-Syntax: redraw
+Sintaxis: redraw
 
 This will redraw the whole screen, and update the menu that is being worked
 on if any.
@@ -20883,7 +20883,7 @@ See REFRESH.
 ~
 
 52 REFRESH~
-Syntax: refresh
+Sintaxis: refresh
 
 This will refresh the information in the menu that is being worked on without
 redrawing the screen.
@@ -20892,7 +20892,7 @@ See REDRAW.
 ~
 
 0 REFRESH~
-Syntax: cast refresh <character>
+Sintaxis: cast refresh <character>
 
 This spell refreshes the movement points of a character who is out of movement
 points.
@@ -20966,7 +20966,7 @@ If no remains exist, there is no penalty to favor.
 ~
 
 0 'REMOVE CURSE'~
-Syntax: cast 'remove curse' <character>
+Sintaxis: cast 'remove curse' <character>
 
 This spell removes a curse from a character, or one of the objects a
 character is carrying or using.
@@ -20976,7 +20976,7 @@ character is carrying or using.
 ~
 
 0 'REMOVE TRAP'~
-Syntax: cast 'remove trap' <object>
+Sintaxis: cast 'remove trap' <object>
 
 This spell will magically disarm a trap on an object.
 ~
@@ -21004,7 +21004,7 @@ like done.  You will need to consider the following:
 ~
 
 1 RENT~
-Syntax: RENT ... characters never have to rent!
+Sintaxis: RENT ... characters never have to rent!
  
 There is no RENT here.  Just SAVE and QUIT whenever you want to leave
 the game.
@@ -21032,7 +21032,7 @@ the leaders in carrying on the race he has served for so many years.
 ~
 
 1 REPAIR~
-Syntax:   repair <object>
+Sintaxis:   repair <object>
           repair all
  
 Repair allows you to repair equipment and swords at metal blacksmiths,
@@ -21046,7 +21046,7 @@ at once.
 ~
 
 54 REPAIRSET~
-Syntax:  repairset <mobile vnum> <field> <value>
+Sintaxis:  repairset <mobile vnum> <field> <value>
  
 This command allows you to set the following fields for repair shops:
  
@@ -21068,7 +21068,7 @@ See MAKEREPAIR, REPAIRSTAT and REPAIRSHOPS
 ~
 
 54 REPAIRSHOPS~
-Syntax: repairshops
+Sintaxis: repairshops
 
 Displays statistics on all the repair shops.
 
@@ -21076,7 +21076,7 @@ See MAKEREPAIR, REPAIRSET and REPAIRSTAT.
 ~
 
 54 REPAIRSTAT~
-Syntax: repairstat <mobile vnum>
+Sintaxis: repairstat <mobile vnum>
 
 Shows statistics on a mobile's repair shop.
 
@@ -21084,7 +21084,7 @@ See MAKEREPAIR, REPAIRSET and REPAIRSHOPS.
 ~
 
 51 REPEAT~
-Syntax: repeat <letter>
+Sintaxis: repeat <letter>
  
 This command will repeat tell messages which you
 have already received. If no parameters are given
@@ -21105,7 +21105,7 @@ Area resets are indicated by messages such as 'you hear some squeaking noises'
 just prior to reset.
 ~
 
-54 'REPOP LEVELS'~
+54 'REPOP NIVEIS'~
 Item pops for shop keepers and area pops work like this:
  
 First things you need to know :
@@ -21125,7 +21125,7 @@ All others:           Currently 0
 ~
 
 1 'REPORT' 'TIME' 'WEATHER'~
-Syntax: report;  Syntax: time;  Syntax: weather
+Sintaxis: report;  Syntax: time;  Syntax: weather
  
 REPORT shows your current statistics to you and also announces them to other
 players in the room.
@@ -21160,12 +21160,12 @@ reserve *goof                  add the substring "goof" to the list
 ~
 
 53 RESET~
-Syntax: reset list   [start] [end]
-Syntax: reset delete [number]
-Syntax: reset add    <command> <parameters>
-Syntax: reset insert <number> <command> <parameters>
-Syntax: reset edit   <number> <command> <parameters>
-Syntax: reset area   (will "reset" your area based on the defined resets)
+Sintaxis: reset list   [start] [end]
+Sintaxis: reset delete [number]
+Sintaxis: reset add    <command> <parameters>
+Sintaxis: reset insert <number> <command> <parameters>
+Sintaxis: reset edit   <number> <command> <parameters>
+Sintaxis: reset area   (will "reset" your area based on the defined resets)
 
 WARNING:
   The order that resets are in is VERY important.  You cannot equip
@@ -21179,9 +21179,9 @@ See INSTAZONE and RESETCMDS.
 ~
 
 53 RESETCMDS RESETCOMMANDS~
-Syntax: reset edit   <number> <commands>
-Syntax: reset insert <number> <commands>
-Syntax: reset add    <commands>
+Sintaxis: reset edit   <number> <commands>
+Sintaxis: reset insert <number> <commands>
+Sintaxis: reset add    <commands>
 
 Commands:
 MOB   <mobile vnum> <room vnum> [limit]  loads a mobile into a room
@@ -21201,16 +21201,16 @@ For TRAP setting see 'TRAPS BY EDMOND'
 ~
 
 1 RESILIENCE~
-Syntax:  c resilience <target>
+Sintaxis:  c resilience <target>
  
 Resilience renders the victim resistant to draining attacks.
 ~
 
 0 REST SLEEP STAND WAKE~
-Syntax:  rest
-Syntax:  sleep
-Syntax:  stand
-Syntax:  wake
+Sintaxis:  rest
+Sintaxis:  sleep
+Sintaxis:  stand
+Sintaxis:  wake
  
 These commands change your position.
  
@@ -21225,14 +21225,14 @@ SEE ALSO:  help 'sleep spell'
 ~
 
 1 RESTORATION~
-Syntax:  c restoration
+Sintaxis:  c restoration
 
 This spell casts heal upon every member in a cleric's group, and requires
 the combined power of two casters, chanting in unison.
 ~
 
 54 RESTORE~
-Syntax: restore <character>
+Sintaxis: restore <character>
         restore all
 
 RESTORE restores full hit points, mana points, and movement points to the
@@ -21270,7 +21270,7 @@ are done with it. Some commands may not be restricted.
 ~
 
 1 RETELL~
-Syntax: retell <message>
+Sintaxis: retell <message>
  
 This command will send a message to the last character you sent a tell
 to. It will override the reply command by sending your tell to your last
@@ -21288,7 +21288,7 @@ See Also: REPLY, TELL
 ~
 
 59 RETIRE~
-Syntax: retire <victim>
+Sintaxis: retire <victim>
  
 This command will set or remove the 'retired' flag on the immortal
 you use it on.
@@ -21314,7 +21314,7 @@ Despair.
 ~
 
 52 RETRAN~
-Syntax: retran <player>
+Sintaxis: retran <player>
  
 This command will return that player or mob to the room from which
 you last transferred it from.
@@ -21631,7 +21631,7 @@ http://www.greyhound.com
 ~
 
 1 REVEAL~
-Syntax: c reveal
+Sintaxis: c reveal
  
 This spell will heighten the casters senses to incredible proportions,
 allowing them to see what moves about them, which normally can not 
@@ -21661,7 +21661,7 @@ being morphed.
 51 RGRUB~
 .
  
-Syntax:
+Sintaxis:
  
 RGRUB st n lo hi  -  list all room vnums between "lo" and "hi" that match
                      sectortype "n"
@@ -21677,7 +21677,7 @@ get 1,000 lines of output.
 ~
 
 1 RID TOXIN 'RID TOXIN'~
-Syntax: c 'rid toxins'
+Sintaxis: c 'rid toxins'
  
 An ancient spell used to purify the body and soul of the caster from
 deadly poisons and evil curses.
@@ -21688,7 +21688,7 @@ You have the right to remain silent or to hit the off button at any time.
 ~
 
 0 RIP~
-Syntax: rip <on/off>
+Sintaxis: rip <on/off>
 
 The rip command will either enable or disable rip graphics.  Rip graphics 
 will only work provided you are using a rip compatible terminal program.
@@ -21705,7 +21705,7 @@ PARALYSIS
 ~
 
 53 RLIST~
-Syntax: rlist
+Sintaxis: rlist
       :	rlist <first room>
       :	rlist <first room> <last room>
 
@@ -21716,7 +21716,7 @@ it will list all rooms including and between the two.
 ~
 
 53 RMENU~
-Syntax: rmenu [menu letter] (defaults to 'a' if none given)
+Sintaxis: rmenu [menu letter] (defaults to 'a' if none given)
 
 Rmenu will bring you into a menu system of editing rooms.  To use rmenu, you
 must be in the room that you are editing.  To choose an option in the menu,
@@ -21830,7 +21830,7 @@ DARK          |          1  |  Room is always dark
 DEATH         |          2  |  Room causes instant death
 NOMOB         |          4  |  Mobs cannot wander into this room
 INDOORS       |          8  |  Room is indoors - MUST also use sectortype 0
-LAWFUL        |         16  |  Room is oriented to those of lawful alignment
+LEIFUL        |         16  |  Room is oriented to those of lawful alignment
 NEUTRAL       |         32  |  Room is oriented to those of neutral alignment
 CHAOTIC       |         64  |  Room is oriented to those of chaotic alignment
 NOMAGIC       |        128  |  Magic cannot be used in this room
@@ -21886,7 +21886,7 @@ a small white root - kava root
 ~
 
 2 ROSTER~
-Syntax:  roster
+Sintaxis:  roster
  
 Players holding leadership positions in clans, guilds and Orders may
 use this command to view their membership rolls.  The 'entered' date
@@ -21898,7 +21898,7 @@ of the organization may see the roster as well.
 ~
 
 1 ROUNDHOUSE~
-Syntax:  roundhouse
+Sintaxis:  roundhouse
 
 The player delivers a sweeping punch to the primary opponent and if the 
 skill is performed successfully, causes damage to the victim. NOTE: This
@@ -21907,7 +21907,7 @@ players unless under pkill conditions.
 ~
 
 56 RPCOPY~
-Syntax: rpcopy <source rvnum> <program> [number] <destination rvnum>
+Sintaxis: rpcopy <source rvnum> <program> [number] <destination rvnum>
         rpcopy <source rvnum> all <destination rvnum>
         rpcopy <source rvnum> all <destination rvnum> <program>
  
@@ -21918,12 +21918,12 @@ Program being one of:
 ~
 
 55 RPEDIT~
-Syntax:  rpedit <command> [number]  [program] [arguments]
-Syntax:  rpedit add       <program> <arguments>
-Syntax:  rpedit insert    <number>  <program> <arguments>
-Syntax:  rpedit edit      <number>  [program] [arguments]
-Syntax:  rpedit delete    <number>
-Syntax:  rpedit list
+Sintaxis:  rpedit <command> [number]  [program] [arguments]
+Sintaxis:  rpedit add       <program> <arguments>
+Sintaxis:  rpedit insert    <number>  <program> <arguments>
+Sintaxis:  rpedit edit      <number>  [program] [arguments]
+Sintaxis:  rpedit delete    <number>
+Sintaxis:  rpedit list
  
 Add, insert and edit will put you into the line editor to edit your
 program.  The arguments consist of a trigger, plus any arguments 
@@ -21962,7 +21962,7 @@ See RPSTAT, TRIGGER, RPTRIGGERS, RPCOMMANDS, IFCHECKS, IFCHECKS2, VARIABLES
 ~
 
 54 RPSTAT~
-Syntax:  rpstat
+Sintaxis:  rpstat
  
 Rpstat will display all of the roomprograms that have been written for a 
 room.  You must be standing in the room that you are rpstatting (though
@@ -21973,7 +21973,7 @@ See RPEDIT, TRIGGER, RPTRIGGERS, RPCOMMANDS, IFCHECKS, IFCHECKS2, VARIABLES
 ~
 
 51 RREPLY~
-Syntax: rreply <message>
+Sintaxis: rreply <message>
 Rreply will send <message> to the last player to send you an rtell.
 ~
 
@@ -22059,7 +22059,7 @@ No peacefuls are permitted in the Ruins at any time.
 &RSee also:&w Axuda pkmap
 ~
 
--1 RULES~
+-1 REGRAS~
 &GThese are the simple rules of the Realms ...
 
 &G1.&w  Thou shalt not kill thy fellow adventurer.
@@ -22082,7 +22082,7 @@ For more detail type &w'&Ylaws&w'
  
 ~
 
-58 RULES DEADLY~
+58 REGRAS DEADLY~
 ~
 
 1 'RULES HQ~
@@ -22113,7 +22113,7 @@ loot a deadly clanner's corpse.
 ~
 
 1 'SACRAL DIVINITY'~
-Syntax:  c 'sacral divinity'
+Sintaxis:  c 'sacral divinity'
  
 The prayer of a Paladin for personal sanctuary to its deity, made
 over the clasped symbol of the Paladin.  It is said that never will
@@ -22122,7 +22122,7 @@ the prayer be heard should it be uttered by the unworthy.
 ~
 
 1 SACRIFICE~
-Syntax:  sacrifice <object>
+Sintaxis:  sacrifice <object>
  
 Sacrifice offers an object to the gods, or to your Order or Clan's deity.
 The gods may reward you for the sacrifice, and the nature of the reward
@@ -22132,7 +22132,7 @@ Hint: the gods like corpses.
 ~
 
 0 SAGACITY~
-Syntax: c sagacity <target>
+Sintaxis: c sagacity <target>
 
 This spell increases your wisdom for its duration.
 ~
@@ -22191,7 +22191,7 @@ Warning: This will affect all in the area.
 ~
 
 1 SAVE~
-Syntax:  Save
+Sintaxis:  Save
  
 SAVE saves your character and its inventory; you must be at least second
 level to save.  The system automatically saves approximately one character
@@ -22218,7 +22218,7 @@ you log out.  Every character is auto-saved at reboot.
 ~
 
 52 SAVEAREA LOADAREA~
-Syntax: savearea
+Sintaxis: savearea
         loadarea
 
 Savearea and loadarea will save or load your prototype area.
@@ -22291,8 +22291,8 @@ rules, 'axuda imm'.  Visit note boards at 1200, 1213, and 1214 regularly.
 ~
 
 1 SAYTO~
-Syntax:  sayto <target> <message>
-Syntax:  the shortform command for sayto is the < symbol
+Sintaxis:  sayto <target> <message>
+Sintaxis:  the shortform command for sayto is the < symbol
  
 Exactly like a regular 'say', but is directed toward a particular
 player in the room with you.  The message text may vary slightly
@@ -22305,7 +22305,7 @@ See also:  SAY
 ~
 
 1 'SCAN'~
-Syntax:  scan <direction>
+Sintaxis:  scan <direction>
  
 This skill enables you to scan for one or more rooms in the direction
 specified, dependent on the percent to which the skill is practiced,
@@ -22322,7 +22322,7 @@ within the specified vnum range. The low and hi are inclusive.
 ~
 
 1 'SCORCHING SURGE~
-Syntax:  c 'scorching surge' <victim>
+Sintaxis:  c 'scorching surge' <victim>
 Abbrev:  c scorching, c scorch
  
 A powerful wave of heat created by an Augurer and directed at its victim.
@@ -22331,10 +22331,10 @@ Augurer the greater the damage.
  
 ~
 
-1 SCORE~
-Syntax: score
+1 PUNTUACION~
+Sintaxis: puntuacion
  
-SCORE is a sheet filled with your characters statistics.  When you type
+PUNTUACION is a sheet filled with your characters statistics.  When you type
 score, only you can see what is listed there.  Should you want to let
 others see your characters health, you can type REPORT.  
  
@@ -22404,7 +22404,7 @@ See also: RECITE
 ~
 
 0 SCRY~
-Syntax:  cast scry
+Sintaxis:  cast scry
  
 This spell will allow the character to scry (look) in to nearby rooms.
 After casting the spell, the character needs only to "look" in the
@@ -22476,8 +22476,8 @@ Sea elves gain experience on a scale of normal rate * 1.12
 ~
 
 0 SEARCH~
-Syntax: search
-Syntax: search <container>
+Sintaxis: search
+Sintaxis: search <container>
 
 Sometimes not all there is to find is in clear view.  Some things may be
 concealed or hidden, and will require some searching to find.
@@ -22516,10 +22516,10 @@ SWAMP              15
 58 SEDIT~
 View, create, edit or delete socials online.
 Sytanx:  sedit <social>
-Syntax:  sedit <social> [field]
-Syntax:  sedit <social> create
-Syntax:  sedit <social> delete
-Syntax:  sedit <save>
+Sintaxis:  sedit <social> [field]
+Sintaxis:  sedit <social> create
+Sintaxis:  sedit <social> delete
+Sintaxis:  sedit <save>
  
 Use sedit <social> to view the current settings of an existing social.
 Use sedit <social> [field] to set one of the fields:
@@ -22548,14 +22548,14 @@ Use sedit save to save the new social or changes to existing socials.
 ~
 
 1 SEDUCTION~
-Syntax: Cast Seduction <victim>
+Sintaxis: Cast Seduction <victim>
  
 This Nephandi spell will seduce it's victim if the caster has a 
 Pentagram and a heart in his/her possession.
 ~
 
 58 SEFFECT~
-Syntax: sset <sn> seffect <field>
+Sintaxis: sset <sn> seffect <field>
  
 This replaces the save_negates and save_half_dam spell flags (you'll notice
 they are removed), and gives us a bunch more save effect options:
@@ -22668,7 +22668,7 @@ somewhere in the dangerous lands surrounding Kusnir- but who knows?
 ~
 
 57 SETBOOT~
-Syntax: setboot time <hour> <minute>
+Sintaxis: setboot time <hour> <minute>
  	setboot manual <0|1>
 
 The setboot command is useful for planning a reboot, (to save you from 
@@ -22744,7 +22744,7 @@ tongues and despair in their hearts, if they return at all...
 
 60 SETRACE~
 .&w
-Syntax: Setrace <racename> <field> 
+Sintaxis: Setrace <racename> <field> 
 
 Setrace &g<name> &wwill name your newly created race
 Setrace <name> &gsave&w will save the creation and changes.
@@ -22802,7 +22802,7 @@ See also &ghelp showrace   &wand &g help setrace1 &w
 ~
 
 59 SETVAULT~
-Syntax:
+Sintaxis:
   setvault show - lists the rooms currently set to save donations
   setvault <vnum> create - adds a vnum to the list of rooms to save
   setvault <vnum> delete - removes a vnum from the list of rooms to save
@@ -22917,8 +22917,8 @@ eventually all of Despair itself.
 ~
 
 0 SHIELD 'STONE SKIN'~
-Syntax: cast shield
-Syntax: cast 'stone skin'
+Sintaxis: cast shield
+Sintaxis: cast 'stone skin'
 
 These spells protect the caster by decreasing (improving) the caster's armor
 class.  SHIELD provides 20 points of armor.  STONE SKIN provides 40 points of
@@ -22926,7 +22926,7 @@ armor.
 ~
 
 54 SHOPS~
-Syntax: shops
+Sintaxis: shops
 
 Displays statistics on all the shops.
 
@@ -22934,7 +22934,7 @@ See MAKESHOP, SHOPSET and SHOPSTAT.
 ~
 
 54 SHOPSET~
-Syntax: shopset <mobile vnum> <field> <value>
+Sintaxis: shopset <mobile vnum> <field> <value>
 
 -----------------------------------------------
 | Fields | Meaning                            |
@@ -22953,7 +22953,7 @@ See MAKESHOP, SHOPSTAT, SHOPS and SHOPVALUES.
 ~
 
 54 SHOPSTAT~
-Syntax: shopstat <mobile vnum>
+Sintaxis: shopstat <mobile vnum>
 
 Shows statistics on a mobile's shop.
 
@@ -22961,7 +22961,7 @@ See MAKESHOP, SHOPSET and SHOPS.
 ~
 
 54 SHOPVALUES~
-Syntax: shopset <mobile vnum> buy# <value>
+Sintaxis: shopset <mobile vnum> buy# <value>
  
 1  - light               21 - pen                41 - rune
 2  - scroll              22 - boat               42 - runepouch
@@ -22995,7 +22995,7 @@ Example:  'guilds mages' shows the "Abbrev" (abbreviation) of 'gom'
 ~
 
 1 SHOULDER~
-Syntax:  shoulder
+Sintaxis:  shoulder
  
 By successfully driving your shoulder into your opponent, you can inflict
 damage to them if they are the primary target in the fight. NOTE: This
@@ -23004,7 +23004,7 @@ players unless under pkill conditions.
 ~
 
 1 SHOVE~
-Syntax:  shove <character> <direction>
+Sintaxis:  shove <character> <direction>
  
 Deadly characters can shove other deadly characters in the direction
 specified if the victim is standing up.
@@ -23018,7 +23018,7 @@ someone outside the 5-level pkill range.
 ~
 
 55 SHOWCLAN~
-Syntax: showclan <clan name>
+Sintaxis: showclan <clan name>
 
 Displays statistics on a clan.
 ~
@@ -23033,7 +23033,7 @@ including statplusses/minuses and benefits/failings.
 ~
 
 55 SHOWCOUNCIL~
-Syntax: showcouncil '<name> council'
+Sintaxis: showcouncil '<name> council'
  
 Shows the statistics on the council.
 ~
@@ -23049,13 +23049,13 @@ levels.
 ~
 
 55 SHOWGUILD~
-Syntax: showguild 'guild of <guild name>'
+Sintaxis: showguild 'guild of <guild name>'
  
 Displays the statistics on a guild.
 ~
 
 58 SHOWLAYERS~
-Syntax: showlayers <number of lines>
+Sintaxis: showlayers <number of lines>
  
 Example: showlayers 100   (lists a maximum of 100 lines)
  
@@ -23071,7 +23071,7 @@ wear location and get huge stats as a result.
 ~
 
 57 SHOWRACE~
-Syntax: Showrace <name of race>
+Sintaxis: Showrace <name of race>
  
 This will give vital statistics on pc races. IE.. showrace lizardmen
 would net the following:
@@ -23096,7 +23096,7 @@ See also help &WSETRACE
 ~
 
 1 SHRIEK~
-Syntax:  shriek
+Sintaxis:  shriek
  
 An undead wail which may be used to wither the life of all who hear
 its anguished sound.
@@ -23134,7 +23134,7 @@ SEE ALSO:  www.supergreg.com
 ~
 
 0 SIT~
-Syntax: sit
+Sintaxis: sit
 
 Sit makes your character sit down.
 ~
@@ -23146,7 +23146,7 @@ list of all skills available at each level to your class.
 ~
 
 50 SKIN~
-Syntax: skin <player corpse>
+Sintaxis: skin <player corpse>
  
 The SKIN command allows deadly players to flay the skin from the corpse
 of a deadly opponent to which they have dealt a deathblow, or to cut the
@@ -23155,7 +23155,7 @@ skinned once.
 ~
 
 57 SLAY~
-Syntax: slay <victim> [immolate/shatter/demon/pounce/slit/dog]
+Sintaxis: slay <victim> [immolate/shatter/demon/pounce/slit/dog]
 
 SLAY kills a character in cold blood, no saving throw.
 
@@ -23166,13 +23166,13 @@ Slay bypasses auto actions such as autoloot and autosac.
 ~
 
 0 SLEEP~
-Syntax: cast sleep <victim>
+Sintaxis: cast sleep <victim>
 
 This spell puts its victim to sleep.
 ~
 
 1 'SLEEP SPELL'~
-Syntax:  c sleep <victim>
+Sintaxis:  c sleep <victim>
  
 A spell of lethargy which, if successful, will send your victim into
 a deep slumber from which they cannot awaken until attacked or the
@@ -23207,8 +23207,8 @@ This spell makes you more dexterous for its duration.
 ~
 
 1 SLIST~
-Syntax:  slist
-Syntax:  slist <low level> <high level>
+Sintaxis:  slist
+Sintaxis:  slist <low level> <high level>
  
 SLIST without an argument returns a complete list of the spells and skills
 available to your class, also indicating the maximum level to which you can
@@ -23233,8 +23233,8 @@ SEE ALSO: Minimum Position, Practice.
 ~
 
 58 SLOOKUP~
-Syntax: slookup <skill-or-spell>
-Syntax: slookup all
+Sintaxis: slookup <skill-or-spell>
+Sintaxis: slookup all
 
 SLOOKUP shows you the internal 'sn' and external 'slot' for the given skill
 or spell.  The 'sn' is used for OSET and OSTAT.  The 'slot' is used for area
@@ -23479,7 +23479,7 @@ Variables you can use are:&C
 ~
 
 1 'SOLAR FLIGHT'~
-Syntax:  c 'solar flight' <victim>
+Sintaxis:  c 'solar flight' <victim>
  
 This spell allows the caster to merge from an outdoor area to their victim
 in an outdoor area.
@@ -23492,7 +23492,7 @@ not succeed in bad weather).
 ~
 
 1 'SOLOMONIC INVOCATION'~
-Syntax:  c 'solomonic invocation'
+Sintaxis:  c 'solomonic invocation'
  
 The Paladin prayer by which their holy symbol is created.
  
@@ -23528,7 +23528,7 @@ considered spam.
 
 51 SPEAK LANGUAGE~
 &WSyntax: speak <language>
-Syntax:  speak all (immortals only)
+Sintaxis:  speak all (immortals only)
  
 &GTo speak a specific language, such as common, type: speak common
  
@@ -23580,8 +23580,8 @@ returned to his researches on the art of astral travel.
 ~
 
 1 'SPECTRAL FUROR' 'HAND OF CHAOS'~
-Syntax: c 'spectral furor' (target)
-Syntax: c 'hand of chaos'  (target)
+Sintaxis: c 'spectral furor' (target)
+Sintaxis: c 'hand of chaos'  (target)
 
 After the Dark Mage Thanatos accidentally discovered the spell
 'Disruption' in a failed attempt to create a teleportation magic,
@@ -23708,7 +23708,7 @@ spell_staff     save vs. spells or staves
 ~
 
 1 SPINKICK~
-Syntax: Spinkick (victim)
+Sintaxis: Spinkick (victim)
  
 To lift one's foot, spin to gain momentum, and kick your opponent.
 NOTE: This skill may be used to start fights so should not be used on
@@ -23716,7 +23716,7 @@ your fellow players unless under pkill conditions.
 ~
 
 1 'SPIRAL BLAST~
-Syntax:  c 'spiral blast'
+Sintaxis:  c 'spiral blast'
 Abbrev:  c spiral
  
 A powerful, spinning blast of coloured gas conjured by an Augurer, it attacks
@@ -23726,7 +23726,7 @@ the room, and will cause them to engage the caster in combat.
 ~
 
 0 'SPIRITUAL WRATH'~
-Syntax:  c spiritual
+Sintaxis:  c spiritual
 
 Spiritual Wrath sends a blast of blinding light at all targets in the room. It
 requires 2 casters chanting in unison, and the damage it does depends upon the
@@ -23734,7 +23734,7 @@ casters' wisdom.
 ~
 
 0 SPLIT~
-Syntax: SPLIT <amount>
+Sintaxis: SPLIT <amount>
 
 SPLIT splits some gold between you and all the members of your
 group who are in the same room as you.  It's customary to SPLIT
@@ -23742,7 +23742,7 @@ the gold after a kill.
 ~
 
 1 SPURN~
-Syntax:  spurn
+Sintaxis:  spurn
  
 Spurn is a skill that, if successfully executed, causes damage to your
 primary opponent. NOTE: This skill may be used to start fights so should
@@ -23750,7 +23750,7 @@ not be used on your fellow players unless under pkill conditions.
 ~
 
 58 SSET~
-Syntax: sset <victim> <skill> <value>
+Sintaxis: sset <victim> <skill> <value>
 or:     sset <victim> all     <value>
 or:     sset <sn>     <field> <value>
  
@@ -23773,10 +23773,10 @@ sector        for spells, the spell can only be cast in these sectors
  
 For the special fields used by SMAUG spells (spell_smaug) see SMAUGSPELLS
 See also AXUDA RACIALABILITIES
-For help with settting levels and classes, see AXUDA SSET LEVELS.
+For help with settting levels and classes, see AXUDA SSET NIVEIS.
 ~
 
-58 'SSET LEVELS'~
+58 'SSET NIVEIS'~
 Syntax on setting levels for sset is as follows:
 &Ysset (sn) level (class#) (minimum level)
 &WBy default, all new spells are set to level 51 for all classes.
@@ -23785,11 +23785,11 @@ will have to be manually set as described above.
 ~
 
 64 STAKE~
-See LAWS STAKE.
+See LEIS STAKE.
 ~
 
 1 STANDARD~
-Syntax: style standard
+Sintaxis: style standard
  
 This style is both a balance of offense and defense, giving neither a
 fighter nor his enemy an advantage in battle.
@@ -23850,8 +23850,8 @@ immortals under level 59 from viewing its abilities.
 ~
 
 0 STEAL~
-Syntax: STEAL coins <character>
-Syntax: STEAL <object> <character>
+Sintaxis: STEAL coins <character>
+Sintaxis: STEAL <object> <character>
 
 STEAL attempts to steal coins, or an object, from a mob or another player.
 
@@ -23894,9 +23894,10 @@ See also:  "laws stores"
 &CStoneheft - Imm of the week June 4 - June 10, 2001
 ~
 
-1 STORY~
-. At the Dawn of Time, Thoric weaved the multiverse and elevated a thousand
-mortals to godhood through divine ascension. The Supreme Entity then receded
+1 HISTORIA~
+. Ao principio dos tempos, Kallakia era unha terra deshabitada, ata que unha
+cultura de mortais provinte do Sur ...
+TRADUCIR ESTO through divine ascension. The Supreme Entity then receded
 from the vision of all mortals and minor Gods, for these held little sway over
 his creation. The multiverse slowly began to take shape, order being formed
 from swirling chaos by the Thousand. Hundreds of planes and demiplanes were
@@ -23974,7 +23975,7 @@ Strength is the prime attribute of warriors, rangers and paladins.
 ~
 
 1 STRIKE~
-Syntax:  strike
+Sintaxis:  strike
  
 With a flick of your wrist you strike your primary opponent and inflict
 damage to him. NOTE: This skill may be used to start fights so should not
@@ -23988,7 +23989,7 @@ Silently transfers their entire inventory and clothing to yours.
 ~
 
 0 STUN~
-Syntax: stun <mob>
+Sintaxis: stun <mob>
 
 Stun is a skill which can only be used once a fight has started.  It will 
 stun your opponent if successful.
@@ -24017,37 +24018,40 @@ of armor and clothing, and it is also able to harm opponents one
 might think resistant to such attacks, due to its magical nature.
 ~
 
-0 SUMMARY~
+0 SUMARIO~
 .           &B
 |----------------------------------|----------------------------------|
-|&C              MOVEMENT&B            |&C               GROUP              &B|
-|&Cnorth east south west northeast up&B|&C follow group gtell ; split       &B|
-|&Cnorthwest southeast southwest down&B|----------------------------------|
-|&Csomewhere open close lock unlock  &B|&C           INFORMATION            &B|
-|&Cleave enter climb fly float look  &B|&Cdeath CR reimb rules damage areas &B|
-|&Cwhere scan scry sleep wake stand  &B|&Ccommands experience score title   &B|
-|&Crest sit&B |------------------------|&Cweather channels description story&B|
-|---------|&C CONFIG OPTIONS         &B|&Cwho report tick password typo note&B|
-|&Cautoloot autogold autoexit autosac&B|&Cwizlist MOTD news bug weapons mail&B|
-|&Cnice flee norecall ansi blank rip &B|&Ctime slist report languages spells&B|
-|&Cnointro prompt telnetga shovedrag &B|&Cskills idea&B |---------------------|
-|&Ccombine&B  |------------------------|------------|&C COMBAT              &B|
-|---------|&C    OBJECTS             &B|&Ckill flee cobardia rescue aid murder &B|
-|&Cget put drop give sacrifice recite&B|&Ccast&B |----------------------------|
-|&Csay tell chat question answer yell&B|-----|&C     COMMUNICATION          &B|
-|&Cwield wear remove inventory list  &B|&Csocial quest clan ordertalk newbie&B|
-|&Cappraise buy sell compare examine &B|&Cavatar counciltalk guildtalk shout&B|
-|&Chold quaff zap brandish equipment &B|&Csay tell chat question answer yell&B|
-|&Cempty fill eat drink pick value   &B|&Cauction&B  |------------------------|
-|----------------------------------|----------|
-&CAlso see help on: !, SAVE, QUIT, PAGELENGTH, PRACTICE.
-To use the help menu, just type "axuda <topic>".
-To see help on individual areas, you can now type "axuda <full area name>".
-If you are new to the Realms, type AXUDA NOVO to see a special help series.
+|&C              MOVEMENTO&B           |&C               GRUPO              &B|
+|&Cnorte leste sur oeste norleste    &B|&C seguir grupo gdecir ; dividir    &B|
+|&Carriba noroeste surleste suroeste &B|----------------------------------|
+|&Cabaixo algures abrir fechar mirar &B|&C           INFORMACION            &B|
+|&Cdesbloquear abandoar entrar onde  &B|&Cmorte CR reimb regras dano zonas  &B|
+|&Cvoar flotar escanear schorar      &B|&Ccomandos experiencia puntuacion   &B|
+|&Cdescansar sentar bloquear gabexar &B|&Cotempo canais descripcion titulo  &B|
+|&Cdormir despertar estar            &B|&Cquen reportar tick contrasinal    &B|
+|----------------------------------|&Chistoria tipo nota wizlist MOTD   &B|
+|---------|&C OPCIONS CONFIG         &B|&Cnovas bug armas email tempo slist &B|
+|&Cautoloot autogold autoexit        &B|&Clinguas feitizos habilidades idea &B|
+|&Cnice fuxir norecall ansi blank    &B|&                                   &B|
+|&Cnointro prompt telnetga shovedrag &B|----------------------------------|
+|&Ccombinar rip autosac&B  |-----------|------------|&C LOITA               &B|
+|---------|&C    OBXECTOS            &B|&Cmatar fuxir cobardia rescatar     &B|
+|&Ccoller poñer deixar dar recitar  &B|&Casistir asasinar invocar&B |--------|
+|&Csacrificar comparar examirar      &B|-----|&C     COMUNICACION           &B|
+|&Cencher comer beber pick value     &B|&Csocial quest clan ordertalk newbie&B|
+|&Cempuñar vestir desvestir comprar &B|&Cavatar counciltalk guildtalk      &B|
+|&Cinventario lista appraise vender  &B|&Cgritar decir contar chat preguntar&B|
+|&Csoster quaff equipamento valeirar &B|&Crespostar yell&B  |-----------------|
+|&Czap brandish                      &B|&|----------------------------------|
+|----------------------------------|
+&CPodes ver mais axuda sobre: !, GARDAR, SAIR, PAGELENGTH, PRACTICAR
+Para usar o menu de axuda, teclea "axuda <tema>".
+Para ver axuda en zonas individuais, podes teclear "axuda <nome zona comleto>".
+Si eres novo no Reino das Tebras, teclea AXUDA NOVO para ver axudas especiais.
 ~
 
 1 SUMMON SUMMONING~
-Syntax:  cast summon <character>
+Sintaxis:  cast summon <character>
  
 This spell summons a character from elsewhere in the Realms to your own
 location ... and stuns your character.
@@ -24120,7 +24124,7 @@ under pkill conditions.
 ~
 
 1 SWIPE~
-Syntax:  swipe
+Sintaxis:  swipe
  
 A sneak attack, that if successfully excecuted, causes damage to the
 primary opponent. NOTE: This skill may be used to start fights so should
@@ -24128,8 +24132,8 @@ not be used on your fellow players unless under pkill conditions.
 ~
 
 52 SWITCH RETURN~
-Syntax: switch <character>
-Syntax: return
+Sintaxis: switch <character>
+Sintaxis: return
 
 SWITCH switches you into the body of another character (who must not
 already have a descriptor, e.g. you can't switch into a PC).
@@ -24204,7 +24208,7 @@ To utilize Tagetarle's service, simply do the following:
 ~
 
 1 TAIL~
-Syntax:  tail
+Sintaxis:  tail
  
 Tail is a skill which can only be used once a fight has started, and
 can only be used against your primary opponent.  If it successfully
@@ -24212,7 +24216,7 @@ lands, it inflicts damage on your opponent.
 ~
 
 1 TAMP~
-Syntax:  tamp <pipe>
+Sintaxis:  tamp <pipe>
  
 This empties your pipe so that you may fill it with fresh herbs.
  
@@ -24257,7 +24261,7 @@ should be in the forefront when considering whether to use this spell.
 ~
 
 1 TEND~
-Syntax:  tend <target>
+Sintaxis:  tend <target>
          tend
 The well-traveled Paladin will normally learn the techniques necessary
 to mend the wounds of himself or others.  This is the greatest mending
@@ -24820,8 +24824,8 @@ You can see what stage of decay a corpse is in by typing:
 See also:  &Y IMMCR, IMM_CR1, IMM_CR2, BODYBAG, CORPSE
 ~
 
-0 TITLE~
-Syntax:  title <string>
+0 TITULO~
+Sintaxis:  titulo <Cadea de texto>
  
 This command allows you to set your title the text of your choice.  The
 game supplies a title when your character is created and each time you
@@ -24833,7 +24837,7 @@ advance a level.
 Immortal deems it unsuitable.
 ~
 
-51 TONGUE TONGUES~
+51 LINGUA LINGUAS IDIOMAS~
 The different PC languages include common, elvish, dwarven, pixie, ogre, 
 orcish, trollese, goblin, halfling and gith.
  
@@ -24841,19 +24845,19 @@ NPC languages include rodent, insectoid, mammal, reptile, dragon,
 spiritual, magical, god, and ancient.
 ~
 
-1 TOPICS~
-Additional topics you may want to look over:
+1 TEMAS~
+Temas adicionais sobre os que quiza queiras aprender:
 *TICK
 *WIZLIST
-*EXPERIENCE
-*EQDAMAGE
+*EXPERIENCIA
+*EQDANO
 *CLANS
-*CHANGES
-*DAMAGE
-*NEWS
-*STORY
+*CAMBIOS
+*DANO
+*NOVAS
+*HISTORIA
  
-To view a topic type: AXUDA <topic>
+Para ver un tema teclea: AXUDA <tema>
 ~
 
 1 TOURNEY~
@@ -24967,7 +24971,7 @@ hedit townhall
 ~
 
 0 TRACK~
-Syntax: track <mob>
+Sintaxis: track <mob>
 
 Track will assist you in tracking down a mob that is within the area, 
 giving you its general direction.
@@ -24978,7 +24982,7 @@ Please see the help password file for important information.
 ~
 
 2 TRAFFIC~
-Syntax:  traffic <message>
+Sintaxis:  traffic <message>
  
 Traffic is akin to the old auction channel, meaning it is a
 simple channel on which to offer to buy or sell whatever it is
@@ -25018,17 +25022,17 @@ See also:  MEDITATE
 ~
 
 52 TRANSFER~
-Syntax: transfer <character>
-Syntax: transfer all
-Syntax: transfer <character> <location>
-Syntax: transfer all         <location>
+Sintaxis: transfer <character>
+Sintaxis: transfer all
+Sintaxis: transfer <character> <location>
+Sintaxis: transfer all         <location>
 
 TRANSFER transfers the target character, or ALL player characters,
 to your current location (default) or to a specified location.
 ~
 
 1 TRANSPORT~
-Syntax:  cast 'transport' <object> <victim>
+Sintaxis:  cast 'transport' <object> <victim>
  
 'Transport' sends an object in the caster's inventory to the victim.
 ~
@@ -25081,25 +25085,25 @@ refuses his soul in all the higher planes.
 54 TRAPFLAGS~
 Flags to describe a trap and what triggers it:
 
-ROOM    - Trap is in a room
-OBJ     - Trap is on an object
-ENTER   - Trap is triggered by entering the room
-LEAVE   - Trap is triggered by leaving the room
-OPEN    - Trap is triggered by opening
-CLOSE   - Trap is triggered by closing
-GET     - Trap is triggered by getting the object
-PUT     - Trap is triggered by putting the object
-EXAMINE - Trap is triggered by examining the object
-PICK    - Trap is triggered by picking the object
-UNLOCK  - Trap is triggered by unlocking the object
-NORTH   - Trap is triggered by moving north
-SOUTH   - Trap is triggered by moving south
-EAST    - Trap is triggered by moving east
-WEST    - Trap is triggered by moving west
-UP      - Trap is triggered by moving up
-DOWN    - Trap is triggered by moving down
+ESTANCIA - Trap is in a room
+OBX      - Trap is on an object
+ENTRAR   - Trap is triggered by entering the room
+ABANDOAR - Trap is triggered by leaving the room
+ABRIR    - Trap is triggered by opening
+FECHAR   - Trap is triggered by closing
+COLLER   - Trap is triggered by getting the object
+POÑER    - Trap is triggered by putting the object
+EXAMINAR - Trap is triggered by examining the object
+PICK     - Trap is triggered by picking the object
+DESBLOQUEAR - Trap is triggered by unlocking the object
+NORTE    - Trap is triggered by moving north
+SUR      - Trap is triggered by moving south
+LESTE    - Trap is triggered by moving east
+OESTE    - Trap is triggered by moving west
+ARRIBA   - Trap is triggered by moving up
+ABAIXO   - Trap is triggered by moving down
 
-See RESET, TRAPSETTING and TRAPTYPES.
+See RESETAR, TRAPSETTING and TRAPTYPES.
 ~
 
 54 'TRAPS BY EDMOND'~
@@ -25251,7 +25255,7 @@ fast rate...
 ~
 
 0 'TROLLISH VIGOR' TROLLISH VIGOR~
-Syntax: c troll <target>
+Sintaxis: c troll <target>
 
 This spell increases your constitution during its duration.
 ~
@@ -25267,7 +25271,7 @@ conviences which make this hardy race comfortable in this harsh environment.
 ~
 
 1 TRUE 'TRUE SIGHT'~
-Syntax:  cast 'true sight'
+Sintaxis:  cast 'true sight'
  
 True sight confers the caster with a very brief immunity to blindness
 (from attacks such as gouge or the blindness spell itself).  While
@@ -25279,7 +25283,7 @@ True sight cannot be cast upon anyone but the caster themselves.
 ~
 
 60 TRUST~
-Syntax: trust <character> <level>
+Sintaxis: trust <character> <level>
 
 TRUST sets a character's trust to the specified level.  This is similar to
 advancing the character for accessing immortal commands, but has no effect
@@ -25311,7 +25315,7 @@ Ward, Jean Wells, Bill Wilkerson, Donald Paterson, and Frank Mentzer.
 ~
 
 1 TUMBLE~
-Syntax:  operates independently
+Sintaxis:  operates independently
  
 Tumble is a high-level thief skill for the evasion of incoming attacks.
 The skill functions autonomically, and its effectiveness is greater for
@@ -25380,7 +25384,7 @@ with the subject REUNION.
 ~
 
 1 UMBRAL SPEAR~
-Syntax: cast 'umbral' <target>
+Sintaxis: cast 'umbral' <target>
  
 This spell will fashion a spear from the powers of evil and attack your
 victim with it's dark magic.
@@ -25398,7 +25402,7 @@ though many speculate that she is a powerful entity with dominance over death.
 ~
 
 59 UNFOLDAREA~
-Syntax:  unfoldarea <area filename>
+Sintaxis:  unfoldarea <area filename>
  
 This command will load up an area file.
  
@@ -25422,7 +25426,7 @@ the visions which assault your mind.
 ~
 
 1 'UNRAVEL DEFENSE'~
-Syntax: c 'unravel defense' <victim>
+Sintaxis: c 'unravel defense' <victim>
  
 This spell renders the victim susceptible to both magic and nonmagic attacks.
 ~
@@ -25542,7 +25546,7 @@ Our apologies for the down time.  Enjoy the game.
 ~
 
 1 UPLIFT~
-Syntax:  c uplift <target>
+Sintaxis:  c uplift <target>
  
 Uplift is a cleric spell that can heal from afar, meant to be used in 
 aiding players with negative hitpoints.
@@ -25553,7 +25557,7 @@ kindness.  Do _not_ abuse it or consider it a right.
 ~
 
 1 UPPERCUT~
-Syntax:  uppercut
+Sintaxis:  uppercut
  
 From the gut, a fisted hand is driven up through your opponents jaw. If
 successfully landed, this attack can inflict a sizeable amount of damage
@@ -25562,7 +25566,7 @@ should not be used on your fellow players unless under pkill conditions.
 ~
 
 54 USEPROG~
-Syntax: opedit <object> <command> [number] [use_prog] [percentage]
+Sintaxis: opedit <object> <command> [number] [use_prog] [percentage]
  
 The use_prog is an objtrigger that can be used in object programs.  The
 use_prog will be executed when the item is used.  To define what will
@@ -25588,8 +25592,8 @@ to accomplish this.
 ~
 
 54 USERS~
-Syntax: users <host ip>
-Syntax: users <playername>
+Sintaxis: users <host ip>
+Sintaxis: users <playername>
 
 USERS reports all of the visible users connected to the server, including users
 in the process of logging in.
@@ -25693,7 +25697,7 @@ See also: MPSTAT, RPSTAT, OPSTAT, MPEDIT, RPEDIT, OPEDIT, TRIGGER, MPTRIGGERS,
 ~
 
 1 VAULT~
-Syntax:  vault
+Sintaxis:  vault
  
 Vault is a skill which can only be used once a fight has started, and
 can only be used against your primary opponent.  If it successfully
@@ -25751,14 +25755,14 @@ A Nephandi becomes stealthlike with the use of this spell.
 ~
 
 1 'VENOMOUS TOUCH'~
-Syntax: c 'venom' victim
+Sintaxis: c 'venom' victim
  
 This skill enables the Nephandi to transmit poison directly into the
 veins of his/her target.
 ~
 
 0 VENTRILOQUATE~
-Syntax: cast ventriloquate <speaker> <message>
+Sintaxis: cast ventriloquate <speaker> <message>
 
 This spell throws your voice, making it appear that some other object or
 character in the room is saying your message.  Victims who make their saving
@@ -25874,13 +25878,13 @@ See also: &BAXUDA BUILD, AXUDA THE SYMPOSIUM, AXUDA IDEA, AXUDA VCMEMBERS.
 ~
 
 55 VNUMS~
-Syntax: vnums [low] [high]
+Sintaxis: vnums [low] [high]
 
 Lists the vnum range for rooms/mobs/objects in all prototype areas.
 ~
 
 1 'VOMICA PRAVUS'~
-Syntax:  vomica <victim>
+Sintaxis:  vomica <victim>
     or:  vom    <victim>
  
 A truly depraved afflicition which may be inflicted by a vampire upon
@@ -25891,7 +25895,7 @@ of the vampire.
 ~
 
 1 VOTING VOTE VOTES~
-Syntax: note vote <number> open/ballot/close/yes/no/abstain
+Sintaxis: note vote <number> open/ballot/close/yes/no/abstain
  
 Once a note has been posted on a bulletin board, the author may open voting
 with 'note vote <number> open/ballot'.  All those who can read the board may
@@ -25908,7 +25912,7 @@ names, as will those specified for that particular board.
 ~
 
 58 VSEARCH~
-Syntax: Vsearch <vnum>
+Sintaxis: Vsearch <vnum>
  
 This command will list all instances of an object with that vnum that
 are currently in the game. 
@@ -25927,7 +25931,7 @@ are currently in the game.
 ~
 
 1 WAR WARTALK~
-Syntax:  war <message>
+Sintaxis:  war <message>
  
 Wartalk is a channel created as a haven for those players who like to openly
 discuss their exploits in combat - and brag against their opponents.  It is
@@ -25942,9 +25946,9 @@ go overboard.
 ~
 
 58 WARN ~
-Syntax: warn class <field>
-Syntax: warn race  <field>
-Syntax: warn site  <field>
+Sintaxis: warn class <field>
+Sintaxis: warn race  <field>
+Sintaxis: warn site  <field>
 Field is either #(ban_number) or the site/class/race.
 Example:  warn class #1
 ~
@@ -26001,7 +26005,7 @@ only display 1,000 at a time.
 ~
 
 1 WEAKEN~
-Syntax: cast weaken <victim>
+Sintaxis: cast weaken <victim>
 
 This spell reduces the strength of the victim by two points.
 ~
@@ -26147,9 +26151,9 @@ if you have any questions.
 ~
 
 0 WHERE~
-Syntax:  where
-Syntax:  where <character>
-Syntax:  where pk
+Sintaxis:  where
+Sintaxis:  where <character>
+Sintaxis:  where pk
 
 'Where' with no arguments (i.e. used by itself) shows the
 location of all visible player characters in the same area.
@@ -26164,7 +26168,7 @@ invisibility for example) may cause them not to appear on 'where'.
 ~
 
 1 WHISPER~
-Syntax:  whisper <name> <msg>
+Sintaxis:  whisper <name> <msg>
  
 To whisper to another, you must be in the same room as the recipient
 of the whisper.
@@ -26175,7 +26179,7 @@ WHO shows the characters currently in the Realms.  Invisible characters will
 not appear on this list if you cannot detect invisible.  Immortals who are
 wizinvis higher than your own level also will not appear.
  
-Syntax:  quen                 quen <class>    quen <class> race>
+Sintaxis:  quen                 quen <class>    quen <class> race>
          quen <level range>   quen deadly     quen <class> <race> <level range>
  
 With arguments, WHO can show players of certain classes, races, or levels:
@@ -26254,7 +26258,7 @@ text of order/clan/guild/council tag)
 ~
 
 0 WHOIS~
-Syntax: whois <player>
+Sintaxis: whois <player>
  
 The WHOIS command will tell you a bit of information about a player
 who is online.
@@ -26289,9 +26293,9 @@ endif
 ~
 
 0 COBARDIA~
-Syntax:  cobardia
-Syntax:  cobardia <value>
-Syntax:  cobardia max
+Sintaxis:  cobardia
+Sintaxis:  cobardia <value>
+Sintaxis:  cobardia max
  
 This command sets your cobardia value.  When your character takes damage that
 reduces your hit points below your cobardia value, you will automatically
@@ -26337,13 +26341,13 @@ See also FLEE
 ~
 
 1 WINE INVOCATION~
-Syntax: Cast wine <object in your inventory containing water>
+Sintaxis: Cast wine <object in your inventory containing water>
  
 This spell transforms water into wine.
 ~
 
 0 'WINTER MIST' WINTERMIST WINTER~
-Syntax: c winter <target>
+Sintaxis: c winter <target>
 
 This spell makes the victim more susceptible to all forms of coldness.
 ~
@@ -26367,7 +26371,7 @@ Wisdom is the prime attribute of druids, clerics and augurers.
 ~
 
 51 WIZAXUDA~
-Syntax: wizaxuda
+Sintaxis: wizaxuda
 
 WIZAXUDA provides a list of all the immortal commands.
 ~
@@ -26398,19 +26402,19 @@ level the greater the leeway.
 ~
 
 0 WIZLIST~
-Syntax: wizlist
+Sintaxis: wizlist
 
 Displays a list of the powerful beings who govern the Realms of Despair!
 ~
 
 0 'WORD OF RECALL'~
-Syntax: cast 'word of recall'
+Sintaxis: cast 'word of recall'
 
 This spell will recall the caster to his or her home sanctuary.
 ~
 
 -1 WORTH~
-Syntax: worth
+Sintaxis: worth
 
 WORTH shows a simple, easy-to-read table of important and widely used
 statistics. This command is for the character itself and cannot be used
@@ -26470,14 +26474,14 @@ illusionary magic.
 ~
 
 1 ZIDROS WRATH~
-Syntax: cast 'Zidros' <target>
+Sintaxis: cast 'Zidros' <target>
  
 This spell, when cast with a Pentagram, will drain your opponent of mana
 and wisdom and give the stolen magic to you temporarily.
 ~
 
 55 ZONES~
-Syntax: zones [low] [high]
+Sintaxis: zones [low] [high]
 
 Lists the name of the file, and room/mob/object vnum range for each
 non-prototype zone in the mud.

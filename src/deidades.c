@@ -378,7 +378,7 @@ void do_setdeity( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC( ch ) )
     {
-	send_to_char( "Huh?\n\r", ch );
+	send_to_char( "Que dis?\n\r", ch );
 	return;
     }
 
@@ -907,7 +907,7 @@ void do_showdeity( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC( ch ) )
     {
-	send_to_char( "Huh?\n\r", ch );
+	send_to_char( "Que dis?\n\r", ch );
 	return;
     }
 
@@ -991,7 +991,7 @@ void do_devote( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC( ch ) )
     {
-	send_to_char( "Huh?\n\r", ch );
+	send_to_char( "Que dis?\n\r", ch );
 	return;
     }
 

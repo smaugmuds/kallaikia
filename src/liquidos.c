@@ -723,7 +723,7 @@ void do_setliquid( CHAR_DATA *ch, char *argument )
 	
 	if( !IS_IMMORTAL(ch) || IS_NPC(ch) )
 	{
-		send_to_char( "Huh\n\r", ch );
+		send_to_char( "Que dis?\n\r", ch );
 		return;
 	}
 

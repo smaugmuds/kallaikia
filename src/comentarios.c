@@ -441,7 +441,7 @@ void do_comment( CHAR_DATA *ch, char *argument )
       return;
       }
 
-    send_to_char( "Huh?  Type 'help comment' for usage (i hope!).\n\r", ch );
+    send_to_char( "Que dis?  Type 'help comment' for usage (i hope!).\n\r", ch );
     return;
 }
 

@@ -2578,7 +2578,7 @@ void do_statreport( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) )
     {
-	send_to_char("Huh?\n\r", ch );
+	send_to_char("Que dis?\n\r", ch );
 	return;
     }
 
@@ -2627,7 +2627,7 @@ void do_stat( CHAR_DATA *ch, char *argument )
 {
     if ( IS_NPC(ch) )
     {
-	send_to_char("Huh?\n\r", ch );
+	send_to_char("Que dis?\n\r", ch );
 	return;
     }
 
@@ -2835,7 +2835,7 @@ void do_favor(CHAR_DATA * ch, char *argument)
     char            buf[MAX_STRING_LENGTH];
 
     if ( IS_NPC(ch) ) {
-	send_to_char("Huh?\n\r", ch );
+	send_to_char("Que dis?\n\r", ch );
 	return;
     }
     set_char_color( AT_GREEN, ch );

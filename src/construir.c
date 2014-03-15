@@ -952,13 +952,13 @@ void do_assist( CHAR_DATA *ch, char *argument )
 
     if ( !ch->pcdata->council )
     {
-      ch_printf( ch, "Huh?\n\r" );
+      ch_printf( ch, "Que dis?\n\r" );
       return;
     }
 
     if ( str_cmp( ch->pcdata->council->name, "Newbie Council" ) )
     {
-      ch_printf( ch, "Huh?\n\r" );
+      ch_printf( ch, "Que dis?\n\r" );
       return;
     }
 
@@ -4853,7 +4853,7 @@ void do_redit( CHAR_DATA *ch, char *argument )
 	if ( argument[0] == '\0' )
 	{
 	   send_to_char( "Set the room name.  A very brief single line room description.\n\r", ch );
-	   send_to_char( "Usage: redit name <Room summary>\n\r", ch );
+	   send_to_char( "Usage: redit name <Room sumario>\n\r", ch );
 	   return;
 	}
 	STRFREE( location->name );
@@ -7570,7 +7570,7 @@ void do_astat( CHAR_DATA *ch, char *argument )
 
     set_char_color( AT_PLAIN, ch );
 
-    if ( !str_cmp( "summary", argument ) )
+    if ( !str_cmp( "sumario", argument ) )
     {
 	for ( tarea = first_area; tarea; tarea = tarea->next )
 	{
