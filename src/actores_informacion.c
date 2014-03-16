@@ -1996,7 +1996,7 @@ void do_exits( CHAR_DATA *ch, char *argument )
 	return;
 
     set_char_color( AT_EXITS, ch );
-    ch_printf_color( ch, "%s", fAuto ? "Saidas: " : "Saidas obvias:\n\r" );
+    ch_printf_color( ch, "%s", fAuto ? "Saídas: " : "Saídas obvias:\n\r" );
     found = FALSE;
     for ( pexit = ch->in_room->first_exit; pexit; pexit = pexit->next )
     {

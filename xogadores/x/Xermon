@@ -6,50 +6,112 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       233352
-Room         21002
-HpManaMove   496 1000 1000 1000 1000 1000
+Played       268028
+Room         21016
+HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
-Gold         1410065407
+Gold         1410058647
 Exp          1410065407
 Height          66
 Weight          147
-Act          704644680
-Position     104
+Act          704644682&1024
+Position     112
 Style     2
-Practice     0
+Practice     9949
 Alignment    0
 SavingThrows 0 0 0 0 0
 Favor	       0
-Glory        0
-MGlory       0
-Honour       0
-Hitroll      0
-Damroll      0
-Armor        1000
-Wimpy        200
-Mentalstate  -100
+Glory        -11467
+MGlory       13245
+Honour       145124
+Hitroll      35
+Damroll      45
+Armor        2000
+Wimpy        500
+Mentalstate  999
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
-Rank         The Darkness~
-Title         O Mestre das Tebras~
+Rank         A Escuridade~
+Title        ___ O Mestre Das Tebras ___~
+Pagerlen     20
 Bamfin       aparece da escuridade mais tebrosa!!~
 Bamfout      desaparece nunha neboa tebrosa ... .. .~
 WizInvis     65
 Flags        8421384
-PKills       0
-PDeaths      0
-MKills       0
-MDeaths      0
+PKills       87
+PDeaths      3
+MKills       46
+MDeaths      1
 IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         orion.local.lan
+Site         localhost
+Spell        19 'animate dead'
+Spell        19 'bless'
+Spell        19 'cause critical'
+Spell        19 'create food'
+Spell        19 'cure light'
+Spell        19 'death'
+Spell        19 'demonskin'
+Spell        19 'detect poison'
+Spell        19 'enchant armor'
+Spell        19 'fireball'
+Spell        19 'flare'
 Spell        19 'fly'
+Spell        19 'gate'
+Spell        19 'hand of chaos'
+Spell        19 'heal'
+Spell        19 'infernal node'
+Spell        19 'lightning bolt'
+Spell        19 'magic missile'
+Spell        19 'portal'
+Spell        19 'remove invis'
+Spell        19 'restore mana'
+Spell        19 'shield'
+Spell        19 'spiral blast'
+Spell        19 'swordbait'
+Spell        19 'teleport'
+Skill        19 'aggressive style'
+Skill        19 'aid'
+Skill        19 'assassinate'
+Skill        19 'cook'
+Skill        19 'disarm'
+Skill        19 'dual wield'
+Skill        19 'enhanced damage'
+Skill        19 'feed'
+Skill        19 'hide'
+Skill        19 'kick'
+Skill        19 'meditate'
+Skill        19 'mistform'
+Skill        22 'mount'
+Skill        19 'parry'
+Skill        19 'punch'
+Skill        19 'rescue'
+Skill        19 'scan'
+Skill        19 'search'
+Skill        26 'seventh attack'
+Skill        19 'strike'
+Skill        19 'track'
+Skill        19 'vault'
+Skill        19 'visual defiance'
+Weapon       19 'flexible arms'
+Weapon       19 'long blades'
 Weapon       19 'missile weapons'
 Weapon       19 'pugilism'
+Weapon       19 'short blades'
 Tongue       100 'common'
 End
 
+#MOBILE
+Vnum	21058
+Room	21016
+Description The black steed snorts as you examine him.  His fine black coat shines
+brightly regardless of light and the warhorse seems as though it could
+run tirelessly for days.
+A neck tag says 'I belong to Xermon'.
+~
+Position 12
+Flags 262403
+EndMobile
 #END

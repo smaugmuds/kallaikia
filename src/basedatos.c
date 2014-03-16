@@ -3641,50 +3641,50 @@ void do_memory( CHAR_DATA *ch, char *argument )
  
     set_char_color( AT_PLAIN, ch );
     argument = one_argument( argument, arg );
-    send_to_char_color( "\n\r&wMemoria Sistema [arguments - hash, check, showhigh]\n\r", ch );
-    ch_printf_color( ch, "&wAfectos: &W%5d\t\t\t&wZonas:   &W%5d\n\r",
+    send_to_char_color( "\n\r&wMemoria Sistema [argumentos - cifrado, comprobar, mostrar]\n\r", ch );
+    ch_printf_color( ch, "&wAfectos: &W%5d\t\t\t&wZonas:    &W%5d\n\r",
         top_affect, top_area   );
-    ch_printf_color( ch, "&wExtDes:  &W%5d\t\t\t&wSaidas:   &W%5d\n\r",
+    ch_printf_color( ch, "&wExtDes:  &W%5d\t\t\t&wSaídas:   &W%5d\n\r",
         top_ed,     top_exit   );
-    ch_printf_color( ch, "&wAxudas:   &W%5d\t\t\t&wResets:  &W%5d\n\r",
+    ch_printf_color( ch, "&wAxudas:  &W%5d\t\t\t&wReseteos: &W%5d\n\r",
         top_help,   top_reset  );
-    ch_printf_color( ch, "&wIdxMobs: &W%5d\t\t\t&wMobiles: &W%5d\n\r",
+    ch_printf_color( ch, "&wIdxMobs: &W%5d\t\t\t&wMobiles:  &W%5d\n\r",
         top_mob_index, nummobsloaded );
-    ch_printf_color( ch, "&wIdxObjs: &W%5d\t\t\t&wObjs:    &W%5d(%d)\n\r",
+    ch_printf_color( ch, "&wIdxObjs: &W%5d\t\t\t&wObjs:     &W%5d(%d)\n\r",
         top_obj_index, numobjsloaded, physicalobjects );
-    ch_printf_color( ch, "&wRooms:   &W%5d\t\t\t&wVRooms:  &W%5d\n\r",
+    ch_printf_color( ch, "&wRooms:   &W%5d\t\t\t&wVRooms:   &W%5d\n\r",
         top_room,   top_vroom   );
-    ch_printf_color( ch, "&wTendass:   &W%5d\t\t\t&wRepShps: &W%5d\n\r",
+    ch_printf_color( ch, "&wTendas:  &W%5d\t\t\t&wRepShps:  &W%5d\n\r",
         top_shop,   top_repair );
-    ch_printf_color( ch, "&wCurOq's: &W%5d\t\t\t&wCurCq's: &W%5d\n\r",
+    ch_printf_color( ch, "&wCurOq's: &W%5d\t\t\t&wCurCq's:  &W%5d\n\r",
         cur_qobjs,  cur_qchars );
     ch_printf_color( ch, "&wXogadores: &W%5d\t\t\t&wMaxplrs: &W%5d\n\r",
         num_descriptors, sysdata.maxplayers );
     ch_printf_color( ch, "&wMaxEver: &W%5d\t\t\t&wTopsn:   &W%5d(%d)\n\r",
  	sysdata.alltimemax, top_sn, MAX_SKILL );
-    ch_printf_color( ch, "&wMaxEver was recorded on:  &W%s\n\r\n\r",
+    ch_printf_color( ch, "&wMaxEver foi gardado o:  &W%s\n\r\n\r",
 	sysdata.time_of_max );
-    ch_printf_color( ch, "&wPotion Val:  &W%-16d   &wScribe/Brew: &W%d/%d\n\r",
+    ch_printf_color( ch, "&wVeneno Val:  &W%-16d   &wScribe/Brew: &W%d/%d\n\r",
 	sysdata.upotion_val, sysdata.scribed_used, sysdata.brewed_used );
     ch_printf_color( ch, "&wPill Val:    &W%-16d   &wGlobal loot: &W%d\n\r",
         sysdata.upill_val, sysdata.global_looted );
 
  
-    if ( !str_cmp( arg, "check" ) )
+    if ( !str_cmp( arg, "comprobar" ) )
     {
 #ifdef HASHSTR
         send_to_char( check_hash(argument), ch );
 #else
-        send_to_char( "Hash strings not enabled.\n\r", ch );
+        send_to_char( "O cifrado de contrasinais non está habilidado.\n\r", ch );
 #endif
         return;
     }
-    if ( !str_cmp( arg, "showhigh" ) )
+    if ( !str_cmp( arg, "mostrar" ) )
     {
 #ifdef HASHSTR
         show_high_hash( atoi(argument) );
 #else
-        send_to_char( "Hash strings not enabled.\n\r", ch );
+        send_to_char( "O cifrado non está habilidado.\n\r", ch );
 #endif
         return;
     }
@@ -3692,14 +3692,14 @@ void do_memory( CHAR_DATA *ch, char *argument )
       hash = atoi(argument);
     else
       hash = -1;
-    if ( !str_cmp( arg, "hash" ) )
+    if ( !str_cmp( arg, "cifrado" ) )
     {
 #ifdef HASHSTR
-        ch_printf( ch, "Hash statistics:\n\r%s", hash_stats() );
+        ch_printf( ch, "Estadísticas de cifrado:\n\r%s", hash_stats() );
         if ( hash != -1 )
           hash_dump( hash );
 #else
-        send_to_char( "Hash strings not enabled.\n\r", ch );
+        send_to_char( "As estadísticas de cifrado non están activadas.\n\r", ch );
 #endif
     }
     return;

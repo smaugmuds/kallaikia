@@ -295,7 +295,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
 	      if ( argument[0] != '\0'
 	      &&  (victim=get_char_room(ch, argument)) == NULL )
 	      {
-		send_to_char( "They aren't here.\n\r", ch );
+		send_to_char( "Non están aquí.\n\r", ch );
 		return TRUE;
 	      }
 	    }
@@ -355,7 +355,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
 	      if ( argument[0] != '\0'
 	      &&  (victim=get_char_room(ch, argument)) == NULL )
 	      {
-		send_to_char( "They aren't here.\n\r", ch );
+		send_to_char( "Non están aquí.\n\r", ch );
 		return TRUE;
 	      }
 	      if ( !victim )
@@ -1490,7 +1490,7 @@ void do_sset( CHAR_DATA *ch, char *argument )
 	    do_sset(ch, arg1);
 	}
 	else
-	    send_to_char( "They aren't here.\n\r", ch );
+	    send_to_char( "Non están aquí.\n\r", ch );
 	return;
     }
 
@@ -1621,13 +1621,13 @@ void do_grapple( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC( ch ) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't do that right now.\n\r", ch );
+	send_to_char( "Non podes facer iso agora mesmo.\n\r", ch );
 	return;
     }
 
     if ( ch->mount )
     {
-        send_to_char( "You can't get close enough while mounted.\n\r", ch );
+        send_to_char( "Non podes acercarte tanto estando nunha montura.\n\r", ch );
         return;
     }
 
@@ -1643,7 +1643,7 @@ void do_grapple( CHAR_DATA *ch, char *argument )
 
       if ( ( victim = get_char_room( ch, arg ) ) == NULL )
       {
-        send_to_char( "They aren't here.\n\r", ch );
+        send_to_char( "Non están aquí.\n\r", ch );
         return;
       }
 
@@ -1729,25 +1729,25 @@ void do_gouge( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para iso.\n\r", ch );
 	return;
     }
 
     if ( !can_use_skill(ch, 0, gsn_gouge ) )
     {
-	send_to_char("You do not yet know of this skill.\n\r", ch );
+	send_to_char("Ainda non sabes nada sobre esa habilidade.\n\r", ch );
 	return;
     }
 
     if ( ch->mount )
     {
-	send_to_char( "You can't get close enough while mounted.\n\r", ch );
+	send_to_char( "Non podes acercarte tanto estando sobre unha montura.\n\r", ch );
 	return;
     }
 
     if ( ( victim = who_fighting( ch ) ) == NULL )
     {
-	send_to_char( "You aren't fighting anyone.\n\r", ch );
+	send_to_char( "Non estás loitando con ninguén.\n\r", ch );
 	return;
     }
 
@@ -1773,16 +1773,16 @@ void do_gouge( CHAR_DATA *ch, char *argument )
 		    af.duration  = 3 + (ch->level/15);
 		  af.bitvector = meb(AFF_BLIND);
 		  affect_to_char( victim, &af );
-		  act( AT_SKILL, "You can't see a thing!", victim, NULL, NULL, TO_CHAR );
+		  act( AT_SKILL, "Non podes ver nada!", victim, NULL, NULL, TO_CHAR );
 		}
 		WAIT_STATE( ch,     PULSE_VIOLENCE );
 		if ( !IS_NPC( ch ) && !IS_NPC( victim ) )
 		{
 		  if ( number_bits( 1 ) == 0 )
 		  {
-		    ch_printf( ch, "%s looks momentarily dazed.\n\r",
+		    ch_printf( ch, "%s parece aturdido por un momento.\n\r",
 			victim->name );
-		    send_to_char( "You are momentarily dazed ...\n\r",
+		    send_to_char( "Estás aturdido por un momento ...\n\r",
 			victim );
 		    WAIT_STATE( victim, PULSE_VIOLENCE );
 		  }
@@ -1828,7 +1828,7 @@ void do_detrap( CHAR_DATA *ch, char *argument )
 	default:
 	    if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
 	    {
-		send_to_char( "You can't concentrate enough for that.\n\r", ch );
+		send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 		return;
 	    }
 	    argument = one_argument( argument, arg );
@@ -1847,12 +1847,12 @@ void do_detrap( CHAR_DATA *ch, char *argument )
 	    found = FALSE;
 	    if ( ch->mount )
 	    {
-		send_to_char( "You can't do that while mounted.\n\r", ch );
+		send_to_char( "Non podes facer iso sobre unha montura.\n\r", ch );
 		return;
 	    }
 	    if ( !ch->in_room->first_content )
 	    {
-	       send_to_char( "You can't find that here.\n\r", ch );
+	       send_to_char( "Non podes atopar iso aquí.\n\r", ch );
 	       return;
 	    }
 	    for ( obj = ch->in_room->first_content; obj; obj = obj->next_content )
@@ -1865,7 +1865,7 @@ void do_detrap( CHAR_DATA *ch, char *argument )
 	    }
 	    if ( !found )
 	    {
-	       send_to_char( "You can't find that here.\n\r", ch );
+	       send_to_char( "Non podes atopar iso aquí.\n\r", ch );
 	       return;
 	    }
 	    act( AT_ACTION, "You carefully begin your attempt to remove a trap from $p...", ch, obj, NULL, TO_CHAR );
@@ -1895,7 +1895,7 @@ void do_detrap( CHAR_DATA *ch, char *argument )
 
     if ( !ch->in_room->first_content )
     {
-       send_to_char( "You can't find that here.\n\r", ch );
+       send_to_char( "Non podes atopar iso aquí.\n\r", ch );
        return;
     }
     for ( obj = ch->in_room->first_content; obj; obj = obj->next_content )
@@ -1908,7 +1908,7 @@ void do_detrap( CHAR_DATA *ch, char *argument )
     }
     if ( !found )
     {
-       send_to_char( "You can't find that here.\n\r", ch );
+       send_to_char( "Non podes atopar iso aquí.\n\r", ch );
        return;
     }
     if ( (trap = get_trap( obj )) == NULL )
@@ -1949,12 +1949,12 @@ void do_dig( CHAR_DATA *ch, char *argument )
 	default:
 	  if ( IS_NPC(ch)  && IS_AFFECTED( ch, AFF_CHARM ) )
 	  {
-	    send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	    send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	    return;
 	  }
           if ( ch->mount )
 	  {
-	    send_to_char( "You can't do that while mounted.\n\r", ch );
+	    send_to_char( "Non podes facer iso sobre unha montura.\n\r", ch );
 	    return;
 	  }
 	  one_argument( argument, arg );
@@ -2123,12 +2123,12 @@ void do_search( CHAR_DATA *ch, char *argument )
 	default:
 	    if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
 	    {
-		send_to_char( "You can't concentrate enough for that.\n\r", ch );
+		send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 		return;
 	    }
 	    if ( ch->mount )
 	    {
-		send_to_char( "You can't do that while mounted.\n\r", ch );
+		send_to_char( "Non podes facer iso sobre unha montura.\n\r", ch );
 		return;
 	    }
 	    argument = one_argument( argument, arg );
@@ -2137,7 +2137,7 @@ void do_search( CHAR_DATA *ch, char *argument )
 		container = get_obj_here( ch, arg );
 		if ( !container )
 		{
-		  send_to_char( "You can't find that here.\n\r", ch );
+		  send_to_char( "Non podes atopar iso aquí.\n\r", ch );
 		  return;
 		}
 		if ( container->item_type != ITEM_CONTAINER )
@@ -2185,7 +2185,7 @@ void do_search( CHAR_DATA *ch, char *argument )
 	    container = get_obj_here( ch, arg );
 	    if ( !container )
 	    {
-		send_to_char( "You can't find that here.\n\r", ch );
+		send_to_char( "Non podes atopar iso aquí.\n\r", ch );
 		return;
 	    }
 	    startobj = container->first_content;
@@ -2252,7 +2252,7 @@ void do_steal( CHAR_DATA *ch, char *argument )
 
     if ( ch->mount )
     {
-	send_to_char( "You can't do that while mounted.\n\r", ch );
+	send_to_char( "Non podes facer iso sobre unha montura.\n\r", ch );
 	return;
     }
 
@@ -2267,7 +2267,7 @@ void do_steal( CHAR_DATA *ch, char *argument )
 
     if ( ( victim = get_char_room( ch, arg2 ) ) == NULL )
     {
-	send_to_char( "They aren't here.\n\r", ch );
+	send_to_char( "Non están aquí.\n\r", ch );
 	return;
     }
 
@@ -2374,30 +2374,30 @@ void do_steal( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    if ( !str_cmp( arg1, "coin"  )
-    ||   !str_cmp( arg1, "coins" )
-    ||   !str_cmp( arg1, "gold"  ) )
+    if ( !str_cmp( arg1, "moeda"  )
+    ||   !str_cmp( arg1, "moedas" )
+    ||   !str_cmp( arg1, "ouro"  ) )
     {
 	int amount;
 
 	amount = (int) (victim->gold * number_range(1, 10) / 100);
 	if ( amount <= 0 )
 	{
-	    send_to_char( "You couldn't get any gold.\n\r", ch );
+	    send_to_char( "Non obtiveche nada de ouro.\n\r", ch );
 	    learn_from_failure( ch, gsn_steal );
 	    return;
 	}
 
 	ch->gold     += amount;
 	victim->gold -= amount;
-	ch_printf( ch, "Aha!  You got %d gold coins.\n\r", amount );
+	ch_printf( ch, "Ahá!  Obtiveche %d moedas de ouro.\n\r", amount );
 	learn_from_success( ch, gsn_steal );
 	return;
     }
 
     if ( ( obj = get_obj_carry( victim, arg1 ) ) == NULL )
     {
-	send_to_char( "You can't seem to find it.\n\r", ch );
+	send_to_char( "Parece que non podes encontralo.\n\r", ch );
 	learn_from_failure( ch, gsn_steal );
 	return;
     }
@@ -2414,14 +2414,14 @@ void do_steal( CHAR_DATA *ch, char *argument )
 
     if ( ch->carry_number + (get_obj_number(obj)/obj->count) > can_carry_n( ch ) )
     {
-	send_to_char( "You have your hands full.\n\r", ch );
+	send_to_char( "As túas mans están cheas.\n\r", ch );
 	learn_from_failure( ch, gsn_steal );
 	return;
     }
 
     if ( ch->carry_weight + (get_obj_weight(obj)/obj->count) > can_carry_w( ch ) )
     {
-	send_to_char( "You can't carry that much weight.\n\r", ch );
+	send_to_char( "Non podes carregar todo ese peso.\n\r", ch );
 	learn_from_failure( ch, gsn_steal );
 	return;
     }
@@ -2429,7 +2429,7 @@ void do_steal( CHAR_DATA *ch, char *argument )
     separate_obj( obj );
     obj_from_char( obj );
     obj_to_char( obj, ch );
-    send_to_char( "Ok.\n\r", ch );
+    send_to_char( "Vale.\n\r", ch );
     learn_from_success( ch, gsn_steal );
     adjust_favor( ch, 9, 1 );
     return;
@@ -2445,7 +2445,7 @@ void do_pounce( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC( ch ) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't do that right now.\n\r", ch );
+	send_to_char( "Non podes facer iso agora.\n\r", ch );
 	return;
     }
 
@@ -2465,7 +2465,7 @@ void do_pounce( CHAR_DATA *ch, char *argument )
 
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
-	send_to_char( "They aren't here.\n\r", ch );
+	send_to_char( "Non están aquí.\n\r", ch );
 	return;
     }
 
@@ -2534,7 +2534,7 @@ void do_backstab( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't do that right now.\n\r", ch );
+	send_to_char( "Non podes facer iso agora.\n\r", ch );
 	return;
     }
 
@@ -2554,7 +2554,7 @@ void do_backstab( CHAR_DATA *ch, char *argument )
 
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
-	send_to_char( "They aren't here.\n\r", ch );
+	send_to_char( "Non están aquí.\n\r", ch );
 	return;
     }
 
@@ -2629,7 +2629,7 @@ void do_rescue( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -2648,7 +2648,7 @@ void do_rescue( CHAR_DATA *ch, char *argument )
 
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
-	send_to_char( "They aren't here.\n\r", ch );
+	send_to_char( "Non están aquí.\n\r", ch );
 	return;
     }
 
@@ -2660,7 +2660,7 @@ void do_rescue( CHAR_DATA *ch, char *argument )
 
     if ( ch->mount )
     {
-	send_to_char( "You can't do that while mounted.\n\r", ch );
+	send_to_char( "Non podes facer iso sobre unha montura.\n\r", ch );
 	return;
     }
 
@@ -2734,7 +2734,7 @@ void do_meditate( CHAR_DATA *ch, char *argument )
     default:
       if ( IS_NPC(ch) ||  IS_AFFECTED( ch, AFF_CHARM ) )
       {
-        send_to_char( "You can't concentrate enough for that.\n\r", ch );
+        send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
         return;
       }
       send_to_char_color( "&BYou enter into a meditative state, hoping to collect mana from the cosmos.\n\r", ch );
@@ -2838,7 +2838,7 @@ void do_trance( CHAR_DATA *ch, char *argument )
     default:
       if ( IS_NPC(ch) ||  IS_AFFECTED( ch, AFF_CHARM ) )
       {
-        send_to_char( "You can't concentrate enough for that.\n\r", ch );
+        send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
         return;
       }
       send_to_char_color( "&BYou enter a peaceful trance, collecting mana from the cosmos.\n\r", ch );
@@ -2939,7 +2939,7 @@ void do_kick( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -2977,7 +2977,7 @@ void do_punch( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -3016,7 +3016,7 @@ void do_bite( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -3089,7 +3089,7 @@ void do_sting( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -3128,7 +3128,7 @@ void do_tail( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -3168,7 +3168,7 @@ void do_bash( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -3219,7 +3219,7 @@ void do_stun( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -3342,7 +3342,7 @@ void do_feed( CHAR_DATA *ch, char *argument )
 
 	if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
 	{
-	  send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	  send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	  return;
 	}
 
@@ -3366,7 +3366,7 @@ void do_feed( CHAR_DATA *ch, char *argument )
 
 	if ( ch->mount )
 	{
-	  send_to_char( "You can't do that while mounted.\n\r", ch );
+	  send_to_char( "Non podes facer iso sobre unha montura.\n\r", ch );
 	  return;
 	}
 
@@ -3495,7 +3495,7 @@ void do_disarm( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -3533,7 +3533,7 @@ void do_disarm( CHAR_DATA *ch, char *argument )
 	disarm( ch, victim );
     else
     {
-	send_to_char( "You failed.\n\r", ch );
+	send_to_char( "Fallache.\n\r", ch );
 	learn_from_failure( ch, gsn_disarm );
     }
     return;
@@ -3643,7 +3643,7 @@ void do_mistwalk( CHAR_DATA *ch, char *argument )
  
     set_char_color( AT_DGREEN, ch );
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) ) {
-      send_to_char( "You can't do that right now.\n\r", ch );
+      send_to_char( "Non podes facer iso agora.\n\r", ch );
       return;
     }
     if ( ch->mount ) {
@@ -3705,7 +3705,7 @@ void do_broach( CHAR_DATA *ch, char *argument )
     set_char_color(AT_DGREEN, ch);
  
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) ) {
-        send_to_char( "You can't concentrate enough for that.\n\r", ch );
+        send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
         return;
     }
     one_argument( argument, arg );
@@ -3714,7 +3714,7 @@ void do_broach( CHAR_DATA *ch, char *argument )
         return;
     }
     if ( ch->mount ) {
-        send_to_char( "You should really dismount first.\n\r", ch );
+        send_to_char( "Deberías desmontar primeiro.\n\r", ch );
         return;
     }
     WAIT_STATE( ch, skill_table[gsn_broach]->beats );
@@ -3725,7 +3725,7 @@ void do_broach( CHAR_DATA *ch, char *argument )
         ||    IS_SET(pexit->exit_info, EX_PICKPROOF)
         || can_use_skill(ch, number_percent(), gsn_broach ) )
         {
-            send_to_char( "Your attempt fails.\n\r", ch );
+            send_to_char( "O teu intento falla.\n\r", ch );
             learn_from_failure( ch, gsn_broach );
             check_room_for_traps( ch, TRAP_PICK | trap_door[pexit->vdir] );
             return;
@@ -3741,7 +3741,7 @@ void do_broach( CHAR_DATA *ch, char *argument )
         check_room_for_traps( ch, TRAP_PICK | trap_door[pexit->vdir] );
         return;
     }
-    send_to_char( "Your attempt fails.\n\r", ch );
+    send_to_char( "O teu intento falla.\n\r", ch );
     return;
 }
 
@@ -3754,7 +3754,7 @@ void do_pick( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -3762,7 +3762,7 @@ void do_pick( CHAR_DATA *ch, char *argument )
 
     if ( arg[0] == '\0' )
     {
-	send_to_char( "Pick what?\n\r", ch );
+	send_to_char( "Coller o qué?\n\r", ch );
 	return;
     }
 
@@ -3771,7 +3771,7 @@ void do_pick( CHAR_DATA *ch, char *argument )
 
     if ( ch->mount )
     {
-	send_to_char( "You can't do that while mounted.\n\r", ch );
+	send_to_char( "Non podes facer iso sobre unha montura.\n\r", ch );
 	return;
     }
 
@@ -3790,7 +3790,7 @@ void do_pick( CHAR_DATA *ch, char *argument )
 
   if ( !can_use_skill(ch, number_percent(), gsn_pick_lock ) )
     {
-	send_to_char( "You failed.\n\r", ch);
+	send_to_char( "Fallache.\n\r", ch);
 	learn_from_failure( ch, gsn_pick_lock );
 /*        for ( gch = ch->in_room->first_person; gch; gch = gch->next_in_room )
         {
@@ -3815,7 +3815,7 @@ void do_pick( CHAR_DATA *ch, char *argument )
 	    { send_to_char( "It's already unlocked.\n\r",  ch ); return; }
 	if ( IS_SET(pexit->exit_info, EX_PICKPROOF) )
 	{
-	   send_to_char( "You failed.\n\r", ch );
+	   send_to_char( "Fallache.\n\r", ch );
 	   learn_from_failure( ch, gsn_pick_lock );
 	   check_room_for_traps( ch, TRAP_PICK | trap_door[pexit->vdir] );
 	   return;
@@ -3849,7 +3849,7 @@ void do_pick( CHAR_DATA *ch, char *argument )
 	    { send_to_char( "It's already unlocked.\n\r",  ch ); return; }
 	if ( IS_SET(obj->value[1], CONT_PICKPROOF) )
 	{
-	   send_to_char( "You failed.\n\r", ch );
+	   send_to_char( "Fallache.\n\r", ch );
 	   learn_from_failure( ch, gsn_pick_lock );
 	   check_for_trap( ch, obj, TRAP_PICK );
 	   return;
@@ -3877,13 +3877,13 @@ void do_sneak( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
     if ( ch->mount )
     {
-	send_to_char( "You can't do that while mounted.\n\r", ch );
+	send_to_char( "Non podes facer iso sobre unha montura.\n\r", ch );
 	return;
     }
 
@@ -3912,13 +3912,13 @@ void do_hide( CHAR_DATA *ch, char *argument )
 {
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
     if ( ch->mount )
     {
-	send_to_char( "You can't do that while mounted.\n\r", ch );
+	send_to_char( "Non podes facer iso sobre unha montura.\n\r", ch );
 	return;
     }
 
@@ -4009,7 +4009,7 @@ void do_recall( CHAR_DATA *ch, char *argument )
 	    if ( ch->desc )
 	      lose /= 2;
 	    gain_exp( ch, 0 - lose );
-	    ch_printf( ch, "You failed!  You lose %d exps.\n\r", lose );
+	    ch_printf( ch, "Fallache!  You lose %d exps.\n\r", lose );
 	    return;
 	}
 
@@ -4044,7 +4044,7 @@ void do_aid( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -4057,7 +4057,7 @@ void do_aid( CHAR_DATA *ch, char *argument )
 
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
-	send_to_char( "They aren't here.\n\r", ch );
+	send_to_char( "Non están aquí.\n\r", ch );
 	return;
     }
 
@@ -4069,7 +4069,7 @@ void do_aid( CHAR_DATA *ch, char *argument )
 
     if ( ch->mount )
     {
-	send_to_char( "You can't do that while mounted.\n\r", ch );
+	send_to_char( "Non podes facer iso sobre unha montura.\n\r", ch );
 	return;
     }
 
@@ -4135,7 +4135,7 @@ void do_mount( CHAR_DATA *ch, char *argument )
 
     if ( ( victim = get_char_room( ch, argument ) ) == NULL )
     {
-	send_to_char( "You can't find that here.\n\r", ch );
+	send_to_char( "Non podes atopar iso aquí.\n\r", ch );
 	return;
     }
 
@@ -4468,7 +4468,7 @@ void do_poison_weapon( CHAR_DATA *ch, char *argument )
     if (!can_use_skill(ch, percent, gsn_poison_weapon ) )
     {
 	set_char_color( AT_RED, ch );
-	send_to_char( "You failed and spill some on yourself.  Ouch!\n\r", ch );
+	send_to_char( "Fallache and spill some on yourself.  Ouch!\n\r", ch );
 	set_char_color( AT_GREY, ch );
 	damage( ch, ch, ch->level, gsn_poison_weapon );
 	act(AT_RED, "$n spills the poison all over!", ch, NULL, NULL, TO_ROOM );
@@ -4589,7 +4589,7 @@ void do_scribe( CHAR_DATA *ch, char *argument )
      if ( !can_use_skill(ch, number_percent(), gsn_scribe ) )
      {
        set_char_color ( AT_MAGIC, ch );
-       send_to_char("You failed.\n\r", ch);
+       send_to_char("Fallache.\n\r", ch);
        learn_from_failure( ch, gsn_scribe );
        ch->mana -= (mana / 2);
        return;
@@ -4728,7 +4728,7 @@ void do_brew( CHAR_DATA *ch, char *argument )
      if ( !can_use_skill(ch, number_percent(), gsn_brew ) )
      {
        set_char_color ( AT_MAGIC, ch );
-       send_to_char("You failed.\n\r", ch);
+       send_to_char("Fallache.\n\r", ch);
        learn_from_failure( ch, gsn_brew );
        ch->mana -= (mana / 2);
        return;
@@ -4736,7 +4736,7 @@ void do_brew( CHAR_DATA *ch, char *argument )
 
      potion->value[1] = sn;
      potion->value[0] = ch->level;
-     sprintf(buf1, "%s potion", skill_table[sn]->name);
+     sprintf(buf1, "%s poción", skill_table[sn]->name);
      STRFREE(potion->short_descr);
      potion->short_descr = STRALLOC( aoran(buf1) );
 
@@ -4798,7 +4798,7 @@ void do_circle( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You can't concentrate enough for that.\n\r", ch );
+	send_to_char( "Non podes concentrarte o suficiente para facer iso.\n\r", ch );
 	return;
     }
 
@@ -4818,7 +4818,7 @@ void do_circle( CHAR_DATA *ch, char *argument )
 
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
-	send_to_char( "They aren't here.\n\r", ch );
+	send_to_char( "Non están aquí.\n\r", ch );
 	return;
     }
 
@@ -5909,7 +5909,7 @@ void do_slice( CHAR_DATA *ch, char *argument )
 
   if ( (corpse = get_obj_here( ch, argument )) == NULL)
   {  
-    send_to_char("You can't find that here.\n\r", ch);
+    send_to_char("Non podes atopar iso aquí.\n\r", ch);
     return;
   }
 
@@ -5937,7 +5937,7 @@ void do_slice( CHAR_DATA *ch, char *argument )
     learn_from_failure(ch, gsn_slice); /* Just in case they die :> */
     if ( number_percent() + (get_curr_dex(ch) - 13) < 10)   
     {
-      act(AT_BLOOD, "You cut yourself!", ch, NULL, NULL, TO_CHAR);
+      act(AT_BLOOD, "Cortáchete!", ch, NULL, NULL, TO_CHAR);
       damage(ch, ch, ch->level, gsn_slice);
     }
     return;
@@ -5980,19 +5980,19 @@ void do_slice( CHAR_DATA *ch, char *argument )
     one_argument( argument, arg );
     if ( arg[0] == '\0' )
     {
-	ch_printf_color( ch, "&wAdopt which fighting style?  (current:  %s&w)\n\r",
-          ch->style == STYLE_BERSERK    ? "&Rberserk"    :
-          ch->style == STYLE_AGGRESSIVE ? "&Raggressive" :
-          ch->style == STYLE_DEFENSIVE  ? "&Ydefensive"  :
-          ch->style == STYLE_EVASIVE    ? "&Yevasive"    :
-                                          "standard"     );
+	ch_printf_color( ch, "&wAdoptar un estilo de loita?  (actual:  %s&w)\n\r",
+          ch->style == STYLE_BERSERK    ? "&Rsalvaxe"    :
+          ch->style == STYLE_AGGRESSIVE ? "&Ragresivo" :
+          ch->style == STYLE_DEFENSIVE  ? "&Ydefensivo"  :
+          ch->style == STYLE_EVASIVE    ? "&Yevasivo"    :
+                                          "normal"     );
 	return;
     }
 
-    if( !str_prefix(arg, "evasive") ){
+    if( !str_prefix(arg, "evasivo") ){
       if( ch->level < skill_table[gsn_style_evasive]->skill_level[ch->class])
       {
-         send_to_char( "You have not yet learned enough to fight evasively.\n\r",ch);
+         send_to_char( "Ainda non aprendiche o suficiente para loitar de forma evasiva.\n\r",ch);
          return;
       }
       WAIT_STATE( ch, skill_table[gsn_style_evasive]->beats );
@@ -6002,21 +6002,21 @@ void do_slice( CHAR_DATA *ch, char *argument )
              ch->position = POS_EVASIVE;
              learn_from_success(ch,gsn_style_evasive);
 	     if ( IS_PKILL( ch ) )
-		act( AT_ACTION, "$n falls back into an evasive stance.",
+		act( AT_ACTION, "$n volve a un estilo de loita evasivo.",
                   ch, NULL, NULL, TO_ROOM );
           }
           ch->style = STYLE_EVASIVE;
-          send_to_char( "You adopt an evasive fighting style.\n\r",ch);
+          send_to_char( "Adoptas un estilo de loita evasivo.\n\r",ch);
           return;
       } else {
           /* failure */ 
           send_to_char( "You nearly trip in a lame attempt to adopt an evasive fighting style.\n\r",ch);
 	  return;
       }
-    } else if( !str_prefix(arg, "defensive")){
+    } else if( !str_prefix(arg, "defensivo")){
       if( ch->level < skill_table[gsn_style_defensive]->skill_level[ch->class])
       {
-         send_to_char( "You have not yet learned enough to fight defensively.\n\r",ch);
+         send_to_char( "Ainda non aprendiche o suficiente para loitar defensivamente.\n\r",ch);
          return;
       }
       WAIT_STATE( ch, skill_table[gsn_style_defensive]->beats );
@@ -6026,21 +6026,21 @@ void do_slice( CHAR_DATA *ch, char *argument )
              ch->position = POS_DEFENSIVE;
              learn_from_success(ch,gsn_style_defensive);
 	     if ( IS_PKILL( ch ) )
-		act( AT_ACTION, "$n moves into a defensive posture.",
+		act( AT_ACTION, "$n móveste nunha postura defensiva.",
                   ch, NULL, NULL, TO_ROOM );
           }
           ch->style = STYLE_DEFENSIVE;
-          send_to_char( "You adopt a defensive fighting style.\n\r",ch);
+          send_to_char( "Adoptas un estilo de loita defensivo.\n\r",ch);
           return;
       } else {
           /* failure */ 
           send_to_char( "You nearly trip in a lame attempt to adopt a defensive fighting style.\n\r",ch);
 	  return;
       }
-    } else if( !str_prefix(arg,"standard")){
+    } else if( !str_prefix(arg,"normal")){
       if( ch->level < skill_table[gsn_style_standard]->skill_level[ch->class])
       {
-         send_to_char( "You have not yet learned enough to fight in the standard style.\n\r",ch);
+         send_to_char( "Ainda non sabes suficiente para loitar de xeito normal.\n\r",ch);
          return;
       }
       WAIT_STATE( ch, skill_table[gsn_style_standard]->beats );
@@ -6050,21 +6050,21 @@ void do_slice( CHAR_DATA *ch, char *argument )
              ch->position = POS_FIGHTING;
              learn_from_success(ch,gsn_style_standard);
 	      if ( IS_PKILL( ch ) )
-		act( AT_ACTION, "$n switches to a standard fighting style.",
+		act( AT_ACTION, "$n cambia a un estilo de loita normal.",
                   ch, NULL, NULL, TO_ROOM );
           }
           ch->style = STYLE_FIGHTING;
-          send_to_char( "You adopt a standard fighting style.\n\r",ch);
+          send_to_char( "Adoptas un estilo de loita normal.\n\r",ch);
           return;
       } else {
           /* failure */ 
           send_to_char( "You nearly trip in a lame attempt to adopt a standard fighting style.\n\r",ch);
 	  return;
       }
-    } else if( !str_prefix(arg,"aggressive")){
+    } else if( !str_prefix(arg,"agresivo")){
       if( ch->level < skill_table[gsn_style_aggressive]->skill_level[ch->class])
       {
-         send_to_char( "You have not yet learned enough to fight aggressively.\n\r",ch);
+         send_to_char( "Non aprendiche o suficiente para loitar de forma agresiva.\n\r",ch);
          return;
       }
       WAIT_STATE( ch, skill_table[gsn_style_aggressive]->beats );
@@ -6074,21 +6074,21 @@ void do_slice( CHAR_DATA *ch, char *argument )
              ch->position = POS_AGGRESSIVE;
              learn_from_success(ch,gsn_style_aggressive);
 	      if ( IS_PKILL( ch ) )
-		act( AT_ACTION, "$n assumes an aggressive stance.",
+		act( AT_ACTION, "$n asumes unha posición agresiva.",
                   ch, NULL, NULL, TO_ROOM );
           }
           ch->style = STYLE_AGGRESSIVE;
-          send_to_char( "You adopt an aggressive fighting style.\n\r",ch);
+          send_to_char( "Adoptas un estilo de loita agresivo.\n\r",ch);
           return;
       } else {
           /* failure */ 
           send_to_char( "You nearly trip in a lame attempt to adopt an aggressive fighting style.\n\r",ch);
 	  return;
       }
-    } else if( !str_prefix(arg,"berserk")){
+    } else if( !str_prefix(arg,"salvaxe")){
       if( ch->level < skill_table[gsn_style_berserk]->skill_level[ch->class])
       {
-         send_to_char( "You have not yet learned enough to fight as a berserker.\n\r",ch);
+         send_to_char( "Ainda non aprendiche o suficiente para loitar salvaxemente.\n\r",ch);
          return;
       }
       WAIT_STATE( ch, skill_table[gsn_style_berserk]->beats );
@@ -6098,11 +6098,11 @@ void do_slice( CHAR_DATA *ch, char *argument )
              ch->position = POS_BERSERK;
              learn_from_success(ch,gsn_style_berserk);
 	      if ( IS_PKILL( ch ) )
-		act( AT_ACTION, "$n enters a wildly aggressive style.",
+		act( AT_ACTION, "$n entra nun estilo de loita salvaxe.",
                   ch, NULL, NULL, TO_ROOM );
           }
           ch->style = STYLE_BERSERK;
-          send_to_char( "You adopt a berserk fighting style.\n\r",ch);
+          send_to_char( "Adoptas un estilo de loita salvaxe.\n\r",ch);
           return;
       } else {
           /* failure */ 
@@ -6111,7 +6111,7 @@ void do_slice( CHAR_DATA *ch, char *argument )
       }
     }
 
-    send_to_char( "Adopt which fighting style?\n\r",ch);
+    send_to_char( "Qué estilo de loita queres adoptar?\n\r",ch);
 
     return;
 }
@@ -6151,12 +6151,12 @@ void do_cook ( CHAR_DATA *ch, char *argument )
    one_argument( argument, arg );
    if ( IS_NPC(ch) || ch->level < skill_table[gsn_cook]->skill_level[ch->class])
    {
-	send_to_char("That skill is beyond your understanding.\n\r", ch );
+	send_to_char("Esa habilidade está máis alá do teu coñecemento.\n\r", ch );
 	return;
    }
    if ( arg[0] == '\0' )
    {	
-	send_to_char("Cook what?\n\r", ch );
+	send_to_char("Qué queres cociñar?\n\r", ch );
 	return;
    }
 
@@ -6165,12 +6165,12 @@ void do_cook ( CHAR_DATA *ch, char *argument )
 
    if ( ( food = get_obj_carry( ch, arg ) ) == NULL )
    {
-	send_to_char("You do not have that item.\n\r", ch );
+	send_to_char("Non tes ese obxeto.\n\r", ch );
 	return;
    }
    if ( food->item_type != ITEM_COOK )
    {
-	send_to_char("How can you cook that?\n\r", ch );
+	send_to_char("Cómo poderías cociñar iso?\n\r", ch );
 	return;
    }
    if ( food->value[2] > 2 )
@@ -6185,7 +6185,7 @@ void do_cook ( CHAR_DATA *ch, char *argument )
    }
    if ( !fire )
    {
-	send_to_char("There is no fire here!\n\r", ch );
+	send_to_char("Non hay lume aquí!\n\r", ch );
 	return;
    }
    separate_obj(food);	/* Bug catch by Tchaika from SMAUG list */
@@ -6198,10 +6198,10 @@ void do_cook ( CHAR_DATA *ch, char *argument )
 		ch, food, NULL, TO_CHAR );
         act( AT_MAGIC, "$n catches $p on fire burning it to a crisp.",
 		ch, food, NULL, TO_ROOM);
-	sprintf( buf, "a burnt %s", food->pIndexData->name );
+	sprintf( buf, "un %s churruscado", food->pIndexData->name );
 	STRFREE(food->short_descr);
 	food->short_descr = STRALLOC(buf);
-	sprintf( buf, "A burnt %s.", food->pIndexData->name);
+	sprintf( buf, "Un %s churruscado.", food->pIndexData->name);
         STRFREE(food->description);
         food->description = STRALLOC(buf);
         return;
@@ -6211,12 +6211,12 @@ void do_cook ( CHAR_DATA *ch, char *argument )
    {
         food->timer = food->timer*3;
 	food->value[2]+=2;
-	act( AT_MAGIC, "$n overcooks $p.",ch, food, NULL, TO_ROOM);
-        act( AT_MAGIC, "You overcook $p.",ch, food, NULL, TO_CHAR);
-	sprintf( buf, "an overcooked %s", food->pIndexData->name );
+	act( AT_MAGIC, "$n churruscou $p.",ch, food, NULL, TO_ROOM);
+        act( AT_MAGIC, "Churruscache $p.",ch, food, NULL, TO_CHAR);
+	sprintf( buf, "un %s churruscado", food->pIndexData->name );
 	STRFREE(food->short_descr);
 	food->short_descr = STRALLOC(buf);
-	sprintf( buf, "An overcooked %s.", food->pIndexData->name);
+	sprintf( buf, "Un %s churruscado.", food->pIndexData->name);
         STRFREE(food->description);
         food->description = STRALLOC(buf);
    }
@@ -6224,12 +6224,12 @@ void do_cook ( CHAR_DATA *ch, char *argument )
    {
         food->timer = food->timer*4;
 	food->value[0] *= 2;
-        act( AT_MAGIC, "$n roasts $p.",ch, food, NULL, TO_ROOM);
-        act( AT_MAGIC, "You roast $p.",ch, food, NULL, TO_CHAR);
-	sprintf( buf, "a roasted %s", food->pIndexData->name );
+        act( AT_MAGIC, "$n tosta $p.",ch, food, NULL, TO_ROOM);
+        act( AT_MAGIC, "Tostas $p.",ch, food, NULL, TO_CHAR);
+	sprintf( buf, "un %s tostado", food->pIndexData->name );
 	STRFREE(food->short_descr);
 	food->short_descr = STRALLOC(buf);
-	sprintf( buf, "A roasted %s.", food->pIndexData->name);
+	sprintf( buf, "Un %s tostado.", food->pIndexData->name);
         STRFREE(food->description);
         food->description = STRALLOC(buf);
 	food->value[2]++;
