@@ -6,9 +6,9 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       220451
-Room         21042
-HpManaMove   1000 1000 1000 1000 1000 1000
+Played       233352
+Room         21002
+HpManaMove   496 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
 Gold         1410065407
@@ -18,7 +18,7 @@ Weight          147
 Act          704644680
 Position     104
 Style     2
-Practice     3
+Practice     0
 Alignment    0
 SavingThrows 0 0 0 0 0
 Favor	       0
@@ -33,8 +33,8 @@ Mentalstate  -100
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
 Rank         The Darkness~
 Title         O Mestre das Tebras~
-Bamfin       summons from darkness!!~
-Bamfout      dissappears into a dark mist ... .. .~
+Bamfin       aparece da escuridade mais tebrosa!!~
+Bamfout      desaparece nunha neboa tebrosa ... .. .~
 WizInvis     65
 Flags        8421384
 PKills       0
@@ -46,6 +46,9 @@ AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
 Site         orion.local.lan
+Spell        19 'fly'
+Weapon       19 'missile weapons'
+Weapon       19 'pugilism'
 Tongue       100 'common'
 End
 

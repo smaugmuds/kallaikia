@@ -153,7 +153,7 @@ char *format_obj_to_char( OBJ_DATA *obj, CHAR_DATA *ch, bool fShort )
     if ( fShort )
     {
 	if ( glowsee && !IS_IMMORTAL(ch) )
-	    strcat( buf, "the faint glow of something" );
+	    strcat( buf, "o brilo tintineante de algo" );
 	else
 	if ( obj->short_descr )
 	    strcat( buf, obj->short_descr );
@@ -161,7 +161,7 @@ char *format_obj_to_char( OBJ_DATA *obj, CHAR_DATA *ch, bool fShort )
     else
     {
 	if ( glowsee )
-	    strcat( buf, "You see the faint glow of something nearby." );
+	    strcat( buf, "Ves o brilo tintineante de algo cercano." );
 	else
 	if ( obj->description )
 	    strcat( buf, obj->description );
@@ -205,17 +205,17 @@ char *hallucinated_object( int ms, bool fShort )
     }
     switch( number_range( 6-URANGE(1,sms/2,5), sms ) )
     {
-	case  1: return "A nice looking sword catches your eye.";
-	case  2: return "The ground is covered in small sticks.";
-	case  3: return "Something shiny catches your eye.";
-	case  4: return "Something catches your attention.";
-	case  5: return "Something interesting catches your eye.";
-	case  6: return "Something colorful flows by.";
-	case  7: return "Something that looks cool calls out to you.";
-	case  8: return "A nifty thing of great importance stands here.";
+	case  1: return "Una espada preciosa chama a túa atención.";
+	case  2: return "O chan está cuberto de pequenos paus.";
+	case  3: return "Algo brilante chama a túa atención.";
+	case  4: return "Algo chama a túa atención.";
+	case  5: return "Algo interesante chama a túa atención.";
+	case  6: return "Algo colorido flota por aquí.";
+	case  7: return "Algo que parece entretido está chamando por tí.";
+	case  8: return "Unha pequena cousa de gran importancia está aquí.";
 	case  9: return "A cloak of flowing colors asks you to wear it.";
 	case 10: return "A mystical flaming sword awaits your grasp.";
-	case 11: return "A swarm of insects buzzes in your face!";
+	case 11: return "Unha colmea de insectos zumba na tua cara!";
 	case 12: return "The extremely rare Deathbane lies at your feet.";
 	case 13: return "A figment of your imagination is at your command.";
 	case 14: return "You notice a gravestone here... upon closer examination, it reads your name.";
@@ -226,7 +226,7 @@ char *hallucinated_object( int ms, bool fShort )
 	case 19: return "The answer.  One.  It's always been One.";
 	case 20: return "The key to life, the universe and everything awaits your hand.";
     }
-    return "Whoa!!!";
+    return "Wouuuuh!!!";
 }
 
 
@@ -263,7 +263,7 @@ char *num_punct(int foo)
  * Show a list to a character.
  * Can coalesce duplicated items.
  */
-void show_list_to_char( OBJ_DATA *list, CHAR_DATA *ch, bool fShort, bool fShowNothing )
+void show_list_to_char( OBJ_DATA *list, CHAR_DATA *ch, bool fShort, bool fShowNothing)
 {
     char **prgpstrShow;
     int *prgnShow;
@@ -283,12 +283,12 @@ void show_list_to_char( OBJ_DATA *list, CHAR_DATA *ch, bool fShort, bool fShowNo
      */
     if ( !list )
     {
-    	if ( fShowNothing )
+    	if ( fShowNothing)
     	{
 	   if ( IS_NPC(ch) || xIS_SET(ch->act, PLR_COMBINE) )
 	      send_to_char( "     ", ch );
 	   set_char_color( AT_OBJECT, ch );
-	   send_to_char( "Nothing.\n\r", ch );
+	   send_to_char( "Nada.\n\r", ch );
 	}
 	return;
     }
@@ -319,12 +319,12 @@ void show_list_to_char( OBJ_DATA *list, CHAR_DATA *ch, bool fShort, bool fShowNo
 
     if ( count + offcount <= 0 )
     {
-    	if ( fShowNothing )
+    	if ( fShowNothing)
     	{
 	   if ( IS_NPC(ch) || xIS_SET(ch->act, PLR_COMBINE) )
 	      send_to_char( "     ", ch );
 	   set_char_color( AT_OBJECT, ch );
-	   send_to_char( "Nothing.\n\r", ch );
+	   send_to_char( "Nada.\n\r", ch );
 	}
 	return;
     }
@@ -437,7 +437,7 @@ void show_list_to_char( OBJ_DATA *list, CHAR_DATA *ch, bool fShort, bool fShowNo
 	  set_char_color( AT_MAGIC, ch );
 	  break;
 	}
-	if ( fShowNothing )
+	if ( fShowNothing)
 	    send_to_char( "     ", ch );
 	send_to_char( prgpstrShow[iShow], ch );
 /*	if ( IS_NPC(ch) || xIS_SET(ch->act, PLR_COMBINE) ) */
@@ -450,12 +450,12 @@ void show_list_to_char( OBJ_DATA *list, CHAR_DATA *ch, bool fShort, bool fShowNo
 	DISPOSE( prgpstrShow[iShow] );
     }
 
-    if ( fShowNothing && nShow == 0 )
+    if ( fShowNothing&& nShow == 0 )
     {
 	if ( IS_NPC(ch) || xIS_SET(ch->act, PLR_COMBINE) )
 	    send_to_char( "     ", ch );
 	set_char_color( AT_OBJECT, ch );
-	send_to_char( "Nothing.\n\r", ch );
+	send_to_char( "Nada.\n\r", ch );
     }
 
     /*
@@ -1689,13 +1689,13 @@ void do_glance( CHAR_DATA *ch, char *argument )
  
   if ( ch->position < POS_SLEEPING )
   {
-    send_to_char( "You can't see anything but stars!\n\r", ch );
+    send_to_char( "Só podes ver estrelas!\n\r", ch );
     return;
   }
  
   if ( ch->position == POS_SLEEPING )
   {
-    send_to_char( "You can't see anything, you're sleeping!\n\r", ch );
+    send_to_char( "Non podes ver nada, estás durmindo!\n\r", ch );
     return;
   }
  
@@ -1720,7 +1720,7 @@ void do_glance( CHAR_DATA *ch, char *argument )
  
   if ( ( victim = get_char_room( ch, arg1 ) ) == NULL )
   {
-    send_to_char( "They're not here.\n\r", ch );
+    send_to_char( "Non están aquí.\n\r", ch );
     return;
   }
   else
@@ -4233,7 +4233,7 @@ void do_consider( CHAR_DATA *ch, char *argument )
 
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
-	send_to_char( "They're not here.\n\r", ch );
+	send_to_char( "Non están aquí.\n\r", ch );
 	return;
     }
     if ( victim == ch )
@@ -5957,7 +5957,7 @@ void do_ignore(CHAR_DATA *ch, char *argument)
 	else if(!strcmp(arg, "self") || nifty_is_name(arg, ch->name))
 	{
 		set_char_color(AT_IGNORE, ch);
-		ch_printf(ch, "Did you type something?\n\r");
+		ch_printf(ch, "Tecleache algo?\n\r");
 		return;
 	}
 	else
@@ -5965,12 +5965,12 @@ void do_ignore(CHAR_DATA *ch, char *argument)
 		int i;
 		
 		/* get the name of the char who last sent tell to ch */		
-		if(!strcmp(arg, "reply"))
+		if(!strcmp(arg, "resposta"))
 		{
 			if(!ch->reply)
 			{
 				set_char_color(AT_IGNORE, ch);
-				ch_printf(ch, "They're not here.\n\r");
+				ch_printf(ch, "Non están aquí.\n\r");
 				return;
 			}
 			else
@@ -6074,10 +6074,10 @@ void do_version(CHAR_DATA* ch, char* argument)
 	  return;
 
 	set_char_color(AT_YELLOW, ch);
-	ch_printf(ch, "SMAUG %s.%s\n\r", SMAUG_VERSION_MAJOR, SMAUG_VERSION_MINOR);
+	ch_printf(ch, "Kallaikia (SMAUG) %s.%s.%s \n\r", SMAUG_VERSION_MAJOR, SMAUG_VERSION_MINOR, KALLAIKIA_VERSION);
 
 	if(IS_IMMORTAL(ch))
-	  ch_printf(ch, "Compiled on %s at %s.\n\r", __DATE__, __TIME__);
+	  ch_printf(ch, "Compilado o %s en %s.\n\r", __DATE__, __TIME__);
 
 	return;
 }

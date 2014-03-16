@@ -2831,8 +2831,8 @@ void do_omenu( CHAR_DATA *ch, char *argument )
 	 
     if ( arg1[0] == '\0' )
     {
-        send_to_char( "Syntax: omenu <object> [page]  \n\r",     ch );
-        send_to_char( "      Where:    <object> is a prototype object  \n\r",     ch );
+        send_to_char( "Sintaxis: omenu <object> [page]  \n\r",     ch );
+        send_to_char( "      Donde:    <object> is a prototype object  \n\r",     ch );
         send_to_char( "            and  <page>  is an optional letter to select menu-pages\n\r",     ch );
         return;
     }
@@ -2904,7 +2904,7 @@ void do_mmenu( CHAR_DATA *ch, char *argument )
 	 
     if ( arg1[0] == '\0' )
     {
-        send_to_char( "Syntax: mmenu <victim> [page]  \n\r",     ch );
+        send_to_char( "Sintaxis: mmenu <victim> [page]  \n\r",     ch );
         send_to_char( "      Where:    <victim> is a prototype mob  \n\r",     ch );
         send_to_char( "            and  <page>  is an optional letter to select menu-pages\n\r",     ch );
         return;
@@ -3044,14 +3044,14 @@ void do_save( CHAR_DATA *ch, char *argument )
     if ( IS_NPC(ch) )
 	return;
     if ( ch->level < 2 ) {
-	send_to_char_color( "&BYou must be at least second level to save.\n\r", ch );
+	send_to_char_color( "&BDebes chegar a nivel 2 antes de gardar.\n\r", ch );
 	return;
     }
     WAIT_STATE( ch, 2 ); /* For big muds with save-happy players, like RoD */
     update_aris(ch);     /* update char affects and RIS */
     save_char_obj( ch );
     saving_char = NULL;
-    send_to_char( "Saved...\n\r", ch );
+    send_to_char( "Gardado ...\n\r", ch );
     return;
 }
 
@@ -3149,7 +3149,7 @@ void do_lead( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC( victim ) )
     {
-	ch_printf( ch, "You cannot lead mobiles.\n\r" );
+	ch_printf( ch, "Non podes liderar criaturas ou actores.\n\r" );
 	return;
     }
 
@@ -3171,7 +3171,7 @@ void do_lead( CHAR_DATA *ch, char *argument )
 
     if ( victim->level > 25 )
     {
-	ch_printf( ch, "You cannot lead characters over level 25.\n\r", ch );	
+	ch_printf( ch, "Non podes liderar persoaxes por riba do nivel 25.\n\r", ch );	
 	return;
     }
 
@@ -3204,7 +3204,7 @@ void do_follow( CHAR_DATA *ch, char *argument )
 
     if ( IS_AFFECTED(ch, AFF_CHARM) && ch->master )
     {
-	act( AT_PLAIN, "But you'd rather follow $N!", ch, NULL, ch->master, TO_CHAR );
+	act( AT_PLAIN, "Pero ainda estás seguindo a $N!", ch, NULL, ch->master, TO_CHAR );
 	return;
     }
 
@@ -3212,7 +3212,7 @@ void do_follow( CHAR_DATA *ch, char *argument )
     {
 	if ( !ch->master )
 	{
-	    send_to_char( "You already follow yourself.\n\r", ch );
+	    send_to_char( "Xa te sigues a ti mesmo.\n\r", ch );
 	    return;
 	}
 	stop_follower( ch );
@@ -3366,23 +3366,23 @@ void do_order( CHAR_DATA *ch, char *argument )
 
     if ( arg[0] == '\0' || argument[0] == '\0' )
     {
-	send_to_char( "Order whom to do what?\n\r", ch );
+	send_to_char( "Ordear qué a quén?\n\r", ch );
 	return;
     }
 
     if ( get_timer( ch, TIMER_PKILLED) > 0 )
     {
-        send_to_char( "You have been killed in the past five minutes.\n\r", ch );
+        send_to_char( "Morriche nos últimos 5 minutos.\n\r", ch );
         return;
     }
 
     if ( IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "You feel like taking, not giving, orders.\n\r", ch );
+	send_to_char( "Sínteste como recibindo, e non dando ordes.\n\r", ch );
 	return;
     }
 
-    if ( !str_cmp( arg, "all" ) )
+    if ( !str_cmp( arg, "todo" ) )
     {
 	fAll   = TRUE;
 	victim = NULL;
@@ -3392,19 +3392,19 @@ void do_order( CHAR_DATA *ch, char *argument )
 	fAll   = FALSE;
 	if ( ( victim = get_char_room( ch, arg ) ) == NULL )
 	{
-	    send_to_char( "Non estan aqui.\n\r", ch );
+	    send_to_char( "Non estan aquí.\n\r", ch );
 	    return;
 	}
 
 	if ( victim == ch )
 	{
-	    send_to_char( "Aye aye, right away!\n\r", ch );
+	    send_to_char( "Ai ai ai, boa dirección!\n\r", ch );
 	    return;
 	}
 
 	if ( !IS_AFFECTED(victim, AFF_CHARM) || victim->master != ch )
 	{
-	    send_to_char( "Do it yourself!\n\r", ch );
+	    send_to_char( "Faino por ti mesmo!\n\r", ch );
 	    return;
 	}
     }
@@ -3418,20 +3418,20 @@ void do_order( CHAR_DATA *ch, char *argument )
 	&& ( fAll || och == victim ) )
 	{
 	    found = TRUE;
-	act( AT_ACTION, "$n orders you to '$t'.", ch, argument, och, TO_VICT );
+	act( AT_ACTION, "$n ordeache '$t'.", ch, argument, och, TO_VICT );
 	    interpret( och, argument );
 	}
     }
 
     if ( found )
     {
-        sprintf( log_buf, "%s: order %s.", ch->name, argbuf );
+        sprintf( log_buf, "%s: ordea %s.", ch->name, argbuf );
         log_string_plus( log_buf, LOG_NORMAL, ch->level );
  	send_to_char( "Ok.\n\r", ch );
         WAIT_STATE( ch, 12 );
     }
     else
-	send_to_char( "You have no followers here.\n\r", ch );
+	send_to_char( "Non tes seguidores aquí.\n\r", ch );
     return;
 }
 
@@ -3462,9 +3462,9 @@ void do_group( CHAR_DATA *ch, char *argument )
 
 	leader = ch->leader ? ch->leader : ch;
         set_char_color( AT_DGREEN, ch );
-        ch_printf( ch, "\n\rFollowing %-12.12s     [hitpnts]   [ magic ] [mst] [mvs] [race]%s\n\r",
+        ch_printf( ch, "\n\rSeguindo %-12.12s     [dano]   [ maxia ] [mst] [mvs] [raza]%s\n\r",
 		PERS(leader, ch),
-		ch->level < LEVEL_AVATAR ? " [to lvl]" : "" );
+		ch->level < LEVEL_AVATAR ? " [ao nvl]" : "" );
 	for ( gch = first_char; gch; gch = gch->next )
 	{
 	    if ( is_same_group( gch, ch ) )
@@ -3474,7 +3474,7 @@ void do_group( CHAR_DATA *ch, char *argument )
 		  ch_printf( ch,
 			"[%2d %s] %-16s %4s/%4s hp %4s/%4s %s %4s/%4s mv %5s xp\n\r",
 		    	gch->level,
-		    	IS_NPC(gch) ? "Mob" : class_table[gch->class]->who_name,
+		    	IS_NPC(gch) ? "Criat" : class_table[gch->class]->who_name,
 		    	capitalize( PERS(gch, ch) ),
 		    	"????",   
 		    	"????",
@@ -3498,7 +3498,7 @@ void do_group( CHAR_DATA *ch, char *argument )
 		    ch_printf( ch, "%-2d %2.2s %3.3s",
 			gch->level,
 			buf,
-			IS_NPC(gch) ? "Mob" : class_table[gch->class]->who_name );
+			IS_NPC(gch) ? "Criat" : class_table[gch->class]->who_name );
 		    set_char_color( AT_DGREEN, ch );
 		    send_to_char( "]  ", ch );
 		    set_char_color( AT_GREEN, ch );
@@ -3538,20 +3538,21 @@ void do_group( CHAR_DATA *ch, char *argument )
                     ch_printf( ch, "%5d ",
                         gch->move );
 		    ch_printf( ch, "%6s ",
-			gch->race == 0 ? "human" :
-			gch->race == 1 ? "elf" :
-			gch->race == 2 ? "dwarf" :
+			gch->race == 0 ? "humano" :
+			gch->race == 1 ? "elfo" :
+			gch->race == 2 ? "anano" :
                         gch->race == 3 ? "hlflng" :
                         gch->race == 4 ? "pixie" :
-                        gch->race == 6 ? "h-ogre" :
-                        gch->race == 7 ? "h-orc" :
-                        gch->race == 8 ? "h-trol" :
-                        gch->race == 9 ? "h-elf" :
+                        gch->race == 6 ? "m-ogro" :
+                        gch->race == 7 ? "m-orco" :
+                        gch->race == 8 ? "m-trol" :
+                        gch->race == 9 ? "m-elfo" :
                         gch->race ==10 ? "gith" :
 			gch->race ==11 ? "drow" :
-			gch->race ==12 ? "seaelf" :
-			gch->race ==13 ? "lizard" :
-			gch->race ==14 ? "gnome" :
+			gch->race ==12 ? "elfo-m" :
+			gch->race ==13 ? "lagart" :
+			gch->race ==14 ? "gnomo" :
+			gch->race ==15 ? "demo" :
 					 "" );
 		    set_char_color( AT_GREEN, ch );
 		    if ( gch->level < LEVEL_AVATAR )
@@ -3563,14 +3564,14 @@ void do_group( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    if ( !strcmp( arg, "disband" ))
+    if ( !strcmp( arg, "desbandar" ))
     {
 	CHAR_DATA *gch;
 	int count = 0;
 
 	if ( ch->leader || ch->master )
 	{
-	    send_to_char( "You cannot disband a group if you're following someone.\n\r", ch );
+	    send_to_char( "Non podes desbandar un grupo se estás seguindo a alguén.\n\r", ch );
 	    return;
 	}
 	
@@ -3582,19 +3583,19 @@ void do_group( CHAR_DATA *ch, char *argument )
 		gch->leader = NULL;
 		gch->master = NULL;
 		count++;
-		send_to_char( "Your group is disbanded.\n\r", gch );
+		send_to_char( "O teu grupo foi desbandado.\n\r", gch );
 	    }
 	}
 
 	if ( count == 0 )
-	   send_to_char( "You have no group members to disband.\n\r", ch );
+	   send_to_char( "Non quedan membros no grupo para desbandar.\n\r", ch );
 	else
-	   send_to_char( "You disband your group.\n\r", ch );
+	   send_to_char( "Desbandache o grupo.\n\r", ch );
 	
 	return;
     }
 
-    if ( !strcmp( arg, "all" ) )
+    if ( !strcmp( arg, "todos" ) )
     {
 	CHAR_DATA *rch;
 	int count = 0;
@@ -3618,45 +3619,45 @@ void do_group( CHAR_DATA *ch, char *argument )
 	}
 	
 	if ( count == 0 )
-	  send_to_char( "You have no eligible group members.\n\r", ch );
+	  send_to_char( "Non tes membros elexibles para o grupo.\n\r", ch );
 	else
 	{
-     	   act( AT_ACTION, "$n groups $s followers.", ch, NULL, NULL, TO_ROOM );
-	   send_to_char( "You group your followers.\n\r", ch );
+     	   act( AT_ACTION, "$n agrupa $s seguidores.", ch, NULL, NULL, TO_ROOM );
+	   send_to_char( "Agrupas aos teus seguidores.\n\r", ch );
 	}
 	return;
     }
 
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
-	send_to_char( "Non estan aqui.\n\r", ch );
+	send_to_char( "Non están aquí.\n\r", ch );
 	return;
     }
 
     if ( ch->master || ( ch->leader && ch->leader != ch ) )
     {
-	send_to_char( "But you are following someone else!\n\r", ch );
+	send_to_char( "Pero estás seguindo a alguén máis!\n\r", ch );
 	return;
     }
 
     if ( victim->master != ch && ch != victim )
     {
-	act( AT_PLAIN, "$N isn't following you.", ch, NULL, victim, TO_CHAR );
+	act( AT_PLAIN, "$N non está a seguirte.", ch, NULL, victim, TO_CHAR );
 	return;
     }
 
     if ( victim == ch )
     {
-        act( AT_PLAIN, "You can't group yourself.", ch, NULL, victim, TO_CHAR );
+        act( AT_PLAIN, "Non podes agruparte contigo mesmo.", ch, NULL, victim, TO_CHAR );
         return;
     }
 
     if ( is_same_group( victim, ch ) && ch != victim )
     {
 	victim->leader = NULL;
-	act( AT_ACTION, "$n removes $N from $s group.",   ch, NULL, victim, TO_NOTVICT );
-	act( AT_ACTION, "$n removes you from $s group.",  ch, NULL, victim, TO_VICT    );
-	act( AT_ACTION, "You remove $N from your group.", ch, NULL, victim, TO_CHAR    );
+	act( AT_ACTION, "$n desbanda a $N do grupo $s.",   ch, NULL, victim, TO_NOTVICT );
+	act( AT_ACTION, "$n desbandate do grupo $s.",  ch, NULL, victim, TO_VICT    );
+	act( AT_ACTION, "Desbandas a $N do grupo.", ch, NULL, victim, TO_CHAR    );
 	return;
     }
 
@@ -3665,16 +3666,16 @@ void do_group( CHAR_DATA *ch, char *argument )
     ||   ( IS_PKILL( ch ) != IS_PKILL( victim ) ) )
     && !IS_IMMORTAL( ch ) )
     {
-	act( AT_PLAIN, "$N cannot join $n's group.",     ch, NULL, victim, TO_NOTVICT );
-	act( AT_PLAIN, "You cannot join $n's group.",    ch, NULL, victim, TO_VICT    );
-	act( AT_PLAIN, "$N cannot join your group.",     ch, NULL, victim, TO_CHAR    );
+	act( AT_PLAIN, "$N non pode unirse ao grupo $n.",     ch, NULL, victim, TO_NOTVICT );
+	act( AT_PLAIN, "Non podes unirte ao grupo $n.",    ch, NULL, victim, TO_VICT    );
+	act( AT_PLAIN, "$N non pode unirse ao teu grupo.",     ch, NULL, victim, TO_CHAR    );
 	return;
     }
 
     victim->leader = ch;
-    act( AT_ACTION, "$N joins $n's group.", ch, NULL, victim, TO_NOTVICT);
-    act( AT_ACTION, "You join $n's group.", ch, NULL, victim, TO_VICT    );
-    act( AT_ACTION, "$N joins your group.", ch, NULL, victim, TO_CHAR    );
+    act( AT_ACTION, "$N únese ao grupo $n.", ch, NULL, victim, TO_NOTVICT);
+    act( AT_ACTION, "Úneste áo grupo $n.", ch, NULL, victim, TO_VICT    );
+    act( AT_ACTION, "$N únese ao teu grupo.", ch, NULL, victim, TO_CHAR    );
     return;
 }
 
@@ -3800,7 +3801,7 @@ void do_gtell( CHAR_DATA *ch, char *argument )
     /*
      * Note use of send_to_char, so gtell works on sleepers.
      */
-/*    sprintf( buf, "%s tells the group '%s'\n\r", ch->name, argument );*/
+/*    sprintf( buf, "%s dice ao grupo '%s'\n\r", ch->name, argument );*/
     for ( gch = first_char; gch; gch = gch->next )
     {
 	if ( is_same_group( gch, ch ) )
@@ -3815,18 +3816,18 @@ void do_gtell( CHAR_DATA *ch, char *argument )
 				      knows_language(ch, ch->speaking, gch));
 
 		if ( speakswell < 85 )
-		    ch_printf( gch, "%s tells the group '%s'\n\r", ch->name, translate(speakswell, argument, lang_names[speaking]) );
+		    ch_printf( gch, "%s dice ao grupo '%s'\n\r", ch->name, translate(speakswell, argument, lang_names[speaking]) );
 		else
-		    ch_printf( gch, "%s tells the group '%s'\n\r", ch->name, argument );
+		    ch_printf( gch, "%s dice ao grupo '%s'\n\r", ch->name, argument );
 	    }
 	    else
-		ch_printf( gch, "%s tells the group '%s'\n\r", ch->name, argument );
+		ch_printf( gch, "%s dice ao grupo '%s'\n\r", ch->name, argument );
 #else
 	    if ( knows_language( gch, ch->speaking, gch )
 	    ||  (IS_NPC(ch) && !ch->speaking) )
-		ch_printf( gch, "%s tells the group '%s'\n\r", ch->name, argument );
+		ch_printf( gch, "%s dice ao grupo '%s'\n\r", ch->name, argument );
 	    else
-		ch_printf( gch, "%s tells the group '%s'\n\r", ch->name, scramble(argument, ch->speaking) );
+		ch_printf( gch, "%s dice ao grupo '%s'\n\r", ch->name, scramble(argument, ch->speaking) );
 #endif
 	}
     }
@@ -3967,11 +3968,11 @@ int const lang_array[] = {
  LANG_CLAN, LANG_GITH, LANG_GNOME, LANG_UNKNOWN };
 
 char * const lang_names[] = {
- "common", "elvish", "dwarven", "pixie", "ogre",
- "orcish", "trollese", "rodent", "insectoid",
- "mammal", "reptile", "dragon", "spiritual",
- "magical", "goblin", "god", "ancient",
- "halfling", "clan", "gith", "gnomish", "" };
+ "común", "elfica", "anana", "pixie", "ogra",
+ "orca", "trollesca", "rodenta", "insectoide",
+ "mamífera", "reptiloide", "dragóns", "espiritual",
+ "máxica", "goblin", "deuses", "anciá",
+ "halfling", "clan", "gith", "gnoma", "" };
 
 
 /* Note: does not count racial language.  This is intentional (for now). */
@@ -3997,11 +3998,11 @@ void do_speak( CHAR_DATA *ch, char *argument )
 	
 	argument = one_argument(argument, arg );
 	
-	if ( !str_cmp( arg, "all" ) && IS_IMMORTAL( ch ) )
+	if ( !str_cmp( arg, "todos" ) && IS_IMMORTAL( ch ) )
 	{
 		set_char_color( AT_SAY, ch );
 		ch->speaking = ~LANG_CLAN;
-		send_to_char( "Now speaking all languages.\n\r", ch );
+		send_to_char( "Ahora falas todas as linguas.\n\r", ch );
 		return;
 	}
 	for ( langs = 0; lang_array[langs] != LANG_UNKNOWN; langs++ )
@@ -4013,11 +4014,11 @@ void do_speak( CHAR_DATA *ch, char *argument )
 					continue;
 				ch->speaking = lang_array[langs];
 				set_char_color( AT_SAY, ch );
-				ch_printf( ch, "You now speak %s.\n\r", lang_names[langs] );
+				ch_printf( ch, "Agora falas %s.\n\r", lang_names[langs] );
 				return;
 			}
 	set_char_color( AT_SAY, ch );
-	send_to_char( "You do not know that language.\n\r", ch );
+	send_to_char( "Non sabes esa lingua.\n\r", ch );
 }
 
 void do_languages( CHAR_DATA *ch, char *argument )
@@ -4026,7 +4027,7 @@ void do_languages( CHAR_DATA *ch, char *argument )
 	int lang;
 	
 	argument = one_argument( argument, arg );
-	if ( arg[0] != '\0' && !str_prefix( arg, "learn" ) &&
+	if ( arg[0] != '\0' && !str_prefix( arg, "aprender" ) &&
 		!IS_IMMORTAL(ch) && !IS_NPC(ch) )
 	{
 		CHAR_DATA *sch;
@@ -4038,7 +4039,7 @@ void do_languages( CHAR_DATA *ch, char *argument )
 		argument = one_argument( argument, arg2 );
 		if ( arg2[0] == '\0' )
 		{
-			send_to_char( "Learn which language?\n\r", ch );
+			send_to_char( "Aprender qué lingua?\n\r", ch );
 			return;
 		}
 		for ( lang = 0; lang_array[lang] != LANG_UNKNOWN; lang++ )
@@ -4050,24 +4051,24 @@ void do_languages( CHAR_DATA *ch, char *argument )
 		}
 		if ( lang_array[lang] == LANG_UNKNOWN )
 		{
-			send_to_char( "That is not a language.\n\r", ch );
+			send_to_char( "Iso non é unha lingua.\n\r", ch );
 			return;
 		}
 		if ( !(VALID_LANGS & lang_array[lang]) )
 		{
-			send_to_char( "You may not learn that language.\n\r", ch );
+			send_to_char( "Non debes aprender esa lingua.\n\r", ch );
 			return;
 		}
 		if ( ( sn = skill_lookup( lang_names[lang] ) ) < 0 )
 		{
-			send_to_char( "That is not a language.\n\r", ch );
+			send_to_char( "Iso non é unha lingua.\n\r", ch );
 			return;
 		}
 		if ( race_table[ch->race]->language & lang_array[lang] ||
 			 lang_array[lang] == LANG_COMMON ||
 			 ch->pcdata->learned[sn] >= 99 )
 		{
-			act( AT_PLAIN, "You are already fluent in $t.", ch,
+			act( AT_PLAIN, "Xa falas $t fluídamente.", ch,
 				 lang_names[lang], NULL, TO_CHAR );
 			return;
 		}
@@ -4079,13 +4080,13 @@ void do_languages( CHAR_DATA *ch, char *argument )
 				break;
 		if ( !sch )
 		{
-			send_to_char( "There is no one who can teach that language here.\n\r", ch );
+			send_to_char( "Non existe ninguén que poda ensinarche esa lingua aquí.\n\r", ch );
 			return;
 		}
 		if ( countlangs(ch->speaks) >= (ch->level / 10) &&
 			 ch->pcdata->learned[sn] <= 0 )
 		{
-			act( AT_TELL, "$n tells you 'You may not learn a new language yet.'",
+			act( AT_TELL, "$n diche 'Ainda non debes aprender esa lingua.'",
 				 sch, NULL, ch, TO_VICT );
 			return;
 		}
@@ -4093,7 +4094,7 @@ void do_languages( CHAR_DATA *ch, char *argument )
 		prac = 2 - (get_curr_cha(ch) / 17);
 		if ( ch->practice < prac )
 		{
-			act( AT_TELL, "$n tells you 'You do not have enough practices.'",
+			act( AT_TELL, "$n diche 'Non tes suficientes prácticas.'",
 				 sch, NULL, ch, TO_VICT );
 			return;
 		}
@@ -4104,19 +4105,19 @@ void do_languages( CHAR_DATA *ch, char *argument )
 		ch->pcdata->learned[sn] = UMIN(ch->pcdata->learned[sn], 99);
 		SET_BIT( ch->speaks, lang_array[lang] );
 		if ( ch->pcdata->learned[sn] == prct )
-			act( AT_PLAIN, "You begin lessons in $t.", ch, lang_names[lang],
+			act( AT_PLAIN, "Comezas as leccións na lingua $t.", ch, lang_names[lang],
 				 NULL, TO_CHAR );
 		else if ( ch->pcdata->learned[sn] < 60 )
-			act( AT_PLAIN, "You continue lessons in $t.", ch, lang_names[lang],
+			act( AT_PLAIN, "Continúas as túas leccións na lingua $t.", ch, lang_names[lang],
 				 NULL, TO_CHAR );
 		else if ( ch->pcdata->learned[sn] < 60 + prct )
-			act( AT_PLAIN, "You feel you can start communicating in $t.", ch,
+			act( AT_PLAIN, "Sintes que xa comezas a comunicarte na lingua $t.", ch,
 				 lang_names[lang], NULL, TO_CHAR );
 		else if ( ch->pcdata->learned[sn] < 99 )
-			act( AT_PLAIN, "You become more fluent in $t.", ch,
+			act( AT_PLAIN, "Xa falas a lingua $t con fluided.", ch,
 				 lang_names[lang], NULL, TO_CHAR );
 		else
-			act( AT_PLAIN, "You now speak perfect $t.", ch, lang_names[lang],
+			act( AT_PLAIN, "Xa falas a lingua $t perfectamente.", ch, lang_names[lang],
 				 NULL, TO_CHAR );
 		return;
 	}
@@ -4175,11 +4176,11 @@ init_profanity_checker()
 {
 #ifndef WIN32
   bigregex = (char *) malloc (4096);
-  add_profane_word("fuck");
+  add_profane_word("joder");
   /* skip over first 2 slashes and bar */
   bigregex+=3;
   
-  add_profane_word("shit");
+  add_profane_word("merda");
   add_profane_word("cunt");
   
   preg = re_comp( bigregex );

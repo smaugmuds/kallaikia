@@ -4957,7 +4957,7 @@ if isimmort($n)
 or isnpc($n)
 or guild($n) == Irmandade dos Mages
 else
-mpechoat $n You may not trespass on this guild.
+mpechoat $n Non debes entrar nesta Irmandade.
 mptransfer $n 21037
 endif
 ~
@@ -5136,7 +5136,7 @@ if isimmort($n)
 or isnpc($n)
 or guild($n) == Irmandade dos Vampires
 else
-  mea 0.$n You may not trespass on this guild.
+  mea 0.$n Non debes entrar nesta Irmandade.
   mptrans 0.$n 21023
 endif
 ~
@@ -5748,7 +5748,7 @@ Estás no adro principal da entrada da Torre de Ith en Brigantia. Un corredor
 leva ao Norte encara a cámara principal, no extremo do cal se ergue o altar da 
 Torre, onde todos veñen a rezar. cara o Leste e Oeste son adros que levan á
 Irmandade dos Cregoss. Os sacerdotes e sacerdotisas da Torre permitiron que
-os clérigos establecesen a súa Irmandade dentro dos límites da Torre por unha
+os cregos establecesen a súa Irmandade dentro dos límites da Torre por unha
 pequena taxa. Un gran arco cara o Sur levarate fóra.
 ~
 0 1048588 0
@@ -5776,7 +5776,7 @@ S
 #21170
 A Irmandade dos Cregoss~
 Estás en pé no adro Leste da Irmandade dos Cregoss, unha organización 
-dedicada a ensinar clérigos xuntos en adoración. Pinturas e tapices decoran as
+dedicada a ensinar cregos xuntos en adoración. Pinturas e tapices decoran as
 paredes, mentres que unha gran alfombra oval cobre o chan de mármore. Para ao
 Leste esta o Altar do Mal, mentres dous corredores esténdense cara o Norte
 e Sur do adro na entrada da catedral e cara o Oeste.
@@ -5815,11 +5815,11 @@ endif
 S
 #21171
 A Cámara da Oración~
-Esta cámara circular é onde os clérigos da Irmandade veñen para rezar e 
+Esta cámara circular é onde os cregos da Irmandade veñen para rezar e 
 meditar, así como para adestrar as súas varias habilidades e maxias. Un
 círculo de velas brancas e negras asentase no centro da cámara, chiscando 
 en voz baixa, as paredes están cubertas con tapicerías dos deuses coñecidos 
-os cales os clérigos adoran. Un longo corredor cara o Sur leva de volta 
+os cales os cregos adoran. Un longo corredor cara o Sur leva de volta 
 cara o Adro Leste da Irmandade dos Cregoss.
 ~
 0 3145740 0
@@ -5865,7 +5865,7 @@ intocable templo. O Mal aceptado por aqueles da Torre, o Crego da Irmandade
 foi autorizado a manter o santuario, debido a unha necesidade de manter a
 neutralidade. O altar está feito de fría obsidiana e parece irradiar unha
 escuridade, e tradición de permanencia, a preservación ea morte a
-ser gravado nel. Os clérigos do mal, moitas veces veñen aquí para recibir
+ser gravado nel. Os cregos do mal, moitas veces veñen aquí para recibir
 bendición e curarse.
 ~
 0 3145740 0
@@ -5893,9 +5893,9 @@ endif
 |
 S
 #21177
-A Irmandade dos Cregoss~
-Estás en pé no adro Oeste da Irmandade dos Cregoss, unha organización 
-dedicada a causar clérigos xuntos en adoración. Pinturas e tapices 
+A Irmandade dos Cregos~
+Estás en pé no adro Oeste da Irmandade dos Cregos, unha organización 
+dedicada a causar cregos xuntos en adoración. Pinturas e tapices 
 decoran as paredes, mentres que un gran alfombra oval cobre o chan de mármore.
 Para o Oeste está o Altar do Ben, mentres que un corredor se estende cara o
 Norte. A entrada ao adro da catedral está o cara o Leste.
@@ -5912,14 +5912,14 @@ A entrada para o Adro da Torre está cara o Leste.
 ~
 0 -1 21168
 D3
-O Altar do Ben está situadoi cara o Oeste.
+O Altar do Ben está situado cara o Oeste.
 ~
 ~
 0 -1 21180
 > entry_prog 100~
 if isimmort($n)
 or isnpc($n)
-or guild($n) == Irmandade dos Cregoss
+or guild($n) == Irmandade dos Cregos
 else
   mea 0.$n Non debes entrar en esta Irmandade.
   mptrans 0.$n 21168
@@ -5929,7 +5929,7 @@ endif
 S
 #21178
 A Cámara da Caridade~
-Esta gran cámara é onde os clérigos da Irmandade deixan doazóns para os 
+Esta gran cámara é onde os cregos da Irmandade deixan doazóns para os 
 seus camaradas. A sala está chea dunha infinidade de artefactos relixiosos 
 e símbolos, así como de miles de frascos de auga bendita. Un longo corredor 
 leva de volta cara o adro Oeste da Irmandade dos Cregos cara o Sur.
@@ -5983,12 +5983,12 @@ Norte son cámaras de doazón, mentres que a entrada da catedral é cara o Sur.
 ~
 0 1048588 0
 D0
-The carpeted walkway leads up cara o altar.
+O camiño dirixese cara o altar.
 ~
 ~
 0 -1 21182
 D2
-The carpeted walkway leads back cara o entrance.
+O camiño dirixese de volta cara a entrada.
 ~
 ~
 0 -1 21168
@@ -6017,7 +6017,7 @@ O corredor leva de volta cara os bancos da Torre.
 ~
 0 -1 21181
 D3
-A Cámara de Doazóns é cara o Oeste.
+A Cámara de Doazóns está cara o Oeste.
 ~
 ~
 0 -1 21193
@@ -6076,9 +6076,9 @@ A foresta exténdese cara o NorLeste.
 > entry_prog 100~
 if isimmort($n)
 or isnpc($n)
-or guild($n) == Irmandade dos Druids
+or guild($n) == Irmandade dos Druidas
 else
-  mea 0.$n You may not trespass on this guild.
+  mea 0.$n Non debes entrar nesta Irmandade.
   mptrans 0.$n 21185
 endif
 ~
@@ -6086,43 +6086,44 @@ endif
 S
 #21187
 A Irmandade dos Druids~
-The ancient cellar of the Temple of Brigantia has been reconstructed into
-a magnificent guild adro.  Potted plants line the walls of the main adro,
-while creeping vines cover the walls.  In the center of the room, seven
-black lacquer chairs circle an oaken table.  Four corridors lie in the
-four cardinal directions, while the thud of staff striking staff
-emerges from a room cara o Sur.
+A antiga adega do Templo de Brigantia foi reconstruído en un magnífico adro
+da alianza. Xarróns de plantas revisten as paredes do adro principal, 
+mentres trepadeiras cobren as paredes. No centro do cuarto, sete materias
+de laca negra circular nunha mesa de carballo. Catro corredores atópanse nas 
+catro direccións cardeais, mentres que o baque do persoal en folga emerxe
+dun cuarto de cara o Sur
 ~
 0 3145740 0
 D0
-A spacious room lies at the end of this corridor.
+Vese unha espaciosa estancia ao final deste corredor.
 ~
 ~
 0 -1 21188
 D2
-A training room cae cara o Sur.
+Unha estancia de entrenamento cae cara o Sur.
 ~
 ~
 0 -1 21190
 D3
-A silent room is located Oeste of here.
+Unha habitacion silenciosa esta ao Oeste de aquí.
 ~
 ~
 0 -1 21191
 D4
-A flight of stairs lead back up cara o Surface.
+Un tiro de escaleira levan de volta cara a superficie.
 ~
 ~
 0 -1 21186
 S
 #21188
-A Spacious Room~
-This spacious room is where the druids of the guild leave items for their
-fellow druids, and mounds of equipment, scrolls and potions are lying here.
-The tiled floor of the large room is covered with runes of preservation and
-permanence, giving you the feeling that items in this room could Survive
-even the greatest of disasters.  A corridor cara o Sur leads back to
-the main adro.
+Unha habitación espaciosa~
+Este espazoso cuarto é o lugar onde os druidas da Irmandade deixan os
+elementos para os seus compañeiros druidas, e montes de equipos,
+pergamiños e pocións están mentindo aquí. O chan frío da sala grande
+está cuberto con runas de preservación e permanencia, o que che dá
+a sensación de que elementos nesta sala poderían sobrevivir mesmo o
+maior dos desastres. Un corredor de cara o Sur leva de volta ao adro
+principal.
 ~
 0 3686412 0
 D2
@@ -6132,26 +6133,26 @@ The main adro of the guild cae cara o Sur.
 0 -1 21187
 S
 #21190
-The Trial of Lore~
-This room is where the druids come to train and meditate.  A large circle
-formed of green shrubs lies in the center of the room, and within it spar
-two elder druids, each wielding a heavy oaken staff.  A corridor to the
-Norte leads back cara o main adro of the Irmandade dos Druids.
+O Xuízo do Saber~
+Este cuarto é o lugar onde os druidas veñen adestrar e meditar. Un gran círculo 
+formado de arbustos verdes está situado no centro da sala, e dentro del dous
+druidas máis vellos, cada un empuñando un pau de carballo pesado. Un corredor
+para o Norte leva de volta de cara o adro principal da Irmandade dos Druidas.
 ~
 0 3145740 0
 D0
-A corridor leads back cara o guild's main adro.
+A corridor volve cara o adro principal da Irmandade.
 ~
 ~
 0 -1 21187
 S
 #21191
-A Room of Silence~
-This strange room is rather empty, save for a single oaken podium which
-sits in the center of the eerily silent chamber.  Upon it rests a tome so
-fraught with age that its pages are a sickened yellow.  This is where the
-druids of the guild leave messages for one another.  A corridor to the
-Leste leads back cara o main adro of the Irmandade dos Druids.
+A Estancia do Silencio~
+Este estancia estraña está bastante baleiro, excepto por un único podio de
+carballo que está situado no centro da cámara estrañamente silenciosa. Sobre
+ela repousa un vello tomo coas páxinas dun amarelo adoecido. Este é o lugar
+onde os druidas da Irmandade deixan mensaxes para outro. Un corredor para o 
+Leste leva de volta cara o adro principal da Irmandade dos Druidas.
 ~
 0 3146252 0
 D1
@@ -6161,70 +6162,71 @@ A corridor leads back cara o main adro of the guild.
 0 -1 21187
 S
 #21192
-Lesteern Donation Room~
-This small chamber is where those of charitable hearts leave behind items
-of use to other adventurers.  The priests and priestesses of the cathedral
-do not condone those who leave armor and weapons here however, as that is
-reserved for the chamber cara o far Oeste.
+Cámara de Doazóns Leste~
+Esta pequena cámara é o lugar onde a xente de corazón caritativo deixa atrás
+elementos que podan usar outros aventureiros. Os sacerdotes e sacerdotisas da
+Torre non toleran aos que deixan armaduras e armas aquí, con todo, está
+reservado. De volta para a cámara de cara o Oeste.
 ~
 0 1851404 0
 D3
-A carpeted walkway leads back cara o pews.
+Unha pasarela con alfombras leva de volta aos bancos.
 ~
 ~
 0 -1 21182
 S
 #21193
-Oesteern Donation Room~
-This small chamber is where those of charitable hearts may leave behind
-weapons and pieces of armor for others.  The priests and priestesses of
-the cathedral do not condone those who leave other types of items here,
-as that is reserved for the room cara o far Leste.
+Cámara de Doazóns Oeste~
+Esta pequena cámara é o lugar onde a xente de corazón caritativo deixa atrás
+elementos que podan usar outros aventureiros. Os sacerdotes e sacerdotisas da
+Torre non toleran aos que deixan armaduras e armas aquí, con todo, está
+reservado. De volta para a cámara de cara o Leste.
 ~
 0 1851404 0
 D1
-A carpeted walkway leads back cara o pews.
+Unha pasarela con alfombras leva de volta aos bancos.
 ~
 ~
 0 -1 21182
 S
 #21194
-The Cathedral Altar~
-You are before the cathedral's altar.  Those of ill luck or poor faith often
-come here to pray to their God for guidance, or chance.  An aisle leads back
-Sur through the cathedral, while a large public board cae cara o Oeste.
+Altar da Torre de Ith~
+Estás diante do altar da Torre. Aqueles de mala sorte ou mala fe, a miúdo
+veñen aquí para rezar ao seu Deus para orientación, ou azar. Un corredor leva
+de volta ao Sur a través da Torre, mentres que un gran consello público cae
+de cara o Oeste.
 ~
 0 1319944 0
 D2
-The walkway leads back cara o pews.
+Unha pasarela con alfombras leva de volta aos bancos.
 ~
 ~
 0 -1 21182
 D3
-The public board room of Brigantia cae cara o Oeste.
+O Taboeiro Público de Brigantia cae cara o Oeste.
 ~
 ~
 0 -1 21174
 S
 #21200
-A Forested Path~
-You walk on a forested path within the city of Brigantia.  O tramo stretches
-Cara o NorteLeste, while the Praza de Brigantia cae cara o SurOeste.
+Un camiño arborado~
+Andas nun camiño arborado dentro do Castro de Brigantia. O tramo ensancha 
+cara o NorteLeste, mentres que A Praza de Brigantia cae ao Suroeste.
 ~
 0 1048580 1
 D6
-O sendeiro leads deeper inCara o forest.
+O Sendeiro leva ao máis profundo cara ao bosque.
 ~
 ~
 0 -1 21201
 D9
-The Praza de Brigantia cae cara o SurOeste.
+A Praza de Brigantia cae cara o SurOeste.
 ~
 ~
 0 -1 21000
 S
 #21201
-A Forested Path~
+Un camiño arborado~
 You travel through a small forest along a path leading toward two unique
 structures, one atop a hill cara o Leste, one a short distance to the
 Norte.  O sendeiro becomes a hill cara o Leste, while the SurOesteern path 
@@ -6242,7 +6244,7 @@ This path leads back cara o Praza de Brigantia.
 0 -1 21200
 S
 #21202
-A Forested Path~
+Un camiño arborado~
 You pick up your pace as you begin nearing your destination.  The forested
 path has become a rather steep hill.  The way uphill is considerably harder
 to climb than the one downhill.
@@ -6282,15 +6284,15 @@ O sendeiro leads back to Praza de Brigantia.
 ~
 0 -1 21202
 E
-sign~
-The sign reads:
+sinal~
+A sinal ten gravado:
   Norte: A Irmandade dos Guerreiros
   SurOeste: Praza de Brigantia
-  Leste: Ranger's Guild
+  Leste: Irmandade dos Cazadores
 ~
 S
 #21205
-A Forested Path~
+Un camiño arborado~
 The forested path is much more narrow here than cara o Oeste.  Only
 an experienced ranger could run down this path without tripping a on
 tree's roots.  A fork in the path is cara o Oeste, while a steep hill
@@ -6329,42 +6331,42 @@ O sendeiro leads back cara o fork.
 0 -1 21205
 S
 #21208
-A Irmandade dos Rangers~
-You are at the top of the steep hill.  Climbable only by rangers, the guild
-wisely chose this location upon which to establish their adro.  The guild's
-adro itself is much less of an actual building, and much more of a reshaping
-of natural elements.  Situated around an open clearing in the forest, owing
-Cara o preference most rangers share for being in the open, only a scant few
-buildings can be seen, each scattered one from the other.  Paths lead off to
-the NorteLeste, Leste and Sur.
+A Irmandade dos Cazadores~
+Estás na parte superior do outeiro. Escalable soamente por gardas forestais,
+a alianza de sabios escolleu este lugar sobre o que establecer o seu adro. O
+adro propio da Irmandade menos dun edificio real, e moito máis unha
+reformulación de elementos naturais. Situado en torno a unha clareira aberta
+no bosque, debido a preferencia maioría dos cazadores por sair a ceo aberto,
+só uns escasos edificios se poden ver, cada un dispersado do outro. Camiños
+de conducen fóra ao NorteLeste, Leste e Sur.
 ~
 0 3145732 1
 D1
-O sendeiro leads off to a large clearing.
+O Sendeiro leva a unha gran clareira.
 ~
 ~
 0 -1 21210
 D2
-An ensorcelled building cae cara o Sur.
+Un edificio ​​enfeitizado cae cara o Sur
 ~
 ~
 0 -1 21212
 D5
-O sendeiro down the hill is a long one.
+O logon sendeiro segue baixando o outeiro.
 ~
 ~
 0 -1 21207
 D6
-A pratice yard is at the end of this path.
+Unha xarda de práctica está a finais deste camiño.
 ~
 ~
 0 -1 21213
 > entry_prog 100~
 if isimmort($n)
 or isnpc($n)
-or guild($n) == Irmandade dos Rangers
+or guild($n) == Irmandade dos Cazadores
 else
-  mea 0.$n You may not trespass on this guild.
+  mea 0.$n Non debes entrar nesta Irmandade.
   mptrans 0.$n 21207
 endif
 ~
@@ -6439,20 +6441,19 @@ The plaque reads:
 S
 #21236
 A Irmandade dos Guerreiros~
-You stand in a large stone structure which houses the Irmandade dos Guerreiros.
-Depictions of battle, heroism and physical prowess adorne the walls.  To
-the Leste is a large sparring circle, while a large room lies just to
-the Norte.  An archway cara o Sur leads back inCara o forest
-inside Brigantia.
+Estás en unha gran estrutura de pedra que alberga a Irmandade dos Guerreiros. 
+Representacións de batalla, heroísmo e destreza física adornan as paredes. Para 
+o Leste ábrese un gran círculo de puxilismo, mentres unha gran sala está sóa ao
+Norte. Un arco de cara o Sur leva de volta o cara ao bosque dentro Brigantia.
 ~
 0 3145740 0
 D0
-A large room cae cara o Norte.
+Unha larga estancia queda ao Norte.
 ~
 ~
 0 -1 21240
 D1
-A sparring circle is situated Leste of here.
+Un círculo de puxilismo está ao Leste de aquí.
 ~
 ~
 0 -1 21237
@@ -6466,7 +6467,7 @@ if isimmort($n)
 or isnpc($n)
 or guild($n) == Irmandade dos Guerreiros
 else
-  mea 0.$n You may not trespass on this guild.
+  mea 0.$n Non debes entrar nesta Irmandade.
   mptransfer 0.$n 21233
 endif
 ~
@@ -6474,19 +6475,20 @@ endif
 S
 #21237
 O Rondo de Puxilismo~
-A ring of steel outlines a sparring circle here.  The initiates of the
-warriors' guild have long been known to come here for training and insight
-on the ways of the warrior.  cara o Norte is a silent corner reserved for
-notes of great importance, while the guild's main adro is cara o Oeste.
+Un anel de aceiro traza un círculo de adestramento aquí. Os iniciados da
+Irmandade dos Guerreiros foron avisados para vir aquí para a formación e
+discernimento sobre os camiños do guerreiro. Cara ao norte está un canto
+silencioso reservado para notas de gran importancia, mentres o adro
+principal da Irmandade está de cara o Oeste.
 ~
 0 3145740 0
 D0
-A silent corner of the adro is cara o Norte.
+Un canto silencioso do adro queda ao Norte.
 ~
 ~
 0 -1 21239
 D3
-The main adro of the warriors' guild is Oeste of here.
+O adro principal da Irmandade dos Guerreiros queda ao Oeste de aquí.
 ~
 ~
 0 -1 21236
@@ -6517,7 +6519,7 @@ guildmembers in need.  The main adro is cara o Sur.
 ~
 0 3686412 0
 D1
-A silent corner in the adro is Leste of here.
+A silent corner in the adro is Leste de aquí.
 ~
 ~
 0 -1 21239
@@ -6533,12 +6535,13 @@ The plaque reads:
 ~
 S
 #21275
-The Brigantia Marina~
-The odor of fish assaults your senses as you inhale.  The Brigantia Marina
-is a rather large structure, housing several small boats and over a dozen
-rafts.  cara o Sur you can see the Brigantia River, while a dirt road
-cae cara o Norte.  A small path leads off cara o Leste, following the
-Brigantia river as it winds its way cara o Ocean.
+Marina de Brigantia~
+O cheiro a peixe asalta os teus sentidos así como respiras. A Marina de
+Brigantia é un pouco grande estrutura, abrigando varios barcos pequenos e
+máis dunha ducia de balsas. Cara o Sur podese ver o río de Brigantia, mentres
+unha estrada de terra queda de cara ao Norte. Un pequeno camiño leva fóra de
+cara o Leste, seguindo o Río Brigantia que segue o seu camiño de cara ao
+Océano.
 ~
 0 1048588 0
 D0
@@ -6568,7 +6571,7 @@ Rua Horizonte cae cara o Norte.
 ~
 0 -1 21038
 D1
-The Young Adventurer's Necessities is Leste of here.
+As Necesidades do Novo Aventureiro están ao leste de aquí.
 ~
 ~
 0 -1 21295
@@ -6585,41 +6588,41 @@ endif
 |
 S
 #21290
-The Ruins of the Concourse~
-You sigh longingly at the sight of Brigantia's ruined concourse. What was
-once a busy road is now a cobbled wasteland.  Debris from crushed buildings
-lies about, all that remains from that night of terror.  A single structure
-remains standing, a small house sitting beside an old elm tree.  To the
-Norte is the crumbling bridge.
+As ruínas da Fortaleza~
+Suspiras ansiosamente ante a visión da arruinada Fortaleza de Brigantia. A que
+foi unha vez unha estrada movida é agora un deserto de lastros. Cascallos de
+edificios esmagados é todo o que queda daquela noite de terror. Unha única
+estrutura permanece en pé, unha pequena casa asentada xunto a un olmo vello.
+Ao Norte está a Ponte Ruinosa.
 ~
 0 1048576 2
 D0
-The crumbling bridge is cara o Norte.
+A Ponte Ruinosa está cara o Norte.
 ~
 ~
 0 -1 21296
 D1
-The remains of the concourse continue cara o Leste.
+As ruínas da Fortaleza continúan cara o Leste.
 ~
 ~
 0 -1 21291
 S
 #21291
-Among the Ruins of the Concourse~
-You stand at what was once an intersection of roads among the remains of
-the ruined concourse.  Far cara o Leste is an ancient elm tree and a small,
-strange building.  Gazing Surward, you notice that, curiously enough,
-the Brigantia graveyard remains standing.  As you turn to move on, you
-notice a large chain dangling high above you, just within jumping reach.
+Ao longo das Ruínas da Fortaleza~
+Estás no que foi un cruce de camiños entre os restos da Fortaleza en ruínas.
+Cara o lonxano Leste ves un olmo antigo e un pequeno e estraño edificio.
+Mirando ao Sur, entendes que, curiosamente, o cemiterio Brigantia permanece
+de pé. Xiras para seguir adiante, tes que notar unha gran cadea colgada por
+riba de ti, só ao alcance dun chimpo.
 ~
 0 1048576 2
 D1
-Far cara o Leste you see an old elm tree.
+Lonxe de cara o Leste ves un vello olmo.
 ~
 ~
 0 -1 21292
 D2
-The entrance cara o graveyard is cara o Sur.
+A entrada de cara o cemiterio é o Cara Sur
 ~
 ~
 0 -1 21293
@@ -6635,39 +6638,39 @@ The great chain stretches inCara o clouds...
 0 -1 7914
 S
 #21292
-Near the Elm Tree~
-You are walking down what remains of a cobbled road, picking your way
-through the debris which clogs the unkempt street.  cara o Leste is the
-only remaining building of the concourse, as well as the ancient tree
-of Elm Street. 
+Cerca do Vello Olmo~
+Estás camiñando o que queda dunha estrada pavimentada, escollendo o teu camiño 
+entre os cascallos que atopas sobre a rúa despenteada. Cara o leste está a 
+única construción restante da Fortaleza, así como a árbore máis antiga da Rua
+do Olmo.
 ~
 0 1048576 2
 D1
-You can see the old tree and the eerie building.
+Podes ver a vella árbore eo edificio asustado.
 ~
 ~
 0 -1 21294
 D3
-This path leads back cara o crumbling bridge.
+Este camiño leva de volta de cara o desmoronamento da ponte.
 ~
 ~
 0 -1 21291
 S
 #21293
-Entrance cara o Graveyard~
-You are standing just outside the gates of the ancient Brigantia graveyard.
-A shiver runs down your spine as you remember the howling undead residing
-in the lower chambers of the place.  A path leads Surward inCara o 
-graveyard, while the ruins of the concourse are cara o Norte.
+Entrada do Camposanto~
+Estás en pé do lado de fóra das portas do antigo cemiterio de Brigantia. 
+Un calafrio percorre túa espiña ao lembrar a residencia dos mortos uivando 
+nas cámaras inferiores do lugar. Un camiño leva ao Sur cara ao camposanto,
+mentres que as ruínas da Fortaleza quedan ao Norte.
 ~
 0 1048580 2
 D0
-This path leads back cara o crumbling bridge.
+Este camiño leva de volta de cara o desmoronamento da ponte.
 ~
 ~
 0 -1 21291
 D2
-InCara o graveyard...
+En dirección ao Camposanto ...
 ~
 gate~
 1 -1 3600
@@ -6687,46 +6690,46 @@ This path leads back cara o crumbling bridge.
 0 -1 21292
 S
 #21295
-The Young Adventurer's Necessities~
-Water skins, rations and torches hang from the walls:  all necessary to 
-Survival when adventuring.  A stack of books which have been designed to
-help the young adventurer lie stacked in the rear of the shop.  To the
-Oeste is the entrance cara o Academia de Brigantia.
+Necesidades do Xove Aventureiro~
+Peles de auga, pensos e fachos colgados nas paredes: todas as medidas
+necesarias para a Supervivencia Aventureira. Unha pila de libros que foron
+deseñados para axudar o Novo Aventureiro amoréanse no fondo da tenda. Ao 
+Oeste está a entrada a Academia de Brigantia.
 ~
 0 1048588 0
 D3
-The entrance cara o Academia de Brigantia is cara o Oeste.
+A entrada a Academia de Brigantia está cara o Oeste.
 ~
 ~
 0 -1 21280
 S
 #21296
-Crossing the Precarious Bridge~
-You tread carefully across the crumbling bridge.  Gazing fearfully at the
-cracked supports, you feel a sense of relief to see they are still somewhat
-sturdy.  cara o Sur, the ruins of the old concourse spread haphazardly.
+Cruzando a Precaria Ponte~
+Pisas con coidado ao través a ponte a se desmoronar. Mirando con medo aos 
+soportes rachados, sentes unha sensación de alivio ao ver que aínda é bastante 
+resistente. Cara o Sur, as ruínas da antiga Fortaleza esténdense ao azar.
 ~
 0 1048580 2
 D0
-A dirt road cae cara o Norte.
+A sucia rúa exténdese ao Norte.
 ~
 ~
 0 -1 21081
 D2
-The ruins of the concourse are cara o Sur.
+As ruínas da Fortaleza caen cara o Sur.
 ~
 ~
 0 -1 21290
 > rand_prog 2~
-mpecho The damaged bridge suddenly groans, and shifts slightly.
+mpecho A ponte danada de súpeto agoniza en xemidos, e cambia lixeiramente.
 ~
 > rand_prog 2~
-mpecho A slight movement can be felt rumbling through the crumbling bridge.
+mpecho Un lixeiro movemento pode ser sentido xordo a través da ponte desmoroándose.
 ~
 |
 S
 #21297
-On the Brigantia River~
+No Río de Brigantia~
 You find yourself in a small artificial bay linking the Brigantia Marina
 Cara o town's beloved river.  The marina's beach is cara o Norte, while
 the river cae cara o Leste and Oeste.
@@ -6749,7 +6752,7 @@ The river continues in this direction.
 0 -1 21298
 S
 #21298
-On the Brigantia River~
+No Río de Brigantia~
 You are travelling across the Brigantia River.  Its blue waters are flowing
 slowly Oesteward, dragging along any debris.  Far cara o Leste you can make
 out a tunnel of some sort.
@@ -6767,7 +6770,7 @@ The river flows Oesteward.
 0 -1 21297
 S
 #21299
-On the Brigantia River~
+No Río de Brigantia~
 You are on the famed Brigantia River.  Its strong currents push driftwood
 and other floating objects Oesteward.  The blue waters themselves seem to
 emerge from a tunnel in the mountains cara o Leste.
@@ -6780,7 +6783,7 @@ The river flows Oesteward.
 0 -1 21298
 S
 #21300
-On the Brigantia River~
+No Río de Brigantia~
 The waters here are flowing slighty faster than cara o Leste.  Gazing Oeste,
 you can see that the river passes under the Surern bridge of Brigantia.
 The tale of the troll under the bridge passes through your head as you
@@ -6816,8 +6819,8 @@ The river flows Oesteward.
 ~
 0 -1 21302
 E
-plaque~
-The plaque reads:
+placa~
+A placa inscrito:
   Strong is the one who fights for me,
   Smart is this one so strong and free,
   Wise is the one who counsels me,
@@ -6827,7 +6830,7 @@ The plaque reads:
   Luck with the one who escapes me,
   Dead be my foe, my enemy.
  
--Lord Rennard, March 1996
+-Lord Rennard, Marzo 1996
  
 I'd like to say thanks to Thoric for creating and maintaining an
 excellent mud, to Dominus for some amazing administrative work,
@@ -6841,7 +6844,7 @@ Blodkai, for endless insight and support.
 ~
 S
 #21302
-On the Brigantia River~
+No Río de Brigantia~
 The waters become rushing rapids here, forcing you to carefully monitor
 your actions.  Going upriver will bring you under the Surern bridge,
 while following the river will lead you under the crumbling bridge.
@@ -6886,7 +6889,7 @@ Atop the Battlements~
 You are standing atop Brigantia's battlements.  The entire SurOesteern
 countryside is visible from here, ranging from the Miden'nir cara o dark
 forest of Haon Dor.  You spot the Brigantia River flowing its way swiftly
-from Leste to Oeste just Sur of here.  The battlements continue to the
+from Leste to Oeste just Sur de aquí.  The battlements continue to the
 Norte and Leste, while a stone stairway leads down cara o streets.
 ~
 0 1048580 1
@@ -6926,7 +6929,7 @@ The battlements continue cara o Sur.
 S
 #21309
 Atop the Battlements~
-The massive Oesteern gate of Brigantia is just Norte of here, creaking and
+The massive Oesteern gate of Brigantia is just Norte de aquí, creaking and
 groaning loudly as it opens and closes.  A rather wide trail leads through
 the center of the vast forest known as Haon Dor cara o Oeste, and a chimney
 can be seen poking out of the dark trees just cara o SurOeste.  Far down
@@ -6949,7 +6952,7 @@ and Oeste.
 ~
 0 1048576 1
 D1
-The battlements end Leste of here.
+The battlements end Leste de aquí.
 ~
 ~
 0 -1 21312
@@ -6961,7 +6964,7 @@ The battlements continue cara o Oeste.
 S
 #21312
 Atop the Battlements~
-The massive Surern gate of Brigantia is just Leste of here, groaning and
+The massive Surern gate of Brigantia is just Leste de aquí, groaning and
 creaking loudly as it opens and closes.  The Surern bridge and the often
 dangerous, sometimes deadly, Miden'nir are clearly visible from here.  The,
 battlements stretch Oesteward.
@@ -7052,14 +7055,14 @@ The battlements extend down the Surern wall of Brigantia.
 S
 #21319
 Atop the Battlements~
-The massive Surern gate of Brigantia is just Oeste of here, groaning and
+The massive Surern gate of Brigantia is just Oeste de aquí, groaning and
 creaking loudly as it opens and closes.  The crumbling Surern bridge and
 the dangerous Miden'nir are clearly visible from here.  Tbe battlements
 stretch Leste from here.
 ~
 0 1048576 1
 D1
-The battlements continue Leste of here.
+The battlements continue Leste de aquí.
 ~
 ~
 0 -1 21318
@@ -7215,7 +7218,7 @@ the Leste and Oeste.
 ~
 0 1048576 1
 D1
-The battlements continue Leste of here.
+The battlements continue Leste de aquí.
 ~
 ~
 0 -1 21330
@@ -7256,7 +7259,7 @@ The battlements continue cara o Sur.
 S
 #21333
 Atop the Battlements~
-The massive Oesteern gate of Brigantia is just Sur of here, creaking and
+The massive Oesteern gate of Brigantia is just Sur de aquí, creaking and
 groaning loudly as it opens and closes.  A rather wide trail leads through
 the center of the vast forest known as Haon Dor cara o Oeste, and a chimney
 can be seen poking out of the dark trees just cara o SurOeste.  Far down
@@ -7476,13 +7479,13 @@ The Brigantia Courier
 S
 #21430
 A Irmandade dos Agoreiros~
-Emerging from the forest around the cathedral, you find yourself in the
-main adro of the Irmandade dos Agoreiros.  Precious tapestries and drawings
-adorn the walls gracefully, showing the beauty and strength of the Augurer.
-The walls are granitelike and smooth, and the floors are painstakingly
-polished to perfection.  The sweet smells of jasmine, parsley and other
-assorted herbs fill the air around you, giving you a sense of warmth and
-peace as you walk through the vast adro.
+Emerxendo do bosque ao redor da catedral, atópase o principal adro da
+Irmandade dos Agoreiros. Tapicerías preciosas e debuxos adornan as paredes
+graciosamente, amosando a beleza ea forza da Agorería. As paredes son
+de granito suave, e os pisos están meticulosamente pulidos á perfección.
+Os cheiros doces de xasmín, salsa e outras sorte de herbas enchen o aire
+ao teu arredor, o que lle dá unha sensación de calor e paz mentres andas
+a través do amplo adro.
 ~
 0 3145740 0
 D2
@@ -7508,15 +7511,15 @@ The scent of the forest around the cathedral.
 S
 #21432
 O Baul da Contemplacion~
-Above the main adro, you find yourself in a room of peace and contentment.
-The walls all around you are made of stained glass, rather than the granite
-in the adro, allowing the sunlight from the realms into this room.  A light
-humming and singing can be heard in this spacious room, and the sweet smell
-of jasmine is predominant here.  The Augurer is a very spiritual person,
-and relies on meditation and reflection upon the day's activities in order
-to be a productive citizen in the community.  Sculptures and handicrafts of
-the Augurer lie in this room in a state of order, yet in a state of chaos
-as well, showing the strengths and weaknesses of the Augurer's mind.
+Por enriba do adro principal, atopase nunha sala de paz e satisfacción. 
+As paredes en torno de ti están feitas de vidreiras, ao contrario do granito 
+no adro, permitindo que a luz do Sol dos reinos entre nesta sala. Canto pode
+ser oído neste cuarto de espazos, o cheiro doce de xasmín é predominante aquí.
+O Agoreiro é unha persoa moi espiritual, e depende da meditación e reflexión
+sobre as actividades do día, a fin de ser un cidadán produtivo na comunidade.
+Esculturas e artesanía dos Agoreiros gárdanse neste cuarto nun estado de orde,
+pero nun estado de caos tamén, mostrando os puntos fortes e débiles da mente
+dos Agoreiros.
 ~
 0 3145740 0
 D5
@@ -7554,7 +7557,7 @@ be donated for use by other Agoreiros.
 ~
 0 3686412 0
 D0
-The main adro of the Irmandade dos Agoreiros lies Norte of here.
+The main adro of the Irmandade dos Agoreiros lies Norte de aquí.
 ~
 ~
 0 -1 21430
@@ -7581,7 +7584,7 @@ if isimmort($n)
 or isnpc($n)
 or guild($n) == Irmandade dos Agoreiros
 else
-  mea 0.$n You may not trespass on this guild.
+  mea 0.$n Non debes entrar nesta Irmandade.
   mptrans 0.$n 21185
 endif
 ~

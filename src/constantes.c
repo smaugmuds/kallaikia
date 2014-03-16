@@ -35,42 +35,42 @@
 char *	const	npc_race	[MAX_NPC_RACE] =
 {
 
-"human", "elf", "dwarf", "halfling", "pixie", "vampire", "half-ogre",
-"half-orc", "half-troll", "half-elf", "gith", "drow", "sea-elf",
-"lizardman", "gnome", "demon", "r6", "r7", "r8", "troll",
-"ant", "ape", "baboon", "bat", "bear", "bee",
-"beetle", "boar", "bugbear", "cat", "dog", "dragon", "ferret", "fly",
-"gargoyle", "gelatin", "ghoul", "gnoll", "gnome", "goblin", "golem",
-"gorgon", "harpy", "hobgoblin", "kobold", "lizardman", "locust",
-"lycanthrope", "minotaur", "mold", "mule", "neanderthal", "ooze", "orc",
-"rat", "rustmonster", "shadow", "shapeshifter", "shrew", "shrieker",
-"skeleton", "slime", "snake", "spider", "stirge", "thoul", "troglodyte",
-"undead", "wight", "wolf", "worm", "zombie", "bovine", "canine", "feline",
-"porcine", "mammal", "rodent", "avis", "reptile", "amphibian", "fish",
-"crustacean", "insect", "spirit", "magical", "horse", "animal", "humanoid",
-"monster", "god", "shrub", "tree", "flower", "grass", "fungus", "weed",
-"Aarakocra", "Aasimon", "Angel", "Antelope", "Azer", "Basilisk", "Beholder",
-"Bird", "Brownie", "Camel", "Celestial", "Centaur", "Chitine", "Couatl",
-"Creeper", "Dao", "Deer", "Demon", "Deva", "Devil", "Dinosaur", "Djinni",
-"Dolphin", "Drake", "Dryad", "Duergar", "Eel", "Efreeti", "Elemental",
-"Elephant", "Ethereal", "Ettin", "Fairy", "Firbolg", "Genasi", "Giant",
+"humano", "elfo", "anano", "halfling", "pixie", "vampiro", "medio-ogro",
+"medio-orc", "medio-troll", "medio-elfo", "gith", "drow", "elfo-mar",
+"homelagarto", "gnomo", "demo", "r6", "r7", "r8", "troll",
+"formiga", "mono", "baboon", "morcego", "oso", "abella",
+"escarabello", "boar", "bugbear", "cat", "can", "dragón", "ferret", "mosca",
+"gargola", "gelatin", "ghoul", "gnoll", "gnomo", "goblin", "golem",
+"gorgon", "harpía", "hobgoblin", "kobold", "homelagarto", "locust",
+"licantropo", "minotauro", "mold", "mole", "neanderthal", "ooze", "orco",
+"rata", "rustmonster", "sombra", "shapeshifter", "shrew", "shrieker",
+"esqueleto", "lumacha", "serpe", "araña", "stirge", "thoul", "troglodita",
+"nonmorto", "wight", "lobo", "gusano", "zombie", "bovino", "canina", "felino",
+"porcino", "mamífero", "rodent", "ave", "reptil", "anfibio", "peixe",
+"crustáceo", "insecto", "espirito", "maxico", "cabalo", "animal", "humanoide",
+"monstro", "deus", "shrub", "árbore", "flor", "céspede", "hongo", "cogollo",
+"Aarakocra", "Aasimon", "Anxo", "Antilope", "Azer", "Basilisco", "Beholder",
+"Paxaro", "Brownie", "Camello", "Celestial", "Centauro", "Chitine", "Couatl",
+"Creeper", "Dao", "Deer", "Demon", "Deva", "Demo", "Dinosaurio", "Djinni",
+"Delfín", "Drake", "Dryad", "Duergar", "Eel", "Efreeti", "Elemental",
+"Elephant", "Ethereal", "Ettin", "Fairy", "Firbolg", "Genasi", "Xigante",
 "Goat", "Gremlin", "Griffon", "Hydra", "Illithid", "Imp", "Incarnate",
-"Janni", "Kraken", "Kua-toa", "Lagomorph", "Leech", "Leprechaun", "Lich",
-"Liquid", "Magman", "Manticore", "Marid", "Marsupial", "Mephit", "Mercane",
-"Mist", "Mollusc", "Mongrel", "Myconoid", "Nereid", "Nymph", "Octopus",
-"Ogre", "Pech", "Phantom", "Primate", "Rabbit", "Rakshasa", "Rock",
-"Sahaugin", "Satyr", "Selkie", "Shark", "Sirine", "Slaad", "Sprite",
-"Squid", "Squirrel", "Stone", "Sylph", "Tanar'ri", "Thri-kreen", "Tiefling",
-"Titan", "Toad", "Unicorn", "Urchin", "Vapor", "Wemic", "Whale", "Xorn"
+"Janni", "Kraken", "Kua-toa", "Lagomorph", "Exánime", "Leprechaun", "Lich",
+"Liquido", "Magman", "Manticore", "Marid", "Marsupial", "Mephit", "Mercane",
+"Brétema", "Molusco", "Mongrel", "Myconoid", "Nereid", "Ninfa", "Polvo",
+"Ogro", "Pech", "Pantasma", "Primate", "Rabbit", "Rakshasa", "Rocha",
+"Sahaugin", "Satyr", "Selkie", "Tiburón", "Sirine", "Slaad", "Sprite",
+"Esquío", "Squirrel", "Pedra", "Sylph", "Tanar'ri", "Thri-kreen", "Tiefling",
+"Titan", "Toad", "Unicornio", "Urchin", "Vapor", "Wemic", "Balea", "Xorn"
 };
 
 
 char *	const	npc_class	[MAX_NPC_CLASS] =
 {
-"mage", "cleric", "thief", "warrior", "vampire", "druid", "ranger",
-"augurer", "paladin", "nephandi", "savage", "pirate", "archer", "assassin",
-"demon", "angel", "pc16", "pc17", "pc18", "pc19",
-"baker", "butcher", "blacksmith", "mayor", "king", "queen"
+"mago", "crego", "ladron", "guerreiro", "vampiro", "druida", "cazador",
+"agoreiro", "paladin", "nefandi", "salvaxe", "pirata", "arqueiro", "asasino",
+"demo", "anxo", "pc16", "pc17", "pc18", "pc19",
+"panadeiro", "carniceiro", "armeiro", "maior", "rei", "raíña"
 };
 
 
@@ -421,26 +421,26 @@ char * p_blunt_messages[24] =
 	"misses", "barely scuffs", "scuffs", "pelts", "bruises", "strikes",
 	"thrashes", "batters", "flogs", "pummels", "smashes", "mauls",
 	"bludgeons", "decimates", "_shatters_", "_devastates_", "_maims_",
-	"_cripples_", "MUTILATES", "DISFIGURES", "MASSACRES", "PULVERIZES",
+	"_cripples_", "MUTILA", "DISFIGURES", "MASSACRES", "PULVERIZES",
 	"* OBLITERATES *", "*** ANNIHILATES ***"
 };
 
 char * s_generic_messages[24] =
 {
-	"miss", "brush", "scratch", "graze", "nick", "jolt", "wound",
-	"injure", "hit", "jar", "thrash", "maul", "decimate", "_traumatize_",
-	"_devastate_", "_maim_", "_demolish_", "MUTILATE", "MASSACRE",
-	"PULVERIZE", "DESTROY", "* OBLITERATE *", "*** ANNIHILATE ***",
-	"**** SMITE ****"
+	"falla", "roza", "machaga", "graze", "nick", "jolt", "wound",
+	"inxura", "golpea", "jar", "thrash", "maul", "decimate", "_traumatiza_",
+	"_devastate_", "_maim_", "_demolish_", "MUTILA", "MASSACRE",
+	"PULVERIZE", "DESTROY", "* OBLITERA *", "*** ANIQUILA ***",
+	"**** CASTÍGATE ****"
 };
 
 char * p_generic_messages[24] =
 {
 	"misses", "brushes", "scratches", "grazes", "nicks", "jolts", "wounds",
 	"injures", "hits", "jars", "thrashes", "mauls", "decimates", "_traumatizes_",
-	"_devastates_", "_maims_", "_demolishes_", "MUTILATES", "MASSACRES",
-	"PULVERIZES", "DESTROYS", "* OBLITERATES *", "*** ANNIHILATES ***",
-	"**** SMITES ****"
+	"_devastates_", "_maims_", "_demolishes_", "MUTILA", "MASSACRES",
+	"PULVERIZES", "DESTROYS", "* OBLITERA *", "*** ANIQUILA ***",
+	"**** CASTÍGATE ****"
 };
 
 char ** const s_message_table[18] =
@@ -490,26 +490,26 @@ char ** const p_message_table[18] =
 /* Weather constants - FB */
 char * const temp_settings[MAX_CLIMATE] =
 {
-	"cold",
-	"cool",
+	"xeado",
+	"frío",
 	"normal",
-	"warm",
-	"hot",
+	"templado",
+	"quente",
 };
 
 char * const precip_settings[MAX_CLIMATE] =
 {
-	"arid",
-	"dry",
+	"árido",
+	"seco",
 	"normal",
-	"damp",
-	"wet",
+	"húmedo",
+	"mollado",
 };
 
 char * const wind_settings[MAX_CLIMATE] =
 {
 	"still",
-	"calm",
+	"calmo",
 	"normal",
 	"breezy",
 	"windy",
@@ -666,46 +666,46 @@ char * const honour_rank[12][7] =
  
 	/* Cleric (class = 1) */
     {
-	"Peasant",
-	"Scribe",
-	"Prophet",
+	"Pasante",
+	"Escriba",
+	"Profeta",
 	"Deacon",
-	"Priest",
+	"Paladín",
 	"Bishop",
-	"Cardinal"
+	"Cardenal"
     },
  
 	/* Thief (class = 2) */
     {
-	"Peasant",
+	"Pasante",
 	"Pickpocket",
 	"Burglar",
 	"Thug",
-	"Bandit",
+	"Bandido",
 	"Brigand",
-	"Assassin"
+	"Asasino"
     },
  
 	/* Warrior (class = 3) */
     {
-        "Peasant",
-        "Squire",
-        "Swordsman",
-        "Knight",
-        "Blademaster",
-        "Lord",
-        "Champion"
+        "Pasante",
+        "Escudeiro",
+        "Espadeiro",
+        "Cabaleiro",
+        "MaestroEspadeiro",
+        "Señor",
+        "Campeón"
     },
  
 	/* Vampire (class = 4) */
     {
     "Ghoul",
     "Childe",
-    "Neonate",
+    "Neonato",
     "Fiend",
     "Ancilla",
     "Methuselah",
-    "Elder"
+    "Anciá"
     },
  
 	/* Druid (class = 5) */

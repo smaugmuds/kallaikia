@@ -299,7 +299,7 @@ void violence_update( void )
 	    bug( "Short-cutting here", 0 );
 	    ch->prev = NULL;
 	    gch_prev = NULL;
-	    do_shout( ch, "_BuRZuMiSHi_ says, 'Prepare for the worst!'" );
+	    do_shout( ch, "_BuRZuMiSHi_ dice, 'Preparate para o peor!'" );
 	}
 
 	/*
@@ -2479,8 +2479,8 @@ ch_ret damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 	    if ( skill->die_room && skill->die_room[0] != '\0' )
 	      act( AT_DEAD, skill->die_room, ch, NULL, victim, TO_NOTVICT );
 	}
-	act( AT_DEAD, "$n is DEAD!!", victim, 0, 0, TO_ROOM );
-	act( AT_DEAD, "You have been KILLED!!\n\r", victim, 0, 0, TO_CHAR );
+	act( AT_DEAD, "$n está MORTO!!", victim, 0, 0, TO_ROOM );
+	act( AT_DEAD, "Acaban de MATARTE!!\n\r", victim, 0, 0, TO_CHAR );
 	break;
 
     default:
@@ -2490,14 +2490,14 @@ ch_ret damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 	 */
 	if ( dam > victim->max_hit / 4 )
 	{
-	   act( AT_HURT, "That really did HURT!", victim, 0, 0, TO_CHAR );
+	   act( AT_HURT, "Iso realmente DOE!!", victim, 0, 0, TO_CHAR );
 	   if ( number_bits(3) == 0 )
 		worsen_mental_state( victim, 1 );
 	}
 	if ( victim->hit < victim->max_hit / 4 )
 
 	{
-	   act( AT_DANGER, "You wish that your wounds would stop BLEEDING so much!",
+	   act( AT_DANGER, "Gostaríache deixar de DESANGRARTE tanto!!",
 		victim, 0, 0, TO_CHAR );
 	   if ( number_bits(2) == 0 )
 		worsen_mental_state( victim, 1 );
@@ -2538,26 +2538,26 @@ ch_ret damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 	{
 	    if ( !victim->desc )
         add_loginmsg( victim->name, 17, (IS_NPC(ch) ? ch->short_descr : ch->name) );
-	    sprintf( log_buf, "%s (%d) killed by %s at %d",
+	    sprintf( log_buf, "%s (%d) morto por %s en %d",
 		victim->name,
 		victim->level,
 		(IS_NPC(ch) ? ch->short_descr : ch->name),
 		victim->in_room->vnum );
 	    log_string_plus( log_buf, LOG_ALL, 65 );
-            to_channel( log_buf, CHANNEL_DEATH, "Death", LEVEL_IMMORTAL );
+            to_channel( log_buf, CHANNEL_DEATH, "Morte", LEVEL_IMMORTAL );
             if (!IS_NPC( ch ) && !IS_IMMORTAL( ch ) && ch->pcdata->clan
 	    &&   ch->pcdata->clan->clan_type != CLAN_ORDER
             &&   ch->pcdata->clan->clan_type != CLAN_GUILD
             &&   victim != ch )
             {
                 sprintf( filename, "%s%s.record", CLAN_DIR, ch->pcdata->clan->name );
-                sprintf( log_buf, "&P(%2d) %-12s &wvs &P(%2d) %s &P%s ... &w%s",
+                sprintf( log_buf, "&P(%2d) %-12s &wcontra &P(%2d) %s &P%s ... &w%s",
 		  ch->level,
                   ch->name,
 		  victim->level,
-		  !CAN_PKILL( victim ) ? "&W<Peaceful>" :
+		  !CAN_PKILL( victim ) ? "&W<Pacífico>" :
 		    victim->pcdata->clan ? victim->pcdata->clan->badge :
-		      "&P(&WUnclanned&P)",
+		      "&P(&WSinClan&P)",
 		  victim->name,
                   ch->in_room->area->name );
 		if ( victim->pcdata
@@ -2574,13 +2574,13 @@ ch_ret damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 	    &&   !IS_NPC( ch ) )
 	    {
 		sprintf( filename2, "%s%s.defeats", CLAN_DIR, victim->pcdata->clan->name );
-                sprintf( log_buf, "&P(%2d) %-12s &wdefeated by &P(%2d) %s &P%s ... &w%s",
+                sprintf( log_buf, "&P(%2d) %-12s &wderrotado por &P(%2d) %s &P%s ... &w%s",
 		  victim->level,
                   victim->name,
 		  ch->level,
-		  !CAN_PKILL( ch ) ? "&W<Peaceful>" :
+		  !CAN_PKILL( ch ) ? "&W<Pacífico>" :
 		    ch->pcdata->clan ? ch->pcdata->clan->badge :
-		      "&P(&WUnclanned&P)",
+		      "&P(&WSinClan&P)",
 		  ch->name,
                   victim->in_room->area->name );
 		if ( ch->pcdata
@@ -2633,7 +2633,7 @@ ch_ret damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 	    if ( xIS_SET(ch->act, PLR_AUTOGOLD) )
 	    {
 		init_gold = ch->gold;
-		do_get( ch, "coins corpse" );
+		do_get( ch, "moedas cadaver" );
 		new_gold = ch->gold;
 		gold_diff = (new_gold - init_gold);
 		if (gold_diff > 0)
@@ -2644,12 +2644,12 @@ ch_ret damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 	    }
 	    if ( xIS_SET(ch->act, PLR_AUTOLOOT)
 	    &&   victim != ch )  /* prevent nasty obj problems -- Blodkai */
-		do_get( ch, "all corpse" );
+		do_get( ch, "cadaver completo" );
 	    else
-		do_look( ch, "in corpse" );
+		do_look( ch, "no cadaver" );
 
 	    if ( xIS_SET(ch->act, PLR_AUTOSAC) )
-		do_sacrifice( ch, "corpse" );
+		do_sacrifice( ch, "cadaver" );
 	}
 
 	if ( IS_SET( sysdata.save_flags, SV_KILL ) )
@@ -2732,7 +2732,7 @@ bool is_safe( CHAR_DATA *ch, CHAR_DATA *victim, bool show_messg )
     {
         if ( show_messg ) {
 	set_char_color( AT_MAGIC, ch );
-	send_to_char( "A magical force prevents you from attacking.\n\r", ch );
+	send_to_char( "Unha forza máxica prevente de atacar.\n\r", ch );
 	}
 	return TRUE;
     }
@@ -2741,7 +2741,7 @@ bool is_safe( CHAR_DATA *ch, CHAR_DATA *victim, bool show_messg )
     {
         if ( show_messg ) {
     	set_char_color(AT_MAGIC, ch);
-    	ch_printf(ch, "You are a pacifist and will not fight.\n\r");
+    	ch_printf(ch, "Eres pacífico e non deberías atacar.\n\r");
 	}
 	return TRUE;
     }
@@ -2750,7 +2750,7 @@ bool is_safe( CHAR_DATA *ch, CHAR_DATA *victim, bool show_messg )
     {
         char buf[MAX_STRING_LENGTH];
         if ( show_messg ) {
-        sprintf(buf, "%s is a pacifist and will not fight.\n\r",
+        sprintf(buf, "%s é pacífico e non debería atacar.\n\r",
                 capitalize(victim->short_descr));
         set_char_color( AT_MAGIC, ch );
         send_to_char( buf, ch);
@@ -2767,7 +2767,7 @@ bool is_safe( CHAR_DATA *ch, CHAR_DATA *victim, bool show_messg )
     {
         if ( show_messg ) {
         set_char_color( AT_IMMORT, ch );
-        send_to_char( "The gods have forbidden player killing in this area.\n\r", ch );
+        send_to_char( "Os Deuses olvidaron a morte dos xogadores en esta zona.\n\r", ch );
 	}
         return TRUE;
     }
@@ -2779,7 +2779,7 @@ bool is_safe( CHAR_DATA *ch, CHAR_DATA *victim, bool show_messg )
     {
         if ( show_messg ) {
 	set_char_color( AT_WHITE, ch );	
-	send_to_char( "You are not yet ready, needing age or experience, if not both. \n\r", ch );
+	send_to_char( "Non estás preparado, precisas máis idade ou experiencia, ou ambas. \n\r", ch );
 	}
 	return TRUE;
     }
@@ -2788,7 +2788,7 @@ bool is_safe( CHAR_DATA *ch, CHAR_DATA *victim, bool show_messg )
     {
         if ( show_messg ) {
 	set_char_color( AT_WHITE, ch );
-	send_to_char( "They are yet too young to die.\n\r", ch );
+	send_to_char( "Son demasiado novos para morrer.\n\r", ch );
 	}
 	return TRUE;
     }
@@ -2798,7 +2798,7 @@ bool is_safe( CHAR_DATA *ch, CHAR_DATA *victim, bool show_messg )
     {
         if ( show_messg ) {
 	set_char_color( AT_IMMORT, ch );
-	send_to_char( "The gods do not allow murder when there is such a difference in level.\n\r", ch );
+	send_to_char( "Os Deuses non permiten matar a ninguén con tanta diferencia de nivel.\n\r", ch );
 	}
 	return TRUE;
     }
@@ -2807,7 +2807,7 @@ bool is_safe( CHAR_DATA *ch, CHAR_DATA *victim, bool show_messg )
     {
         if ( show_messg ) {
 	set_char_color( AT_GREEN, ch );
-        send_to_char( "That character has died within the last 5 minutes.\n\r", ch);
+        send_to_char( "Esa persoaxe morreu nos últimos 5 minutos.\n\r", ch);
 	}
         return TRUE;
     }
@@ -2816,7 +2816,7 @@ bool is_safe( CHAR_DATA *ch, CHAR_DATA *victim, bool show_messg )
     {
         if ( show_messg ) {
 	set_char_color( AT_GREEN, ch );
-        send_to_char( "You have been killed within the last 5 minutes.\n\r", ch );
+        send_to_char( "Morriche nos últimos 5 minutos.\n\r", ch );
 	}
         return TRUE;
     }
@@ -2897,13 +2897,13 @@ void check_killer( CHAR_DATA *ch, CHAR_DATA *victim )
 		set_char_color( AT_IMMORT, ch );
 		/* If loser/victim has no honour don't award or take any away. */
 		if ( victim->pcdata->honour == 0 )
-		  send_to_char( "You gain no honour for this kill. \n\r", ch );
+		  send_to_char( "Non ganas honor por esta morte. \n\r", ch );
 		else
 		{
 	        /* Take care of the winner/ch, award honour, award pkill */
-		  send_to_char( "You gain 1 honour for triumph in combat. \n\r", ch );
+		  send_to_char( "Gañas 1 punto de honor polo triunfo na loita. \n\r", ch );
 		  ch->pcdata->honour++;
-		  send_to_char( "You lose 1 honour for defeat in combat. \n\r", victim );
+		  send_to_char( "Perdes 1 punto de honor pola defensa na loita. \n\r", victim );
 		  victim->pcdata->honour--;
 		}
 		/* Now check to see if the winner has gained a new rank */
@@ -2913,7 +2913,7 @@ void check_killer( CHAR_DATA *ch, CHAR_DATA *victim )
           || ch->pcdata->honour == 40
           || ch->pcdata->honour == 65
           || ch->pcdata->honour == 100 )
-	      send_to_char( "Congratulations. You have obtained a new rank of honour. \n\r", ch );
+	      send_to_char( "Parabéns! Obtiveche un novo rango de Honor! \n\r", ch );
     }
 
     /*
@@ -3214,7 +3214,7 @@ void update_pos( CHAR_DATA *victim )
     {
 	if ( victim->mount )
 	{
-	  act( AT_ACTION, "$n falls from $N.",
+	  act( AT_ACTION, "$n cae desde $N.",
 		victim, NULL, victim->mount, TO_ROOM );
 	  xREMOVE_BIT( victim->mount->act, ACT_MOUNTED );
 	  victim->mount = NULL;
@@ -3233,7 +3233,7 @@ void update_pos( CHAR_DATA *victim )
 
     if ( victim->mount )
     {
-	act( AT_ACTION, "$n falls unconscious from $N.",
+	act( AT_ACTION, "$n cae inconscente desde $N.",
 		victim, NULL, victim->mount, TO_ROOM );
 	xREMOVE_BIT( victim->mount->act, ACT_MOUNTED );
 	victim->mount = NULL;
@@ -3310,7 +3310,7 @@ void set_fighting( CHAR_DATA *ch, CHAR_DATA *victim )
 #endif
     if (victim->switched && IS_AFFECTED (victim->switched, AFF_POSSESS))
     {
-      send_to_char ("You are disturbed!\n\r", victim->switched);
+      send_to_char ("Estás sendo molestado e interrumpido!\n\r", victim->switched);
       do_return (victim->switched, "");
     }
     return;
@@ -3489,11 +3489,11 @@ void death_cry( CHAR_DATA *ch )
     
     switch ( number_range(0, 5) )
     {
-    default: msg  = "You hear $n's death cry.";				break;
+    default: msg  = "Escoitas o choro de morte de $n.";			break;
     case  0:
       msg = "$n screams furiously as $e falls to the ground in a heap!"; break;
     case  1:
-      msg  = "$n hits the ground ... DEAD.";			        break;
+      msg  = "$n cae ao chan ... MORTO.";			        break;
     case  2:
       msg = "$n catches $s guts in $s hands as they pour through $s fatal"
             " wound!";                                                  break;
