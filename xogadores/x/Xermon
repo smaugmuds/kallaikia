@@ -6,8 +6,8 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       336107
-Room         21016
+Played       374371
+Room         21001
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -15,7 +15,7 @@ Gold         1410058647
 Exp          1410065407
 Height          66
 Weight          147
-Act          671090250&1024
+Act          704644682&1024
 Position     113
 Style     2
 Practice     9945
@@ -46,7 +46,7 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         217.124.245.87
+Site         124.Red-95-126-127.staticIP.rima-tde.net
 Spell        19 'animate dead'
 Spell        19 'bless'
 Spell        19 'cause critical'
@@ -109,7 +109,7 @@ End
 
 #MOBILE
 Vnum	21058
-Room	21016
+Room	21001
 Description The black steed snorts as you examine him.  His fine black coat shines
 brightly regardless of light and the warhorse seems as though it could
 run tirelessly for days.

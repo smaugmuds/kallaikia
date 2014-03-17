@@ -463,7 +463,8 @@
 	/* Box */
 
 		.box {
-			background: #444;
+			background: #222;
+			opacity: 0.8;
 			color: #eee;
 			padding: 2em;
 		}
@@ -492,7 +493,7 @@
 				}
 				
 				.main.style1 .content {
-					opacity: 1.0;
+					opacity: 0.8;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
@@ -1098,7 +1099,7 @@
 /*********************************************************************************/
 
 	#intro {
-		background: url('images/overlay.png'), url('../images/intro.jpg');
+		background: url('../images/overlay.png'), url('../images/kallaikia5.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -1110,7 +1111,7 @@
 /*********************************************************************************/
 
 	#one {
-		background: url('images/overlay.png'), url('../images/one.jpg');
+		background: url('../images/overlay.png'), url('../images/kallaikia2.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -1121,7 +1122,7 @@
 /*********************************************************************************/
 
 	#two {
-		background: url('images/overlay.png'), url('../images/two.jpg');
+		background: url('../images/overlay.png'), url('../images/kallaikia.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -1132,7 +1133,7 @@
 /*********************************************************************************/
 
 	#contact {
-                background: url('images/overlay.png'), url('../images/contact.jpg');
+                background: url('../images/overlay.png'), url('../images/kallaikia11.jpg');
                 background-size: 256px 256px, cover;
                 background-attachment: fixed, fixed;
                 background-position: top left, center center;
