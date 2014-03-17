@@ -64,7 +64,7 @@ char *  const   ex_flags [] =
 
 char *  const   sec_flags [] =
 {
-"inside", "city", "field", "forest", "hills", "mountain", "water_swim",
+"dentro", "city", "field", "forest", "hills", "mountain", "water_swim",
 "water_noswim", "underwater", "air", "desert", "dunno", "oceanfloor",
 "underground", "lava", "swamp", "r1", "r2", "r3", "r4", "r5", "r6", "r7",
 "r8", "r9", "r10", "r11", "r12", "r13", "r14", "r15", "r16"
@@ -130,9 +130,9 @@ char *	const	o_types	[] =
 {
 "none", "light", "scroll", "wand", "staff", "weapon", "_fireweapon", "_missile",
 "treasure", "armor", "potion", "_worn", "furniture", "trash", "_oldtrap",
-"container", "_note", "drinkcon", "key", "food", "money", "pen", "boat",
-"corpse", "corpse_pc", "fountain", "pill", "blood", "bloodstain",
-"scraps", "pipe", "herbcon", "herb", "incense", "fire", "book", "switch",
+"container", "_note", "drinkcon", "chave", "food", "money", "pen", "boat",
+"cadaver", "cadaver_pc", "fountain", "pill", "sangue", "bloodstain",
+"scraps", "pipe", "herbcon", "herb", "incense", "lume", "libro", "switch",
 "lever", "pullchain", "button", "dial", "rune", "runepouch", "match", "trap",
 "map", "portal", "paper", "tinder", "lockpick", "spike", "disease", "oil",
 "fuel", "puddle", "abacus", "missileweapon", "projectile", "quiver", "shovel",
@@ -143,15 +143,15 @@ char *	const	o_types	[] =
 
 char *	const	a_types	[] =
 {
-"none", "strength", "dexterity", "intelligence", "wisdom", "constitution",
-"sex", "class", "level", "age", "height", "weight", "mana", "hit", "move",
-"gold", "experience", "armor", "hitroll", "damroll", "save_poison", "save_rod",
+"none", "forza", "dextreza", "inteligencia", "wisdom", "constitucion",
+"sexo", "clase", "nivel", "idade", "alto", "ancho", "mana", "golpe", "mover",
+"ouro", "experiencia", "armadura", "hitroll", "damroll", "save_poison", "save_rod",
 "save_para", "save_breath", "save_spell", "charisma", "affected", "resistant",
-"immune", "susceptible", "weaponspell", "luck", "backstab", "pick", "track",
+"immune", "susceptible", "weaponspell", "sorte", "backstab", "pick", "track",
 "steal", "sneak", "hide", "palm", "detrap", "dodge", "peek", "scan", "gouge",
-"search", "mount", "disarm", "kick", "parry", "bash", "stun", "punch", "climb",
+"search", "montar", "disarm", "kick", "parry", "bash", "stun", "puñada", "climb",
 "grip", "scribe", "brew", "wearspell", "removespell", "emotion", "mentalstate",
-"stripsn", "remove", "dig", "full", "thirst", "drunk", "blood", "cook",
+"stripsn", "remove", "dig", "full", "sedento", "bebedo", "sangue", "cociñar",
 "recurringspell", "contagious", "xaffected", "odor", "roomflag", "sectortype",
 "roomlight", "televnum", "teledelay",
 "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10"
@@ -160,10 +160,10 @@ char *	const	a_types	[] =
 
 char *	const	a_flags [] =
 {
-"blind", "invisible", "detect_evil", "detect_invis", "detect_magic",
-"detect_hidden", "hold", "sanctuary", "faerie_fire", "infrared", "curse",
-"_flaming", "poison", "protect", "_paralysis", "sneak", "hide", "sleep",
-"charm", "flying", "pass_door", "floating", "truesight", "detect_traps",
+"cego", "invisible", "detect_evil", "detect_invis", "detect_magic",
+"detect_hidden", "soster", "sanctuary", "faerie_fire", "infrared", "curse",
+"_flaming", "veneno", "protect", "_paralysis", "sneak", "ocultar", "sleep",
+"charm", "voando", "pass_door", "floating", "truesight", "detect_traps",
 "scrying", "fireshield", "shockshield", "r1", "iceshield", "possess", 
 "berserk", "aqua_breath", "recurringspell", "contagious", "acidmist",
 "venomshield", "grapple"
@@ -173,10 +173,10 @@ char *	const	a_flags [] =
 char *	const	act_flags [] =
 {
 "npc", "sentinel", "scavenger", "nolocate", "r2", "aggressive", "stayarea",
-"wimpy", "pet", "train", "practice", "immortal", "deadly", "polyself",
-"meta_aggr", "guardian", "running", "nowander", "mountable", "mounted",
+"cobardia", "mascota", "tren", "practica", "inmortal", "morto", "polyself",
+"meta_aggr", "gardian", "correndo", "nowander", "montable", "montado",
 "scholar", "secretive", "hardhat", "mobinvis", "noassist", "autonomous",
-"pacifist", "noattack", "annoying", "statshield", "prototype", "nosummon",
+"pacifico", "noattack", "annoying", "statshield", "prototipo", "nosummon",
 "nosteal", "r2", "infested", "free2", "blocking", "is_clone", "is_dreamform",
 "is_spiritform", "is_projection", "stopscript"
 ,"r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10"
@@ -184,7 +184,7 @@ char *	const	act_flags [] =
 
 char *	const	pc_flags [] =
 {
-"r1", "deadly", "unauthed", "norecall", "nointro", "gag", "retired", "guest",
+"r1", "deadly", "unauthed", "norecall", "nointro", "gag", "retirado", "invitado",
 /* changed "r8" to "" so players on watch can't see it  -- Gorog */
 "nosummon", "pager", "notitled", "groupwho", "diagnose", "highgag", "",
 "nstart", "dnd", "idle", "nobio", "nodesc", "beckon", "noexp", "nobeckon",
@@ -198,7 +198,7 @@ char *	const	plr_flags [] =
 "outcast", "brief", "combine", "prompt", "telnet_ga", "holylight", 
 "wizinvis", "roomvnum","silence", "noemote", "attacker", "notell", "log", 
 "deny", "freeze", "thief","killer", "litterbug", "ansi", "rip", "nice", 
-"flee" ,"autogold", "automap", "afk", "invisprompt", "roomvis", "nofollow",
+"fuxir" ,"autogold", "automap", "afk", "invisprompt", "roomvis", "nofollow",
 "landed", "blocking", "is_clone", "is_dreamform", "is_spiritform",
 "is_projection", "cloak", "compass", "nohomepage"
 ,"r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10"
@@ -206,8 +206,8 @@ char *	const	plr_flags [] =
 
 char *	const	trap_flags [] =
 {
-"room", "obj", "enter", "leave", "open", "close", "get", "put", "pick",
-"unlock", "norte", "sur", "leste", "oeste", "subir", "baixar", "examine",
+"estancia", "obj", "entrar", "abandoar", "abrir", "fechar", "coller", "poñer", "pick",
+"unlock", "norte", "sur", "leste", "oeste", "subir", "baixar", "examinar",
 "norleste", "noroeste", "surleste", "suroeste", "r6", "r7", "r8", 
 "r9", "r10", "r11", "r12", "r13", "r14", "r15" 
 };
@@ -238,9 +238,9 @@ char *	const	ris_flags [] =
 
 char *	const	trig_flags [] =
 {
-"up", "unlock", "lock", "d_north", "d_south", "d_east", "d_west", "d_up",
-"d_down", "door", "container", "open", "close", "passage", "oload", "mload",
-"teleport", "teleportall", "teleportplus", "death", "cast", "fakeblade",
+"arriba", "desbloquear", "bloquear", "d_norte", "d_sur", "d_leste", "d_oeste", "d_arriba",
+"d_abaixo", "porta", "contedor", "abrir", "fechar", "passage", "oload", "mload",
+"teleportar", "teleportall", "teleportplus", "morte", "cast", "fakeblade",
 "rand4", "rand6", "trapdoor", "anotherroom", "usedial", "absolutevnum",
 "showroomdesc", "autoreturn", "r2", "r3"
 };
@@ -268,7 +268,7 @@ char *	const	attack_flags [] =
 
 char *	const	defense_flags [] =
 {
-"parry", "dodge", "heal", "curelight", "cureserious", "curecritical",
+"parry", "dodge", "curar", "curelight", "cureserious", "curecritical",
 "dispelmagic", "dispelevil", "sanctuary", "fireshield", "shockshield",
 "shield", "bless", "stoneskin", "teleport", "monsum1", "monsum2", "monsum3",
 "monsum4", "disarm", "iceshield", "grip", "truesight", "r4", "r5", "r6", "r7",
@@ -291,12 +291,12 @@ char *	const	defense_flags [] =
  */
 char *	const	mprog_flags [] =
 {
-"act", "speech", "rand", "fight", "death", "hitprcnt", "entry", "greet",
-"allgreet", "give", "bribe", "hour", "time", "wear", "remove", "sac",
-"look", "exa", "zap", "get", "drop", "damage", "repair", "randiw",
-"speechiw", "pull", "push", "sleep", "rest", "leave", "script", "use",
-"load", "login", "void", "tell", "imminfo", "greetinfight", "move",
-"command", "sell", "emote"
+"act", "speech", "rand", "loitar", "morte", "hitprcnt", "entry", "greet",
+"allgreet", "dar", "bribe", "hora", "time", "vestir", "remove", "sac",
+"mirar", "exa", "zap", "get", "drop", "damage", "reparar", "randiw",
+"speechiw", "pull", "push", "dormir", "rest", "leave", "script", "usar",
+"load", "login", "void", "contar", "imminfo", "greetinfight", "mover",
+"comando", "sell", "emote"
 ,"r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10"
 };
 

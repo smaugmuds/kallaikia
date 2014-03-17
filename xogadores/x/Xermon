@@ -6,8 +6,8 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       270668
-Room         21017
+Played       336107
+Room         21016
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -15,10 +15,10 @@ Gold         1410058647
 Exp          1410065407
 Height          66
 Weight          147
-Act          704644682&1024
-Position     112
+Act          671090250&1024
+Position     113
 Style     2
-Practice     9949
+Practice     9945
 Alignment    0
 SavingThrows 0 0 0 0 0
 Favor	       0
@@ -46,7 +46,7 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         orion.local.lan
+Site         217.124.245.87
 Spell        19 'animate dead'
 Spell        19 'bless'
 Spell        19 'cause critical'
@@ -80,18 +80,22 @@ Skill        19 'disarm'
 Skill        19 'dual wield'
 Skill        19 'enhanced damage'
 Skill        19 'feed'
+Skill        19 'grasp suspiria'
 Skill        19 'hide'
 Skill        19 'kick'
 Skill        19 'meditate'
 Skill        19 'mistform'
-Skill        30 'mount'
+Skill        36 'mount'
 Skill        19 'parry'
 Skill        19 'punch'
 Skill        19 'rescue'
 Skill        19 'scan'
 Skill        19 'search'
-Skill        26 'seventh attack'
+Skill        40 'seventh attack'
+Skill        19 'shoulder'
+Skill        19 'steal'
 Skill        19 'strike'
+Skill        19 'tend'
 Skill        19 'track'
 Skill        19 'vault'
 Skill        19 'visual defiance'
@@ -105,13 +109,13 @@ End
 
 #MOBILE
 Vnum	21058
-Room	21017
+Room	21016
 Description The black steed snorts as you examine him.  His fine black coat shines
 brightly regardless of light and the warhorse seems as though it could
 run tirelessly for days.
 A neck tag says 'I belong to Xermon'.
 ~
 Position 12
-Flags 262403
+Flags 786691
 EndMobile
 #END

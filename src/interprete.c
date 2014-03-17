@@ -57,60 +57,60 @@ bool check_pos( CHAR_DATA *ch, sh_int position )
 	switch( ch->position )
 	{
 	case POS_DEAD:
-	    send_to_char( "A little difficult to do when you are DEAD...\n\r", ch );
+	    send_to_char( "Está complicado de facer iso cando estás MORTO ...\n\r", ch );
 	    break;
 
 	case POS_MORTAL:
 	case POS_INCAP:
-	    send_to_char( "You are hurt far too bad for that.\n\r", ch );
+	    send_to_char( "Estás demasiado ferido para facer iso.\n\r", ch );
 	    break;
 
 	case POS_STUNNED:
-	    send_to_char( "You are too stunned to do that.\n\r", ch );
+	    send_to_char( "Estás demasiado aturdido para facer iso.\n\r", ch );
 	    break;
 
 	case POS_SLEEPING:
-	    send_to_char( "In your dreams, or what?\n\r", ch );
+	    send_to_char( "Nos teus soños, ou qué??\n\r", ch );
 	    break;
 
 	case POS_RESTING:
-	    send_to_char( "Nah... You feel too relaxed...\n\r", ch);
+	    send_to_char( "Nah... Sínteste demasiado relaxado...\n\r", ch);
 	    break;
 
 	case POS_SITTING:
-	    send_to_char( "You can't do that sitting down.\n\r", ch);
+	    send_to_char( "Non podes facer iso mentres estés sentado.\n\r", ch);
 	    break;
 
 	case POS_FIGHTING:
             if(position<=POS_EVASIVE){
-	      send_to_char( "This fighting style is too demanding for that!\n\r", ch);
+	      send_to_char( "Ese estilo de loita é moi demandado para iso!\n\r", ch);
             } else {
-	      send_to_char( "No way!  You are still fighting!\n\r", ch);
+	      send_to_char( "De ningunha maneira! Inda estás loitando!\n\r", ch);
              }
 	    break;
     	case POS_DEFENSIVE:
             if(position<=POS_EVASIVE){
-	      send_to_char( "This fighting style is too demanding for that!\n\r", ch);
+	      send_to_char( "Este estilo de loita está moi demandado para iso!\n\r", ch);
             } else {
-	    send_to_char( "No way!  You are still fighting!\n\r", ch);
+	    send_to_char( "De ningunha maneira! Inda estás loitando!\n\r", ch);
             }
 	    break;
     	case POS_AGGRESSIVE:
             if(position<=POS_EVASIVE){
-	      send_to_char( "This fighting style is too demanding for that!\n\r", ch);
+	      send_to_char( "Este estilo de loita está moi demandado para iso!\n\r", ch);
             } else {
-	    send_to_char( "No way!  You are still fighting!\n\r", ch);
+	    send_to_char( "De ningunha maneira! Inda estás loitando!\n\r", ch);
             }
 	    break;
     	case POS_BERSERK:
             if(position<=POS_EVASIVE){
-	      send_to_char( "This fighting style is too demanding for that!\n\r", ch);
+	      send_to_char( "Este estilo de loita está moi demandado para iso!\n\r", ch);
             } else {
-	       send_to_char( "No way!  You are still fighting!\n\r", ch);
+	    send_to_char( "De ningunha maneira! Inda estás loitando!\n\r", ch);
             }
 	    break;
     	case POS_EVASIVE:
-	    send_to_char( "No way!  You are still fighting!\n\r", ch);
+	    send_to_char( "De ningunha maneira! Inda estás loitando!\n\r", ch);
 	    break;
 
 	}
@@ -131,7 +131,7 @@ bool valid_watch( char *logline )
 int  len = strlen(logline);
 char c   = logline[0];
 
-if ( len==1 && (c=='l' || c=='n' || c=='s' || c=='e' || c=='w' || c=='u' || c=='d') )
+if ( len==1 && (c=='l' || c=='n' || c=='s' || c=='e' || c=='o' || c=='b' || c=='d') )
    return FALSE;
 if ( len==2 && c=='n' && (logline[1]=='e' || logline[1]=='w') )
    return FALSE;
@@ -321,7 +321,7 @@ void interpret( CHAR_DATA *ch, char *argument )
 	 */
 	if ( !IS_NPC(ch) && xIS_SET(ch->act, PLR_FREEZE) )
 	{
-	    send_to_char( "You're totally frozen!\n\r", ch );
+	    send_to_char( "Estás totalmente xeado!\n\r", ch );
 	    return;
 	}
 
@@ -372,7 +372,7 @@ void interpret( CHAR_DATA *ch, char *argument )
 /*
      	    act( AT_GREY, "$n is no longer afk.", ch, NULL, NULL, TO_ROOM );
 */
-     	    act( AT_GREY, "$n is no longer afk.", ch, NULL, NULL, TO_CANSEE );
+     	    act( AT_GREY, "$n xa non está AFK.", ch, NULL, NULL, TO_CANSEE );
 	}
     }
 
@@ -382,7 +382,7 @@ void interpret( CHAR_DATA *ch, char *argument )
 /*
     sprintf( lastplayercmd, "** %s: %s", ch->name, logline );
 */
-    sprintf( lastplayercmd, "%s used %s", ch->name, logline );
+    sprintf( lastplayercmd, "%s usou %s", ch->name, logline );
 
 
     if ( found && cmd->log == LOG_NEVER )
@@ -399,7 +399,7 @@ first place.  Whaddya gonna do? */
 		{
         char log_buf[MAX_STRING_LENGTH];
         if ( ch->desc && ch->desc->original && ch->short_descr ) {
-           sprintf( log_buf, "%s possessed %s:  %s.", ch->desc->original->name,
+           sprintf( log_buf, "%s pusuíu a %s:  %s.", ch->desc->original->name,
 		ch->short_descr, logline );
            log_string_plus( log_buf, LOG_NORMAL, 58 );
         }
@@ -691,9 +691,9 @@ first place.  Whaddya gonna do? */
 		||   IS_SET(pexit->exit_info, EX_NOPASSDOOR)) )
 		{
 		  if ( !IS_SET( pexit->exit_info, EX_SECRET ) )
-		    act( AT_PLAIN, "The $d is closed.", ch, NULL, pexit->keyword, TO_CHAR );
+		    act( AT_PLAIN, "A $d está fechada.", ch, NULL, pexit->keyword, TO_CHAR );
 		  else
-		    send_to_char( "You cannot do that here.\n\r", ch );
+		    send_to_char( "Non podes facer iso aquí.\n\r", ch );
 		  return;
 		}
 		move_char( ch, pexit, 0 );
@@ -824,23 +824,23 @@ bool check_social( CHAR_DATA *ch, char *command, char *argument )
 
     if ( !IS_NPC(ch) && xIS_SET(ch->act, PLR_NO_EMOTE) )
     {
-	send_to_char( "You are anti-social!\n\r", ch );
+	send_to_char( "Eres anti-social!\n\r", ch );
 	return TRUE;
     }
    
     switch ( ch->position )
     {
     case POS_DEAD:
-	send_to_char( "Lie still; you are DEAD.\n\r", ch );
+	send_to_char( "Inda caes; estás MORTO.\n\r", ch );
 	return TRUE;
 
     case POS_INCAP:
     case POS_MORTAL:
-	send_to_char( "You are hurt far too bad for that.\n\r", ch );
+	send_to_char( "Estás demasiado ferido para facer iso.\n\r", ch );
 	return TRUE;
 
     case POS_STUNNED:
-	send_to_char( "You are too stunned to do that.\n\r", ch );
+	send_to_char( "Estás demasiado aturdido para facer iso.\n\r", ch );
 	return TRUE;
 
     case POS_SLEEPING:
@@ -850,7 +850,7 @@ bool check_social( CHAR_DATA *ch, char *command, char *argument )
 	 */
 	if ( !str_cmp( social->name, "snore" ) )
 	    break;
-	send_to_char( "In your dreams, or what?\n\r", ch );
+	send_to_char( "Nos teus soños, ou qué??\n\r", ch );
 	return TRUE;
 
     }
@@ -877,8 +877,8 @@ bool check_social( CHAR_DATA *ch, char *command, char *argument )
     		else
     		{
     			set_char_color(AT_IGNORE, victim);
-    			ch_printf(victim, "You attempt to ignore %s,"
-    				" but are unable to do so.\n\r", !can_see(victim, ch) ? "Someone" : ch->name);
+    			ch_printf(victim, "Tentas ignorar a %s,"
+    				" pero eres incapaz de facelo.\n\r", !can_see(victim, ch) ? "Alguén" : ch->name);
     		}
     	}
     }
@@ -900,14 +900,14 @@ bool check_social( CHAR_DATA *ch, char *command, char *argument )
     			nifty_is_name_prefix(arg,victim->name))
     		{
     			set_char_color(AT_IGNORE, ch);
-    			ch_printf(ch,"%s is ignoring you.\n\r",
+    			ch_printf(ch,"%s está a ignorarte.\n\r",
     				victim->name);
     			break;
     		}
     	}
     	
     	if(!victim)
-		send_to_char( "They aren't here.\n\r", ch );
+		send_to_char( "Non están aquí.\n\r", ch );
     }
     else if ( victim == ch )
     {
@@ -940,9 +940,9 @@ bool check_social( CHAR_DATA *ch, char *command, char *argument )
 		}
 		else
 		{
-		    act( AT_ACTION, "$n acts like $N doesn't even exist.",  victim, NULL, ch, TO_NOTVICT );
-		    act( AT_ACTION, "You just ignore $N.",  victim, NULL, ch, TO_CHAR    );
-		    act( AT_ACTION, "$n appears to be ignoring you.", victim, NULL, ch, TO_VICT    );
+		    act( AT_ACTION, "$n actúa como se $N non existised.",  victim, NULL, ch, TO_NOTVICT );
+		    act( AT_ACTION, "Simplemente ignoras a $N.",  victim, NULL, ch, TO_CHAR    );
+		    act( AT_ACTION, "$n parece ignorarte.", victim, NULL, ch, TO_VICT    );
 		}
 		break;
 
@@ -1236,8 +1236,8 @@ void send_timer(struct timerset *vtime, CHAR_DATA *ch)
   ntime.tv_sec  = vtime->total_time.tv_sec / vtime->num_uses;
   carry = (vtime->total_time.tv_sec % vtime->num_uses) * 1000000;
   ntime.tv_usec = (vtime->total_time.tv_usec + carry) / vtime->num_uses;
-  ch_printf(ch, "Has been used %d times this boot.\n\r", vtime->num_uses);
-  ch_printf(ch, "Time (in secs): min %d.%0.6d; avg: %d.%0.6d; max %d.%0.6d"
+  ch_printf(ch, "Foi usado %d veces en este inicio.\n\r", vtime->num_uses);
+  ch_printf(ch, "Tempo (en segs): min %d.%0.6d; avg: %d.%0.6d; max %d.%0.6d"
       "\n\r", vtime->min_time.tv_sec, vtime->min_time.tv_usec, ntime.tv_sec,
       ntime.tv_usec, vtime->max_time.tv_sec, vtime->max_time.tv_usec);
   return;
@@ -1285,11 +1285,11 @@ check_cmd_flags ( CHAR_DATA *ch, CMDTYPE *cmd )
 {
 
   if ( IS_AFFECTED (ch, AFF_POSSESS) && IS_SET( cmd->flags, CMD_FLAG_POSSESS )) 
-        sprintf ( cmd_flag_buf, "You can't %s while you are possessing someone!\n\r",
+        sprintf ( cmd_flag_buf, "Non podes %s mentres posúes a alguén!\n\r",
                 cmd->name );
   else if ( ch->morph != NULL
             && IS_SET( cmd->flags, CMD_FLAG_POLYMORPHED ) )
-        sprintf ( cmd_flag_buf, "You can't %s while you are polymorphed!\n\r",
+        sprintf ( cmd_flag_buf, "Non podes %s mentres estés transformado!\n\r",
                 cmd->name );
   else
         cmd_flag_buf[0] = '\0';

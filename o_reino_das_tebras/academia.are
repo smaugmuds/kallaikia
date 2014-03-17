@@ -3859,7 +3859,7 @@ Back to the beginning
 ~
 0 -1 10304 0
 E
-Door~
+porta~
 You see a solid oak door.
 ~
 S
@@ -3899,7 +3899,7 @@ Type AXUDA OPEN to find out more information on doors.
 D0
 An Enclosed Room
 ~
-door~
+porta~
 3 -1 10310 0
 D1
 Wandering the Academy
@@ -3917,7 +3917,7 @@ Back to the beginning
 ~
 0 -1 10304 0
 E
-door~
+porta~
 You see a solid oak door.
 ~
 S
@@ -3940,7 +3940,7 @@ may practice each.
 D2
 Wandering Brigantia Academy
 ~
-door~
+porta~
 3 -1 10309 0
 S
 #10311
@@ -3996,7 +3996,7 @@ Lost in Brigantia Academy
 ~
 0 -1 10311 0
 D3
-door
+porta
 ~
 tapestry door~
 11 -1 10313 0
@@ -4012,7 +4012,7 @@ a cunningly camouflaged wall! You can see the outline of a door as you
 look closer.
 ~
 E
-west~
+oeste~
 You see a tapestry on the wall here, something just isn't right about it.
 ~
 E
@@ -4020,7 +4020,7 @@ w~
 You see a tapestry on the wall.
 ~
 E
-door~
+porta~
 You see a cleverly disguised door.
 ~
 E
@@ -4043,7 +4043,7 @@ you may leave by the up exit. Good luck!
 D1
 Lost in Brigantia Academy
 ~
-door~
+porta~
 3 -1 10312 0
 D4
 Back to the beginning
@@ -4055,7 +4055,7 @@ D10
 crack~
 524288 -1 10302 0
 E
-door~
+porta~
 You see an oak door.
 ~
 E

@@ -1343,7 +1343,7 @@ Log         0
 End
 
 #COMMAND
-Name        garb~
+Name        equipado~
 Code        do_equipment_full
 Position    100
 Level       0

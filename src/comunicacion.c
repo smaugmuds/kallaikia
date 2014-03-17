@@ -3077,7 +3077,7 @@ char *act_string(const char *format, CHAR_DATA *to, CHAR_DATA *ch,
 */
       case 'd':
         if ( !arg2 || ((char *) arg2)[0] == '\0' )
-          i = "door";
+          i = "porta";
         else
         {
           one_argument((char *) arg2, fname);

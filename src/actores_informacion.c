@@ -2014,7 +2014,7 @@ void do_exits( CHAR_DATA *ch, char *argument )
 		if ( IS_SET( pexit->exit_info, EX_CLOSED ) )
 		{
 		  if ( pexit->keyword
-		  && ( !str_cmp( "door", pexit->keyword )
+		  && ( !str_cmp( "porta", pexit->keyword )
 		  ||   !str_cmp( "gate", pexit->keyword )
 		  ||    pexit->keyword[0] == '\0' ) )
 		  {

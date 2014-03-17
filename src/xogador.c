@@ -2017,9 +2017,9 @@ void do_inventory( CHAR_DATA *ch, char *argument )
 	invtarget = TRUE;
     }
 
-    ch_printf_color( ch, "&R%s %s levando:\n\r",
-	invtarget ? capitalize( victim->name) : "Tí",
-	invtarget ? "é" : "son" );
+    ch_printf_color( ch, "&R%s %s carretar:\n\r",
+	invtarget ? capitalize( victim->name) : "Estás",
+	invtarget ? "a" : "a" );
     show_list_to_char( victim->first_carrying, ch, TRUE, TRUE );
 
 }
@@ -2153,7 +2153,7 @@ void do_equipment( CHAR_DATA *ch, char *argument )
     if ( !found )
 	send_to_char( "Nada.\n\r", ch );
 
-    send_to_char_color( "&g(type 'garb' for a list of all wear locations)\n\r", ch );
+    send_to_char_color( "&g(teclea 'equipado' para listar os obxetos equipados)\n\r", ch );
     return;
 }
 

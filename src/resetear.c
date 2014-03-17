@@ -909,7 +909,7 @@ Check for reset type from below
       send_to_char( "Must specify OBJECT, MOBILE, ROOM, or DOOR.\n\r", ch );
       return;
     }
-    if ( !str_prefix(option, "door") )
+    if ( !str_prefix(option, "porta") )
     {
       SET_BIT(num, BIT_RESET_DOOR);
       if ( aRoom )
