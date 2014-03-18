@@ -4063,14 +4063,14 @@ Minlevel     7
 End
 
 #SKILL
-Name         dual wield~
+Name         dobre empuñadura~
 Type         Skill
 Info         0
 Flags        0
 Minpos       107
 Code         spell_null
 Dammsg       ~
-Wearoff      !Dual Wield!~
+Wearoff      !Dobre Empuñadura!~
 Minlevel     10
 End
 

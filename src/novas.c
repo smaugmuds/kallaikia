@@ -115,38 +115,39 @@ void do_editnews( CHAR_DATA *ch, char *argument )
 
   if(arg[0] == '\0' )
   {
-    send_to_char( "Syntax: editnews addtype <name>\n\r"
-                  "        editnews addnews <type> <subject>\n\r"
-                  "        editnews removetype <number>\n\r"
-                  "        editnews removenews <type> <number>\n\r"
-                  "        editnews edittype <field> <value>\n\r"
-                  "        editnews editnews <type> <number> <new subject [optional]>\n\r"
-                  " Fields being one of the following:\n\r"
-                  " name header cmd_name level\n\r", ch);
+    send_to_char( "Syntais: editarnovas engadirtipo <nome>\n\r"
+                  "         editarnovas engadirnova <tipo> <titulo>\n\r"
+                  "         editarnovas eliminartipo <número>\n\r"
+                  "         editarnovas eliminarnova <tipo> <número>\n\r"
+                  "         editarnovas editartipo <campo> <valor>\n\r"
+                  "         editarnovas editarnova <tipo> <número> <novo título [opcional]>\n\r"
+		  "         editarnovas gardar\n\r"
+                  " Os campos deben ser un dos seguintes:\n\r"
+                  " nome cabeceira nome_comando nivel\n\r", ch);
     return;
   }
 
-  if( !str_cmp(arg, "save"))
+  if( !str_cmp(arg, "gardar"))
   {
     renumber_news();
     save_news();
-    send_to_char( "News saved.\n\r", ch );
+    send_to_char( "Novas gardadas.\n\r", ch );
     return;
   }
 
-  if(!str_cmp(arg, "addtype"))
+  if(!str_cmp(arg, "engadirtipo"))
   {
     NEWS_TYPE *type = NULL;
 
     if(argument[0] == '\0')
     {
-      send_to_char("Syntax: editnews addtype <name>\n\r", ch);
+      send_to_char("Sintaxis: editarnovas engadirtipo <nome>\n\r", ch);
       return;
     }
 
     if(top_news_type >= NEWS_MAX_TYPES)
     {
-      send_to_char("There are too many news types.\n\r", ch);
+      send_to_char("Xa existen demasiados tipos de novas.\n\r", ch);
       return;
     }
 
@@ -159,23 +160,23 @@ void do_editnews( CHAR_DATA *ch, char *argument )
     news_command_table[type->vnum] = STRALLOC(type->cmd_name);
 
     LINK(type, first_news_type, last_news_type, next, prev);
-    ch_printf( ch, "Newstype '%s' created.\n\r", argument );
+    ch_printf( ch, "Creache o novo tipo de novas '%s'.\n\r", argument );
     return;
   }
 
-  if(!str_cmp(arg, "removetype"))
+  if(!str_cmp(arg, "eliminartipo"))
   {
     NEWS_TYPE *type = NULL;
 
     if(argument[0] == '\0')
     {
-      send_to_char("Syntax: editnews removetype <name>\n\r", ch);
+      send_to_char("Sintaxis: editarnovas eliminartipo <nome>\n\r", ch);
       return;
     }
 
     if((type = figure_type(argument)) == NULL)
     {
-      send_to_char("Invaild newstype.\n\r", ch);
+      send_to_char("Tipo de novas inválido.\n\r", ch);
       return;
     }
 
@@ -213,11 +214,11 @@ void do_editnews( CHAR_DATA *ch, char *argument )
     top_news_type--;
     renumber_news();
     save_news();
-    ch_printf( ch, "Newstype '%s' removed.\n\r", argument );
+    ch_printf( ch, "O tipo de novas '%s' foi eliminado.\n\r", argument );
     return;
   }
 
-  if(!str_cmp(arg, "edittype"))
+  if(!str_cmp(arg, "editartipo"))
   {
     char arg2[MAX_INPUT_LENGTH];
     char arg3[MAX_INPUT_LENGTH];
@@ -227,34 +228,34 @@ void do_editnews( CHAR_DATA *ch, char *argument )
     argument = one_argument(argument, arg3);
     if(arg2[0] == '\0' || arg3[0] == '\0')
     {
-      send_to_char("Syntax: editnews edittype <type> <field> <value>\n\r", ch);
-      send_to_char("Fields being one of the following:\n\r"
-                   "name header cmd_name level\n\r", ch );
+      send_to_char("Sintaxis: editarnovas editartipo <tipo> <campo> <valor>\n\r", ch);
+      send_to_char("Os campos deben ser un dos seguintes:\n\r"
+                   "nome cabeceira nome_comando nivel\n\r", ch );
       return;
     }
 
     if((type = figure_type(arg2)) == NULL)
     {
-      send_to_char("Invalid newstype.\n\r", ch);
+      send_to_char("Tipo de novas inválido.\n\r", ch);
       return;
     }
 
-    if(!str_cmp(arg3, "cmd_name"))
+    if(!str_cmp(arg3, "nome_comando"))
     {
       type->cmd_name  = STRALLOC(argument);
       news_command_table[type->vnum] = STRALLOC(type->cmd_name);
-      send_to_char("Cmd_name set.\n\r", ch);
+      send_to_char("Nome_comando configurado.\n\r", ch);
       save_news();
       return;
     }
-    else if(!str_cmp(arg3, "name"))
+    else if(!str_cmp(arg3, "nome"))
     {
       type->name           = STRALLOC(argument);
-      send_to_char("Name set.\n\r", ch);
+      send_to_char("Nome configurado.\n\r", ch);
       save_news();
       return;
     }
-    else if(!str_cmp(arg3, "level"))
+    else if(!str_cmp(arg3, "nivel"))
     {
       if ( argument[0] == '\0' )
       {
@@ -263,20 +264,20 @@ void do_editnews( CHAR_DATA *ch, char *argument )
       }
       else
 	type->level = atoi(argument);
-      send_to_char("Level set.\n\r", ch);
+      send_to_char("Nivel configurado.\n\r", ch);
       save_news();
       return;
     }
     else
     {
-      send_to_char("Syntax: editnews edittype <type> <field> <value>\n\r", ch);
-      send_to_char("Fields being one of the following:\n\r"
-                   "name header cmd_name level\n\r", ch );
+      send_to_char("Sintaxis: editarnovas editartipo <tipo> <campo> <valor>\n\r", ch);
+      send_to_char("Os campos deben ser un dos seguintes:\n\r"
+                   "nome cabeceira nome_comando nivel\n\r", ch );
       return;
     }
   }
 
-  if( !str_cmp(arg, "addnews" ))
+  if( !str_cmp(arg, "engadirnova" ))
   {
     char arg[MAX_INPUT_LENGTH];
     NEWS_TYPE *type = NULL;
@@ -286,13 +287,13 @@ void do_editnews( CHAR_DATA *ch, char *argument )
 
     if(arg[0] == '\0' || argument[0] == '\0')
     {
-      send_to_char( "Syntax: editnews addnews <type> <subject>\n\r", ch );
+      send_to_char( "Sintaxis: editarnovas engadirnova <tipo> <titulo>\n\r", ch );
       return;
     }
 
     if((type = figure_type(arg)) == NULL)
     {
-      send_to_char("Invaild newstype. Use 'newstypes' to get a valid listing.\n\r", ch);
+      send_to_char("Tipo de novas inválido. Usa 'novastipo' para obter unha lista.\n\r", ch);
       return;
     }
 
@@ -315,7 +316,7 @@ void do_editnews( CHAR_DATA *ch, char *argument )
     return;
   }
 
-  if( !str_cmp(arg, "editnews"))
+  if( !str_cmp(arg, "editarnova"))
   {
     char arg2[MAX_INPUT_LENGTH];
     char arg3[MAX_INPUT_LENGTH];
@@ -326,20 +327,20 @@ void do_editnews( CHAR_DATA *ch, char *argument )
     argument = one_argument(argument, arg3);
     if(arg2[0] == '\0')
     {
-      send_to_char( "Syntax: editnews editnews <type> <number> <new subject [optional]>\n\r", ch );
+      send_to_char( "Sintaxis: editarnovas editarnova <tipo> <número> <novo título [opcional]>\n\r", ch );
       return;
     }
 
     /* changed for new -newstype- indexing - 5/5/02 */
     if((type = figure_type(arg2)) == NULL)
     {
-      send_to_char("Invalid newstype. Use 'newstypes' to get a valid listing.\n\r", ch);
+      send_to_char("Tipo de novas inválido. Usa 'novastipos' para obter unha lista.\n\r", ch);
       return;
     }
 
     if((news = grab_news(type, arg3)) == NULL)
     {
-      pager_printf_color(ch, "That's not a valid news number.\n\rUse '%s' to view the valid numbers.\n\r", type->cmd_name );
+      pager_printf_color(ch, "Non é un número de nova válido.\n\rUsa '%s' para ver un número válido.\n\r", type->cmd_name );
       return;
     }
 
@@ -361,7 +362,7 @@ void do_editnews( CHAR_DATA *ch, char *argument )
     return;
   }
 
-  if( !str_cmp(arg, "removenews"))
+  if( !str_cmp(arg, "eliminarnova"))
   {
     char arg2[MAX_INPUT_LENGTH];
     NEWS *news = NULL;
@@ -370,20 +371,20 @@ void do_editnews( CHAR_DATA *ch, char *argument )
     argument = one_argument(argument, arg2);
     if(argument[0] == '\0' || arg2[0] == '\0')
     {
-      send_to_char("Syntax: editnews remove <number>\n\r", ch );
+      send_to_char("Sintaxis: editarnovas eliminarnova <númber>\n\r", ch );
       return;
     }
 
     /* changed for new -newstype- indexing - 5/5/02 */
     if((type = figure_type(arg2)) == NULL)
     {
-      send_to_char("Invalid newstype. Use 'newstypes' to get a valid listing.\n\r", ch);
+      send_to_char("Tipo de novas inválido. Usa 'novastipo' para obter unha lista válida.\n\r", ch);
       return;
     }
 
     if((news = grab_news(type, argument)) == NULL)
     {
-      send_to_char( "Type 'news' to gain a list of the news numbers.\n\r", ch );
+      send_to_char( "Teclea 'novas' para obter unha lista dos números de cada nova.\n\r", ch );
       return;
     }
 
@@ -399,7 +400,7 @@ void do_editnews( CHAR_DATA *ch, char *argument )
     DISPOSE( news );
     renumber_news();
     save_news();
-    send_to_char("News item removed.\n\r", ch );
+    send_to_char("Nova eliminada.\n\r", ch );
     return;
   }
 }
@@ -462,7 +463,7 @@ void display_news( CHAR_DATA *ch, NEWS *news, NEWS_TYPE *type )
   if ( news->post[0] != '\0' )
         pager_printf_color( ch, news->post );
   else
-        pager_printf_color( ch, "&gNo further information.\n\r" );
+        pager_printf_color( ch, "&gNon hay máis información.\n\r" );
   pager_printf_color( ch, "&g--------------------------------------\n\r" );
   pager_printf_color( ch, "\n\r" );
   return;
@@ -510,28 +511,28 @@ void save_news(void)
   sprintf( filename, "%s%s", SYSTEM_DIR, NEWS_FILE );
   if((fp = fopen(filename, "w")) == NULL)
   {
-    perror("save_news(): cannot open file");
+    perror("save_news(): non se pode gardar o ficheiro");
     return;
   }
 
   for(type = first_news_type; type; type = type->next)
   {
-    fprintf(fp, "#NEWSTYPE\n");
-    fprintf(fp, "Name          %s~\n", type->name);
-    fprintf(fp, "Cmd_Name      %s~\n", type->cmd_name);
-    fprintf(fp, "Header        %s~\n", type->header);
+    fprintf(fp, "#TIPONOVA\n");
+    fprintf(fp, "Nome          %s~\n", type->name);
+    fprintf(fp, "Nome_Comando  %s~\n", type->cmd_name);
+    fprintf(fp, "Cabeceira     %s~\n", type->header);
     fprintf(fp, "Vnum          %d\n", type->vnum);
-    fprintf(fp, "Level	       %d\n", type->level);
-    fprintf(fp, "End\n");
+    fprintf(fp, "Nivel	       %d\n", type->level);
+    fprintf(fp, "FIN\n");
     for(news = type->first_news; news; news = news->next)
     {
-      fprintf( fp, "#NEWS\n" );
-      fprintf( fp, "Title    %s~\n", news->title );
-      fprintf( fp, "Name     %s~\n", news->name );
-      fprintf( fp, "Date     %s~\n", news->date );
-      fprintf( fp, "Type     %d\n", news->type);
-      fprintf( fp, "POST     %s~\n", news->post );
-      fprintf( fp, "End\n" );
+      fprintf( fp, "#NOVA\n" );
+      fprintf( fp, "Titulo    %s~\n", news->title );
+      fprintf( fp, "Nome      %s~\n", news->name );
+      fprintf( fp, "Data      %s~\n", news->date );
+      fprintf( fp, "Tipo      %d\n", news->type);
+      fprintf( fp, "Publicada %s~\n", news->post );
+      fprintf( fp, "FIN\n" );
     }
   }
 /*
@@ -551,7 +552,7 @@ void load_news(void)
   sprintf( filename, "%s%s", SYSTEM_DIR, NEWS_FILE );
   if((fp = fopen(filename, "r")) == NULL)
   {
-    perror("load_news(): cannot open file");
+    perror("load_news(): non se pode abrir o ficheiro");
     return;
   }
 
@@ -572,13 +573,13 @@ void load_news(void)
 
     if(letter != '#')
     {
-      bug("load_news(): # not found");
+      bug("load_news(): non se encontra #");
       break;
     }
 
     word = fread_word(fp);
 
-    if(!str_cmp(word, "NEWS"))
+    if(!str_cmp(word, "NOVA"))
     {
       CREATE( news, NEWS, 1 );
       news->type = -1;
@@ -588,7 +589,7 @@ void load_news(void)
       continue;
     }
     /* added for new indexing - 5/5/02 */
-    else if(!str_cmp(word, "NEWSTYPE"))
+    else if(!str_cmp(word, "TIPONOVA"))
     {
       CREATE(type, NEWS_TYPE, 1);
 
@@ -596,11 +597,11 @@ void load_news(void)
       LINK(type, first_news_type, last_news_type, next, prev);
       continue;
     }
-    if(!str_cmp(word, "END"))
+    if(!str_cmp(word, "FIN"))
          break;
     else
     {
-      bug("load_news(): unknown section %s", word);
+      bug("load_news(): sección descoñecida %s", word);
       continue;
     }
   }
@@ -632,7 +633,7 @@ void fread_news( NEWS *news, FILE *fp )
 
   for( ; ; )
   {
-    word   = feof( fp ) ? "End" : fread_word( fp );
+    word   = feof( fp ) ? "FIN" : fread_word( fp );
     fMatch = FALSE;
 
    switch(UPPER(word[0]))
@@ -642,14 +643,14 @@ void fread_news( NEWS *news, FILE *fp )
      break;
 
     case 'D':
-     KEY( "Date", news->date, fread_string(fp));
+     KEY( "Data", news->date, fread_string(fp));
      break;
 
-    case 'E':
-     if(!str_cmp(word, "END"))
+    case 'F':
+     if(!str_cmp(word, "FIN"))
      {
        if(!news->name)
-        news->name = STRALLOC("Unknown");
+        news->name = STRALLOC("Descoñecido");
 
        if(!news->date)
        {
@@ -657,7 +658,7 @@ void fread_news( NEWS *news, FILE *fp )
        }
 
        if(!news->title)
-        news->title = STRALLOC("News Post");
+        news->title = STRALLOC("Novas Publicadas");
 
        if(news->type <= -1)
         news->type = 0;
@@ -666,11 +667,11 @@ void fread_news( NEWS *news, FILE *fp )
     break;
 
     case 'N':
-     KEY( "Name", news->name, fread_string(fp));
+     KEY( "Nome", news->name, fread_string(fp));
      break;
 
     case 'P':
-     if(!str_cmp(word, "POST"))
+     if(!str_cmp(word, "Publicada"))
      {
       fMatch = TRUE;
       news->post = fread_string(fp);
@@ -679,13 +680,13 @@ void fread_news( NEWS *news, FILE *fp )
     break;
 
     case 'T':
-     KEY( "Title", news->title, fread_string(fp));
-     KEY("Type", news->type, fread_number(fp));
+     KEY( "Titulo", news->title, fread_string(fp));
+     KEY( "Tipo", news->type, fread_number(fp));
      break;
    }
 
    if(!fMatch)
-     bug("fread_news(): no match: %s", word);
+     bug("fread_news(): non coincide: %s", word);
   }
 }
 
@@ -697,7 +698,7 @@ void fread_news_type( NEWS_TYPE *type, FILE *fp )
 
   for( ; ; )
   {
-    word   = feof( fp ) ? "End" : fread_word( fp );
+    word   = feof( fp ) ? "FIN" : fread_word( fp );
     fMatch = FALSE;
 
    switch(UPPER(word[0]))
@@ -706,31 +707,25 @@ void fread_news_type( NEWS_TYPE *type, FILE *fp )
      fread_to_eol(fp);
      break;
 
-    case 'C':
-     KEY( "Cmd_Name", type->cmd_name, fread_string(fp));
+    case 'N':
+     KEY( "Nivel", type->level, fread_number(fp));
+     KEY( "Nome", type->name, fread_string(fp));
+     KEY( "Nome_comando", type->cmd_name, fread_string(fp));
     break;
 
-    case 'E':
-     if(!str_cmp(word, "END"))
+    case 'F':
+     if(!str_cmp(word, "FIN"))
      {
        if(!type->name)
-        type->name = STRALLOC("Unknown");
+        type->name = STRALLOC("Descoñecido");
 
        return;
      }
     break;
 
-    case 'H':
-     KEY("Header", type->header, fread_string(fp));
+    case 'C':
+     KEY("Cabeceira", type->header, fread_string(fp));
     break;
-
-    case 'L':
-     KEY( "Level", type->level, fread_number(fp));
-     break;
-
-    case 'N':
-     KEY( "Name", type->name, fread_string(fp));
-     break;
 
     case 'V':
      KEY( "Vnum", type->vnum, fread_number(fp));
@@ -835,18 +830,18 @@ void display_news_type(CHAR_DATA *ch, NEWS_TYPE *type, char *argument)
 {
   if(!type->first_news)
   {
-    send_to_char_color("&gThere are currently no news items for this news type.\n\r", ch);
+    send_to_char_color("&gNon existen novas actualmente para ese tipo.\n\r", ch);
     return;
   }
 
-  if(argument[0] == '\0' || !str_cmp(argument, "all"))
+  if(argument[0] == '\0' || !str_cmp(argument, "todo"))
   {
     bool all_news = FALSE;
     NEWS *news = NULL;
     int x = type->last_news->number, y = NEWS_VIEW;
     int skipper = (x-y);
 
-    if(!str_cmp(argument, "all"))
+    if(!str_cmp(argument, "todo"))
      all_news = TRUE;
 
     pager_printf_color( ch, "\n\r&g--------------------------------------\n\r" );
@@ -872,15 +867,15 @@ void display_news_type(CHAR_DATA *ch, NEWS_TYPE *type, char *argument)
     if(!all_news)
     {
       if ( type->last_news->number == 1 )
-	pager_printf_color( ch, "&g\n\rThere is one news item.\n\r" );
+	pager_printf_color( ch, "&g\n\rHay unha nova.\n\r" );
       else if ( type->last_news->number >  NEWS_VIEW - 1 )
-	pager_printf_color( ch, "\n\r&gThere are &w%d&g total items, the oldest of which are not listed here.\n\rUse '&w%s all&g' to list them all.&g\n\r", type->last_news->number, type->cmd_name );
+	pager_printf_color( ch, "\n\r&gHay &w%d&g novas en total, as máis antigas non se listan aquí.\n\rUsa '&w%s todo&g' para velas todas.&g\n\r", type->last_news->number, type->cmd_name );
       else
-	pager_printf_color( ch, "\n\r&gThere are &w%d&g total items.\n\r", type->last_news->number );
-      pager_printf_color( ch, "\n\r&gTo read individual items type '&w%s <number>&g'.\n\r", type->cmd_name );
+	pager_printf_color( ch, "\n\r&gHay un total de &w%d&g novas.\n\r", type->last_news->number );
+      pager_printf_color( ch, "\n\r&gPara leer novas individuais teclea '&w%s <número>&g'.\n\r", type->cmd_name );
       return;
     }
-    pager_printf_color( ch, "\n\r&gTo read individual items type '&w%s <number>&g'.\n\r", type->cmd_name );
+    pager_printf_color( ch, "\n\r&gPara ler novas inividuais teclea '&w%s <número>&g'.\n\r", type->cmd_name );
   }
 
   {
@@ -888,8 +883,8 @@ void display_news_type(CHAR_DATA *ch, NEWS_TYPE *type, char *argument)
 
     if((news = grab_news(type, argument)) == NULL)
     {
-      if( str_cmp( argument, "all" ) )
-	send_to_char_color( "&g\n\rThat's not a news post number.\n\rUse '&wnews&g' to view them.\n\r", ch );
+      if( str_cmp( argument, "todo" ) )
+	send_to_char_color( "&g\n\rEso non é un número de nova publicada.\n\rUsa '&wnovas&g' para velas.\n\r", ch );
       return;
     }
     display_news(ch, news, type);

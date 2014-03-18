@@ -35,8 +35,8 @@
 
 #define NEWS_TOP "\n\r"
 #define NEWS_HEADER "\n\r"
-#define NEWS_HEADER_ALL "&g( &W#&g)                          (&WSubject&g)\n\r"
-#define NEWS_HEADER_READ "&g( &W#&g)                          (&WSubject&g)\n\r"
+#define NEWS_HEADER_ALL "&g( &W#&g)                          (&WTítulo&g)\n\r"
+#define NEWS_HEADER_READ "&g( &W#&g)                          (&WTítulo&g)\n\r"
 #define NEWS_VIEW               15
 #define NEWS_MAX_TYPES          10
 

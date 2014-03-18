@@ -715,25 +715,25 @@ char *owear_to_disp (short arg)
 
 int owear_to_num (char *arg)
 {
-  if ( !strcmp( arg, "take"    ) ) return  1;
-  if ( !strcmp( arg, "finger"  ) ) return  2;
-  if ( !strcmp( arg, "neck"    ) ) return  3;
-  if ( !strcmp( arg, "body"    ) ) return  4;
-  if ( !strcmp( arg, "head"    ) ) return  5;
-  if ( !strcmp( arg, "legs"    ) ) return  6;
-  if ( !strcmp( arg, "feet"    ) ) return  7;
-  if ( !strcmp( arg, "hands"   ) ) return  8;
-  if ( !strcmp( arg, "arms"    ) ) return  9;
-  if ( !strcmp( arg, "shield"  ) ) return 10;
-  if ( !strcmp( arg, "about"   ) ) return 11;
+  if ( !strcmp( arg, "coller"    ) ) return  1;
+  if ( !strcmp( arg, "dedo"  ) ) return  2;
+  if ( !strcmp( arg, "colo"    ) ) return  3;
+  if ( !strcmp( arg, "corpo"    ) ) return  4;
+  if ( !strcmp( arg, "cabeza"    ) ) return  5;
+  if ( !strcmp( arg, "pernas"    ) ) return  6;
+  if ( !strcmp( arg, "pés"    ) ) return  7;
+  if ( !strcmp( arg, "mans"   ) ) return  8;
+  if ( !strcmp( arg, "brazos"    ) ) return  9;
+  if ( !strcmp( arg, "escudo"  ) ) return 10;
+  if ( !strcmp( arg, "sobre"   ) ) return 11;
   if ( !strcmp( arg, "waist"   ) ) return 12;
   if ( !strcmp( arg, "wrist"   ) ) return 13;
-  if ( !strcmp( arg, "wield"   ) ) return 14;
-  if ( !strcmp( arg, "hold"    ) ) return 15;
+  if ( !strcmp( arg, "empuñar"   ) ) return 14;
+  if ( !strcmp( arg, "soster"    ) ) return 15;
   if ( !strcmp( arg, "dual"    ) ) return 16;
-  if ( !strcmp( arg, "ears"    ) ) return 17;
-  if ( !strcmp( arg, "eyes"    ) ) return 18;
-  if ( !strcmp( arg, "missile" ) ) return 19;
+  if ( !strcmp( arg, "orellas"    ) ) return 17;
+  if ( !strcmp( arg, "ollos"    ) ) return 18;
+  if ( !strcmp( arg, "misile" ) ) return 19;
   return 0;
 }
 	

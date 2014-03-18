@@ -60,11 +60,11 @@ CHAR_DATA *	timechar;
 
 char * corpse_descs[] =
    { 
-     "The corpse of %s is in the last stages of decay.", 
-     "The corpse of %s is crawling with vermin.",
-     "The corpse of %s fills the air with a foul stench.",
-     "The corpse of %s is buzzing with flies.",
-     "The corpse of %s lies here."
+     "O cadáver de %s está no último estado de putrefacción.", 
+     "O cadáver de %s é corroído polos vermes.",
+     "O cadáver de %s está cheo de aire putrefacto.",
+     "O cadáver de %s está rodeado de moscas zumbando.",
+     "O cadáver de %s xace aquí."
    };
 
 extern int      top_exit;
@@ -82,7 +82,7 @@ void advance_level( CHAR_DATA *ch )
     int add_move;
     int add_prac;
 
-    sprintf( buf, "the %s",
+    sprintf( buf, "o %s",
 	title_table [ch->class] [ch->level] [ch->sex == SEX_FEMALE ? 1 : 0] );
     set_title( ch, buf );
 
@@ -104,7 +104,7 @@ void advance_level( CHAR_DATA *ch )
         add_mana = add_mana + add_mana*.3;
         add_move = add_move + add_move*.3;
         add_hp +=1; /* bitch at blod if you don't like this :) */
-        sprintf(buf,"Gravoc's Pandect steels your sinews.\n\r");
+        sprintf(buf,"A bendición de Brath roubache a túa sinews.\n\r");
     }
 
     ch->max_hit 	+= add_hp;
@@ -120,7 +120,7 @@ void advance_level( CHAR_DATA *ch )
     {
 	DESCRIPTOR_DATA *d;
 
-	sprintf( buf, "%s has attained the rank of Avatar!", ch->name );
+	sprintf( buf, "%s ten asignado o rango de Avatar!", ch->name );
 	for ( d = first_descriptor; d; d = d->next )
 	   if ( d->connected == CON_PLAYING && d->character != ch )
 	   {
@@ -136,7 +136,7 @@ void advance_level( CHAR_DATA *ch )
     {
       if ( IS_VAMPIRE(ch) || IS_DEMON(ch) )
         sprintf( buf,
-	  "Your gain is: %d/%d hp, %d/%d bp, %d/%d mv %d/%d prac.\n\r",
+	  "A túa ganancia: %d/%d hp, %d/%d bp, %d/%d mv %d/%d prac.\n\r",
 	  add_hp,	ch->max_hit,
 	  1,	        ch->level + 10,
 	  add_move,	ch->max_move,
@@ -144,7 +144,7 @@ void advance_level( CHAR_DATA *ch )
 	  );
       else
         sprintf( buf,
-	  "Your gain is: %d/%d hp, %d/%d mana, %d/%d mv %d/%d prac.\n\r",
+	  "A túa ganancia: %d/%d hp, %d/%d mana, %d/%d mv %d/%d prac.\n\r",
 	  add_hp,	ch->max_hit,
  	  add_mana,	ch->max_mana,
 	  add_move,	ch->max_move,
@@ -189,19 +189,19 @@ void gain_exp( CHAR_DATA *ch, int gain )
 /* temporarily modified
     if(modgain>0 && IS_PKILL(ch) && ch->level<17){
        if(ch->level<=6){
-          sprintf(buf,"The Favor of Gravoc fosters your learning.\n\r");
+          sprintf(buf,"The Favor of Brath fosters your learning.\n\r");
           modgain*=2;
        }
        if(ch->level<=10 && ch->level>=7){
-          sprintf(buf,"The Hand of Gravoc hastens your learning.\n\r");
+          sprintf(buf,"The Hand of Brath hastens your learning.\n\r");
           modgain*=1.75;
        }
        if(ch->level<=13 && ch->level>=11){
-          sprintf(buf,"The Cunning of Gravoc succors your learning.\n\r");
+          sprintf(buf,"The Cunning of Brath succors your learning.\n\r");
           modgain*=1.5;
        }
        if(ch->level<=16 && ch->level>=14){
-          sprintf(buf,"The Patronage of Gravoc reinforces your learning.\n\r");
+          sprintf(buf,"The Patronage of Brath reinforces your learning.\n\r");
           modgain*=1.25;
        }
 	send_to_char(buf, ch);
@@ -209,19 +209,19 @@ void gain_exp( CHAR_DATA *ch, int gain )
 
     if(modgain>0 && IS_PKILL(ch)){
        if(ch->level<=15){
-          sprintf(buf,"The Favor of Gravoc fosters your learning.\n\r");
+          sprintf(buf,"O favor de Brath acelera a túa aprendizaxe.\n\r");
           modgain*=2.75;
        }
        if(ch->level<=25 && ch->level>=16){
-          sprintf(buf,"The Hand of Gravoc hastens your learning.\n\r");
+          sprintf(buf,"A man de Brath axudache na túa aprendizaxe.\n\r");
           modgain*=2.5;
        }
        if(ch->level<=35 && ch->level>=26){
-          sprintf(buf,"The Cunning of Gravoc succors your learning.\n\r");
+          sprintf(buf,"O fogar de Brath bendice a túa aprendizaxe.\n\r");
           modgain*=2.25;
        }
        if(ch->level<=49 && ch->level>=36){
-          sprintf(buf,"The Patronage of Gravoc reinforces your learning.\n\r");
+          sprintf(buf,"O patronazgo de Brath reforza a túa aprendizaxe.\n\r");
           modgain*=2.0;
        }
 	send_to_char(buf, ch);
@@ -239,7 +239,7 @@ void gain_exp( CHAR_DATA *ch, int gain )
     if(IS_PKILL(ch)&& modgain<0){
        if( ch->exp + modgain < exp_level(ch, ch->level)){
           modgain = exp_level(ch, ch->level) - ch->exp;
-          sprintf(buf,"Gravoc's Pandect protects your insight.\n\r");
+          sprintf(buf,"A bendición de Brath protexe o teu interior.\n\r");
        }
     }
 
@@ -257,7 +257,7 @@ void gain_exp( CHAR_DATA *ch, int gain )
 
     if (NOT_AUTHED(ch) && ch->exp >= exp_level(ch, ch->level+1))
     {
-	send_to_char("You can not ascend to a higher level until you are authorized.\n\r", ch);
+	send_to_char("Non podes ascender a un nivel superior ata que non estés autorizado.\n\r", ch);
 	ch->exp = (exp_level(ch, (ch->level+1)) - 1);
 	return;
     }
@@ -265,7 +265,7 @@ void gain_exp( CHAR_DATA *ch, int gain )
     while ( ch->level < LEVEL_AVATAR && ch->exp >= exp_level(ch, ch->level+1))
     {
 	set_char_color( AT_WHITE + AT_BLINK, ch );
-	ch_printf( ch, "You have now obtained experience level %d!\n\r", ++ch->level );
+	ch_printf( ch, "Parabéns! Alcanzache o nivel de experiencia %d!!\n\r", ++ch->level );
 	advance_level( ch );
     }
 	save_char_obj( ch );
@@ -453,8 +453,8 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
         if (( ch->level < LEVEL_AVATAR && ch->class != CLASS_VAMPIRE) || ( ch->level < LEVEL_AVATAR && ch->class != CLASS_DEMON ))
 	{
             set_char_color( AT_HUNGRY, ch );
-	    send_to_char( "You are STARVING!\n\r",  ch );
-            act( AT_HUNGRY, "$n is starved half to death!", ch, NULL, NULL, TO_ROOM);
+	    send_to_char( "Estas DESFALECENDO!\n\r",  ch );
+            act( AT_HUNGRY, "$n está desfalecendo medio morto!", ch, NULL, NULL, TO_ROOM);
 	    if ( !IS_PKILL(ch) || number_bits(1) == 0 )
 		worsen_mental_state( ch, 1 );
 	    retcode = damage(ch, ch, 1, TYPE_UNDEFINED);
@@ -465,8 +465,8 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if (( ch->level < LEVEL_AVATAR && ch->class != CLASS_VAMPIRE ) || ( ch->level < LEVEL_AVATAR && ch->class != CLASS_DEMON ))
           {
             set_char_color( AT_THIRSTY, ch );
-	    send_to_char( "You are DYING of THIRST!\n\r", ch );
-            act( AT_THIRSTY, "$n is dying of thirst!", ch, NULL, NULL, TO_ROOM);
+	    send_to_char( "Estás MORRENDO de SEDE!\n\r", ch );
+            act( AT_THIRSTY, "$n está morrendo de sede!", ch, NULL, NULL, TO_ROOM);
 	    worsen_mental_state( ch, IS_PKILL(ch) ? 1: 2 );
 	    retcode = damage(ch, ch, 2, TYPE_UNDEFINED);
           }
@@ -476,8 +476,8 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if ( ch->level < LEVEL_AVATAR )
           {
             set_char_color( AT_BLOOD, ch );
-            send_to_char( "You are starved to feast on blood!\n\r", ch );
-            act( AT_BLOOD, "$n is suffering from lack of blood!", ch,
+            send_to_char( "Estás desfalecendo por un festín de sangue!\n\r", ch );
+            act( AT_BLOOD, "$n está sufrindo por falta de sangue!", ch,
                  NULL, NULL, TO_ROOM);
 	    worsen_mental_state( ch, 2 );
 	    retcode = damage(ch, ch, ch->max_hit / 20, TYPE_UNDEFINED);
@@ -486,7 +486,7 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
 	case COND_DRUNK:
 	    if ( condition != 0 ) {
                 set_char_color( AT_SOBER, ch );
-		send_to_char( "You are sober.\n\r", ch );
+		send_to_char( "Estás bébedo.\n\r", ch );
 	    }
 	    retcode = rNONE;
 	    break;
@@ -508,8 +508,8 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if (( ch->level < LEVEL_AVATAR && ch->class != CLASS_VAMPIRE ) || ( ch->level < LEVEL_AVATAR && ch->class != CLASS_DEMON ))
           {
             set_char_color( AT_HUNGRY, ch );
-	    send_to_char( "You are really hungry.\n\r",  ch );
-            act( AT_HUNGRY, "You can hear $n's stomach growling.", ch, NULL, NULL, TO_ROOM);
+	    send_to_char( "Estás realmente famento! as túas tripas roxen!\n\r",  ch );
+            act( AT_HUNGRY, "Podes oir as tripas de $n roxir.", ch, NULL, NULL, TO_ROOM);
 	    if ( number_bits(1) == 0 )
 		worsen_mental_state( ch, 1 );
           } 
@@ -519,9 +519,9 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if (( ch->level < LEVEL_AVATAR && ch->class != CLASS_VAMPIRE ) || ( ch->level < LEVEL_AVATAR && ch->class != CLASS_DEMON ))
           {
             set_char_color( AT_THIRSTY, ch );
-	    send_to_char( "You are really thirsty.\n\r", ch );
+	    send_to_char( "Estás realmente sedento.\n\r", ch );
 	    worsen_mental_state( ch, 1 );
-	    act( AT_THIRSTY, "$n looks a little parched.", ch, NULL, NULL, TO_ROOM);
+	    act( AT_THIRSTY, "$n está seco como unha pasa.", ch, NULL, NULL, TO_ROOM);
           } 
 	  break;
 
@@ -529,8 +529,8 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if ( ch->level < LEVEL_AVATAR )
           {
             set_char_color( AT_BLOOD, ch );
-            send_to_char( "You have a growing need to feast on blood!\n\r", ch );
-            act( AT_BLOOD, "$n gets a strange look in $s eyes...", ch,
+            send_to_char( "Tes unha necesidade crecente dun festín de sangue!\n\r", ch );
+            act( AT_BLOOD, "$n ten unha estrana mirada nos seus $s ollos...", ch,
                  NULL, NULL, TO_ROOM);
 	    worsen_mental_state( ch, 1 );
           }
@@ -538,7 +538,7 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
 	case COND_DRUNK:
 	    if ( condition != 0 ) {
                 set_char_color( AT_SOBER, ch );
-		send_to_char( "You are feeling a little less light headed.\n\r", ch );
+		send_to_char( "Comezas a sentir a cabeza máis lixeira.\n\r", ch );
             }
 	    break;
 	}
@@ -553,7 +553,7 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if (( ch->level < LEVEL_AVATAR && ch->class != CLASS_VAMPIRE ) || ( ch->level < LEVEL_AVATAR && ch->class != CLASS_DEMON ))
           {
             set_char_color( AT_HUNGRY, ch );
-	    send_to_char( "You are hungry.\n\r",  ch );
+	    send_to_char( "Estás famento.\n\r",  ch );
           } 
 	  break;
 
@@ -561,7 +561,7 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if (( ch->level < LEVEL_AVATAR && ch->class != CLASS_VAMPIRE ) || ( ch->level < LEVEL_AVATAR && ch->class != CLASS_DEMON ))
           {
             set_char_color( AT_THIRSTY, ch );
-	    send_to_char( "You are thirsty.\n\r", ch );
+	    send_to_char( "Estás sedento.\n\r", ch );
           } 
 	  break;
 
@@ -569,7 +569,7 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if ( ch->level < LEVEL_AVATAR )
           {
             set_char_color( AT_BLOOD, ch );
-            send_to_char( "You feel an urgent need for blood.\n\r", ch );
+            send_to_char( "Tes unha apremiante necesidade de sangue.\n\r", ch );
           }  
           break;
 	}
@@ -583,7 +583,7 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if (( ch->level < LEVEL_AVATAR && ch->class != CLASS_VAMPIRE ) || ( ch->level < LEVEL_AVATAR && ch->class != CLASS_DEMON ))
           {
             set_char_color( AT_HUNGRY, ch );
-	    send_to_char( "You are a mite peckish.\n\r",  ch );
+	    send_to_char( "Picarías algo de comer.\n\r",  ch );
           } 
 	  break;
 
@@ -591,7 +591,7 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if (( ch->level < LEVEL_AVATAR && ch->class != CLASS_VAMPIRE ) || ( ch->level < LEVEL_AVATAR && ch->class != CLASS_DEMON ))
           {
             set_char_color( AT_THIRSTY, ch );
-	    send_to_char( "You could use a sip of something refreshing.\n\r", ch );
+	    send_to_char( "Deberías usar algo refrescante.\n\r", ch );
           } 
 	  break;
 
@@ -599,7 +599,7 @@ void gain_condition( CHAR_DATA *ch, int iCond, int value )
           if ( ch->level < LEVEL_AVATAR )
           {
             set_char_color( AT_BLOOD, ch );
-            send_to_char( "You feel an aching in your fangs.\n\r", ch );
+            send_to_char( "Sentes unha punzada nos teus colmillos.\n\r", ch );
           }
           break;
 	}
@@ -623,13 +623,13 @@ void check_alignment( CHAR_DATA *ch )
      if(ch->alignment<race_table[ch->race]->minalign)
      {
 	set_char_color( AT_BLOOD, ch );
-        send_to_char( "Your actions have been incompatible with the ideals of your race.  This troubles you.\n\r", ch);
+        send_to_char( "As tuas accións foron incompatibles cos ideais da túa raza. Isto créache problemas.\n\r", ch);
      }
 
      if(ch->alignment>race_table[ch->race]->maxalign)
      {
 	set_char_color( AT_BLOOD, ch );
-        send_to_char( "Your actions have been incompatible with the ideals of your race.  This troubles you.\n\r", ch);
+        send_to_char( "As tuas accións foron incompatibles cos ideais da túa raza. Isto créache problemas.\n\r", ch);
      }
 
      /* Nephandi alignment restrictions -h  */
@@ -648,7 +648,7 @@ void check_alignment( CHAR_DATA *ch )
         if(ch->alignment<250){
             set_char_color( AT_BLOOD, ch );
             send_to_char( "You are wracked with guilt and remorse for your craven actions!\n\r", ch );
-            act( AT_BLOOD, "$n prostrates $mself, seeking forgiveness from $s Lord.", ch, 
+            act( AT_BLOOD, "$n póstrase ante $mself, buscando o perdón do Señor $s.", ch, 
                  NULL, NULL, TO_ROOM); 
             worsen_mental_state( ch, 15 );
             return;
@@ -698,7 +698,7 @@ void mobile_update( void )
 	    bug( "Short-cutting here", 0 );
 	    gch_prev = NULL;
 	    ch->prev = NULL;
-	    do_shout( ch, "_BuRZuMiSHi_ says, 'Prepare for the worst!'" );
+	    do_shout( ch, "_BuRZuM-iSHi_ dice, 'Prepárate para o peor!'" );
 	}
 
 	if ( !IS_NPC(ch) )
@@ -719,7 +719,7 @@ void mobile_update( void )
         if ( ch->pIndexData->vnum == 5 && !IS_AFFECTED(ch, AFF_CHARM) )
 	{
 	  if(ch->in_room->first_person)
-	    act(AT_MAGIC, "$n returns to the dust from whence $e came.", ch, NULL, NULL, TO_ROOM);
+	    act(AT_MAGIC, "$n volve do pó de onde $e provén.", ch, NULL, NULL, TO_ROOM);
           
    	  if(IS_NPC(ch)) /* Guard against purging switched? */
 	    extract_char(ch, TRUE);
@@ -831,7 +831,7 @@ void mobile_update( void )
 	    {
 		obj_from_room( obj_best );
 		obj_to_char( obj_best, ch );
-		act( AT_ACTION, "$n gets $p.", ch, obj_best, NULL, TO_ROOM );
+		act( AT_ACTION, "$n colle $p.", ch, obj_best, NULL, TO_ROOM );
 	    }
 	}
 
@@ -881,16 +881,16 @@ void mobile_update( void )
 		    switch( number_bits(2) )
 		    {
 			case 0:
-			  sprintf( buf, "Get away from me, %s!", rch->name );
+			  sprintf( buf, "Apartate de min, %s!", rch->name );
 			  break;
 			case 1:
-			  sprintf( buf, "Leave me be, %s!", rch->name );
+			  sprintf( buf, "Deixame estar, %s!", rch->name );
 			  break;
 			case 2:
-			  sprintf( buf, "%s is trying to kill me!  Help!", rch->name );
+			  sprintf( buf, "%s está tentando matarme! Axudaa!", rch->name );
 			  break;
 			case 3:
-			  sprintf( buf, "Someone save me from %s!", rch->name );
+			  sprintf( buf, "Alguén me salvou de %s!", rch->name );
 			  break;
 		    }
 		    do_yell( ch, buf );
@@ -1048,8 +1048,8 @@ void char_update( void )
 		    ch->in_room->light -= obj->count;
 		    if (ch->in_room->light < 0 )
 				ch->in_room->light=0;
-		    act( AT_ACTION, "$p goes out.", ch, obj, NULL, TO_ROOM );
-		    act( AT_ACTION, "$p goes out.", ch, obj, NULL, TO_CHAR );
+		    act( AT_ACTION, "$p sae fora.", ch, obj, NULL, TO_ROOM );
+		    act( AT_ACTION, "$p sae fora.", ch, obj, NULL, TO_CHAR );
 		    if ( obj->serial == cur_obj )
 		      global_objcode = rOBJ_EXPIRED;
 		    extract_obj( obj );
@@ -1066,9 +1066,9 @@ void char_update( void )
 		    */
 		    if ( ch->fighting )
 			stop_fighting( ch, TRUE );
-		    act( AT_ACTION, "$n disappears into the void.",
+		    act( AT_ACTION, "$n desaparece nas tebras.",
 			ch, NULL, NULL, TO_ROOM );
-		    send_to_char( "You disappear into the void.\n\r", ch );
+		    send_to_char( "Desaparces nas tebras.\n\r", ch );
 		    if ( IS_SET( sysdata.save_flags, SV_IDLE ) )
 			save_char_obj( ch );
 		    SET_BIT(ch->pcdata->flags, PCFLAG_IDLE);
@@ -1243,12 +1243,12 @@ void char_update( void )
 			act( AT_ACTION, "$n looks kind of out of it.", ch, NULL, NULL, TO_ROOM );
 		    	break;
 		    case  4:
-		    	send_to_char( "You do not feel well at all.\n\r", ch );
-			act( AT_ACTION, "$n doesn't look too good.", ch, NULL, NULL, TO_ROOM );
+		    	send_to_char( "Non te sentes ben para nada.\n\r", ch );
+			act( AT_ACTION, "$n non parece sentirse ben.", ch, NULL, NULL, TO_ROOM );
 		    	break;
 		    case  5:
-		    	send_to_char( "You need help!\n\r", ch );
-			act( AT_ACTION, "$n looks like $e could use your help.", ch, NULL, NULL, TO_ROOM );
+		    	send_to_char( "Precisas axuda!\n\r", ch );
+			act( AT_ACTION, "$n parece $e que poda precisar a túa axuda.", ch, NULL, NULL, TO_ROOM );
 		    	break;
 		    case  6:
 		    	send_to_char( "Seekest thou a cleric.\n\r", ch );
@@ -1259,16 +1259,16 @@ void char_update( void )
 			act( AT_ACTION, "$n doesn't appear to be aware of what's going on.", ch, NULL, NULL, TO_ROOM );
 		    	break;
 		    case  8:
-		    	send_to_char( "You begin to understand... everything.\n\r", ch );
+		    	send_to_char( "Comezas a entendelo...todo.\n\r", ch );
 			act( AT_ACTION, "$n starts ranting like a madman!", ch, NULL, NULL, TO_ROOM );
 		    	break;
 		    case  9:
-		    	send_to_char( "You are ONE with the universe.\n\r", ch );
+		    	send_to_char( "Eres UN TODO co Universo.\n\r", ch );
 			act( AT_ACTION, "$n is ranting on about 'the answer', 'ONE' and other mumbo-jumbo...", ch, NULL, NULL, TO_ROOM );
 		    	break;
 		    case 10:
-		    	send_to_char( "You feel the end is near.\n\r", ch );
-			act( AT_ACTION, "$n is muttering and ranting in tongues...", ch, NULL, NULL, TO_ROOM );
+		    	send_to_char( "Sentes que o fin está cerca.\n\r", ch );
+			act( AT_ACTION, "$n está murmurando e recitando en línguas estrañas...", ch, NULL, NULL, TO_ROOM );
 		    	break;
 		}
 	    if ( ch->mental_state <= -30 )
@@ -1282,7 +1282,7 @@ void char_update( void )
 			   &&    number_percent()+10 < abs(ch->mental_state) )
 				do_sleep( ch, "" );
 			   else
-				send_to_char( "You're barely conscious.\n\r", ch );
+				send_to_char( "Estás case consciente.\n\r", ch );
 			}
 			break;
 		    case   9:
@@ -1293,7 +1293,7 @@ void char_update( void )
 			   &&   (number_percent()+20) < abs(ch->mental_state) )
 				do_sleep( ch, "" );
 			   else
-				send_to_char( "You can barely keep your eyes open.\n\r", ch );
+				send_to_char( "Case non podes manter os teus ollos abertos.\n\r", ch );
 			}
 			break;
 		    case   8:
@@ -1303,28 +1303,28 @@ void char_update( void )
 			   &&  (number_percent()+30) < abs(ch->mental_state) )
 				do_sleep( ch, "" );
 			   else
-				send_to_char( "You're extremely drowsy.\n\r", ch );
+				send_to_char( "Estás extremadamente sonolento.\n\r", ch );
 			}
 			break;
 		    case   7:
 			if ( ch->position > POS_RESTING )
-			   send_to_char( "You feel very unmotivated.\n\r", ch );
+			   send_to_char( "Estás moi desmotivado.\n\r", ch );
 			break;
 		    case   6:
 			if ( ch->position > POS_RESTING )
-			   send_to_char( "You feel sedated.\n\r", ch );
+			   send_to_char( "Séntete sedado.\n\r", ch );
 			break;
 		    case   5:
 			if ( ch->position > POS_RESTING )
-			   send_to_char( "You feel sleepy.\n\r", ch );
+			   send_to_char( "Senteste con gana de durmir.\n\r", ch );
 			break;
 		    case   4:
 			if ( ch->position > POS_RESTING )
-			   send_to_char( "You feel tired.\n\r", ch );
+			   send_to_char( "Sénteste cansado.\n\r", ch );
 			break;
 		    case   3:
 			if ( ch->position > POS_RESTING )
-			   send_to_char( "You could use a rest.\n\r", ch );
+			   send_to_char( "Quizáis poderías descansar.\n\r", ch );
 			break;
 		}
 	    if ( ch->timer > 24 )
@@ -1391,8 +1391,8 @@ void obj_update( void )
 				tch->in_room->light -= obj->count;
 				if (tch->in_room->light < 0 )
 					tch->in_room->light=0;
-				act( AT_ACTION, "$p goes out.", tch, obj, NULL, TO_ROOM );
-				act( AT_ACTION, "$p goes out.", tch, obj, NULL, TO_CHAR );
+				act( AT_ACTION, "$p sae fora.", tch, obj, NULL, TO_ROOM );
+				act( AT_ACTION, "$p sae fora.", tch, obj, NULL, TO_CHAR );
 				if ( obj->serial == cur_obj )
 				  global_objcode = rOBJ_EXPIRED;
 				extract_obj( obj );
@@ -1409,8 +1409,8 @@ void obj_update( void )
 					 obj->in_room->light=0;
 				if ( ( tch = obj->in_room->first_person ) )
 				{
-				 act( AT_ACTION, "$p goes out.", tch, obj, NULL, TO_ROOM );
-				 act( AT_ACTION, "$p goes out.", tch, obj, NULL, TO_CHAR );
+				 act( AT_ACTION, "$p sae fora.", tch, obj, NULL, TO_ROOM );
+				 act( AT_ACTION, "$p sae fora.", tch, obj, NULL, TO_CHAR );
 				}
 				if ( obj->serial == cur_obj )
 				  global_objcode = rOBJ_EXPIRED;
@@ -1493,47 +1493,47 @@ void obj_update( void )
 	 switch ( obj->item_type )
 	 {
 	 default:
-	   message = "$p mysteriously vanishes.";
+	   message = "$p desvanécese misteriosamente.";
            AT_TEMP = AT_PLAIN;
 	   break;
 	 case ITEM_CONTAINER:
-	   message = "$p falls apart, tattered from age.";
+	   message = "$p desmoronase, desfarrapado pola súa antiguidade.";
 	   AT_TEMP = AT_OBJECT;
 	   break; 
 	 case ITEM_PORTAL:
-	   message = "$p unravels and winks from existence.";
+	   message = "$p desvélase en piscadelas da existencia.";
            remove_portal(obj);
 	   obj->item_type = ITEM_TRASH;		/* so extract_obj	 */
            AT_TEMP = AT_MAGIC;			/* doesn't remove_portal */
 	   break;
 	 case ITEM_FOUNTAIN:
 	 case ITEM_PUDDLE:
-	   message = "$p dries up.";
+	   message = "$p secouse.";
            AT_TEMP = AT_BLUE;
 	   break;
 	 case ITEM_CORPSE_NPC:
-	   message = "$p decays into dust and blows away.";
+	   message = "$p convértese en pó e escorréntase.";
            AT_TEMP = AT_OBJECT;
 	   break;
 	 case ITEM_CORPSE_PC:
-	   message = "$p is sucked into a swirling vortex of colors...";
+	   message = "$p é absorvido dentro dun vórtice xiratorio de cores...";
            AT_TEMP = AT_MAGIC;
 	   break;
 	 case ITEM_COOK:
 	 case ITEM_FOOD:
-	   message = "$p is devoured by a swarm of maggots.";
+	   message = "$p está sendo devorada por un montón de larvas .";
            AT_TEMP = AT_HUNGRY;
 	   break;
          case ITEM_BLOOD:
-           message = "$p slowly seeps into the ground.";
+           message = "$p pousase con suavidade no chan.";
            AT_TEMP = AT_BLOOD;
            break;
          case ITEM_BLOODSTAIN:
-           message = "$p dries up into flakes and blows away.";
+           message = "$p espolvorexase en finos flocos e fuxe escorrentado.";
            AT_TEMP = AT_ORANGE;
 	   break;
          case ITEM_SCRAPS:
-           message = "$p crumble and decay into nothing.";
+           message = "$p desmorónase desfacéndose en pó.";
            AT_TEMP = AT_OBJECT;
 	   break;
 	 case ITEM_FIRE:
@@ -1547,7 +1547,7 @@ void obj_update( void )
 			obj->in_room->light = 0;
 	   }
 	   */
-	   message = "$p burns out.";
+	   message = "$p está ardendo.";
 	   AT_TEMP = AT_FIRE;
 	 }
 
@@ -1651,7 +1651,7 @@ void char_check( void )
 		xREMOVE_BIT( ch->mount->act, ACT_MOUNTED );
 		ch->mount = NULL;
 		ch->position = POS_STANDING;
-		send_to_char( "No longer upon your mount, you fall to the ground...\n\rOUCH!\n\r", ch );
+		send_to_char( "Non sigues sobre a túa montura, caíche no chan...\n\rOUCH!\n\r", ch );
 	    }
 
 	    if ( ( ch->in_room && ch->in_room->sector_type == SECT_UNDERWATER )
@@ -1667,7 +1667,7 @@ void char_check( void )
 			dam = number_range( ch->max_hit / 100, ch->max_hit / 50 );
 			dam = UMAX( 1, dam );
 			if ( number_bits(3) == 0 )
-			  send_to_char( "You cough and choke as you try to breathe water!\n\r", ch );
+			  send_to_char( "Toses e gorgorexas mentres tratas de respirar auga!\n\r", ch );
 			damage( ch, ch, dam, TYPE_UNDEFINED );
 		    }
 		}
@@ -2019,27 +2019,27 @@ void hallucinations( CHAR_DATA *ch )
 	switch( number_range( 1, UMIN(21, (ch->mental_state+5) / 5)) )
 	{
 	    default:
-	    case  1: t = "You feel very restless... you can't sit still.\n\r";		break;
-	    case  2: t = "You're tingling all over.\n\r";				break;
-	    case  3: t = "Your skin is crawling.\n\r";					break;
-	    case  4: t = "You suddenly feel that something is terribly wrong.\n\r";	break;
-	    case  5: t = "Those damn little fairies keep laughing at you!\n\r";		break;
-	    case  6: t = "You can hear your mother crying...\n\r";			break;
-	    case  7: t = "Have you been here before, or not?  You're not sure...\n\r";	break;
-	    case  8: t = "Painful childhood memories flash through your mind.\n\r";	break;
-	    case  9: t = "You hear someone call your name in the distance...\n\r";	break;
-	    case 10: t = "Your head is pulsating... you can't think straight.\n\r";	break;
+	    case  1: t = "Sénteste moi inquedo ... non podes estar quieto.\n\r";	break;
+	    case  2: t = "Formigueache todo o corpo.\n\r";				break;
+	    case  3: t = "Os teus pelos póñense de punta.\n\r";				break;
+	    case  4: t = "De súpeto sentes que algo vai terriblemente mal.\n\r";	break;
+	    case  5: t = "Esas malditas pequenas fadas seguen a rirse de tí!\n\r";	break;
+	    case  6: t = "Podes oir a tua nai chorar...\n\r";				break;
+	    case  7: t = "Estiveche aquí antes? Ou non? Non estás moi seguro...\n\r";	break;
+	    case  8: t = "Dorosos recordos da túa infancia pasan pola túa mente.\n\r";	break;
+	    case  9: t = "Podes oir a alguén decir o teu nome na distancia...\n\r";	break;
+	    case 10: t = "A túa cabeza está palpitando... non podes pensar correctamente.\n\r";	break;
 	    case 11: t = "The ground... seems to be squirming...\n\r";			break;
-	    case 12: t = "You're not quite sure what is real anymore.\n\r";		break;
-	    case 13: t = "It's all a dream... or is it?\n\r";				break;
-	    case 14: t = "You hear your grandchildren praying for you to watch over them.\n\r";	break;
-	    case 15: t = "They're coming to get you... coming to take you away...\n\r";	break;
-	    case 16: t = "You begin to feel all powerful!\n\r";				break;
-	    case 17: t = "You're light as air... the heavens are yours for the taking.\n\r";	break;
-	    case 18: t = "Your whole life flashes by... and your future...\n\r";	break;
-	    case 19: t = "You are everywhere and everything... you know all and are all!\n\r";	break;
-	    case 20: t = "You feel immortal!\n\r";					break;
-	    case 21: t = "Ahh... the power of a Supreme Entity... what to do...\n\r";	break;
+	    case 12: t = "Xa non estás moi seguro do que é real.\n\r";			break;
+	    case 13: t = "É todo un sono... ou non?\n\r";				break;
+	    case 14: t = "Podes oir aos teus netos rezando por ti para vixialos.\n\r";	break;
+	    case 15: t = "Están chegando a ti... chegando para levarte...\n\r";		break;
+	    case 16: t = "Comezas a sentirte todo poderoso!\n\r";			break;
+	    case 17: t = "Eres como o aire... podes conquistar o ceo.\n\r";		break;
+	    case 18: t = "A túa vida pasa por diante... e o teu futuro...\n\r";		break;
+	    case 19: t = "Eres todos os lugares e todas as cousas... eres todo e todos!\n\r";	break;
+	    case 20: t = "Sénteste inmortal!\n\r";					break;
+	    case 21: t = "Ahhh! O poderoso pracer de ser unha Entidade Suprema... ¿Qué facer?...\n\r";	break;
 	}
 	send_to_char( t, ch );
     }
@@ -2092,7 +2092,7 @@ void auth_update( void )
          if ( first_time )
             {
             first_time = FALSE;
-            strcpy (log_buf, "Pending authorizations:" ); 
+            strcpy (log_buf, "Autorizacións Pendentes:" ); 
             /*log_string( log_buf ); */
             to_channel( log_buf, CHANNEL_AUTH, "Auth", 1);
             }
@@ -2113,13 +2113,13 @@ void auth_update( void )
     char buf [MAX_INPUT_LENGTH], log_buf [MAX_INPUT_LENGTH];
     bool found_hit = FALSE;         /* was at least one found? */
 
-    strcpy (log_buf, "Pending authorizations:\n\r" );
+    strcpy (log_buf, "Autorizacións Pendentes:\n\r" );
     for ( d = first_descriptor; d; d = d->next ) 
     {
 	if ( (victim = d->character) && IS_WAITING_FOR_AUTH(victim) )
 	{
 	    found_hit = TRUE;
-	    sprintf( buf, " %s@%s new %s %s\n\r", victim->name,
+	    sprintf( buf, " %s@%s novo %s %s\n\r", victim->name,
 		victim->desc->host, race_table[victim->race]->race_name, 
 		class_table[victim->class]->who_name );
 	    strcat (log_buf, buf);
@@ -2287,14 +2287,14 @@ void remove_portal( OBJ_DATA *portal )
 void reboot_check( time_t reset )
 {
   static char *tmsg[] =
-  { "You feel the ground shake as the end comes near!",
-    "Lightning crackles in the sky above!",
-    "Crashes of thunder sound across the land!",
-    "The sky has suddenly turned midnight black.",
-    "You notice the life forms around you slowly dwindling away.",
-    "The seas across the realm have turned frigid.",
-    "The aura of magic that surrounds the realms seems slightly unstable.",
-    "You sense a change in the magical forces surrounding you."
+  { "Sentes o chan tremer así como se aproxima o fin!",
+    "Os raios crepitan por riba do ceo!",
+    "O cruxido dun trono soa a en toda da terra!",
+    "De súpeto o ceo tórnase negro.",
+    "Sentes as formas de vida ao teu arredor desfiándose lentamente.",
+    "Os mares de todo o reino converíronse en xeo.",
+    "A aura de máxia que envolve o reino parece significantemente inestable.",
+    "Sentes un cambio nas forzas da maxia que te rodean."
   };
   static const int times[] = { 60, 120, 180, 240, 300, 600, 900, 1800 };
   static const int timesize =
@@ -2314,7 +2314,7 @@ void reboot_check( time_t reset )
   
   if ( (current_time % 1800) == 0 )
   {
-    sprintf(buf, "%.24s: %d players", ctime(&current_time), num_descriptors);
+    sprintf(buf, "%.24s: %d xogadores", ctime(&current_time), num_descriptors);
     append_to_file(USAGE_FILE, buf);
     sprintf(buf, "%.24s:  %dptn  %dpll  %dsc %dbr  %d global loot",
 	ctime(&current_time),
@@ -2337,7 +2337,7 @@ void reboot_check( time_t reset )
     
     if ( auction->item )
     {
-      sprintf(buf, "Sale of %s has been stopped by mud.",
+      sprintf(buf, "A venta %s foi parada polos administradores de Kallaika.",
           auction->item->short_descr);
       talk_auction(buf);
       obj_to_char(auction->item, auction->seller);
@@ -2345,12 +2345,12 @@ void reboot_check( time_t reset )
       if ( auction->buyer && auction->buyer != auction->seller )
       {
         auction->buyer->gold += auction->bet;
-        send_to_char("Your money has been returned.\n\r", auction->buyer);
+        send_to_char("O teu diñeiro foi reembolsado.\n\r", auction->buyer);
       }
     }
-    echo_to_all(AT_YELLOW, "You are forced from these realms by a strong "
-        "magical presence\n\ras life here is reconstructed.", ECHOTAR_ALL);
-    log_string( "Automatic Reboot" ); 
+    echo_to_all(AT_YELLOW, "Eres forzado a sair do Reino das Tebras por unha forte "
+        "presencia máxia\n\rmentres a vida aquí é reconstruída.", ECHOTAR_ALL);
+    log_string( "Reinicio Automático" ); 
     for ( vch = first_char; vch; vch = vch->next )
       if ( !IS_NPC(vch) )
         save_char_obj(vch);
@@ -2401,11 +2401,11 @@ void auction_update (void)
 	case 1 : /* going once */
 	case 2 : /* going twice */
 	    if (auction->bet > auction->starting)
-		sprintf (buf, "%s: going %s for %s.", auction->item->short_descr,
-			((auction->going == 1) ? "once" : "twice"), num_punct( auction->bet ) );
+		sprintf (buf, "%s: puxando %s por %s.", auction->item->short_descr,
+			((auction->going == 1) ? "unha" : "duas"), num_punct( auction->bet ) );
 	    else
-		sprintf (buf, "%s: going %s (bid not received yet).",  auction->item->short_descr,
-			((auction->going == 1) ? "once" : "twice"));
+		sprintf (buf, "%s: puxando %s (puxa ainda non recibida).",  auction->item->short_descr,
+			((auction->going == 1) ? "unha" : "duas"));
 
 	    talk_auction (buf);
 	    break;
@@ -2418,23 +2418,23 @@ void auction_update (void)
 	    }
 	    if (auction->bet > 0 && auction->buyer != auction->seller)
 	    {
-		sprintf (buf, "%s sold to %s for %s.",
+		sprintf (buf, "%s vendido a %s por %s.",
 			auction->item->short_descr,
 			IS_NPC(auction->buyer) ? auction->buyer->short_descr : auction->buyer->name,
 			num_punct(auction->bet) );
 		talk_auction(buf);
 
-		act(AT_ACTION, "The auctioneer materializes before you, and hands you $p.",
+		act(AT_ACTION, "O subastador materialízase ante tí, e dache $p.",
 			auction->buyer, auction->item, NULL, TO_CHAR);
-		act(AT_ACTION, "The auctioneer materializes before $n, and hands $m $p.",
+		act(AT_ACTION, "O subastador materialízase ante $n, e dalle $m $p.",
 			auction->buyer, auction->item, NULL, TO_ROOM);
 
 		if ( (auction->buyer->carry_weight 
 		+     get_obj_weight( auction->item ))
 		>     can_carry_w( auction->buyer ) )
 		{
-		    act( AT_PLAIN, "$p is too heavy for you to carry with your current inventory.", auction->buyer, auction->item, NULL, TO_CHAR );
-    		    act( AT_PLAIN, "$n is carrying too much to also carry $p, and $e drops it.", auction->buyer, auction->item, NULL, TO_ROOM );
+		    act( AT_PLAIN, "$p é demasiado pesado para levalo co teu inventario actual.", auction->buyer, auction->item, NULL, TO_CHAR );
+    		    act( AT_PLAIN, "$n está carretando demasiado $p, e tira $e.", auction->buyer, auction->item, NULL, TO_ROOM );
 		    obj_to_room( auction->item, auction->buyer->in_room );
 		}
 		else
@@ -2444,7 +2444,7 @@ void auction_update (void)
 		boost_economy( auction->seller->in_room->area, tax );
                 auction->seller->gold += pay; /* give him the money, tax 10 % */
 		/* num_punct no longer supports 2 on one line -Shaddai */
-		ch_printf(auction->seller, "The auctioneer pays you %s gold, charging an auction fee of ",
+		ch_printf(auction->seller, "O subastador págache %s moedas de ouro, cobrando unha taxa de poxa de ",
 		  num_punct(pay));
 		ch_printf(auction->seller, "%s.\n\r", num_punct(tax) );
 		send_to_char(buf, auction->seller);
@@ -2700,12 +2700,12 @@ void get_weather_echo(WEATHER_DATA *weath)
 			{
 				char *echo_strings[4] =
 				{
-					"The clouds disappear.\n\r",
-					"The clouds disappear.\n\r",
-					"The sky begins to break through "
-						"the clouds.\n\r",
-					"The clouds are slowly "
-						"evaporating.\n\r"
+					"As nubes desaparecen.\n\r",
+					"As nubes desaparecen.\n\r",
+					"O ceo comeza a abrirse a través "
+						"das nubes.\n\r",
+					"As nubes evapóranse "
+						"a poucos.\n\r"
 				};
 				
 				weath->echo = echo_strings[n];
@@ -2718,8 +2718,8 @@ void get_weather_echo(WEATHER_DATA *weath)
 			{
 				char *echo_strings[4] =
 				{
-					"The sky is getting cloudy.\n\r",
-					"The sky is getting cloudy.\n\r",
+					"O ceo estáse nublando.\n\r",
+					"O ceo estáse nublando.\n\r",
 					"Light clouds cast a haze over "
 						"the sky.\n\r",
 					"Billows of clouds spread through "
@@ -2737,8 +2737,8 @@ void get_weather_echo(WEATHER_DATA *weath)
 				{
 					char *echo_strings[4] =
 					{
-						"The rain stops.\n\r",
-						"The rain stops.\n\r",
+						"A choiva escampa.\n\r",
+						"A choiva escampa.\n\r",
 						"The rainstorm tapers "
 							"off.\n\r",
 						"The rain's intensity "
@@ -2751,8 +2751,8 @@ void get_weather_echo(WEATHER_DATA *weath)
 				{
 					char *echo_strings[4] =
 					{
-						"The snow stops.\n\r",
-						"The snow stops.\n\r",
+						"A neve deixa de caer.\n\r",
+						"A neve deixa de caer.\n\r",
 						"The snow showers taper "
 							"off.\n\r",
 						"The snow flakes disappear "
@@ -2771,8 +2771,8 @@ void get_weather_echo(WEATHER_DATA *weath)
 				{
 					char *echo_strings[4] =
 					{
-						"It starts to rain.\n\r",
-						"It starts to rain.\n\r",
+						"Comeza a chover.\n\r",
+						"Comeza a chover.\n\r",
 						"A droplet of rain falls "
 							"upon you.\n\r",
 						"The rain begins to "
@@ -2785,8 +2785,8 @@ void get_weather_echo(WEATHER_DATA *weath)
 				{
 					char *echo_strings[4] =
 					{
-						"It starts to snow.\n\r",
-						"It starts to snow.\n\r",
+						"Comeza a nevar.\n\r",
+						"Comeza a nevar.\n\r",
 						"Crystal flakes begin to "
 							"fall from the "
 							"sky.\n\r",
@@ -2835,8 +2835,8 @@ void get_weather_echo(WEATHER_DATA *weath)
 				{
 					char *echo_strings[4] =
 					{
-						"The lightning has stopped.\n\r",
-						"The lightning has stopped.\n\r",
+						"Os lóstregos deixan de alumear o ceo.\n\r",
+						"Os lóstregos deixan de alumear o ceo.\n\r",
 						"The sky settles, and the "
 							"thunder surrenders.\n\r",
 						"The lightning bursts fade as "
@@ -2850,8 +2850,8 @@ void get_weather_echo(WEATHER_DATA *weath)
 			{
 				char *echo_strings[4] =
 				{
-					"The cold rain turns to snow.\n\r",
-					"The cold rain turns to snow.\n\r",
+					"A fría choiva convértese en neve.\n\r",
+					"A fría choiva convértese en neve.\n\r",
 					"Snow flakes begin to fall "
 						"amidst the rain.\n\r",
 					"The driving rain begins to freeze.\n\r"
@@ -2863,8 +2863,8 @@ void get_weather_echo(WEATHER_DATA *weath)
 			{
 				char *echo_strings[4] =
 				{
-					"The snow becomes a freezing rain.\n\r",
-					"The snow becomes a freezing rain.\n\r",
+					"A neve comeza a convertirse nunha choiva xeada.\n\r",
+					"A neve comeza a convertirse nunha choiva xeada.\n\r",
 					"A cold rain beats down on you "
 						"as the snow begins to melt.\n\r",
 					"The snow is slowly replaced by a heavy "
@@ -2966,10 +2966,10 @@ void get_time_echo(WEATHER_DATA *weath)
 		{
 			char *echo_strings[4] =
 			{
-				"The day has begun.\n\r",
-				"The day has begun.\n\r",
-				"The sky slowly begins to glow.\n\r",
-				"The sun slowly embarks upon a new day.\n\r"
+				"Un novo día comeza.\n\r",
+				"Un novo día comeza.\n\r",
+				"O ceo comeza a brilar lentamente.\n\r",
+				"O sol embárcase nun novo día.\n\r"
 			};
 			time_info.sunlight = SUN_RISE;
 			weath->echo = echo_strings[n];
@@ -2980,10 +2980,10 @@ void get_time_echo(WEATHER_DATA *weath)
 		{
 			char *echo_strings[4] =
 			{
-				"The sun rises in the east.\n\r",
-				"The sun rises in the east.\n\r",
-				"The hazy sun rises over the horizon.\n\r",
-				"Day breaks as the sun lifts into the sky.\n\r"
+				"O Sol sáe polo leste.\n\r",
+				"O Sol sáe polo leste.\n\r",
+				"O brilante Sol asómase polo horizonte.\n\r",
+				"Rompe o día así como o Sol asoma no ceo.\n\r"
 			};
 			time_info.sunlight = SUN_LIGHT;
 			weath->echo = echo_strings[n];
@@ -2994,7 +2994,7 @@ void get_time_echo(WEATHER_DATA *weath)
 		{
 			if(pindex > 0)
 			{
-				weath->echo = "It's noon.\n\r";
+				weath->echo = "Cae a noite.\n\r";
 			}
 			else
 			{
@@ -3015,8 +3015,8 @@ void get_time_echo(WEATHER_DATA *weath)
 		{
 			char *echo_strings[4] =
 			{
-				"The sun slowly disappears in the west.\n\r",
-				"The reddish sun sets past the horizon.\n\r",
+				"O sol desaparece lentamente polo oeste.\n\r",
+				"O roxo Sol ponse pasado o horizonte.\n\r",
 				"The sky turns a reddish orange as the sun "
 					"ends its journey.\n\r",
 				"The sun's radiance dims as it sinks in the "
@@ -3033,8 +3033,8 @@ void get_time_echo(WEATHER_DATA *weath)
 			{
 				char *echo_strings[2] =
 				{
-					"The night begins.\n\r",
-					"Twilight descends around you.\n\r"
+					"A noite comeza.\n\r",
+					"O crepúsculo comeza a envolverte.\n\r"
 				};
 				weath->echo = echo_strings[n%2];
 			}
@@ -3133,9 +3133,9 @@ void hint_update()
 			&&  number_bits(1) == 0 )
 			{
 			  if ( d->character->level > 50 )
-			    ch_printf_color( d->character,"&p( &wHINT&p ):  &P%s\n\r", get_hint(50));
+			    ch_printf_color( d->character,"&p( &wCONSELLO&p ):  &P%s\n\r", get_hint(50));
 			  else
-                            ch_printf_color( d->character,"&p( &wHINT&p ):  &P%s\n\r",get_hint(d->character->level));
+                            ch_printf_color( d->character,"&p( &wCONSELLO&p ):  &P%s\n\r",get_hint(d->character->level));
 			}
                 }
             }

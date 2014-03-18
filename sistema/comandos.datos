@@ -978,7 +978,7 @@ Log         0
 End
 
 #COMMAND
-Name        despertar~
+Name        levantar~
 Code        do_wake
 Position    104
 Level       0
@@ -1941,6 +1941,14 @@ Log         0
 End
 
 #COMMAND
+Name        montar~
+Code        do_mount
+Position    100
+Level       0
+Log         0
+End
+
+#COMMAND
 Name        mortalizar~
 Code        do_mortalize
 Position    100
@@ -2711,7 +2719,7 @@ Log         1
 End
 
 #COMMAND
-Name        novaszonas~
+Name        zonasrecentes~
 Code        do_newzones
 Position    100
 Level       53

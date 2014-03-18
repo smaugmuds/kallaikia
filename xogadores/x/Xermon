@@ -6,12 +6,12 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       374371
-Room         21001
+Played       410095
+Room         10319
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
-Gold         1410058647
+Gold         1410057878
 Exp          1410065407
 Height          66
 Weight          147
@@ -25,9 +25,9 @@ Favor	       0
 Glory        -11467
 MGlory       13245
 Honour       145124
-Hitroll      35
+Hitroll      38
 Damroll      45
-Armor        2000
+Armor        1980
 Wimpy        500
 Mentalstate  999
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
@@ -40,13 +40,13 @@ WizInvis     65
 Flags        8421384
 PKills       87
 PDeaths      3
-MKills       46
+MKills       48
 MDeaths      1
 IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         124.Red-95-126-127.staticIP.rima-tde.net
+Site         orion.local.lan
 Spell        19 'animate dead'
 Spell        19 'bless'
 Spell        19 'cause critical'
@@ -78,20 +78,20 @@ Skill        19 'assassinate'
 Skill        19 'cook'
 Skill        19 'disarm'
 Skill        19 'dual wield'
-Skill        19 'enhanced damage'
+Skill        22 'enhanced damage'
 Skill        19 'feed'
 Skill        19 'grasp suspiria'
 Skill        19 'hide'
 Skill        19 'kick'
 Skill        19 'meditate'
 Skill        19 'mistform'
-Skill        36 'mount'
+Skill        63 'mount'
 Skill        19 'parry'
 Skill        19 'punch'
 Skill        19 'rescue'
 Skill        19 'scan'
 Skill        19 'search'
-Skill        40 'seventh attack'
+Skill        58 'seventh attack'
 Skill        19 'shoulder'
 Skill        19 'steal'
 Skill        19 'strike'
@@ -105,11 +105,28 @@ Weapon       19 'missile weapons'
 Weapon       19 'pugilism'
 Weapon       19 'short blades'
 Tongue       100 'common'
+AffectData   'bless' 135   3  18 0
+AffectData   'bless' 135  -3  24 0
+AffectData   'armor'  68 -20  17 0
+Killed       21055 1
+Killed       21045 1
+End
+
+#OBJECT
+Vnum         21069
+Level        7
+Values       10 4 10 3 0 0
+End
+
+#OBJECT
+Vnum         21081
+Level        17
+Values       12 5 19 11 0 0
 End
 
 #MOBILE
 Vnum	21058
-Room	21001
+Room	10319
 Description The black steed snorts as you examine him.  His fine black coat shines
 brightly regardless of light and the warhorse seems as though it could
 run tirelessly for days.

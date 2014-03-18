@@ -1575,7 +1575,7 @@ void learn_from_success( CHAR_DATA *ch, int sn )
             if ( ch->class==CLASS_MAGE ) gain *= 5;	/* h, mage upgrade */
             if ( ch->class==CLASS_CLERIC ) gain *= 2;	/* h, mage upgrade */
 	    set_char_color( AT_WHITE, ch );
-	    ch_printf( ch, "You are now an adept of %s!  You gain %d bonus experience!\n\r",
+	    ch_printf( ch, "Agora eres adepto de %s!  Gañas %d bonus de experiencia!\n\r",
 		skill_table[sn]->name, gain );
 	}
 	else
@@ -1586,7 +1586,7 @@ void learn_from_success( CHAR_DATA *ch, int sn )
 	    if ( !ch->fighting && sn != gsn_hide && sn != gsn_sneak )
 	    {
 		set_char_color( AT_WHITE, ch );
-		ch_printf( ch, "You gain %d experience points from your success!\n\r", gain );
+		ch_printf( ch, "Obtés %d puntos de experiencia polo teu éxito!\n\r", gain );
 	    }
 	}
 	gain_exp( ch, gain );
@@ -1665,19 +1665,19 @@ void do_grapple( CHAR_DATA *ch, char *argument )
 
     if ( is_safe( ch, victim, TRUE ) )
     {
-        send_to_char( "A magical force prevents you from attacking.\n\r", ch );
+        send_to_char( "Unha forza máxica prevente de atacar.\n\r", ch );
         return;
     }
 
     if ( who_fighting( ch ) && who_fighting( ch ) != victim )
     {
-	send_to_char( "You're fighting someone else!\n\r", ch );
+	send_to_char( "Estás loitando con alguén máis!\n\r", ch );
 	return;
     }
 
     if ( who_fighting( victim ) && who_fighting( victim ) != ch )
     {
-	send_to_char( "You can't get close enough.\n\r", ch );
+	send_to_char( "Non podes acercarte o suficiente.\n\r", ch );
 	return;
     }
 
@@ -1686,7 +1686,7 @@ void do_grapple( CHAR_DATA *ch, char *argument )
 
     if ( !chance( ch, percent ) )
     {
-	send_to_char( "You lost your balance.\n\r", ch);
+	send_to_char( "Perdes o equilibrio.\n\r", ch);
 	act( AT_ACTION, "$n tries to grapple you but can't get close enough.", ch, NULL, victim, TO_VICT );
 /*
 	act( AT_ACTION, "$n tries to grapple with $N.", ch, NULL, victim, TO_NOTVICT );
@@ -3554,9 +3554,9 @@ void trip( CHAR_DATA *ch, CHAR_DATA *victim )
 	if ( IS_AFFECTED( victim->mount, AFF_FLYING )
 	||   IS_AFFECTED( victim->mount, AFF_FLOATING ) )
 	  return;
-	act( AT_SKILL, "$n trips your mount and you fall off!", ch, NULL, victim, TO_VICT    );
-	act( AT_SKILL, "You trip $N's mount and $N falls off!", ch, NULL, victim, TO_CHAR    );
-	act( AT_SKILL, "$n trips $N's mount and $N falls off!", ch, NULL, victim, TO_NOTVICT );
+	act( AT_SKILL, "$n dache un paseo e caes ao chan!", ch, NULL, victim, TO_VICT    );
+	act( AT_SKILL, "Dáslle un paseo a $N na montura, pero caeu ao chan!", ch, NULL, victim, TO_CHAR    );
+	act( AT_SKILL, "$n dalle un paseo a $N na montura, pero $N caeu ao chan!", ch, NULL, victim, TO_NOTVICT );
 	xREMOVE_BIT( victim->mount->act, ACT_MOUNTED );
 	victim->mount = NULL;
 	WAIT_STATE( ch,     2 * PULSE_VIOLENCE );
@@ -3566,9 +3566,9 @@ void trip( CHAR_DATA *ch, CHAR_DATA *victim )
     }
     if ( victim->wait == 0 )
     {
-	act( AT_SKILL, "$n trips you and you go down!", ch, NULL, victim, TO_VICT    );
-	act( AT_SKILL, "You trip $N and $N goes down!", ch, NULL, victim, TO_CHAR    );
-	act( AT_SKILL, "$n trips $N and $N goes down!", ch, NULL, victim, TO_NOTVICT );
+	act( AT_SKILL, "$n lévate de paseo e baixaste!", ch, NULL, victim, TO_VICT    );
+	act( AT_SKILL, "Paseas a $N e baixase!", ch, NULL, victim, TO_CHAR    );
+	act( AT_SKILL, "$n pasea a $N, e $N baixaxe!", ch, NULL, victim, TO_NOTVICT );
 
 	WAIT_STATE( ch,     2 * PULSE_VIOLENCE );
 	WAIT_STATE( victim, 2 * PULSE_VIOLENCE );
@@ -3588,13 +3588,13 @@ void do_cleave( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(ch) && IS_AFFECTED( ch, AFF_CHARM ) )
     {
-	send_to_char( "A clear mind is required to use that skill.\n\r", ch );
+	send_to_char( "Unha mente clara é precisa para usar esa habilidade.\n\r", ch );
 	return;
     }
     if ( !IS_NPC(ch)
     &&   ch->level < skill_table[gsn_cleave]->skill_level[ch->class] )
     {
-	send_to_char("You can't seem to summon the strength.\n\r", ch );
+	send_to_char("Non parece que podas invocar a forza.\n\r", ch );
 	return;
     }
     if ( ( obj = get_eq_char( ch, WEAR_WIELD ) ) == NULL
@@ -3605,7 +3605,7 @@ void do_cleave( CHAR_DATA *ch, char *argument )
     }
     if ( ( victim = who_fighting( ch ) ) == NULL )
     {
-	send_to_char( "You aren't fighting anyone.\n\r", ch );
+	send_to_char( "Non estás loitando con ninguén.\n\r", ch );
 	return;
     }
     if ( can_use_skill( ch, number_percent(), gsn_cleave ) )
@@ -3679,7 +3679,7 @@ void do_mistwalk( CHAR_DATA *ch, char *argument )
     ||  !in_hard_range( ch, victim->in_room->area )
     ||  (IS_SET(victim->in_room->area->flags, AFLAG_NOPKILL) && IS_PKILL(ch)))
     {
-        send_to_char( "You are unable to sense your victim.\n\r", ch );
+        send_to_char( "Non podes sentir á túa vícima.\n\r", ch );
         learn_from_failure( ch, gsn_mistwalk );
         return;
     }
@@ -3710,7 +3710,7 @@ void do_broach( CHAR_DATA *ch, char *argument )
     }
     one_argument( argument, arg );
     if ( arg[0] == '\0' ) {
-        send_to_char( "Attempt this in which direction?\n\r", ch );
+        send_to_char( "Tentar isto en qué dirección?\n\r", ch );
         return;
     }
     if ( ch->mount ) {
@@ -3731,7 +3731,7 @@ void do_broach( CHAR_DATA *ch, char *argument )
             return;
         }
         REMOVE_BIT(pexit->exit_info, EX_LOCKED);
-        send_to_char( "You successfully broach the exit...\n\r", ch );
+        send_to_char( "Abordas a saída ...\n\r", ch );
         learn_from_success( ch, gsn_broach );
         adjust_favor( ch, 9, 1 );
         if ( ( pexit_rev = pexit->rexit ) != NULL && pexit_rev->to_room == ch->in_room )
@@ -3782,7 +3782,7 @@ void do_pick( CHAR_DATA *ch, char *argument )
     {
 	if ( IS_NPC(gch) && IS_AWAKE(gch) && ch->level + 5 < gch->level )
 	{
-	act( AT_PLAIN, "$N is standing too close to the lock.",
+	act( AT_PLAIN, "$N está demasiado cerca da cerradura.",
 		ch, NULL, gch, TO_CHAR );
 	    return;
 	}
@@ -3808,11 +3808,11 @@ void do_pick( CHAR_DATA *ch, char *argument )
 	EXIT_DATA *pexit_rev;
 
 	if ( !IS_SET(pexit->exit_info, EX_CLOSED) )
-	    { send_to_char( "It's not closed.\n\r",        ch ); return; }
+	    { send_to_char( "Non está cerrada.\n\r",        ch ); return; }
 	if ( pexit->key < 0 )
-	    { send_to_char( "It can't be picked.\n\r",     ch ); return; }
+	    { send_to_char( "Non pode ser collido.\n\r",     ch ); return; }
 	if ( !IS_SET(pexit->exit_info, EX_LOCKED) )
-	    { send_to_char( "It's already unlocked.\n\r",  ch ); return; }
+	    { send_to_char( "Xa está desbloqueado.\n\r",  ch ); return; }
 	if ( IS_SET(pexit->exit_info, EX_PICKPROOF) )
 	{
 	   send_to_char( "Fallache.\n\r", ch );
@@ -3887,7 +3887,7 @@ void do_sneak( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    send_to_char( "You attempt to move silently.\n\r", ch );
+    send_to_char( "Tentas moverte sixilosamente.\n\r", ch );
     affect_strip( ch, gsn_sneak );
 
     if ( can_use_skill(ch, number_percent(), gsn_sneak ) )
@@ -3922,7 +3922,7 @@ void do_hide( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    send_to_char( "You attempt to hide.\n\r", ch );
+    send_to_char( "Tentas ocultarte.\n\r", ch );
 
     if ( IS_AFFECTED(ch, AFF_HIDE) )
 	xREMOVE_BIT(ch->affected_by, AFF_HIDE);
@@ -3979,7 +3979,7 @@ void do_recall( CHAR_DATA *ch, char *argument )
 
     if ( !location )
     {
-	send_to_char( "You are completely lost.\n\r", ch );
+	send_to_char( "Estás completamente perdido.\n\r", ch );
 	return;
     }
 
@@ -3988,7 +3988,7 @@ void do_recall( CHAR_DATA *ch, char *argument )
 
     if ( xIS_SET(ch->in_room->room_flags, ROOM_NO_RECALL) )
     {
-	send_to_char( "For some strange reason... nothing happens.\n\r", ch );
+	send_to_char( "Por algunha estrana razón... non sucedeu nada.\n\r", ch );
 	return;
     }
 
@@ -4009,7 +4009,7 @@ void do_recall( CHAR_DATA *ch, char *argument )
 	    if ( ch->desc )
 	      lose /= 2;
 	    gain_exp( ch, 0 - lose );
-	    ch_printf( ch, "Fallache!  You lose %d exps.\n\r", lose );
+	    ch_printf( ch, "Fallache!  Perdes %d puntos de experiencia.\n\r", lose );
 	    return;
 	}
 
@@ -4021,7 +4021,7 @@ void do_recall( CHAR_DATA *ch, char *argument )
 	stop_fighting( ch, TRUE );
     }
 
-    act( AT_ACTION, "$n disappears in a swirl of smoke.", ch, NULL, NULL, TO_ROOM );
+    act( AT_ACTION, "$n desaparece en unha nube de fume.", ch, NULL, NULL, TO_ROOM );
     char_from_room( ch );
     char_to_room( ch, location );
     if ( ch->mount )
@@ -4029,7 +4029,7 @@ void do_recall( CHAR_DATA *ch, char *argument )
 	char_from_room( ch->mount );
 	char_to_room( ch->mount, location );
     }
-    act( AT_ACTION, "$n appears in the room.", ch, NULL, NULL, TO_ROOM );
+    act( AT_ACTION, "$n aparece na estancia.", ch, NULL, NULL, TO_ROOM );
     do_look( ch, "auto" );
 
     return;
@@ -4051,7 +4051,7 @@ void do_aid( CHAR_DATA *ch, char *argument )
     one_argument( argument, arg );
     if ( arg[0] == '\0' )
     {
-	send_to_char( "Aid whom?\n\r", ch );
+	send_to_char( "Asistir a quén?\n\r", ch );
 	return;
     }
 
@@ -4063,7 +4063,7 @@ void do_aid( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC(victim) )                        /* Gorog */
     {
-	send_to_char( "Not on mobs.\n\r", ch );
+	send_to_char( "Non podes facer iso en criaturas.\n\r", ch );
 	return;
     }
 
@@ -4081,7 +4081,7 @@ void do_aid( CHAR_DATA *ch, char *argument )
 
     if ( victim->position > POS_STUNNED )
     {
-	act( AT_PLAIN, "$N doesn't need your help.", ch, NULL, victim,
+	act( AT_PLAIN, "$N non precisa a túa axuda.", ch, NULL, victim,
 	     TO_CHAR);
 	return;
     }
@@ -4097,20 +4097,20 @@ void do_aid( CHAR_DATA *ch, char *argument )
     WAIT_STATE( ch, skill_table[gsn_aid]->beats );
     if ( !can_use_skill( ch, percent, gsn_aid ) )
     {
-	send_to_char( "You fail.\n\r", ch );
+	send_to_char( "Fallache.\n\r", ch );
 	learn_from_failure( ch, gsn_aid );
 	return;
     }
 
-    act( AT_SKILL, "You aid $N!",  ch, NULL, victim, TO_CHAR    );
-    act( AT_SKILL, "$n aids $N!",  ch, NULL, victim, TO_NOTVICT );
+    act( AT_SKILL, "Asistes a $N!",  ch, NULL, victim, TO_CHAR    );
+    act( AT_SKILL, "$n asiste a $N!",  ch, NULL, victim, TO_NOTVICT );
     learn_from_success( ch, gsn_aid );
     adjust_favor( ch, 8, 1 );
     if ( victim->hit < 1 )
       victim->hit = 1;
 
     update_pos( victim );
-    act( AT_SKILL, "$n aids you!", ch, NULL, victim, TO_VICT    );
+    act( AT_SKILL, "$n asisteute!", ch, NULL, victim, TO_VICT    );
     return;
 }
 
@@ -4123,13 +4123,13 @@ void do_mount( CHAR_DATA *ch, char *argument )
     &&   ch->level < skill_table[gsn_mount]->skill_level[ch->class] )
     {
 	send_to_char(
-	    "I don't think that would be a good idea...\n\r", ch );
+	    "Non creo que iso sexa unha boa idea...\n\r", ch );
 	return;
     }
 
     if ( ch->mount )
     {
-	send_to_char( "You're already mounted!\n\r", ch );
+	send_to_char( "Xa estás montado!\n\r", ch );
 	return;
     }
 
@@ -4141,25 +4141,25 @@ void do_mount( CHAR_DATA *ch, char *argument )
 
     if ( !IS_NPC(victim) || !xIS_SET(victim->act, ACT_MOUNTABLE ) )
     {
-	send_to_char( "You can't mount that!\n\r", ch );
+	send_to_char( "Non podes montar iso!\n\r", ch );
 	return;
     }
 
     if ( xIS_SET(victim->act, ACT_MOUNTED ) )
     {
-	send_to_char( "That mount already has a rider.\n\r", ch );
+	send_to_char( "Esa montura xa ten un xinete.\n\r", ch );
 	return;
     }
 
     if ( victim->position < POS_STANDING )
     {
-	send_to_char( "Your mount must be standing.\n\r", ch );
+	send_to_char( "A túa montura debe estar de pé.\n\r", ch );
 	return;
     }
 
     if ( victim->position == POS_FIGHTING || victim->fighting )
     {
-	send_to_char( "Your mount is moving around too much.\n\r", ch );
+	send_to_char( "A túa montura móvese demasiado.\n\r", ch );
 	return;
     }
     if (ch->stance > STANCE_NONE)
@@ -4169,17 +4169,17 @@ void do_mount( CHAR_DATA *ch, char *argument )
     {
 	xSET_BIT(victim->act, ACT_MOUNTED );
 	ch->mount = victim;
-	act( AT_SKILL, "You mount $N.", ch, NULL, victim, TO_CHAR );
-	act( AT_SKILL, "$n skillfully mounts $N.", ch, NULL, victim, TO_NOTVICT );
-	act( AT_SKILL, "$n mounts you.", ch, NULL, victim, TO_VICT );
+	act( AT_SKILL, "Montas en $N.", ch, NULL, victim, TO_CHAR );
+	act( AT_SKILL, "$n habilidosamente monta en $N.", ch, NULL, victim, TO_NOTVICT );
+	act( AT_SKILL, "$n montoute.", ch, NULL, victim, TO_VICT );
 	learn_from_success( ch, gsn_mount );
 	ch->position = POS_MOUNTED;
     }
     else
     {
-	act( AT_SKILL, "You unsuccessfully try to mount $N.", ch, NULL, victim, TO_CHAR );
-	act( AT_SKILL, "$n unsuccessfully attempts to mount $N.", ch, NULL, victim, TO_NOTVICT );
-	act( AT_SKILL, "$n tries to mount you.", ch, NULL, victim, TO_VICT );
+	act( AT_SKILL, "Non puideche montar $N.", ch, NULL, victim, TO_CHAR );
+	act( AT_SKILL, "$n non puido montar $N.", ch, NULL, victim, TO_NOTVICT );
+	act( AT_SKILL, "$n tentou montarte.", ch, NULL, victim, TO_VICT );
 	learn_from_failure( ch, gsn_mount );
     }
     return;
@@ -4192,16 +4192,16 @@ void do_dismount( CHAR_DATA *ch, char *argument )
 
     if ( (victim = ch->mount) == NULL )
     {
-	send_to_char( "You're not mounted.\n\r", ch );
+	send_to_char( "Non estás montando.\n\r", ch );
 	return;	
     }
 
     WAIT_STATE( ch, skill_table[gsn_mount]->beats );
    if ( can_use_skill(ch, number_percent(), gsn_mount ) )
     {
-	act( AT_SKILL, "You dismount $N.", ch, NULL, victim, TO_CHAR );
-	act( AT_SKILL, "$n skillfully dismounts $N.", ch, NULL, victim, TO_NOTVICT );
-	act( AT_SKILL, "$n dismounts you.  Whew!", ch, NULL, victim, TO_VICT );
+	act( AT_SKILL, "Desmontas $N.", ch, NULL, victim, TO_CHAR );
+	act( AT_SKILL, "$n habilidosamente desmonta $N.", ch, NULL, victim, TO_NOTVICT );
+	act( AT_SKILL, "$n desmonta de tí.  Whow!", ch, NULL, victim, TO_VICT );
 	xREMOVE_BIT( victim->act, ACT_MOUNTED );
 	ch->mount = NULL;
 	ch->position = POS_STANDING;
@@ -4209,9 +4209,9 @@ void do_dismount( CHAR_DATA *ch, char *argument )
     }
     else
     {
-	act( AT_SKILL, "You fall off while dismounting $N.  Ouch!", ch, NULL, victim, TO_CHAR );
-	act( AT_SKILL, "$n falls off of $N while dismounting.", ch, NULL, victim, TO_NOTVICT );
-	act( AT_SKILL, "$n falls off your back.", ch, NULL, victim, TO_VICT );
+	act( AT_SKILL, "Caes mentres desmontas $N. Ouhg!", ch, NULL, victim, TO_CHAR );
+	act( AT_SKILL, "$n caeu de $N mentres desmontaba.", ch, NULL, victim, TO_NOTVICT );
+	act( AT_SKILL, "$n cae do teu lombo.", ch, NULL, victim, TO_VICT );
 	learn_from_failure( ch, gsn_mount );
 	xREMOVE_BIT( victim->act, ACT_MOUNTED );
 	ch->mount = NULL;
@@ -4939,7 +4939,7 @@ void do_hitall( CHAR_DATA *ch, char *argument )
 
   if ( !ch->in_room->first_person )
   {
-    send_to_char( "There's no one else here!\n\r", ch );
+    send_to_char( "Non hay ninguén máis aquí!\n\r", ch );
     return;
   }
   percent = LEARNED(ch, gsn_hitall);
@@ -4966,7 +4966,7 @@ void do_hitall( CHAR_DATA *ch, char *argument )
   }
   if ( !nvict )
   {
-    send_to_char( "There's no one else here!\n\r", ch );
+    send_to_char( "Non hay ninguén máis aquí!\n\r", ch );
     return;
   }
   ch->move = UMAX(0, ch->move-nvict*3+nhit);

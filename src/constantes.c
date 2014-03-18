@@ -359,23 +359,23 @@ const	struct	lck_app_type	lck_app		[26]		=
  */
 const	struct	liq_type	liq_table	[LIQ_MAX]	=
 {
-    { "water",			"clear",	{  0, 1, 10 }	},  /*  0 */
-    { "beer",			"amber",	{  3, 2,  5 }	},
-    { "wine",			"rose",		{  5, 2,  5 }	},
+    { "auga",			"clear",	{  0, 1, 10 }	},  /*  0 */
+    { "cervexa",		"amber",	{  3, 2,  5 }	},
+    { "viño",			"rose",		{  5, 2,  5 }	},
     { "ale",			"brown",	{  2, 2,  5 }	},
     { "dark ale",		"dark",		{  1, 2,  5 }	},
 
     { "whisky",			"golden",	{  6, 1,  4 }	},  /*  5 */
-    { "lemonade",		"pink",		{  0, 1,  8 }	},
+    { "limonada",		"pink",		{  0, 1,  8 }	},
     { "firebreather",		"boiling",	{ 10, 0,  0 }	},
     { "local specialty",	"everclear",	{  3, 3,  3 }	},
     { "slime mold juice",	"green",	{  0, 4, -8 }	},
 
-    { "milk",			"white",	{  0, 3,  6 }	},  /* 10 */
-    { "tea",			"tan",		{  0, 1,  6 }	},
-    { "coffee",			"black",	{  0, 1,  6 }	},
-    { "blood",			"red",		{  0, 2, -1 }	},
-    { "salt water",		"clear",	{  0, 1, -2 }	},
+    { "leite",			"white",	{  0, 3,  6 }	},  /* 10 */
+    { "té",			"tan",		{  0, 1,  6 }	},
+    { "café",			"black",	{  0, 1,  6 }	},
+    { "sangue",			"red",		{  0, 2, -1 }	},
+    { "auga salgada",		"clear",	{  0, 1, -2 }	},
 
     { "cola",			"cherry",	{  0, 1,  5 }	},  /* 15 */
     { "mead",			"honey color",	{  4, 2,  5 }	},  /* 16 */
@@ -384,7 +384,7 @@ const	struct	liq_type	liq_table	[LIQ_MAX]	=
 
 char *	const	attack_table	[18] =
 {
-    "hit",
+    "golpear",
     "slice",  "stab",    "slash", "whip",  "claw",
     "blast",  "pound",   "crush", "grep",  "bite",
     "pierce", "suction", "bolt",  "arrow", "dart",
@@ -427,20 +427,20 @@ char * p_blunt_messages[24] =
 
 char * s_generic_messages[24] =
 {
-	"falla", "roza", "machaga", "graze", "nick", "jolt", "wound",
-	"inxura", "golpea", "jar", "thrash", "maul", "decimate", "_traumatiza_",
-	"_devastate_", "_maim_", "_demolish_", "MUTILA", "MASSACRE",
-	"PULVERIZE", "DESTROY", "* OBLITERA *", "*** ANIQUILA ***",
-	"**** CASTÍGATE ****"
+	"fallas", "rozas", "machacas", "graze", "nick", "jolt", "wound",
+	"inxuras", "golpeas", "jar", "thrash", "maul", "decimas", "_traumatiza",
+	"_devastas_", "_maim_", "_demoles_", "MUTILAS", "MASACRAS",
+	"PULVERIZAS", "DESTRÚES", "* OBLITERAS *", "*** ANIQUILAS ***",
+	"**** CASTÍGACHE ****"
 };
 
 char * p_generic_messages[24] =
 {
-	"misses", "brushes", "scratches", "grazes", "nicks", "jolts", "wounds",
-	"injures", "hits", "jars", "thrashes", "mauls", "decimates", "_traumatizes_",
-	"_devastates_", "_maims_", "_demolishes_", "MUTILA", "MASSACRES",
-	"PULVERIZES", "DESTROYS", "* OBLITERA *", "*** ANIQUILA ***",
-	"**** CASTÍGATE ****"
+	"falla", "roza", "machaca", "grazes", "nicks", "jolts", "wounds",
+	"inxura", "golpea", "jars", "thrashes", "mauls", "decima", "_traumatiza_",
+	"_devasta_", "_maims_", "_demole_", "MUTILA", "MASACRA",
+	"PULVERIZA", "DESTRÚE", "* OBLITERA *", "*** ANIQUILA ***",
+	"**** CASTIGOUTE ****"
 };
 
 char ** const s_message_table[18] =

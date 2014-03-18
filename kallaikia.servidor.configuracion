@@ -6,7 +6,7 @@ programa=kallaikia
 reino="o_reino_das_tebras"
 #reino="realms_of_despair"
 
-version="1.8.1a"
+version="1.8.1b"
 
 # Configuración do servicio
 
@@ -15,8 +15,10 @@ porto="4000"
 
 # Ficheiro de log principal
 
-# Os logs configuranse no directorio ../logs,
+# Os logs configuranse no directorio ../log,
 # por que o $programa principal ejecutase dende
 # o directorio do $reino, donde estan as zonas.
 
-logservidor="../log/kallaikia.log"
+loginicio="log/inicio.log"
+logservidor="log/kallaikia.log"
+logapagado="log/apagado.log"

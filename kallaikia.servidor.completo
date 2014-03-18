@@ -4,18 +4,16 @@
 source kallaikia.servidor.configuracion
 
 echo
-echo "          - (( $programa $version )) -" 
+echo "          -- [[ $programa $version ]] --" 
 echo 
-echo "             \"$reino\""
+echo "              \"$reino\""
 echo
+echo " [ INICIO ] Iniciando servicio ..."
 
-sleep 2;
-
-# Cambiar ao directorio do reino
-cd $reino
+sleep 1;
 
 # Borrar o log de apagado
-if [ -f "../log/apagado.log" ]; then rm -f ../log/apagado.log; fi 
+if [ -f "$logapagado" ]; then rm -f $logapagado; fi 
 
 # Rutina principal
 # Volve a reiniciar o servicio en caso de fallo.
@@ -26,7 +24,7 @@ while [[ 1 -eq 1 ]]; do
 
     if [ -f "$logservidor" ]; then mv $logservidor $logservidor.$$; fi
     date > $logservidor
-    date > ../log/inicio.log
+    date > $loginicio
 
     # Iniciar servicio
     netstat -an | grep ":$puerto " | grep LISTEN
@@ -39,11 +37,11 @@ while [[ 1 -eq 1 ]]; do
 
     # Iniciar o $programa e gardar o log principal
     # ../$programa $porto 2> $logservidor
-    nohup "../$programa $porto 2> $logservidor" > ../log/$programa.servidor.completo.log &
+    nohup "cd $reino && ../$programa $porto 2> ../$logservidor" > log/${programa}.servidor.completo.log &
 
     # Borrar o log de apagado ao sair
-    if [ -f "../log/apagado.log" ]; then
-	rm -f ../log/apagado.log
+    if [ -f "$logapagado" ]; then
+	rm -f $logapagado
 	exit 0
     fi
 
