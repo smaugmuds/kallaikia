@@ -6,8 +6,8 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       414162
-Room         10319
+Played       449113
+Room         10355
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -25,9 +25,9 @@ Favor	       0
 Glory        -11467
 MGlory       13245
 Honour       145124
-Hitroll      38
+Hitroll      35
 Damroll      45
-Armor        1980
+Armor        2000
 Wimpy        500
 Mentalstate  999
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
@@ -46,7 +46,7 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         217.124.245.87
+Site         243.Red-95-126-2.staticIP.rima-tde.net
 Spell        19 'animate dead'
 Spell        19 'bless'
 Spell        19 'cause critical'
@@ -105,9 +105,6 @@ Weapon       19 'missile weapons'
 Weapon       19 'pugilism'
 Weapon       19 'short blades'
 Tongue       100 'common'
-AffectData   'bless'   0   3  18 0
-AffectData   'bless'   0  -3  24 0
-AffectData   'armor' 163 -20  17 0
 Killed       21055 1
 Killed       21045 1
 End
@@ -126,7 +123,7 @@ End
 
 #MOBILE
 Vnum	21058
-Room	10319
+Room	10355
 Description The black steed snorts as you examine him.  His fine black coat shines
 brightly regardless of light and the warhorse seems as though it could
 run tirelessly for days.
