@@ -6,7 +6,7 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       410095
+Played       414162
 Room         10319
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
@@ -46,7 +46,7 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         orion.local.lan
+Site         217.124.245.87
 Spell        19 'animate dead'
 Spell        19 'bless'
 Spell        19 'cause critical'
@@ -105,9 +105,9 @@ Weapon       19 'missile weapons'
 Weapon       19 'pugilism'
 Weapon       19 'short blades'
 Tongue       100 'common'
-AffectData   'bless' 135   3  18 0
-AffectData   'bless' 135  -3  24 0
-AffectData   'armor'  68 -20  17 0
+AffectData   'bless'   0   3  18 0
+AffectData   'bless'   0  -3  24 0
+AffectData   'armor' 163 -20  17 0
 Killed       21055 1
 Killed       21045 1
 End
