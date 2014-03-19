@@ -813,7 +813,7 @@ section {
   max-width: 800px;
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 section #title {
   border: 0;
@@ -828,7 +828,7 @@ section #title h1 {
   font-size: 3em;
   text-align: center;
   line-height: 60px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 section #title p {
   color: #d7cfbe;
@@ -958,7 +958,7 @@ section #title .credits.right {
   }
 
   section {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   nav {
