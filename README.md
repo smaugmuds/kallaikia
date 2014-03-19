@@ -1,27 +1,35 @@
-```
-                           Benvid@ ... estas entrando en Kallaikia ...
-
-                            O    R E I N O    D A S    T E B R A S !
-            _________________________________________________________________________
-           /            \                                                            \
-          |             /       Escrito, mantido e modificado por ^BuRZuM-iSHi^       |
-          |-------------\                                                             |
-          |   \\._.//   /              [[ burzum_ishi__@hotmail.com ]]                |
-          |   (0...0)   \                                                             |
-          |    ).:.(    /  Kallaikia esta basado en SMAUG 1.8 -> Merc 2.1 -> DikuMUD  |
-          |    {o o}    \                                                             |
-          |   / ' ' \   /                                                             |
-          |-'- /   \ -`-\  Realm:          0ri0n.no-ip.biz:4000                       |
-          |   .VxvxV.   /  Realm Home:     http://0ri0n.no-ip.biz/kallaikia/          |
-          |-------------\  Smaug Home:     http://www.game.org/smaug                  |
-          | SMAUG v1.8b /  Realms of Despair Home: http://www.realmsofdespair.com     |
-           \___________/_____________________________________________________________/
-            //                                                                     \\
-           [| Code by Thoric (Derek Snider, derek@idirect.com) with Altrag/Blodkai/ |]
-           [| Haus/Narn/Scryn/Swordbearer/Tricops/Gorog/Rennard/Grishnakh/Fireblade/|]
-           [| Nivek/BuRZuMiSHi                                                      |]
-            \\_____________________________________________________________________//
-
+```                            ...''',,;;;;;;,,'''...
+                          ..',,;;;:ccc::c:cccccc:::;;,,,..
+                       .',;:cccllol:::;,,,',,;;::collcc::,,..
+                   ...';llllc,'.                   ..,;cc::ll,,.
+                  ..;oxxc:.                             .,lxdd::.
+                .':oxxd:.                                 ..:odoc;.
+              ..;oxxl;.                                      .:odol,.
+             ',lxdoc.            K A L L I K I A               'cddl'.
+            ';okdc.                                             .cooc,.
+           ';lxdc.     O   R E I N O   D A S   T E B R A S       .:lol,
+          ';odl;                                                  .:olc'
+         .:oxd:                                                    'lol;
+         ;lxkl.                                                     :dl:.
+        .coxl,                                                      ':cc,
+        ;:lo;.                                                      .':c:
+        ;clo:                 0ri0n.no-ip.biz:4000                  .':lc.
+        :lox:                                                       .,coc
+        ;odx,.                                                      .:lo,
+        .loo,.                                                      .:c:.
+         cocc'                                                     .;ll,
+         .:cc:.   .           2014 (c) BuRZuM-iSHi            .... .;;'
+          .:o,..',;,.                                       .''..cc'...
+         ..',:oOOo;;;,.                                 ...'....':oOOxc,.
+        .co0NXOoool:,;;'',.                             ......',;lO0kxc,
+         co0K0Oo:cll:;,;;,                               .;;'.',:dkkdc,.
+         ;ok0Oxc;;;;;lll.                                 .;clcc:colc,'.
+         :odkxl;;clool:.                                  .:c:;,:llc:,'.
+         l:ldxxxdlclll:.                                  ,xko:;,... ..
+         .....';codoxOo.                                 'xKko,
+                 .ck0K0c.                               .:00d'
+                   :kK0x'                                  ..
+                    .,.
 ```
 
 ##Benvido a Kallaikia ...

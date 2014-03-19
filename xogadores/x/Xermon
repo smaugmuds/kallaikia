@@ -6,7 +6,7 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       459133
+Played       461960
 Room         10319
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
@@ -16,7 +16,7 @@ Exp          1410065407
 Height          66
 Weight          147
 Act          704644682&1024
-Position     112
+Position     113
 Style     2
 Practice     9945
 Alignment    0
@@ -104,9 +104,9 @@ Weapon       19 'missile weapons'
 Weapon       19 'pugilism'
 Weapon       19 'short blades'
 Tongue       100 'common'
-AffectData   'bless' 254   3  18 0
-AffectData   'bless' 254  -3  24 0
-AffectData   'armor'  87 -20  17 0
+AffectData   'bless' 453   3  18 0
+AffectData   'bless' 453  -3  24 0
+AffectData   'armor' 174 -20  17 0
 Killed       21055 1
 Killed       21045 1
 End
@@ -132,6 +132,6 @@ Description The black steed snorts as you examine him.  His fine black coat shin
 A neck tag says 'I belong to Xermon'.
 ~
 Position 12
-Flags 262403
+Flags 786691
 EndMobile
 #END
