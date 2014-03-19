@@ -2831,15 +2831,15 @@ void do_omenu( CHAR_DATA *ch, char *argument )
 	 
     if ( arg1[0] == '\0' )
     {
-        send_to_char( "Sintaxis: omenu <object> [page]  \n\r",     ch );
-        send_to_char( "      Donde:    <object> is a prototype object  \n\r",     ch );
-        send_to_char( "            and  <page>  is an optional letter to select menu-pages\n\r",     ch );
+        send_to_char( "Sintaxis: omenu <obxeto> [paxina]  \n\r",     ch );
+        send_to_char( "         Donde: <obxeto> is a prototype object  \n\r",     ch );
+        send_to_char( "             E: <paxina> is an optional letter to select menu-pages\n\r",     ch );
         return;
     }
 	 
     if ( ( obj = get_obj_world( ch, arg1 ) ) == NULL )
     {
-	send_to_char( "Non estan aqui.\n\r", ch );
+	send_to_char( "Non estan aquí.\n\r", ch );
 	return;
     }
 

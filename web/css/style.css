@@ -471,10 +471,18 @@
 			opacity: 0.8;
 			color: #eee;
 			padding: 2em;
+			text-align: justify;
 		}
 		
 			.box.style2 {
 				padding: 3.5em 2.5em 3.5em 2.5em;
+			}
+
+			.box.style2 a {
+				color: yellow;
+			}
+			.box.style2 a:hover {
+				color: #ddd;
 			}
 
 	/* Main */
@@ -484,6 +492,13 @@
 			margin: 0;
 			overflow-x: hidden;
 		}
+
+		.main a {
+			color: yellow;
+		}
+		.main a:hover {
+			color: #ddd;
+		}
 		
 			.main.style1 {
 				text-align: center;
@@ -491,12 +506,14 @@
 			}
 			
 				.main.style1 h2 {
-					font-size: 4.25em;
+					font-size: 3.25em;
 					line-height: 1em;
+					color: yellow;
 				}
 				
 				.main.style1 .content {
 					opacity: 0.8;
+					font-size: 1.2em;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;

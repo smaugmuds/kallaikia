@@ -427,7 +427,8 @@ legend {
 button,
 input,
 select,
-textarea {
+textarea,
+applet {
   font-size: 100%;
   /* 1 */
   margin: 0;
