@@ -684,8 +684,8 @@ void say_spell( CHAR_DATA *ch, int sn )
 	    length = 1;
     }
 
-    sprintf( buf2, "$n utters the words, '%s'.", buf );
-    sprintf( buf,  "$n utters the words, '%s'.", skill->name );
+    sprintf( buf2, "$n pronuncia a palabras, '%s'.", buf );
+    sprintf( buf,  "$n pronuncia a palabras, '%s'.", skill->name );
 
     for ( rch = ch->in_room->first_person; rch; rch = rch->next_in_room )
     {

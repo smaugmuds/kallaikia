@@ -289,45 +289,45 @@ bool spec_cast_adept( CHAR_DATA *ch )
     switch ( number_bits( 3 ) )
     {
     case 0:
-    act( AT_MAGIC, "$n utters the word 'ciroht'.", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n pronuncia a palabra 'ciroht'.", ch, NULL, NULL, TO_ROOM );
 	spell_smaug( skill_lookup( "armor" ), ch->level, ch, victim );
 	return TRUE;
 
     case 1:
-    act( AT_MAGIC, "$n utters the word 'sunimod'.", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n pronuncia a palabra 'sunimod'.", ch, NULL, NULL, TO_ROOM );
 	spell_smaug( skill_lookup( "bless" ), ch->level, ch, victim );
 	return TRUE;
 
     case 2:
-    act( AT_MAGIC, "$n utters the word 'suah'.", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n pronuncia a palabra 'suah'.", ch, NULL, NULL, TO_ROOM );
 	spell_cure_blindness( skill_lookup( "cure blindness" ),
 	    ch->level, ch, victim );
 	return TRUE;
 
     case 3:
-    act( AT_MAGIC, "$n utters the word 'nran'.", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n pronuncia a palabra 'nran'.", ch, NULL, NULL, TO_ROOM );
 	spell_smaug( skill_lookup( "cure light" ),
 	    ch->level, ch, victim );
 	return TRUE;
 
     case 4:
-    act( AT_MAGIC, "$n utters the word 'nyrcs'.", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n pronuncia a palabra 'nyrcs'.", ch, NULL, NULL, TO_ROOM );
 	spell_cure_poison( skill_lookup( "cure poison" ),
 	    ch->level, ch, victim );
 	return TRUE;
 
     case 5:
-    act( AT_MAGIC, "$n utters the word 'gartla'.", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n pronuncia a palabra 'gartla'.", ch, NULL, NULL, TO_ROOM );
 	spell_smaug( skill_lookup( "refresh" ), ch->level, ch, victim );
 	return TRUE;
 
     case 6:
-    act( AT_MAGIC, "$n utters the word 'naimad'.", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n pronuncia a palabra 'naimad'.", ch, NULL, NULL, TO_ROOM );
         spell_smaug( skill_lookup( "cure serious" ), ch->level, ch, victim );
         return TRUE;
 
     case 7:
-    act( AT_MAGIC, "$n utters the word 'gorog'.", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n pronuncia a palabra 'gorog'.", ch, NULL, NULL, TO_ROOM );
         spell_remove_curse( skill_lookup( "remove curse" ), ch->level, ch, victim );
         return TRUE;
 

@@ -6,9 +6,9 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       454316
+Played       459133
 Room         10319
-HpManaMove   995 1000 1000 1000 1000 1000
+HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
 Gold         1410057878
@@ -16,7 +16,7 @@ Exp          1410065407
 Height          66
 Weight          147
 Act          704644682&1024
-Position     108
+Position     112
 Style     2
 Practice     9945
 Alignment    0
@@ -25,9 +25,9 @@ Favor	       0
 Glory        -11467
 MGlory       13245
 Honour       145124
-Hitroll      35
+Hitroll      38
 Damroll      45
-Armor        2000
+Armor        1980
 Wimpy        500
 Mentalstate  999
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
@@ -46,7 +46,7 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         217.124.245.87
+Site         192.168.1.66
 Spell        19 'animate dead'
 Spell        19 'bless'
 Spell        19 'cause critical'
@@ -84,7 +84,7 @@ Skill        19 'hide'
 Skill        19 'kick'
 Skill        19 'meditate'
 Skill        19 'mistform'
-Skill        65 'mount'
+Skill        68 'mount'
 Skill        19 'parry'
 Skill        19 'punch'
 Skill        19 'rescue'
@@ -104,6 +104,9 @@ Weapon       19 'missile weapons'
 Weapon       19 'pugilism'
 Weapon       19 'short blades'
 Tongue       100 'common'
+AffectData   'bless' 254   3  18 0
+AffectData   'bless' 254  -3  24 0
+AffectData   'armor'  87 -20  17 0
 Killed       21055 1
 Killed       21045 1
 End
