@@ -828,14 +828,14 @@ section #title h1 {
   font-size: 3em;
   text-align: center;
   line-height: 60px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 section #title p {
   color: #d7cfbe;
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-family: "Dungeon", dungeon;
   font-weight: 550;
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: center;
 }
 section applet {
@@ -851,7 +851,7 @@ section #title .credits {
   /* font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-family: "Dungeon", dungeon;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #696969;
   margin-top: -10px;
 }
