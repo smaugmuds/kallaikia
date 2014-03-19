@@ -828,7 +828,7 @@ section #title h1 {
   font-size: 3em;
   text-align: center;
   line-height: 60px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 section #title p {
   color: #d7cfbe;
@@ -847,11 +847,10 @@ section applet {
   text-align: center;
 }
 section #title .credits {
-  font-size: 2.2em;
   /* font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-family: "Dungeon", dungeon;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #696969;
   margin-top: -10px;
 }
@@ -880,7 +879,7 @@ section #title .credits.right {
   color: white;
   line-height: 10px;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .descargas nav li a {
