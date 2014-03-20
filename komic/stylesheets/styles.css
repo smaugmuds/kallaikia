@@ -9,6 +9,24 @@
   -webkit-font-smoothing: antialiased;
 }
 
+@font-face {
+        font-family: 'Conv_stonehenge';
+        src: url('font/stonehenge.eot');
+        src: local('☺'), url('font/stonehenge.woff') format('woff'), url('font/stonehenge.ttf') format('truetype'), url('font/stonehenge.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+        font-family: 'Conv_KellsSD';
+        src: url('font/KellsSD.eot');
+        src: local('☺'), url('font/KellsSD.woff') format('woff'), url('font/KellsSD.ttf') format('truetype'), url('font/KellsSD.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+}
+
 /*
 @font-face {
   font-family: 'OpenSansLight';
@@ -156,7 +174,7 @@ input,
 select,
 textarea,
 applet {
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: 550px;
 }
 
@@ -549,7 +567,7 @@ body {
   margin: 0px;
   /* font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-weight: 550;
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-size: 1.7em;
   color: #f0e7d5;
   font-weight: normal;
@@ -567,7 +585,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #e8e8e8;
   margin: 0 0 10px;
   /* font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: 550;
 }
 
@@ -600,7 +618,7 @@ h3 {
   font-size: 2em;
   line-height: 24px;
   /* font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  font-family: "Dungeon", dungeon !important;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
   color: #b6b6b6;
 }
@@ -627,7 +645,7 @@ ul {
 
 strong {
   /* font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  font-family: "Dungeon", dungeon !important;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
 }
 
@@ -698,7 +716,7 @@ th {
   border-bottom: 1px solid #434343;
   color: #b6b6b6;
   /* font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  font-family: "Dungeon", dungeon !important;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
 }
 
@@ -719,7 +737,7 @@ hr {
 dt {
   color: #F0E7D5;
   /* font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  font-family: "Dungeon", dungeon !important;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
 }
 
@@ -745,7 +763,7 @@ dt {
 }
 #header nav li {
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon !important;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
   list-style: none;
   display: inline;
@@ -823,7 +841,7 @@ section #title {
 }
 section #title h1 {
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: 550;
   font-size: 3em;
   text-align: center;
@@ -833,7 +851,7 @@ section #title h1 {
 section #title p {
   color: #d7cfbe;
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: 550;
   font-size: 1.5em;
   text-align: center;
@@ -841,14 +859,14 @@ section #title p {
 section applet {
   color: #d7cfbe;
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: 550;
   font-size: 2.5em;
   text-align: center;
 }
 section #title .credits {
   /* font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
   font-size: 1em;
   color: #696969;
@@ -872,7 +890,7 @@ section #title .credits.right {
 
 .descargas nav li {
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
   list-style: none;
   display: inline;
