@@ -63,7 +63,7 @@
 		
 	h2 {
 		font-size: 1.5em;
-		letter-spacing: -2px;
+		letter-spacing: 1px;
 		line-height: 1.25em;
 	}
 	
@@ -1119,7 +1119,7 @@
 				display: inline-block;
 				margin-left: 0.5em;
 				font-size: 11px;
-				letter-spacing: -2px;
+				letter-spacing: 1px;
 			}
 			
 				#nav ul li a {
