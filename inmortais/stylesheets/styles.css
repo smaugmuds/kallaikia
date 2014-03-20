@@ -568,9 +568,8 @@ body {
   /* font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-weight: normal;
   font-family: "KellsSD", Conv_KellsSD;
-  font-size: 14px;
+  font-size: 16px;
   color: #f0e7d5;
-  font-weight: normal;
   background: #252525;
   background-attachment: fixed !important;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a2a29), color-stop(100%, #1c1c1c));
