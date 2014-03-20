@@ -525,7 +525,7 @@
 			}
 			
 				.main.style1 h2 {
-					font-size: 4em;
+					font-size: 3.5em;
 					line-height: 1em;
 					color: yellow;
 				}
@@ -549,7 +549,7 @@
 				.main.style1 .content p {
 					text-align: justify;
 					color: yellow;
-					font-size: 18pt;
+					font-size: 20pt;
 				}
 				
 			.main.style1.inactive {
