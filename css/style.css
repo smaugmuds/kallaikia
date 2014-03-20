@@ -547,8 +547,9 @@
 				}
 
 				.main.style1 .content p {
+					text-align: justify;
 					color: yellow;
-					font-size: 14pt;
+					font-size: 16pt;
 				}
 				
 			.main.style1.inactive {
