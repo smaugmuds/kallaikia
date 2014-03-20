@@ -47,7 +47,7 @@
 		/* font-size: 4.5em; */
 		line-height: 1.2em;
 		color: #39454b;
-		letter-spacing: 4px;
+		letter-spacing: 2px;
 	}
 
 	h1,h2,h3,h4,h5,h6 {
@@ -121,7 +121,7 @@
 	
 	p, ul, ol, dl, table {
 		font-size: 12pt; 
-		letter-spacing: 4px;
+		letter-spacing: 2px;
 		margin-bottom: 1em;
 	}
 
@@ -1118,7 +1118,8 @@
 			#nav ul li {
 				display: inline-block;
 				margin-left: 0.5em;
-				font-size: 10px;
+				font-size: 11px;
+				letter-spacing: -2px;
 			}
 			
 				#nav ul li a {
