@@ -43,7 +43,7 @@
 	body,input,textarea,select {
 		/* font-family: 'Source Sans Pro', sans-serif; */
 		font-family: 'KellsSD', Conv_KellsSD;
-		font-weight: 550;
+		font-weight: normal;
 		/* font-size: 30pt; */
 		/* font-size: 4.5em; */
 		line-height: 1.5em;
@@ -52,7 +52,7 @@
 	}
 
 	h1,h2,h3,h4,h5,h6 {
-		font-weight: 900;
+		font-weight: 400;
 		color: inherit;
 		letter-spacing: 4px;
 	}
@@ -63,7 +63,7 @@
 		}
 		
 	h2 {
-		font-size: 2.25em;
+		font-size: 1.5em;
 		letter-spacing: -2px;
 		line-height: 1.25em;
 	}
@@ -79,7 +79,7 @@
 	}
 		
 	strong, b {
-		font-weight: 900;
+		font-weight: 600;
 		color: inherit;
 	}
 	
@@ -121,7 +121,7 @@
 	}
 	
 	p, ul, ol, dl, table {
-		font-size: 1.4em;
+		font-size: 1em;
 		margin-bottom: 1em;
 	}
 
@@ -530,7 +530,7 @@
 				
 				.main.style1 .content {
 					opacity: 0.8;
-					font-size: 1.2em;
+					font-size: 1em;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
