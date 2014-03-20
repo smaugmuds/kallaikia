@@ -3,6 +3,23 @@
 /* @font-face{font-family:'Dungeon';src:url('font/Dungeon.ttf.eot?v=4.0.1');src:url('font/Dungeon.ttf.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/Dungeon.ttf.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/Dungeon.ttf.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal} */
 @font-face{font-family:'Dungeon';src:url('font/Dungeon.ttf.eot?v=4.0.1');src:url('font/Dungeon.ttf.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/Dungeon.ttf.woff?v=4.0.1') format('woff'),url('font/Dungeon.ttf.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
 
+@font-face {
+        font-family: 'Conv_stonehenge';
+        src: url('font/stonehenge.eot');
+        src: local('☺'), url('font/stonehenge.woff') format('woff'), url('font/stonehenge.ttf') format('truetype'), url('font/stonehenge.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'Conv_KellsSD';
+        src: url('font/KellsSD.eot');
+        src: local('☺'), url('font/KellsSD.woff') format('woff'), url('font/KellsSD.ttf') format('truetype'), url('font/KellsSD.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -25,7 +42,7 @@
 
 	body,input,textarea,select {
 		/* font-family: 'Source Sans Pro', sans-serif; */
-		font-family: 'Dungeon', dungeon;
+		font-family: 'KellsSD', Conv_KellsSD;
 		font-weight: 550;
 		/* font-size: 30pt; */
 		/* font-size: 4.5em; */
