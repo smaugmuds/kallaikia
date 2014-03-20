@@ -532,8 +532,6 @@
 				
 				.main.style1 .content {
 					opacity: 0.8;
-					font-size: 1.3em;
-					color: yellow;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
@@ -546,6 +544,11 @@
 					-o-transform: translateZ(0);
 					-ms-transform: translateZ(0);
 					transform: translateZ(0);
+				}
+
+				.main.style1 .content p {
+					color: yellow;
+					font-size: 14pt;
 				}
 				
 			.main.style1.inactive {
