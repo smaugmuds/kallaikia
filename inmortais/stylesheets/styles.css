@@ -175,7 +175,7 @@ select,
 textarea,
 applet {
   font-family: "KellsSD", Conv_KellsSD;
-  font-weight: 550px;
+  font-weight: normal;
 }
 
 /*
@@ -212,27 +212,27 @@ a:active {
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
 h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   margin: 0.67em 0;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0.83em 0;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 1em 0;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 1.33em 0;
 }
 
 h5 {
-  font-size: 0.83em;
+  font-size: 1em;
   margin: 1.67em 0;
 }
 
@@ -566,9 +566,9 @@ body {
   padding: 0px 0 20px 0px;
   margin: 0px;
   /* font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-weight: 550;
+  font-weight: normal;
   font-family: "KellsSD", Conv_KellsSD;
-  font-size: 1.7em;
+  font-size: 14px;
   color: #f0e7d5;
   font-weight: normal;
   background: #252525;
@@ -602,20 +602,20 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h4, h5, h6 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: #e8e8e8;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 24px;
   /* font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
   font-family: "KellsSD", Conv_KellsSD;
@@ -670,7 +670,7 @@ blockquote {
 code {
   font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #efefef;
-  font-size: 13px;
+  font-size: 12px;
   margin: 0 4px;
   padding: 4px 6px;
   -moz-border-radius: 2px;
