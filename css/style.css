@@ -120,7 +120,8 @@
 	}
 	
 	p, ul, ol, dl, table {
-		font-size: 12pt; 
+		font-size: 14pt; 
+		letter-spacing: 1.2em;
 		margin-bottom: 1em;
 	}
 
