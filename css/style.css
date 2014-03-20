@@ -47,7 +47,7 @@
 		/* font-size: 4.5em; */
 		line-height: 1.2em;
 		color: #39454b;
-		letter-spacing: 0.8em;
+		letter-spacing: 4px;
 	}
 
 	h1,h2,h3,h4,h5,h6 {
@@ -121,7 +121,7 @@
 	
 	p, ul, ol, dl, table {
 		font-size: 14pt; 
-		letter-spacing: 0.8em;
+		letter-spacing: 4px;
 		margin-bottom: 1em;
 	}
 
