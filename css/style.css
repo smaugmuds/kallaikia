@@ -43,7 +43,7 @@
 		/* font-family: 'Source Sans Pro', sans-serif; */
 		font-family: 'KellsSD', Conv_KellsSD;
 		font-weight: normal;
-		font-size: 12pt;
+		font-size: 10pt;
 		/* font-size: 4.5em; */
 		line-height: 1.2em;
 		color: #39454b;
@@ -120,7 +120,7 @@
 	}
 	
 	p, ul, ol, dl, table {
-		font-size: 14pt; 
+		font-size: 10pt; 
 		letter-spacing: 4px;
 		margin-bottom: 1em;
 	}
