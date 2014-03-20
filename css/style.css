@@ -43,7 +43,7 @@
 		/* font-family: 'Source Sans Pro', sans-serif; */
 		font-family: 'KellsSD', Conv_KellsSD;
 		font-weight: normal;
-		font-size: 10pt;
+		font-size: 12pt;
 		/* font-size: 4.5em; */
 		line-height: 1.2em;
 		color: #39454b;
@@ -120,7 +120,7 @@
 	}
 	
 	p, ul, ol, dl, table {
-		font-size: 10pt; 
+		font-size: 12pt; 
 		letter-spacing: 4px;
 		margin-bottom: 1em;
 	}
@@ -530,7 +530,7 @@
 				
 				.main.style1 .content {
 					opacity: 0.8;
-					font-size: 1em;
+					font-size: 14px;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
@@ -1118,7 +1118,7 @@
 			#nav ul li {
 				display: inline-block;
 				margin-left: 0.5em;
-				font-size: 16px;
+				font-size: 10px;
 			}
 			
 				#nav ul li a {
