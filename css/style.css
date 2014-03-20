@@ -45,13 +45,13 @@
 		font-weight: normal;
 		font-size: 12pt;
 		/* font-size: 4.5em; */
-		line-height: 1.5em;
+		line-height: 1em;
 		color: #39454b;
 		letter-spacing: 1.5px;
 	}
 
 	h1,h2,h3,h4,h5,h6 {
-		font-weight: 400;
+		font-weight: 600;
 		color: inherit;
 		letter-spacing: 4px;
 	}
@@ -78,7 +78,7 @@
 	}
 		
 	strong, b {
-		font-weight: 500;
+		font-weight: 600;
 		color: inherit;
 	}
 	
@@ -120,7 +120,7 @@
 	}
 	
 	p, ul, ol, dl, table {
-		font-size: 1em;
+		font-size: 12pt; 
 		margin-bottom: 1em;
 	}
 
