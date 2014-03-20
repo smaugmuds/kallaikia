@@ -533,6 +533,7 @@
 				.main.style1 .content {
 					opacity: 0.8;
 					font-size: 1.3em;
+					color: yellow;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
@@ -562,8 +563,6 @@
 				.main.style2 .content {
 					position: relative;
 					width: 35%;
-					font-size: 1.3em;
-					color: yellow;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
