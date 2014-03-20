@@ -532,7 +532,8 @@
 				
 				.main.style1 .content {
 					opacity: 0.8;
-					font-size: 16px;
+					font-size: 14pt;
+					color: yellow;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
