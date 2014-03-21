@@ -605,8 +605,8 @@
 					}
 				
 					.main.style2.left .content img {
-						float: left;
-						margin-right: 25px;
+						float: right; 
+						margin-left: 25px;
 					}
 
 				.main.style2.right {
@@ -617,7 +617,7 @@
 					}
 
 					.main.style2.right .content img {
-						float: right;
+						float: left;
 						margin-right: 25px;
 					}
 
