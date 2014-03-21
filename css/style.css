@@ -545,7 +545,6 @@
 				
 				.main.style1 .content {
 					opacity: 0.8;
-					min-height: 400px;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
@@ -566,6 +565,7 @@
 					font-size: 14pt;
 					padding: 25px;
 					background: #222;
+					min-height: 300px;
 				}
 
 				.main.style1 .content img {
@@ -588,7 +588,6 @@
 				.main.style2 .content {
 					position: relative;
 					width: 50%;
-					min-height: 400px;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
@@ -609,6 +608,10 @@
 					.main.style2.left .content {
 						left: 0;
 					}
+					
+					.main.style2.left .content p {
+						min-height: 400px;
+					}
 				
 					.main.style2.left .content img {
 						float: right; 
@@ -620,6 +623,10 @@
 
 					.main.style2.right .content {
 						left: 50%;
+					}
+
+					.main.style2.right .content p {
+						min-height: 400px;
 					}
 
 					.main.style2.right .content img {
