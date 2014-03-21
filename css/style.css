@@ -1279,8 +1279,7 @@
 /*********************************************************************************/
 	
 	#footer {
-		z-index: 10000;
-		position: fixed;
+		position: relative;
 		height: 5em;
 		line-height: 3em;
 		margin: 1.5em 0em 0em 0em;
