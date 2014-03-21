@@ -545,6 +545,7 @@
 				
 				.main.style1 .content {
 					opacity: 0.8;
+					min-height: 300px;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
@@ -587,6 +588,7 @@
 				.main.style2 .content {
 					position: relative;
 					width: 50%;
+					min-height: 300px;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
