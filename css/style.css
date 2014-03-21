@@ -1139,6 +1139,7 @@
 		}
 
 			#nav ul li {
+				color: #fff;
 				display: inline-block;
 				margin-left: 0.5em;
 				font-size: 14px;
@@ -1154,6 +1155,10 @@
 					line-height: 3em;
 					padding: 0 0.5em 0 0.5em;
 					outline: 0;
+				}
+
+				#nav ul li a:hover {
+					color: yellow;
 				}
 
 /*********************************************************************************/
@@ -1268,7 +1273,7 @@
 		position: relative;
 		height: 5em;
 		line-height: 4em;
-		margin: 40px 0px 0px 0px;
+		margin: 4em 0em 0em 0em;
 		background: #222;
 		color: #999;
 		color: rgba(255,255,255,0.5);
