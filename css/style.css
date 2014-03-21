@@ -1286,7 +1286,7 @@
 		background: #222;
 		color: #eee;
 		overflow: hidden;
-		font-size: 14pt;
+		font-size: 10pt;
 	}
 
 		#footer a {
@@ -1327,7 +1327,7 @@
 		}
 		
 			#footer .menu li {
-				font-size: 14pt;
+				font-size: 10pt;
 			}
 
 /*********************************************************************************/
