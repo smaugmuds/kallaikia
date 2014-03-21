@@ -1118,22 +1118,22 @@
 		top: 0;
 		width: 100%;
 		background: #222;
-		height: 2em;
-		line-height: 2em;
+		height: 2.2em;
+		line-height: 2.2em;
 		box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
 	}
 	
 	body {
-		padding-top: 2em;
+		padding-top: 2.2em;
 	}
 
 	#logo {
 		position: absolute;
 		left: 1em;
 		top: 0;
-		height: 3em;
+		/* height: 3em;
 		line-height: 3em;
-		letter-spacing: -1px;
+		letter-spacing: -1px; */
 	}
 	
 		#logo a {
@@ -1144,8 +1144,8 @@
 		position: absolute;
 		right: 0.5em;
 		top: 0;
-		height: 3em;
-		line-height: 3em;
+		height: 2em;
+		line-height: 2em;
 	}
 
 		#nav ul {
