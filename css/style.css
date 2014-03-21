@@ -603,12 +603,22 @@
 					.main.style2.left .content {
 						left: 0;
 					}
+				
+					.main.style2.left .content img {
+						float: left;
+						margin-right: 25px;
+					}
 
 				.main.style2.right {
 				}
 
 					.main.style2.right .content {
 						left: 65%;
+					}
+
+					.main.style2.right .content img {
+						float: right;
+						margin-right: 25px;
 					}
 
 				.main.style2.inactive {
