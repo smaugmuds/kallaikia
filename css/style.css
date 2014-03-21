@@ -548,8 +548,8 @@
 
 				.main.style1 .content p {
 					text-align: justify;
-					color: yellow;
-					font-size: 16pt;
+					color: #fff;
+					font-size: 14pt;
 					padding: 35px;
 					background: #000;
 				}
