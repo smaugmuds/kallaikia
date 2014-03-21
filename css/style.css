@@ -562,10 +562,10 @@
 				.main.style1 .content p {
 					text-align: justify;
 					color: #fff;
-					font-size: 14pt;
+					font-size: 16pt;
 					padding: 25px;
 					background: #222;
-					min-height: 300px;
+					min-height: 400px;
 				}
 
 				.main.style1 .content img {
@@ -609,10 +609,6 @@
 						left: 0;
 					}
 					
-					.main.style2.left .content p {
-						min-height: 400px;
-					}
-				
 					.main.style2.left .content img {
 						float: right; 
 						margin-left: 25px;
@@ -623,10 +619,6 @@
 
 					.main.style2.right .content {
 						left: 50%;
-					}
-
-					.main.style2.right .content p {
-						min-height: 400px;
 					}
 
 					.main.style2.right .content img {
