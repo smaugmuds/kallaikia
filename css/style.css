@@ -1102,6 +1102,7 @@
 	
 	body {
 		padding-top: 3em;
+		overflow: none;
 	}
 
 	#logo {
