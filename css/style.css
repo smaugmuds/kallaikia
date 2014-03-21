@@ -1285,8 +1285,7 @@
 		line-height: 4em;
 		margin: 4em 0em 0em 0em;
 		background: #222;
-		color: #999;
-		color: rgba(255,255,255,0.5);
+		color: yellow;
 		overflow: hidden;
 	}
 
@@ -1310,7 +1309,7 @@
 		}
 		
 			#footer .actions li {
-				font-size: 14px;
+				font-size: 14pt;
 				margin: 0;
 			}
 			
@@ -1328,7 +1327,7 @@
 		}
 		
 			#footer .menu li {
-				font-size: 10px;
+				font-size: 14pt;
 			}
 
 /*********************************************************************************/
