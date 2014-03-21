@@ -550,8 +550,12 @@
 					text-align: justify;
 					color: yellow;
 					font-size: 16pt;
-					padding: 30px;
+					padding: 35px;
 					background: #000;
+				}
+
+				.main.style1 .content img {
+					float: left;
 				}
 				
 			.main.style1.inactive {
