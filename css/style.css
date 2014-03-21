@@ -1287,6 +1287,7 @@
 		color: #eee;
 		overflow: hidden;
 		font-size: 10pt;
+		opacity: 0.8;
 	}
 
 		#footer a {
