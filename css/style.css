@@ -1280,13 +1280,13 @@
 	
 	#footer {
 		position: relative;
-		height: 6em;
+		height: 5em;
 		line-height: 3em;
-		margin: 3em 0em 0em 0em;
+		margin: 1.5em 0em 0em 0em;
 		background: #222;
-		color: yellow;
+		color: #eee;
 		overflow: hidden;
-		font-size: 16pt;
+		font-size: 14pt;
 	}
 
 		#footer a {
