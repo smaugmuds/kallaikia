@@ -550,6 +550,8 @@
 					text-align: justify;
 					color: yellow;
 					font-size: 16pt;
+					padding: 30px;
+					background: #000;
 				}
 				
 			.main.style1.inactive {
