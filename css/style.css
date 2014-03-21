@@ -1118,13 +1118,13 @@
 		top: 0;
 		width: 100%;
 		background: #222;
-		height: 3em;
+		height: 2em;
 		line-height: 2em;
 		box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
 	}
 	
 	body {
-		padding-top: 3em;
+		padding-top: 2em;
 	}
 
 	#logo {
