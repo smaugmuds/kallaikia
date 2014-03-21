@@ -1128,6 +1128,7 @@
 	}
 
 	#logo {
+		z-index: 200000;
 		position: absolute;
 		left: 1em;
 		top: 10px;
