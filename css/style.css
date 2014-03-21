@@ -28,6 +28,7 @@
 	body {
 		background: #000;
 		color: #ddd;
+		overflow: none;
 	}
 
 		body.loading {
@@ -1102,7 +1103,6 @@
 	
 	body {
 		padding-top: 3em;
-		overflow: none;
 	}
 
 	#logo {
