@@ -1130,15 +1130,9 @@
 	#logo {
 		position: absolute;
 		left: 1em;
-		top: 0;
-		/* height: 3em;
-		line-height: 3em;
-		letter-spacing: -1px; */
+		top: 10px;
+		witdh: 25%;
 	}
-	
-		#logo a {
-			font-size: 1em;
-		}
 	
 	#nav {
 		position: absolute;
