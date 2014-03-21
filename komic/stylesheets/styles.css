@@ -594,7 +594,7 @@ p, ul, ol, table, pre, dl {
 
 p {
     text-align: justify;
-  line-height:5px; 
+  line-height: 20px; 
 }
 
 h1, h2, h3 {
