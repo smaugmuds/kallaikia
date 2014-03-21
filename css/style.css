@@ -25,10 +25,14 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
+	html {
+		overflow: hidden;
+	}
+
 	body {
-		background: #000;
+		background: #222;
 		color: #ddd;
-		overflow: none;
+		overflow: hidden;
 	}
 
 		body.loading {
@@ -1095,11 +1099,10 @@
 		top: 0;
 		width: 100%;
 		background: #222;
-		background: rgba(255,255,255,0.95);
+		background: rgba(20,20,20,0.95);
 		height: 3em;
 		line-height: 2em;
 		box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
-		overflow: none;
 	}
 	
 	body {
