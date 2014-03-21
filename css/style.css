@@ -586,7 +586,7 @@
 			
 				.main.style2 .content {
 					position: relative;
-					width: 45%;
+					width: 50%;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
@@ -617,7 +617,7 @@
 				}
 
 					.main.style2.right .content {
-						left: 55%;
+						left: 50%;
 					}
 
 					.main.style2.right .content img {
@@ -632,7 +632,7 @@
 					}
 
 						.main.style2.inactive.left .content {
-							left: -45%;
+							left: -50%;
 						}
 
 						.main.style2.inactive.right .content {
