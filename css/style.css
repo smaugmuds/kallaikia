@@ -556,6 +556,7 @@
 
 				.main.style1 .content img {
 					float: left;
+					margin-right: 10px;
 				}
 				
 			.main.style1.inactive {
