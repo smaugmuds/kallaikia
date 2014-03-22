@@ -7125,21 +7125,21 @@ void do_loadarea( CHAR_DATA *ch, char *argument )
 	return;
     }
     sprintf( filename, "%s%s", BUILD_DIR, tarea->filename );
-    send_to_char( "Loading...\n\r", ch );
+    send_to_char( "Cargando...\n\r", ch );
     load_area_file( tarea, filename );
-    send_to_char("Planing...\n\r", ch);
+    send_to_char("Realizando plano...\n\r", ch);
     check_planes(NULL);
-    send_to_char( "Linking exits...\n\r", ch );
+    send_to_char( "Enlazando saídas ...\n\r", ch );
     fix_area_exits( tarea );
     if ( tarea->first_reset )
     {
 	tmp = tarea->nplayer;
 	tarea->nplayer = 0;
-	send_to_char( "Resetting area...\n\r", ch );
+	send_to_char( "Reseteando zona...\n\r", ch );
 	reset_area( tarea );
 	tarea->nplayer = tmp;
     }
-    send_to_char( "Done.\n\r", ch );
+    send_to_char( "Feito.\n\r", ch );
 }
 
 /*
@@ -7195,7 +7195,7 @@ void do_foldarea( CHAR_DATA *ch, char *argument )
 	  return;
 	}
     }
-    send_to_char( "No such area exists.\n\r", ch );
+    send_to_char( "Esa zona non existe.\n\r", ch );
     return;
 }
 
@@ -7236,7 +7236,7 @@ void do_installarea( CHAR_DATA *ch, char *argument )
     argument = one_argument( argument, arg );
     if ( arg[0] == '\0' )
     {
-	send_to_char( "Syntax: installarea <filename> [Area title]\n\r", ch );
+	send_to_char( "Sintaxis: installarea <filename> [Area title]\n\r", ch );
 	return;
     }
 
@@ -7251,7 +7251,7 @@ void do_installarea( CHAR_DATA *ch, char *argument )
 	  }
 
 	  /* Fold area with install flag -- auto-removes prototype flags */
-	  send_to_char( "Saving and installing file...\n\r", ch );
+	  send_to_char( "Gardando e instalando ficheiro...\n\r", ch );
 	  fold_area( tarea, tarea->filename, TRUE );
 
 	  /* Remove from prototype area list */
@@ -7278,22 +7278,22 @@ void do_installarea( CHAR_DATA *ch, char *argument )
 	    }
 
 	  top_area++;
-	  send_to_char( "Writing zonas.lista ...\n\r", ch );
+	  send_to_char( "Escribindo zonas.lista ...\n\r", ch );
 	  write_area_list( );
-	  send_to_char( "Resetting new area.\n\r", ch );
+	  send_to_char( "Reseteando nova zona.\n\r", ch );
 	  num = tarea->nplayer;
 	  tarea->nplayer = 0;
 	  reset_area( tarea );
 	  tarea->nplayer = num;
-	  send_to_char( "Renaming author's building file.\n\r", ch );
+	  send_to_char( "Renomeando o ficheiro de construcción do autor.\n\r", ch );
 	  sprintf( buf, "%s%s.installed", BUILD_DIR, tarea->filename );
 	  sprintf( arg, "%s%s", BUILD_DIR, tarea->filename );
 	  rename( arg, buf );
-	  send_to_char( "Done.\n\r", ch );
+	  send_to_char( "Feito.\n\r", ch );
 	  return;
 	}
     }
-    send_to_char( "No such area exists.\n\r", ch );
+    send_to_char( "Esa zona non existe.\n\r", ch );
     return;
 }
 
@@ -7404,7 +7404,7 @@ RESET_DATA *parse_reset( AREA_DATA *tarea, char *argument, CHAR_DATA *ch )
 	    letter = 'O';
 	}
 	else
-	if ( !str_cmp( arg1, "give" ) )
+	if ( !str_cmp( arg1, "dar" ) )
 	{
 	    if ( !get_obj_index(val1) )
 	    {
@@ -7459,30 +7459,30 @@ RESET_DATA *parse_reset( AREA_DATA *tarea, char *argument, CHAR_DATA *ch )
 	    letter = 'P';
 	}
 	else
-	if ( !str_cmp( arg1, "door" ) )
+	if ( !str_cmp( arg1, "porta" ) )
 	{
 	    if ( (room = get_room_index(val1)) == NULL )
 	    {
-		send_to_char( "Reset: DOOR: no such room\n\r", ch );
+		send_to_char( "Resetear: PORTA: non existe a estancia\n\r", ch );
 		return NULL;
 	    }
 	    if ( val2 < 0 || val2 > 9 )
 	    {
-		send_to_char( "Reset: DOOR: invalid exit\n\r", ch );
+		send_to_char( "Resetear: PORTA: saída inválida\n\r", ch );
 		return NULL;
 	    }
 	    if ( (pexit = get_exit(room, val2)) == NULL
 	    ||   !IS_SET( pexit->exit_info, EX_ISDOOR ) )
 	    {
-		send_to_char( "Reset: DOOR: no such door\n\r", ch );
+		send_to_char( "Resetear: PORTA: non existe a porta\n\r", ch );
 		return NULL;
 	    }
 	    if ( val3 < 0 || val3 > 2 )
 	    {
-		send_to_char( "Reset: DOOR: invalid door state (0 = open, 1 = close, 2 = lock)\n\r", ch );
+		send_to_char( "Resetear: PORTA: estado da porta inválido (0 = aberto, 1 = cerrado, 2 = bloqueado)\n\r", ch );
 		return NULL;
 	    }
-	    letter = 'D';
+	    letter = 'P';
 	    value = val3;
 	    val3  = val2;
 	    val2  = value;

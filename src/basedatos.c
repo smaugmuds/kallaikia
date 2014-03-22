@@ -2611,7 +2611,7 @@ void area_update( void )
 	{
 	    ROOM_INDEX_DATA *pRoomIndex;
 
-	    fprintf( stderr, "Resetting: %s\n", pArea->filename );
+	    fprintf( stderr, " * Reseteando zona: %s\n", pArea->filename );
 	    reset_area( pArea );
 	    if ( reset_age == -1 )
 		pArea->age = -1;

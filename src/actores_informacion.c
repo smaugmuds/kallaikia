@@ -2423,11 +2423,11 @@ void do_changes( CHAR_DATA *ch, char *argument )
 
     if ( IS_NPC( ch ) )
         return;
-    send_to_char_color( "\n\r&gChanges to the Realms ...\n\r", ch );
+    send_to_char_color( "\n\r&gCambios no reino ...\n\r", ch );
     show_file( ch, CHANGE_FILE );
-    send_to_char_color( "&G&g... type &G'&gnews&G'&g for recent updates.\n\r", ch );
+    send_to_char_color( "&G&g... teblea &G'&gnovas&G'&g para ver as actualizacións recentes.\n\r", ch );
     if ( IS_IMMORTAL( ch ) )
-	send_to_char_color( "&G&gImmortals should also check &G'&gimmnews&G'&g.\n\r", ch );
+	send_to_char_color( "&G&gOs Inmortais deben comprobar ademáis &G'&ginmnovas&G'&g.\n\r", ch );
     return;
 }
 
@@ -2458,7 +2458,7 @@ void do_hedit( CHAR_DATA *ch, char *argument )
 
     if ( !ch->desc )
     {
-	send_to_char( "You have no descriptor.\n\r", ch );
+	send_to_char( "Non tes un descriptor.\n\r", ch );
 	return;
     }
 
@@ -2549,17 +2549,17 @@ void do_hset( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    if ( !str_cmp( arg1, "save" ) )
+    if ( !str_cmp( arg1, "gardar" ) )
     {
 	FILE *fpout;
 
-	log_string_plus( "Saving axuda.are...", LOG_NORMAL, LEVEL_GREATER );
+	log_string_plus( "Gardando axuda.are...", LOG_NORMAL, LEVEL_GREATER );
 
 	rename( "axuda.are", "axuda.are.bak" );
 	fclose( fpReserve );
 	if ( ( fpout = fopen( "axuda.are", "w" ) ) == NULL )
 	{
-	   bug( "hset save: fopen", 0 );
+	   bug( "hset gardar: fopen", 0 );
 	   perror( "axuda.are" );
 	   fpReserve = fopen( NULL_FILE, "r" );
 	   return;
@@ -2573,37 +2573,37 @@ void do_hset( CHAR_DATA *ch, char *argument )
 	fprintf( fpout, "0 $~\n\n\n#$\n" );
 	fclose( fpout );
 	fpReserve = fopen( NULL_FILE, "r" );
-	send_to_char( "Saved.\n\r", ch );
+	send_to_char( "Gardada.\n\r", ch );
 	return;
     }
-    if ( str_cmp( arg1, "remove" ) )
+    if ( str_cmp( arg1, "eliminar" ) )
 	argument = one_argument( argument, arg2 );
 
     if ( (pHelp = get_help(ch, argument)) == NULL )
     {
-	send_to_char( "Cannot find help on that subject.\n\r", ch );
+	send_to_char( "Non se pode encontrar axuda sobre ese tema.\n\r", ch );
 	return;
     }
-    if ( !str_cmp( arg1, "remove" ) )
+    if ( !str_cmp( arg1, "eliminar" ) )
     {
 	UNLINK( pHelp, first_help, last_help, next, prev );
 	STRFREE( pHelp->text );
 	STRFREE( pHelp->keyword );
 	DISPOSE( pHelp );
-	send_to_char( "Removed.\n\r", ch );
+	send_to_char( "Eliminado.\n\r", ch );
 	return;
     }
-    if ( !str_cmp( arg1, "level" ) )
+    if ( !str_cmp( arg1, "nivel" ) )
     {
 	pHelp->level = atoi( arg2 );
-	send_to_char( "Done.\n\r", ch );
+	send_to_char( "Feito.\n\r", ch );
 	return;
     }
-    if ( !str_cmp( arg1, "keyword" ) )
+    if ( !str_cmp( arg1, "palabrachave" ) )
     {
 	STRFREE( pHelp->keyword );
 	pHelp->keyword = STRALLOC( strupper(arg2) );
-	send_to_char( "Done.\n\r", ch );
+	send_to_char( "Feito.\n\r", ch );
 	return;
     }
 
@@ -2683,7 +2683,7 @@ void do_hlist( CHAR_DATA *ch, char *argument )
     }
     
     set_pager_color( AT_GREEN, ch );
-    pager_printf( ch, "Help Topics in level range %d to %d:\n\r\n\r", min, max );
+    pager_printf( ch, "Temas de Axuda nos rangos de nivel de %d a %d:\n\r\n\r", min, max );
     for ( cnt = 0, help = first_help; help; help = help->next )
 	if ( help->level >= min && help->level <= max
 	&&  (!idx || nifty_is_name_prefix(idx, help->keyword)) )
@@ -3395,9 +3395,9 @@ void do_who( CHAR_DATA *ch, char *argument )
     if ( first_imm )
     {
       if ( !ch )
-        fprintf( whoout, "\n\r-----------------------------------[ IMMORTALS ]-----------------------------\n\r\n\r" );
+        fprintf( whoout, "\n\r-----------------------------------[ INMORTAIS ]-----------------------------\n\r\n\r" );
       else
-       send_to_pager_color( "\n\r-----------------------------------[&G IMMORTALS&g ]------------------------------\n\r\n\r", ch );
+       send_to_pager_color( "\n\r-----------------------------------[&G INMORTAIS&g ]------------------------------\n\r\n\r", ch );
     }
 
     for ( cur_who = first_imm; cur_who; cur_who = next_who )
@@ -3979,9 +3979,9 @@ void do_cwho( CHAR_DATA *ch, char *argument )
     if ( first_imm )
     {
       if ( !ch )
-        fprintf( whoout, "\n\r-----------------------------------[ IMMORTALS ]-----------------------------\n\r\n\r" );
+        fprintf( whoout, "\n\r-----------------------------------[ INMORTAIS ]-----------------------------\n\r\n\r" );
       else
-       send_to_pager_color( "\n\r&g-----------------------------------[&G IMMORTALS&g ]------------------------------\n\r\n\r", ch );
+       send_to_pager_color( "\n\r&g-----------------------------------[&G INMORTAIS&g ]------------------------------\n\r\n\r", ch );
     }
 
     for ( cur_who = first_imm; cur_who; cur_who = next_who )
@@ -4308,20 +4308,20 @@ void do_practice( CHAR_DATA *ch, char *argument )
 		break;
 
 
-	    if ( strcmp(skill_table[sn]->name, "reserved") == 0
+	    if ( strcmp(skill_table[sn]->name, "reservar") == 0
 	    && ( IS_IMMORTAL(ch) || CAN_CAST(ch) ) )
 	    {
 		if ( col % 3 != 0 )
 		    send_to_pager( "\n\r", ch );
 	      set_pager_color( AT_MAGIC, ch );
 	      send_to_pager_color(
-" ----------------------------------[&CSpells&B]----------------------------------\n\r", ch);
+" ----------------------------------[&CFeitizos&B]----------------------------------\n\r", ch);
 		col = 0;
 	    }
 	    if ( skill_table[sn]->type != lasttype )
 	    {
 		if ( !cnt )
-		    send_to_pager( "                                   (none)\n\r", ch );
+		    send_to_pager( "                                   (ningún)\n\r", ch );
 		else
 		if ( col % 3 != 0 )
 		    send_to_pager( "\n\r", ch );
@@ -5734,32 +5734,32 @@ void do_whois( CHAR_DATA *ch, char *argument)
 	show_tilde( victim->pcdata->icq ) );
 
   if(victim->pcdata->bio && victim->pcdata->bio[0] != '\0')
-    pager_printf(ch, " %s's personal bio:\n\r%s",
+    pager_printf(ch, " biografía de %s:\n\r%s",
 	victim->name,
 	victim->pcdata->bio);
   else
-    pager_printf(ch, " %s has yet to create a bio.\n\r",
+    pager_printf(ch, " %s ten que crear a biografía.\n\r",
 	victim->name );
 
   if(IS_IMMORTAL(ch))
   {  
     send_to_pager("-------------------\n\r", ch);
-    send_to_pager("Info for immortals:\n\r", ch);
+    send_to_pager("Información para Inmortais:\n\r", ch);
 
     if ( get_trust( ch ) > LEVEL_GOD ){
        if ( victim->pcdata->authed_by && victim->pcdata->authed_by[0] != '\0' )
-            pager_printf(ch, "%s was authorized by %s.\n\r",
+            pager_printf(ch, "%s foi autorizado por %s.\n\r",
                 victim->name, victim->pcdata->authed_by );
     }
 
 
-    pager_printf(ch, "%s has killed %d mobiles, and been killed by a mobile %d times.\n\r",
+    pager_printf(ch, "%s matou %d criaturas, e foi morto por unha criatura %d veces.\n\r",
 		victim->name, victim->pcdata->mkills, victim->pcdata->mdeaths );
     if ( victim->pcdata->pkills || victim->pcdata->pdeaths )
-	pager_printf(ch, "%s has killed %d players, and been killed by a player %d times.\n\r",
+	pager_printf(ch, "%s matou %d xogadores, e foi morto a mans dun xogador %d veces.\n\r",
 		victim->name, victim->pcdata->pkills, victim->pcdata->pdeaths );
     if ( victim->pcdata->illegal_pk )
-	pager_printf(ch, "%s has committed %d illegal player kills.\n\r",
+	pager_printf(ch, "%s levou a cabo %d mortes ilegais (PKills).\n\r",
 		victim->name, victim->pcdata->illegal_pk );
 
     pager_printf(ch, "%s is %shelled at the moment.\n\r",
@@ -5768,20 +5768,20 @@ void do_whois( CHAR_DATA *ch, char *argument)
 
     if (victim->pcdata->nuisance )
     {
-      pager_printf_color( ch, "&RNuisance   &cStage: (&R%d&c/%d)  Power:  &w%d  &cTime:  &w%s.\n\r", victim->pcdata->nuisance->flags,
+      pager_printf_color( ch, "&RNuisance   &cStage: (&R%d&c/%d)  Poder:  &w%d  &cTempo:  &w%s.\n\r", victim->pcdata->nuisance->flags,
                   MAX_NUISANCE_STAGE, victim->pcdata->nuisance->power,
 		              ctime(&victim->pcdata->nuisance->time));
     }
     if(victim->pcdata->release_date != 0)
       pager_printf(ch, "%s was helled by %s, and will be released on %24.24s.\n\r",
-	victim->sex == SEX_MALE ? "He" :
-	victim->sex == SEX_FEMALE ? "She" : "It",
+	victim->sex == SEX_MALE ? "El" :
+	victim->sex == SEX_FEMALE ? "Ela" : "Iso",
         victim->pcdata->helled_by,
 	ctime(&victim->pcdata->release_date));
 
     if(get_trust(victim) < get_trust(ch))
     {
-      sprintf(buf2, "list %s", buf);
+      sprintf(buf2, "lista %s", buf);
       do_comment(ch, buf2);
     }
 
@@ -5796,9 +5796,9 @@ void do_whois( CHAR_DATA *ch, char *argument)
     || xIS_SET(victim->act, PLR_LITTERBUG) 
 	|| xIS_SET(victim->act, PLR_FREEZE) )
     {
-      sprintf(buf2, "&GThis character has the following sanctions: &Y");
+      sprintf(buf2, "&GEsta persoaxe ten as seguintes sancións: &Y");
       if(xIS_SET(victim->act, PLR_SILENCE)) 
-        strcat(buf2, " silence");
+        strcat(buf2, " silenciar");
 	  if(xIS_SET(victim->act, PLR_FREEZE))
 		strcat(buf2, " frozen");
       if(xIS_SET(victim->act, PLR_NO_EMOTE)) 
@@ -5820,7 +5820,7 @@ void do_whois( CHAR_DATA *ch, char *argument)
       if(xIS_SET(victim->act, PLR_NOHOMEPAGE) )
 	strcat(buf2, " nohomepage");
       if ( IS_SET( victim->pcdata->flags, PCFLAG_NOTITLE ) )
-        strcat(buf2, " notitle");
+        strcat(buf2, " sintitulo");
       if ( IS_SET( victim->pcdata->flags, PCFLAG_NOHTTP ) )
         strcat(buf2, " nohttp");
       strcat(buf2, ".\n\r");
@@ -5829,7 +5829,7 @@ void do_whois( CHAR_DATA *ch, char *argument)
      set_char_color( AT_GREEN, ch );
      if ( victim->desc && victim->desc->host[0]!='\0' )   /* added by Gorog */
      {
-     sprintf (buf2, "%s's IP info: %s ", victim->name, victim->desc->host);
+     sprintf (buf2, "%s información IP: %s ", victim->name, victim->desc->host);
      if (get_trust(ch) >= LEVEL_GOD)
         strcat (buf2, victim->desc->user);
      strcat (buf2, "\n\r");
@@ -5838,7 +5838,7 @@ void do_whois( CHAR_DATA *ch, char *argument)
   else
     if ( victim->pcdata->recent_site )
     {
-        sprintf( buf2, "%s's most recent IP: %s \n\r ", victim->name, victim->pcdata->recent_site);
+        sprintf( buf2, "a IP máis recente de %s foi: %s \n\r ", victim->name, victim->pcdata->recent_site);
         send_to_pager( buf2, ch );
     }
   }
@@ -5856,23 +5856,23 @@ void do_pager( CHAR_DATA *ch, char *argument )
   {
     if ( IS_SET(ch->pcdata->flags, PCFLAG_PAGERON) )
     {
-        send_to_char( "Pager disabled.\n\r", ch );
-        do_config(ch, "-pager");
+        send_to_char( "Paxinador desactivado.\n\r", ch );
+        do_config(ch, "-paxinador");
     } else {
-        ch_printf( ch, "Pager is now enabled at %d lines.\n\r", ch->pcdata->pagerlen );
-        do_config(ch, "+pager");
+        ch_printf( ch, "O paxinador foi activado con %d liñas.\n\r", ch->pcdata->pagerlen );
+        do_config(ch, "+paxinador");
     }
     return;
   }
   if ( !is_number(arg) )
   {
-    send_to_char( "Set page pausing to how many lines?\n\r", ch );
+    send_to_char( "Configurar o paxinador para cantas liñas?\n\r", ch );
     return;
   }
   ch->pcdata->pagerlen = atoi(arg);
   if ( ch->pcdata->pagerlen < 5 )
     ch->pcdata->pagerlen = 5;
-  ch_printf( ch, "Page pausing set to %d lines.\n\r", ch->pcdata->pagerlen );
+  ch_printf( ch, "Paxinador configurado a %d liñas.\n\r", ch->pcdata->pagerlen );
   return;
 }
 
@@ -5916,14 +5916,14 @@ void do_ignore(CHAR_DATA *ch, char *argument)
 		set_char_color(AT_DIVIDER, ch);
 		ch_printf(ch, "\n\r----------------------------------------\n\r");
 		set_char_color(AT_DGREEN, ch);
-		ch_printf(ch, "You are currently ignoring:\n\r");
+		ch_printf(ch, "Actualmente ignoras a:\n\r");
 		set_char_color(AT_DIVIDER, ch);
 		ch_printf(ch, "----------------------------------------\n\r");
 		set_char_color(AT_IGNORE, ch);
 		
 		if(!ch->pcdata->first_ignored)
 		{
-			ch_printf(ch, "\t    no one\n\r");
+			ch_printf(ch, "\t    ninguén\n\r");
 			return;
 		}
 		
@@ -5936,7 +5936,7 @@ void do_ignore(CHAR_DATA *ch, char *argument)
 		return;
 	}
 	/* Clear players ignored if given arg "none" */
-	else if(!strcmp(arg, "none"))
+	else if(!strcmp(arg, "ninguén"))
 	{
 		for(temp = ch->pcdata->first_ignored; temp; temp = next)
 		{
@@ -5949,7 +5949,7 @@ void do_ignore(CHAR_DATA *ch, char *argument)
 		}
 		
 		set_char_color(AT_IGNORE, ch);
-		ch_printf(ch, "You now ignore no one.\n\r");
+		ch_printf(ch, "Agora non ignoras a ninguén.\n\r");
 		
 		return;
 	}
@@ -5957,7 +5957,7 @@ void do_ignore(CHAR_DATA *ch, char *argument)
 	else if(!strcmp(arg, "self") || nifty_is_name(arg, ch->name))
 	{
 		set_char_color(AT_IGNORE, ch);
-		ch_printf(ch, "Tecleache algo?\n\r");
+		ch_printf(ch, "Tecleache algo? Pareceume oir un murmuro ...\n\r");
 		return;
 	}
 	else
@@ -5991,7 +5991,7 @@ void do_ignore(CHAR_DATA *ch, char *argument)
 					ch->pcdata->last_ignored,
 					next, prev);
 				set_char_color(AT_IGNORE, ch);
-				ch_printf(ch,"You no longer ignore %s.\n\r",
+				ch_printf(ch, "Deixache de ignorar a %s.\n\r",
 					temp->name);
 				STRFREE(temp->name);
 				DISPOSE(temp);
@@ -6010,8 +6010,8 @@ void do_ignore(CHAR_DATA *ch, char *argument)
 			strcmp(capitalize(arg),victim->name) != 0))
 		{
 			set_char_color(AT_IGNORE, ch);
-			ch_printf(ch,"No player exists by that"
-				" name.\n\r");
+			ch_printf(ch,"Non existe un xogador coñecido por ese"
+				" nome.\n\r");
 			return;
 		}
 		
@@ -6032,13 +6032,13 @@ void do_ignore(CHAR_DATA *ch, char *argument)
 			LINK(new, ch->pcdata->first_ignored,
 				ch->pcdata->last_ignored, next, prev);
 			set_char_color(AT_IGNORE, ch);
-			ch_printf(ch,"You now ignore %s.\n\r", new->name);
+			ch_printf(ch,"Estás ignorando a %s.\n\r", new->name);
 			return;
 		}
 		else
 		{
 			set_char_color(AT_IGNORE, ch);
-			ch_printf(ch,"You may only ignore %d players.\n\r",
+			ch_printf(ch,"Só podes ignorar a %d .\n\r",
 				MAX_IGN);
 			return;
 		}

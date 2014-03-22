@@ -10243,7 +10243,7 @@ void do_reserve(CHAR_DATA *ch, char *argument)
   {
     int wid = 0;
     
-    send_to_char("-- Reserved Names --\n\r", ch);
+    send_to_char("-- Nomes Reservados --\n\r", ch);
     for (res = first_reserved; res; res = res->next)
     {
       ch_printf(ch, "%c%-17s ", (*res->name == '*' ? '*' : ' '),
@@ -10262,14 +10262,14 @@ void do_reserve(CHAR_DATA *ch, char *argument)
       DISPOSE(res->name);
       DISPOSE(res);
       save_reserved();
-      send_to_char("Name no longer reserved.\n\r", ch);
+      send_to_char("O nome xa non está reservado.\n\r", ch);
       return;
     }
   CREATE(res, RESERVE_DATA, 1);
   res->name = str_dup(arg);
   sort_reserved(res);
   save_reserved();
-  send_to_char("Name reserved.\n\r", ch);
+  send_to_char("Nome reservado.\n\r", ch);
   return;
 }
 

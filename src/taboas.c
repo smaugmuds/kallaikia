@@ -164,7 +164,7 @@ SPELL_FUN *spell_function( char *name )
     if ( !str_cmp( name, "spell_expurgation" ))	     return spell_expurgation;
     if ( !str_cmp( name, "spell_sacral_divinity" ))  return spell_sacral_divinity;
 
-    if ( !str_cmp( name, "reserved" ))		     return NULL;
+    if ( !str_cmp( name, "reservado" ))		     return NULL;
     if ( !str_cmp( name, "spell_null" ))	     return spell_null;
     return spell_notfound;
 }
@@ -904,14 +904,14 @@ char *spell_name( SPELL_FUN *spell )
     if ( spell == spell_sacral_divinity )   return "spell_sacral_divinity";
 
     if ( spell == spell_null )		    return "spell_null";
-    return "reserved";
+    return "reservar";
 }
 
 char *skill_name( DO_FUN *skill )
 {
     static char buf[64];
 
-    if ( skill == NULL )		return "reserved";
+    if ( skill == NULL )		return "reservar";
     if ( skill == do_aassign )		return "do_aassign";
     if ( skill == do_accessories )	return "do_accessories";
     if ( skill == do_add_change )	return "do_add_change";
@@ -3294,7 +3294,7 @@ void load_vaults( ) {
     }
  
     fclose( fpList );
-    log_string(" Done vaults " );
+    log_string(" Baúles feitos " );
     fpReserve = fopen( NULL_FILE, "r" );
     return;
 }                                                                                                                                               

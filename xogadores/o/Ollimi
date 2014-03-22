@@ -6,17 +6,17 @@ Class        3
 Race         0
 Languages    1 1
 Level        2
-Played       1190
-Room         21201
+Played       6245
+Room         10325
 HpManaMove   34 34 100 100 110 110
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
 Gold         0
-Exp          2000
-Height          62
-Weight          144
+Exp          2043
+Height          61
+Weight          143
 Act          704644680
-Position     112
+Position     104
 Style     2
 Practice     2
 Alignment    0
@@ -25,23 +25,26 @@ Favor	       0
 Glory        0
 MGlory       0
 Honour       0
-Hitroll      0
+Hitroll      6
 Damroll      0
 Armor        100
-Mentalstate  0
+Mentalstate  -100
 Password     db7e39e61a5e7252e950e306b90548d2e3630c14bd480ca9bb2cd031169f5050~
-Title         the Recruit~
-Flags        8388616
+Title         o Recruit~
+Flags        8519688
 PKills       0
 PDeaths      0
-MKills       0
+MKills       2
 MDeaths      0
 IllegalPK    0
-AttrPerm     18 16 12 12 12 13 12
+AttrPerm     17 15 13 14 13 12 11
 AttrMod      0 0 0 0 0 0 0
-Condition    0 33 33 10
+Condition    0 0 0 10
 Site         139.Red-79-146-234.dynamicIP.rima-tde.net
 Tongue       100 'common'
+AffectData   'bless' 185   6  18 0
+AffectData   'bless' 185  -6  24 0
+Killed       10307 2
 End
 
 #OBJECT

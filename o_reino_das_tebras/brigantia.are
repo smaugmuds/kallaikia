@@ -298,8 +298,8 @@ O Costureiro esta aqui, mostra as suas prendas.
 0 3 0 0 1 1 6
 0 0 2047 0 3156992 0 48 3
 #21022
-garda estabro~
-o garda estabro~
+garda estabros~
+O garda estabros~
 O Garda do Estabro esta atendendo dos animais.
 ~
 ~
@@ -430,7 +430,7 @@ Un home xigante esta aqui, esperando para entrenar xoves guerreiros.
 0 0 2047 0 3156992 0 0 0
 #21037
 home garda~
-o garda~
+Un garda~
 Un garda patrulla as calles do castro.
 ~
 ~
@@ -444,7 +444,7 @@ Un garda patrulla as calles do castro.
 2 2 2047 0 3072 0 0 3
 #21041
 garda~
-o garda~
+Un garda~
 Un garda cansado está aquí.
 ~
 ~
@@ -641,7 +641,7 @@ The hunting dog constantly sniffs the ground, searching for its prey.
 0 0 67261 0 0 2048 0 2
 #21061
 home garda~
-o garda~
+Un garda~
 Un pesado Garda vixia a porta de Brigantia.
 ~
 ~
@@ -672,8 +672,8 @@ un w
 op w
 ~
 > time_prog 20~
-close w
-lock w
+fechar w
+bloquear w
 ~
 |
 #21063
@@ -695,8 +695,8 @@ un e
 op e
 ~
 > time_prog 20~
-close e
-lock e
+fechar e
+bloquear e
 ~
 |
 #21064
@@ -718,8 +718,8 @@ un n
 op n
 ~
 > time_prog 20~
-close n
-lock n
+fechar n
+bloquear n
 ~
 |
 #21065
@@ -737,18 +737,18 @@ O Garda vixia a porta de saida.
 0 3 0 0 1 1 2
 2 2 2047 0 3072 0 0 1
 > time_prog 20~
-close s
-lock s
+fechar s
+bloquear s
 ~
 > time_prog 6~
-unlock s
+desbloquear s
 op s
 ~
 |
 #21066
 home garda~
-o garda~
-O Garda vixiate mentres te moves.
+un garda~
+Un Garda vixíate mentres te moves.
 ~
 ~
 3 32 1000 C
@@ -1980,13 +1980,13 @@ O Taboeiro da Irmandade dos Agoreiros esta colgado aqui.~
 
 #ROOMS
 #21000
-Praza de Brigantia~
-Estas de frente a Gran Praza de Brigantia. Unha estatua de Breogan
-ocupa o centro da praza, rodeada de verdes xardins que ensalzan  o aire
-de serenidade e paz no centro de Brigantia. A rua principal sigue as
-direccions cardinais, mentres o norLeste e norOeste son caminhos as
-fragas de Kallaika. A punta da torre de Ith pode verse asomando por
-riba dos fogares cara o norLeste.
+Praza do Castro de Brigantia~
+Estás de frente á Gran Praza do Castro de Brigantia. Unha estatua de
+Breogán ocupa o corazón da praza, rodeada de verdes e amplos xardíns
+que ensalzan o aire de serenidade e paz no interior de Brigantia. A
+rua principal segue as direccións cardinais, mentres ao NorLeste e
+ao NorOeste son camiños ás fragas de Kallaika. A punta da Torre de
+Ith pode verse asomando por riba dos fogares do NorLeste.
 ~
 0 1081344 1
 D0

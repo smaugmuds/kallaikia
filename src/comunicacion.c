@@ -2910,9 +2910,9 @@ void pager_printf_color(CHAR_DATA *ch, char *fmt, ...)
 char *act_string(const char *format, CHAR_DATA *to, CHAR_DATA *ch,
 		 const void *arg1, const void *arg2, int flags)
 {
-  static char * const he_she  [] = { "it",  "he",  "she" };
-  static char * const him_her [] = { "it",  "him", "her" };
-  static char * const his_her [] = { "its", "his", "her" };
+  static char * const he_she  [] = { "iso",  "el",  "ela" };
+  static char * const him_her [] = { "iso",  "elo", "ela" };
+  static char * const his_her [] = { "seu", "del", "dela" };
   static char buf[MAX_STRING_LENGTH];
   char fname[MAX_INPUT_LENGTH];
   char temp[MAX_STRING_LENGTH];

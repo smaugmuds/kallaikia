@@ -9,6 +9,24 @@
   -webkit-font-smoothing: antialiased;
 }
 
+@font-face {
+        font-family: 'Conv_stonehenge';
+        src: url('../fonts/stonehenge.eot');
+        src: local('☺'), url('../fonts/stonehenge.woff') format('woff'), url('../fonts/stonehenge.ttf') format('truetype'), url('../fonts/stonehenge.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+        font-family: 'Conv_KellsSD';
+        src: url('../fonts/KellsSD.eot');
+        src: local('☺'), url('../fonts/KellsSD.woff') format('woff'), url('../fonts/KellsSD.ttf') format('truetype'), url('../fonts/KellsSD.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+}
+
 /*
 @font-face {
   font-family: 'OpenSansLight';
@@ -156,8 +174,8 @@ input,
 select,
 textarea,
 applet {
-  font-family: "Dungeon", dungeon;
-  font-weight: 550px;
+  font-family: "KellsSD", Conv_KellsSD;
+  font-weight: normal;
 }
 
 /*
@@ -194,27 +212,27 @@ a:active {
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
 h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   margin: 0.67em 0;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0.83em 0;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 1em 0;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 1.33em 0;
 }
 
 h5 {
-  font-size: 0.83em;
+  font-size: 1em;
   margin: 1.67em 0;
 }
 
@@ -235,7 +253,7 @@ abbr[title] {
 */
 b,
 strong {
-  font-weight: bold;
+  font-weight: 600; 
 }
 
 blockquote {
@@ -427,8 +445,7 @@ legend {
 button,
 input,
 select,
-textarea,
-applet {
+textarea {
   font-size: 100%;
   /* 1 */
   margin: 0;
@@ -549,11 +566,10 @@ body {
   padding: 0px 0 20px 0px;
   margin: 0px;
   /* font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-weight: 550;
-  font-family: "Dungeon", dungeon;
-  font-size: 1.7em;
-  color: #f0e7d5;
   font-weight: normal;
+  font-family: "KellsSD", Conv_KellsSD;
+  font-size: 16px;
+  color: #f0e7d5;
   background: #252525;
   background-attachment: fixed !important;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a2a29), color-stop(100%, #1c1c1c));
@@ -568,16 +584,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #e8e8e8;
   margin: 0 0 10px;
   /* font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
-  font-weight: 550;
+  font-family: "KellsSD", Conv_KellsSD;
+  font-weight: 600;
 }
 
 p, ul, ol, table, pre, dl {
+  line-height: 20px;
   margin: 0 0 20px;
 }
 
 p {
     text-align: justify;
+  line-height: 20px;
 }
 
 h1, h2, h3 {
@@ -585,24 +603,24 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h4, h5, h6 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: #e8e8e8;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 24px;
   /* font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  font-family: "Dungeon", dungeon !important;
-  font-weight: normal;
+  font-family: "KellsSD", Conv_KellsSD;
+  font-weight: 550;
   color: #b6b6b6;
 }
 
@@ -628,8 +646,8 @@ ul {
 
 strong {
   /* font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  font-family: "Dungeon", dungeon !important;
-  font-weight: normal;
+  font-family: "KellsSD", Conv_KellsSD;
+  font-weight: 600;
 }
 
 .wrapper {
@@ -653,7 +671,7 @@ blockquote {
 code {
   font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #efefef;
-  font-size: 13px;
+  font-size: 12px;
   margin: 0 4px;
   padding: 4px 6px;
   -moz-border-radius: 2px;
@@ -699,7 +717,7 @@ th {
   border-bottom: 1px solid #434343;
   color: #b6b6b6;
   /* font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  font-family: "Dungeon", dungeon !important;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
 }
 
@@ -720,7 +738,7 @@ hr {
 dt {
   color: #F0E7D5;
   /* font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  font-family: "Dungeon", dungeon !important;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
 }
 
@@ -746,14 +764,14 @@ dt {
 }
 #header nav li {
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon !important;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
   list-style: none;
   display: inline;
   color: white;
   line-height: 50px;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
-  font-size: 14px;
+  font-size: 18px;
 }
 #header nav li a {
   color: white;
@@ -778,7 +796,7 @@ dt {
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
-  font-size: 14px;
+  font-size: 18px;
   display: inline-block;
   text-align: center;
 }
@@ -807,50 +825,54 @@ dt {
 #header nav li.title {
   float: right;
   margin-right: 10px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 section {
   max-width: 800px;
   padding: 30px 0px 50px 0px;
-  margin: 20px 0;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 section #title {
   border: 0;
   outline: none;
-  margin: 10 0 10px 0;
+  margin: 0px 0 10px 0;
   padding: 0 0 5px 0;
 }
 section #title h1 {
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: 550;
-  font-size: 3.5em;
+  font-size: 3em;
   text-align: center;
   line-height: 60px;
+  margin-top: 10px;
 }
+section #title img {
+	width: 70%;
+	margin: 0 auto 0 auto;
+}
+
 section #title p {
   color: #d7cfbe;
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
-  font-weight: 550;
-  font-size: 2.5em;
+  font-family: "KellsSD", Conv_KellsSD;
+  font-weight: normal;
+  font-size: 1.5em;
   text-align: center;
 }
 section applet {
   color: #d7cfbe;
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
-  font-weight: 550;
-  font-size: 2.5em;
+  font-family: "KellsSD", Conv_KellsSD;
+  font-weight: normal;
   text-align: center;
 }
 section #title .credits {
-  font-size: 2.2em;
   /* font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
+  font-size: 1em;
   color: #696969;
   margin-top: -10px;
 }
@@ -872,14 +894,14 @@ section #title .credits.right {
 
 .descargas nav li {
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: "Dungeon", dungeon;
+  font-family: "KellsSD", Conv_KellsSD;
   font-weight: normal;
   list-style: none;
   display: inline;
   color: white;
   line-height: 10px;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .descargas nav li a {
@@ -957,7 +979,7 @@ section #title .credits.right {
   }
 
   section {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   nav {

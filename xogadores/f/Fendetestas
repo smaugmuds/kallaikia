@@ -6,8 +6,8 @@ Class        6
 Race         9
 Languages    1 1
 Level        2
-Played       4145
-Room         10301
+Played       6043
+Room         10304
 HpManaMove   35 35 106 106 110 110
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -17,7 +17,7 @@ Height          69
 Weight          140
 Act          704644680
 AffectedBy   512
-Position     112
+Position     104
 Style     2
 Practice     2
 Alignment    0
@@ -30,7 +30,7 @@ Hitroll      0
 Damroll      0
 Armor        100
 Resistant    2
-Mentalstate  -37
+Mentalstate  -100
 Password     2aa33b11d6ce3fb29054e563a7916bd8f6fe0f3d3b665613eac4222f79427fe4~
 Title         the Strider~
 Flags        8519688
@@ -42,7 +42,7 @@ IllegalPK    0
 AttrPerm     15 15 11 13 13 11 17
 AttrMod      0 0 0 0 0 0 0
 Condition    0 0 0 10
-Site         155.pool213-143-48.static.orange.es
+Site         206.pool213-143-49.static.orange.es
 Tongue       100 'common'
 Tongue       100 'elvish'
 End

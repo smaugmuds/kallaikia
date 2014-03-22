@@ -7,9 +7,9 @@
 * alphabet~
 * conversions~
 
-#common
+#común
 ~
-abcdefghijklmnopqrstuvwxyz~
+aábcdeéfghiíjklmnñoópqrstuúvwxyz~
 ~
 
 #default * for any language without a table
@@ -77,7 +77,7 @@ epcdalbhojcrnmigqfsbuvvxyz~
 ~
 
 
-#elvish   * 'flutey' language.. slam some harsh sounds..
+#elfica   * 'flutey' language.. slam some harsh sounds..
 'the hour' 'lumenn'
 'our meeting' 'omentielvo'
 'shines' 'sila'
@@ -162,7 +162,7 @@ iqqdakvtujfwghepcrslybszoz~
 'qq' 'q'
 ~
 
-#dwarven   * opposite of elven.. extreme on the harsh tones..
+#anana   * opposite of elven.. extreme on the harsh tones..
 'language' 'aglab'
 'upon you' 'ai-menu'
 'upon' 'aya'
@@ -227,7 +227,7 @@ iqqdakvtujfwghepcrslybszoz~
 ubkdukggagkrzrypkdztibmzgo~
 ~
 
-#ogre   * harsh and primative
+#ogra   * harsh and primative
 'ee' 'au'
 'eth' 'ok'
 'ith' 'uk'
@@ -261,7 +261,7 @@ ubkdukggagkrzrypkdztibmzgo~
 ufkdubrgugzpnmugkgztabtzom~
 ~
 
-#troll   * harsh and primative, similar to ogre
+#trollesca   * harsh and primative, similar to ogre
 'ee' 'au'
 'eth' 'ok'
 'ith' 'uk'
@@ -329,7 +329,7 @@ ufkdubrgugzpnmugkgztabtzom~
 oktpabkhugzpnmuxrgztebyzow~
 ~
 
-#orcish   * basically the same as goblin... a little nastier
+#orca   * basically the same as goblin... a little nastier
 'and' 'agh'
 'one' 'ash'
 'cess' 'bag'
@@ -416,7 +416,7 @@ jdhsidulyywfmieopaexoqybac~
 'tyrl' 'x'
 ~
 
-#magical   * emulate say_spell from magic.c
+#máxica   * emulate say_spell from magic.c
 'ar' 'abra'
 'au' 'kada'
 'bless' 'fido'

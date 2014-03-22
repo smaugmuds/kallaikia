@@ -3718,7 +3718,7 @@ void do_split( CHAR_DATA *ch, char *argument )
 
     if ( ch->gold < amount )
     {
-	send_to_char( "You don't have that much gold.\n\r", ch );
+	send_to_char( "Non tes suficiente ouro.\n\r", ch );
 	return;
     }
 
@@ -3735,7 +3735,7 @@ void do_split( CHAR_DATA *ch, char *argument )
 
     if ( members < 2 )
     {
-	send_to_char( "Just keep it all.\n\r", ch );
+	send_to_char( "Gardálo todo.\n\r", ch );
 	return;
     }
 
@@ -3753,10 +3753,10 @@ void do_split( CHAR_DATA *ch, char *argument )
 
     set_char_color( AT_GOLD, ch );
     ch_printf( ch,
-	"You split %d gold coins.  Your share is %d gold coins.\n\r",
+	"Repartes %d moedas de ouro. A túa parte é de %d moedas.\n\r",
 	amount, share + extra );
 
-    sprintf( buf, "$n splits %d gold coins.  Your share is %d gold coins.",
+    sprintf( buf, "$n reparte %d moedas de ouro.  A túa parte é de %d moedas.",
 	amount, share );
 
     for ( gch = ch->in_room->first_person; gch; gch = gch->next_in_room )
@@ -3860,7 +3860,7 @@ void talk_auction (char *argument)
     char buf[MAX_STRING_LENGTH];
     CHAR_DATA *original;
 
-    sprintf (buf,"Auction: %s", argument); /* last %s to reset color */
+    sprintf (buf, "Subasta: %s", argument); /* last %s to reset color */
 
     for (d = first_descriptor; d; d = d->next)
     {
