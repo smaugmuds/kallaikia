@@ -542,12 +542,11 @@
 					line-height: 1em; */
 					color: yellow;
 					text-align: center;
-					margin-top: -1em;
 				}
 
 				#kallaikia {
 					width: 80%;
-					margin: 0 10% 0 10%;
+					margin: -1em 10% 0.3em 10%;
 				}
 				
 				.main.style1 .content {
