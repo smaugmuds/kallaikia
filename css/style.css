@@ -541,11 +541,12 @@
 					font-size: 3.5em;
 					line-height: 1em;
 					color: yellow;
+					text-align: center;
 				}
 
 				#kallaikia {
 					width: 500px;
-					margin-top: -2em;
+					margin: -1em auto 0em auto;
 				}
 				
 				.main.style1 .content {
