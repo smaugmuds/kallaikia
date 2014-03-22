@@ -538,11 +538,10 @@
 			}
 			
 				.main.style1 h2 {
-					font-size: 3.5em;
-					line-height: 1em;
+					/* font-size: 3.5em;
+					line-height: 1em; */
 					color: yellow;
 					text-align: center;
-					margin: 0em auto 0em auto;
 				}
 
 				#kallaikia {
