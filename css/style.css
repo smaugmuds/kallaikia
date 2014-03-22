@@ -544,7 +544,8 @@
 				}
 
 				#kallaikia {
-					width: 600px;
+					width: 500px;
+					margin-top: -2em;
 				}
 				
 				.main.style1 .content {
