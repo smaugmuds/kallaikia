@@ -847,11 +847,11 @@ section #title h1 {
   font-size: 3em;
   text-align: center;
   line-height: 60px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 section #title img {
 	width: 100%;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 section #title p {
