@@ -542,6 +542,10 @@
 					line-height: 1em;
 					color: yellow;
 				}
+
+				#kallaikia {
+					width: 300px;
+				}
 				
 				.main.style1 .content {
 					opacity: 0.8;
