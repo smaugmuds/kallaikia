@@ -849,6 +849,10 @@ section #title h1 {
   line-height: 60px;
   margin-top: 50px;
 }
+section #title img {
+	width: 100%;
+}
+
 section #title p {
   color: #d7cfbe;
   /* font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif; */
