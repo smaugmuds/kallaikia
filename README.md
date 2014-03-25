@@ -32,16 +32,13 @@
                     .,.
 ```
 
-##Benvido a Kallaikia ...
+##Benvid@s a Kallaikia Online
 
-Benvid@ a **^O Reino das Tebras^**, este proxecto naceu a partir do Comic Book do mesmo nome [http://burzumishi.github.io/kallaikia].
+Benvid@ a **^O Reino das Tebras^**, este proxecto naceu a partir do Comic Book do mesmo nome [**Kallaikia**] (http://burzumishi.github.io/kallaikia).
 
-Podes conectarte a través do sitio web [http://0ri0n.no-ip.biz/kallaikiaonline].
-
-Esta e a primeira xeneraci&oacute;n deste MUD en galego, nacido a partir do servidor **Smaug 1.8b** creado para [http://www.realmsofdespair.com] por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia [http://www.gnu.org/licenses/gpl-2.0.html].
-
+Podes conectarte a través do sitio web de [**Kallaikia Online**] (http://0ri0n.no-ip.biz/kallaikiaonline).
 Dirección para conectar a **Kallaikia**: **0ri0n.no-ip.biz:4000**
 
-*(É preciso un cliente de telnet ou de MUD)*
+Esta e a primeira xeneraci&oacute;n deste mundo colaborativo en Galego, nacido a partir do servidor **Smaug 1.8b** creado para [**Realms Of Despair**] (http://www.realmsofdespair.com) por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia [**GPL**] (http://www.gnu.org/licenses/gpl-2.0.html).
 
-Podes ver máis información no noso Wiki: [https://github.com/burzumishi/kallaikia/wiki]
+Podes ver máis información no [**Wiki de Kallaikia**] (https://github.com/burzumishi/kallaikia/wiki)

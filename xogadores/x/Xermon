@@ -6,8 +6,8 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       628852
-Room         10300
+Played       803670
+Room         21194
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -18,16 +18,16 @@ Weight          147
 Act          704644682&1024
 Position     112
 Style     2
-Practice     9945
+Practice     9936
 Alignment    62
 SavingThrows 0 0 0 0 0
 Favor	       0
 Glory        -11467
 MGlory       13245
 Honour       145124
-Hitroll      35
+Hitroll      41
 Damroll      45
-Armor        2000
+Armor        1980
 Wimpy        500
 Mentalstate  999
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
@@ -46,12 +46,14 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         localhost
+Site         192.168.1.66
+Spell        19 'acid blast'
 Spell        19 'animate dead'
 Spell        19 'bless'
 Spell        19 'cause critical'
 Spell        19 'create food'
 Spell        19 'cure light'
+Spell        19 'curse'
 Spell        19 'death'
 Spell        19 'demonskin'
 Spell        19 'detect poison'
@@ -77,6 +79,7 @@ Skill        19 'aid'
 Skill        19 'assassinate'
 Skill        19 'cook'
 Skill        19 'disarm'
+Skill        19 'dobre empuñadura'
 Skill        26 'enhanced damage'
 Skill        19 'feed'
 Skill        19 'grasp suspiria'
@@ -86,7 +89,9 @@ Skill        19 'meditate'
 Skill        19 'mistform'
 Skill        76 'mount'
 Skill        19 'parry'
+Skill        19 'pelt'
 Skill        19 'punch'
+Skill        19 'punt'
 Skill        19 'rescue'
 Skill        19 'scan'
 Skill        19 'search'
@@ -94,8 +99,12 @@ Skill        87 'seventh attack'
 Skill        19 'shoulder'
 Skill        19 'steal'
 Skill        19 'strike'
+Skill        19 'swipe'
+Skill        19 'tail'
 Skill        19 'tend'
 Skill        19 'track'
+Skill        19 'trance'
+Skill        19 'uppercut'
 Skill        19 'vault'
 Skill        19 'visual defiance'
 Weapon       19 'flexible arms'
@@ -104,6 +113,9 @@ Weapon       19 'missile weapons'
 Weapon       19 'pugilism'
 Weapon       19 'short blades'
 Tongue       100 'common'
+AffectData   'bless'  78   6  18 0
+AffectData   'bless'  78  -6  24 0
+AffectData   'armor' 109 -20  17 0
 Killed       3605 1
 Killed       21055 1
 Killed       21045 1
@@ -127,7 +139,7 @@ End
 
 #MOBILE
 Vnum	21058
-Room	10300
+Room	21194
 Description The black steed snorts as you examine him.  His fine black coat shines
 brightly regardless of light and the warhorse seems as though it could
 run tirelessly for days.
