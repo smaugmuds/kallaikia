@@ -41,7 +41,7 @@ Dirección para conectar a **Kallaikia**: **0ri0n.no-ip.biz:4000**
 
 Os usuarios de **Kallaikia** poden construir e desenvolver novas partes do mundo, dende o propio editor interno do xogo, unha vez alcanzado o nivel requerido. **Kallaikia** non é un xogo de rol clásico, é un xogo colaborativo, onde son precisas alianzas co resto dos xogadores para alcanzar as vosas metas. En **Kallaikia** poderás crear novas zonas para os teus poboados ou novos castros e reinos.
 
-* Animamos a todo o mundo a participar de algunha forma:
+**Animamos a todo o mundo a participar de algunha forma:**
 
 	- **Xogar** e **axudar** a novos **xogadores**.
 	- **Propoñer** ou **adaptar** novas e vellas **ideas**.
