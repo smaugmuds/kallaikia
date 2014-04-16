@@ -310,9 +310,9 @@ extern int MAX_PC_CLASS;
 #define LEVEL_LOG		    LEVEL_LESSER
 #define LEVEL_HIGOD		    LEVEL_GOD
 
-#include "klkmod_novas.h" /* Extended News - 12/15/01 - Nopey */
-#include "klkchr_fogar.h"
-#include "klkmod_consellos.h"
+#include "klkinc_novas.h" /* Extended News - 12/15/01 - Nopey */
+#include "klkinc_fogar.h"
+#include "klkinc_consellos.h"
 
 /* This is to tell if act uses uppercasestring or not --Shaddai */
 bool DONT_UPPER;

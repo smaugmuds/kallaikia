@@ -21,7 +21,7 @@
 #include <string.h>
 #include <time.h>
 #include "kallaikia.h"
-#include "sha256.h"
+#include "klkinc_sha256.h"
 
 
 

@@ -23,7 +23,7 @@
 #include <time.h>
 #include <sys/stat.h>
 #include "kallaikia.h"
-#include "sha256.h"
+#include "klkinc_sha256.h"
   
 
 /* Had to add unknowns because someone added new positions and didn't

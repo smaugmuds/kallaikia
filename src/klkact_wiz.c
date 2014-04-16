@@ -23,7 +23,7 @@
 #include <sys/stat.h>
 #include <errno.h>
 #include "kallaikia.h"
-#include "sha256.h"
+#include "klkinc_sha256.h"
 #ifdef WIN32
    #include <io.h>
 #endif

@@ -80,13 +80,13 @@ L_FLAGS = $(PROF) -lz -lsqlite3 $(NEED_LPTHREAD) $(NEED_DL)
 # Ficheiros Principais para compilar
 ########################################
 
-C_FILES =   klkmod_sqlite.c klkchr_administradores.c klkchr_clan.c klkdb.c klkmod_inmortais.c klkmod_mapasaida.c  klkmod_novas.c   klkmod_peticions.c  klkmod_tendas.c  klkmod_estadisticas_obxetos.c \
+C_FILES =   klklib_sqlite.c klkchr_administradores.c klkchr_clan.c klkmod_filedb.c klkmod_inmortais.c klkmod_mapasaida.c  klkmod_novas.c   klkmod_peticions.c  klkmod_tendas.c  klkmod_estadisticas_obxetos.c \
 klkact_informacion.c  klkchr_expulsado.c    klkmod_cifrar.c    klkmod_color.c  klkmod_deidades.c    klkmod_consellos.c  klkmod_interprete.c  klkchr_varios.c  klkmod_resetear.c      klkchr_habilidades.c  klkmod_taboas.c \
-klkact_movemento.c  klkmod_taboeiros.c   klkchr_comunicacion.c      klkchr_loitar.c    klkchr_fogar.c    klkmod_liquidos.c  klkmod_mpx.c    klkchr_character.c    klkchr_gardar.c     klkmod_especiais.c  klkchr_tracear.c \
+klkact_movemento.c  klkmod_taboeiros.c   klkchr_comunicacion.c      klkchr_loitar.c    klkchr_fogar.c    klkmod_liquidos.c  klklib_mpx.c    klkchr_character.c    klkchr_gardar.c     klkmod_especiais.c  klkchr_tracear.c \
 klkact_obxetos.c   klkmod_construir.c      klkmod_comentarios.c  klkmod_grub.c     klkmod_iconstruir.c   klkchr_maxia.c     klkmod_comunicacions.c  klkchr_polimorfismo.c  klkmod_servizos.c  klkmod_estancias.c  klkchr_actualizar.c \
-klkact_wiz.c   klkact_comunicacion.c   klkmod_constantes.c     klkmod_manexador.c  klkmod_identificar.c  klkmod_crear_obxetos.c  klkmod_programas.c  klkmod_renumerar.c   sha256.c   klkmod_mapaestelar.c  klkmod_variables.c
+klkact_wiz.c   klkact_comunicacion.c   klkmod_constantes.c     klkmod_manexador.c  klkmod_identificar.c  klkmod_crear_obxetos.c  klkmod_programas.c  klkmod_renumerar.c   klklib_sha256.c   klkmod_mapaestelar.c  klkmod_variables.c
 
-H_FILES = klkchr_apostar.h  klkmod_consellos.h  klkchr_fogar.h  klkmod_liquidos.h  kallaikia.h  klkmod_novas.h  sha256.h
+H_FILES = klkinc_apostar.h  klkinc_consellos.h  klkinc_fogar.h  klkinc_liquidos.h  kallaikia.h  klkinc_novas.h  klkinc_sha256.h
 
 ################################################
 # Ficheiros para Opcions Extra

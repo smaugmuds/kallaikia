@@ -26,7 +26,7 @@
 #include <signal.h>
 #include <stdarg.h>
 #include "kallaikia.h"
-#include "sha256.h"
+#include "klkinc_sha256.h"
 
 /*
  * Socket and TCP/IP stuff.

@@ -35,7 +35,7 @@
 #include <endian.h>
 #endif
 #endif
-#include "sha256.h"
+#include "klkinc_sha256.h"
 
 #if __FreeBSD_version < 500111
 
