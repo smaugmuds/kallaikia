@@ -363,7 +363,7 @@ void boot_db( void )
     log_string( "Cargando comandos" );
     load_commands();
 
-    log_string( "Cargando configuracio do sistema ..." );
+    log_string( "Cargando configuración do sistema ..." );
 
     /* default values */
     sysdata.read_all_mail		= LEVEL_DEMI;
@@ -422,7 +422,7 @@ void boot_db( void )
     log_string("Cargando sociais");
     load_socials();
 
-    log_string("Cargando taboa de habilidades");
+    log_string("Cargando táboa de habilidades");
     load_skill_table();
     sort_skill_table();
     remap_slot_numbers();	/* must be after the sort */
@@ -1013,7 +1013,7 @@ void add_help( HELP_DATA *pHelp )
 	if ( pHelp->level == tHelp->level
 	&&   strcmp(pHelp->keyword, tHelp->keyword) == 0 )
 	{
-	    bug( "add_help: duplicate: %s.  Deleting.", pHelp->keyword );
+	    bug( "add_help: duplicado: %s.  Borrando.", pHelp->keyword );
 	    STRFREE( pHelp->text );
 	    STRFREE( pHelp->keyword );
 	    DISPOSE( pHelp );
@@ -1137,14 +1137,14 @@ void load_mobiles( AREA_DATA *tarea, FILE *fp )
 	{
 	    if ( tmpBootDb )
 	    {
-		bug( "Load_mobiles: vnum %d duplicated.", vnum );
-		shutdown_mud( "duplicate vnum" );
+		bug( "Load_mobiles: vnum %d duplicado.", vnum );
+		shutdown_mud( "vnum duplicado" );
 		exit( 1 );
 	    }
 	    else
 	    {
 		pMobIndex = get_mob_index( vnum );
-		sprintf( buf, "Limpiando mobile: %d", vnum );
+		sprintf( buf, "Limpando mobile: %d", vnum );
 		log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 		clean_mob( pMobIndex );
 		oldmob = TRUE;
@@ -1467,7 +1467,7 @@ void load_objects( AREA_DATA *tarea, FILE *fp )
 	    else
 	    {
 		pObjIndex = get_obj_index( vnum );
-		sprintf( buf, "Limpiando object: %d", vnum );
+		sprintf( buf, "Limpando obxeto: %d", vnum );
 		log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 		clean_obj( pObjIndex );
 		oldobj = TRUE;
@@ -1685,7 +1685,7 @@ void load_resets( AREA_DATA *tarea, FILE *fp )
 	 /*
 	  * Clean out the old resets
 	  */
-	  sprintf( buf, "Limpiando reseteos: %s", tarea->name );
+	  sprintf( buf, "Limpando reseteos: %s", tarea->name );
 	  log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 	  clean_resets( tarea );
 	}	
@@ -1730,7 +1730,7 @@ void load_resets( AREA_DATA *tarea, FILE *fp )
 
 	case 'M':
 	    if ( get_mob_index( arg1 ) == NULL && fBootDb )
-		boot_log( "Load_resets: %s (%d) 'M': mobile %d doesn't exist.",
+		boot_log( "Load_resets: %s (%d) 'M': a criatura %d non existe.",
 		    tarea->filename, count, arg1 );
 	    if ( get_room_index( arg3 ) == NULL && fBootDb )
 		boot_log( "Load_resets: %s (%d) 'M': room %d doesn't exist.",
@@ -1958,7 +1958,7 @@ void load_rooms( AREA_DATA *tarea, FILE *fp )
 	    else
 	    {
 	      pRoomIndex = get_room_index( vnum );
-	      sprintf( buf, "Limpiando room: %d", vnum );
+	      sprintf( buf, "Limpando room: %d", vnum );
 	      log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 	      clean_room( pRoomIndex );
 	      oldroom = TRUE;

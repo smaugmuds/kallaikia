@@ -23,7 +23,7 @@
 #include <sys/stat.h>
 #include <time.h>
 #include "kallaikia.h"
-#include "reinos.h"
+#include "klkmod_reinos.h"
 
 
 

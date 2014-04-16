@@ -20,7 +20,7 @@
 #include <string.h>
 #include <time.h>
 #include "kallaikia.h"
-#include "apostar.h"
+#include "klkchr_apostar.h"
 
 
 /*double sqrt( double x );*/

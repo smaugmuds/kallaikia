@@ -760,7 +760,7 @@ void write_html_news(void)
   sprintf(filename, "%s%s", sysdata.news_html_path, NEWS_INCLUDE_FILE);
   if((fp = fopen(filename, "w")) == NULL)
   {
-    bug("write_html_news(): cannot open %s for writing", filename);
+    bug("write_html_news(): non se pode abrir %s para escribir", filename);
     return;
   }
  snarf_news(fp);

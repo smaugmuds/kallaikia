@@ -6,8 +6,8 @@ Class        11
 Race         0
 Languages    -1 1
 Level        65
-Played       803670
-Room         21194
+Played       827866
+Room         21187
 HpManaMove   1000 1000 1000 1000 1000 1000
 Stance       0
 Stances      0 0 0 0 0 0 0 0 0 0 0 0
@@ -25,9 +25,9 @@ Favor	       0
 Glory        -11467
 MGlory       13245
 Honour       145124
-Hitroll      41
+Hitroll      35
 Damroll      45
-Armor        1980
+Armor        2000
 Wimpy        500
 Mentalstate  999
 Password     594eb7126fbf3900b1bf907010b738e918db6f90bbdfabf6893891f7fbb92fb7~
@@ -46,7 +46,7 @@ IllegalPK    0
 AttrPerm     13 14 14 12 15 15 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 47 47 10
-Site         192.168.1.66
+Site         localhost
 Spell        19 'acid blast'
 Spell        19 'animate dead'
 Spell        19 'bless'
@@ -87,7 +87,7 @@ Skill        19 'hide'
 Skill        19 'kick'
 Skill        19 'meditate'
 Skill        19 'mistform'
-Skill        76 'mount'
+Skill        82 'mount'
 Skill        19 'parry'
 Skill        19 'pelt'
 Skill        19 'punch'
@@ -113,9 +113,6 @@ Weapon       19 'missile weapons'
 Weapon       19 'pugilism'
 Weapon       19 'short blades'
 Tongue       100 'common'
-AffectData   'bless'  78   6  18 0
-AffectData   'bless'  78  -6  24 0
-AffectData   'armor' 109 -20  17 0
 Killed       3605 1
 Killed       21055 1
 Killed       21045 1
@@ -139,7 +136,7 @@ End
 
 #MOBILE
 Vnum	21058
-Room	21194
+Room	21187
 Description The black steed snorts as you examine him.  His fine black coat shines
 brightly regardless of light and the warhorse seems as though it could
 run tirelessly for days.

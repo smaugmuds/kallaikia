@@ -20,15 +20,8 @@ DESCRIPCION = Kallaikia  ^ O Reino das Tebras^
 # Planos areas
 PLANES = -DPLANES
 
-# Xogo de axedrez
-CHESS = -DCHESS
-
 # Aumentar VNUM a un billon
 BILLION_VNUM = -DBILLION_VNUM
-
-# Tableiro para SUDOKUS
-SUDOKU = -DSUDOKU
-
 
 ###################################################################
 # Extras Opcionais Devel (Experimentales NON ACTIVAR!)
@@ -54,6 +47,7 @@ CC      = gcc
 #Descomentar si se obtenhen referencias indefinidas para dlsym, dlopen, and dlclose.
 #Comentar si se obtinhen errores de ldl non encontrado.
 NEED_DL = -ldl
+NEED_LPTHREAD = -lpthread
 
 #Alguns sistemas precisan isto para o enlazado dinamico.
 EXPORT_SYMBOLS = -export-dynamic
@@ -79,20 +73,20 @@ else
 C_FLAGS := $(C_FLAGS) 
 endif
 
-L_FLAGS = $(PROF) -lz $(NEED_DL)
+L_FLAGS = $(PROF) -lz -lsqlite3 $(NEED_LPTHREAD) $(NEED_DL)
 
 
 ########################################
 # Ficheiros Principais para compilar
 ########################################
 
-C_FILES =   administradores.c  clans.c  basedatos.c   inmortais_servidor.c  mapasaida.c  novas.c   peticions.c  tendas.c  estadisticas_obxetos.c \
-actores_informacion.c  banear.c    cifracadea.c    cores.c  deidades.c    consellos.c     interprete.c    xogador_varios.c      resetear.c      xogador_habilidades.c    taboas.c \
-actores_movemento.c  taboeiros.c   comunicacion.c      xogador_loitar.c    fogar.c    liquidos.c   configurarmpx.c    xogador.c     gardar.c     especial.c  tracear.c \
-actores_obxetos.c   construir.c      comentarios.c  grub.c     iconstruir.c   xogador_maxia.c     kallaikia_comunicacion.c  polimorfismo.c  servizos.c  estancias.c  actualizar.c \
-actores_wiz.c   actores_comunicacion.c   constantes.c     manexador.c  identificar.c    crearobxetos.c  kallaikia_programas.c  renumerar.c   sha256.c   mapaestelar.c  variables.c
+C_FILES =   klkmod_sqlite.c klkchr_administradores.c klkchr_clan.c klkdb.c klkmod_inmortais.c klkmod_mapasaida.c  klkmod_novas.c   klkmod_peticions.c  klkmod_tendas.c  klkmod_estadisticas_obxetos.c \
+klkact_informacion.c  klkchr_expulsado.c    klkmod_cifrar.c    klkmod_color.c  klkmod_deidades.c    klkmod_consellos.c  klkmod_interprete.c  klkchr_varios.c  klkmod_resetear.c      klkchr_habilidades.c  klkmod_taboas.c \
+klkact_movemento.c  klkmod_taboeiros.c   klkchr_comunicacion.c      klkchr_loitar.c    klkchr_fogar.c    klkmod_liquidos.c  klkmod_mpx.c    klkchr_character.c    klkchr_gardar.c     klkmod_especiais.c  klkchr_tracear.c \
+klkact_obxetos.c   klkmod_construir.c      klkmod_comentarios.c  klkmod_grub.c     klkmod_iconstruir.c   klkchr_maxia.c     klkmod_comunicacions.c  klkchr_polimorfismo.c  klkmod_servizos.c  klkmod_estancias.c  klkchr_actualizar.c \
+klkact_wiz.c   klkact_comunicacion.c   klkmod_constantes.c     klkmod_manexador.c  klkmod_identificar.c  klkmod_crear_obxetos.c  klkmod_programas.c  klkmod_renumerar.c   sha256.c   klkmod_mapaestelar.c  klkmod_variables.c
 
-H_FILES = apostar.h  consellos.h  fogar.h  liquidos.h  kallaikia.h  novas.h  sha256.h
+H_FILES = klkchr_apostar.h  klkmod_consellos.h  klkchr_fogar.h  klkmod_liquidos.h  kallaikia.h  klkmod_novas.h  sha256.h
 
 ################################################
 # Ficheiros para Opcions Extra
@@ -100,15 +94,8 @@ H_FILES = apostar.h  consellos.h  fogar.h  liquidos.h  kallaikia.h  novas.h  sha
 
 #Ficheiros FLAGS adicionais para planos de areas
 ifdef PLANES
-   C_FILES := $(C_FILES) planos.c
+   C_FILES := $(C_FILES) klkmod_planos.c
    C_FLAGS := $(C_FLAGS) $(PLANES)
-endif
-
-#Ficheiros FLAGS adicionais para o xogo de Axedrez
-ifdef CHESS
-   C_FILES := $(C_FILES) xadrez.c
-   H_FILES := $(H_FILES) xadrez.h
-   C_FLAGS := $(C_FLAGS) $(CHESS)
 endif
 
 # FLAGS adicionais para BILLION_VNUM
@@ -116,16 +103,10 @@ ifdef BILLION_VNUM
    C_FLAGS := $(C_FLAGS) $(BILLION_VNUM)
 endif
 
-#Ficheiros FLAGS adicionais para xogo de Sudoku
-ifdef SUDOKU
-   C_FILES := $(C_FILES) sudoku.c
-   C_FLAGS := $(C_FLAGS) $(SUDOKU)
-endif
-
 #Ficheiros FLAGS adicionais para Reinos e conquistas
 ifdef KINGDOMS
-   C_FILES := $(C_FILES) reinos.c
-   H_FILES := $(H_FILES) reinos.h
+   C_FILES := $(C_FILES) klkmod_reinos.c
+   H_FILES := $(H_FILES) klkmod_reinos.h
    C_FLAGS := $(C_FLAGS) $(KINGDOMS)
 endif
 

@@ -38,7 +38,7 @@
 #include <string.h>
 #include <time.h>
 #include "kallaikia.h"
-#include "liquidos.h"
+#include "klkmod_liquidos.h"
 
 /* Globals */
 char *	const liquid_types[] =

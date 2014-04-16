@@ -120,7 +120,7 @@ void do_worth(CHAR_DATA *ch, char *argument)
                 break;
         }
     pager_printf_color
-(ch, "&g|&GGloria: &w%-4d &g|&GPeso: &w%-9d &g|&GEstilo: &w%-13s &g|&GGold: &w%-14s &g|\n\r",
+(ch, "&g|&GGloria: &w%-4d &g|&GPeso: &w%-9d &g|&GEstilo: &w%-13s &g|&GOuro: &w%-14s &g|\n\r",
                  ch->pcdata->quest_curr, ch->carry_weight, buf, num_punct(ch->gold) );
     send_to_pager_color("&g ----------------------------------------------------------------------------\n\r", ch);
     if ( ch->level < 15 && !IS_PKILL(ch) )
