@@ -41,4 +41,4 @@ Dirección para conectar a **Kallaikia**: **0ri0n.no-ip.biz:4000**
 
 Esta e a primeira xeneraci&oacute;n deste mundo colaborativo en Galego, nacido a partir do servidor **Smaug 1.8b** creado para [**Realms Of Despair**] (http://www.realmsofdespair.com) por **Thorin**, escrito en linguaxe **C#** e liberado baxo licencia [**GPL**] (http://www.gnu.org/licenses/gpl-2.0.html).
 
-Podes ver máis información no [**Wiki de Kallaikia**] (https://github.com/burzumishi/kallaikia/wiki)
+Podes ver máis información no [**Wiki de Kallaikia**] (https://github.com/smaugmuds/kallaikia/wiki)
