@@ -34,7 +34,7 @@
 
 ##Benvid@s a Kallaikia Online
 
-Benvid@ a **^O Reino das Tebras^**, este proxecto naceu a partir do Comic Book do mesmo nome [**Kallaikia**] (http://burzumishi.github.io/kallaikia).
+Benvid@ a **^O Reino das Tebras^**, este proxecto naceu a partir do Comic Book do mesmo nome [**Kallaikia**] (http://smaugmuds.github.io/kallaikia).
 
 Podes conectarte a través do sitio web de [**Kallaikia Online**] (http://0ri0n.no-ip.biz/kallaikiaonline).
 Dirección para conectar a **Kallaikia**: **0ri0n.no-ip.biz:4000**
